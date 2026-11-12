@@ -6,10 +6,12 @@ frontend, testing, reviewer, до трёх субагентов одноврем
 ## Автоматически
 
 - TypeScript strict typecheck и ESLint, включая обязательные фигурные скобки.
-- 51 Vitest unit/integration-тест: внешние схемы/ID/ruby, задания, расписание, preferences,
+- 55 Vitest unit/integration-тестов: внешние схемы/ID/ruby, задания, расписание, preferences,
   транзакции, Dexie migration, outbox, retry, idempotency, conflicts, guest merge, account state,
   запрет upload при отключённой синхронизации, защита явного знания от поздней автоматической встречи.
   Дополнительно: timestamp offsets и locale-independent порядок, смена A → B и A → B → A в Auth.
+  Импорт одной гостевой копии на независимых устройствах получает одинаковые ID, изменённое содержимое
+  под прежним ID отклоняется атомарно; одинаковые исходные ID разных владельцев не смешиваются.
 - SQL migration + user_isolation.sql в изолированном PostgreSQL/WASM (PGlite): RLS двух пользователей,
   RPC ownership, повторная доставка, невалидные payload/dates, запрет прямой записи и anonymous доступа.
 - Production build с `/ReadFold/`, HashRouter и service worker. Vendor chunks разделены.

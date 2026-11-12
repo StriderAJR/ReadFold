@@ -253,16 +253,33 @@ export class LocalRepository {
   async importData(ownerId: string, data: unknown): Promise<void> {
     z.string().min(1).parse(ownerId);
     const parsed = exportSchema.parse(data);
+    // Web Crypto must finish before opening an IndexedDB transaction.
+    const imports = await Promise.all(
+      parsed.operations.map(async (operation) => {
+        const identity = JSON.stringify([ownerId, operation.ownerId, operation.id]);
+        const digest =
+          operation.ownerId === ownerId
+            ? undefined
+            : await crypto.subtle.digest('SHA-256', new TextEncoder().encode(identity));
+        const id =
+          digest === undefined
+            ? operation.id
+            : `copy.${Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('')}`;
+        return { operation, id, key: `import:${identity}` };
+      }),
+    );
     await this.db.transaction('rw', this.db.operations, this.db.outbox, this.db.metadata, async () => {
-      for (const operation of parsed.operations) {
+      for (const imported of imports) {
+        const { operation, key } = imported;
         // Imported data is explicitly copied into the selected owner, never moved.
-        const key = `import:${ownerId}:${operation.id}`;
-        if (await this.db.metadata.get(key)) {
-          continue;
-        }
-        const id = operation.ownerId === ownerId ? operation.id : crypto.randomUUID();
+        const mapping = await this.db.metadata.get(key);
+        const legacy = mapping ? undefined : await this.db.metadata.get(`import:${ownerId}:${operation.id}`);
+        const id = mapping?.value ?? legacy?.value ?? imported.id;
         const copied = { ...operation, id, ownerId };
         const existing = await this.db.operations.get(id);
+        if ((mapping || legacy) && !existing) {
+          throw new Error('Missing imported operation');
+        }
         if (existing) {
           if (!sameOperation(existing, copied)) {
             throw new Error('Operation collision');

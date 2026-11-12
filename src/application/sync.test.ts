@@ -22,6 +22,71 @@ function transport(overrides: Partial<SyncTransport> = {}): SyncTransport {
 }
 
 describe('local persistence and reconciliation', () => {
+  it('gives foreign backup copies the same immutable identity across independent devices', async () => {
+    const source = repository();
+    const firstDevice = repository();
+    const secondDevice = repository();
+    await source.record('guest', 'review', 'word', { rating: 'good' });
+    const backup = await source.exportData('guest');
+    await Promise.all([firstDevice.importData('account', backup), secondDevice.importData('account', backup)]);
+    const first = await firstDevice.getOperations('account');
+    const second = await secondDevice.getOperations('account');
+    expect(first).toEqual(second);
+    expect(first[0].id).toMatch(/^copy\.[a-f0-9]{64}$/);
+    await firstDevice.receive('account', second, 1);
+    await secondDevice.receive('account', first, 1);
+    expect(await firstDevice.getOperations('account')).toHaveLength(1);
+    expect(await secondDevice.getOperations('account')).toHaveLength(1);
+    expect(await firstDevice.getOutbox('account')).toHaveLength(1);
+  });
+
+  it('rejects changed source content atomically even when the import mapping already exists', async () => {
+    const source = repository();
+    const target = repository();
+    const operation = await source.record('guest', 'review', 'word', { rating: 'good' });
+    await target.importData('account', { version: 1, operations: [operation] });
+    const before = await target.exportData('account');
+    await expect(
+      target.importData('account', {
+        version: 1,
+        operations: [
+          { ...operation, id: 'new-source-event' },
+          { ...operation, payload: { rating: 'hard' } },
+        ],
+      }),
+    ).rejects.toThrow('Operation collision');
+    expect(await target.exportData('account')).toEqual(before);
+    expect(await target.getOutbox('account')).toHaveLength(1);
+  });
+
+  it('keeps equal source IDs from different owners distinct', async () => {
+    const source = repository();
+    const target = repository();
+    const operation = await source.record('source-a', 'review', 'word', { rating: 'good' });
+    await target.importData('account', {
+      version: 1,
+      operations: [operation, { ...operation, ownerId: 'source-b', payload: { rating: 'easy' } }],
+    });
+    const imported = await target.getOperations('account');
+    expect(imported).toHaveLength(2);
+    expect(new Set(imported.map((entry) => entry.id)).size).toBe(2);
+    await target.importData('account', { version: 1, operations: [operation] });
+    expect(await target.getOperations('account')).toHaveLength(2);
+  });
+
+  it('preserves a legacy imported operation and checks its immutable content', async () => {
+    const target = repository();
+    const copied = await target.record('account', 'review', 'word', { rating: 'good' });
+    const source = { ...copied, ownerId: 'guest', id: 'old-source-id' };
+    await target.db.metadata.put({ key: 'import:account:old-source-id', value: copied.id });
+    await target.importData('account', { version: 1, operations: [source] });
+    expect(await target.getOperations('account')).toEqual([copied]);
+    await expect(
+      target.importData('account', { version: 1, operations: [{ ...source, payload: { rating: 'again' } }] }),
+    ).rejects.toThrow('Operation collision');
+    expect(await target.getOperations('account')).toEqual([copied]);
+  });
+
   it('orders offset timestamps chronologically with locale-independent ID ties', async () => {
     const repo = repository();
     const base = {
