@@ -1,0 +1,653 @@
+{
+  "schemaVersion": 1,
+  "words": [
+    {
+      "id": "asa",
+      "surface": "朝",
+      "dictionaryForm": "朝",
+      "reading": "あさ",
+      "romaji": "asa",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "утро"
+      ]
+    },
+    {
+      "id": "watashi",
+      "surface": "私",
+      "dictionaryForm": "私",
+      "reading": "わたし",
+      "romaji": "watashi",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "я"
+      ]
+    },
+    {
+      "id": "wa",
+      "surface": "は",
+      "dictionaryForm": "は",
+      "reading": "は",
+      "romaji": "wa",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "тема высказывания"
+      ]
+    },
+    {
+      "id": "kouen",
+      "surface": "公園",
+      "dictionaryForm": "公園",
+      "reading": "こうえん",
+      "romaji": "kōen",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "парк"
+      ]
+    },
+    {
+      "id": "e",
+      "surface": "へ",
+      "dictionaryForm": "へ",
+      "reading": "へ",
+      "romaji": "e",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "направление движения"
+      ]
+    },
+    {
+      "id": "iku",
+      "surface": "行く",
+      "dictionaryForm": "行く",
+      "reading": "いく",
+      "romaji": "iku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "идти"
+      ]
+    },
+    {
+      "id": "ni",
+      "surface": "に",
+      "dictionaryForm": "に",
+      "reading": "に",
+      "romaji": "ni",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "место или адресат"
+      ]
+    },
+    {
+      "id": "chiisana",
+      "surface": "小さな",
+      "dictionaryForm": "小さな",
+      "reading": "ちいさな",
+      "romaji": "chiisana",
+      "partOfSpeech": "определение",
+      "meanings": [
+        "маленький"
+      ]
+    },
+    {
+      "id": "neko",
+      "surface": "猫",
+      "dictionaryForm": "猫",
+      "reading": "ねこ",
+      "romaji": "neko",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "кошка"
+      ]
+    },
+    {
+      "id": "ga",
+      "surface": "が",
+      "dictionaryForm": "が",
+      "reading": "が",
+      "romaji": "ga",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "подлежащее"
+      ]
+    },
+    {
+      "id": "iru",
+      "surface": "いる",
+      "dictionaryForm": "いる",
+      "reading": "いる",
+      "romaji": "iru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "находиться (о живом)"
+      ]
+    },
+    {
+      "id": "ki",
+      "surface": "木",
+      "dictionaryForm": "木",
+      "reading": "き",
+      "romaji": "ki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "дерево"
+      ]
+    },
+    {
+      "id": "no",
+      "surface": "の",
+      "dictionaryForm": "の",
+      "reading": "の",
+      "romaji": "no",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "связь определений"
+      ]
+    },
+    {
+      "id": "shita",
+      "surface": "下",
+      "dictionaryForm": "下",
+      "reading": "した",
+      "romaji": "shita",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "низ; под"
+      ]
+    },
+    {
+      "id": "de",
+      "surface": "で",
+      "dictionaryForm": "で",
+      "reading": "で",
+      "romaji": "de",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "место действия"
+      ]
+    },
+    {
+      "id": "mizu",
+      "surface": "水",
+      "dictionaryForm": "水",
+      "reading": "みず",
+      "romaji": "mizu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вода"
+      ]
+    },
+    {
+      "id": "o",
+      "surface": "を",
+      "dictionaryForm": "を",
+      "reading": "を",
+      "romaji": "o",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "прямое дополнение"
+      ]
+    },
+    {
+      "id": "nomu",
+      "surface": "飲む",
+      "dictionaryForm": "飲む",
+      "reading": "のむ",
+      "romaji": "nomu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "пить"
+      ]
+    },
+    {
+      "id": "tsugi",
+      "surface": "次",
+      "dictionaryForm": "次",
+      "reading": "つぎ",
+      "romaji": "tsugi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "следующий"
+      ]
+    },
+    {
+      "id": "hi",
+      "surface": "日",
+      "dictionaryForm": "日",
+      "reading": "ひ",
+      "romaji": "hi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "день"
+      ]
+    },
+    {
+      "id": "mata",
+      "surface": "また",
+      "dictionaryForm": "また",
+      "reading": "また",
+      "romaji": "mata",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "снова"
+      ]
+    },
+    {
+      "id": "ageru",
+      "surface": "あげる",
+      "dictionaryForm": "あげる",
+      "reading": "あげる",
+      "romaji": "ageru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "давать"
+      ]
+    }
+  ],
+  "kanji": [
+    {
+      "id": "kanji.asa",
+      "character": "朝",
+      "meanings": [
+        "утро"
+      ],
+      "on": [
+        "チョウ"
+      ],
+      "kun": [
+        "あさ"
+      ],
+      "components": [
+        "十",
+        "日",
+        "月"
+      ],
+      "wordIds": [
+        "asa"
+      ]
+    },
+    {
+      "id": "kanji.watashi",
+      "character": "私",
+      "meanings": [
+        "я"
+      ],
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "わたし",
+        "わたくし"
+      ],
+      "components": [
+        "禾",
+        "厶"
+      ],
+      "wordIds": [
+        "watashi"
+      ]
+    },
+    {
+      "id": "kanji.kou",
+      "character": "公",
+      "meanings": [
+        "общественный"
+      ],
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "おおやけ"
+      ],
+      "components": [
+        "八",
+        "厶"
+      ],
+      "wordIds": [
+        "kouen"
+      ]
+    },
+    {
+      "id": "kanji.en",
+      "character": "園",
+      "meanings": [
+        "сад"
+      ],
+      "on": [
+        "エン"
+      ],
+      "kun": [
+        "その"
+      ],
+      "components": [
+        "囗",
+        "袁"
+      ],
+      "wordIds": [
+        "kouen"
+      ]
+    },
+    {
+      "id": "kanji.iku",
+      "character": "行",
+      "meanings": [
+        "идти"
+      ],
+      "on": [
+        "コウ",
+        "ギョウ"
+      ],
+      "kun": [
+        "い.く",
+        "ゆ.く",
+        "おこな.う"
+      ],
+      "components": [
+        "彳",
+        "亍"
+      ],
+      "wordIds": [
+        "iku"
+      ]
+    },
+    {
+      "id": "kanji.chiisai",
+      "character": "小",
+      "meanings": [
+        "маленький"
+      ],
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "ちい.さい",
+        "こ",
+        "お"
+      ],
+      "components": [
+        "小"
+      ],
+      "wordIds": [
+        "chiisana"
+      ]
+    },
+    {
+      "id": "kanji.neko",
+      "character": "猫",
+      "meanings": [
+        "кошка"
+      ],
+      "on": [
+        "ビョウ"
+      ],
+      "kun": [
+        "ねこ"
+      ],
+      "components": [
+        "犭",
+        "苗"
+      ],
+      "wordIds": [
+        "neko"
+      ]
+    },
+    {
+      "id": "kanji.ki",
+      "character": "木",
+      "meanings": [
+        "дерево"
+      ],
+      "on": [
+        "モク",
+        "ボク"
+      ],
+      "kun": [
+        "き",
+        "こ"
+      ],
+      "components": [
+        "木"
+      ],
+      "wordIds": [
+        "ki"
+      ]
+    },
+    {
+      "id": "kanji.shita",
+      "character": "下",
+      "meanings": [
+        "низ"
+      ],
+      "on": [
+        "カ",
+        "ゲ"
+      ],
+      "kun": [
+        "した",
+        "しも",
+        "もと",
+        "さ.がる",
+        "くだ.る"
+      ],
+      "components": [
+        "一",
+        "卜"
+      ],
+      "wordIds": [
+        "shita"
+      ]
+    },
+    {
+      "id": "kanji.mizu",
+      "character": "水",
+      "meanings": [
+        "вода"
+      ],
+      "on": [
+        "スイ"
+      ],
+      "kun": [
+        "みず"
+      ],
+      "components": [
+        "水"
+      ],
+      "wordIds": [
+        "mizu"
+      ]
+    },
+    {
+      "id": "kanji.nomu",
+      "character": "飲",
+      "meanings": [
+        "пить"
+      ],
+      "on": [
+        "イン"
+      ],
+      "kun": [
+        "の.む"
+      ],
+      "components": [
+        "飠",
+        "欠"
+      ],
+      "wordIds": [
+        "nomu"
+      ]
+    },
+    {
+      "id": "kanji.tsugi",
+      "character": "次",
+      "meanings": [
+        "следующий"
+      ],
+      "on": [
+        "ジ",
+        "シ"
+      ],
+      "kun": [
+        "つぎ",
+        "つ.ぐ"
+      ],
+      "components": [
+        "冫",
+        "欠"
+      ],
+      "wordIds": [
+        "tsugi"
+      ]
+    },
+    {
+      "id": "kanji.hi",
+      "character": "日",
+      "meanings": [
+        "день; солнце"
+      ],
+      "on": [
+        "ニチ",
+        "ジツ"
+      ],
+      "kun": [
+        "ひ",
+        "か"
+      ],
+      "components": [
+        "日"
+      ],
+      "wordIds": [
+        "hi"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "grammar.topic",
+      "title": "は: тема",
+      "explanation": "Частица は выделяет тему: о ком или о чём говорится. Как частица читается わ (wa).",
+      "examples": [
+        {
+          "text": "私は公園へ行きます。",
+          "translation": "Я иду в парк."
+        }
+      ],
+      "relatedIds": [
+        "grammar.direction",
+        "grammar.polite"
+      ]
+    },
+    {
+      "id": "grammar.direction",
+      "title": "へ: направление",
+      "explanation": "После места частица へ обозначает направление движения. Читается え (e).",
+      "examples": [
+        {
+          "text": "公園へ行きます。",
+          "translation": "Иду в парк."
+        }
+      ],
+      "relatedIds": [
+        "grammar.existence"
+      ]
+    },
+    {
+      "id": "grammar.polite",
+      "title": "〜ます: вежливая форма",
+      "explanation": "Основа глагола + ます образует вежливую непрошедшую форму: настоящее, привычное или будущее действие. 行く → 行きます; 飲む → 飲みます.",
+      "examples": [
+        {
+          "text": "水を飲みます。",
+          "translation": "Пью воду."
+        }
+      ],
+      "relatedIds": [
+        "grammar.progressive"
+      ]
+    },
+    {
+      "id": "grammar.existence",
+      "title": "に〜がいます: наличие живого",
+      "explanation": "Место + に, живое существо + が, затем います: кто-то находится в указанном месте. Известное существо можно выделить темой с は. います — вежливая форма いる.",
+      "examples": [
+        {
+          "text": "公園に猫がいます。",
+          "translation": "В парке есть кошка."
+        }
+      ],
+      "relatedIds": [
+        "grammar.location",
+        "grammar.topic"
+      ]
+    },
+    {
+      "id": "grammar.location",
+      "title": "で: место действия",
+      "explanation": "Частица で указывает, где происходит действие. Для местонахождения с いる используется に.",
+      "examples": [
+        {
+          "text": "木の下で水を飲みます。",
+          "translation": "Пью воду под деревом."
+        }
+      ],
+      "relatedIds": [
+        "grammar.existence"
+      ]
+    },
+    {
+      "id": "grammar.possession",
+      "title": "の: связь существительных",
+      "explanation": "Первое существительное определяет второе: 木の下 — место под деревом, 次の日 — следующий день.",
+      "examples": [
+        {
+          "text": "木の下に猫がいます。",
+          "translation": "Под деревом есть кошка."
+        }
+      ],
+      "relatedIds": [
+        "grammar.existence"
+      ]
+    },
+    {
+      "id": "grammar.object",
+      "title": "を: объект действия",
+      "explanation": "Частица を (читается お, o) отмечает прямое дополнение: 水を飲む — пить воду.",
+      "examples": [
+        {
+          "text": "猫に水をあげます。",
+          "translation": "Даю кошке воду."
+        }
+      ],
+      "relatedIds": [
+        "grammar.recipient"
+      ]
+    },
+    {
+      "id": "grammar.progressive",
+      "title": "〜ている: действие в процессе",
+      "explanation": "Форма на て + いる может описывать текущее действие. 飲む → 飲んでいる; вежливо 飲んでいます.",
+      "examples": [
+        {
+          "text": "猫は水を飲んでいます。",
+          "translation": "Кошка пьёт воду."
+        }
+      ],
+      "relatedIds": [
+        "grammar.polite"
+      ]
+    },
+    {
+      "id": "grammar.recipient",
+      "title": "に: получатель",
+      "explanation": "С あげる частица に отмечает получателя, а を — то, что дают.",
+      "examples": [
+        {
+          "text": "私は猫に水をあげます。",
+          "translation": "Я даю кошке воду."
+        }
+      ],
+      "relatedIds": [
+        "grammar.object"
+      ]
+    }
+  ]
+}

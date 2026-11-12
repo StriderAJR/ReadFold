@@ -1,0 +1,103 @@
+import { z } from 'zod';
+
+const idSchema = z.string().regex(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/);
+const textSchema = z.string().min(1);
+const uniqueIds = (items: readonly { id: string }[]) => new Set(items.map((item) => item.id)).size === items.length;
+const chapterMetadataSchema = z.object({
+  id: idSchema, title: textSchema,
+  path: z.string().regex(/^books\/[a-z0-9/-]+\.json$/), sentenceCount: z.number().int().positive(),
+}).strict();
+
+export const bookMetadataSchema = z.object({
+  schemaVersion: z.literal(1), id: idSchema, title: textSchema, author: textSchema, description: textSchema,
+  originalLanguage: textSchema, translationLanguage: textSchema, difficulty: textSchema,
+  tags: z.array(textSchema), cover: textSchema, license: textSchema, source: textSchema,
+  chapters: z.array(chapterMetadataSchema).min(1).refine(uniqueIds, 'Duplicate chapter IDs'),
+}).strict();
+export const catalogSchema = z.array(bookMetadataSchema).refine(uniqueIds, 'Duplicate book IDs');
+export const wordSchema = z.object({
+  id: idSchema, surface: textSchema, dictionaryForm: textSchema, reading: textSchema,
+  romaji: textSchema, partOfSpeech: textSchema, meanings: z.array(textSchema).min(1),
+}).strict();
+export const kanjiSchema = z.object({
+  id: idSchema, character: z.string().length(1), meanings: z.array(textSchema).min(1),
+  on: z.array(textSchema), kun: z.array(textSchema), components: z.array(textSchema),
+  wordIds: z.array(idSchema), mnemonic: textSchema.optional(),
+}).strict();
+export const grammarSchema = z.object({
+  id: idSchema, title: textSchema, explanation: textSchema,
+  examples: z.array(z.object({ text: textSchema, translation: textSchema }).strict()).min(1),
+  relatedIds: z.array(idSchema),
+}).strict();
+export const dictionarySchema = z.object({
+  schemaVersion: z.literal(1), words: z.array(wordSchema), kanji: z.array(kanjiSchema), grammar: z.array(grammarSchema),
+}).strict().superRefine((dictionary, context) => {
+  if (!uniqueIds([...dictionary.words, ...dictionary.kanji, ...dictionary.grammar])) {
+    context.addIssue({ code: z.ZodIssueCode.custom, message: 'Dictionary IDs must be globally unique' });
+  }
+  for (const kind of ['words', 'kanji', 'grammar'] as const) {
+    if (!uniqueIds(dictionary[kind])) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: [kind], message: 'Duplicate dictionary IDs' });
+    }
+  }
+  const wordIds = new Set(dictionary.words.map((word) => word.id));
+  const grammarIds = new Set(dictionary.grammar.map((grammar) => grammar.id));
+  dictionary.kanji.forEach((kanji, index) => {
+    if (kanji.wordIds.some((id) => !wordIds.has(id))) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index, 'wordIds'], message: 'Unknown word' });
+    }
+  });
+  dictionary.grammar.forEach((grammar, index) => {
+    if (grammar.relatedIds.some((id) => !grammarIds.has(id))) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['grammar', index, 'relatedIds'], message: 'Unknown grammar' });
+    }
+  });
+});
+export const sentenceSchema = z.object({
+  id: idSchema, text: textSchema,
+  segments: z.array(z.object({ text: textSchema, reading: textSchema.optional() }).strict()).min(1),
+  hiragana: textSchema, romaji: textSchema, literal: textSchema, natural: textSchema,
+  words: z.array(z.object({
+    wordId: idSchema, surface: textSchema, meaning: textSchema, inflection: textSchema.optional(), role: textSchema.optional(),
+  }).strict()).min(1),
+  kanjiIds: z.array(idSchema), grammarIds: z.array(idSchema),
+  grammarRoles: z.record(idSchema, textSchema).optional(),
+}).strict().refine((sentence) => sentence.segments.map((segment) => segment.text).join('') === sentence.text, {
+  message: 'Segments must reproduce sentence text', path: ['segments'],
+}).refine((sentence) => Object.keys(sentence.grammarRoles ?? {}).every((id) => sentence.grammarIds.includes(id)), {
+  message: 'Grammar roles must refer to sentence grammar IDs', path: ['grammarRoles'],
+});
+export const chapterSchema = z.object({
+  schemaVersion: z.literal(1), id: idSchema, bookId: idSchema, title: textSchema,
+  paragraphs: z.array(z.object({ id: idSchema, sentences: z.array(sentenceSchema).min(1) }).strict()).min(1),
+}).strict().superRefine((chapter, context) => {
+  if (!uniqueIds(chapter.paragraphs) || !uniqueIds(chapter.paragraphs.flatMap((paragraph) => paragraph.sentences))) {
+    context.addIssue({ code: z.ZodIssueCode.custom, message: 'Duplicate paragraph or sentence IDs' });
+  }
+});
+
+export type BookMetadata = z.infer<typeof bookMetadataSchema>;
+export type Chapter = z.infer<typeof chapterSchema>;
+export type Sentence = z.infer<typeof sentenceSchema>;
+export type Word = z.infer<typeof wordSchema>;
+export type Kanji = z.infer<typeof kanjiSchema>;
+export type Grammar = z.infer<typeof grammarSchema>;
+export type Dictionary = z.infer<typeof dictionarySchema>;
+
+/** Validate links after independently parsing externally loaded files. */
+export function validateChapterReferences(chapter: Chapter, book: BookMetadata, dictionary: Dictionary): void {
+  const metadata = book.chapters.find((item) => item.id === chapter.id);
+  const sentences = chapter.paragraphs.flatMap((paragraph) => paragraph.sentences);
+  if (chapter.bookId !== book.id || !metadata || metadata.sentenceCount !== sentences.length) {
+    throw new Error('Chapter does not match catalog metadata');
+  }
+  const words = new Set(dictionary.words.map((item) => item.id));
+  const kanji = new Set(dictionary.kanji.map((item) => item.id));
+  const grammar = new Set(dictionary.grammar.map((item) => item.id));
+  for (const sentence of sentences) {
+    if (sentence.words.some((item) => !words.has(item.wordId)) || sentence.kanjiIds.some((id) => !kanji.has(id)) ||
+      sentence.grammarIds.some((id) => !grammar.has(id))) {
+      throw new Error(`Unknown dictionary reference in ${sentence.id}`);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "demo",
+    "title": "Кошка в парке",
+    "author": "Команда ReadFold",
+    "description": "Короткий оригинальный рассказ о встрече с кошкой. Японский текст с русским разбором.",
+    "originalLanguage": "ja",
+    "translationLanguage": "ru",
+    "difficulty": "Начальный · JLPT N5",
+    "tags": [
+      "повседневность",
+      "животные"
+    ],
+    "cover": "🐈",
+    "license": "CC0-1.0",
+    "source": "Оригинальный учебный текст ReadFold, создан для этого приложения; не является фрагментом сторонней книги.",
+    "chapters": [
+      {
+        "id": "demo.chapter-1",
+        "title": "Встреча в парке",
+        "path": "books/demo/chapter-1.json",
+        "sentenceCount": 3
+      },
+      {
+        "id": "demo.chapter-2",
+        "title": "На следующий день",
+        "path": "books/demo/chapter-2.json",
+        "sentenceCount": 3
+      }
+    ],
+    "schemaVersion": 1
+  }
+]

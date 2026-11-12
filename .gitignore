@@ -1,1 +1,10 @@
 ﻿.sensitive
+.env.local
+.env.*.local
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.heartbeat-state/
+.local-tools/
