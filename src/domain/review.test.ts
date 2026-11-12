@@ -3,7 +3,13 @@ import type { Word } from './content';
 import { createReviewTasks, scheduleReview } from './review';
 
 const word = (id: string, surface: string, meanings: string[]): Word => ({
-  id, surface, dictionaryForm: surface, reading: surface, romaji: id, partOfSpeech: 'noun', meanings,
+  id,
+  surface,
+  dictionaryForm: surface,
+  reading: surface,
+  romaji: id,
+  partOfSpeech: 'noun',
+  meanings,
 });
 
 describe('review scheduling', () => {

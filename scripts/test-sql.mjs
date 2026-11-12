@@ -16,4 +16,6 @@ try {
   await database.exec(await readFile('supabase/migrations/202611120001_user_sync.sql', 'utf8'));
   await database.exec(await readFile('supabase/tests/user_isolation.sql', 'utf8'));
   console.log('PostgreSQL migration and two-account RLS/idempotency/payload tests passed (local PGlite).');
-} finally { await database.close(); }
+} finally {
+  await database.close();
+}

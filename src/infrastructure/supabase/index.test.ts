@@ -20,16 +20,28 @@ function fixture() {
     },
   };
   const services = servicesForClient(sdk as unknown as SupabaseClient, 'https://example.test/ReadFold/');
-  return { sdk, services, unsubscribe, emit: (session: { user: { id: string } } | null) => listener('SIGNED_IN', session) };
+  return {
+    sdk,
+    services,
+    unsubscribe,
+    emit: (session: { user: { id: string } } | null) => {
+      sdk.auth.getSession.mockResolvedValue({ data: { session }, error: null });
+      listener('SIGNED_IN', session);
+    },
+  };
 }
 
-afterEach(() => { vi.useRealTimers(); });
+afterEach(() => {
+  vi.useRealTimers();
+});
 
 describe('Supabase service adapters', () => {
   it('honors transport Retry-After seconds and dates', async () => {
     const { sdk } = fixture();
     for (const retryAfter of ['120', 'Thu, 12 Nov 2026 18:00:00 GMT']) {
-      const rpc = vi.fn().mockResolvedValue({ data: null, error: { message: 'Rate limited' }, status: 429, retryAfter });
+      const rpc = vi
+        .fn()
+        .mockResolvedValue({ data: null, error: { message: 'Rate limited' }, status: 429, retryAfter });
       const adapter = servicesForClient(sdk as unknown as SupabaseClient, 'https://example.test/', undefined, rpc);
       await expect(adapter.transport.pull(0)).rejects.toMatchObject({ status: 429, retryAfter });
     }
@@ -37,12 +49,14 @@ describe('Supabase service adapters', () => {
   it('restores separate app and auth identities using the authenticated RPC', async () => {
     const { services, sdk } = fixture();
     await expect(services.auth.restore()).resolves.toEqual({
-      appUserId: 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', authUserId: 'auth-id',
+      appUserId: 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',
+      authUserId: 'auth-id',
     });
     expect(sdk.rpc).toHaveBeenCalledWith('ensure_app_user');
     await services.auth.signIn('github');
     expect(sdk.auth.signInWithOAuth).toHaveBeenCalledWith({
-      provider: 'github', options: { redirectTo: 'https://example.test/ReadFold/' },
+      provider: 'github',
+      options: { redirectTo: 'https://example.test/ReadFold/' },
     });
   });
 
@@ -135,13 +149,62 @@ describe('Supabase service adapters', () => {
     sdk.rpc.mockResolvedValue({ data: null, error: { message: 'Offline' }, status: 0 });
     const second = servicesForClient(sdk as unknown as SupabaseClient, 'https://example.test/', storage);
     await expect(second.auth.restore()).resolves.toEqual(expected);
-    storage.getItem.mockImplementation(() => { throw new Error('Storage disabled'); });
+    storage.getItem.mockImplementation(() => {
+      throw new Error('Storage disabled');
+    });
     await expect(second.auth.restore()).resolves.toEqual(expected);
     const uncached = servicesForClient(sdk as unknown as SupabaseClient, 'https://example.test/', storage);
     await expect(uncached.auth.restore()).rejects.toThrow('Offline');
     sdk.rpc.mockResolvedValue({ data: expected?.appUserId, error: null });
-    storage.setItem.mockImplementation(() => { throw new Error('Storage disabled'); });
+    storage.setItem.mockImplementation(() => {
+      throw new Error('Storage disabled');
+    });
     await expect(second.auth.restore()).resolves.toEqual(expected);
+  });
+
+  it.each([false, true])('does not cache a stale RPC identity after an account switch (ABA: %s)', async (aba) => {
+    vi.useFakeTimers();
+    const { sdk, emit } = fixture();
+    const storage = { getItem: vi.fn().mockReturnValue(null), setItem: vi.fn() };
+    const services = servicesForClient(sdk as unknown as SupabaseClient, 'https://example.test/', storage);
+    services.auth.subscribe(vi.fn());
+    let finishRpc: (value: { data: string; error: null }) => void = () => {};
+    sdk.rpc.mockReturnValueOnce(
+      new Promise<{ data: string; error: null }>((resolve) => {
+        finishRpc = resolve;
+      }),
+    );
+    const restoring = services.auth.restore();
+    await Promise.resolve();
+    expect(sdk.rpc).toHaveBeenCalledOnce();
+    emit({ user: { id: 'account-b' } });
+    if (aba) {
+      emit({ user: { id: 'auth-id' } });
+    }
+    const rejection = expect(restoring).rejects.toThrow('Authentication changed');
+    finishRpc({ data: 'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb', error: null });
+    await rejection;
+    expect(storage.setItem).not.toHaveBeenCalled();
+    emit({ user: { id: 'auth-id' } });
+    sdk.rpc.mockResolvedValue({ data: null, error: { message: 'Offline' }, status: 0 });
+    await expect(services.auth.restore()).rejects.toThrow('Offline');
+  });
+
+  it('checks the current SDK account before using an offline identity cache without auth events', async () => {
+    const { services, sdk } = fixture();
+    await services.auth.restore();
+    let finishRpc: (value: { data: null; error: { message: string }; status: number }) => void = () => {};
+    sdk.rpc.mockReturnValueOnce(
+      new Promise((resolve) => {
+        finishRpc = resolve;
+      }),
+    );
+    const restoring = services.auth.restore();
+    await Promise.resolve();
+    sdk.auth.getSession.mockResolvedValue({ data: { session: { user: { id: 'account-b' } } }, error: null });
+    const rejection = expect(restoring).rejects.toThrow('Authentication changed');
+    finishRpc({ data: null, error: { message: 'Offline' }, status: 0 });
+    await rejection;
   });
 
   it('rejects invalid cursors and malformed remote operations', async () => {
@@ -169,8 +232,12 @@ describe('Supabase service adapters', () => {
   it('accepts imported ISO timestamps with timezone offsets without rewriting them', async () => {
     const { services, sdk } = fixture();
     const operation: UserOperation = {
-      id: 'offset-operation', ownerId: 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa', deviceId: 'device',
-      entityKind: 'favorite', entityId: 'book', payload: { active: true },
+      id: 'offset-operation',
+      ownerId: 'aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',
+      deviceId: 'device',
+      entityKind: 'favorite',
+      entityId: 'book',
+      payload: { active: true },
       createdAt: '2026-11-12T12:00:00.000+05:00',
     };
     sdk.rpc.mockResolvedValue({ data: { operations: [operation], cursor: 1 }, error: null });

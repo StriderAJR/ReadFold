@@ -59,7 +59,9 @@ describe('book format', () => {
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
     dictionary.kanji[0].id = 'kanji.unique';
     dictionary.grammar[0].id = dictionary.words[0].id;
-    dictionary.grammar.forEach((entry) => { entry.relatedIds = []; });
+    dictionary.grammar.forEach((entry) => {
+      entry.relatedIds = [];
+    });
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
   });
 

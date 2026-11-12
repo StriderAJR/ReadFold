@@ -56,6 +56,7 @@ begin
     {"kind":"review","payload":{"rating":"good","dueAt":1.5}},
     {"kind":"review","payload":{"rating":"good","extra":true}},
     {"kind":"learning","payload":{"status":"known","extra":true}},
+    {"kind":"learning","payload":{"status":"known","automatic":true}},
     {"kind":"review","payload":{"rating":"good","reviewedAt":"2026-02-30T00:00:00Z"}}
   ]'::jsonb) loop
     rejected := false;
@@ -96,6 +97,9 @@ begin
     'id','valid-review','entityKind','review','payload',jsonb_build_object(
       'rating','good','correct',true,'taskId','task','repetitions',1,'intervalDays',1.5,'dueAt',1794484800000,
       'reviewedAt','2026-11-12T05:00:00+05:00'))));
+  perform public.push_operations(jsonb_build_array(item || jsonb_build_object(
+    'id','automatic-encounter','entityKind','learning','payload',jsonb_build_object(
+      'status','encountered','automatic',true))));
 end;
 $$;
 

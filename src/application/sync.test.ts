@@ -12,7 +12,9 @@ function repository() {
   return repo;
 }
 afterEach(async () => {
-  for (const repo of repositories.splice(0)) { await repo.db.delete(); }
+  for (const repo of repositories.splice(0)) {
+    await repo.db.delete();
+  }
   vi.restoreAllMocks();
 });
 function transport(overrides: Partial<SyncTransport> = {}): SyncTransport {
@@ -20,17 +22,47 @@ function transport(overrides: Partial<SyncTransport> = {}): SyncTransport {
 }
 
 describe('local persistence and reconciliation', () => {
+  it('orders offset timestamps chronologically with locale-independent ID ties', async () => {
+    const repo = repository();
+    const base = {
+      id: 'first',
+      ownerId: 'a',
+      deviceId: 'test',
+      entityKind: 'learning' as const,
+      entityId: 'neko',
+      payload: { status: 'learning' },
+      createdAt: '2026-11-12T12:00:00+05:00',
+    };
+    const later = { ...base, id: 'second', payload: { status: 'known' }, createdAt: '2026-11-12T10:00:00Z' };
+    await repo.importData('a', { version: 1, operations: [later, base] });
+    expect((await repo.getOperations('a')).map((operation) => operation.id)).toEqual(['first', 'second']);
+    const tied = [
+      { ...base, id: 'z', payload: { status: 'known' } },
+      { ...base, id: 'a' },
+    ];
+    expect(reduceOperations(tied).learning.neko).toBe('known');
+  });
+  it('automatic encounters never downgrade explicit learning across devices', async () => {
+    const repo = repository();
+    await repo.record('a', 'learning', 'neko', { status: 'known' });
+    await repo.record('a', 'learning', 'neko', { status: 'encountered', automatic: true });
+    expect(reduceOperations(await repo.getOperations('a')).learning.neko).toBe('known');
+    await repo.record('a', 'learning', 'neko', { status: 'encountered' });
+    expect(reduceOperations(await repo.getOperations('a')).learning.neko).toBe('encountered');
+    await expect(repo.record('a', 'learning', 'neko', { status: 'known', automatic: true })).rejects.toThrow();
+  });
   it('rejects oversized or invalid operations atomically without poisoning outbox', async () => {
     const repo = repository();
     await expect(repo.record('a', 'learning', 'x'.repeat(513), { status: 'known' })).rejects.toThrow();
-    await expect(repo.record('a', 'review', 'word', { rating: 'good', note: 'x'.repeat(48 * 1024) }))
-      .rejects.toThrow();
+    await expect(repo.record('a', 'review', 'word', { rating: 'good', note: 'x'.repeat(48 * 1024) })).rejects.toThrow();
     await expect(repo.record('a', 'review', 'word', { rating: 'good', invalid: Number.NaN })).rejects.toThrow();
     const operation = await repo.record('a', 'learning', 'word', { status: 'known' });
-    await expect(repo.importData('a', { version: 1, operations: [{ ...operation, deviceId: 'x'.repeat(129) }] }))
-      .rejects.toThrow();
-    await expect(repo.importData('a', { version: 1, operations: [{ ...operation, id: 'x'.repeat(129) }] }))
-      .rejects.toThrow();
+    await expect(
+      repo.importData('a', { version: 1, operations: [{ ...operation, deviceId: 'x'.repeat(129) }] }),
+    ).rejects.toThrow();
+    await expect(
+      repo.importData('a', { version: 1, operations: [{ ...operation, id: 'x'.repeat(129) }] }),
+    ).rejects.toThrow();
     expect(await repo.getOperations('a')).toEqual([operation]);
     expect(await repo.getOutbox('a')).toMatchObject([{ id: operation.id }]);
   });
@@ -47,7 +79,9 @@ describe('local persistence and reconciliation', () => {
       expect(Date.parse(second.createdAt)).toBe(Date.parse(first.createdAt) + 1);
       expect(Date.parse(third.createdAt)).toBe(Date.parse(second.createdAt) + 1);
       expect(reduceOperations(await repo.getOperations('a')).learning.word).toBe('mastered');
-    } finally { secondTab.db.close(); }
+    } finally {
+      secondTab.db.close();
+    }
   });
 
   it('reduces prototype-like entity IDs without inherited objects or prototype mutation', async () => {
@@ -69,12 +103,20 @@ describe('local persistence and reconciliation', () => {
     const name = `migration-${crypto.randomUUID()}`;
     const previous = new Dexie(name);
     previous.version(1).stores({
-      operations: 'id, ownerId, [ownerId+entityKind+entityId]', outbox: 'id, ownerId, nextAttemptAt',
-      metadata: 'key', cache: 'id', diagnostics: '++id, createdAt',
+      operations: 'id, ownerId, [ownerId+entityKind+entityId]',
+      outbox: 'id, ownerId, nextAttemptAt',
+      metadata: 'key',
+      cache: 'id',
+      diagnostics: '++id, createdAt',
     });
     const operation: UserOperation = {
-      id: crypto.randomUUID(), ownerId: 'a', deviceId: 'd', entityKind: 'learning', entityId: 'word',
-      payload: { status: 'known' }, createdAt: new Date().toISOString(),
+      id: crypto.randomUUID(),
+      ownerId: 'a',
+      deviceId: 'd',
+      entityKind: 'learning',
+      entityId: 'word',
+      payload: { status: 'known' },
+      createdAt: new Date().toISOString(),
     };
     await previous.table('operations').add(operation);
     await previous.table('outbox').add({ id: operation.id, ownerId: 'a', attempts: 3, nextAttemptAt: 123 });
@@ -91,7 +133,9 @@ describe('local persistence and reconciliation', () => {
 
   it('bounds and redacts diagnostics and aggregates category/level counts', async () => {
     const repo = repository();
-    for (let i = 0; i < 102; i++) { await repo.diagnostic('sync_failed', 503); }
+    for (let i = 0; i < 102; i++) {
+      await repo.diagnostic('sync_failed', 503);
+    }
     await repo.diagnostic('private-message-token@example.test', 12345);
     const diagnostics = await repo.exportDiagnostics();
     expect(diagnostics).toHaveLength(2);
@@ -105,8 +149,13 @@ describe('local persistence and reconciliation', () => {
     const operation = await repo.record('a', 'review', 'word', { rating: 'good' });
     await repo.diagnostic('sync_failed', 503);
     await repo.db.diagnostics.add({
-      code: 'secret@example.test', category: 'other', level: 'error', count: 1, createdAt: Date.now(),
-      lastSeen: Date.now(), status: 12345,
+      code: 'secret@example.test',
+      category: 'other',
+      level: 'error',
+      count: 1,
+      createdAt: Date.now(),
+      lastSeen: Date.now(),
+      status: 12345,
     });
     const exported = await repo.exportDiagnostics();
     expect(JSON.stringify(exported)).not.toContain('secret');
@@ -121,7 +170,9 @@ describe('local persistence and reconciliation', () => {
 
   it('retains at most 100 distinct diagnostic aggregates', async () => {
     const repo = repository();
-    for (let status = 100; status < 205; status++) { await repo.diagnostic('sync_failed', status); }
+    for (let status = 100; status < 205; status++) {
+      await repo.diagnostic('sync_failed', status);
+    }
     expect(await repo.exportDiagnostics()).toHaveLength(100);
   });
 
@@ -164,7 +215,9 @@ describe('local persistence and reconciliation', () => {
       await Promise.all([repo.mergeGuest('a'), secondTab.mergeGuest('a')]);
       expect(await repo.getOperations('a')).toHaveLength(1);
       expect(await secondTab.getOutbox('a')).toHaveLength(1);
-    } finally { secondTab.db.close(); }
+    } finally {
+      secondTab.db.close();
+    }
   });
 
   it('validates the whole import before writing and preserves cursor after rejected remote rows', async () => {
@@ -181,10 +234,16 @@ describe('local persistence and reconciliation', () => {
 
   it('reduces conflicts deterministically, preserves reviews and read set, distinguishes last from maximum', async () => {
     const base: UserOperation = {
-      id: '1', ownerId: 'a', deviceId: 'd', entityId: 'book/ch', entityKind: 'reading',
-      createdAt: '2026-01-01T00:00:00.000Z', payload: { sentenceId: 's9', position: 9 },
+      id: '1',
+      ownerId: 'a',
+      deviceId: 'd',
+      entityId: 'book/ch',
+      entityKind: 'reading',
+      createdAt: '2026-01-01T00:00:00.000Z',
+      payload: { sentenceId: 's9', position: 9 },
     };
-    const operations: UserOperation[] = [base,
+    const operations: UserOperation[] = [
+      base,
       { ...base, id: '2', payload: { sentenceId: 's2', position: 2 } },
       { ...base, id: '3', entityKind: 'review', payload: { rating: 'again' } },
       { ...base, id: '4', entityKind: 'review', payload: { rating: 'good' } },
@@ -203,8 +262,9 @@ describe('sync failure and recovery', () => {
   it('keeps a confirmed push acknowledged if pull fails and retries pull without resending', async () => {
     const repo = repository();
     await repo.record('a', 'review', 'word', { rating: 'good' });
-    const remote = transport({ pull: vi.fn().mockRejectedValueOnce(new Error('offline'))
-      .mockResolvedValue({ operations: [], cursor: 0 }) });
+    const remote = transport({
+      pull: vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValue({ operations: [], cursor: 0 }),
+    });
     const engine = new SyncEngine(repo, remote);
     await engine.sync('a');
     expect(await repo.getOutbox('a')).toHaveLength(0);
@@ -217,27 +277,32 @@ describe('sync failure and recovery', () => {
   it('only acknowledges the pushed snapshot while a new edit arrives in flight', async () => {
     const repo = repository();
     const first = await repo.record('a', 'learning', 'word', { status: 'known' });
-    const remote = transport({ push: async (operations) => {
-      expect(operations.map((operation) => operation.id)).toEqual([first.id]);
-      await repo.record('a', 'learning', 'word', { status: 'learning' });
-    } });
+    const remote = transport({
+      push: async (operations) => {
+        expect(operations.map((operation) => operation.id)).toEqual([first.id]);
+        await repo.record('a', 'learning', 'word', { status: 'learning' });
+      },
+    });
     await new SyncEngine(repo, remote).sync('a');
     expect(await repo.getOutbox('a')).toHaveLength(1);
     expect(await repo.getOperations('a')).toHaveLength(2);
   });
 
-  it.each([401, 403, 409, 429, 503])('retains immutable operations on HTTP %s and recovers after retry', async (status) => {
-    const repo = repository();
-    const operation = await repo.record('a', 'review', 'word', { rating: 'good' });
-    const push = vi.fn().mockRejectedValueOnce({ status, retryAfter: 0 }).mockResolvedValue(undefined);
-    const engine = new SyncEngine(repo, transport({ push }));
-    await engine.sync('a');
-    expect(await repo.getOutbox('a')).toMatchObject([{ id: operation.id, attempts: 1 }]);
-    await engine.sync('a');
-    expect(await repo.getOutbox('a')).toEqual([]);
-    expect(await repo.getOperations('a')).toEqual([operation]);
-    expect(engine.status).toBe('synced');
-  });
+  it.each([401, 403, 409, 429, 503])(
+    'retains immutable operations on HTTP %s and recovers after retry',
+    async (status) => {
+      const repo = repository();
+      const operation = await repo.record('a', 'review', 'word', { rating: 'good' });
+      const push = vi.fn().mockRejectedValueOnce({ status, retryAfter: 0 }).mockResolvedValue(undefined);
+      const engine = new SyncEngine(repo, transport({ push }));
+      await engine.sync('a');
+      expect(await repo.getOutbox('a')).toMatchObject([{ id: operation.id, attempts: 1 }]);
+      await engine.sync('a');
+      expect(await repo.getOutbox('a')).toEqual([]);
+      expect(await repo.getOperations('a')).toEqual([operation]);
+      expect(engine.status).toBe('synced');
+    },
+  );
 
   it('persists backoff across repository restart and does not push before it is due', async () => {
     const repo = repository();
@@ -249,13 +314,17 @@ describe('sync failure and recovery', () => {
       await new SyncEngine(reopened, transport({ push })).sync('a');
       expect(push).toHaveBeenCalledTimes(1);
       expect((await reopened.getOutbox('a'))[0].nextAttemptAt).toBeGreaterThan(Date.now());
-    } finally { reopened.db.close(); }
+    } finally {
+      reopened.db.close();
+    }
   });
 
   it('replays canonical remote rows and persists each page with its cursor', async () => {
     const repo = repository();
     const local = await repo.record('a', 'favorite', 'book', { active: true });
-    const pull = vi.fn().mockResolvedValueOnce({ operations: [local], cursor: 4 })
+    const pull = vi
+      .fn()
+      .mockResolvedValueOnce({ operations: [local], cursor: 4 })
       .mockResolvedValueOnce({ operations: [], cursor: 4 });
     await new SyncEngine(repo, transport({ pull })).sync('a');
     expect(await repo.getOperations('a')).toHaveLength(1);

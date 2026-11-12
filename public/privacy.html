@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ReadFold Privacy Policy: personal information, Google and GitHub sign-in, local and cloud storage, sharing, retention, and deletion.">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy | ReadFold</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#142c46;background:#f6f8fc;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;line-height:1.7}a{color:#215b91;text-underline-offset:3px}a:hover{color:#c9504c}
+header{background:#fff;border-bottom:1px solid #dce4ee}nav,footer{max-width:960px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.55rem;color:#142c46;text-decoration:none;letter-spacing:-.035em}.brand span{color:#ec635d}
+.links{display:flex;gap:20px;flex-wrap:wrap}main{max-width:920px;margin:42px auto 70px;padding:0 24px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.18;margin:8px 0 18px;letter-spacing:-.04em}h2{font-size:1.35rem;margin:30px 0 8px}h3{font-size:1.08rem;margin:20px 0 6px}p{margin:10px 0}ul{padding-left:25px}
+.lead{font-size:1.15rem;color:#4d6681;max-width:750px}.eyebrow{font-size:.83rem;color:#c9504c;font-weight:750;text-transform:uppercase;letter-spacing:.09em}
+.panel{background:#fff;border:1px solid #e0e7ef;border-radius:18px;padding:30px 36px;margin-top:24px}.meta{color:#60748a;font-size:.9rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid section{background:#fff;border:1px solid #e0e7ef;border-radius:14px;padding:20px}
+footer{border-top:1px solid #dce4ee;color:#60748a;font-size:.92rem;justify-content:flex-start}footer a{margin-right:12px}
+@media(max-width:650px){main{margin:25px auto 45px}.panel{padding:20px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Main navigation"><a class="brand" href="./" aria-label="ReadFold home">Read<span>Fold</span></a><div class="links"><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div></nav></header>
+<main>
+<article class="panel">
+<h1>ReadFold Privacy Policy</h1>
+<p class="meta">Last updated: November 12, 2026</p>
+<p>This Privacy Policy explains how ReadFold, an independent language-learning reading application, handles information. Reading and learning work in guest mode on your device. Optional account and synchronization features use Supabase when configured and enabled.</p>
+<h2>1. Who operates ReadFold and how to contact us</h2>
+<p>ReadFold is an independent project maintained by the developer of the <a href="https://github.com/StriderAJR/ReadFold">ReadFold GitHub repository</a>. Questions about privacy, access, correction, or deletion can be submitted through the <a href="https://github.com/StriderAJR/ReadFold/issues">project issue tracker</a>. GitHub issues are public and may require a GitHub account; do not include passwords, authentication tokens, or sensitive information in a public issue.</p>
+<h2>2. Information we collect and its sources</h2>
+<h3>Account information (when sign-in is enabled)</h3>
+<p>Optional Google and GitHub sign-in uses Supabase Auth. The identity provider may supply a provider-specific account identifier, email address, display name, and profile image to Supabase. ReadFold associates the authenticated user identifier with a separate application user identifier to maintain your account and synchronize learning data. ReadFold does not link accounts merely because email addresses match.</p>
+<p>Google sign-in uses standard identity scopes such as <code>openid</code>, <code>email</code>, and <code>profile</code>. ReadFold does not request permission to read Gmail messages, Google Drive files, Google contacts, or Google Calendar.</p>
+<h3>Learning information (when reading features are enabled)</h3>
+<p>ReadFold processes reading position and history, vocabulary, kanji and grammar learning states, quiz results, display preferences, device and event identifiers. An event history retains earlier changes to merge updates and prevent silent loss during synchronization. These records are created through your use of the application.</p>
+<h3>Local browser information</h3>
+<p>IndexedDB stores learning events, preferences, cached public books, pending synchronization changes and local diagnostics. A service worker caches application files for offline use. Supabase stores its session in browser storage; a separate nonsecret identity mapping supports offline account restoration. Sign-out does not erase pending learning changes. Clearing site data removes local information, including changes that have not reached the server.</p>
+<h3>Website hosting information</h3>
+<p>The current public informational website is hosted on GitHub Pages. GitHub may process technical request information, such as IP address, browser and request details, to deliver the website and protect its infrastructure under GitHub's own privacy terms. ReadFold does not currently embed its own advertising trackers or analytics scripts on these informational pages.</p>
+<h2>3. Why we use information</h2>
+<ul><li>To authenticate users and maintain account sessions.</li><li>To save reading preferences and learning progress.</li><li>To synchronize account-associated learning data between devices when enabled.</li><li>To support troubleshooting and respond to requests you submit.</li><li>To protect accounts and prevent unauthorized access or misuse.</li></ul>
+<p>ReadFold does not sell personal information and does not use Google profile data for targeted advertising.</p>
+<h2>4. Services that process information</h2>
+<p><strong>Google and GitHub:</strong> provide optional identity sign-in. They process information according to their own privacy policies.</p>
+<p><strong>Supabase:</strong> provides authentication and database infrastructure. When you sign in and enable synchronization, account-associated learning events and preferences are stored through Supabase. Guest data is copied into your signed-in account only when you explicitly request the transfer.</p>
+<p><strong>GitHub Pages:</strong> hosts the public website and may host public application assets and reading content. Public reading content does not require sharing your private learning history with GitHub.</p>
+<p>ReadFold does not intentionally share account or learning data with advertisers or data brokers. Data may be disclosed where required by applicable law.</p>
+<h2>5. Where data is stored and how it is protected</h2>
+<p>Local learning information is stored on your device. Signed-in synchronization uses Supabase with authenticated access controls and per-user database restrictions. Communication with hosted services uses HTTPS. No online storage system can guarantee complete security.</p>
+<p>Diagnostic logs stay on the device and are never automatically uploaded to Supabase. Reports contain bounded error codes, categories, severity, counts and timestamps, without book text, tokens or passwords. You may deliberately export and share a report. Operational heartbeat checks may send service availability notifications through Telegram to the developer; those notifications do not contain user learning data.</p>
+<h2>6. How long information is kept</h2>
+<p>Learning records remain until you clear browser storage, the browser removes them, or a verified cloud deletion request is completed. Diagnostic aggregates expire after seven days and are limited to 100 groups; expiry is enforced when logs are accessed or written. Cloud event history is retained for synchronization, subject to provider backups and applicable requirements. There is no automatic account inactivity deletion or promised fixed backup deletion interval.</p>
+<h2>7. Your choices, access, and deletion</h2>
+<p>You may decline Google or GitHub sign-in; account-dependent features may then be unavailable. You can revoke a provider's authorization from your Google or GitHub account settings. Revoking access does not itself erase data already stored by ReadFold.</p>
+<p>Settings provides JSON export/import of the selected guest or account learning records and a separate diagnostic export. Exports contain private learning data; store and share them carefully. Remove local browser data through your browser's site-data settings. To request cloud access, correction, or deletion, contact the developer through the <a href="https://github.com/StriderAJR/ReadFold/issues">project issue tracker</a> without publishing private credentials or sensitive information. Account ownership must be verified before deletion. Deleting local data or signing out does not automatically delete cloud records.</p>
+<h2>8. Children</h2>
+<p>ReadFold is not directed specifically at children under 13. The developer does not knowingly seek personal information from children under 13.</p>
+<h2>9. International processing</h2>
+<p>Third-party providers may process data in countries different from your own. Their data-processing terms and the location of the deployed service may affect where information is stored or processed.</p>
+<h2>10. Updates to this policy</h2>
+<p>This policy may change as ReadFold is developed. Material changes will be reflected on this page with an updated revision date.</p>
+</article>
+</main>
+<footer><span>© 2026 ReadFold</span><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="https://github.com/StriderAJR/ReadFold/issues">Contact developer</a></footer>
+</body>
+</html>

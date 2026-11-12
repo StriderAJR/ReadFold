@@ -63,9 +63,13 @@ begin
           or length(value #>> '{}') > 512) then return false; end if;
       end loop;
     when 'learning' then
-      if (select count(*) from jsonb_object_keys(payload)) <> 1
-        or jsonb_typeof(payload->'status') is distinct from 'string'
+      if jsonb_typeof(payload->'status') is distinct from 'string'
         or payload->>'status' not in ('encountered','learning','known','mastered') then return false; end if;
+      for key, value in select * from jsonb_each(payload) loop
+        if key not in ('status','automatic') then return false; end if;
+        if key = 'automatic' and (jsonb_typeof(value) <> 'boolean'
+          or (value = 'true'::jsonb and payload->>'status' <> 'encountered')) then return false; end if;
+      end loop;
     when 'favorite' then
       if (select count(*) from jsonb_object_keys(payload)) <> 1
         or jsonb_typeof(payload->'active') is distinct from 'boolean' then return false; end if;
