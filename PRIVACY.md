@@ -2,7 +2,9 @@
 
 **Last updated: November 12, 2026**
 
-ReadFold is a reading-based language-learning application under development. This policy describes how the service is intended to handle personal data when its online features are available. Features that have not yet been released do not collect data.
+ReadFold is a reading-based language-learning application. Guest reading and learning data remain in the browser.
+Optional Google/GitHub authentication and account synchronization use Supabase when configured.
+The complete policy shipped with the application is [public/privacy.html](public/privacy.html).
 
 ## Information we process
 
@@ -10,7 +12,9 @@ When you sign in using Google or GitHub, the authentication provider may share a
 
 When you use the application, ReadFold may store reading progress, learning preferences, vocabulary and grammar learning status, quiz results, and synchronization metadata. Some data is stored locally in your browser using IndexedDB; signed-in users' learning data may also be synchronized with Supabase.
 
-Technical diagnostics may be stored locally on your device. ReadFold does not intentionally send diagnostic logs to Supabase. Users may choose to export and share a diagnostic report with the developer.
+Diagnostic aggregates are local, limited to 100 groups and expire after seven days when accessed or written.
+ReadFold never automatically sends diagnostic logs to Supabase. Reports whitelist codes, categories,
+severity, counts and timestamps. Users may deliberately export and share them.
 
 ## How information is used
 
@@ -26,7 +30,11 @@ Local data is stored in your browser. Cloud account and learning data is stored 
 
 ## Retention and deletion
 
-Locally stored application data can be removed using browser site-data controls. To request deletion of account-associated information stored in the cloud, contact the developer using the project's GitHub Issues page. Requests will be reviewed and handled as applicable. Deleting browser data does not automatically delete cloud data.
+Settings supports selected-owner JSON export/import and a separate diagnostic export. Signing out preserves
+local operations, including unsynchronized changes. Locally stored data can be removed using browser site-data
+controls. Cloud event history persists until a verified deletion request is completed; there is no automatic
+inactivity deletion. Request deletion through [GitHub Issues](https://github.com/StriderAJR/ReadFold/issues)
+without publishing private information. Deleting browser data does not delete cloud data or provider backups.
 
 ## Your choices
 

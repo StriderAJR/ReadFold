@@ -77,5 +77,7 @@ Production sync transport вызывает PostgREST через изолиров
 
 `npm run test:sql` воспроизводит миграцию и этот тест в локальном PostgreSQL/WASM (PGlite)
 с минимальной auth schema. Проверка прошла; она не заменяет проверку реальных настроек Auth и сети.
-Удалённая миграция разрешена владельцем, но ожидает доверенный CA-сертификат Supabase. Проверка TLS
-не отключается. [Документация Supabase о CA](https://supabase.com/docs/guides/platform/ssl-enforcement).
+Удалённая миграция применена с явного разрешения владельца с доверенным CA-сертификатом и проверкой TLS.
+Read-only проверка подтвердила RLS двух таблиц, ownership policies, запрет клиентской записи и anonymous private
+RPC; heartbeat доступен, anonymous чтение данных получает 401. Fixture-пользователи на live не создавались.
+[Документация Supabase о CA](https://supabase.com/docs/guides/platform/ssl-enforcement).

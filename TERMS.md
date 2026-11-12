@@ -14,7 +14,10 @@ If account sign-in is available, you may authenticate using supported third-part
 
 ## Learning content
 
-Reading material and explanations are provided for educational purposes. Translations, language explanations, and automatically generated learning content may contain errors. Content remains subject to its applicable copyright and licensing terms.
+Reading material and explanations are provided for educational purposes and may contain errors. No external AI
+service is used to generate learning content. Original demonstration text and explanations are CC0-1.0;
+other material remains subject to its stated license. The full terms shipped with the application are
+[public/terms.html](public/terms.html).
 
 ## Acceptable use
 
