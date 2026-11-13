@@ -49,16 +49,31 @@ export const kanjiSchema = z
     on: z.array(textSchema),
     kun: z.array(textSchema),
     components: z.array(textSchema),
+    componentMeanings: z.record(textSchema, textSchema).optional(),
     wordIds: z.array(idSchema),
     mnemonic: textSchema.optional(),
   })
-  .strict();
+  .strict()
+  .refine((kanji) => !kanji.componentMeanings || (
+    kanji.components.every((component) => Object.hasOwn(kanji.componentMeanings ?? {}, component)) &&
+    Object.keys(kanji.componentMeanings).every((component) => kanji.components.includes(component))
+  ), { message: 'Component meanings must match visual components', path: ['componentMeanings'] });
 export const grammarSchema = z
   .object({
     id: idSchema,
     title: textSchema,
     explanation: textSchema,
-    examples: z.array(z.object({ text: textSchema, translation: textSchema }).strict()).min(1),
+    examples: z.array(z.object({
+      text: textSchema,
+      translation: textSchema,
+      hiragana: textSchema.optional(),
+      romaji: textSchema.optional(),
+      literal: textSchema.optional(),
+      natural: textSchema.optional(),
+      segments: z.array(z.object({ text: textSchema, reading: textSchema.optional() }).strict()).min(1).optional(),
+    }).strict().refine((example) => !example.segments || (
+      example.segments.map((segment) => segment.text).join('') === example.text
+    ), { message: 'Segments must reproduce example text', path: ['segments'] })).min(1),
     relatedIds: z.array(idSchema),
   })
   .strict();
