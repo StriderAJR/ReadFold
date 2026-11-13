@@ -7,9 +7,14 @@ const read = (path: string): unknown => JSON.parse(readFileSync(`public/${path}`
 describe('book format', () => {
   it('provides mnemonic component meanings and validates their correspondence', () => {
     const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const entries = new Map(dictionary.kanji.map((kanji) => [kanji.character, kanji]));
     for (const kanji of dictionary.kanji) {
       expect(kanji.mnemonic).toBeTruthy();
       expect(Object.keys(kanji.componentMeanings ?? {}).sort()).toEqual([...kanji.components].sort());
+      expect(kanji.on.length + kanji.kun.length).toBeGreaterThan(0);
+      for (const component of kanji.components) {
+        expect(entries.has(component)).toBe(true);
+      }
       expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: undefined, mnemonic: undefined }).success).toBe(true);
     }
     const kanji = dictionary.kanji[0];
@@ -116,6 +121,28 @@ describe('book format', () => {
       entry.relatedIds = [];
     });
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
+  });
+
+  it('rejects missing, unreadable, duplicate, and cyclic kanji components', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const entry = dictionary.kanji.find((kanji) => kanji.components.length > 0)!;
+    const invalid = structuredClone(dictionary);
+    const target = invalid.kanji.find((kanji) => kanji.id === entry.id)!;
+    target.components = ['未'];
+    target.componentMeanings = { 未: 'ещё нет' };
+    expect(dictionarySchema.safeParse(invalid).success).toBe(false);
+    target.components = [target.character];
+    target.componentMeanings = { [target.character]: 'сам' };
+    expect(dictionarySchema.safeParse(invalid).success).toBe(false);
+    target.components = [];
+    target.componentMeanings = {};
+    target.on = [];
+    target.kun = [];
+    expect(dictionarySchema.safeParse(invalid).success).toBe(false);
+    target.on = entry.on;
+    target.kun = entry.kun;
+    invalid.kanji.push({ ...target, id: 'kanji.duplicate' });
+    expect(dictionarySchema.safeParse(invalid).success).toBe(false);
   });
 
   it('requires supported metadata versions and checks contextual grammar role keys', () => {

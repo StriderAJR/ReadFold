@@ -97,11 +97,45 @@ export const dictionarySchema = z
     }
     const wordIds = new Set(dictionary.words.map((word) => word.id));
     const grammarIds = new Set(dictionary.grammar.map((grammar) => grammar.id));
+    const kanjiByCharacter = new Map(dictionary.kanji.map((kanji) => [kanji.character, kanji]));
+    if (kanjiByCharacter.size !== dictionary.kanji.length) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji'], message: 'Duplicate kanji characters' });
+    }
     dictionary.kanji.forEach((kanji, index) => {
       if (kanji.wordIds.some((id) => !wordIds.has(id))) {
         context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index, 'wordIds'], message: 'Unknown word' });
       }
+      if (kanji.on.length === 0 && kanji.kun.length === 0) {
+        context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index], message: 'Kanji reading is required' });
+      }
+      for (const component of kanji.components) {
+        if (!kanjiByCharacter.has(component)) {
+          context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index, 'components'], message: `Unknown component ${component}` });
+        }
+      }
     });
+    const visited = new Set<string>();
+    const active = new Set<string>();
+    const visit = (character: string): void => {
+      if (active.has(character)) {
+        context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji'], message: `Cyclic kanji components at ${character}` });
+        return;
+      }
+      if (visited.has(character)) {
+        return;
+      }
+      active.add(character);
+      for (const component of kanjiByCharacter.get(character)?.components ?? []) {
+        if (kanjiByCharacter.has(component)) {
+          visit(component);
+        }
+      }
+      active.delete(character);
+      visited.add(character);
+    };
+    for (const character of kanjiByCharacter.keys()) {
+      visit(character);
+    }
     dictionary.grammar.forEach((grammar, index) => {
       if (grammar.relatedIds.some((id) => !grammarIds.has(id))) {
         context.addIssue({
