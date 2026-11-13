@@ -32,7 +32,7 @@
     },
     {
       "path": "books/apothecary-diaries/chapter-1.json",
-      "sha256": "dccc611a6b9dcc22496cec048ead1e358bdb871eb2622928c0f6bfa05e0b1119"
+      "sha256": "d16ba538aa331eb600c619ddf661a96bd781167e6edeedf86946ec4d95ba2cfb"
     },
     {
       "path": "books/catalog.json",
@@ -48,7 +48,7 @@
     },
     {
       "path": "books/dictionary.json",
-      "sha256": "7d42fc34784b9f92f57bea1a35d837e3c4b060b88f4856c08bb32f1921ed29a8"
+      "sha256": "81cb9a731b57f1f01488a39cce6bdc69ef59beecb0efe6715b004a5e9eae9a32"
     },
     {
       "path": "brand/icon.jpg",

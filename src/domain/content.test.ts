@@ -87,6 +87,17 @@ describe('book format', () => {
     }
   });
 
+  it('links grammar for every Apothecary Diaries sentence without duplicate references', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const chapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
+    const grammarIds = new Set(dictionary.grammar.map((entry) => entry.id));
+    for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
+      expect(sentence.grammarIds.length, sentence.id).toBeGreaterThan(0);
+      expect(new Set(sentence.grammarIds).size, sentence.id).toBe(sentence.grammarIds.length);
+      expect(sentence.grammarIds.every((id) => grammarIds.has(id)), sentence.id).toBe(true);
+    }
+  });
+
   it('rejects unexpected fields, duplicate IDs, unsafe paths and malformed ruby', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
     expect(catalogSchema.safeParse([...catalog, catalog[0]]).success).toBe(false);

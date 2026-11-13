@@ -74,7 +74,8 @@
           "grammarIds": [
             "grammar.possession",
             "grammar.subject",
-            "grammar.desire"
+            "grammar.desire",
+            "grammar.final-na"
           ],
           "grammarRoles": {
             "grammar.possession": "の связывает 露天 и 串焼き: шашлычки уличного лотка.",
@@ -170,7 +171,12 @@
             "kanji.u6e9c",
             "kanji.u606f"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.te-form",
+            "grammar.topic",
+            "grammar.past"
+          ]
         }
       ]
     },
@@ -381,7 +387,20 @@
             "kanji.u6fc1",
             "kanji.u6fb1"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.subject",
+            "grammar.limit-made",
+            "grammar.attributive",
+            "grammar.past",
+            "grammar.scope-de",
+            "grammar.superlative",
+            "grammar.adjective-connective",
+            "grammar.na-adjective",
+            "grammar.possession",
+            "grammar.copula",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -472,7 +491,16 @@
             "kanji.u98ef",
             "kanji.u98df"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.counter",
+            "grammar.question-ka",
+            "grammar.progressive",
+            "grammar.colloquial-contraction",
+            "grammar.explanatory-no-da",
+            "grammar.conjecture-darou",
+            "grammar.copula",
+            "grammar.particle-omission"
+          ]
         }
       ]
     },
@@ -674,7 +702,23 @@
             "kanji.u53c2",
             "kanji.u540d"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.purpose-ni",
+            "grammar.target-ni",
+            "grammar.te-miru",
+            "grammar.conditional-ba",
+            "grammar.past",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.definition-to-iu",
+            "grammar.possession",
+            "grammar.attributive",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.cleft-no-wa",
+            "grammar.destination-ni"
+          ]
         }
       ]
     },
@@ -826,7 +870,13 @@
             "kanji.u5973",
             "kanji.u72e9"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.copula",
+            "grammar.kiwamarinai",
+            "grammar.te-form",
+            "grammar.possession",
+            "grammar.formal-copula"
+          ]
         }
       ]
     },
@@ -1058,7 +1108,30 @@
             "kanji.u5834",
             "kanji.u5408"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.potential",
+            "grammar.shi",
+            "grammar.approximate-hodo",
+            "grammar.conditional-ba",
+            "grammar.target-ni",
+            "grammar.negative",
+            "grammar.double-negative",
+            "grammar.additive-mo",
+            "grammar.reason-node",
+            "grammar.to-shite",
+            "grammar.i-adjective",
+            "grammar.explanatory-no-da",
+            "grammar.concessive-ga",
+            "grammar.instrument-de",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.baai",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula",
+            "grammar.destination-ni"
+          ]
         }
       ]
     },
@@ -1179,7 +1252,19 @@
             "kanji.u60d1",
             "kanji.u8a71"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.to-shite",
+            "grammar.possession",
+            "grammar.object",
+            "grammar.progressive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.ni-viewpoint",
+            "grammar.topic",
+            "grammar.na-adjective",
+            "grammar.explanatory-no-da",
+            "grammar.copula"
+          ]
         }
       ]
     },
@@ -1425,7 +1510,24 @@
             "kanji.neko",
             "kanji.u8a71"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.plural-suffix",
+            "grammar.possession",
+            "grammar.object",
+            "grammar.te-wa-repeat",
+            "grammar.target-ni",
+            "grammar.stem-link",
+            "grammar.past",
+            "grammar.question-ka",
+            "grammar.ni-suru",
+            "grammar.causative",
+            "grammar.explanatory-no-da",
+            "grammar.ni-viewpoint",
+            "grammar.indifference-demo-ii",
+            "grammar.copula",
+            "grammar.formal-copula"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s010",
@@ -1525,7 +1627,20 @@
             "kanji.u53d7",
             "kanji.u5909"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.regardless",
+            "grammar.subject",
+            "grammar.object",
+            "grammar.past",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.attributive",
+            "grammar.negative",
+            "grammar.explanatory-no-da",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula"
+          ]
         }
       ]
     },
@@ -1614,7 +1729,15 @@
             "kanji.u751f",
             "kanji.u95a2"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.negative",
+            "grammar.copula",
+            "grammar.conditional-ba",
+            "grammar.literary-naru",
+            "grammar.target-ni",
+            "grammar.desire",
+            "grammar.past"
+          ]
         }
       ]
     },
@@ -1784,7 +1907,19 @@
             "kanji.u5f35",
             "kanji.u4ed8"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.attributive",
+            "grammar.plain-form",
+            "grammar.and",
+            "grammar.i-adjective",
+            "grammar.object",
+            "grammar.past",
+            "grammar.possession",
+            "grammar.location-ni",
+            "grammar.topic",
+            "grammar.subject",
+            "grammar.resultative-te-iru"
+          ]
         }
       ]
     },
@@ -1908,7 +2043,20 @@
             "kanji.u6050",
             "kanji.u6bd2"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.te-kuru",
+            "grammar.te-form",
+            "grammar.plain-form",
+            "grammar.nominalizer-koto",
+            "grammar.attributive",
+            "grammar.possession",
+            "grammar.comparison-hodo-negative",
+            "grammar.i-adjective",
+            "grammar.topic",
+            "grammar.negative",
+            "grammar.quotation"
+          ]
         }
       ]
     },
@@ -2029,7 +2177,18 @@
             "kanji.u8857",
             "kanji.u5909"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.subject-no",
+            "grammar.attributive",
+            "grammar.plain-form",
+            "grammar.possession",
+            "grammar.additive-mo",
+            "grammar.negative",
+            "grammar.explanatory-no-da",
+            "grammar.copula",
+            "grammar.quotation"
+          ]
         }
       ]
     },
@@ -2150,7 +2309,16 @@
             "kanji.u5965",
             "kanji.u5411"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.target-ni",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.object",
+            "grammar.stem-link",
+            "grammar.possession",
+            "grammar.plain-form",
+            "grammar.destination-ni"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s016",
@@ -2374,7 +2542,24 @@
             "kanji.u6fef",
             "kanji.u7269"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.comparison-to",
+            "grammar.topic",
+            "grammar.stem-link",
+            "grammar.na-adjective",
+            "grammar.location-ni",
+            "grammar.possession",
+            "grammar.subject",
+            "grammar.inanimate-existence",
+            "grammar.indeterminate-tomo",
+            "grammar.negative",
+            "grammar.attributive",
+            "grammar.plural-suffix",
+            "grammar.object",
+            "grammar.progressive",
+            "grammar.past",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -2451,7 +2636,11 @@
             "kanji.u7981",
             "kanji.u5236"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.copula",
+            "grammar.formal-copula"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s018",
@@ -2631,7 +2820,23 @@
             "kanji.u7537",
             "kanji.u6027"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.potential",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.scope-de",
+            "grammar.superlative",
+            "grammar.na-adjective",
+            "grammar.and",
+            "grammar.object",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.only-dake",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula",
+            "grammar.cleft-no-wa"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s019",
@@ -2697,7 +2902,17 @@
             "kanji.u5f8c",
             "kanji.u8005"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.location-ni",
+            "grammar.existence",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.attributive",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula",
+            "grammar.cleft-no-wa"
+          ]
         }
       ]
     },
@@ -2832,7 +3047,22 @@
             "kanji.neko",
             "kanji.u8003"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.copula",
+            "grammar.quotation",
+            "grammar.tsutsu",
+            "grammar.subject",
+            "grammar.target-ni",
+            "grammar.resultative-te-iru",
+            "grammar.cause-kara",
+            "grammar.progressive",
+            "grammar.nominalizer-koto",
+            "grammar.attributive",
+            "grammar.explanatory-no-da",
+            "grammar.conjecture-darou",
+            "grammar.topic",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -2972,7 +3202,17 @@
             "kanji.u4e26",
             "kanji.u898b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.conditional-to",
+            "grammar.possession",
+            "grammar.location-ni",
+            "grammar.inanimate-existence",
+            "grammar.attributive",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s022",
@@ -3056,7 +3296,17 @@
             "kanji.u6fef",
             "kanji.u6e08"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.copula",
+            "grammar.negative",
+            "grammar.adjective-connective",
+            "grammar.subject-no",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.suffix-zumi",
+            "grammar.possession",
+            "grammar.nominal-mono"
+          ]
         }
       ]
     },
@@ -3130,7 +3380,14 @@
             "kanji.u672d",
             "kanji.u898b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.target-ni",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.object",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s024",
@@ -3216,7 +3473,16 @@
             "kanji.u5b57",
             "kanji.u66f8"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.and",
+            "grammar.subject",
+            "grammar.passive",
+            "grammar.resultative-te-iru",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -3362,7 +3628,26 @@
             "kanji.u4eba",
             "kanji.u652b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.location-ni",
+            "grammar.topic",
+            "grammar.subject",
+            "grammar.potential",
+            "grammar.negative",
+            "grammar.attributive",
+            "grammar.nominal-mono",
+            "grammar.additive-mo",
+            "grammar.existence",
+            "grammar.simile-gotoku",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.even-sae",
+            "grammar.explanatory-no-da",
+            "grammar.copula",
+            "grammar.cause-kara",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s026",
@@ -3512,7 +3797,20 @@
             "kanji.u5b57",
             "kanji.u96e3"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.target-ni",
+            "grammar.passive",
+            "grammar.attributive",
+            "grammar.before",
+            "grammar.possession",
+            "grammar.degree-kurai",
+            "grammar.topic",
+            "grammar.concessive-ga",
+            "grammar.to-naru-to",
+            "grammar.i-adjective",
+            "grammar.plain-form",
+            "grammar.destination-ni"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s027",
@@ -3611,7 +3909,19 @@
             "kanji.u5206",
             "kanji.u8d8a"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.possession",
+            "grammar.scope-de",
+            "grammar.conditional-ba",
+            "grammar.i-adjective",
+            "grammar.evaluative-hou",
+            "grammar.explanatory-no-da",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula",
+            "grammar.particle-omission"
+          ]
         }
       ]
     },
@@ -3755,7 +4065,21 @@
             "kanji.u8cea",
             "kanji.u60aa"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.adverbial",
+            "grammar.adjective-naru",
+            "grammar.excess-sugiru",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.possession",
+            "grammar.quotation",
+            "grammar.potential",
+            "grammar.topic",
+            "grammar.concessive-ga",
+            "grammar.subject",
+            "grammar.i-adjective",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -3966,7 +4290,20 @@
             "kanji.u6240",
             "kanji.u5e2f"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.target-ni",
+            "grammar.topic",
+            "grammar.negative",
+            "grammar.concessive-mono-no",
+            "grammar.te-form",
+            "grammar.counter",
+            "grammar.object",
+            "grammar.conditional-to",
+            "grammar.past",
+            "grammar.copula",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -4078,7 +4415,18 @@
             "kanji.u5b98",
             "kanji.u8077"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.scope-de",
+            "grammar.possession",
+            "grammar.copula",
+            "grammar.stem-link",
+            "grammar.even-sura",
+            "grammar.resultative-te-iru",
+            "grammar.negative",
+            "grammar.plain-form",
+            "grammar.formal-copula"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s031",
@@ -4209,7 +4557,22 @@
             "kanji.u59a5",
             "kanji.u5f53"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.additive-mo",
+            "grammar.negative",
+            "grammar.adjective-connective",
+            "grammar.passive",
+            "grammar.te-form",
+            "grammar.ni-suru",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.ni-viewpoint",
+            "grammar.topic",
+            "grammar.subject",
+            "grammar.na-adjective",
+            "grammar.copula",
+            "grammar.formal-copula"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s032",
@@ -4552,7 +4915,33 @@
             "kanji.u624b",
             "kanji.u8db3"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.similarity-you",
+            "grammar.na-adjective",
+            "grammar.list-ya",
+            "grammar.i-adjective",
+            "grammar.exemplifying-demo",
+            "grammar.resultative-te-iru",
+            "grammar.conditional-ba",
+            "grammar.target-ni",
+            "grammar.potential",
+            "grammar.attributive",
+            "grammar.additive-mo",
+            "grammar.past",
+            "grammar.possibility-kamoshirenai",
+            "grammar.concessive-ga",
+            "grammar.subject-no",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.and",
+            "grammar.degree-kurai",
+            "grammar.copula",
+            "grammar.plain-form",
+            "grammar.formal-copula",
+            "grammar.cleft-no-wa",
+            "grammar.inanimate-existence"
+          ]
         }
       ]
     },
@@ -4612,7 +5001,12 @@
             "kanji.u4e8b",
             "kanji.u7d42"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.adverbial",
+            "grammar.particle-omission",
+            "grammar.causative",
+            "grammar.volitional"
+          ]
         }
       ]
     },
@@ -4767,7 +5161,18 @@
             "kanji.u8d70",
             "kanji.u6b69"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.and",
+            "grammar.quotation",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.object",
+            "grammar.conditional-to",
+            "grammar.manner-ni",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s035",
@@ -4876,7 +5281,16 @@
             "kanji.u5c4b",
             "kanji.u623b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.adverbial",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.subject",
+            "grammar.start-dasu",
+            "grammar.before",
+            "grammar.destination-ni",
+            "grammar.desire"
+          ]
         }
       ]
     },
@@ -4973,7 +5387,11 @@
             "kanji.u5983",
             "kanji.u5b2a"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.topic",
+            "grammar.formal-copula"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s037",
@@ -5128,7 +5546,19 @@
             "kanji.u6d3e",
             "kanji.u624b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.passive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.topic",
+            "grammar.possession",
+            "grammar.comparison-ni-kurabe",
+            "grammar.subject",
+            "grammar.copula",
+            "grammar.concessive-ga",
+            "grammar.excess-sugiru",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s038",
@@ -5232,7 +5662,14 @@
             "kanji.u4e88",
             "kanji.u60f3"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.topic",
+            "grammar.or-something",
+            "grammar.quotation",
+            "grammar.passive",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s039",
@@ -5443,7 +5880,20 @@
             "kanji.u4eba",
             "kanji.u7f6e"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.status-tomo-nareba",
+            "grammar.possession",
+            "grammar.subject-no",
+            "grammar.attributive",
+            "grammar.object",
+            "grammar.ability-koto-ga-dekiru",
+            "grammar.concessive-ga",
+            "grammar.topic",
+            "grammar.limit-made",
+            "grammar.shika-negative",
+            "grammar.negative",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s040",
@@ -5597,7 +6047,18 @@
             "kanji.u7269",
             "kanji.u904b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.similarity-you",
+            "grammar.obligation-beki",
+            "grammar.attributive",
+            "grammar.subject-no",
+            "grammar.negative",
+            "grammar.subject",
+            "grammar.object",
+            "grammar.representative-tari",
+            "grammar.explanatory-no-da",
+            "grammar.formal-copula"
+          ]
         }
       ]
     },
@@ -5826,7 +6287,22 @@
             "kanji.u5e1d",
             "kanji.u76ee"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.location",
+            "grammar.object",
+            "grammar.nominalizer-koto",
+            "grammar.passive",
+            "grammar.resultative-te-iru",
+            "grammar.concessive-ga",
+            "grammar.possession",
+            "grammar.location-ni",
+            "grammar.inanimate-existence",
+            "grammar.stem-link",
+            "grammar.target-ni",
+            "grammar.rarely-negative",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s042",
@@ -6003,7 +6479,18 @@
             "kanji.u610f",
             "kanji.u5473"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.even-demo",
+            "grammar.object",
+            "grammar.passive",
+            "grammar.conditional-ba",
+            "grammar.subject",
+            "grammar.possession",
+            "grammar.plain-form",
+            "grammar.stem-link",
+            "grammar.topic",
+            "grammar.resultative-te-iru"
+          ]
         }
       ]
     },
@@ -6224,7 +6711,21 @@
             "kanji.u60aa",
             "kanji.u8cdc"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.passive",
+            "grammar.without-koto-naku",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.topic",
+            "grammar.possession",
+            "grammar.subject",
+            "grammar.inanimate-existence",
+            "grammar.unless-nai-kagiri",
+            "grammar.alternative-nari",
+            "grammar.te-shimau",
+            "grammar.plain-form"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s044",
@@ -6380,7 +6881,22 @@
             "kanji.u756a",
             "kanji.u6050"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.subject",
+            "grammar.whether-ka-douka",
+            "grammar.topic",
+            "grammar.depend-ni-yoru",
+            "grammar.additive-mo",
+            "grammar.concessive-ga",
+            "grammar.recipient",
+            "grammar.passive",
+            "grammar.nominalizer-koto",
+            "grammar.object",
+            "grammar.plural-tachi",
+            "grammar.progressive",
+            "grammar.appearance-you-da",
+            "grammar.copula"
+          ]
         }
       ]
     },
@@ -6454,7 +6970,12 @@
             "kanji.u8efd",
             "kanji.u53e9"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.object",
+            "grammar.adverbial",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -6500,10 +7021,13 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [
-
-          ],
-          "grammarIds": []
+          "kanjiIds": [],
+          "grammarIds": [
+            "grammar.destination-ni",
+            "grammar.te-oku",
+            "grammar.contraction-teoku",
+            "grammar.request-te"
+          ]
         }
       ]
     },
@@ -6632,7 +7156,18 @@
             "kanji.u4f8d",
             "kanji.u5973"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.object",
+            "grammar.stem-link",
+            "grammar.attributive",
+            "grammar.nominalizer-no",
+            "grammar.topic",
+            "grammar.cleft-no-wa",
+            "grammar.possession",
+            "grammar.copula",
+            "grammar.past",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -6753,7 +7288,16 @@
             "kanji.u676f",
             "kanji.u63fa"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.location",
+            "grammar.topic",
+            "grammar.attributive",
+            "grammar.object",
+            "grammar.causative",
+            "grammar.past",
+            "grammar.subject",
+            "grammar.progressive"
+          ]
         }
       ]
     },
@@ -6920,7 +7464,20 @@
             "kanji.u4e2d",
             "kanji.u86d9"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.destination-ni",
+            "grammar.before",
+            "grammar.topic",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.formal-copula",
+            "grammar.concessive-ga",
+            "grammar.possession",
+            "grammar.copula",
+            "grammar.explanatory-no-da",
+            "grammar.conjecture-darou"
+          ]
         },
         {
           "id": "apothecary-diaries.chapter-1.s050",
@@ -7085,7 +7642,21 @@
             "kanji.u5916",
             "kanji.u51fa"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.passive-agent-ni",
+            "grammar.passive",
+            "grammar.stem-link",
+            "grammar.object",
+            "grammar.topic",
+            "grammar.destination-ni",
+            "grammar.additive-mo",
+            "grammar.volitional",
+            "grammar.attempt-you-to-suru",
+            "grammar.negative",
+            "grammar.change-naku-naru",
+            "grammar.past"
+          ]
         }
       ]
     },
@@ -7194,7 +7765,17 @@
             "kanji.u8fce",
             "kanji.u6765"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.colloquial-dewa",
+            "grammar.location",
+            "grammar.topic",
+            "grammar.indefinite-mo-negative",
+            "grammar.purpose-ni",
+            "grammar.benefactive-te-kureru",
+            "grammar.negative",
+            "grammar.final-yo"
+          ]
         }
       ]
     },
@@ -7320,7 +7901,15 @@
             "kanji.u5834",
             "kanji.u623b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.possession",
+            "grammar.object",
+            "grammar.conditional-to",
+            "grammar.destination-ni",
+            "grammar.past",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -7388,7 +7977,10 @@
             "kanji.u4e8b",
             "kanji.u6b8b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.resultative-te-iru"
+          ]
         }
       ]
     },
@@ -7534,7 +8126,21 @@
             "kanji.u5206",
             "kanji.u50cd"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.cause-de",
+            "grammar.past",
+            "grammar.not-wake-dewa-nai",
+            "grammar.concessive-ga",
+            "grammar.topic",
+            "grammar.honorific-o",
+            "grammar.humble-itadaku",
+            "grammar.resultative-te-iru",
+            "grammar.reason-node",
+            "grammar.possession",
+            "grammar.intention-tsumori",
+            "grammar.formal-copula",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -7631,7 +8237,12 @@
             "kanji.u5c4b",
             "kanji.neko"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.subject",
+            "grammar.zero-copula",
+            "grammar.formal-copula"
+          ]
         }
       ]
     },
@@ -7700,7 +8311,13 @@
             "kanji.u50cd",
             "kanji.u51fa"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.adverbial",
+            "grammar.progressive",
+            "grammar.conditional-ba",
+            "grammar.potential",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -7779,7 +8396,14 @@
             "kanji.u624b",
             "kanji.u4ed8"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.result-ni-naru",
+            "grammar.nominalizer-koto",
+            "grammar.topic",
+            "grammar.possibility-uru",
+            "grammar.negative",
+            "grammar.conjecture-darou"
+          ]
         }
       ]
     },
@@ -7876,7 +8500,15 @@
             "kanji.u8003",
             "kanji.u7518"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.evaluative-koto-ni",
+            "grammar.attributive",
+            "grammar.possession",
+            "grammar.topic",
+            "grammar.past",
+            "grammar.quotation",
+            "grammar.potential"
+          ]
         }
       ]
     },
@@ -7967,7 +8599,15 @@
             "kanji.u4eba",
             "kanji.u751f"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.subject",
+            "grammar.embedded-question-ka",
+            "grammar.negative",
+            "grammar.definition-to-iu",
+            "grammar.generalization-mono-da",
+            "grammar.copula",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -8122,7 +8762,19 @@
             "kanji.u4e3b",
             "kanji.u6291"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.standard-ni-shitewa",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.formal-copula",
+            "grammar.concessive-ga",
+            "grammar.potential",
+            "grammar.negative",
+            "grammar.nominal-mono",
+            "grammar.subject",
+            "grammar.inanimate-existence"
+          ]
         }
       ]
     },
@@ -8174,7 +8826,10 @@
             "kanji.u8b58",
             "kanji.u6b32"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.and",
+            "grammar.nominal-fragment"
+          ]
         }
       ]
     },
@@ -8245,7 +8900,10 @@
             "kanji.u7fa9",
             "kanji.u611f"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.nominal-fragment"
+          ]
         }
       ]
     },
@@ -8366,7 +9024,15 @@
             "kanji.u76f8",
             "kanji.u66b4"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.time-expression",
+            "grammar.topic",
+            "grammar.indefinite-aru",
+            "grammar.possession",
+            "grammar.object",
+            "grammar.outcome-koto-ni-naru",
+            "grammar.plain-form"
+          ]
         }
       ]
     },
@@ -8444,7 +9110,13 @@
             "kanji.u7d9a",
             "kanji.u6b7b"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.location",
+            "grammar.attributive",
+            "grammar.possession",
+            "grammar.plain-form",
+            "grammar.nominal-fragment"
+          ]
         }
       ]
     },
@@ -8570,7 +9242,18 @@
             "kanji.u602a",
             "kanji.u5947"
           ],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.copula",
+            "grammar.quotation",
+            "grammar.passive",
+            "grammar.past",
+            "grammar.attributive",
+            "grammar.topic",
+            "grammar.viewpoint-ni-totte",
+            "grammar.not-anything-demo",
+            "grammar.negative"
+          ]
         }
       ]
     }
