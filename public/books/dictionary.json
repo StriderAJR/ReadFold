@@ -242,6 +242,3988 @@
       "meanings": [
         "давать"
       ]
+    },
+    {
+      "id": "roten",
+      "surface": "露天",
+      "dictionaryForm": "露天",
+      "reading": "ろてん",
+      "romaji": "roten",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "уличная торговая палатка"
+      ]
+    },
+    {
+      "id": "kushiyaki",
+      "surface": "串焼き",
+      "dictionaryForm": "串焼き",
+      "reading": "くしやき",
+      "romaji": "kushiyaki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "жареные на шампуре кусочки пищи; шашлычок"
+      ]
+    },
+    {
+      "id": "taberu",
+      "surface": "食べる",
+      "dictionaryForm": "食べる",
+      "reading": "たべる",
+      "romaji": "taberu",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "есть, принимать пищу"
+      ]
+    },
+    {
+      "id": "donten",
+      "surface": "曇天",
+      "dictionaryForm": "曇天",
+      "reading": "どんてん",
+      "romaji": "donten",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "пасмурное небо"
+      ]
+    },
+    {
+      "id": "miageru",
+      "surface": "見上げる",
+      "dictionaryForm": "見上げる",
+      "reading": "みあげる",
+      "romaji": "miageru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "поднимать взгляд; смотреть вверх"
+      ]
+    },
+    {
+      "id": "maomao",
+      "surface": "猫猫",
+      "dictionaryForm": "猫猫",
+      "reading": "まおまお",
+      "romaji": "Maomao",
+      "partOfSpeech": "имя собственное",
+      "meanings": [
+        "Маомао, имя героини"
+      ]
+    },
+    {
+      "id": "tameiki",
+      "surface": "溜息",
+      "dictionaryForm": "溜息",
+      "reading": "ためいき",
+      "romaji": "tameiki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вздох"
+      ]
+    },
+    {
+      "id": "tsuku-breath",
+      "surface": "つく",
+      "dictionaryForm": "つく",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "делать вздох; испускать"
+      ]
+    },
+    {
+      "id": "mawari",
+      "surface": "周り",
+      "dictionaryForm": "周り",
+      "reading": "まわり",
+      "romaji": "mawari",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "окружение; то, что вокруг"
+      ]
+    },
+    {
+      "id": "jibun",
+      "surface": "自分",
+      "dictionaryForm": "自分",
+      "reading": "じぶん",
+      "romaji": "jibun",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "сам; себя"
+      ]
+    },
+    {
+      "id": "ima",
+      "surface": "今",
+      "dictionaryForm": "今",
+      "reading": "いま",
+      "romaji": "ima",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сейчас; настоящее время"
+      ]
+    },
+    {
+      "id": "miru",
+      "surface": "見る",
+      "dictionaryForm": "見る",
+      "reading": "みる",
+      "romaji": "miru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "видеть; смотреть"
+      ]
+    },
+    {
+      "id": "naka",
+      "surface": "中",
+      "dictionaryForm": "中",
+      "reading": "なか",
+      "romaji": "naka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "середина; внутренность; среди"
+      ]
+    },
+    {
+      "id": "mottomo",
+      "surface": "最も",
+      "dictionaryForm": "最も",
+      "reading": "もっとも",
+      "romaji": "mottomo",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "больше всего; наиболее"
+      ]
+    },
+    {
+      "id": "utsukushii",
+      "surface": "美しい",
+      "dictionaryForm": "美しい",
+      "reading": "うつくしい",
+      "romaji": "utsukushii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "красивый; прекрасный"
+      ]
+    },
+    {
+      "id": "kirabiyaka",
+      "surface": "きらびやか",
+      "dictionaryForm": "きらびやか",
+      "reading": "きらびやか",
+      "romaji": "kirabiyaka",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "блистательный; роскошный"
+      ]
+    },
+    {
+      "id": "sekai",
+      "surface": "世界",
+      "dictionaryForm": "世界",
+      "reading": "せかい",
+      "romaji": "sekai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мир"
+      ]
+    },
+    {
+      "id": "soshite",
+      "surface": "そして",
+      "dictionaryForm": "そして",
+      "reading": "そして",
+      "romaji": "soshite",
+      "partOfSpeech": "союз",
+      "meanings": [
+        "и; затем"
+      ]
+    },
+    {
+      "id": "shouki",
+      "surface": "瘴気",
+      "dictionaryForm": "瘴気",
+      "reading": "しょうき",
+      "romaji": "shōki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "миазмы; вредоносные испарения"
+      ]
+    },
+    {
+      "id": "ugomeku",
+      "surface": "蠢く",
+      "dictionaryForm": "蠢く",
+      "reading": "うごめく",
+      "romaji": "ugomeku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "шевелиться; кишеть"
+      ]
+    },
+    {
+      "id": "nigoru",
+      "surface": "濁る",
+      "dictionaryForm": "濁る",
+      "reading": "にごる",
+      "romaji": "nigoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "мутнеть; становиться мутным"
+      ]
+    },
+    {
+      "id": "ori",
+      "surface": "澱",
+      "dictionaryForm": "澱",
+      "reading": "おり",
+      "romaji": "ori",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "осадок; отстой"
+      ]
+    },
+    {
+      "id": "mou",
+      "surface": "もう",
+      "dictionaryForm": "もう",
+      "reading": "もう",
+      "romaji": "mō",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "уже"
+      ]
+    },
+    {
+      "id": "sankagetsu",
+      "surface": "三か月",
+      "dictionaryForm": "三か月",
+      "reading": "さんかげつ",
+      "romaji": "sankagetsu",
+      "partOfSpeech": "счётное выражение",
+      "meanings": [
+        "три месяца"
+      ]
+    },
+    {
+      "id": "oyaji",
+      "surface": "おやじ",
+      "dictionaryForm": "おやじ",
+      "reading": "おやじ",
+      "romaji": "oyaji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "отец; батя; старик"
+      ]
+    },
+    {
+      "id": "meshi",
+      "surface": "飯",
+      "dictionaryForm": "飯",
+      "reading": "めし",
+      "romaji": "meshi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "еда; варёный рис"
+      ]
+    },
+    {
+      "id": "kuu",
+      "surface": "食う",
+      "dictionaryForm": "食う",
+      "reading": "くう",
+      "romaji": "kuu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "есть, жрать; разговорное «есть»"
+      ]
+    },
+    {
+      "id": "senjitsu",
+      "surface": "先日",
+      "dictionaryForm": "先日",
+      "reading": "せんじつ",
+      "romaji": "senjitsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "на днях; недавно"
+      ]
+    },
+    {
+      "id": "yakusou",
+      "surface": "薬草",
+      "dictionaryForm": "薬草",
+      "reading": "やくそう",
+      "romaji": "yakusō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лекарственная трава"
+      ]
+    },
+    {
+      "id": "sagasu",
+      "surface": "探す",
+      "dictionaryForm": "探す",
+      "reading": "さがす",
+      "romaji": "sagasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "искать"
+      ]
+    },
+    {
+      "id": "mori",
+      "surface": "森",
+      "dictionaryForm": "森",
+      "reading": "もり",
+      "romaji": "mori",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лес"
+      ]
+    },
+    {
+      "id": "dekakeru",
+      "surface": "出かける",
+      "dictionaryForm": "出かける",
+      "reading": "でかける",
+      "romaji": "dekakeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "выходить; отправляться куда-либо"
+      ]
+    },
+    {
+      "id": "deau",
+      "surface": "出会う",
+      "dictionaryForm": "出会う",
+      "reading": "であう",
+      "romaji": "deau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "встречать; сталкиваться"
+      ]
+    },
+    {
+      "id": "murabito",
+      "surface": "村人",
+      "dictionaryForm": "村人",
+      "reading": "むらびと",
+      "romaji": "murabito",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "житель деревни; селянин"
+      ]
+    },
+    {
+      "id": "ichi",
+      "surface": "壱",
+      "dictionaryForm": "壱",
+      "reading": "いち",
+      "romaji": "ichi",
+      "partOfSpeech": "числительное",
+      "meanings": [
+        "один, формальная запись"
+      ]
+    },
+    {
+      "id": "ni-number",
+      "surface": "弐",
+      "dictionaryForm": "弐",
+      "reading": "に",
+      "romaji": "ni",
+      "partOfSpeech": "числительное",
+      "meanings": [
+        "два, формальная запись"
+      ]
+    },
+    {
+      "id": "san",
+      "surface": "参",
+      "dictionaryForm": "参",
+      "reading": "さん",
+      "romaji": "san",
+      "partOfSpeech": "числительное",
+      "meanings": [
+        "три, формальная запись"
+      ]
+    },
+    {
+      "id": "iu",
+      "surface": "言う",
+      "dictionaryForm": "言う",
+      "reading": "いう",
+      "romaji": "iu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "говорить; называться"
+      ]
+    },
+    {
+      "id": "na",
+      "surface": "名",
+      "dictionaryForm": "名",
+      "reading": "な",
+      "romaji": "na",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "имя; название"
+      ]
+    },
+    {
+      "id": "hitosarai",
+      "surface": "人さらい",
+      "dictionaryForm": "人さらい",
+      "reading": "ひとさらい",
+      "romaji": "hitosarai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "похититель людей; похищение людей"
+      ]
+    },
+    {
+      "id": "mattaku",
+      "surface": "まったく",
+      "dictionaryForm": "まったく",
+      "reading": "まったく",
+      "romaji": "mattaku",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "совершенно; право же"
+      ]
+    },
+    {
+      "id": "kyoudai",
+      "surface": "強大",
+      "dictionaryForm": "強大",
+      "reading": "きょうだい",
+      "romaji": "kyōdai",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "мощный; могущественный; огромный"
+      ]
+    },
+    {
+      "id": "meiwaku",
+      "surface": "迷惑",
+      "dictionaryForm": "迷惑",
+      "reading": "めいわく",
+      "romaji": "meiwaku",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "неприятности; причиняющий неудобства"
+      ]
+    },
+    {
+      "id": "kiwamarinai",
+      "surface": "極まりない",
+      "dictionaryForm": "極まりない",
+      "reading": "きわまりない",
+      "romaji": "kiwamarinai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "безмерный; чрезвычайный"
+      ]
+    },
+    {
+      "id": "kekkon",
+      "surface": "結婚",
+      "dictionaryForm": "結婚",
+      "reading": "けっこん",
+      "romaji": "kekkon",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "брак; вступление в брак"
+      ]
+    },
+    {
+      "id": "katsudou",
+      "surface": "活動",
+      "dictionaryForm": "活動",
+      "reading": "かつどう",
+      "romaji": "katsudō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "деятельность"
+      ]
+    },
+    {
+      "id": "ryakusuru",
+      "surface": "略する",
+      "dictionaryForm": "略する",
+      "reading": "りゃくする",
+      "romaji": "ryaku suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "сокращать, употреблять сокращённое название"
+      ]
+    },
+    {
+      "id": "konkatsu",
+      "surface": "婚活",
+      "dictionaryForm": "婚活",
+      "reading": "こんかつ",
+      "romaji": "konkatsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "поиск партнёра для вступления в брак"
+      ]
+    },
+    {
+      "id": "kyuutei",
+      "surface": "宮廷",
+      "dictionaryForm": "宮廷",
+      "reading": "きゅうてい",
+      "romaji": "kyūtei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "императорский двор; дворец"
+      ]
+    },
+    {
+      "id": "onnagari",
+      "surface": "女狩り",
+      "dictionaryForm": "女狩り",
+      "reading": "おんながり",
+      "romaji": "onnagari",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "охота на женщин"
+      ]
+    },
+    {
+      "id": "maa",
+      "surface": "まあ",
+      "dictionaryForm": "まあ",
+      "reading": "まあ",
+      "romaji": "mā",
+      "partOfSpeech": "междометие, наречие",
+      "meanings": [
+        "ну; что ж; вообще-то"
+      ]
+    },
+    {
+      "id": "kyuukin",
+      "surface": "給金",
+      "dictionaryForm": "給金",
+      "reading": "きゅうきん",
+      "romaji": "kyūkin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "жалованье; плата за работу"
+      ]
+    },
+    {
+      "id": "morau",
+      "surface": "もらう",
+      "dictionaryForm": "もらう",
+      "reading": "もらう",
+      "romaji": "morau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "получать"
+      ]
+    },
+    {
+      "id": "ninen",
+      "surface": "二年",
+      "dictionaryForm": "二年",
+      "reading": "にねん",
+      "romaji": "ninen",
+      "partOfSpeech": "счётное выражение",
+      "meanings": [
+        "два года"
+      ]
+    },
+    {
+      "id": "hataraku",
+      "surface": "働く",
+      "dictionaryForm": "働く",
+      "reading": "はたらく",
+      "romaji": "hataraku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "работать"
+      ]
+    },
+    {
+      "id": "shisei",
+      "surface": "市井",
+      "dictionaryForm": "市井",
+      "reading": "しせい",
+      "romaji": "shisei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "простонародная городская среда; жизнь простых людей"
+      ]
+    },
+    {
+      "id": "modoru",
+      "surface": "戻る",
+      "dictionaryForm": "戻る",
+      "reading": "もどる",
+      "romaji": "modoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "возвращаться"
+      ]
+    },
+    {
+      "id": "shuushokusaki",
+      "surface": "就職先",
+      "dictionaryForm": "就職先",
+      "reading": "しゅうしょくさき",
+      "romaji": "shūshokusaki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "место трудоустройства; работодатель"
+      ]
+    },
+    {
+      "id": "warui",
+      "surface": "悪い",
+      "dictionaryForm": "悪い",
+      "reading": "わるい",
+      "romaji": "warui",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "плохой"
+      ]
+    },
+    {
+      "id": "kojin",
+      "surface": "個人",
+      "dictionaryForm": "個人",
+      "reading": "こじん",
+      "romaji": "kojin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "отдельный человек; личность"
+      ]
+    },
+    {
+      "id": "ishi",
+      "surface": "意思",
+      "dictionaryForm": "意思",
+      "reading": "いし",
+      "romaji": "ishi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "воля; намерение"
+      ]
+    },
+    {
+      "id": "kuru",
+      "surface": "来る",
+      "dictionaryForm": "来る",
+      "reading": "くる",
+      "romaji": "kuru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "приходить"
+      ]
+    },
+    {
+      "id": "baai",
+      "surface": "場合",
+      "dictionaryForm": "場合",
+      "reading": "ばあい",
+      "romaji": "baai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "случай; обстоятельства"
+      ]
+    },
+    {
+      "id": "kusushi",
+      "surface": "薬師",
+      "dictionaryForm": "薬師",
+      "reading": "くすし",
+      "romaji": "kusushi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лекарь; изготовитель лекарств"
+      ]
+    },
+    {
+      "id": "sorenari",
+      "surface": "それなり",
+      "dictionaryForm": "それなり",
+      "reading": "それなり",
+      "romaji": "sorenari",
+      "partOfSpeech": "существительное, наречие",
+      "meanings": [
+        "по-своему; в соответствующей мере; достаточно сносно"
+      ]
+    },
+    {
+      "id": "seikatsu",
+      "surface": "生活",
+      "dictionaryForm": "生活",
+      "reading": "せいかつ",
+      "romaji": "seikatsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "жизнь; образ жизни"
+      ]
+    },
+    {
+      "id": "suru",
+      "surface": "する",
+      "dictionaryForm": "する",
+      "reading": "する",
+      "romaji": "suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "делать"
+      ]
+    },
+    {
+      "id": "hatameiwaku",
+      "surface": "はた迷惑",
+      "dictionaryForm": "はた迷惑",
+      "reading": "はためいわく",
+      "romaji": "hatameiwaku",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "неприятность для окружающих; доставляющий другим неудобства"
+      ]
+    },
+    {
+      "id": "hanashi",
+      "surface": "話",
+      "dictionaryForm": "話",
+      "reading": "はなし",
+      "romaji": "hanashi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "рассказ; дело; вопрос"
+      ]
+    },
+    {
+      "id": "myourei",
+      "surface": "妙齢",
+      "dictionaryForm": "妙齢",
+      "reading": "みょうれい",
+      "romaji": "myōrei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "молодой, брачный возраст девушки"
+      ]
+    },
+    {
+      "id": "musume",
+      "surface": "娘",
+      "dictionaryForm": "娘",
+      "reading": "むすめ",
+      "romaji": "musume",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "дочь; девушка"
+      ]
+    },
+    {
+      "id": "tsukamaeru",
+      "surface": "捕まえる",
+      "dictionaryForm": "捕まえる",
+      "reading": "つかまえる",
+      "romaji": "tsukamaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "ловить; хватать"
+      ]
+    },
+    {
+      "id": "kangan",
+      "surface": "宦官",
+      "dictionaryForm": "宦官",
+      "reading": "かんがん",
+      "romaji": "kangan",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "евнух, дворцовый служащий"
+      ]
+    },
+    {
+      "id": "uru",
+      "surface": "売る",
+      "dictionaryForm": "売る",
+      "reading": "うる",
+      "romaji": "uru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "продавать"
+      ]
+    },
+    {
+      "id": "sakadai",
+      "surface": "酒代",
+      "dictionaryForm": "酒代",
+      "reading": "さかだい",
+      "romaji": "sakadai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "деньги на выпивку"
+      ]
+    },
+    {
+      "id": "kasegu",
+      "surface": "稼ぐ",
+      "dictionaryForm": "稼ぐ",
+      "reading": "かせぐ",
+      "romaji": "kasegu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "зарабатывать"
+      ]
+    },
+    {
+      "id": "soretomo",
+      "surface": "それとも",
+      "dictionaryForm": "それとも",
+      "reading": "それとも",
+      "romaji": "soretomo",
+      "partOfSpeech": "союз",
+      "meanings": [
+        "или же"
+      ]
+    },
+    {
+      "id": "onore",
+      "surface": "己",
+      "dictionaryForm": "己",
+      "reading": "おのれ",
+      "romaji": "onore",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "сам; собственный"
+      ]
+    },
+    {
+      "id": "migawari",
+      "surface": "身代わり",
+      "dictionaryForm": "身代わり",
+      "reading": "みがわり",
+      "romaji": "migawari",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "замена другому человеку; тот, кто идёт вместо другого"
+      ]
+    },
+    {
+      "id": "doudemoii",
+      "surface": "どうでもいい",
+      "dictionaryForm": "どうでもいい",
+      "reading": "どうでもいい",
+      "romaji": "dō demo ii",
+      "partOfSpeech": "выражение",
+      "meanings": [
+        "безразлично; не имеет значения"
+      ]
+    },
+    {
+      "id": "donna",
+      "surface": "どんな",
+      "dictionaryForm": "どんな",
+      "reading": "どんな",
+      "romaji": "donna",
+      "partOfSpeech": "определительное слово",
+      "meanings": [
+        "какой; каков бы ни был"
+      ]
+    },
+    {
+      "id": "riyuu",
+      "surface": "理由",
+      "dictionaryForm": "理由",
+      "reading": "りゆう",
+      "romaji": "riyū",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "причина"
+      ]
+    },
+    {
+      "id": "aru",
+      "surface": "ある",
+      "dictionaryForm": "ある",
+      "reading": "ある",
+      "romaji": "aru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "быть; иметься"
+      ]
+    },
+    {
+      "id": "aru-indefinite",
+      "surface": "ある",
+      "dictionaryForm": "ある",
+      "reading": "ある",
+      "romaji": "aru",
+      "partOfSpeech": "определительное слово",
+      "meanings": [
+        "некий; один определённый"
+      ]
+    },
+    {
+      "id": "tobacchiri",
+      "surface": "とばっちり",
+      "dictionaryForm": "とばっちり",
+      "reading": "とばっちり",
+      "romaji": "tobacchiri",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "незаслуженные неприятности из-за чужих действий"
+      ]
+    },
+    {
+      "id": "ukeru",
+      "surface": "受ける",
+      "dictionaryForm": "受ける",
+      "reading": "うける",
+      "romaji": "ukeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "получать; подвергаться"
+      ]
+    },
+    {
+      "id": "kawaru",
+      "surface": "変わる",
+      "dictionaryForm": "変わる",
+      "reading": "かわる",
+      "romaji": "kawaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "меняться"
+      ]
+    },
+    {
+      "id": "koukyuu",
+      "surface": "後宮",
+      "dictionaryForm": "後宮",
+      "reading": "こうきゅう",
+      "romaji": "kōkyū",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "задний дворец; женские покои императорского дворца"
+      ]
+    },
+    {
+      "id": "basho",
+      "surface": "場所",
+      "dictionaryForm": "場所",
+      "reading": "ばしょ",
+      "romaji": "basho",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "место"
+      ]
+    },
+    {
+      "id": "isshou",
+      "surface": "一生",
+      "dictionaryForm": "一生",
+      "reading": "いっしょう",
+      "romaji": "isshō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вся жизнь"
+      ]
+    },
+    {
+      "id": "kakawaru",
+      "surface": "関わる",
+      "dictionaryForm": "関わる",
+      "reading": "かかわる",
+      "romaji": "kakawaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "иметь отношение; быть связанным"
+      ]
+    },
+    {
+      "id": "musekaeru",
+      "surface": "むせ返る",
+      "dictionaryForm": "むせ返る",
+      "reading": "むせかえる",
+      "romaji": "musekaeru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "задыхаться от сильного запаха; вызывать удушье"
+      ]
+    },
+    {
+      "id": "keshou",
+      "surface": "化粧",
+      "dictionaryForm": "化粧",
+      "reading": "けしょう",
+      "romaji": "keshō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "косметика; макияж"
+      ]
+    },
+    {
+      "id": "kou-incense",
+      "surface": "香",
+      "dictionaryForm": "香",
+      "reading": "こう",
+      "romaji": "kō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "благовония; аромат"
+      ]
+    },
+    {
+      "id": "koromo",
+      "surface": "衣",
+      "dictionaryForm": "衣",
+      "reading": "ころも",
+      "romaji": "koromo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "одежда; одеяние"
+      ]
+    },
+    {
+      "id": "matou",
+      "surface": "纏う",
+      "dictionaryForm": "纏う",
+      "reading": "まとう",
+      "romaji": "matou",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "надевать; облачаться"
+      ]
+    },
+    {
+      "id": "nyokan",
+      "surface": "女官",
+      "dictionaryForm": "女官",
+      "reading": "にょかん",
+      "romaji": "nyokan",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "придворная служительница; придворная дама"
+      ]
+    },
+    {
+      "id": "kuchibiru",
+      "surface": "唇",
+      "dictionaryForm": "唇",
+      "reading": "くちびる",
+      "romaji": "kuchibiru",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "губы"
+      ]
+    },
+    {
+      "id": "usupperai",
+      "surface": "薄っぺらい",
+      "dictionaryForm": "薄っぺらい",
+      "reading": "うすっぺらい",
+      "romaji": "usupperai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "тонкий; поверхностный; пустой"
+      ]
+    },
+    {
+      "id": "emi",
+      "surface": "笑み",
+      "dictionaryForm": "笑み",
+      "reading": "えみ",
+      "romaji": "emi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "улыбка"
+      ]
+    },
+    {
+      "id": "haritsuku",
+      "surface": "張り付く",
+      "dictionaryForm": "張り付く",
+      "reading": "はりつく",
+      "romaji": "haritsuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "прилипать; застывать на поверхности"
+      ]
+    },
+    {
+      "id": "kusuriya",
+      "surface": "薬屋",
+      "dictionaryForm": "薬屋",
+      "reading": "くすりや",
+      "romaji": "kusuriya",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "аптекарь; аптекарская лавка"
+      ]
+    },
+    {
+      "id": "omou",
+      "surface": "思う",
+      "dictionaryForm": "思う",
+      "reading": "おもう",
+      "romaji": "omou",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "думать; полагать"
+      ]
+    },
+    {
+      "id": "onna",
+      "surface": "女",
+      "dictionaryForm": "女",
+      "reading": "おんな",
+      "romaji": "onna",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "женщина"
+      ]
+    },
+    {
+      "id": "osoroshii",
+      "surface": "恐ろしい",
+      "dictionaryForm": "恐ろしい",
+      "reading": "おそろしい",
+      "romaji": "osoroshii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "страшный; ужасающий"
+      ]
+    },
+    {
+      "id": "doku",
+      "surface": "毒",
+      "dictionaryForm": "毒",
+      "reading": "どく",
+      "romaji": "doku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "яд"
+      ]
+    },
+    {
+      "id": "tenjoubito",
+      "surface": "殿上人",
+      "dictionaryForm": "殿上人",
+      "reading": "てんじょうびと",
+      "romaji": "tenjōbito",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "высокопоставленный придворный; вельможа"
+      ]
+    },
+    {
+      "id": "sumau",
+      "surface": "住まう",
+      "dictionaryForm": "住まう",
+      "reading": "すまう",
+      "romaji": "sumau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "жить; обитать"
+      ]
+    },
+    {
+      "id": "goten",
+      "surface": "御殿",
+      "dictionaryForm": "御殿",
+      "reading": "ごてん",
+      "romaji": "goten",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "дворец; господские покои"
+      ]
+    },
+    {
+      "id": "jouka",
+      "surface": "城下",
+      "dictionaryForm": "城下",
+      "reading": "じょうか",
+      "romaji": "jōka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "город у замка; город под стенами замка"
+      ]
+    },
+    {
+      "id": "hanamachi",
+      "surface": "花街",
+      "dictionaryForm": "花街",
+      "reading": "はなまち",
+      "romaji": "hanamachi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "квартал увеселений; квартал куртизанок"
+      ]
+    },
+    {
+      "id": "ashimoto",
+      "surface": "足元",
+      "dictionaryForm": "足元",
+      "reading": "あしもと",
+      "romaji": "ashimoto",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "место у ног; под ногами"
+      ]
+    },
+    {
+      "id": "oku-place",
+      "surface": "置く",
+      "dictionaryForm": "置く",
+      "reading": "おく",
+      "romaji": "oku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "ставить; класть; держать у себя"
+      ]
+    },
+    {
+      "id": "sentakukago",
+      "surface": "洗濯籠",
+      "dictionaryForm": "洗濯籠",
+      "reading": "せんたくかご",
+      "romaji": "sentakukago",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "корзина для белья"
+      ]
+    },
+    {
+      "id": "kakaeru",
+      "surface": "抱える",
+      "dictionaryForm": "抱える",
+      "reading": "かかえる",
+      "romaji": "kakaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "обхватывать руками; нести в руках"
+      ]
+    },
+    {
+      "id": "tatemono",
+      "surface": "建物",
+      "dictionaryForm": "建物",
+      "reading": "たてもの",
+      "romaji": "tatemono",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "здание"
+      ]
+    },
+    {
+      "id": "oku",
+      "surface": "奥",
+      "dictionaryForm": "奥",
+      "reading": "おく",
+      "romaji": "oku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "глубина; внутренняя часть"
+      ]
+    },
+    {
+      "id": "mukau",
+      "surface": "向かう",
+      "dictionaryForm": "向かう",
+      "reading": "むかう",
+      "romaji": "mukau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "направляться"
+      ]
+    },
+    {
+      "id": "omote",
+      "surface": "表",
+      "dictionaryForm": "表",
+      "reading": "おもて",
+      "romaji": "omote",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "передняя сторона; парадная часть"
+      ]
+    },
+    {
+      "id": "chigau",
+      "surface": "違う",
+      "dictionaryForm": "違う",
+      "reading": "ちがう",
+      "romaji": "chigau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "отличаться"
+      ]
+    },
+    {
+      "id": "sappuukei",
+      "surface": "殺風景",
+      "dictionaryForm": "殺風景",
+      "reading": "さっぷうけい",
+      "romaji": "sappūkei",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "унылый; невзрачный; лишённый украшений"
+      ]
+    },
+    {
+      "id": "nakaniwa",
+      "surface": "中庭",
+      "dictionaryForm": "中庭",
+      "reading": "なかにわ",
+      "romaji": "nakaniwa",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "внутренний двор"
+      ]
+    },
+    {
+      "id": "ishidatami",
+      "surface": "石畳",
+      "dictionaryForm": "石畳",
+      "reading": "いしだたみ",
+      "romaji": "ishidatami",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "каменная мостовая; мощение камнем"
+      ]
+    },
+    {
+      "id": "mizuba",
+      "surface": "水場",
+      "dictionaryForm": "水場",
+      "reading": "みずば",
+      "romaji": "mizuba",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "место у воды; место для мытья"
+      ]
+    },
+    {
+      "id": "otoko",
+      "surface": "男",
+      "dictionaryForm": "男",
+      "reading": "おとこ",
+      "romaji": "otoko",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мужчина"
+      ]
+    },
+    {
+      "id": "meshitsukai",
+      "surface": "召使",
+      "dictionaryForm": "召使",
+      "reading": "めしつかい",
+      "romaji": "meshitsukai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "слуга"
+      ]
+    },
+    {
+      "id": "tairyou",
+      "surface": "大量",
+      "dictionaryForm": "大量",
+      "reading": "たいりょう",
+      "romaji": "tairyō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "большое количество"
+      ]
+    },
+    {
+      "id": "sentakumono",
+      "surface": "洗濯物",
+      "dictionaryForm": "洗濯物",
+      "reading": "せんたくもの",
+      "romaji": "sentakumono",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "бельё для стирки или после стирки"
+      ]
+    },
+    {
+      "id": "arau",
+      "surface": "洗う",
+      "dictionaryForm": "洗う",
+      "reading": "あらう",
+      "romaji": "arau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "мыть; стирать"
+      ]
+    },
+    {
+      "id": "kihon",
+      "surface": "基本",
+      "dictionaryForm": "基本",
+      "reading": "きほん",
+      "romaji": "kihon",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "основа; в основном"
+      ]
+    },
+    {
+      "id": "danshi",
+      "surface": "男子",
+      "dictionaryForm": "男子",
+      "reading": "だんし",
+      "romaji": "danshi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лицо мужского пола; мужчина"
+      ]
+    },
+    {
+      "id": "kinsei",
+      "surface": "禁制",
+      "dictionaryForm": "禁制",
+      "reading": "きんせい",
+      "romaji": "kinsei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "запрет; запрещение входа"
+      ]
+    },
+    {
+      "id": "hairu",
+      "surface": "入る",
+      "dictionaryForm": "入る",
+      "reading": "はいる",
+      "romaji": "hairu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "входить"
+      ]
+    },
+    {
+      "id": "kuni",
+      "surface": "国",
+      "dictionaryForm": "国",
+      "reading": "くに",
+      "romaji": "kuni",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "страна; государство"
+      ]
+    },
+    {
+      "id": "kouki",
+      "surface": "高貴",
+      "dictionaryForm": "高貴",
+      "reading": "こうき",
+      "romaji": "kōki",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "знатный; благородный"
+      ]
+    },
+    {
+      "id": "kata-person",
+      "surface": "かた",
+      "dictionaryForm": "かた",
+      "reading": "かた",
+      "romaji": "kata",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "человек, лицо; уважительное обозначение"
+      ]
+    },
+    {
+      "id": "ketsuen",
+      "surface": "血縁",
+      "dictionaryForm": "血縁",
+      "reading": "けつえん",
+      "romaji": "ketsuen",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "кровное родство; кровные родственники"
+      ]
+    },
+    {
+      "id": "ato",
+      "surface": "あと",
+      "dictionaryForm": "あと",
+      "reading": "あと",
+      "romaji": "ato",
+      "partOfSpeech": "наречие, существительное",
+      "meanings": [
+        "ещё; кроме того; после"
+      ]
+    },
+    {
+      "id": "taisetsu",
+      "surface": "大切",
+      "dictionaryForm": "大切",
+      "reading": "たいせつ",
+      "romaji": "taisetsu",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "важный; дорогой"
+      ]
+    },
+    {
+      "id": "ushinau",
+      "surface": "失う",
+      "dictionaryForm": "失う",
+      "reading": "うしなう",
+      "romaji": "ushinau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "терять; лишаться"
+      ]
+    },
+    {
+      "id": "moto",
+      "surface": "元",
+      "dictionaryForm": "元",
+      "reading": "もと",
+      "romaji": "moto",
+      "partOfSpeech": "существительное, префикс",
+      "meanings": [
+        "бывший; прежний"
+      ]
+    },
+    {
+      "id": "dansei",
+      "surface": "男性",
+      "dictionaryForm": "男性",
+      "reading": "だんせい",
+      "romaji": "dansei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мужчина; мужской пол"
+      ]
+    },
+    {
+      "id": "mochiron",
+      "surface": "もちろん",
+      "dictionaryForm": "もちろん",
+      "reading": "もちろん",
+      "romaji": "mochiron",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "разумеется; конечно"
+      ]
+    },
+    {
+      "id": "soko",
+      "surface": "そこ",
+      "dictionaryForm": "そこ",
+      "reading": "そこ",
+      "romaji": "soko",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "там; то место"
+      ]
+    },
+    {
+      "id": "kousha",
+      "surface": "後者",
+      "dictionaryForm": "後者",
+      "reading": "こうしゃ",
+      "romaji": "kōsha",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "последний из упомянутых; второй"
+      ]
+    },
+    {
+      "id": "ibitsu",
+      "surface": "歪",
+      "dictionaryForm": "歪",
+      "reading": "いびつ",
+      "romaji": "ibitsu",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "искажённый; неправильный; противоестественный"
+      ]
+    },
+    {
+      "id": "ri",
+      "surface": "理",
+      "dictionaryForm": "理",
+      "reading": "り",
+      "romaji": "ri",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "разумный порядок; логика; смысл"
+      ]
+    },
+    {
+      "id": "kanau",
+      "surface": "かなう",
+      "dictionaryForm": "かなう",
+      "reading": "かなう",
+      "romaji": "kanau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "соответствовать; согласовываться"
+      ]
+    },
+    {
+      "id": "kangaeru",
+      "surface": "考える",
+      "dictionaryForm": "考える",
+      "reading": "かんがえる",
+      "romaji": "kangaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "думать; размышлять"
+      ]
+    },
+    {
+      "id": "kago",
+      "surface": "籠",
+      "dictionaryForm": "籠",
+      "reading": "かご",
+      "romaji": "kago",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "корзина"
+      ]
+    },
+    {
+      "id": "soba",
+      "surface": "そば",
+      "dictionaryForm": "そば",
+      "reading": "そば",
+      "romaji": "soba",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "поблизости; рядом"
+      ]
+    },
+    {
+      "id": "naraberu",
+      "surface": "並べる",
+      "dictionaryForm": "並べる",
+      "reading": "ならべる",
+      "romaji": "naraberu",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "расставлять; располагать в ряд"
+      ]
+    },
+    {
+      "id": "yogoremono",
+      "surface": "汚れ物",
+      "dictionaryForm": "汚れ物",
+      "reading": "よごれもの",
+      "romaji": "yogoremono",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "грязные вещи; грязное бельё"
+      ]
+    },
+    {
+      "id": "ataru",
+      "surface": "当たる",
+      "dictionaryForm": "当たる",
+      "reading": "あたる",
+      "romaji": "ataru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "попадать; подвергаться воздействию; быть освещённым"
+      ]
+    },
+    {
+      "id": "sentakuzumi",
+      "surface": "洗濯済み",
+      "dictionaryForm": "洗濯済み",
+      "reading": "せんたくずみ",
+      "romaji": "sentakuzumi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "уже выстиранный; стирка завершена"
+      ]
+    },
+    {
+      "id": "mochite",
+      "surface": "持ち手",
+      "dictionaryForm": "持ち手",
+      "reading": "もちて",
+      "romaji": "mochite",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ручка предмета"
+      ]
+    },
+    {
+      "id": "kakeru",
+      "surface": "かける",
+      "dictionaryForm": "かける",
+      "reading": "かける",
+      "romaji": "kakeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "вешать; подвешивать"
+      ]
+    },
+    {
+      "id": "kifuda",
+      "surface": "木札",
+      "dictionaryForm": "木札",
+      "reading": "きふだ",
+      "romaji": "kifuda",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "деревянная бирка; деревянная табличка"
+      ]
+    },
+    {
+      "id": "shokubutsu",
+      "surface": "植物",
+      "dictionaryForm": "植物",
+      "reading": "しょくぶつ",
+      "romaji": "shokubutsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "растение"
+      ]
+    },
+    {
+      "id": "mosuru",
+      "surface": "模する",
+      "dictionaryForm": "模する",
+      "reading": "もする",
+      "romaji": "mo suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "изображать по образцу; подражать форме"
+      ]
+    },
+    {
+      "id": "e-picture",
+      "surface": "絵",
+      "dictionaryForm": "絵",
+      "reading": "え",
+      "romaji": "e",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "рисунок; изображение"
+      ]
+    },
+    {
+      "id": "suuji",
+      "surface": "数字",
+      "dictionaryForm": "数字",
+      "reading": "すうじ",
+      "romaji": "sūji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "цифра; число, записанное цифрами"
+      ]
+    },
+    {
+      "id": "kaku",
+      "surface": "書く",
+      "dictionaryForm": "書く",
+      "reading": "かく",
+      "romaji": "kaku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "писать"
+      ]
+    },
+    {
+      "id": "ji",
+      "surface": "字",
+      "dictionaryForm": "字",
+      "reading": "じ",
+      "romaji": "ji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "письменный знак; буква; грамотность"
+      ]
+    },
+    {
+      "id": "yomu",
+      "surface": "読む",
+      "dictionaryForm": "読む",
+      "reading": "よむ",
+      "romaji": "yomu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "читать"
+      ]
+    },
+    {
+      "id": "nanse",
+      "surface": "なんせ",
+      "dictionaryForm": "なんせ",
+      "reading": "なんせ",
+      "romaji": "nanse",
+      "partOfSpeech": "союз, наречие",
+      "meanings": [
+        "ведь; как-никак"
+      ]
+    },
+    {
+      "id": "sarau",
+      "surface": "攫う",
+      "dictionaryForm": "攫う",
+      "reading": "さらう",
+      "romaji": "sarau",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "похищать; умыкать"
+      ]
+    },
+    {
+      "id": "tsurekomu",
+      "surface": "連れ込む",
+      "dictionaryForm": "連れ込む",
+      "reading": "つれこむ",
+      "romaji": "tsurekomu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "приводить внутрь; затаскивать"
+      ]
+    },
+    {
+      "id": "mae",
+      "surface": "前",
+      "dictionaryForm": "前",
+      "reading": "まえ",
+      "romaji": "mae",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "перед; до; раньше"
+      ]
+    },
+    {
+      "id": "saiteigen",
+      "surface": "最低限",
+      "dictionaryForm": "最低限",
+      "reading": "さいていげん",
+      "romaji": "saiteigen",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "необходимый минимум"
+      ]
+    },
+    {
+      "id": "reigi",
+      "surface": "礼儀",
+      "dictionaryForm": "礼儀",
+      "reading": "れいぎ",
+      "romaji": "reigi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "этикет; правила приличия"
+      ]
+    },
+    {
+      "id": "oshieru",
+      "surface": "教える",
+      "dictionaryForm": "教える",
+      "reading": "おしえる",
+      "romaji": "oshieru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "обучать; объяснять"
+      ]
+    },
+    {
+      "id": "moji",
+      "surface": "文字",
+      "dictionaryForm": "文字",
+      "reading": "もじ",
+      "romaji": "moji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "письменность; письменные знаки"
+      ]
+    },
+    {
+      "id": "muzukashii",
+      "surface": "難しい",
+      "dictionaryForm": "難しい",
+      "reading": "むずかしい",
+      "romaji": "muzukashii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "трудный; сложный"
+      ]
+    },
+    {
+      "id": "shikijiritsu",
+      "surface": "識字率",
+      "dictionaryForm": "識字率",
+      "reading": "しきじりつ",
+      "romaji": "shikijiritsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "уровень грамотности; доля грамотных"
+      ]
+    },
+    {
+      "id": "inaka",
+      "surface": "田舎",
+      "dictionaryForm": "田舎",
+      "reading": "いなか",
+      "romaji": "inaka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "деревня; сельская местность"
+      ]
+    },
+    {
+      "id": "hanbun",
+      "surface": "半分",
+      "dictionaryForm": "半分",
+      "reading": "はんぶん",
+      "romaji": "hanbun",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "половина"
+      ]
+    },
+    {
+      "id": "kosu",
+      "surface": "越す",
+      "dictionaryForm": "越す",
+      "reading": "こす",
+      "romaji": "kosu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "превышать; переходить за предел"
+      ]
+    },
+    {
+      "id": "ookii",
+      "surface": "大きい",
+      "dictionaryForm": "大きい",
+      "reading": "おおきい",
+      "romaji": "ōkii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "большой"
+      ]
+    },
+    {
+      "id": "naru",
+      "surface": "なる",
+      "dictionaryForm": "なる",
+      "reading": "なる",
+      "romaji": "naru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "становиться"
+      ]
+    },
+    {
+      "id": "heigai",
+      "surface": "弊害",
+      "dictionaryForm": "弊害",
+      "reading": "へいがい",
+      "romaji": "heigai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "пагубные последствия; вред"
+      ]
+    },
+    {
+      "id": "ryou",
+      "surface": "量",
+      "dictionaryForm": "量",
+      "reading": "りょう",
+      "romaji": "ryō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "количество; объём"
+      ]
+    },
+    {
+      "id": "fueru",
+      "surface": "増える",
+      "dictionaryForm": "増える",
+      "reading": "ふえる",
+      "romaji": "fueru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "увеличиваться; расти"
+      ]
+    },
+    {
+      "id": "shitsu",
+      "surface": "質",
+      "dictionaryForm": "質",
+      "reading": "しつ",
+      "romaji": "shitsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "качество"
+      ]
+    },
+    {
+      "id": "sentei",
+      "surface": "先帝",
+      "dictionaryForm": "先帝",
+      "reading": "せんてい",
+      "romaji": "sentei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "прежний император; покойный император"
+      ]
+    },
+    {
+      "id": "hana",
+      "surface": "花",
+      "dictionaryForm": "花",
+      "reading": "はな",
+      "romaji": "hana",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "цветок"
+      ]
+    },
+    {
+      "id": "sono-garden",
+      "surface": "園",
+      "dictionaryForm": "園",
+      "reading": "その",
+      "romaji": "sono",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сад"
+      ]
+    },
+    {
+      "id": "toutei",
+      "surface": "到底",
+      "dictionaryForm": "到底",
+      "reading": "とうてい",
+      "romaji": "tōtei",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "никак; совершенно; с отрицанием «далеко не»"
+      ]
+    },
+    {
+      "id": "oyobu",
+      "surface": "及ぶ",
+      "dictionaryForm": "及ぶ",
+      "reading": "およぶ",
+      "romaji": "oyobu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "достигать; сравняться"
+      ]
+    },
+    {
+      "id": "kisaki",
+      "surface": "妃",
+      "dictionaryForm": "妃",
+      "reading": "きさき",
+      "romaji": "kisaki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "супруга правителя; императорская супруга"
+      ]
+    },
+    {
+      "id": "awaseru",
+      "surface": "合わせる",
+      "dictionaryForm": "合わせる",
+      "reading": "あわせる",
+      "romaji": "awaseru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "объединять; складывать; вместе насчитывать"
+      ]
+    },
+    {
+      "id": "nisennin",
+      "surface": "二千人",
+      "dictionaryForm": "二千人",
+      "reading": "にせんにん",
+      "romaji": "nisennin",
+      "partOfSpeech": "счётное выражение",
+      "meanings": [
+        "две тысячи человек"
+      ]
+    },
+    {
+      "id": "kuwaeru",
+      "surface": "加える",
+      "dictionaryForm": "加える",
+      "reading": "くわえる",
+      "romaji": "kuwaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "добавлять"
+      ]
+    },
+    {
+      "id": "sanzen",
+      "surface": "三千",
+      "dictionaryForm": "三千",
+      "reading": "さんぜん",
+      "romaji": "sanzen",
+      "partOfSpeech": "числительное",
+      "meanings": [
+        "три тысячи"
+      ]
+    },
+    {
+      "id": "oojotai",
+      "surface": "大所帯",
+      "dictionaryForm": "大所帯",
+      "reading": "おおじょたい",
+      "romaji": "ōjotai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "большое хозяйство; большая группа проживающих вместе"
+      ]
+    },
+    {
+      "id": "saikasou",
+      "surface": "最下層",
+      "dictionaryForm": "最下層",
+      "reading": "さいかそう",
+      "romaji": "saikasō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "самый низший слой"
+      ]
+    },
+    {
+      "id": "gejo",
+      "surface": "下女",
+      "dictionaryForm": "下女",
+      "reading": "げじょ",
+      "romaji": "gejo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "служанка низшего положения"
+      ]
+    },
+    {
+      "id": "kanshoku",
+      "surface": "官職",
+      "dictionaryForm": "官職",
+      "reading": "かんしょく",
+      "romaji": "kanshoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "официальная должность; государственная должность"
+      ]
+    },
+    {
+      "id": "tokuni",
+      "surface": "特に",
+      "dictionaryForm": "特に",
+      "reading": "とくに",
+      "romaji": "toku ni",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "особенно; в частности"
+      ]
+    },
+    {
+      "id": "ushirodate",
+      "surface": "後ろ盾",
+      "dictionaryForm": "後ろ盾",
+      "reading": "うしろだて",
+      "romaji": "ushirodate",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "покровительство; покровитель"
+      ]
+    },
+    {
+      "id": "kazuawase",
+      "surface": "数合わせ",
+      "dictionaryForm": "数合わせ",
+      "reading": "かずあわせ",
+      "romaji": "kazuawase",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "добор до нужного числа; заполнение численности"
+      ]
+    },
+    {
+      "id": "datou",
+      "surface": "妥当",
+      "dictionaryForm": "妥当",
+      "reading": "だとう",
+      "romaji": "datō",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "уместный; соответствующий; обоснованный"
+      ]
+    },
+    {
+      "id": "botan",
+      "surface": "牡丹",
+      "dictionaryForm": "牡丹",
+      "reading": "ぼたん",
+      "romaji": "botan",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "пион"
+      ]
+    },
+    {
+      "id": "houman",
+      "surface": "豊満",
+      "dictionaryForm": "豊満",
+      "reading": "ほうまん",
+      "romaji": "hōman",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "пышный; полнотелый"
+      ]
+    },
+    {
+      "id": "nikutai",
+      "surface": "肉体",
+      "dictionaryForm": "肉体",
+      "reading": "にくたい",
+      "romaji": "nikutai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "тело"
+      ]
+    },
+    {
+      "id": "mangetsu",
+      "surface": "満月",
+      "dictionaryForm": "満月",
+      "reading": "まんげつ",
+      "romaji": "mangetsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "полная луна; полнолуние"
+      ]
+    },
+    {
+      "id": "shiroi",
+      "surface": "白い",
+      "dictionaryForm": "白い",
+      "reading": "しろい",
+      "romaji": "shiroi",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "белый"
+      ]
+    },
+    {
+      "id": "hada",
+      "surface": "肌",
+      "dictionaryForm": "肌",
+      "reading": "はだ",
+      "romaji": "hada",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "кожа"
+      ]
+    },
+    {
+      "id": "motsu",
+      "surface": "持つ",
+      "dictionaryForm": "持つ",
+      "reading": "もつ",
+      "romaji": "motsu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "иметь; держать; обладать"
+      ]
+    },
+    {
+      "id": "mada",
+      "surface": "まだ",
+      "dictionaryForm": "まだ",
+      "reading": "まだ",
+      "romaji": "mada",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "ещё; пока"
+      ]
+    },
+    {
+      "id": "kahi",
+      "surface": "下妃",
+      "dictionaryForm": "下妃",
+      "reading": "かひ",
+      "romaji": "kahi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "супруга правителя младшего ранга"
+      ]
+    },
+    {
+      "id": "kurai",
+      "surface": "位",
+      "dictionaryForm": "位",
+      "reading": "くらい",
+      "romaji": "kurai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ранг; положение"
+      ]
+    },
+    {
+      "id": "tsuku-rank",
+      "surface": "つく",
+      "dictionaryForm": "つく",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "занимать должность или положение"
+      ]
+    },
+    {
+      "id": "kanousei",
+      "surface": "可能性",
+      "dictionaryForm": "可能性",
+      "reading": "かのうせい",
+      "romaji": "kanōsei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "возможность; вероятность"
+      ]
+    },
+    {
+      "id": "sobakasu",
+      "surface": "そばかす",
+      "dictionaryForm": "そばかす",
+      "reading": "そばかす",
+      "romaji": "sobakasu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "веснушки"
+      ]
+    },
+    {
+      "id": "uku",
+      "surface": "浮く",
+      "dictionaryForm": "浮く",
+      "reading": "うく",
+      "romaji": "uku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "всплывать; проступать на поверхности"
+      ]
+    },
+    {
+      "id": "kenkouteki",
+      "surface": "健康的",
+      "dictionaryForm": "健康的",
+      "reading": "けんこうてき",
+      "romaji": "kenkōteki",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "здоровый; имеющий здоровый вид"
+      ]
+    },
+    {
+      "id": "kareeda",
+      "surface": "枯れ枝",
+      "dictionaryForm": "枯れ枝",
+      "reading": "かれえだ",
+      "romaji": "kareeda",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сухая ветка"
+      ]
+    },
+    {
+      "id": "teashi",
+      "surface": "手足",
+      "dictionaryForm": "手足",
+      "reading": "てあし",
+      "romaji": "teashi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "руки и ноги; конечности"
+      ]
+    },
+    {
+      "id": "hayai",
+      "surface": "早い",
+      "dictionaryForm": "早い",
+      "reading": "はやい",
+      "romaji": "hayai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "ранний; быстрый"
+      ]
+    },
+    {
+      "id": "shigoto",
+      "surface": "仕事",
+      "dictionaryForm": "仕事",
+      "reading": "しごと",
+      "romaji": "shigoto",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "работа"
+      ]
+    },
+    {
+      "id": "owaraseru",
+      "surface": "終わらせる",
+      "dictionaryForm": "終わらせる",
+      "reading": "おわらせる",
+      "romaji": "owaraseru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "заканчивать; доводить до конца"
+      ]
+    },
+    {
+      "id": "ume",
+      "surface": "梅",
+      "dictionaryForm": "梅",
+      "reading": "うめ",
+      "romaji": "ume",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "слива японская; умэ"
+      ]
+    },
+    {
+      "id": "ichinana",
+      "surface": "壱七",
+      "dictionaryForm": "壱七",
+      "reading": "いちなな",
+      "romaji": "ichinana",
+      "partOfSpeech": "цифровая маркировка",
+      "meanings": [
+        "цифры «один, семь» на бирке"
+      ]
+    },
+    {
+      "id": "fuda",
+      "surface": "札",
+      "dictionaryForm": "札",
+      "reading": "ふだ",
+      "romaji": "fuda",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "бирка; табличка"
+      ]
+    },
+    {
+      "id": "mitsukeru",
+      "surface": "見つける",
+      "dictionaryForm": "見つける",
+      "reading": "みつける",
+      "romaji": "mitsukeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "находить; замечать"
+      ]
+    },
+    {
+      "id": "kobashiri",
+      "surface": "小走り",
+      "dictionaryForm": "小走り",
+      "reading": "こばしり",
+      "romaji": "kobashiri",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мелкая рысь; короткие быстрые шаги"
+      ]
+    },
+    {
+      "id": "aruku",
+      "surface": "歩く",
+      "dictionaryForm": "歩く",
+      "reading": "あるく",
+      "romaji": "aruku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "идти; ходить"
+      ]
+    },
+    {
+      "id": "omoi",
+      "surface": "重い",
+      "dictionaryForm": "重い",
+      "reading": "おもい",
+      "romaji": "omoi",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "тяжёлый"
+      ]
+    },
+    {
+      "id": "kumoru",
+      "surface": "曇る",
+      "dictionaryForm": "曇る",
+      "reading": "くもる",
+      "romaji": "kumoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "покрываться облаками; хмуриться"
+      ]
+    },
+    {
+      "id": "sora",
+      "surface": "空",
+      "dictionaryForm": "空",
+      "reading": "そら",
+      "romaji": "sora",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "небо"
+      ]
+    },
+    {
+      "id": "nakidasu",
+      "surface": "泣き出す",
+      "dictionaryForm": "泣き出す",
+      "reading": "なきだす",
+      "romaji": "nakidasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "начинать плакать"
+      ]
+    },
+    {
+      "id": "heya",
+      "surface": "部屋",
+      "dictionaryForm": "部屋",
+      "reading": "へや",
+      "romaji": "heya",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "комната"
+      ]
+    },
+    {
+      "id": "nushi",
+      "surface": "主",
+      "dictionaryForm": "主",
+      "reading": "ぬし",
+      "romaji": "nushi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "хозяин; владелец"
+      ]
+    },
+    {
+      "id": "kakyuu",
+      "surface": "下級",
+      "dictionaryForm": "下級",
+      "reading": "かきゅう",
+      "romaji": "kakyū",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "низший ранг; младший разряд"
+      ]
+    },
+    {
+      "id": "hihin",
+      "surface": "妃嬪",
+      "dictionaryForm": "妃嬪",
+      "reading": "ひひん",
+      "romaji": "hihin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "императорские супруги и наложницы"
+      ]
+    },
+    {
+      "id": "ataeru",
+      "surface": "与える",
+      "dictionaryForm": "与える",
+      "reading": "あたえる",
+      "romaji": "ataeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "давать; предоставлять"
+      ]
+    },
+    {
+      "id": "koshitsu",
+      "surface": "個室",
+      "dictionaryForm": "個室",
+      "reading": "こしつ",
+      "romaji": "koshitsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "отдельная комната"
+      ]
+    },
+    {
+      "id": "hoka",
+      "surface": "他",
+      "dictionaryForm": "他",
+      "reading": "ほか",
+      "romaji": "hoka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "другой; прочие"
+      ]
+    },
+    {
+      "id": "kuraberu",
+      "surface": "比べる",
+      "dictionaryForm": "比べる",
+      "reading": "くらべる",
+      "romaji": "kuraberu",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "сравнивать"
+      ]
+    },
+    {
+      "id": "choudo",
+      "surface": "調度",
+      "dictionaryForm": "調度",
+      "reading": "ちょうど",
+      "romaji": "chōdo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "обстановка; предметы убранства"
+      ]
+    },
+    {
+      "id": "gouka",
+      "surface": "豪華",
+      "dictionaryForm": "豪華",
+      "reading": "ごうか",
+      "romaji": "gōka",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "роскошный"
+      ]
+    },
+    {
+      "id": "hade",
+      "surface": "派手",
+      "dictionaryForm": "派手",
+      "reading": "はで",
+      "romaji": "hade",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "броский; яркий; кричащий"
+      ]
+    },
+    {
+      "id": "goushou",
+      "surface": "豪商",
+      "dictionaryForm": "豪商",
+      "reading": "ごうしょう",
+      "romaji": "gōshō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "богатый купец; крупный торговец"
+      ]
+    },
+    {
+      "id": "nanika",
+      "surface": "なにか",
+      "dictionaryForm": "なにか",
+      "reading": "なにか",
+      "romaji": "nanika",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "что-то; кто-то; что-либо подобное"
+      ]
+    },
+    {
+      "id": "yosousuru",
+      "surface": "予想する",
+      "dictionaryForm": "予想する",
+      "reading": "よそうする",
+      "romaji": "yosō suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "предполагать; ожидать"
+      ]
+    },
+    {
+      "id": "kuraimochi",
+      "surface": "位持ち",
+      "dictionaryForm": "位持ち",
+      "reading": "くらいもち",
+      "romaji": "kuraimochi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "обладатель ранга"
+      ]
+    },
+    {
+      "id": "senyou",
+      "surface": "専用",
+      "dictionaryForm": "専用",
+      "reading": "せんよう",
+      "romaji": "sen'yō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "исключительное пользование; личное пользование"
+      ]
+    },
+    {
+      "id": "dekiru",
+      "surface": "できる",
+      "dictionaryForm": "できる",
+      "reading": "できる",
+      "romaji": "dekiru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "мочь; быть способным; быть возможным"
+      ]
+    },
+    {
+      "id": "hikui",
+      "surface": "低い",
+      "dictionaryForm": "低い",
+      "reading": "ひくい",
+      "romaji": "hikui",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "низкий"
+      ]
+    },
+    {
+      "id": "seizei",
+      "surface": "せいぜい",
+      "dictionaryForm": "せいぜい",
+      "reading": "せいぜい",
+      "romaji": "seizei",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "самое большее; максимум"
+      ]
+    },
+    {
+      "id": "futari",
+      "surface": "二人",
+      "dictionaryForm": "二人",
+      "reading": "ふたり",
+      "romaji": "futari",
+      "partOfSpeech": "счётное выражение",
+      "meanings": [
+        "два человека"
+      ]
+    },
+    {
+      "id": "yueni",
+      "surface": "ゆえに",
+      "dictionaryForm": "ゆえに",
+      "reading": "ゆえに",
+      "romaji": "yue ni",
+      "partOfSpeech": "союз",
+      "meanings": [
+        "поэтому; вследствие этого"
+      ]
+    },
+    {
+      "id": "tsukaeru",
+      "surface": "仕える",
+      "dictionaryForm": "仕える",
+      "reading": "つかえる",
+      "romaji": "tsukaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "служить кому-либо"
+      ]
+    },
+    {
+      "id": "shujin",
+      "surface": "主人",
+      "dictionaryForm": "主人",
+      "reading": "しゅじん",
+      "romaji": "shujin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "хозяин; господин"
+      ]
+    },
+    {
+      "id": "koushite",
+      "surface": "こうして",
+      "dictionaryForm": "こうして",
+      "reading": "こうして",
+      "romaji": "kō shite",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "таким образом; вот так"
+      ]
+    },
+    {
+      "id": "hakobu",
+      "surface": "運ぶ",
+      "dictionaryForm": "運ぶ",
+      "reading": "はこぶ",
+      "romaji": "hakobu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "носить; переносить; доставлять"
+      ]
+    },
+    {
+      "id": "yurusu",
+      "surface": "許す",
+      "dictionaryForm": "許す",
+      "reading": "ゆるす",
+      "romaji": "yurusu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "разрешать; позволять"
+      ]
+    },
+    {
+      "id": "kyuunai",
+      "surface": "宮内",
+      "dictionaryForm": "宮内",
+      "reading": "きゅうない",
+      "romaji": "kyūnai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "внутри дворца; дворцовая территория"
+      ]
+    },
+    {
+      "id": "hashi",
+      "surface": "端",
+      "dictionaryForm": "端",
+      "reading": "はし",
+      "romaji": "hashi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "край"
+      ]
+    },
+    {
+      "id": "koutei",
+      "surface": "皇帝",
+      "dictionaryForm": "皇帝",
+      "reading": "こうてい",
+      "romaji": "kōtei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "император"
+      ]
+    },
+    {
+      "id": "me",
+      "surface": "目",
+      "dictionaryForm": "目",
+      "reading": "め",
+      "romaji": "me",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "глаз"
+      ]
+    },
+    {
+      "id": "tsuku-notice",
+      "surface": "つく",
+      "dictionaryForm": "つく",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "попадать на глаза; привлекать внимание"
+      ]
+    },
+    {
+      "id": "metta",
+      "surface": "めった",
+      "dictionaryForm": "めった",
+      "reading": "めった",
+      "romaji": "metta",
+      "partOfSpeech": "наречное выражение",
+      "meanings": [
+        "с отрицанием: редко; почти никогда"
+      ]
+    },
+    {
+      "id": "soredemo",
+      "surface": "それでも",
+      "dictionaryForm": "それでも",
+      "reading": "それでも",
+      "romaji": "soredemo",
+      "partOfSpeech": "союз",
+      "meanings": [
+        "и всё же; даже при этом"
+      ]
+    },
+    {
+      "id": "ichido",
+      "surface": "一度",
+      "dictionaryForm": "一度",
+      "reading": "いちど",
+      "romaji": "ichido",
+      "partOfSpeech": "счётное выражение",
+      "meanings": [
+        "один раз"
+      ]
+    },
+    {
+      "id": "yotogi",
+      "surface": "夜伽",
+      "dictionaryForm": "夜伽",
+      "reading": "よとぎ",
+      "romaji": "yotogi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ночное сопровождение; проведение ночи с господином"
+      ]
+    },
+    {
+      "id": "meijiru",
+      "surface": "命じる",
+      "dictionaryForm": "命じる",
+      "reading": "めいじる",
+      "romaji": "meijiru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "приказывать"
+      ]
+    },
+    {
+      "id": "idou",
+      "surface": "移動",
+      "dictionaryForm": "移動",
+      "reading": "いどう",
+      "romaji": "idō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "перемещение; смена места"
+      ]
+    },
+    {
+      "id": "nidome",
+      "surface": "二度目",
+      "dictionaryForm": "二度目",
+      "reading": "にどめ",
+      "romaji": "nidome",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "второй раз"
+      ]
+    },
+    {
+      "id": "otetsuki",
+      "surface": "御手付き",
+      "dictionaryForm": "御手付き",
+      "reading": "おてつき",
+      "romaji": "otetsuki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "женщина, удостоенная интимного внимания господина; само это внимание"
+      ]
+    },
+    {
+      "id": "shusse",
+      "surface": "出世",
+      "dictionaryForm": "出世",
+      "reading": "しゅっせ",
+      "romaji": "shusse",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "возвышение; продвижение в положении"
+      ]
+    },
+    {
+      "id": "imisuru",
+      "surface": "意味する",
+      "dictionaryForm": "意味する",
+      "reading": "いみする",
+      "romaji": "imi suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "означать"
+      ]
+    },
+    {
+      "id": "ippou",
+      "surface": "一方",
+      "dictionaryForm": "一方",
+      "reading": "いっぽう",
+      "romaji": "ippō",
+      "partOfSpeech": "существительное, союз",
+      "meanings": [
+        "с другой стороны"
+      ]
+    },
+    {
+      "id": "shokushi",
+      "surface": "食指",
+      "dictionaryForm": "食指",
+      "reading": "しょくし",
+      "romaji": "shokushi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "указательный палец; в выражении о возникновении желания"
+      ]
+    },
+    {
+      "id": "ugokasu",
+      "surface": "動かす",
+      "dictionaryForm": "動かす",
+      "reading": "うごかす",
+      "romaji": "ugokasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "двигать; приводить в движение; пробуждать желание"
+      ]
+    },
+    {
+      "id": "tekirei",
+      "surface": "適齢",
+      "dictionaryForm": "適齢",
+      "reading": "てきれい",
+      "romaji": "tekirei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "подходящий возраст"
+      ]
+    },
+    {
+      "id": "sugiru",
+      "surface": "過ぎる",
+      "dictionaryForm": "過ぎる",
+      "reading": "すぎる",
+      "romaji": "sugiru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "проходить, миновать; превышать меру"
+      ]
+    },
+    {
+      "id": "yohodo",
+      "surface": "よほど",
+      "dictionaryForm": "よほど",
+      "reading": "よほど",
+      "romaji": "yohodo",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "очень; в значительной степени"
+      ]
+    },
+    {
+      "id": "jikka",
+      "surface": "実家",
+      "dictionaryForm": "実家",
+      "reading": "じっか",
+      "romaji": "jikka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "родной дом; родительская семья"
+      ]
+    },
+    {
+      "id": "kenryoku",
+      "surface": "権力",
+      "dictionaryForm": "権力",
+      "reading": "けんりょく",
+      "romaji": "kenryoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "власть; влияние"
+      ]
+    },
+    {
+      "id": "sageru",
+      "surface": "下げる",
+      "dictionaryForm": "下げる",
+      "reading": "さげる",
+      "romaji": "sageru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "понижать; снижать"
+      ]
+    },
+    {
+      "id": "saiaku",
+      "surface": "最悪",
+      "dictionaryForm": "最悪",
+      "reading": "さいあく",
+      "romaji": "saiaku",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "наихудший; худший случай"
+      ]
+    },
+    {
+      "id": "kashisuru",
+      "surface": "下賜する",
+      "dictionaryForm": "下賜する",
+      "reading": "かしする",
+      "romaji": "kashi suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "жаловать нижестоящему; даровать подданному"
+      ]
+    },
+    {
+      "id": "fukou",
+      "surface": "不幸",
+      "dictionaryForm": "不幸",
+      "reading": "ふこう",
+      "romaji": "fukō",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "несчастье; несчастный"
+      ]
+    },
+    {
+      "id": "aite",
+      "surface": "相手",
+      "dictionaryForm": "相手",
+      "reading": "あいて",
+      "romaji": "aite",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "другой участник; тот, с кем имеют дело"
+      ]
+    },
+    {
+      "id": "yoru",
+      "surface": "よる",
+      "dictionaryForm": "よる",
+      "reading": "よる",
+      "romaji": "yoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "зависеть от; определяться чем-либо"
+      ]
+    },
+    {
+      "id": "kanjo",
+      "surface": "官女",
+      "dictionaryForm": "官女",
+      "reading": "かんじょ",
+      "romaji": "kanjo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "придворная женщина; дворцовая служительница"
+      ]
+    },
+    {
+      "id": "ichiban",
+      "surface": "一番",
+      "dictionaryForm": "一番",
+      "reading": "いちばん",
+      "romaji": "ichiban",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "больше всего; самый"
+      ]
+    },
+    {
+      "id": "osoreru",
+      "surface": "恐れる",
+      "dictionaryForm": "恐れる",
+      "reading": "おそれる",
+      "romaji": "osoreru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "бояться; страшиться"
+      ]
+    },
+    {
+      "id": "tobira",
+      "surface": "扉",
+      "dictionaryForm": "扉",
+      "reading": "とびら",
+      "romaji": "tobira",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "дверь"
+      ]
+    },
+    {
+      "id": "karui",
+      "surface": "軽い",
+      "dictionaryForm": "軽い",
+      "reading": "かるい",
+      "romaji": "karui",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "лёгкий; несильный"
+      ]
+    },
+    {
+      "id": "tataku",
+      "surface": "叩く",
+      "dictionaryForm": "叩く",
+      "reading": "たたく",
+      "romaji": "tataku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "стучать; ударять"
+      ]
+    },
+    {
+      "id": "akeru",
+      "surface": "開ける",
+      "dictionaryForm": "開ける",
+      "reading": "あける",
+      "romaji": "akeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "открывать"
+      ]
+    },
+    {
+      "id": "buaisou",
+      "surface": "無愛想",
+      "dictionaryForm": "無愛想",
+      "reading": "ぶあいそう",
+      "romaji": "buaisō",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "неприветливый; нелюбезный"
+      ]
+    },
+    {
+      "id": "henji",
+      "surface": "返事",
+      "dictionaryForm": "返事",
+      "reading": "へんじ",
+      "romaji": "henji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ответ"
+      ]
+    },
+    {
+      "id": "heyazuki",
+      "surface": "部屋付",
+      "dictionaryForm": "部屋付",
+      "reading": "へやづき",
+      "romaji": "heyazuki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "закреплённый за комнатой; приставленный к покоям"
+      ]
+    },
+    {
+      "id": "jijo",
+      "surface": "侍女",
+      "dictionaryForm": "侍女",
+      "reading": "じじょ",
+      "romaji": "jijo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "личная служанка; камеристка"
+      ]
+    },
+    {
+      "id": "amattarui",
+      "surface": "甘ったるい",
+      "dictionaryForm": "甘ったるい",
+      "reading": "あまったるい",
+      "romaji": "amattarui",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "приторно-сладкий"
+      ]
+    },
+    {
+      "id": "nioi",
+      "surface": "匂い",
+      "dictionaryForm": "匂い",
+      "reading": "におい",
+      "romaji": "nioi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "запах; аромат"
+      ]
+    },
+    {
+      "id": "tadayowaseru",
+      "surface": "漂わせる",
+      "dictionaryForm": "漂わせる",
+      "reading": "ただよわせる",
+      "romaji": "tadayowaseru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "распространять вокруг; источать"
+      ]
+    },
+    {
+      "id": "shuhai",
+      "surface": "酒杯",
+      "dictionaryForm": "酒杯",
+      "reading": "しゅはい",
+      "romaji": "shuhai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "чаша для вина"
+      ]
+    },
+    {
+      "id": "yurasu",
+      "surface": "揺らす",
+      "dictionaryForm": "揺らす",
+      "reading": "ゆらす",
+      "romaji": "yurasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "покачивать; раскачивать"
+      ]
+    },
+    {
+      "id": "homesoyasu",
+      "surface": "誉めそやす",
+      "dictionaryForm": "誉めそやす",
+      "reading": "ほめそやす",
+      "romaji": "homesoyasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "превозносить; расхваливать"
+      ]
+    },
+    {
+      "id": "youshi",
+      "surface": "容姿",
+      "dictionaryForm": "容姿",
+      "reading": "ようし",
+      "romaji": "yōshi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "внешность; облик"
+      ]
+    },
+    {
+      "id": "shosen",
+      "surface": "所詮",
+      "dictionaryForm": "所詮",
+      "reading": "しょせん",
+      "romaji": "shosen",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "в конце концов; всего лишь"
+      ]
+    },
+    {
+      "id": "i-well",
+      "surface": "井",
+      "dictionaryForm": "井",
+      "reading": "い",
+      "romaji": "i",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "колодец"
+      ]
+    },
+    {
+      "id": "kawazu",
+      "surface": "蛙",
+      "dictionaryForm": "蛙",
+      "reading": "かわず",
+      "romaji": "kawazu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лягушка; литературное чтение"
+      ]
+    },
+    {
+      "id": "kenran",
+      "surface": "絢爛",
+      "dictionaryForm": "絢爛",
+      "reading": "けんらん",
+      "romaji": "kenran",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "великолепный; блистательный"
+      ]
+    },
+    {
+      "id": "hanabana",
+      "surface": "花々",
+      "dictionaryForm": "花々",
+      "reading": "はなばな",
+      "romaji": "hanabana",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "цветы; множество цветов"
+      ]
+    },
+    {
+      "id": "keosareru",
+      "surface": "気圧される",
+      "dictionaryForm": "気圧される",
+      "reading": "けおされる",
+      "romaji": "keosareru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "быть подавленным чужим величием или напором"
+      ]
+    },
+    {
+      "id": "hanappashira",
+      "surface": "鼻っ柱",
+      "dictionaryForm": "鼻っ柱",
+      "reading": "はなっぱしら",
+      "romaji": "hanappashira",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "переносица; спесь; гордость"
+      ]
+    },
+    {
+      "id": "oru",
+      "surface": "折る",
+      "dictionaryForm": "折る",
+      "reading": "おる",
+      "romaji": "oru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "ломать; сбивать гордость"
+      ]
+    },
+    {
+      "id": "saikin",
+      "surface": "最近",
+      "dictionaryForm": "最近",
+      "reading": "さいきん",
+      "romaji": "saikin",
+      "partOfSpeech": "существительное, наречие",
+      "meanings": [
+        "недавно; в последнее время"
+      ]
+    },
+    {
+      "id": "soto",
+      "surface": "外",
+      "dictionaryForm": "外",
+      "reading": "そと",
+      "romaji": "soto",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "снаружи; внешняя сторона"
+      ]
+    },
+    {
+      "id": "deru",
+      "surface": "出る",
+      "dictionaryForm": "出る",
+      "reading": "でる",
+      "romaji": "deru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "выходить"
+      ]
+    },
+    {
+      "id": "dare",
+      "surface": "だれ",
+      "dictionaryForm": "だれ",
+      "reading": "だれ",
+      "romaji": "dare",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "кто"
+      ]
+    },
+    {
+      "id": "mukae",
+      "surface": "迎え",
+      "dictionaryForm": "迎え",
+      "reading": "むかえ",
+      "romaji": "mukae",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "встреча; приход за кем-либо"
+      ]
+    },
+    {
+      "id": "kureru",
+      "surface": "くれる",
+      "dictionaryForm": "くれる",
+      "reading": "くれる",
+      "romaji": "kureru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "делать что-либо для говорящего или близкого ему лица"
+      ]
+    },
+    {
+      "id": "tonari",
+      "surface": "隣",
+      "dictionaryForm": "隣",
+      "reading": "となり",
+      "romaji": "tonari",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "соседнее место; по соседству"
+      ]
+    },
+    {
+      "id": "araiba",
+      "surface": "洗い場",
+      "dictionaryForm": "洗い場",
+      "reading": "あらいば",
+      "romaji": "araiba",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "место для мытья или стирки"
+      ]
+    },
+    {
+      "id": "takusan",
+      "surface": "たくさん",
+      "dictionaryForm": "たくさん",
+      "reading": "たくさん",
+      "romaji": "takusan",
+      "partOfSpeech": "наречие, существительное",
+      "meanings": [
+        "много; большое количество"
+      ]
+    },
+    {
+      "id": "nokoru",
+      "surface": "残る",
+      "dictionaryForm": "残る",
+      "reading": "のこる",
+      "romaji": "nokoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "оставаться"
+      ]
+    },
+    {
+      "id": "suki",
+      "surface": "好き",
+      "dictionaryForm": "好き",
+      "reading": "すき",
+      "romaji": "suki",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "нравящийся; по собственному желанию"
+      ]
+    },
+    {
+      "id": "itadaku",
+      "surface": "いただく",
+      "dictionaryForm": "いただく",
+      "reading": "いただく",
+      "romaji": "itadaku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "получать; скромная форма"
+      ]
+    },
+    {
+      "id": "bun",
+      "surface": "分",
+      "dictionaryForm": "分",
+      "reading": "ぶん",
+      "romaji": "bun",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "доля; соответствующее количество"
+      ]
+    },
+    {
+      "id": "hataraki",
+      "surface": "働き",
+      "dictionaryForm": "働き",
+      "reading": "はたらき",
+      "romaji": "hataraki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "работа; труд; выполненная работа"
+      ]
+    },
+    {
+      "id": "tsumori",
+      "surface": "つもり",
+      "dictionaryForm": "つもり",
+      "reading": "つもり",
+      "romaji": "tsumori",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "намерение; план"
+      ]
+    },
+    {
+      "id": "majime",
+      "surface": "真面目",
+      "dictionaryForm": "真面目",
+      "reading": "まじめ",
+      "romaji": "majime",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "серьёзный; добросовестный"
+      ]
+    },
+    {
+      "id": "otonashii",
+      "surface": "大人しい",
+      "dictionaryForm": "大人しい",
+      "reading": "おとなしい",
+      "romaji": "otonashii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "тихий; послушный; спокойный"
+      ]
+    },
+    {
+      "id": "sonouchi",
+      "surface": "そのうち",
+      "dictionaryForm": "そのうち",
+      "reading": "そのうち",
+      "romaji": "sono uchi",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "со временем; рано или поздно"
+      ]
+    },
+    {
+      "id": "masaka",
+      "surface": "まさか",
+      "dictionaryForm": "まさか",
+      "reading": "まさか",
+      "romaji": "masaka",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "неужели; уж не; с отрицанием «вряд ли»"
+      ]
+    },
+    {
+      "id": "arieru",
+      "surface": "ありえる",
+      "dictionaryForm": "ありえる",
+      "reading": "ありえる",
+      "romaji": "arieru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "быть возможным"
+      ]
+    },
+    {
+      "id": "zannen",
+      "surface": "残念",
+      "dictionaryForm": "残念",
+      "reading": "ざんねん",
+      "romaji": "zannen",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "досадный; вызывающий сожаление"
+      ]
+    },
+    {
+      "id": "kangae",
+      "surface": "考え",
+      "dictionaryForm": "考え",
+      "reading": "かんがえ",
+      "romaji": "kangae",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мысль; рассуждение; замысел"
+      ]
+    },
+    {
+      "id": "amai",
+      "surface": "甘い",
+      "dictionaryForm": "甘い",
+      "reading": "あまい",
+      "romaji": "amai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "сладкий; наивный; недостаточно строгий"
+      ]
+    },
+    {
+      "id": "nani",
+      "surface": "何",
+      "dictionaryForm": "何",
+      "reading": "なに",
+      "romaji": "nani",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "что"
+      ]
+    },
+    {
+      "id": "okoru",
+      "surface": "起こる",
+      "dictionaryForm": "起こる",
+      "reading": "おこる",
+      "romaji": "okoru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "случаться; происходить"
+      ]
+    },
+    {
+      "id": "wakaru",
+      "surface": "わかる",
+      "dictionaryForm": "わかる",
+      "reading": "わかる",
+      "romaji": "wakaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "понимать; знать"
+      ]
+    },
+    {
+      "id": "jinsei",
+      "surface": "人生",
+      "dictionaryForm": "人生",
+      "reading": "じんせい",
+      "romaji": "jinsei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "жизнь человека"
+      ]
+    },
+    {
+      "id": "yowai",
+      "surface": "齢",
+      "dictionaryForm": "齢",
+      "reading": "よわい",
+      "romaji": "yowai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "возраст; лета"
+      ]
+    },
+    {
+      "id": "juunana",
+      "surface": "十七",
+      "dictionaryForm": "十七",
+      "reading": "じゅうなな",
+      "romaji": "jūnana",
+      "partOfSpeech": "числительное",
+      "meanings": [
+        "семнадцать"
+      ]
+    },
+    {
+      "id": "takkansuru",
+      "surface": "達観する",
+      "dictionaryForm": "達観する",
+      "reading": "たっかんする",
+      "romaji": "takkan suru",
+      "partOfSpeech": "глагол III группы",
+      "meanings": [
+        "смотреть на вещи отрешённо и мудро; постигать суть"
+      ]
+    },
+    {
+      "id": "shikou",
+      "surface": "思考",
+      "dictionaryForm": "思考",
+      "reading": "しこう",
+      "romaji": "shikō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мышление; мыслительный процесс"
+      ]
+    },
+    {
+      "id": "mochinushi",
+      "surface": "持ち主",
+      "dictionaryForm": "持ち主",
+      "reading": "もちぬし",
+      "romaji": "mochinushi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "обладатель; владелец"
+      ]
+    },
+    {
+      "id": "osaeru",
+      "surface": "抑える",
+      "dictionaryForm": "抑える",
+      "reading": "おさえる",
+      "romaji": "osaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "сдерживать; подавлять"
+      ]
+    },
+    {
+      "id": "koukishin",
+      "surface": "好奇心",
+      "dictionaryForm": "好奇心",
+      "reading": "こうきしん",
+      "romaji": "kōkishin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "любопытство"
+      ]
+    },
+    {
+      "id": "chishikiyoku",
+      "surface": "知識欲",
+      "dictionaryForm": "知識欲",
+      "reading": "ちしきよく",
+      "romaji": "chishikiyoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "жажда знаний"
+      ]
+    },
+    {
+      "id": "honno",
+      "surface": "ほんの",
+      "dictionaryForm": "ほんの",
+      "reading": "ほんの",
+      "romaji": "honno",
+      "partOfSpeech": "определительное слово",
+      "meanings": [
+        "всего лишь; совсем немного"
+      ]
+    },
+    {
+      "id": "sukoshi",
+      "surface": "少し",
+      "dictionaryForm": "少し",
+      "reading": "すこし",
+      "romaji": "sukoshi",
+      "partOfSpeech": "наречие, существительное",
+      "meanings": [
+        "немного"
+      ]
+    },
+    {
+      "id": "seigikan",
+      "surface": "正義感",
+      "dictionaryForm": "正義感",
+      "reading": "せいぎかん",
+      "romaji": "seigikan",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "чувство справедливости"
+      ]
+    },
+    {
+      "id": "suujitsugo",
+      "surface": "数日後",
+      "dictionaryForm": "数日後",
+      "reading": "すうじつご",
+      "romaji": "sūjitsugo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "несколько дней спустя"
+      ]
+    },
+    {
+      "id": "kaiki",
+      "surface": "怪奇",
+      "dictionaryForm": "怪奇",
+      "reading": "かいき",
+      "romaji": "kaiki",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "загадочное, зловещее явление; сверхъестественная странность"
+      ]
+    },
+    {
+      "id": "shinsou",
+      "surface": "真相",
+      "dictionaryForm": "真相",
+      "reading": "しんそう",
+      "romaji": "shinsō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "истинное положение дел; подоплёка"
+      ]
+    },
+    {
+      "id": "abaku",
+      "surface": "暴く",
+      "dictionaryForm": "暴く",
+      "reading": "あばく",
+      "romaji": "abaku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "раскрывать; разоблачать"
+      ]
+    },
+    {
+      "id": "umareru",
+      "surface": "生まれる",
+      "dictionaryForm": "生まれる",
+      "reading": "うまれる",
+      "romaji": "umareru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "рождаться"
+      ]
+    },
+    {
+      "id": "nyuuyouji",
+      "surface": "乳幼児",
+      "dictionaryForm": "乳幼児",
+      "reading": "にゅうようじ",
+      "romaji": "nyūyōji",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "младенцы и дети раннего возраста"
+      ]
+    },
+    {
+      "id": "renzokushi",
+      "surface": "連続死",
+      "dictionaryForm": "連続死",
+      "reading": "れんぞくし",
+      "romaji": "renzokushi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "череда смертей; последовательные смерти"
+      ]
+    },
+    {
+      "id": "sendai",
+      "surface": "先代",
+      "dictionaryForm": "先代",
+      "reading": "せんだい",
+      "romaji": "sendai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "предыдущее поколение; прежний правитель"
+      ]
+    },
+    {
+      "id": "sokushitsu",
+      "surface": "側室",
+      "dictionaryForm": "側室",
+      "reading": "そくしつ",
+      "romaji": "sokushitsu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "наложница правителя; второстепенная супруга"
+      ]
+    },
+    {
+      "id": "noroi",
+      "surface": "呪い",
+      "dictionaryForm": "呪い",
+      "reading": "のろい",
+      "romaji": "noroi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "проклятие"
+      ]
+    },
+    {
+      "id": "yaru",
+      "surface": "やる",
+      "dictionaryForm": "やる",
+      "reading": "やる",
+      "romaji": "yaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "делать; заниматься чем-либо"
+      ]
     }
   ],
   "kanji": [

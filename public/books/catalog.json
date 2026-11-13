@@ -29,5 +29,30 @@
       }
     ],
     "schemaVersion": 1
+  },
+  {
+    "schemaVersion": 1,
+    "id": "apothecary-diaries",
+    "title": "薬屋のひとりごと",
+    "author": "日向夏",
+    "description": "Японский текст главы с русским разбором, подготовленный по файлу, предоставленному пользователем.",
+    "originalLanguage": "ja",
+    "translationLanguage": "ru",
+    "difficulty": "Не указана",
+    "tags": [
+      "японский текст",
+      "русский разбор"
+    ],
+    "cover": "🧪",
+    "license": "Не указана",
+    "source": "薬屋のひとりごと — страница произведения автора 日向夏 на 小説家になろう: https://ncode.syosetu.com/s6624a/; глава предоставлена пользователем отдельным TXT-файлом.",
+    "chapters": [
+      {
+        "id": "apothecary-diaries.chapter-1",
+        "title": "１　猫猫",
+        "path": "books/apothecary-diaries/chapter-1.json",
+        "sentenceCount": 65
+      }
+    ]
   }
 ]
