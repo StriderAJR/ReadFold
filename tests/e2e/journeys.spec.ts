@@ -87,12 +87,12 @@ test('reader details return to the sentence and canvas settings control examples
   await expect(page.getByRole('checkbox', { name: 'Буквально · отдельной строкой' })).toBeChecked();
   await page.goto(`./#/${readerPath}`);
   await expect(first.locator('.canvas-card').first()).toBeVisible();
-  await expect(first.locator('.translation-row p[lang="ja"]')).toHaveClass(/translation-line/);
-  await expect(first.locator('.translation-row p').filter({ hasText: 'Буквально' })).toHaveClass(/translation-line/);
+  await expect(first.locator('.translation-row > p[lang="ja"]').first()).toHaveClass(/translation-line/);
+  await expect(first.locator('.translation-row p:has([aria-label="Буквально"])').first()).toHaveClass(/translation-line/);
 
   await page.goto('./#/grammar/grammar.topic');
-  await expect(page.locator('.grammar-example').first().getByText('Хирагана')).toBeVisible();
-  await expect(page.locator('.grammar-example').first().getByText('Буквально')).toBeVisible();
+  await expect(page.locator('.grammar-example').first().locator('[aria-label="Хирагана"]')).toBeVisible();
+  await expect(page.locator('.grammar-example').first().locator('[aria-label="Буквально"]')).toBeVisible();
 });
 
 test('quiz answer can be rated and appears in review history', async ({ page }) => {
@@ -155,7 +155,7 @@ test('backup import validates and restores a well-formed copy', async ({ page })
   });
   await expect(page.getByText('Данные импортированы.')).toBeVisible();
   await page.goto('./#/library');
-  await page.getByRole('button', { name: 'Избранное' }).click();
+  await page.getByRole('button', { name: 'Избранное', exact: true }).click();
   await expect(page.getByRole('link', { name: 'Кошка в парке' }).first()).toBeVisible();
 });
 

@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import type { Grammar } from '../domain/content';
 import type { ReaderPreferences } from '../domain/user-state';
 import { kanaToRomaji } from './kana';
@@ -7,7 +6,6 @@ import { LayerHint } from './LayerHint';
 type Example = Grammar['examples'][number];
 
 export function GrammarExample({ example, preferences }: { example: Example; preferences: ReaderPreferences }) {
-  const { t } = useTranslation();
   const showInlineRuby = preferences.furigana && !preferences.furiganaSeparateLine;
   const japanese = (ruby: boolean) => example.segments?.map((segment, index) => ruby && segment.reading ? (
     <ruby key={index}>{segment.text}<rt>{segment.reading}</rt></ruby>

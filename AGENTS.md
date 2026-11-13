@@ -27,6 +27,21 @@ GitHub Pages + GitHub Actions.
 - В условных конструкциях использовать фигурные скобки.
 - Не добавлять зависимости без необходимости.
 
+## Запуск npm в Codex на Windows
+
+Если `npm` или `node` выводит `No active Node.js version is configured`, оболочка Codex может видеть nvm shim, но не его активную версию. Сначала в обычном PowerShell проверь установленную версию командой `nvm list`. Для этого компьютера выбрана `v24.21.0`.
+
+Запускай npm CLI напрямую через Node из установки nvm; команда ниже определяет корень по расположению `nvm.exe` и не содержит пользовательского абсолютного пути:
+
+```powershell
+$nvmRoot = Split-Path (Get-Command nvm).Source
+$nodeDir = Join-Path $nvmRoot 'installs\v24.21.0'
+$env:Path = "$nodeDir;$env:Path"
+& (Join-Path $nodeDir 'node.exe') (Join-Path $nodeDir 'node_modules\npm\bin\npm-cli.js') run typecheck
+```
+
+Для другой npm-команды замени `run typecheck` на нужные аргументы, например `run lint` или `run build`. Если версия Node изменилась, обнови `v24.21.0` в `$nodeDir` на версию из `nvm list`. Не записывай локальные абсолютные пути в инструкции или вывод.
+
 ## Безопасность и GitHub
 
 - `.sensitive/` и `.env.local` никогда не коммитить. Не читать секреты без необходимости задачи.
