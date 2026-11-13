@@ -98,6 +98,7 @@ export function BookCard({
             <Bookmark size={17} fill={favorite ? 'currentColor' : 'none'} />
           </button>
         </div>
+        {book.translatedTitle && <p className="muted">{book.translatedTitle}</p>}
         <p className="muted">{book.author}</p>
         <p className="book-description">{book.description}</p>
         <div className="book-meta">

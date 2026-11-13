@@ -10,6 +10,8 @@ const preferencesSchema = z
     fontSize: z.number().finite().min(10).max(80),
     readingFontSize: z.number().finite().min(10).max(80),
     translationFontSize: z.number().finite().min(10).max(80),
+    cardScalePercent: z.number().int().min(70).max(150),
+    cardFontSize: z.number().finite().min(10).max(80).optional(),
     wordsFontSize: z.number().finite().min(10).max(80),
     kanjiFontSize: z.number().finite().min(10).max(80),
     grammarFontSize: z.number().finite().min(10).max(80),
@@ -27,6 +29,7 @@ const preferencesSchema = z
     literalSeparateLine: z.boolean(),
     natural: z.boolean(),
     naturalSeparateLine: z.boolean(),
+    translationsSeparateLine: z.boolean(),
     words: z.boolean(),
     kanji: z.boolean(),
     grammar: z.boolean(),
@@ -524,6 +527,9 @@ export function reduceOperations(operations: UserOperation[]) {
           if (typeof payload[key] === typeof defaultPreferences[key]) {
             Object.assign(state.preferences, { [key]: payload[key] });
           }
+        }
+        if (typeof payload.cardScalePercent !== 'number' && typeof payload.cardFontSize === 'number') {
+          state.preferences.cardScalePercent = Math.min(150, Math.max(70, Math.round((payload.cardFontSize / 16) * 100)));
         }
         break;
       }

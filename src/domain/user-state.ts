@@ -34,6 +34,7 @@ export interface ReaderPreferences {
   fontSize: number;
   readingFontSize: number;
   translationFontSize: number;
+  cardScalePercent: number;
   wordsFontSize: number;
   kanjiFontSize: number;
   grammarFontSize: number;
@@ -51,6 +52,7 @@ export interface ReaderPreferences {
   literalSeparateLine: boolean;
   natural: boolean;
   naturalSeparateLine: boolean;
+  translationsSeparateLine: boolean;
   words: boolean;
   kanji: boolean;
   grammar: boolean;
@@ -64,6 +66,7 @@ export const defaultPreferences: ReaderPreferences = {
   fontSize: 24,
   readingFontSize: 16,
   translationFontSize: 18,
+  cardScalePercent: 100,
   wordsFontSize: 16,
   kanjiFontSize: 16,
   grammarFontSize: 16,
@@ -81,6 +84,7 @@ export const defaultPreferences: ReaderPreferences = {
   literalSeparateLine: false,
   natural: true,
   naturalSeparateLine: false,
+  translationsSeparateLine: false,
   words: true,
   kanji: true,
   grammar: true,

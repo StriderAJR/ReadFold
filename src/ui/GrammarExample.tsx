@@ -12,7 +12,7 @@ export function GrammarExample({ example, preferences }: { example: Example; pre
   ) : <span key={index}>{segment.text}</span>) ?? example.text;
 
   return (
-    <div className="grammar-example">
+    <div className={`grammar-example ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
       <p lang="ja">{japanese(showInlineRuby)}</p>
       {preferences.furigana && preferences.furiganaSeparateLine && (
         <p className="translation-line" lang="ja"><LayerHint label="furigana" /> {japanese(true)}</p>

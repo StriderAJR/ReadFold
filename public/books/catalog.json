@@ -34,11 +34,12 @@
     "schemaVersion": 1,
     "id": "apothecary-diaries",
     "title": "薬屋のひとりごと",
+    "translatedTitle": "Монолог фармацевта",
     "author": "日向夏",
     "description": "Японский текст главы с русским разбором, подготовленный по файлу, предоставленному пользователем.",
     "originalLanguage": "ja",
     "translationLanguage": "ru",
-    "difficulty": "Не указана",
+    "difficulty": "Продвинутый · JLPT N2",
     "tags": [
       "японский текст",
       "русский разбор"

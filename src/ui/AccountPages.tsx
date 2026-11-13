@@ -31,9 +31,7 @@ const fontSizeOptions = [
   ['fontSize', 'mainText'],
   ['readingFontSize', 'readingLines'],
   ['translationFontSize', 'translationLines'],
-  ['wordsFontSize', 'wordsLabel'],
-  ['kanjiFontSize', 'kanjiLabel'],
-  ['grammarFontSize', 'grammarLabel'],
+  ['cardScalePercent', 'cardText'],
 ] as const;
 export function SettingsPage() {
   const { t } = useTranslation();
@@ -101,13 +99,18 @@ export function SettingsPage() {
               <i />
             </label>
           ))}
+          <label className="switch-row">
+            <span>{t('translationsSeparateLine')}</span>
+            <input type="checkbox" checked={p.translationsSeparateLine} onChange={(e) => set('translationsSeparateLine', e.target.checked)} />
+            <i />
+          </label>
         </Card>
         <Card className="settings-card">
           <h2>{t('show')}</h2>
           {fontSizeOptions.map(([key, labelKey]) => (
             <label className="range-row" key={key}>
-              <span>{t(labelKey)} <b>{p[key]}px</b></span>
-              <input type="range" min={key === 'fontSize' ? 16 : 10} max={key === 'fontSize' ? 42 : 32} value={p[key]} onChange={(e) => set(key, Number(e.target.value))} />
+              <span>{t(labelKey)} <b>{p[key]}{key === 'cardScalePercent' ? '%' : 'px'}</b></span>
+              <input type="range" min={key === 'fontSize' ? 16 : key === 'cardScalePercent' ? 70 : 10} max={key === 'fontSize' ? 42 : key === 'cardScalePercent' ? 150 : 32} step={key === 'cardScalePercent' ? 5 : 1} value={p[key]} onChange={(e) => set(key, Number(e.target.value))} />
             </label>
           ))}
           <label className="range-row">

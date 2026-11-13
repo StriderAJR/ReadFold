@@ -3,12 +3,12 @@
   "base": "/ReadFold/",
   "files": [
     {
-      "path": "assets/index-B5qx_0gS.js",
-      "sha256": "8eb455e1a0f183706b36e23e239d088594c5a5964791c39fa760997536d66739"
+      "path": "assets/index-C-4NVIkV.css",
+      "sha256": "02ec0160b0dbcde4dc16e3f1a2f459c927652350ca9b15d7118048b49f53ea86"
     },
     {
-      "path": "assets/index-hiutNQuo.css",
-      "sha256": "6b2032416287b88b716f00422d96a59b279602074e53efffea62dd08f778d828"
+      "path": "assets/index-Dm3qFDat.js",
+      "sha256": "a18004e9fa9e992390f22cf082d6c5e60625499e07da90ed308c47f4cbbfce0b"
     },
     {
       "path": "assets/language-D1l4zjXA.js",
@@ -32,11 +32,11 @@
     },
     {
       "path": "books/apothecary-diaries/chapter-1.json",
-      "sha256": "6d0a881ed192eb7b3c07f6dc482211a3da8a6aa0b948079e44a72ab442fa05d4"
+      "sha256": "686aa35b48e780c9fc6d090e8ac95c89c61cf618e40ea7f126f60f65b36b255e"
     },
     {
       "path": "books/catalog.json",
-      "sha256": "7f32f5dcb21624846d3140c058c0fb59cc2a47e6edf051aa52241641fbac1582"
+      "sha256": "e4740519d7b5b0aaf6c65bc51dcd0c68dfe4e8fd678614d8a4065432f1f1bc54"
     },
     {
       "path": "books/demo/chapter-1.json",
@@ -48,7 +48,7 @@
     },
     {
       "path": "books/dictionary.json",
-      "sha256": "f0e80ed3423df0e211ab89e89caf818fab18563b7a99050383a0bf4e8c78d2f5"
+      "sha256": "6a0c29286a96d457a6066ca266ad287e9a9e7041bdce8abdbaffca518b422ef9"
     },
     {
       "path": "brand/icon.jpg",
@@ -60,7 +60,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "a60e9c372cbd0d8e37b38f197d1262e413e0f2ee0a7da9686e503b595be625a7"
+      "sha256": "c140953ef0c318cae2e8f5d9f5bb71cb9af64bd593bbbadbd028e3781c62bf5f"
     },
     {
       "path": "privacy.html",
@@ -68,7 +68,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "ea159ce3e51e7642c6317654796d89ab8b22e7b0556e6f2e3c2fd36568afc7e9"
+      "sha256": "588ff47f3bb8ec0c508d42a1b2f3a68cc809c0e5092ddc159cbf180bd910981b"
     },
     {
       "path": "terms.html",

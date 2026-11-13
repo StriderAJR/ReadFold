@@ -65,7 +65,16 @@
             }
           ],
           "kanjiIds": [],
-          "grammarIds": []
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.subject",
+            "grammar.desire"
+          ],
+          "grammarRoles": {
+            "grammar.possession": "の связывает 露天 и 串焼き: шашлычки уличного лотка.",
+            "grammar.subject": "が отмечает желаемое действие: именно串焼き хочется съесть.",
+            "grammar.desire": "食べたい образуется от основы 食べる + たい и выражает желание поесть."
+          }
         }
       ]
     },

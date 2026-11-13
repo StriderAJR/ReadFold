@@ -4914,6 +4914,54 @@
       "relatedIds": [
         "grammar.object"
       ]
+    },
+    {
+      "id": "grammar.subject",
+      "title": "が: субъект или желаемое действие",
+      "explanation": "Частица が отмечает субъект. С формой たい она часто обозначает то, что говорящий хочет сделать или получить.",
+      "examples": [
+        {
+          "text": "寿司が食べたい。",
+          "translation": "Хочу суши.",
+          "hiragana": "すしがたべたい。",
+          "romaji": "Sushi ga tabetai.",
+          "literal": "Суши [субъект желания] хочу съесть.",
+          "natural": "Хочу суши.",
+          "segments": [
+            { "text": "寿司", "reading": "すし" },
+            { "text": "が" },
+            { "text": "食", "reading": "た" },
+            { "text": "べたい。" }
+          ]
+        }
+      ],
+      "relatedIds": [
+        "grammar.object"
+      ]
+    },
+    {
+      "id": "grammar.desire",
+      "title": "〜たい: желание сделать",
+      "explanation": "Добавьте たい к основе глагола, чтобы сказать, что хотите выполнить действие: 食べる → 食べたい (хотеть поесть).",
+      "examples": [
+        {
+          "text": "寿司が食べたい。",
+          "translation": "Хочу суши.",
+          "hiragana": "すしがたべたい。",
+          "romaji": "Sushi ga tabetai.",
+          "literal": "Суши [субъект желания] хочу съесть.",
+          "natural": "Хочу суши.",
+          "segments": [
+            { "text": "寿司", "reading": "すし" },
+            { "text": "が" },
+            { "text": "食", "reading": "た" },
+            { "text": "べたい。" }
+          ]
+        }
+      ],
+      "relatedIds": [
+        "grammar.polite"
+      ]
     }
   ]
 }

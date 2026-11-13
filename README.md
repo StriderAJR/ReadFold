@@ -62,7 +62,7 @@ SQL/RLS-проверки запускаются локально в PGlite с м
 После проверки изменений нужен commit и push; Pages должен использовать `master` → `/docs`.
 Скрипт не выполняет Git-операции. Доступность Pages при блокировке биллинга требует проверки после push.
 
-Смотрите [точные настройки Pages, OAuth, SQL и heartbeat](docs/deployment.md).
+Смотрите [точные настройки Pages, OAuth, SQL и heartbeat](.agents/deployment.md).
 Миграция [202611120001_user_sync.sql](supabase/migrations/202611120001_user_sync.sql) **применена**
 к проекту `kkmuehzkvmbmnkzwfxfa` 12 ноября 2026 по явному разрешению владельца, с предоставленным
 CA-сертификатом и проверкой TLS. Проверены RLS двух таблиц, две ownership policy, закрытые private RPC
@@ -74,7 +74,7 @@ CA-сертификатом и проверкой TLS. Проверены RLS д
 переполнения читателя на 390px и отсутствие JS page errors в визуальном smoke-test.
 Публичные OAuth endpoints Google/GitHub возвращают 302 к соответствующему провайдеру;
 интерактивный вход и полный сценарий синхронизации двух устройств ещё требуют проверки реальным аккаунтом.
-Подробности: [validation.md](docs/validation.md).
+Подробности: [validation.md](.agents/validation.md).
 
 ## Ограничения
 
@@ -90,6 +90,6 @@ CA-сертификатом и проверкой TLS. Проверены RLS д
 
 ## Документация
 
-[Архитектура](docs/architecture.md) · [Модель данных](docs/data-model.md) · [Формат книг](docs/book-format.md) ·
-[Синхронизация](docs/sync.md) · [Безопасность](docs/security.md) · [Разработка](docs/development.md) ·
-[План и зависимости](docs/implementation-plan.md)
+[Архитектура](.agents/architecture.md) · [Модель данных](.agents/data-model.md) · [Формат книг](.agents/book-format.md) ·
+[Синхронизация](.agents/sync.md) · [Безопасность](.agents/security.md) · [Разработка](.agents/development.md) ·
+[План и зависимости](.agents/implementation-plan.md)

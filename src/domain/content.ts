@@ -17,6 +17,7 @@ export const bookMetadataSchema = z
     schemaVersion: z.literal(1),
     id: idSchema,
     title: textSchema,
+    translatedTitle: textSchema.optional(),
     author: textSchema,
     description: textSchema,
     originalLanguage: textSchema,

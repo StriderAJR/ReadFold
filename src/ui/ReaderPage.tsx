@@ -12,6 +12,91 @@ import { LayerHint } from './LayerHint';
 
 const layers = ['furigana', 'hiragana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
+const genericWordRole = 'Лексическое значение в контексте предложения';
+
+function KanjiComponentNode({
+  character,
+  meaning,
+  kanji,
+  ancestors,
+  depth,
+}: {
+  character: string;
+  meaning?: string;
+  kanji: Dictionary['kanji'];
+  ancestors: string[];
+  depth: number;
+}) {
+  const entry = kanji.find((candidate) => candidate.character === character);
+  const children = depth < 8
+    ? (entry?.components ?? []).filter((component) => component !== character && !ancestors.includes(component))
+    : [];
+
+  const contents = (
+    <>
+      <b lang="ja">{character}</b>
+      {meaning && <span>{meaning}</span>}
+    </>
+  );
+  return (
+    <li>
+      {children.length > 0 ? (
+        <details className="kanji-component-branch">
+          <summary className="kanji-tree-node">{contents}</summary>
+          {entry?.mnemonic && (
+            <small className="kanji-branch-mnemonic">
+              <span>{entry.mnemonic}</span>
+            </small>
+          )}
+          <ul>
+            {children.map((component) => (
+              <KanjiComponentNode
+                key={`${character}-${component}`}
+                character={component}
+                meaning={entry?.componentMeanings?.[component] ?? kanji.find((candidate) => candidate.character === component)?.meanings[0]}
+                kanji={kanji}
+                ancestors={[...ancestors, character]}
+                depth={depth + 1}
+              />
+            ))}
+          </ul>
+        </details>
+      ) : (
+        <span className="kanji-tree-node">{contents}</span>
+      )}
+    </li>
+  );
+}
+
+function KanjiMemory({ item, kanji }: { item: Dictionary['kanji'][number]; kanji: Dictionary['kanji'] }) {
+  const components = item.components.filter((component) => component !== item.character);
+  return (
+    <>
+      {components.length > 0 && (
+        <small className="kanji-memory-row">
+          <LayerHint label="mnemonicComponents" />
+          <ul className="kanji-component-tree">
+            {components.map((component) => (
+              <KanjiComponentNode
+                key={component}
+                character={component}
+                meaning={item.componentMeanings?.[component] ?? kanji.find((candidate) => candidate.character === component)?.meanings[0]}
+                kanji={kanji}
+                ancestors={[item.character]}
+                depth={1}
+              />
+            ))}
+          </ul>
+        </small>
+      )}
+      {item.mnemonic && (
+        <small className="kanji-memory-row">
+          <span>{item.mnemonic}</span>
+        </small>
+      )}
+    </>
+  );
+}
 
 function SentenceBlock({
   sentence,
@@ -42,6 +127,9 @@ function SentenceBlock({
   const adaptiveHidden = !preferences.canvasMode && preferences.mode === 'adaptive' && preferences.adaptiveHideKnown && allWordsKnown && !revealed;
   const showAnalysis = open && !adaptiveHidden;
   const showRuby = preferences.furigana && !preferences.furiganaSeparateLine && !adaptiveHidden;
+  const visibleKanji = sentence.kanjiIds.length > 0
+    ? sentence.kanjiIds.map((id) => ({ id, item: dictionary.kanji.find((entry) => entry.id === id) })).filter((entry) => entry.item)
+    : [...new Set(Array.from(sentence.text).filter((character) => /\p{Script=Han}/u.test(character)))].map((character) => ({ id: character, item: undefined }));
 
   return (
     <article
@@ -81,7 +169,7 @@ function SentenceBlock({
       )}
       {showAnalysis && (
         <div id={`analysis-${sentence.id}`} className="sentence-analysis analysis-open">
-          <div className="translation-row">
+          <div className={`translation-row ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
             {preferences.furigana && preferences.furiganaSeparateLine && (
               <p className="translation-line" lang="ja">
                 <LayerHint label="furigana" />
@@ -124,52 +212,85 @@ function SentenceBlock({
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     return preferences.canvasMode ? (
                       <div className="canvas-card canvas-card-word" key={`${word.wordId}-${occurrenceIndex}`}>
-                        <div className="canvas-card-primary" lang="ja"><b>{word.surface}</b></div>
+                        <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
+                          <b>{word.surface}</b>
+                        </button>
                         <div className="canvas-card-body">
                           <span className="canvas-card-meaning">{word.meaning}</span>
-                          {entry && <small>{[entry.dictionaryForm, entry.reading, preferences.romaji ? entry.romaji : '', entry.partOfSpeech].filter(Boolean).join(' · ')}</small>}
-                          {word.inflection && <small>{word.inflection}</small>}
-                          {word.role && <small>{word.role}</small>}
+                          {entry && (
+                            <div className="word-card-meta">
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana || preferences.hiragana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{entry.partOfSpeech}</small>
+                            </div>
+                          )}
+                          {(word.inflection || (word.role && word.role !== genericWordRole)) && (
+                            <div className="word-card-notes">
+                              {word.inflection && <small>{word.inflection}</small>}
+                              {word.role && word.role !== genericWordRole && <small>{word.role}</small>}
+                            </div>
+                          )}
                         </div>
                       </div>
                     ) : (
-                      <button key={`${word.wordId}-${occurrenceIndex}`} onClick={() => onEntity(word.wordId)}>
-                        <b lang="ja">{word.surface}</b>
-                        <span>{word.meaning}</span>
-                        {preferences.romaji && entry && <small>{entry.romaji}</small>}
-                        {word.inflection && <small>{word.inflection}</small>}
-                        {word.role && <small>{word.role}</small>}
-                      </button>
+                      <div className="token-word-card" key={`${word.wordId}-${occurrenceIndex}`}>
+                        <button className="token-word-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
+                          <b>{word.surface}</b>
+                        </button>
+                        <span className="token-word-body">
+                          <span>{word.meaning}</span>
+                          {entry && (
+                            <span className="word-card-meta">
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana || preferences.hiragana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{entry.partOfSpeech}</small>
+                            </span>
+                          )}
+                          {(word.inflection || (word.role && word.role !== genericWordRole)) && (
+                            <span className="word-card-notes">
+                              {word.inflection && <small>{word.inflection}</small>}
+                              {word.role && word.role !== genericWordRole && <small>{word.role}</small>}
+                            </span>
+                          )}
+                        </span>
+                      </div>
                     );
                   })}
                 </div>
               </section>
             )}
-            {preferences.kanji && sentence.kanjiIds.length > 0 && (
+            {preferences.kanji && visibleKanji.length > 0 && (
               <section>
                 <h4>{t('kanjiLabel')}</h4>
-                <div className={preferences.canvasMode ? 'canvas-list' : 'inline-links'}>
-                  {sentence.kanjiIds.map((id) => {
-                    const item = dictionary.kanji.find((entry) => entry.id === id);
+                <div className={preferences.canvasMode ? 'canvas-list' : 'inline-links kanji-inline-list'}>
+                  {visibleKanji.map(({ id, item }) => {
                     return (
-                      item && (preferences.canvasMode ? (
+                      item ? (preferences.canvasMode ? (
                         <div className="canvas-card canvas-card-kanji" key={id}>
-                          <div className="canvas-card-primary" lang="ja"><b>{item.character}</b></div>
+                          <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
+                            <b>{item.character}</b>
+                          </button>
                           <div className="canvas-card-body">
                             <span className="canvas-card-meaning">{item.meanings.join(', ')}</span>
                             <small><KanjiReadings on={item.on} kun={item.kun} romaji={preferences.romaji} /></small>
-                            {item.components.length > 0 && <small>{t('mnemonicComponents')}: {item.components.map((component) => (
-                            item.componentMeanings?.[component] ? `${component} — ${item.componentMeanings[component]}` : component
-                            )).join(' · ')}</small>}
-                            {item.mnemonic && <small>{t('mnemonic')}: {item.mnemonic}</small>}
-                            {item.mnemonic && <small>{t('mnemonicNotice')}</small>}
+                            <KanjiMemory item={item} kanji={dictionary.kanji} />
                           </div>
                         </div>
                       ) : (
-                        <button key={id} onClick={() => onEntity(id)}>
-                          <span lang="ja">{item.character}</span> <span>{item.meanings.join(', ')}</span>
-                        </button>
-                      ))
+                        <div className="kanji-inline-card" key={id}>
+                          <button className="kanji-inline-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
+                            <b>{item.character}</b>
+                          </button>
+                          <span className="kanji-inline-body">
+                            <span>{item.meanings.join(', ')}</span>
+                            <small><KanjiReadings on={item.on} kun={item.kun} romaji={preferences.romaji} /></small>
+                            <KanjiMemory item={item} kanji={dictionary.kanji} />
+                          </span>
+                        </div>
+                      )) : preferences.canvasMode ? (
+                        <div className="canvas-card canvas-card-kanji" key={id}>
+                          <div className="canvas-card-primary" lang="ja"><b>{id}</b></div>
+                          <div className="canvas-card-body"><span className="canvas-card-meaning">{t('kanjiDetailsUnavailable')}</span></div>
+                        </div>
+                      ) : <span className="kanji-character" lang="ja" key={id}>{id}</span>
                     );
                   })}
                 </div>
@@ -213,7 +334,7 @@ function SentenceBlock({
                   </span>
                 ))}
               </p>
-              <div className="translation-row repetition-lines">
+              <div className={`translation-row repetition-lines ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
                 {preferences.hiragana && (
                   <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
                     <LayerHint label="hiragana" /> {sentence.hiragana}
@@ -368,9 +489,10 @@ export function ReaderPage() {
     '--reader-size': `${preferences.fontSize}px`,
     '--reading-size': `${preferences.readingFontSize}px`,
     '--translation-size': `${preferences.translationFontSize}px`,
-    '--words-size': `${preferences.wordsFontSize}px`,
-    '--kanji-size': `${preferences.kanjiFontSize}px`,
-    '--grammar-size': `${preferences.grammarFontSize}px`,
+    '--card-size': `${16 * preferences.cardScalePercent / 100}px`,
+    '--words-size': `${16 * preferences.cardScalePercent / 100}px`,
+    '--kanji-size': `${16 * preferences.cardScalePercent / 100}px`,
+    '--grammar-size': `${16 * preferences.cardScalePercent / 100}px`,
     '--reader-leading': preferences.lineHeight,
     '--reader-width': `${preferences.width}px`,
   } as CSSProperties;
@@ -420,6 +542,16 @@ export function ReaderPage() {
               <span>{t('mainText')} <b>{preferences.fontSize}px</b></span>
               <input type="range" min="16" max="42" value={preferences.fontSize} onChange={(event) => void savePreference('fontSize', Number(event.target.value))} />
             </label>
+            {(['readingFontSize', 'translationFontSize'] as const).map((key) => (
+              <label className="reader-range-row" key={key}>
+                <span>{t(key === 'readingFontSize' ? 'readingLines' : 'translationLines')} <b>{preferences[key]}px</b></span>
+                <input type="range" min="10" max="32" value={preferences[key]} onChange={(event) => void savePreference(key, Number(event.target.value))} />
+              </label>
+            ))}
+            <label className="reader-range-row">
+              <span>{t('cardText')} <b>{preferences.cardScalePercent}%</b></span>
+              <input type="range" min="70" max="150" step="5" value={preferences.cardScalePercent} onChange={(event) => void savePreference('cardScalePercent', Number(event.target.value))} />
+            </label>
             <label className="reader-canvas-row">
               <span>{t('canvasMode')}</span>
               <input type="checkbox" checked={preferences.canvasMode} onChange={(event) => void savePreference('canvasMode', event.target.checked)} />
@@ -435,6 +567,10 @@ export function ReaderPage() {
                 {t(layer)}
               </label>
             ))}
+            <label>
+              <input type="checkbox" checked={preferences.translationsSeparateLine} onChange={(event) => void savePreference('translationsSeparateLine', event.target.checked)} />
+              {t('translationsSeparateLine')}
+            </label>
           </div>
         </details>
       </div>

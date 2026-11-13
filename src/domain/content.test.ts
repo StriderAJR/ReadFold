@@ -61,6 +61,25 @@ describe('book format', () => {
     }
   });
 
+  it('links every kanji in the Apothecary Diaries chapter to a detailed card', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const chapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
+    const entries = new Map(dictionary.kanji.map((entry) => [entry.character, entry]));
+    for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
+      const characters = [...new Set([...sentence.text].filter((character) => /[\u3400-\u9fff]/u.test(character)))];
+      const referenced = sentence.kanjiIds.map((id) => dictionary.kanji.find((entry) => entry.id === id));
+      expect(referenced.map((entry) => entry?.character)).toEqual(characters);
+      for (const character of characters) {
+        const entry = entries.get(character);
+        expect(entry).toBeDefined();
+        expect(entry?.meanings.length).toBeGreaterThan(0);
+        expect(entry?.on.length || entry?.kun.length).toBeTruthy();
+        expect(entry?.components.length).toBeGreaterThan(0);
+        expect(entry?.mnemonic).toBeTruthy();
+      }
+    }
+  });
+
   it('rejects unexpected fields, duplicate IDs, unsafe paths and malformed ruby', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
     expect(catalogSchema.safeParse([...catalog, catalog[0]]).success).toBe(false);

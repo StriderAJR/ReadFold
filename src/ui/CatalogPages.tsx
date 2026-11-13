@@ -237,6 +237,7 @@ export function BookPage() {
             {book.originalLanguage} · {book.difficulty}
           </p>
           <h1>{book.title}</h1>
+          {book.translatedTitle && <p className="muted">{book.translatedTitle}</p>}
           <p className="detail-author">{book.author}</p>
           <p>{book.description}</p>
           <div className="tag-list">

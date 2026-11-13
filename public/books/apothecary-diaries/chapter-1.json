@@ -64,8 +64,23 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
-          "grammarIds": []
+          "kanjiIds": [
+            "kanji.u9732",
+            "kanji.u5929",
+            "kanji.u4e32",
+            "kanji.u713c",
+            "kanji.u98df"
+          ],
+          "grammarIds": [
+            "grammar.possession",
+            "grammar.subject",
+            "grammar.desire"
+          ],
+          "grammarRoles": {
+            "grammar.possession": "の связывает 露天 и 串焼き: шашлычки уличного лотка.",
+            "grammar.subject": "が отмечает желаемое действие: именно串焼き хочется съесть.",
+            "grammar.desire": "食べたい образуется от основы 食べる + たい и выражает желание поесть."
+          }
         }
       ]
     },
@@ -147,7 +162,13 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u66c7",
+            "kanji.u5929",
+            "kanji.u898b",
+            "kanji.u4e0a",
+            "kanji.neko",
+            "kanji.u6e9c",
+            "kanji.u606f"
           ],
           "grammarIds": []
         }
@@ -343,7 +364,23 @@
               "role": "Связующее слово в контексте"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5468",
+            "kanji.u81ea",
+            "kanji.u5206",
+            "kanji.u4eca",
+            "kanji.u898b",
+            "kanji.u4e2d",
+            "kanji.u6700",
+            "kanji.u7f8e",
+            "kanji.u4e16",
+            "kanji.u754c",
+            "kanji.u7634",
+            "kanji.u6c17",
+            "kanji.u8822",
+            "kanji.u6fc1",
+            "kanji.u6fb1"
+          ],
           "grammarIds": []
         }
       ]
@@ -429,7 +466,12 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4e09",
+            "kanji.u6708",
+            "kanji.u98ef",
+            "kanji.u98df"
+          ],
           "grammarIds": []
         }
       ]
@@ -617,7 +659,20 @@
             }
           ],
           "kanjiIds": [
-            "kanji.hi"
+            "kanji.u5148",
+            "kanji.hi",
+            "kanji.u85ac",
+            "kanji.u8349",
+            "kanji.u63a2",
+            "kanji.u68ee",
+            "kanji.u51fa",
+            "kanji.u4f1a",
+            "kanji.u6751",
+            "kanji.u4eba",
+            "kanji.u58f1",
+            "kanji.u5f10",
+            "kanji.u53c2",
+            "kanji.u540d"
           ],
           "grammarIds": []
         }
@@ -755,7 +810,22 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5f37",
+            "kanji.u5927",
+            "kanji.u8ff7",
+            "kanji.u60d1",
+            "kanji.u6975",
+            "kanji.u7d50",
+            "kanji.u5a5a",
+            "kanji.u6d3b",
+            "kanji.u52d5",
+            "kanji.u7565",
+            "kanji.u5bae",
+            "kanji.u5ef7",
+            "kanji.u5973",
+            "kanji.u72e9"
+          ],
           "grammarIds": []
         }
       ]
@@ -967,7 +1037,27 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u7d66",
+            "kanji.u91d1",
+            "kanji.u4e8c",
+            "kanji.u5e74",
+            "kanji.u50cd",
+            "kanji.u5e02",
+            "kanji.u4e95",
+            "kanji.u623b",
+            "kanji.u5c31",
+            "kanji.u8077",
+            "kanji.u5148",
+            "kanji.u60aa",
+            "kanji.u500b",
+            "kanji.u4eba",
+            "kanji.u610f",
+            "kanji.u601d",
+            "kanji.u6765",
+            "kanji.u5834",
+            "kanji.u5408"
+          ],
           "grammarIds": []
         }
       ]
@@ -1080,7 +1170,14 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u85ac",
+            "kanji.u5e2b",
+            "kanji.u751f",
+            "kanji.u6d3b",
+            "kanji.neko",
+            "kanji.u8ff7",
+            "kanji.u60d1",
+            "kanji.u8a71"
           ],
           "grammarIds": []
         }
@@ -1312,7 +1409,21 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u4eba",
+            "kanji.u5999",
+            "kanji.u9f62",
+            "kanji.u5a18",
+            "kanji.u6355",
+            "kanji.u5ba6",
+            "kanji.u5b98",
+            "kanji.u58f2",
+            "kanji.u9152",
+            "kanji.u4ee3",
+            "kanji.u7a3c",
+            "kanji.u5df1",
+            "kanji.u8eab",
+            "kanji.neko",
+            "kanji.u8a71"
           ],
           "grammarIds": []
         },
@@ -1408,7 +1519,12 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u7406",
+            "kanji.u7531",
+            "kanji.u53d7",
+            "kanji.u5909"
+          ],
           "grammarIds": []
         }
       ]
@@ -1489,7 +1605,15 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5f8c",
+            "kanji.u5bae",
+            "kanji.u5834",
+            "kanji.u6240",
+            "kanji.u4e00",
+            "kanji.u751f",
+            "kanji.u95a2"
+          ],
           "grammarIds": []
         }
       ]
@@ -1644,7 +1768,22 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u8fd4",
+            "kanji.u5316",
+            "kanji.u7ca7",
+            "kanji.u9999",
+            "kanji.u7f8e",
+            "kanji.u8863",
+            "kanji.u7e8f",
+            "kanji.u5973",
+            "kanji.u5b98",
+            "kanji.u5507",
+            "kanji.u8584",
+            "kanji.u7b11",
+            "kanji.u5f35",
+            "kanji.u4ed8"
+          ],
           "grammarIds": []
         }
       ]
@@ -1760,7 +1899,15 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u85ac",
+            "kanji.u5c4b",
+            "kanji.u601d",
+            "kanji.u5973",
+            "kanji.u7b11",
+            "kanji.u6050",
+            "kanji.u6bd2"
+          ],
           "grammarIds": []
         }
       ]
@@ -1871,7 +2018,16 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u6bbf",
+            "kanji.u4e0a",
+            "kanji.u4eba",
+            "kanji.u4f4f",
+            "kanji.u5fa1",
+            "kanji.u57ce",
+            "kanji.shita",
+            "kanji.u82b1",
+            "kanji.u8857",
+            "kanji.u5909"
           ],
           "grammarIds": []
         }
@@ -1981,7 +2137,19 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u8db3",
+            "kanji.u5143",
+            "kanji.u7f6e",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u7c60",
+            "kanji.u62b1",
+            "kanji.u5efa",
+            "kanji.u7269",
+            "kanji.u5965",
+            "kanji.u5411"
+          ],
           "grammarIds": []
         },
         {
@@ -2185,7 +2353,26 @@
             }
           ],
           "kanjiIds": [
-            "kanji.mizu"
+            "kanji.u8868",
+            "kanji.u9055",
+            "kanji.u6bba",
+            "kanji.u98a8",
+            "kanji.u666f",
+            "kanji.u4e2d",
+            "kanji.u5ead",
+            "kanji.u77f3",
+            "kanji.u7573",
+            "kanji.mizu",
+            "kanji.u5834",
+            "kanji.u7537",
+            "kanji.u5973",
+            "kanji.u53ec",
+            "kanji.u4f7f",
+            "kanji.u5927",
+            "kanji.u91cf",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u7269"
           ],
           "grammarIds": []
         }
@@ -2254,7 +2441,16 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5f8c",
+            "kanji.u5bae",
+            "kanji.u57fa",
+            "kanji.u672c",
+            "kanji.u7537",
+            "kanji.u5b50",
+            "kanji.u7981",
+            "kanji.u5236"
+          ],
           "grammarIds": []
         },
         {
@@ -2420,7 +2616,21 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5165",
+            "kanji.u56fd",
+            "kanji.u6700",
+            "kanji.u9ad8",
+            "kanji.u8cb4",
+            "kanji.u8840",
+            "kanji.u7e01",
+            "kanji.u5927",
+            "kanji.u5207",
+            "kanji.u5931",
+            "kanji.u5143",
+            "kanji.u7537",
+            "kanji.u6027"
+          ],
           "grammarIds": []
         },
         {
@@ -2483,7 +2693,10 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5f8c",
+            "kanji.u8005"
+          ],
           "grammarIds": []
         }
       ]
@@ -2613,7 +2826,11 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u6b6a",
+            "kanji.u601d",
+            "kanji.u7406",
+            "kanji.neko",
+            "kanji.u8003"
           ],
           "grammarIds": []
         }
@@ -2746,7 +2963,15 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u7c60",
+            "kanji.u7f6e",
+            "kanji.u5efa",
+            "kanji.u7269",
+            "kanji.u4e2d",
+            "kanji.u4e26",
+            "kanji.u898b"
+          ],
           "grammarIds": []
         },
         {
@@ -2823,7 +3048,13 @@
             }
           ],
           "kanjiIds": [
-            "kanji.hi"
+            "kanji.u6c5a",
+            "kanji.u7269",
+            "kanji.hi",
+            "kanji.u5f53",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u6e08"
           ],
           "grammarIds": []
         }
@@ -2893,7 +3124,11 @@
             }
           ],
           "kanjiIds": [
-            "kanji.ki"
+            "kanji.u6301",
+            "kanji.u624b",
+            "kanji.ki",
+            "kanji.u672d",
+            "kanji.u898b"
           ],
           "grammarIds": []
         },
@@ -2972,7 +3207,15 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u690d",
+            "kanji.u7269",
+            "kanji.u6a21",
+            "kanji.u7d75",
+            "kanji.u6570",
+            "kanji.u5b57",
+            "kanji.u66f8"
+          ],
           "grammarIds": []
         }
       ]
@@ -3110,7 +3353,15 @@
               "role": "Связующее слово в контексте"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5973",
+            "kanji.u5b98",
+            "kanji.u4e2d",
+            "kanji.u5b57",
+            "kanji.u8aad",
+            "kanji.u4eba",
+            "kanji.u652b"
+          ],
           "grammarIds": []
         },
         {
@@ -3245,7 +3496,22 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5bae",
+            "kanji.u5ef7",
+            "kanji.u9023",
+            "kanji.u8fbc",
+            "kanji.u524d",
+            "kanji.u6700",
+            "kanji.u4f4e",
+            "kanji.u9650",
+            "kanji.u793c",
+            "kanji.u5100",
+            "kanji.u6559",
+            "kanji.u6587",
+            "kanji.u5b57",
+            "kanji.u96e3"
+          ],
           "grammarIds": []
         },
         {
@@ -3334,7 +3600,17 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u8b58",
+            "kanji.u5b57",
+            "kanji.u7387",
+            "kanji.u7530",
+            "kanji.u820e",
+            "kanji.u5a18",
+            "kanji.u534a",
+            "kanji.u5206",
+            "kanji.u8d8a"
+          ],
           "grammarIds": []
         }
       ]
@@ -3467,7 +3743,18 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5927",
+            "kanji.u904e",
+            "kanji.u5f8c",
+            "kanji.u5bae",
+            "kanji.u5f0a",
+            "kanji.u5bb3",
+            "kanji.u91cf",
+            "kanji.u5897",
+            "kanji.u8cea",
+            "kanji.u60aa"
+          ],
           "grammarIds": []
         }
       ]
@@ -3658,7 +3945,26 @@
             }
           ],
           "kanjiIds": [
-            "kanji.en"
+            "kanji.u5148",
+            "kanji.u5e1d",
+            "kanji.u82b1",
+            "kanji.en",
+            "kanji.u5230",
+            "kanji.u5e95",
+            "kanji.u53ca",
+            "kanji.u5983",
+            "kanji.u5973",
+            "kanji.u5b98",
+            "kanji.u5408",
+            "kanji.u4e8c",
+            "kanji.u5343",
+            "kanji.u4eba",
+            "kanji.u5ba6",
+            "kanji.u52a0",
+            "kanji.u4e09",
+            "kanji.u5927",
+            "kanji.u6240",
+            "kanji.u5e2f"
           ],
           "grammarIds": []
         }
@@ -3764,7 +4070,13 @@
           ],
           "kanjiIds": [
             "kanji.neko",
-            "kanji.shita"
+            "kanji.u4e2d",
+            "kanji.u6700",
+            "kanji.shita",
+            "kanji.u5c64",
+            "kanji.u5973",
+            "kanji.u5b98",
+            "kanji.u8077"
           ],
           "grammarIds": []
         },
@@ -3886,7 +4198,17 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u7279",
+            "kanji.u5f8c",
+            "kanji.u76fe",
+            "kanji.u652b",
+            "kanji.u6570",
+            "kanji.u5408",
+            "kanji.u5a18",
+            "kanji.u59a5",
+            "kanji.u5f53"
+          ],
           "grammarIds": []
         },
         {
@@ -4204,8 +4526,31 @@
             }
           ],
           "kanjiIds": [
+            "kanji.u7261",
+            "kanji.u4e39",
+            "kanji.u8c4a",
+            "kanji.u6e80",
+            "kanji.u8089",
+            "kanji.u4f53",
+            "kanji.u6708",
+            "kanji.u767d",
+            "kanji.u808c",
+            "kanji.u6301",
+            "kanji.shita",
+            "kanji.u5983",
+            "kanji.u4f4d",
+            "kanji.u53ef",
+            "kanji.u80fd",
+            "kanji.u6027",
             "kanji.neko",
-            "kanji.shita"
+            "kanji.u6d6e",
+            "kanji.u5065",
+            "kanji.u5eb7",
+            "kanji.u7684",
+            "kanji.u67af",
+            "kanji.u679d",
+            "kanji.u624b",
+            "kanji.u8db3"
           ],
           "grammarIds": []
         }
@@ -4262,7 +4607,11 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4ed5",
+            "kanji.u4e8b",
+            "kanji.u7d42"
+          ],
           "grammarIds": []
         }
       ]
@@ -4406,7 +4755,17 @@
             }
           ],
           "kanjiIds": [
-            "kanji.chiisai"
+            "kanji.u6885",
+            "kanji.u82b1",
+            "kanji.u58f1",
+            "kanji.u4e03",
+            "kanji.u66f8",
+            "kanji.u672d",
+            "kanji.u7c60",
+            "kanji.u898b",
+            "kanji.chiisai",
+            "kanji.u8d70",
+            "kanji.u6b69"
           ],
           "grammarIds": []
         },
@@ -4506,7 +4865,17 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u91cd",
+            "kanji.u66c7",
+            "kanji.u7a7a",
+            "kanji.u6ce3",
+            "kanji.u51fa",
+            "kanji.u524d",
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u623b"
+          ],
           "grammarIds": []
         }
       ]
@@ -4594,7 +4963,15 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u7c60",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u7269",
+            "kanji.u4e3b",
+            "kanji.shita",
+            "kanji.u7d1a",
+            "kanji.u5983",
+            "kanji.u5b2a"
           ],
           "grammarIds": []
         },
@@ -4736,7 +5113,20 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u4e0e",
+            "kanji.u500b",
+            "kanji.u5ba4",
+            "kanji.u4ed6",
+            "kanji.shita",
+            "kanji.u5983",
+            "kanji.u6bd4",
+            "kanji.u8abf",
+            "kanji.u5ea6",
+            "kanji.u8cea",
+            "kanji.u8c6a",
+            "kanji.u83ef",
+            "kanji.u6d3e",
+            "kanji.u624b"
           ],
           "grammarIds": []
         },
@@ -4832,7 +5222,16 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u4e3b",
+            "kanji.u8c6a",
+            "kanji.u5546",
+            "kanji.u5a18",
+            "kanji.u4e88",
+            "kanji.u60f3"
+          ],
           "grammarIds": []
         },
         {
@@ -5030,7 +5429,19 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u4f4d",
+            "kanji.u6301",
+            "kanji.u81ea",
+            "kanji.u5206",
+            "kanji.u5c02",
+            "kanji.u7528",
+            "kanji.shita",
+            "kanji.u5973",
+            "kanji.u4f4e",
+            "kanji.u5983",
+            "kanji.u4e8c",
+            "kanji.u4eba",
+            "kanji.u7f6e"
           ],
           "grammarIds": []
         },
@@ -5175,7 +5586,16 @@
           ],
           "kanjiIds": [
             "kanji.neko",
-            "kanji.shita"
+            "kanji.u7279",
+            "kanji.u4ed5",
+            "kanji.u4e3b",
+            "kanji.u4eba",
+            "kanji.shita",
+            "kanji.u5973",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u7269",
+            "kanji.u904b"
           ],
           "grammarIds": []
         }
@@ -5388,7 +5808,23 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.shita",
+            "kanji.u7d1a",
+            "kanji.u5983",
+            "kanji.u5b2a",
+            "kanji.u5f8c",
+            "kanji.u5bae",
+            "kanji.u5185",
+            "kanji.u500b",
+            "kanji.u5ba4",
+            "kanji.u6301",
+            "kanji.u8a31",
+            "kanji.u5834",
+            "kanji.u6240",
+            "kanji.u7aef",
+            "kanji.u7687",
+            "kanji.u5e1d",
+            "kanji.u76ee"
           ],
           "grammarIds": []
         },
@@ -5547,7 +5983,26 @@
               "role": "Связующее слово в контексте"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4e00",
+            "kanji.u5ea6",
+            "kanji.u591c",
+            "kanji.u4f3d",
+            "kanji.u547d",
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u79fb",
+            "kanji.u52d5",
+            "kanji.u4e8c",
+            "kanji.u76ee",
+            "kanji.u5fa1",
+            "kanji.u624b",
+            "kanji.u4ed8",
+            "kanji.u51fa",
+            "kanji.u4e16",
+            "kanji.u610f",
+            "kanji.u5473"
+          ],
           "grammarIds": []
         }
       ]
@@ -5749,7 +6204,25 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u4e00",
+            "kanji.u65b9",
+            "kanji.u98df",
+            "kanji.u6307",
+            "kanji.u52d5",
+            "kanji.u9069",
+            "kanji.u9f62",
+            "kanji.u904e",
+            "kanji.u5983",
+            "kanji.u5b9f",
+            "kanji.u5bb6",
+            "kanji.u6a29",
+            "kanji.u529b",
+            "kanji.u9650",
+            "kanji.u4f4d",
+            "kanji.shita",
+            "kanji.u6700",
+            "kanji.u60aa",
+            "kanji.u8cdc"
           ],
           "grammarIds": []
         },
@@ -5894,7 +6367,18 @@
             }
           ],
           "kanjiIds": [
-            "kanji.shita"
+            "kanji.u4e0d",
+            "kanji.u5e78",
+            "kanji.u76f8",
+            "kanji.u624b",
+            "kanji.u5ba6",
+            "kanji.u5b98",
+            "kanji.shita",
+            "kanji.u8cdc",
+            "kanji.u5973",
+            "kanji.u4e00",
+            "kanji.u756a",
+            "kanji.u6050"
           ],
           "grammarIds": []
         }
@@ -5965,7 +6449,10 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.neko",
+            "kanji.u6249",
+            "kanji.u8efd",
+            "kanji.u53e9"
           ],
           "grammarIds": []
         }
@@ -6013,7 +6500,9 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+
+          ],
           "grammarIds": []
         }
       ]
@@ -6129,7 +6618,20 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u6249",
+            "kanji.u958b",
+            "kanji.u7121",
+            "kanji.u611b",
+            "kanji.u60f3",
+            "kanji.u8fd4",
+            "kanji.u4e8b",
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u4ed8",
+            "kanji.u4f8d",
+            "kanji.u5973"
+          ],
           "grammarIds": []
         }
       ]
@@ -6241,7 +6743,16 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4e2d",
+            "kanji.u7518",
+            "kanji.u5302",
+            "kanji.u6f02",
+            "kanji.u5983",
+            "kanji.u9152",
+            "kanji.u676f",
+            "kanji.u63fa"
+          ],
           "grammarIds": []
         }
       ]
@@ -6394,7 +6905,21 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5bae",
+            "kanji.u5185",
+            "kanji.u5165",
+            "kanji.u524d",
+            "kanji.u8a89",
+            "kanji.u7f8e",
+            "kanji.u5bb9",
+            "kanji.u59ff",
+            "kanji.u6240",
+            "kanji.u8a6e",
+            "kanji.u4e95",
+            "kanji.u4e2d",
+            "kanji.u86d9"
+          ],
           "grammarIds": []
         },
         {
@@ -6544,7 +7069,22 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u7d62",
+            "kanji.u721b",
+            "kanji.u82b1",
+            "kanji.u6c17",
+            "kanji.u5727",
+            "kanji.u9f3b",
+            "kanji.u67f1",
+            "kanji.u6298",
+            "kanji.u6700",
+            "kanji.u8fd1",
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u5916",
+            "kanji.u51fa"
+          ],
           "grammarIds": []
         }
       ]
@@ -6647,7 +7187,13 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u4e2d",
+            "kanji.u8fce",
+            "kanji.u6765"
+          ],
           "grammarIds": []
         }
       ]
@@ -6764,7 +7310,15 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.neko",
+            "kanji.u96a3",
+            "kanji.u90e8",
+            "kanji.u5c4b",
+            "kanji.u6d17",
+            "kanji.u6fef",
+            "kanji.u7c60",
+            "kanji.u5834",
+            "kanji.u623b"
           ],
           "grammarIds": []
         }
@@ -6829,7 +7383,11 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4ed5",
+            "kanji.u4e8b",
+            "kanji.u6b8b"
+          ],
           "grammarIds": []
         }
       ]
@@ -6969,7 +7527,13 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u597d",
+            "kanji.u7d66",
+            "kanji.u91d1",
+            "kanji.u5206",
+            "kanji.u50cd"
+          ],
           "grammarIds": []
         }
       ]
@@ -7057,6 +7621,14 @@
             }
           ],
           "kanjiIds": [
+            "kanji.u57fa",
+            "kanji.u672c",
+            "kanji.u771f",
+            "kanji.u9762",
+            "kanji.u76ee",
+            "kanji.u5143",
+            "kanji.u85ac",
+            "kanji.u5c4b",
             "kanji.neko"
           ],
           "grammarIds": []
@@ -7122,7 +7694,12 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5927",
+            "kanji.u4eba",
+            "kanji.u50cd",
+            "kanji.u51fa"
+          ],
           "grammarIds": []
         }
       ]
@@ -7197,7 +7774,11 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5fa1",
+            "kanji.u624b",
+            "kanji.u4ed8"
+          ],
           "grammarIds": []
         }
       ]
@@ -7289,7 +7870,11 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u6b8b",
+            "kanji.u5ff5",
+            "kanji.neko",
+            "kanji.u8003",
+            "kanji.u7518"
           ],
           "grammarIds": []
         }
@@ -7376,7 +7961,12 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u4f55",
+            "kanji.u8d77",
+            "kanji.u4eba",
+            "kanji.u751f"
+          ],
           "grammarIds": []
         }
       ]
@@ -7519,7 +8109,19 @@
               "role": "Связующее слово в контексте"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u9f62",
+            "kanji.u5341",
+            "kanji.u4e03",
+            "kanji.u5a18",
+            "kanji.u9054",
+            "kanji.u89b3",
+            "kanji.u601d",
+            "kanji.u8003",
+            "kanji.u6301",
+            "kanji.u4e3b",
+            "kanji.u6291"
+          ],
           "grammarIds": []
         }
       ]
@@ -7564,7 +8166,14 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u597d",
+            "kanji.u5947",
+            "kanji.u5fc3",
+            "kanji.u77e5",
+            "kanji.u8b58",
+            "kanji.u6b32"
+          ],
           "grammarIds": []
         }
       ]
@@ -7630,7 +8239,12 @@
               "role": "Связующее слово в контексте"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5c11",
+            "kanji.u6b63",
+            "kanji.u7fa9",
+            "kanji.u611f"
+          ],
           "grammarIds": []
         }
       ]
@@ -7742,8 +8356,15 @@
             }
           ],
           "kanjiIds": [
+            "kanji.u6570",
             "kanji.hi",
-            "kanji.neko"
+            "kanji.u5f8c",
+            "kanji.neko",
+            "kanji.u602a",
+            "kanji.u5947",
+            "kanji.u771f",
+            "kanji.u76f8",
+            "kanji.u66b4"
           ],
           "grammarIds": []
         }
@@ -7812,7 +8433,17 @@
               "role": "Лексическое значение в контексте предложения"
             }
           ],
-          "kanjiIds": [],
+          "kanjiIds": [
+            "kanji.u5f8c",
+            "kanji.u5bae",
+            "kanji.u751f",
+            "kanji.u4e73",
+            "kanji.u5e7c",
+            "kanji.u5150",
+            "kanji.u9023",
+            "kanji.u7d9a",
+            "kanji.u6b7b"
+          ],
           "grammarIds": []
         }
       ]
@@ -7929,7 +8560,15 @@
             }
           ],
           "kanjiIds": [
-            "kanji.neko"
+            "kanji.u5148",
+            "kanji.u4ee3",
+            "kanji.u5074",
+            "kanji.u5ba4",
+            "kanji.u546a",
+            "kanji.u8a00",
+            "kanji.neko",
+            "kanji.u602a",
+            "kanji.u5947"
           ],
           "grammarIds": []
         }

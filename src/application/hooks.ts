@@ -12,6 +12,7 @@ export const preferencesSchema = z.object({
   fontSize: z.number().min(16).max(42),
   readingFontSize: z.number().min(10).max(32),
   translationFontSize: z.number().min(10).max(32),
+  cardScalePercent: z.number().int().min(70).max(150),
   wordsFontSize: z.number().min(10).max(32),
   kanjiFontSize: z.number().min(10).max(32),
   grammarFontSize: z.number().min(10).max(32),
@@ -29,6 +30,7 @@ export const preferencesSchema = z.object({
   literalSeparateLine: z.boolean(),
   natural: z.boolean(),
   naturalSeparateLine: z.boolean(),
+  translationsSeparateLine: z.boolean(),
   words: z.boolean(),
   kanji: z.boolean(),
   grammar: z.boolean(),
@@ -43,6 +45,9 @@ export function safePreferences(input: Record<string, unknown>): ReaderPreferenc
     if (parsed.success) {
       Object.assign(result, { [key]: parsed.data });
     }
+  }
+  if (typeof input.cardScalePercent !== 'number' && typeof input.cardFontSize === 'number') {
+    result.cardScalePercent = Math.min(150, Math.max(70, Math.round((input.cardFontSize / 16) * 100)));
   }
   return result;
 }
