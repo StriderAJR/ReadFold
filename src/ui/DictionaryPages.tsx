@@ -1,4 +1,4 @@
-import { useState, type CSSProperties } from 'react';
+import { useState, type CSSProperties, type ReactNode } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
@@ -8,6 +8,7 @@ import { Button } from '../components/ui/button';
 import { useOccurrences } from '../application/hooks';
 import type { LearningStatus } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
+import { KanjiReadings } from './KanjiReadings';
 export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const { t } = useTranslation();
   const { user, dictionary, catalog } = useAppData();
@@ -77,11 +78,11 @@ export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }
           {matched.map((item) => {
             const id = item.id;
             const status = user.data?.learning[id];
-            const detail =
+            const detail: ReactNode =
               kind === 'words' && 'dictionaryForm' in item
-                ? `${item.dictionaryForm} · ${item.reading}`
+                ? `${item.dictionaryForm} · ${item.reading}${user.preferences.romaji ? ` · ${item.romaji}` : ''}`
                 : kind === 'kanji' && 'on' in item
-                  ? `${item.on.join('、')} · ${item.kun.join('、')}`
+                  ? <KanjiReadings on={item.on} kun={item.kun} romaji={user.preferences.romaji} />
                   : '';
             const label =
               kind === 'words' && 'surface' in item
@@ -144,16 +145,17 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   }
   let title = '';
   let sub = '';
+  let kanjiReadings: ReactNode = null;
   let meaning = '';
   let examples: import('../domain/content').Grammar['examples'] = [];
   let related: { id: string; label: string; kind: 'words' | 'kanji' | 'grammar' }[] = [];
   if (kind === 'words' && 'surface' in item) {
     title = item.surface;
-    sub = `${item.dictionaryForm} · ${item.reading} · ${item.romaji} · ${item.partOfSpeech}`;
+    sub = `${item.dictionaryForm} · ${item.reading}${user.preferences.romaji ? ` · ${item.romaji}` : ''} · ${item.partOfSpeech}`;
     meaning = item.meanings.join('、');
   } else if (kind === 'kanji' && 'character' in item) {
     title = item.character;
-    sub = `${t('onReading')}: ${item.on.join('、')} · ${t('kunReading')}: ${item.kun.join('、')}`;
+    kanjiReadings = <KanjiReadings on={item.on} kun={item.kun} romaji={user.preferences.romaji} />;
     meaning = item.meanings.join('、');
     related = item.wordIds.flatMap((wordId) => {
       const word = dict?.words.find((entry) => entry.id === wordId);
@@ -186,8 +188,23 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
         '--translation-size': `${user.preferences.translationFontSize}px`,
         '--entity-size': `${kind === 'words' ? user.preferences.wordsFontSize : kind === 'kanji' ? user.preferences.kanjiFontSize : user.preferences.grammarFontSize}px`,
       } as CSSProperties}>
-        <p className="entity-reading">{sub}</p>
-        <p>{meaning}</p>
+        {kind === 'kanji' ? (
+          <div className="kanji-overview">
+            <section className="kanji-overview-block">
+              <h3>{t('kanjiLabel')}</h3>
+              <div className="entity-reading">{kanjiReadings}</div>
+            </section>
+            <section className="kanji-overview-block kanji-meaning-block">
+              <h3>{t('meaning')}</h3>
+              <p>{meaning}</p>
+            </section>
+          </div>
+        ) : (
+          <>
+            <p className="entity-reading">{sub}</p>
+            <p>{meaning}</p>
+          </>
+        )}
         {examples.length > 0 && (
           <div className="grammar-examples">
             {examples.map((ex, i) => (
@@ -196,22 +213,27 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
           </div>
         )}
         {kind === 'kanji' && 'character' in item && (
-          <section aria-label={t('mnemonic')}>
+          <section className="kanji-mnemonic" aria-label={t('mnemonic')}>
             <h3>{t('mnemonic')}</h3>
             <p className="muted">{t('mnemonicNotice')}</p>
             {item.components.length > 0 && (
-              <p>
-                <b>{t('mnemonicComponents')}: </b>
-                {item.components.map((component) => (
-                  item.componentMeanings?.[component] ? `${component} — ${item.componentMeanings[component]}` : component
-                )).join(' · ')}
-              </p>
+              <div className="kanji-components">
+                <h4>{t('mnemonicComponents')}</h4>
+                <div className="kanji-component-list">
+                  {item.components.map((component) => (
+                    <div className="kanji-component" key={component}>
+                      <b lang="ja">{component}</b>
+                      <span>{item.componentMeanings?.[component] ?? component}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             )}
-            {item.mnemonic && <p>{item.mnemonic}</p>}
+            {item.mnemonic && <p className="kanji-mnemonic-phrase">{item.mnemonic}</p>}
           </section>
         )}
         {related.length > 0 && (
-          <div>
+          <section className="kanji-related">
             <h3>{t('related')}</h3>
             <div className="inline-links">
               {related.map((entry) => (
@@ -220,7 +242,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         )}
         <div className="entity-actions">
           {(['learning', 'known'] as const).map((status) => (

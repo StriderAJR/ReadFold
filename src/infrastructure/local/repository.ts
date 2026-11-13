@@ -126,10 +126,20 @@ interface CacheEntry {
   json: unknown;
   updatedAt: number;
 }
-interface Diagnostic {
+export type DiagnosticReason =
+  | 'authentication'
+  | 'permission'
+  | 'conflict'
+  | 'rate_limit'
+  | 'bad_request'
+  | 'server'
+  | 'network'
+  | 'unknown';
+export interface Diagnostic {
   id?: number;
   code: string;
   status?: number;
+  reason?: DiagnosticReason;
   createdAt: number;
   category: 'sync' | 'storage' | 'import' | 'cache' | 'other';
   level: 'error' | 'warning' | 'info';
@@ -138,6 +148,33 @@ interface Diagnostic {
 }
 const diagnosticCodes = ['sync_failed', 'import_failed', 'cache_failed', 'storage_failed'];
 const diagnosticLifetime = 7 * 24 * 60 * 60 * 1000;
+function diagnosticReason(code: string, status?: number): DiagnosticReason {
+  if (!code.startsWith('sync_')) {
+    return 'unknown';
+  }
+  if (status === 401) {
+    return 'authentication';
+  }
+  if (status === 403) {
+    return 'permission';
+  }
+  if (status === 409) {
+    return 'conflict';
+  }
+  if (status === 429) {
+    return 'rate_limit';
+  }
+  if (status !== undefined && status >= 400 && status < 500) {
+    return 'bad_request';
+  }
+  if (status !== undefined && status >= 500) {
+    return 'server';
+  }
+  if (status === undefined) {
+    return 'network';
+  }
+  return 'unknown';
+}
 function sanitizeDiagnostic(entry: Partial<Diagnostic>): Diagnostic {
   const code = diagnosticCodes.includes(entry.code ?? '') ? entry.code! : 'other';
   const category: Diagnostic['category'] = code.startsWith('sync_')
@@ -157,7 +194,14 @@ function sanitizeDiagnostic(entry: Partial<Diagnostic>): Diagnostic {
   const createdAt = Number.isFinite(entry.createdAt) ? entry.createdAt! : 0;
   const lastSeen = Number.isFinite(entry.lastSeen) ? entry.lastSeen! : createdAt;
   const count = Number.isSafeInteger(entry.count) && entry.count! > 0 ? entry.count! : 1;
-  return { code, category, status, level, createdAt, lastSeen, count };
+  const reason =
+    entry.reason &&
+    ['authentication', 'permission', 'conflict', 'rate_limit', 'bad_request', 'server', 'network', 'unknown'].includes(
+      entry.reason,
+    )
+      ? entry.reason
+      : diagnosticReason(code, status);
+  return { code, category, status, reason, level, createdAt, lastSeen, count };
 }
 
 export class LocalDatabase extends Dexie {

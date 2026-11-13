@@ -7,6 +7,7 @@ import { Card } from '../components/ui/card';
 import { useAppData, PageTitle, download } from './Common';
 import { local, services, synchronize, syncEngine, useSession } from '../application/runtime';
 import type { ReaderPreferences } from '../domain/user-state';
+import type { Diagnostic } from '../infrastructure/local/repository';
 const preferenceOptions: (keyof ReaderPreferences)[] = [
   'furigana',
   'hiragana',
@@ -316,21 +317,34 @@ export function AccountPage() {
 }
 export function DiagnosticsPage() {
   const { t } = useTranslation();
-  const [items, setItems] = useState<Record<string, number>>({});
+  const { user } = useAppData();
+  const [items, setItems] = useState<Diagnostic[]>([]);
   useEffect(() => {
-    void local.diagnosticSummary().then(setItems);
+    void local.exportDiagnostics().then((diagnostics) => setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen)));
   }, []);
   return (
     <>
       <PageTitle title={t('diagnostics')} />
       <Card className="diagnostics-card">
-        <p className="muted">{t('savedOffline')}</p>
-        {Object.entries(items).map(([key, value]) => (
-          <div className="history-row" key={key}>
-            <span>{key}</span>
-            <b>{value}</b>
+        <p className="muted">{t('diagnosticsHelp')}</p>
+        {items.map((item) => (
+          <div className="diagnostic-entry" key={`${item.category}-${item.code}-${item.status ?? 'none'}`}>
+            <div className="diagnostic-entry-heading">
+              <b>{item.category === 'sync' ? t('diagnosticSyncFailed') : item.code}</b>
+              {item.status && <span>{t('diagnosticStatus')}: {item.status}</span>}
+            </div>
+            {item.category === 'sync' && (
+              <p>
+                {t(`syncReason${item.reason ? `${item.reason[0].toUpperCase()}${item.reason.slice(1)}` : 'Unknown'}`)}
+              </p>
+            )}
+            <small>
+              {t('diagnosticOccurrences')}: {item.count} · {t('diagnosticLastSeen')}:{' '}
+              {new Intl.DateTimeFormat(user.preferences.language, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(item.lastSeen))}
+            </small>
           </div>
         ))}
+        {items.length === 0 && <p className="muted">{t('noData')}</p>}
         <Button
           variant="outline"
           onClick={async () => download('readfold-diagnostics.json', await local.exportDiagnostics())}

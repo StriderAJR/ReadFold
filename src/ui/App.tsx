@@ -56,6 +56,17 @@ function Layout({ children }: { children: ReactNode }) {
   const syncInfo = useSyncInfo();
   const localFailure = useLocalFailure((state) => state.failed);
   const identity = useSession((state) => state.identity);
+  const syncStatusLabel = t(
+    ({
+      loading: 'loading',
+      guest: 'syncGuest',
+      offline: 'syncOffline',
+      pending: 'syncPending',
+      synced: 'syncSynced',
+      paused: 'syncDisabled',
+      syncError: 'syncFailedShort',
+    } as const)[syncInfo.status] ?? 'loading',
+  );
   useEffect(() => {
     void i18n.changeLanguage(user.preferences.language);
     document.documentElement.lang = user.preferences.language;
@@ -101,22 +112,13 @@ function Layout({ children }: { children: ReactNode }) {
           <span
             className={`sync-dot ${syncInfo.status === 'syncError' ? 'sync-dot-error' : syncInfo.status === 'pending' ? 'sync-dot-pending' : ''}`}
           />
-          <span>
-            {t(
-              (
-                {
-                  loading: 'loading',
-                  guest: 'syncGuest',
-                  offline: 'syncOffline',
-                  pending: 'syncPending',
-                  synced: 'syncSynced',
-                  paused: 'syncDisabled',
-                  syncError: 'syncFailedShort',
-                } as const
-              )[syncInfo.status] ?? 'loading',
-            )}
-            {syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}
-          </span>
+          {syncInfo.status === 'syncError' ? (
+            <Link to="/settings/diagnostics" className="sync-status-link">
+              {syncStatusLabel}{syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}
+            </Link>
+          ) : (
+            <span>{syncStatusLabel}{syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}</span>
+          )}
         </div>
       </aside>
       {open && <button aria-label={t('back')} className="sidebar-scrim" onClick={() => setOpen(false)} />}
@@ -160,10 +162,21 @@ function Layout({ children }: { children: ReactNode }) {
         </header>
         {(localFailure || user.saveError || user.isError || syncInfo.status === 'syncError') && (
           <div className="global-alert" role="status">
-            {localFailure || user.saveError || user.isError ? t('localSaveError') : t('syncFailedShort')}{' '}
-            <button onClick={async () => download('readfold-backup.json', await local.exportData(user.owner))}>
-              {t('export')}
-            </button>
+            {localFailure || user.saveError || user.isError ? (
+              <>
+                {t('localSaveError')}{' '}
+                <button onClick={async () => download('readfold-backup.json', await local.exportData(user.owner))}>
+                  {t('export')}
+                </button>
+              </>
+            ) : (
+              <>
+                <Link className="global-alert-link" to="/settings/diagnostics">{t('syncFailedShort')}</Link>{' '}
+                <button onClick={async () => download('readfold-backup.json', await local.exportData(user.owner))}>
+                  {t('export')}
+                </button>
+              </>
+            )}
           </div>
         )}
         <main id="main-content">{children}</main>

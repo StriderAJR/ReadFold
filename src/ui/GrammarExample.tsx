@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import type { Grammar } from '../domain/content';
 import type { ReaderPreferences } from '../domain/user-state';
+import { kanaToRomaji } from './kana';
+import { LayerHint } from './LayerHint';
 
 type Example = Grammar['examples'][number];
 
@@ -15,26 +17,31 @@ export function GrammarExample({ example, preferences }: { example: Example; pre
     <div className="grammar-example">
       <p lang="ja">{japanese(showInlineRuby)}</p>
       {preferences.furigana && preferences.furiganaSeparateLine && (
-        <p className="translation-line" lang="ja"><b>{t('furigana')}</b> {japanese(true)}</p>
+        <p className="translation-line" lang="ja"><LayerHint label="furigana" /> {japanese(true)}</p>
       )}
       {preferences.hiragana && example.hiragana && (
         <p className={`reading-row ${preferences.hiraganaSeparateLine ? 'translation-line' : ''}`} lang="ja">
-          <b>{t('hiragana')}</b> {example.hiragana}
+          <LayerHint label="hiragana" /> {example.hiragana}
         </p>
       )}
       {preferences.romaji && example.romaji && (
         <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
-          <b>{t('romaji')}</b> {example.romaji}
+          <LayerHint label="romaji" /> {example.romaji}
+        </p>
+      )}
+      {preferences.romaji && !example.romaji && (example.hiragana || example.segments?.some((segment) => segment.reading)) && (
+        <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
+          <LayerHint label="romaji" /> {kanaToRomaji(example.hiragana ?? example.segments?.map((segment) => segment.reading ?? segment.text).join('') ?? '')}
         </p>
       )}
       {preferences.literal && example.literal && (
         <p className={preferences.literalSeparateLine ? 'translation-line' : ''}>
-          <b>{t('literal')}</b> {example.literal}
+          <LayerHint label="literal" /> {example.literal}
         </p>
       )}
       {preferences.natural && (
         <p className={preferences.naturalSeparateLine ? 'translation-line' : ''}>
-          <b>{t('natural')}</b> {example.natural ?? example.translation}
+          <LayerHint label="natural" /> {example.natural ?? example.translation}
         </p>
       )}
     </div>

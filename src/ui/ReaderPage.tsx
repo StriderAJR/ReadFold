@@ -7,6 +7,8 @@ import { useCatalog, useChapter, useDictionary, useUserData } from '../applicati
 import type { Dictionary, Sentence } from '../domain/content';
 import type { ReaderPreferences } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
+import { KanjiReadings } from './KanjiReadings';
+import { LayerHint } from './LayerHint';
 
 const layers = ['furigana', 'hiragana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
@@ -82,7 +84,7 @@ function SentenceBlock({
           <div className="translation-row">
             {preferences.furigana && preferences.furiganaSeparateLine && (
               <p className="translation-line" lang="ja">
-                <b>{t('furigana')}</b>
+                <LayerHint label="furigana" />
                 {sentence.segments.map((segment, partIndex) => segment.reading ? (
                   <ruby key={partIndex}>{segment.text}<rt>{segment.reading}</rt></ruby>
                 ) : <span key={partIndex}>{segment.text}</span>)}
@@ -90,25 +92,25 @@ function SentenceBlock({
             )}
             {preferences.hiragana && (
               <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
-                <b>{t('hiragana')}</b>
+                <LayerHint label="hiragana" />
                 {sentence.hiragana}
               </p>
             )}
             {preferences.romaji && (
               <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
-                <b>{t('romaji')}</b>
+                <LayerHint label="romaji" />
                 {sentence.romaji}
               </p>
             )}
             {preferences.literal && (
               <p className={preferences.literalSeparateLine ? 'translation-line' : ''}>
-                <b>{t('literal')}</b>
+                <LayerHint label="literal" />
                 {sentence.literal}
               </p>
             )}
             {preferences.natural && (
               <p className={preferences.naturalSeparateLine ? 'translation-line' : ''}>
-                <b>{t('natural')}</b>
+                <LayerHint label="natural" />
                 {sentence.natural}
               </p>
             )}
@@ -121,19 +123,20 @@ function SentenceBlock({
                   {sentence.words.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     return preferences.canvasMode ? (
-                      <div className="canvas-card" key={`${word.wordId}-${occurrenceIndex}`}>
-                        <b lang="ja">{word.surface}</b>
-                        <span>{word.meaning}</span>
-                        {entry && (
-                          <small>{[entry.dictionaryForm, entry.reading, entry.romaji, entry.partOfSpeech].join(' · ')}</small>
-                        )}
-                        {word.inflection && <small>{word.inflection}</small>}
-                        {word.role && <small>{word.role}</small>}
+                      <div className="canvas-card canvas-card-word" key={`${word.wordId}-${occurrenceIndex}`}>
+                        <div className="canvas-card-primary" lang="ja"><b>{word.surface}</b></div>
+                        <div className="canvas-card-body">
+                          <span className="canvas-card-meaning">{word.meaning}</span>
+                          {entry && <small>{[entry.dictionaryForm, entry.reading, preferences.romaji ? entry.romaji : '', entry.partOfSpeech].filter(Boolean).join(' · ')}</small>}
+                          {word.inflection && <small>{word.inflection}</small>}
+                          {word.role && <small>{word.role}</small>}
+                        </div>
                       </div>
                     ) : (
                       <button key={`${word.wordId}-${occurrenceIndex}`} onClick={() => onEntity(word.wordId)}>
                         <b lang="ja">{word.surface}</b>
                         <span>{word.meaning}</span>
+                        {preferences.romaji && entry && <small>{entry.romaji}</small>}
                         {word.inflection && <small>{word.inflection}</small>}
                         {word.role && <small>{word.role}</small>}
                       </button>
@@ -150,15 +153,17 @@ function SentenceBlock({
                     const item = dictionary.kanji.find((entry) => entry.id === id);
                     return (
                       item && (preferences.canvasMode ? (
-                        <div className="canvas-card" key={id}>
-                          <b lang="ja">{item.character}</b>
-                          <span>{item.meanings.join(', ')}</span>
-                          <small>{t('onReading')}: {item.on.join('、')} · {t('kunReading')}: {item.kun.join('、')}</small>
-                          {item.components.length > 0 && <small>{t('mnemonicComponents')}: {item.components.map((component) => (
+                        <div className="canvas-card canvas-card-kanji" key={id}>
+                          <div className="canvas-card-primary" lang="ja"><b>{item.character}</b></div>
+                          <div className="canvas-card-body">
+                            <span className="canvas-card-meaning">{item.meanings.join(', ')}</span>
+                            <small><KanjiReadings on={item.on} kun={item.kun} romaji={preferences.romaji} /></small>
+                            {item.components.length > 0 && <small>{t('mnemonicComponents')}: {item.components.map((component) => (
                             item.componentMeanings?.[component] ? `${component} — ${item.componentMeanings[component]}` : component
-                          )).join(' · ')}</small>}
-                          {item.mnemonic && <small>{t('mnemonic')}: {item.mnemonic}</small>}
-                          {item.mnemonic && <small>{t('mnemonicNotice')}</small>}
+                            )).join(' · ')}</small>}
+                            {item.mnemonic && <small>{t('mnemonic')}: {item.mnemonic}</small>}
+                            {item.mnemonic && <small>{t('mnemonicNotice')}</small>}
+                          </div>
                         </div>
                       ) : (
                         <button key={id} onClick={() => onEntity(id)}>
@@ -195,6 +200,42 @@ function SentenceBlock({
                 </div>
               </section>
             )}
+            <section className="repetition-block">
+              <h4>{t('repetition')}</h4>
+              <p className="repetition-source" lang="ja">
+                {sentence.segments.map((segment, partIndex) => (
+                  <span key={partIndex}>
+                    {showRuby && segment.reading ? (
+                      <ruby>{segment.text}<rt>{segment.reading}</rt></ruby>
+                    ) : (
+                      segment.text
+                    )}
+                  </span>
+                ))}
+              </p>
+              <div className="translation-row repetition-lines">
+                {preferences.hiragana && (
+                  <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
+                    <LayerHint label="hiragana" /> {sentence.hiragana}
+                  </p>
+                )}
+                {preferences.romaji && (
+                  <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
+                    <LayerHint label="romaji" /> {sentence.romaji}
+                  </p>
+                )}
+                {preferences.literal && (
+                  <p className={preferences.literalSeparateLine ? 'translation-line' : ''}>
+                    <LayerHint label="literal" /> {sentence.literal}
+                  </p>
+                )}
+                {preferences.natural && (
+                  <p className={preferences.naturalSeparateLine ? 'translation-line' : ''}>
+                    <LayerHint label="natural" /> {sentence.natural}
+                  </p>
+                )}
+              </div>
+            </section>
           </div>
         </div>
       )}
@@ -375,6 +416,14 @@ export function ReaderPage() {
         <details className="layer-options">
           <summary>{t('settings')}</summary>
           <div>
+            <label className="reader-range-row">
+              <span>{t('mainText')} <b>{preferences.fontSize}px</b></span>
+              <input type="range" min="16" max="42" value={preferences.fontSize} onChange={(event) => void savePreference('fontSize', Number(event.target.value))} />
+            </label>
+            <label className="reader-canvas-row">
+              <span>{t('canvasMode')}</span>
+              <input type="checkbox" checked={preferences.canvasMode} onChange={(event) => void savePreference('canvasMode', event.target.checked)} />
+            </label>
             {layers.map((layer) => (
               <label key={layer}>
                 <input
@@ -426,6 +475,7 @@ export function ReaderPage() {
       <div className="reader-controls">
         <Button
           data-testid="mark-read"
+          className="reader-mark-button"
           variant="outline"
           disabled={user.saving}
           onClick={() => {
@@ -438,14 +488,14 @@ export function ReaderPage() {
           <Check size={16} />
           {t('markRead')}
         </Button>
-        <Button variant="outline" onClick={() => void move(-1)} disabled={current <= 0 || user.saving}>
+        <Button className="reader-previous-button" variant="outline" onClick={() => void move(-1)} disabled={current <= 0 || user.saving}>
           <ChevronLeft size={16} />
           {t('previous')}
         </Button>
-        <span>
+        <span className="reader-progress-count">
           {String(current + 1).padStart(2, '0')} <i>/</i> {String(sentences.length).padStart(2, '0')}
         </span>
-        <Button onClick={() => void move(1)} disabled={current >= sentences.length - 1 || user.saving}>
+        <Button className="reader-next-button" onClick={() => void move(1)} disabled={current >= sentences.length - 1 || user.saving}>
           {t('next')}
           <ChevronRight size={16} />
         </Button>
