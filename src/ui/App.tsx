@@ -55,6 +55,7 @@ function Layout({ children }: { children: ReactNode }) {
   const user = useUserData();
   const syncInfo = useSyncInfo();
   const localFailure = useLocalFailure((state) => state.failed);
+  const identity = useSession((state) => state.identity);
   useEffect(() => {
     void i18n.changeLanguage(user.preferences.language);
     document.documentElement.lang = user.preferences.language;
@@ -140,7 +141,7 @@ function Layout({ children }: { children: ReactNode }) {
             <span className="avatar">
               <UserRound size={17} />
             </span>
-            <span>{useSession.getState().identity ? t('account') : t('guest')}</span>
+            <span>{identity ? t('account') : t('guest')}</span>
           </Link>
           <Button
             variant="ghost"
