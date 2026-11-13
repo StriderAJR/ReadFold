@@ -1290,19 +1290,25 @@ footer span {
   padding: 0;
 }
 .kanji-memory-row > .kanji-component-tree {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   flex: 1 1 0;
   gap: 8px 12px;
   width: 100%;
 }
+.kanji-memory-row > .kanji-component-tree > li {
+  width: max-content;
+  max-width: 100%;
+  flex: 0 1 auto;
+}
 .kanji-component-tree ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   align-items: start;
-  justify-content: start;
   gap: 5px 14px;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   box-sizing: border-box;
   margin: 4px 0 1px 0.35em;
   padding-left: 0.55em;
@@ -1318,6 +1324,9 @@ footer span {
 }
 .kanji-component-tree ul > li {
   padding-left: 0.35em;
+  width: max-content;
+  max-width: 100%;
+  flex: 0 1 max-content;
 }
 .kanji-component-tree ul > li::before {
   content: '';
@@ -1346,11 +1355,14 @@ footer span {
 .kanji-component-branch {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   align-items: start;
 }
 .kanji-component-branch > ul {
   grid-column: 1 / -1;
+  width: fit-content;
+  max-width: 100%;
 }
 .kanji-component-branch > summary::-webkit-details-marker {
   display: none;
@@ -1376,6 +1388,8 @@ footer span {
   grid-column: 2;
   align-self: center;
   margin: 0 0 0 8px;
+  max-width: 24ch;
+  overflow-wrap: anywhere;
   line-height: 1.4;
 }
 .kanji-component-branch > summary:focus-visible {
@@ -1388,6 +1402,8 @@ footer span {
   line-height: 1;
 }
 .kanji-tree-node > span {
+  max-width: 8em;
+  overflow-wrap: anywhere;
   font-size: 0.8em;
   line-height: 1.2;
 }
