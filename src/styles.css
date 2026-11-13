@@ -1273,6 +1273,9 @@ footer span {
   align-items: flex-start;
   gap: 7px;
   margin-top: 8px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .kanji-memory-row > .layer-hint {
   flex: none;
@@ -1307,8 +1310,9 @@ footer span {
   flex-wrap: wrap;
   align-items: start;
   gap: 5px 14px;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   margin: 4px 0 1px 0.35em;
   padding-left: 0.55em;
@@ -1327,6 +1331,7 @@ footer span {
   width: max-content;
   max-width: 100%;
   flex: 0 1 max-content;
+  min-width: 0;
 }
 .kanji-component-tree ul > li::before {
   content: '';
@@ -1355,14 +1360,17 @@ footer span {
 .kanji-component-branch {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   align-items: start;
 }
 .kanji-component-branch > ul {
   grid-column: 1 / -1;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
 }
 .kanji-component-branch > summary::-webkit-details-marker {
   display: none;
@@ -1388,6 +1396,7 @@ footer span {
   grid-column: 2;
   align-self: center;
   margin: 0 0 0 8px;
+  min-width: 0;
   max-width: 24ch;
   overflow-wrap: anywhere;
   line-height: 1.4;
