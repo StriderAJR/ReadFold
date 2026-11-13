@@ -3,12 +3,12 @@
   "base": "/ReadFold/",
   "files": [
     {
-      "path": "assets/index-3zYTVt84.css",
-      "sha256": "29fd441df240c2039a75c5a6cdf967ac0c794e7e9590f23d8c085b8b417b7926"
+      "path": "assets/index-B_RLYEVF.js",
+      "sha256": "e95e72afeba03d82f1ca31f51a1b3f9667c840437e9f71d22d8e24fb30805a9a"
     },
     {
-      "path": "assets/index-TxrGoPBo.js",
-      "sha256": "e95e72afeba03d82f1ca31f51a1b3f9667c840437e9f71d22d8e24fb30805a9a"
+      "path": "assets/index-S0YFZR9i.css",
+      "sha256": "371991dfc7755fa48eeebdd6c51312bccc67625d48093937696e45e3507cbaf3"
     },
     {
       "path": "assets/language-D1l4zjXA.js",
@@ -56,7 +56,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "f2f10590d73b944f899716b19daa992bf3bd7d25bf06f4a3c93a7374ac14d21a"
+      "sha256": "6b0f5af936439e56d6f201be49477301f3b7c1b33787ac01d17acb8a06ecb4db"
     },
     {
       "path": "privacy.html",
@@ -64,7 +64,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "a78d95f3c493958d97fe455c686ec8e297565d1492613669f157cefb246bf189"
+      "sha256": "3aa3b634a064f0e97f76208e77f66263b230fbb54c47aa0e915a483dfab7d86e"
     },
     {
       "path": "terms.html",

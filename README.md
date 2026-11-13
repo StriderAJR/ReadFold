@@ -16,6 +16,7 @@ npm run dev
 ```
 
 Откройте `http://localhost:5173/ReadFold/`. Параметры Supabase необязательны для гостевого режима.
+На Windows `run-local.bat` запускает сервер и открывает браузер; остановка — Ctrl+C в его окне.
 В `.env.local` укажите только `VITE_SUPABASE_URL` и `VITE_SUPABASE_PUBLISHABLE_KEY`.
 Секреты OAuth, service_role и пароль PostgreSQL не используются frontend.
 
@@ -56,6 +57,7 @@ SQL/RLS-проверки запускаются локально в PGlite с м
 Сохранён адрес `https://striderajr.github.io/ReadFold/` и регистр base path. HashRouter обеспечивает
 прямые ссылки без серверного fallback. Privacy/Terms и Google verification копируются в dist из public.
 Команда `npm run publish:docs` выполняет проверки, собирает приложение и переносит готовые файлы в `docs/`.
+На Windows можно запустить `publish-docs.bat` двойным щелчком; окно останется открытым с результатом.
 Прежние HTML сохраняются в `.local-tools/pages-backups/`, Markdown и Google verification сохраняются.
 После проверки изменений нужен commit и push; Pages должен использовать `master` → `/docs`.
 Скрипт не выполняет Git-операции. Доступность Pages при блокировке биллинга требует проверки после push.

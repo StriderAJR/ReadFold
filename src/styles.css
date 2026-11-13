@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import 'tailwindcss' source('./');
 
 :root {
   font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
