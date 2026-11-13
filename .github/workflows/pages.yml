@@ -1,8 +1,5 @@
-name: Validate and deploy Pages
+name: Optional Pages deployment via Actions
 on:
-  push:
-    branches: [master]
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,6 +19,7 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm test
+      - run: npm run test:deployment
       - run: npm run test:sql
       - run: npm run build
         env:

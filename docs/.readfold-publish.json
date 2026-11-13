@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "base": "/ReadFold/",
+  "files": [
+    {
+      "path": "assets/index-3zYTVt84.css",
+      "sha256": "29fd441df240c2039a75c5a6cdf967ac0c794e7e9590f23d8c085b8b417b7926"
+    },
+    {
+      "path": "assets/index-TxrGoPBo.js",
+      "sha256": "e95e72afeba03d82f1ca31f51a1b3f9667c840437e9f71d22d8e24fb30805a9a"
+    },
+    {
+      "path": "assets/language-D1l4zjXA.js",
+      "sha256": "13b2b8cc198d29cab22f6a431e7419255613dcaa4715bc65d03fb5f8efac197c"
+    },
+    {
+      "path": "assets/local-mrCQITVc.js",
+      "sha256": "69f64f0700bcdadfe3f93e372b833127ce61708fd84d6b1e531430d5fb566beb"
+    },
+    {
+      "path": "assets/react-b1lT2Cb-.js",
+      "sha256": "ca4389e52baea7aed138b3258db77b447f3fba80ac59f7a1a42e9b100e97ee22"
+    },
+    {
+      "path": "assets/supabase-CelhU-Wa.js",
+      "sha256": "aab21f9866b4024cef6bf73d11f9d823709ab5667ef8be91f8c98a2d8164b2d5"
+    },
+    {
+      "path": "assets/validation-D1g8DkzT.js",
+      "sha256": "6162e7cb91746c6df38e42fca04d4b4fc0a6ada0e1d3356ec7c734314ab79d28"
+    },
+    {
+      "path": "books/catalog.json",
+      "sha256": "406769182e6e5644b2e2bfecae787d5114e73330d662d3bfbf615f36c374d17e"
+    },
+    {
+      "path": "books/demo/chapter-1.json",
+      "sha256": "958627f7ada2003f50f98519a19049653ec9f2d90b3bbdab288e6491836120eb"
+    },
+    {
+      "path": "books/demo/chapter-2.json",
+      "sha256": "950a9f8a7470b5998ef88537505c6ccfb51bef1df73c39ccbdb2074a6d544baa"
+    },
+    {
+      "path": "books/dictionary.json",
+      "sha256": "84f1e4036a2b6b5b4155f394b34d1fc3fbcb8ed24ca77db9a8376332677f81aa"
+    },
+    {
+      "path": "brand/icon.jpg",
+      "sha256": "f9dfc2d80c6e442367d221e47ea4a40e00b29e5d92a015e0dd7c9d739e2d7789"
+    },
+    {
+      "path": "googlef53875cf353db667.html",
+      "sha256": "c7a1159762a136e6c7796052c7c2aa7f7c7346302fbd9c80144c5f46017edf53"
+    },
+    {
+      "path": "index.html",
+      "sha256": "f2f10590d73b944f899716b19daa992bf3bd7d25bf06f4a3c93a7374ac14d21a"
+    },
+    {
+      "path": "privacy.html",
+      "sha256": "191fb99742e27bd87b2c8446e0fc9af74af56ea43ed15a14127983f5df2c77cf"
+    },
+    {
+      "path": "sw.js",
+      "sha256": "a78d95f3c493958d97fe455c686ec8e297565d1492613669f157cefb246bf189"
+    },
+    {
+      "path": "terms.html",
+      "sha256": "a04991c1ea2c8943bb213f639b1a66afc393a7abc18134f1fc37e1502b8a8aad"
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ npm run dev
 npm run typecheck
 npm run lint
 npm test
+npm run test:deployment
 npm run test:sql
 npm run build
 npx playwright install chromium
@@ -31,3 +32,8 @@ SQL fixtures не запускать на production аккаунтах.
 Перед изменениями читать AGENTS.md, проверять status/diff. Существующая агентская конфигурация
 сохранена. Применимые роли: data, sync, backend, frontend, testing, reviewer. Независимые границы
 описаны в [implementation-plan.md](implementation-plan.md); правила — [agent-workflow.md](agent-workflow.md).
+
+Для выпуска через существующий GitHub Pages: `npm run publish:docs`. Команда последовательно выполняет
+все проверки и production build, затем безопасно обновляет `docs/`. Markdown не удаляется; заменяемые
+HTML сохраняются в `.local-tools/pages-backups/`. Commit и push выполняются отдельно по указанию владельца.
+Подробности и ограничения биллинга: [deployment.md](deployment.md).

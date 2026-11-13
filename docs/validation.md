@@ -38,8 +38,18 @@ frontend, testing, reviewer, до трёх субагентов одноврем
 SQL helpers. Публичный REST heartbeat вернул 200/true; anonymous чтение user_operations — 401.
 Содержимое пользовательских записей не читалось, fixture-пользователи/записи на live не создавались.
 
-Новая сборка не опубликована; push и переключение Pages не выполнялись. Владелец должен настроить
-Actions variables/Secrets, Pages source и OAuth redirect allowlist по deployment.md. Telegram optional.
+Новая сборка не опубликована; push и переключение Pages не выполнялись. Основной путь — локальная
+подготовка `docs/`, затем Pages `master/docs`; Actions variables для него не нужны. Проверить Pages source
+и OAuth redirect allowlist по deployment.md. Telegram optional.
+
+## Локальный выпуск — 13 ноября 2026
+
+`npm run publish:docs` прошёл TypeScript, ESLint, 55 Vitest-тестов, 6 тестов безопасного обновления
+публикации, локальные SQL/RLS-проверки, production build и 9 Playwright E2E. Готовы 18 файлов сайта
+в `docs/`, включая `.nojekyll`; прежние HTML сохранены в `.local-tools/pages-backups/`.
+Markdown и Google verification сохранены. Проверки публикации покрывают устаревшие assets,
+ручные изменения, traversal, секреты и symlink/junction. Сбой посередине копирования и автоматический
+откат отдельно не моделировались. Доступность удалённого Pages при блокировке аккаунта ещё не проверена.
 
 ## Ограничения проверки
 

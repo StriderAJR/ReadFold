@@ -12,7 +12,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "test:sql": "node scripts/test-sql.mjs"
+    "test:sql": "node scripts/test-sql.mjs",
+    "test:deployment": "node --test tests/deployment/pages-publisher.test.mjs",
+    "publish:docs": "node scripts/publish-docs.mjs",
+    "heartbeat:local": "node --env-file-if-exists=.env.local --env-file-if-exists=.env.heartbeat.local scripts/heartbeat.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",

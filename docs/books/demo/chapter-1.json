@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "demo.chapter-1",
+  "bookId": "demo",
+  "title": "Встреча в парке",
+  "paragraphs": [
+    {
+      "id": "demo.p1",
+      "sentences": [
+        {
+          "id": "demo.s1",
+          "text": "朝、私は公園へ行きます。",
+          "segments": [
+            {
+              "text": "朝",
+              "reading": "あさ"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "私",
+              "reading": "わたし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます。"
+            }
+          ],
+          "hiragana": "あさ、わたしはこうえんへいきます。",
+          "romaji": "Asa, watashi wa kōen e ikimasu.",
+          "literal": "Утром, я [тема] парк [направление] иду.",
+          "natural": "Утром я иду в парк.",
+          "words": [
+            {
+              "wordId": "asa",
+              "surface": "朝",
+              "meaning": "утро",
+              "role": "время"
+            },
+            {
+              "wordId": "watashi",
+              "surface": "私",
+              "meaning": "я",
+              "role": "тема"
+            },
+            {
+              "wordId": "wa",
+              "surface": "は",
+              "meaning": "тема высказывания",
+              "role": "маркер темы"
+            },
+            {
+              "wordId": "kouen",
+              "surface": "公園",
+              "meaning": "парк",
+              "role": "направление"
+            },
+            {
+              "wordId": "e",
+              "surface": "へ",
+              "meaning": "направление движения",
+              "role": "маркер направления"
+            },
+            {
+              "wordId": "iku",
+              "surface": "行きます",
+              "meaning": "иду",
+              "inflection": "Вежливая непрошедшая форма",
+              "role": "сказуемое"
+            }
+          ],
+          "kanjiIds": [
+            "kanji.asa",
+            "kanji.watashi",
+            "kanji.kou",
+            "kanji.en",
+            "kanji.iku"
+          ],
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.direction",
+            "grammar.polite"
+          ],
+          "grammarRoles": {
+            "grammar.topic": "は выделяет 私 — рассказчик сообщает о себе.",
+            "grammar.direction": "へ после 公園 указывает направление: в парк.",
+            "grammar.polite": "行きます — вежливая непрошедшая форма 行く: иду."
+          }
+        },
+        {
+          "id": "demo.s2",
+          "text": "公園に小さな猫がいます。",
+          "segments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "小",
+              "reading": "ちい"
+            },
+            {
+              "text": "さな"
+            },
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "がいます。"
+            }
+          ],
+          "hiragana": "こうえんにちいさなねこがいます。",
+          "romaji": "Kōen ni chiisana neko ga imasu.",
+          "literal": "В парке маленькая кошка [подлежащее] находится.",
+          "natural": "В парке есть маленькая кошка.",
+          "words": [
+            {
+              "wordId": "kouen",
+              "surface": "公園",
+              "meaning": "парк",
+              "role": "место существования"
+            },
+            {
+              "wordId": "ni",
+              "surface": "に",
+              "meaning": "в / под (местонахождение)",
+              "role": "маркер места"
+            },
+            {
+              "wordId": "chiisana",
+              "surface": "小さな",
+              "meaning": "маленький",
+              "role": "определение к 猫"
+            },
+            {
+              "wordId": "neko",
+              "surface": "猫",
+              "meaning": "кошка",
+              "role": "подлежащее"
+            },
+            {
+              "wordId": "ga",
+              "surface": "が",
+              "meaning": "подлежащее",
+              "role": "маркер подлежащего"
+            },
+            {
+              "wordId": "iru",
+              "surface": "います",
+              "meaning": "есть; находится",
+              "inflection": "Вежливая непрошедшая форма",
+              "role": "сказуемое"
+            }
+          ],
+          "kanjiIds": [
+            "kanji.kou",
+            "kanji.en",
+            "kanji.chiisai",
+            "kanji.neko"
+          ],
+          "grammarIds": [
+            "grammar.existence"
+          ],
+          "grammarRoles": {
+            "grammar.existence": "公園に задаёт место, 猫が — подлежащее; います сообщает о наличии живой кошки."
+          }
+        },
+        {
+          "id": "demo.s3",
+          "text": "猫は木の下で水を飲んでいます。",
+          "segments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "木",
+              "reading": "き"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "下",
+              "reading": "した"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "んでいます。"
+            }
+          ],
+          "hiragana": "ねこはきのしたでみずをのんでいます。",
+          "romaji": "Neko wa ki no shita de mizu o nonde imasu.",
+          "literal": "Кошка [тема] дерево [связь] под [место действия] воду [объект] пьёт сейчас.",
+          "natural": "Кошка пьёт воду под деревом.",
+          "words": [
+            {
+              "wordId": "neko",
+              "surface": "猫",
+              "meaning": "кошка",
+              "role": "тема"
+            },
+            {
+              "wordId": "wa",
+              "surface": "は",
+              "meaning": "тема высказывания",
+              "role": "маркер темы"
+            },
+            {
+              "wordId": "ki",
+              "surface": "木",
+              "meaning": "дерево",
+              "role": "определение к 下"
+            },
+            {
+              "wordId": "no",
+              "surface": "の",
+              "meaning": "связь определений",
+              "role": "связь существительных"
+            },
+            {
+              "wordId": "shita",
+              "surface": "下",
+              "meaning": "низ; под",
+              "role": "место действия"
+            },
+            {
+              "wordId": "de",
+              "surface": "で",
+              "meaning": "место действия",
+              "role": "маркер места действия"
+            },
+            {
+              "wordId": "mizu",
+              "surface": "水",
+              "meaning": "вода",
+              "role": "прямое дополнение"
+            },
+            {
+              "wordId": "o",
+              "surface": "を",
+              "meaning": "прямое дополнение",
+              "role": "маркер объекта"
+            },
+            {
+              "wordId": "nomu",
+              "surface": "飲んでいます",
+              "meaning": "пьёт (сейчас)",
+              "inflection": "Форма на て + います; 飲む → 飲んで",
+              "role": "сказуемое"
+            }
+          ],
+          "kanjiIds": [
+            "kanji.neko",
+            "kanji.ki",
+            "kanji.shita",
+            "kanji.mizu",
+            "kanji.nomu"
+          ],
+          "grammarIds": [
+            "grammar.topic",
+            "grammar.possession",
+            "grammar.location",
+            "grammar.object",
+            "grammar.progressive"
+          ],
+          "grammarRoles": {
+            "grammar.topic": "は выделяет 猫 как тему предложения.",
+            "grammar.possession": "の связывает 木 и 下: под деревом.",
+            "grammar.location": "で после 木の下 отмечает место действия 飲む.",
+            "grammar.object": "を после 水 отмечает то, что пьют.",
+            "grammar.progressive": "飲んでいます показывает, что кошка пьёт прямо сейчас."
+          }
+        }
+      ]
+    }
+  ]
+}

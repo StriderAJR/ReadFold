@@ -1,12 +1,14 @@
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 const {
-  SUPABASE_URL: url,
-  SUPABASE_PUBLISHABLE_KEY: key,
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY,
   TELEGRAM_BOT_TOKEN: token,
   TELEGRAM_CHAT_ID: chat,
 } = process.env;
+const url = SUPABASE_URL ?? process.env.VITE_SUPABASE_URL;
+const key = SUPABASE_PUBLISHABLE_KEY ?? process.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 if (!url || !key) {
-  throw new Error('Configure Supabase heartbeat Actions secrets');
+  throw new Error('Configure public Supabase URL and publishable key in the environment or .env.local');
 }
 let healthy = false;
 try {

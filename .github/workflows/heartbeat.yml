@@ -1,7 +1,5 @@
-name: Supabase heartbeat
+name: Optional Supabase heartbeat via Actions
 on:
-  schedule:
-    - cron: '17 6 * * *'
   workflow_dispatch:
 permissions:
   contents: read

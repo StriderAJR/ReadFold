@@ -31,7 +31,7 @@ npm run dev
   явный перенос гостевых данных, изолированная локальная диагностика.
 - Supabase PKCE, отдельный application UUID, SQL RLS, идемпотентные RPC и повторные попытки синхронизации.
 - Production service worker для повторного открытия приложения и загруженных материалов без сети.
-- GitHub Pages Actions и отдельный ежедневный heartbeat с необязательными Telegram-уведомлениями.
+- Локальная сборка в `docs/` для GitHub Pages; ручной heartbeat с необязательными Telegram-уведомлениями.
 
 ## Проверка
 
@@ -39,6 +39,7 @@ npm run dev
 npm run typecheck
 npm run lint
 npm test
+npm run test:deployment
 npm run test:sql
 npm run build
 npx playwright install chromium
@@ -54,8 +55,10 @@ SQL/RLS-проверки запускаются локально в PGlite с м
 
 Сохранён адрес `https://striderajr.github.io/ReadFold/` и регистр base path. HashRouter обеспечивает
 прямые ссылки без серверного fallback. Privacy/Terms и Google verification копируются в dist из public.
-Исходная временная публикация docs сохранена. По отдельному указанию владельца создаются промежуточные
-локальные коммиты. Push и переключение Pages не выполнялись.
+Команда `npm run publish:docs` выполняет проверки, собирает приложение и переносит готовые файлы в `docs/`.
+Прежние HTML сохраняются в `.local-tools/pages-backups/`, Markdown и Google verification сохраняются.
+После проверки изменений нужен commit и push; Pages должен использовать `master` → `/docs`.
+Скрипт не выполняет Git-операции. Доступность Pages при блокировке биллинга требует проверки после push.
 
 Смотрите [точные настройки Pages, OAuth, SQL и heartbeat](docs/deployment.md).
 Миграция [202611120001_user_sync.sql](supabase/migrations/202611120001_user_sync.sql) **применена**

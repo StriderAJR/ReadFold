@@ -13,6 +13,8 @@ export default tseslint.config(
       'test-results/**',
       '.local-tools/**',
       '.heartbeat-state/**',
+      'docs/assets/**',
+      'docs/sw.js',
     ],
   },
   js.configs.recommended,
