@@ -71,7 +71,7 @@ test('dictionary word occurrence navigates back to its source sentence', async (
 test('reader details return to the sentence and canvas settings control examples', async ({ page }) => {
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');
-  await first.locator('.token-list button').first().click();
+  await first.locator('.token-word-link').first().click();
   await expect(page).toHaveURL(/#\/words\/asa\?returnTo=/);
   await page.getByRole('link', { name: 'Вернуться к чтению' }).click();
   await expect(first).toHaveClass(/sentence-active/);
@@ -79,10 +79,9 @@ test('reader details return to the sentence and canvas settings control examples
   await page.goto('./#/settings');
   await page.getByText('Режим полотна').click();
   await expect(page.getByRole('checkbox', { name: 'Режим полотна' })).toBeChecked();
-  await page.getByText('Хирагана', { exact: true }).click();
-  await expect(page.getByRole('checkbox', { name: 'Хирагана', exact: true })).toBeChecked();
-  await page.getByText('Хирагана · отдельной строкой').click();
-  await expect(page.getByRole('checkbox', { name: 'Хирагана · отдельной строкой' })).toBeChecked();
+  await expect(page.getByRole('checkbox', { name: 'Хирагана', exact: true })).toHaveCount(0);
+  await page.getByText('Фуригана · отдельной строкой').click();
+  await expect(page.getByRole('checkbox', { name: 'Фуригана · отдельной строкой' })).toBeChecked();
   await page.getByText('Буквально · отдельной строкой').click();
   await expect(page.getByRole('checkbox', { name: 'Буквально · отдельной строкой' })).toBeChecked();
   await page.goto(`./#/${readerPath}`);
@@ -91,7 +90,7 @@ test('reader details return to the sentence and canvas settings control examples
   await expect(first.locator('.translation-row p:has([aria-label="Буквально"])').first()).toHaveClass(/translation-line/);
 
   await page.goto('./#/grammar/grammar.topic');
-  await expect(page.locator('.grammar-example').first().locator('[aria-label="Хирагана"]')).toBeVisible();
+  await expect(page.locator('.grammar-example').first().locator('[aria-label="Фуригана"]')).toBeVisible();
   await expect(page.locator('.grammar-example').first().locator('[aria-label="Буквально"]')).toBeVisible();
 });
 
@@ -170,6 +169,26 @@ test('mobile navigation opens, reaches library, and stays within viewport', asyn
   expect(width).toBeLessThanOrEqual(390);
 });
 
+test('reader settings stay within a narrow mobile viewport', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 800 });
+  await page.goto(`./#/${readerPath}`);
+  await page.locator('.layer-options summary').click();
+  const menu = page.locator('.layer-options > div');
+  const bounds = await menu.boundingBox();
+  expect(bounds).not.toBeNull();
+  expect(bounds!.x).toBeGreaterThanOrEqual(0);
+  expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(360);
+  await menu.getByRole('checkbox', { name: 'Каждый перевод на отдельной строке' }).scrollIntoViewIfNeeded();
+  await expect(menu.getByRole('checkbox', { name: 'Каждый перевод на отдельной строке' })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
+  await menu.getByRole('checkbox', { name: 'Каждый перевод на отдельной строке' }).click();
+  await expect(page.locator('.layer-options')).toHaveAttribute('open', '');
+  await page.locator('.reader-toolbar').click({ position: { x: 2, y: 2 } });
+  await expect(page.locator('.layer-options')).not.toHaveAttribute('open');
+  await page.locator('.layer-options summary').click();
+  await expect(page.locator('.layer-options')).toHaveAttribute('open', '');
+});
+
 test('service worker serves shell and previously loaded chapter while offline', async ({ page, context }) => {
   await page.goto(`./#/${readerPath}`);
   await expect(page.getByRole('button', { name: /朝、私は公園へ行きます/ })).toBeVisible();
@@ -215,8 +234,92 @@ test('adaptive hints for known words can always be revealed manually', async ({ 
   await expect(adaptive).toHaveClass(/active/);
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');
-  await expect(first.getByRole('button', { name: 'Показать разбор' })).toBeVisible();
-  await expect(first.locator('.analysis-expanded')).toHaveCount(0);
-  await first.getByRole('button', { name: 'Показать разбор' }).click();
   await expect(first.locator('.analysis-expanded')).toBeVisible();
+  await expect(first.locator('[data-entity-id="asa"]')).toHaveCount(0);
+  await first.getByTestId('show-known').click();
+  await expect(first.locator('[data-entity-id="asa"]')).toBeVisible();
+  await expect(first.locator('.analysis-expanded')).toBeVisible();
+});
+
+test('known word, kanji, and grammar cards can be hidden adaptively and restored for undo', async ({ page }) => {
+  await page.goto(`./#/${readerPath}`);
+  const first = page.locator('[id="sentence-demo.s1"]');
+  const wordCard = first.locator('[data-entity-id="asa"]');
+  const kanjiCard = first.locator('[data-entity-id="kanji.asa"]');
+  const grammarCard = first.locator('[data-entity-id="grammar.topic"]');
+  for (const card of [wordCard, kanjiCard, grammarCard]) {
+    await card.getByTestId('learning-toggle').click();
+    await expect(card.getByTestId('learning-toggle')).toHaveAttribute('aria-pressed', 'true');
+  }
+
+  await page.goto('./#/settings');
+  await page.getByTestId('mode-select').getByRole('button', { name: 'Адаптивный' }).click();
+  await page.goto(`./#/${readerPath}`);
+  await expect(first.locator('[data-entity-id="asa"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="kanji.asa"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="grammar.topic"]')).toHaveCount(0);
+
+  await first.getByTestId('show-known').click();
+  for (const selector of ['asa', 'kanji.asa', 'grammar.topic']) {
+    const card = first.locator(`[data-entity-id="${selector}"]`);
+    await expect(card).toBeVisible();
+    await card.getByTestId('learning-toggle').click();
+    await expect(card.getByTestId('learning-toggle')).toHaveAttribute('aria-pressed', 'false');
+  }
+  await page.reload();
+  await expect(first.locator('[data-entity-id="asa"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="kanji.asa"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="grammar.topic"]')).toBeVisible();
+});
+
+test('furigana toggle controls reading annotations without a separate hiragana layer', async ({ page }) => {
+  await page.goto('./#/settings');
+  const furigana = page.getByRole('checkbox', { name: 'Фуригана', exact: true });
+  await expect(page.getByRole('checkbox', { name: 'Хирагана', exact: true })).toHaveCount(0);
+  await furigana.click();
+  await expect(furigana).not.toBeChecked();
+  await page.goto(`./#/${readerPath}`);
+  const first = page.locator('[id="sentence-demo.s1"]');
+  await expect(first.locator('ruby')).toHaveCount(0);
+  await expect(first.locator('.token-word-card').first().locator('.word-card-meta')).not.toContainText('あさ');
+
+  await page.goto('./#/settings');
+  await furigana.click();
+  await expect(furigana).toBeChecked();
+  await page.goto(`./#/${readerPath}`);
+  await expect(first.locator('ruby').first()).toBeVisible();
+  await expect(first.locator('.token-word-card').first().locator('.word-card-meta')).toContainText('あさ');
+});
+
+test('diagnostics report shares a local log file with support text', async ({ page }) => {
+  await page.goto('./#/settings/diagnostics');
+  await page.evaluate(() => {
+    Object.defineProperty(navigator, 'canShare', { value: () => true });
+    Object.defineProperty(navigator, 'share', {
+      value: async (data: ShareData) => {
+        const file = data.files?.[0];
+        sessionStorage.setItem('sharedReport', file ? await file.text() : '');
+        sessionStorage.setItem('sharedText', data.text ?? '');
+      },
+    });
+  });
+  await page.getByRole('button', { name: 'Сообщить разработчику' }).click();
+  await expect(page.getByRole('status')).toContainText('Отчёт передан');
+  const shared = await page.evaluate(() => ({
+    report: JSON.parse(sessionStorage.getItem('sharedReport') ?? '{}') as Record<string, unknown>,
+    text: sessionStorage.getItem('sharedText'),
+  }));
+  expect(shared.report.app).toBe('ReadFold');
+  expect(shared.report.diagnostics).toEqual([]);
+  expect(shared.text).toContain('alexander.aj.ranger@gmail.com');
+  expect(shared.text).toContain('Что произошло');
+});
+
+test('diagnostics report downloads its attachment when file sharing is unavailable', async ({ page }) => {
+  await page.goto('./#/settings/diagnostics');
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Сообщить разработчику' }).click();
+  const report = await downloadPromise;
+  expect(report.suggestedFilename()).toBe('readfold-diagnostics.json');
+  await expect(page.getByRole('status')).toContainText('Прикрепите его');
 });

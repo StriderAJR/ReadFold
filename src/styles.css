@@ -1669,24 +1669,44 @@ footer span {
 @media (max-width: 560px) {
   .canvas-card-word,
   .canvas-card-kanji {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 6px;
+    grid-template-columns: 3.5em minmax(0, 1fr);
+    gap: 6px 12px;
   }
-  .canvas-card-primary {
+  .canvas-card-word .canvas-card-primary,
+  .canvas-card-kanji .canvas-card-primary {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     min-height: 0;
-    padding: 0 0 5px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    padding: 0 8px 0 0;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
     writing-mode: horizontal-tb;
     text-orientation: mixed;
+    overflow-wrap: anywhere;
+    text-align: center;
   }
-  .canvas-card-primary b {
-    font-size: 1em;
+  .canvas-card-word .canvas-card-primary {
+    font-size: 1.5em;
   }
   .canvas-card-kanji .canvas-card-primary {
+    grid-row: 1 / span 2;
     font-size: 2.5em;
+  }
+  .canvas-card-kanji .canvas-card-body {
+    display: contents;
+  }
+  .canvas-card-kanji .canvas-card-meaning,
+  .canvas-card-kanji .canvas-card-body > small:not(.kanji-memory-row) {
+    grid-column: 2;
+  }
+  .canvas-card-kanji .kanji-memory-row {
+    grid-column: 1 / -1;
+  }
+  .canvas-card-kanji .kanji-readings {
+    flex-wrap: wrap;
+    row-gap: 4px;
   }
   .kanji-overview {
     grid-template-columns: 1fr;
@@ -2683,6 +2703,59 @@ html[data-theme='dark'] .reader-toolbar .reader-mode button[aria-pressed='true']
   color: var(--muted);
   margin-top: 4px;
 }
+.canvas-card.learning-card,
+.token-list .learning-card,
+.kanji-inline-card.learning-card,
+.grammar-notes > .learning-card {
+  position: relative;
+  padding-right: 42px;
+}
+.learning-toggle,
+.inline-links .learning-toggle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--muted);
+  cursor: pointer;
+}
+.learning-toggle:hover,
+.learning-toggle:focus-visible {
+  color: var(--coral);
+  border-color: var(--coral);
+}
+.learning-toggle:focus-visible,
+.show-known-button:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
+}
+.learning-toggle.is-known,
+.inline-links .learning-toggle.is-known {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: white;
+}
+.learning-toggle:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.show-known-button {
+  margin: 0 0 12px;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
 .loading-skeleton {
   height: min(54vh, 430px);
   border-radius: 12px;
@@ -2743,17 +2816,23 @@ html[data-theme='dark'] .reader-toolbar .reader-mode button[aria-pressed='true']
 }
 @media (max-width: 760px) {
   .reader-toolbar {
+    position: relative;
     align-items: flex-start;
   }
   .reader-toolbar .reader-mode {
     flex: 1;
   }
   .layer-options {
+    position: static;
     margin-left: 0;
   }
   .layer-options > div {
-    left: 0;
-    right: auto;
+    left: auto;
+    right: 0;
+    box-sizing: border-box;
+    max-width: calc(100vw - 36px);
+    max-height: 55dvh;
+    overflow-y: auto;
   }
   .reader-controls {
     gap: 5px;

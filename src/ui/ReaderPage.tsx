@@ -5,12 +5,12 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
 import { useCatalog, useChapter, useDictionary, useUserData } from '../application/hooks';
 import type { Dictionary, Sentence } from '../domain/content';
-import type { ReaderPreferences } from '../domain/user-state';
+import type { LearningStatus, ReaderPreferences } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
 import { KanjiReadings } from './KanjiReadings';
 import { LayerHint } from './LayerHint';
 
-const layers = ['furigana', 'hiragana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
+const layers = ['furigana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
 const genericWordRole = 'Лексическое значение в контексте предложения';
 
@@ -98,6 +98,25 @@ function KanjiMemory({ item, kanji }: { item: Dictionary['kanji'][number]; kanji
   );
 }
 
+function LearningToggle({ label, known, saving, onClick }: { label: string; known: boolean; saving: boolean; onClick: () => void }) {
+  const { t } = useTranslation();
+  const action = t(known ? 'undoKnown' : 'markKnownCard', { item: label });
+  return (
+    <button
+      className={`learning-toggle ${known ? 'is-known' : ''}`}
+      data-testid="learning-toggle"
+      type="button"
+      aria-label={action}
+      aria-pressed={known}
+      title={action}
+      disabled={saving}
+      onClick={onClick}
+    >
+      <Check size={15} aria-hidden="true" />
+    </button>
+  );
+}
+
 function SentenceBlock({
   sentence,
   index,
@@ -106,8 +125,10 @@ function SentenceBlock({
   preferences,
   dictionary,
   learning,
+  saving,
   onOpen,
   onEntity,
+  onToggleKnown,
 }: {
   sentence: Sentence;
   index: number;
@@ -115,21 +136,30 @@ function SentenceBlock({
   open: boolean;
   preferences: ReaderPreferences;
   dictionary: Dictionary;
-  learning: Record<string, string>;
+  learning: Record<string, LearningStatus>;
+  saving: boolean;
   onOpen: () => void;
   onEntity: (id: string) => void;
+  onToggleKnown: (id: string) => void;
 }) {
   const { t } = useTranslation();
-  const [revealed, setRevealed] = useState(false);
-  const allWordsKnown =
-    sentence.words.length > 0 &&
-    sentence.words.every((word) => learning[word.wordId] === 'known' || learning[word.wordId] === 'mastered');
-  const adaptiveHidden = !preferences.canvasMode && preferences.mode === 'adaptive' && preferences.adaptiveHideKnown && allWordsKnown && !revealed;
-  const showAnalysis = open && !adaptiveHidden;
-  const showRuby = preferences.furigana && !preferences.furiganaSeparateLine && !adaptiveHidden;
+  const [showKnown, setShowKnown] = useState(false);
+  const adaptiveFilter = preferences.mode === 'adaptive' && preferences.adaptiveHideKnown;
+  const isKnown = (id: string) => learning[id] === 'known' || learning[id] === 'mastered';
+  const showItem = (id: string) => !adaptiveFilter || showKnown || !isKnown(id);
+  const showAnalysis = open;
+  const showRuby = preferences.furigana && !preferences.furiganaSeparateLine;
   const visibleKanji = sentence.kanjiIds.length > 0
     ? sentence.kanjiIds.map((id) => ({ id, item: dictionary.kanji.find((entry) => entry.id === id) })).filter((entry) => entry.item)
     : [...new Set(Array.from(sentence.text).filter((character) => /\p{Script=Han}/u.test(character)))].map((character) => ({ id: character, item: undefined }));
+  const hiddenKnown = adaptiveFilter && [
+    ...(preferences.words ? sentence.words.map((word) => word.wordId) : []),
+    ...(preferences.kanji ? sentence.kanjiIds : []),
+    ...(preferences.grammar ? sentence.grammarIds : []),
+  ].some(isKnown);
+  const visibleWords = sentence.words.filter((word) => showItem(word.wordId));
+  const shownKanji = visibleKanji.filter(({ id }) => showItem(id));
+  const visibleGrammar = sentence.grammarIds.filter(showItem);
 
   return (
     <article
@@ -162,13 +192,13 @@ function SentenceBlock({
           ))}
         </span>
       </button>
-      {adaptiveHidden && (
-        <button className="reveal-button" onClick={() => setRevealed(true)}>
-          {t('reveal')}
-        </button>
-      )}
       {showAnalysis && (
         <div id={`analysis-${sentence.id}`} className="sentence-analysis analysis-open">
+          {hiddenKnown && (
+            <button className="show-known-button" data-testid="show-known" type="button" aria-pressed={showKnown} onClick={() => setShowKnown((value) => !value)}>
+              {t(showKnown ? 'hideKnownCards' : 'showKnownCards')}
+            </button>
+          )}
           <div className={`translation-row ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
             {preferences.furigana && preferences.furiganaSeparateLine && (
               <p className="translation-line" lang="ja">
@@ -176,12 +206,6 @@ function SentenceBlock({
                 {sentence.segments.map((segment, partIndex) => segment.reading ? (
                   <ruby key={partIndex}>{segment.text}<rt>{segment.reading}</rt></ruby>
                 ) : <span key={partIndex}>{segment.text}</span>)}
-              </p>
-            )}
-            {preferences.hiragana && (
-              <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
-                <LayerHint label="hiragana" />
-                {sentence.hiragana}
               </p>
             )}
             {preferences.romaji && (
@@ -204,14 +228,15 @@ function SentenceBlock({
             )}
           </div>
           <div className="analysis-expanded">
-            {preferences.words && (
+            {preferences.words && visibleWords.length > 0 && (
               <section>
                 <h4>{t('wordsLabel')}</h4>
                 <div className={`token-list ${preferences.canvasMode ? 'canvas-list' : ''}`}>
-                  {sentence.words.map((word, occurrenceIndex) => {
+                  {visibleWords.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     return preferences.canvasMode ? (
-                      <div className="canvas-card canvas-card-word" key={`${word.wordId}-${occurrenceIndex}`}>
+                      <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
+                        <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
                           <b>{word.surface}</b>
                         </button>
@@ -219,7 +244,7 @@ function SentenceBlock({
                           <span className="canvas-card-meaning">{word.meaning}</span>
                           {entry && (
                             <div className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana || preferences.hiragana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
                               <small>{entry.partOfSpeech}</small>
                             </div>
                           )}
@@ -232,7 +257,8 @@ function SentenceBlock({
                         </div>
                       </div>
                     ) : (
-                      <div className="token-word-card" key={`${word.wordId}-${occurrenceIndex}`}>
+                      <div className="token-word-card learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
+                        <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <button className="token-word-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
                           <b>{word.surface}</b>
                         </button>
@@ -240,7 +266,7 @@ function SentenceBlock({
                           <span>{word.meaning}</span>
                           {entry && (
                             <span className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana || preferences.hiragana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
                               <small>{entry.partOfSpeech}</small>
                             </span>
                           )}
@@ -257,14 +283,15 @@ function SentenceBlock({
                 </div>
               </section>
             )}
-            {preferences.kanji && visibleKanji.length > 0 && (
+            {preferences.kanji && shownKanji.length > 0 && (
               <section>
                 <h4>{t('kanjiLabel')}</h4>
                 <div className={preferences.canvasMode ? 'canvas-list' : 'inline-links kanji-inline-list'}>
-                  {visibleKanji.map(({ id, item }) => {
+                  {shownKanji.map(({ id, item }) => {
                     return (
                       item ? (preferences.canvasMode ? (
-                        <div className="canvas-card canvas-card-kanji" key={id}>
+                        <div className="canvas-card canvas-card-kanji learning-card" data-entity-id={id} key={id}>
+                          <LearningToggle label={item.character} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
                             <b>{item.character}</b>
                           </button>
@@ -275,7 +302,8 @@ function SentenceBlock({
                           </div>
                         </div>
                       ) : (
-                        <div className="kanji-inline-card" key={id}>
+                        <div className="kanji-inline-card learning-card" data-entity-id={id} key={id}>
+                          <LearningToggle label={item.character} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="kanji-inline-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
                             <b>{item.character}</b>
                           </button>
@@ -296,15 +324,16 @@ function SentenceBlock({
                 </div>
               </section>
             )}
-            {preferences.grammar && sentence.grammarIds.length > 0 && (
+            {preferences.grammar && visibleGrammar.length > 0 && (
               <section>
                 <h4>{t('grammarLabel')}</h4>
                 <div className="grammar-notes">
-                  {sentence.grammarIds.map((id) => {
+                  {visibleGrammar.map((id) => {
                     const item = dictionary.grammar.find((entry) => entry.id === id);
                     return (
                       item && (
-                        <div className="grammar-note" key={id}>
+                        <div className="grammar-note learning-card" data-entity-id={id} key={id}>
+                          <LearningToggle label={item.title} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="text-link" onClick={() => onEntity(id)}>
                             {item.title}
                           </button>
@@ -335,9 +364,11 @@ function SentenceBlock({
                 ))}
               </p>
               <div className={`translation-row repetition-lines ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
-                {preferences.hiragana && (
-                  <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
-                    <LayerHint label="hiragana" /> {sentence.hiragana}
+                {preferences.furigana && preferences.furiganaSeparateLine && (
+                  <p className="translation-line" lang="ja">
+                    <LayerHint label="furigana" /> {sentence.segments.map((segment, partIndex) => segment.reading ? (
+                      <ruby key={partIndex}>{segment.text}<rt>{segment.reading}</rt></ruby>
+                    ) : <span key={partIndex}>{segment.text}</span>)}
                   </p>
                 )}
                 {preferences.romaji && (
@@ -384,7 +415,20 @@ export function ReaderPage() {
   const [opened, setOpened] = useState('');
   const [saveFailed, setSaveFailed] = useState(false);
   const initialized = useRef('');
+  const layerOptionsRef = useRef<HTMLDetailsElement>(null);
+  const previousLearning = useRef<Record<string, LearningStatus>>({});
   const preferences = user.preferences;
+
+  useEffect(() => {
+    function closeLayerOptions(event: PointerEvent) {
+      const menu = layerOptionsRef.current;
+      if (menu?.open && event.target instanceof Node && !menu.contains(event.target)) {
+        menu.open = false;
+      }
+    }
+    document.addEventListener('pointerdown', closeLayerOptions);
+    return () => document.removeEventListener('pointerdown', closeLayerOptions);
+  }, []);
 
   useEffect(() => {
     if (!chapter || !user.data) {
@@ -409,6 +453,24 @@ export function ReaderPage() {
   async function savePreference(key: keyof ReaderPreferences, value: ReaderPreferences[typeof key]) {
     try {
       await user.save({ kind: 'preferences', id: 'reader', payload: { [key]: value } });
+      setSaveFailed(false);
+    } catch {
+      setSaveFailed(true);
+    }
+  }
+  async function toggleKnown(id: string) {
+    const previousKey = `${user.owner}/${id}`;
+    const currentStatus = user.data?.learning[id];
+    const known = currentStatus === 'known' || currentStatus === 'mastered';
+    const nextStatus = known ? previousLearning.current[previousKey] ?? 'learning' : 'known';
+    if (!known) {
+      previousLearning.current[previousKey] = currentStatus ?? 'encountered';
+    }
+    try {
+      await user.save({ kind: 'learning', id, payload: { status: nextStatus } });
+      if (known) {
+        delete previousLearning.current[previousKey];
+      }
       setSaveFailed(false);
     } catch {
       setSaveFailed(true);
@@ -535,7 +597,7 @@ export function ReaderPage() {
             </button>
           ))}
         </div>
-        <details className="layer-options">
+        <details className="layer-options" ref={layerOptionsRef}>
           <summary>{t('settings')}</summary>
           <div>
             <label className="reader-range-row">
@@ -600,8 +662,10 @@ export function ReaderPage() {
                   preferences={preferences}
                   dictionary={dictionary.data ?? emptyDictionary}
                   learning={user.data?.learning ?? {}}
+                  saving={user.saving}
                   onOpen={() => void select(sentence, position)}
                   onEntity={(id) => openEntity(id, sentence.id)}
+                  onToggleKnown={(id) => void toggleKnown(id)}
                 />
               );
             })}

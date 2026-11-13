@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FileDown, ShieldCheck, UserRound } from 'lucide-react';
+import { FileDown, Mail, ShieldCheck, UserRound } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
 import { useAppData, PageTitle, download } from './Common';
@@ -10,7 +10,6 @@ import type { ReaderPreferences } from '../domain/user-state';
 import type { Diagnostic } from '../infrastructure/local/repository';
 const preferenceOptions: (keyof ReaderPreferences)[] = [
   'furigana',
-  'hiragana',
   'romaji',
   'literal',
   'natural',
@@ -22,7 +21,6 @@ const preferenceOptions: (keyof ReaderPreferences)[] = [
 ];
 const separateLineOptions = [
   ['furiganaSeparateLine', 'furigana'],
-  ['hiraganaSeparateLine', 'showHiragana'],
   ['romajiSeparateLine', 'showRomaji'],
   ['literalSeparateLine', 'literal'],
   ['naturalSeparateLine', 'natural'],
@@ -77,9 +75,7 @@ export function SettingsPage() {
                             ? 'kanjiLabel'
                             : key === 'grammar'
                               ? 'grammarLabel'
-                              : key === 'hiragana'
-                                ? 'showHiragana'
-                                : key,
+                              : key,
                 )}
               </span>
               <input
@@ -322,9 +318,56 @@ export function DiagnosticsPage() {
   const { t } = useTranslation();
   const { user } = useAppData();
   const [items, setItems] = useState<Diagnostic[]>([]);
+  const [loaded, setLoaded] = useState(false);
+  const [reportStatus, setReportStatus] = useState('');
+  const [sharing, setSharing] = useState(false);
+  const developerEmail = 'alexander.aj.ranger@gmail.com';
   useEffect(() => {
-    void local.exportDiagnostics().then((diagnostics) => setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen)));
-  }, []);
+    void local.exportDiagnostics()
+      .then((diagnostics) => {
+        setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
+        setLoaded(true);
+      })
+      .catch(() => setReportStatus(t('localSaveError')));
+  }, [t]);
+  async function shareReport() {
+    const fileName = 'readfold-diagnostics.json';
+    const subject = t('diagnosticEmailSubject');
+    const body = t('diagnosticEmailBody', { fileName });
+    const report = {
+      formatVersion: 1,
+      createdAt: new Date().toISOString(),
+      app: 'ReadFold',
+      page: `${window.location.origin}${window.location.pathname}`,
+      browser: navigator.userAgent,
+      online: navigator.onLine,
+      syncStatus: syncEngine?.status ?? 'unavailable',
+      diagnostics: items,
+    };
+    const file = new File([JSON.stringify(report, null, 2)], fileName, { type: 'application/json' });
+    setSharing(true);
+    setReportStatus('');
+    try {
+      if (navigator.share && navigator.canShare?.({ files: [file] })) {
+        try {
+          await navigator.share({ title: subject, text: t('diagnosticShareText', { email: developerEmail, body }), files: [file] });
+          setReportStatus(t('diagnosticShareFinished'));
+          return;
+        } catch (error) {
+          if (error instanceof DOMException && error.name === 'AbortError') {
+            return;
+          }
+        }
+      }
+      download(fileName, report);
+      window.location.href = `mailto:${developerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      setReportStatus(t('diagnosticAttachFile', { fileName }));
+    } catch {
+      setReportStatus(t('diagnosticReportError'));
+    } finally {
+      setSharing(false);
+    }
+  }
   return (
     <>
       <PageTitle title={t('diagnostics')} />
@@ -355,6 +398,12 @@ export function DiagnosticsPage() {
           <FileDown size={16} />
           {t('exportDiagnostics')}
         </Button>
+        <p className="muted">{t('diagnosticEmailHelp', { email: developerEmail })}</p>
+        <Button variant="outline" disabled={sharing || !loaded} onClick={() => void shareReport()}>
+          <Mail size={16} />
+          {t('diagnosticEmailButton')}
+        </Button>
+        {reportStatus && <p role="status" className="muted">{reportStatus}</p>}
       </Card>
     </>
   );

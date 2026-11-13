@@ -17,11 +17,6 @@ export function GrammarExample({ example, preferences }: { example: Example; pre
       {preferences.furigana && preferences.furiganaSeparateLine && (
         <p className="translation-line" lang="ja"><LayerHint label="furigana" /> {japanese(true)}</p>
       )}
-      {preferences.hiragana && example.hiragana && (
-        <p className={`reading-row ${preferences.hiraganaSeparateLine ? 'translation-line' : ''}`} lang="ja">
-          <LayerHint label="hiragana" /> {example.hiragana}
-        </p>
-      )}
       {preferences.romaji && example.romaji && (
         <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
           <LayerHint label="romaji" /> {example.romaji}
