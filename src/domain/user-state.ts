@@ -32,14 +32,25 @@ export interface ReaderPreferences {
   language: 'ru' | 'en';
   theme: 'light' | 'dark' | 'system';
   fontSize: number;
+  readingFontSize: number;
+  translationFontSize: number;
+  wordsFontSize: number;
+  kanjiFontSize: number;
+  grammarFontSize: number;
   lineHeight: number;
   width: number;
   mode: ReadingMode;
+  canvasMode: boolean;
   furigana: boolean;
+  furiganaSeparateLine: boolean;
   hiragana: boolean;
+  hiraganaSeparateLine: boolean;
   romaji: boolean;
+  romajiSeparateLine: boolean;
   literal: boolean;
+  literalSeparateLine: boolean;
   natural: boolean;
+  naturalSeparateLine: boolean;
   words: boolean;
   kanji: boolean;
   grammar: boolean;
@@ -51,14 +62,25 @@ export const defaultPreferences: ReaderPreferences = {
   language: 'ru',
   theme: 'system',
   fontSize: 24,
+  readingFontSize: 16,
+  translationFontSize: 18,
+  wordsFontSize: 16,
+  kanjiFontSize: 16,
+  grammarFontSize: 16,
   lineHeight: 2,
   width: 760,
   mode: 'detailed',
+  canvasMode: false,
   furigana: true,
+  furiganaSeparateLine: false,
   hiragana: false,
+  hiraganaSeparateLine: false,
   romaji: false,
+  romajiSeparateLine: false,
   literal: true,
+  literalSeparateLine: false,
   natural: true,
+  naturalSeparateLine: false,
   words: true,
   kanji: true,
   grammar: true,

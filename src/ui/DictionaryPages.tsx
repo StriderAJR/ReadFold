@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
@@ -7,6 +7,7 @@ import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { useOccurrences } from '../application/hooks';
 import type { LearningStatus } from '../domain/user-state';
+import { GrammarExample } from './GrammarExample';
 export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const { t } = useTranslation();
   const { user, dictionary, catalog } = useAppData();
@@ -117,6 +118,10 @@ export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }
 }
 export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const { id = '' } = useParams();
+  const [searchParams] = useSearchParams();
+  const requestedReturn = searchParams.get('returnTo');
+  const returnTo = requestedReturn && /^\/read\/[a-z0-9.-]+\/[a-z0-9.-]+\?sentence=[a-z0-9.-]+$/.test(requestedReturn)
+    ? requestedReturn : null;
   const { t } = useTranslation();
   const { user, dictionary } = useAppData();
   const dict = dictionary.data;
@@ -140,8 +145,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   let title = '';
   let sub = '';
   let meaning = '';
-  let examples: { text: string; translation: string }[] = [];
-  let auxiliary = '';
+  let examples: import('../domain/content').Grammar['examples'] = [];
   let related: { id: string; label: string; kind: 'words' | 'kanji' | 'grammar' }[] = [];
   if (kind === 'words' && 'surface' in item) {
     title = item.surface;
@@ -151,7 +155,6 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
     title = item.character;
     sub = `${t('onReading')}: ${item.on.join('、')} · ${t('kunReading')}: ${item.kun.join('、')}`;
     meaning = item.meanings.join('、');
-    auxiliary = `${item.components.join(' · ')}${item.mnemonic ? ` · ${t('mnemonic')}: ${item.mnemonic}` : ''}`;
     related = item.wordIds.flatMap((wordId) => {
       const word = dict?.words.find((entry) => entry.id === wordId);
       return word ? [{ id: word.id, label: word.surface, kind: 'words' as const }] : [];
@@ -168,35 +171,51 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   }
   return (
     <>
-      <Link className="back-link" to={`/${kind}`}>
+      <Link className="back-link" to={returnTo ?? `/${kind}`}>
         <ChevronLeft size={16} />
-        {t(kind)}
+        {returnTo ? t('backToReading') : t(kind)}
       </Link>
       <PageTitle title={title}>
         <span className={`status-chip ${user.data?.learning[id] ?? 'unseen'}`}>
           {user.data?.learning[id] ? t(user.data.learning[id]) : t('unseen')}
         </span>
       </PageTitle>
-      <Card className="entity-card">
+      <Card className="entity-card" style={{
+        '--grammar-size': `${user.preferences.grammarFontSize}px`,
+        '--reading-size': `${user.preferences.readingFontSize}px`,
+        '--translation-size': `${user.preferences.translationFontSize}px`,
+        '--entity-size': `${kind === 'words' ? user.preferences.wordsFontSize : kind === 'kanji' ? user.preferences.kanjiFontSize : user.preferences.grammarFontSize}px`,
+      } as CSSProperties}>
         <p className="entity-reading">{sub}</p>
         <p>{meaning}</p>
         {examples.length > 0 && (
           <div className="grammar-examples">
             {examples.map((ex, i) => (
-              <p key={i}>
-                <b>{ex.text}</b>
-                <span>{ex.translation}</span>
-              </p>
+              <GrammarExample key={i} example={ex} preferences={user.preferences} />
             ))}
           </div>
         )}
-        {auxiliary && <p className="muted">{auxiliary}</p>}
+        {kind === 'kanji' && 'character' in item && (
+          <section aria-label={t('mnemonic')}>
+            <h3>{t('mnemonic')}</h3>
+            <p className="muted">{t('mnemonicNotice')}</p>
+            {item.components.length > 0 && (
+              <p>
+                <b>{t('mnemonicComponents')}: </b>
+                {item.components.map((component) => (
+                  item.componentMeanings?.[component] ? `${component} — ${item.componentMeanings[component]}` : component
+                )).join(' · ')}
+              </p>
+            )}
+            {item.mnemonic && <p>{item.mnemonic}</p>}
+          </section>
+        )}
         {related.length > 0 && (
           <div>
             <h3>{t('related')}</h3>
             <div className="inline-links">
               {related.map((entry) => (
-                <Link key={entry.id} to={`/${entry.kind}/${entry.id}`}>
+                <Link key={entry.id} to={`/${entry.kind}/${entry.id}${returnTo ? `?returnTo=${encodeURIComponent(returnTo)}` : ''}`}>
                   {entry.label}
                 </Link>
               ))}

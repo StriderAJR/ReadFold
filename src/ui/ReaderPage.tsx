@@ -6,6 +6,7 @@ import { Button } from '../components/ui/button';
 import { useCatalog, useChapter, useDictionary, useUserData } from '../application/hooks';
 import type { Dictionary, Sentence } from '../domain/content';
 import type { ReaderPreferences } from '../domain/user-state';
+import { GrammarExample } from './GrammarExample';
 
 const layers = ['furigana', 'hiragana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
@@ -36,9 +37,9 @@ function SentenceBlock({
   const allWordsKnown =
     sentence.words.length > 0 &&
     sentence.words.every((word) => learning[word.wordId] === 'known' || learning[word.wordId] === 'mastered');
-  const adaptiveHidden = preferences.mode === 'adaptive' && preferences.adaptiveHideKnown && allWordsKnown && !revealed;
+  const adaptiveHidden = !preferences.canvasMode && preferences.mode === 'adaptive' && preferences.adaptiveHideKnown && allWordsKnown && !revealed;
   const showAnalysis = open && !adaptiveHidden;
-  const showRuby = preferences.furigana && !adaptiveHidden;
+  const showRuby = preferences.furigana && !preferences.furiganaSeparateLine && !adaptiveHidden;
 
   return (
     <article
@@ -79,26 +80,34 @@ function SentenceBlock({
       {showAnalysis && (
         <div id={`analysis-${sentence.id}`} className="sentence-analysis analysis-open">
           <div className="translation-row">
+            {preferences.furigana && preferences.furiganaSeparateLine && (
+              <p className="translation-line" lang="ja">
+                <b>{t('furigana')}</b>
+                {sentence.segments.map((segment, partIndex) => segment.reading ? (
+                  <ruby key={partIndex}>{segment.text}<rt>{segment.reading}</rt></ruby>
+                ) : <span key={partIndex}>{segment.text}</span>)}
+              </p>
+            )}
             {preferences.hiragana && (
-              <p lang="ja">
+              <p className={preferences.hiraganaSeparateLine ? 'translation-line' : ''} lang="ja">
                 <b>{t('hiragana')}</b>
                 {sentence.hiragana}
               </p>
             )}
             {preferences.romaji && (
-              <p>
+              <p className={`reading-row ${preferences.romajiSeparateLine ? 'translation-line' : ''}`}>
                 <b>{t('romaji')}</b>
                 {sentence.romaji}
               </p>
             )}
             {preferences.literal && (
-              <p>
+              <p className={preferences.literalSeparateLine ? 'translation-line' : ''}>
                 <b>{t('literal')}</b>
                 {sentence.literal}
               </p>
             )}
             {preferences.natural && (
-              <p>
+              <p className={preferences.naturalSeparateLine ? 'translation-line' : ''}>
                 <b>{t('natural')}</b>
                 {sentence.natural}
               </p>
@@ -108,30 +117,54 @@ function SentenceBlock({
             {preferences.words && (
               <section>
                 <h4>{t('wordsLabel')}</h4>
-                <div className="token-list">
-                  {sentence.words.map((word, occurrenceIndex) => (
-                    <button key={`${word.wordId}-${occurrenceIndex}`} onClick={() => onEntity(word.wordId)}>
-                      <b lang="ja">{word.surface}</b>
-                      <span>{word.meaning}</span>
-                      {word.inflection && <small>{word.inflection}</small>}
-                      {word.role && <small>{word.role}</small>}
-                    </button>
-                  ))}
+                <div className={`token-list ${preferences.canvasMode ? 'canvas-list' : ''}`}>
+                  {sentence.words.map((word, occurrenceIndex) => {
+                    const entry = dictionary.words.find((item) => item.id === word.wordId);
+                    return preferences.canvasMode ? (
+                      <div className="canvas-card" key={`${word.wordId}-${occurrenceIndex}`}>
+                        <b lang="ja">{word.surface}</b>
+                        <span>{word.meaning}</span>
+                        {entry && (
+                          <small>{[entry.dictionaryForm, entry.reading, entry.romaji, entry.partOfSpeech].join(' · ')}</small>
+                        )}
+                        {word.inflection && <small>{word.inflection}</small>}
+                        {word.role && <small>{word.role}</small>}
+                      </div>
+                    ) : (
+                      <button key={`${word.wordId}-${occurrenceIndex}`} onClick={() => onEntity(word.wordId)}>
+                        <b lang="ja">{word.surface}</b>
+                        <span>{word.meaning}</span>
+                        {word.inflection && <small>{word.inflection}</small>}
+                        {word.role && <small>{word.role}</small>}
+                      </button>
+                    );
+                  })}
                 </div>
               </section>
             )}
             {preferences.kanji && sentence.kanjiIds.length > 0 && (
               <section>
                 <h4>{t('kanjiLabel')}</h4>
-                <div className="inline-links">
+                <div className={preferences.canvasMode ? 'canvas-list' : 'inline-links'}>
                   {sentence.kanjiIds.map((id) => {
                     const item = dictionary.kanji.find((entry) => entry.id === id);
                     return (
-                      item && (
+                      item && (preferences.canvasMode ? (
+                        <div className="canvas-card" key={id}>
+                          <b lang="ja">{item.character}</b>
+                          <span>{item.meanings.join(', ')}</span>
+                          <small>{t('onReading')}: {item.on.join('、')} · {t('kunReading')}: {item.kun.join('、')}</small>
+                          {item.components.length > 0 && <small>{t('mnemonicComponents')}: {item.components.map((component) => (
+                            item.componentMeanings?.[component] ? `${component} — ${item.componentMeanings[component]}` : component
+                          )).join(' · ')}</small>}
+                          {item.mnemonic && <small>{t('mnemonic')}: {item.mnemonic}</small>}
+                          {item.mnemonic && <small>{t('mnemonicNotice')}</small>}
+                        </div>
+                      ) : (
                         <button key={id} onClick={() => onEntity(id)}>
                           <span lang="ja">{item.character}</span> <span>{item.meanings.join(', ')}</span>
                         </button>
-                      )
+                      ))
                     );
                   })}
                 </div>
@@ -153,13 +186,7 @@ function SentenceBlock({
                           <details>
                             <summary>{t('reveal')}</summary>
                             <p>{item.explanation}</p>
-                            {item.examples.map((example) => (
-                              <p key={example.text}>
-                                <span lang="ja">{example.text}</span>
-                                <br />
-                                {example.translation}
-                              </p>
-                            ))}
+                            {item.examples.map((example) => <GrammarExample key={example.text} example={example} preferences={preferences} />)}
                           </details>
                         </div>
                       )
@@ -261,13 +288,14 @@ export function ReaderPage() {
     await select(sentence, position, false);
     document.getElementById(`sentence-${sentence.id}`)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }
-  function openEntity(id: string) {
+  function openEntity(id: string, sentenceId: string) {
     const kind = dictionary.data?.kanji.some((item) => item.id === id)
       ? 'kanji'
       : dictionary.data?.grammar.some((item) => item.id === id)
         ? 'grammar'
         : 'words';
-    navigate(`/${kind}/${id}`);
+    const returnTo = `/read/${bookId}/${chapterId}?sentence=${encodeURIComponent(sentenceId)}`;
+    navigate(`/${kind}/${id}?returnTo=${encodeURIComponent(returnTo)}`);
   }
 
   if (!book || !chapterMeta) {
@@ -297,6 +325,11 @@ export function ReaderPage() {
   const emptyDictionary: Dictionary = { schemaVersion: 1, words: [], kanji: [], grammar: [] };
   const style = {
     '--reader-size': `${preferences.fontSize}px`,
+    '--reading-size': `${preferences.readingFontSize}px`,
+    '--translation-size': `${preferences.translationFontSize}px`,
+    '--words-size': `${preferences.wordsFontSize}px`,
+    '--kanji-size': `${preferences.kanjiFontSize}px`,
+    '--grammar-size': `${preferences.grammarFontSize}px`,
     '--reader-leading': preferences.lineHeight,
     '--reader-width': `${preferences.width}px`,
   } as CSSProperties;
@@ -378,12 +411,12 @@ export function ReaderPage() {
                   sentence={sentence}
                   index={position}
                   selected={selected === sentence.id}
-                  open={preferences.mode !== 'continuous' || opened === sentence.id}
+                  open={preferences.canvasMode || preferences.mode !== 'continuous' || opened === sentence.id}
                   preferences={preferences}
                   dictionary={dictionary.data ?? emptyDictionary}
                   learning={user.data?.learning ?? {}}
                   onOpen={() => void select(sentence, position)}
-                  onEntity={openEntity}
+                  onEntity={(id) => openEntity(id, sentence.id)}
                 />
               );
             })}

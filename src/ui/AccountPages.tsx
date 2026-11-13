@@ -19,6 +19,21 @@ const preferenceOptions: (keyof ReaderPreferences)[] = [
   'adaptiveHideKnown',
   'syncEnabled',
 ];
+const separateLineOptions = [
+  ['furiganaSeparateLine', 'furigana'],
+  ['hiraganaSeparateLine', 'showHiragana'],
+  ['romajiSeparateLine', 'showRomaji'],
+  ['literalSeparateLine', 'literal'],
+  ['naturalSeparateLine', 'natural'],
+] as const;
+const fontSizeOptions = [
+  ['fontSize', 'mainText'],
+  ['readingFontSize', 'readingLines'],
+  ['translationFontSize', 'translationLines'],
+  ['wordsFontSize', 'wordsLabel'],
+  ['kanjiFontSize', 'kanjiLabel'],
+  ['grammarFontSize', 'grammarLabel'],
+] as const;
 export function SettingsPage() {
   const { t } = useTranslation();
   const { user } = useAppData();
@@ -42,6 +57,11 @@ export function SettingsPage() {
             ))}
           </div>
           <p className="muted">{t('adaptiveInfo')}</p>
+          <label className="switch-row">
+            <span>{t('canvasMode')}</span>
+            <input type="checkbox" checked={p.canvasMode} onChange={(e) => set('canvasMode', e.target.checked)} />
+            <i />
+          </label>
           {preferenceOptions.map((key) => (
             <label className="switch-row" key={key}>
               <span>
@@ -72,21 +92,23 @@ export function SettingsPage() {
               <i />
             </label>
           ))}
+          <h3>{t('separateLines')}</h3>
+          {separateLineOptions.map(([key, labelKey]) => (
+            <label className="switch-row" key={key}>
+              <span>{t(labelKey)} · {t('separateLine')}</span>
+              <input type="checkbox" checked={p[key]} onChange={(e) => set(key, e.target.checked)} />
+              <i />
+            </label>
+          ))}
         </Card>
         <Card className="settings-card">
           <h2>{t('show')}</h2>
-          <label className="range-row">
-            <span>
-              {t('fontSize')} <b>{p.fontSize}px</b>
-            </span>
-            <input
-              type="range"
-              min="16"
-              max="42"
-              value={p.fontSize}
-              onChange={(e) => set('fontSize', Number(e.target.value))}
-            />
-          </label>
+          {fontSizeOptions.map(([key, labelKey]) => (
+            <label className="range-row" key={key}>
+              <span>{t(labelKey)} <b>{p[key]}px</b></span>
+              <input type="range" min={key === 'fontSize' ? 16 : 10} max={key === 'fontSize' ? 42 : 32} value={p[key]} onChange={(e) => set(key, Number(e.target.value))} />
+            </label>
+          ))}
           <label className="range-row">
             <span>
               {t('lineHeight')} <b>{p.lineHeight}</b>

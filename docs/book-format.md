@@ -16,9 +16,15 @@
 
 `dictionary.json`: `schemaVersion: 1`, `words`, `kanji`, `grammar` — независимые справочники.
 Слово: `id`, `surface`, `dictionaryForm`, `reading`, `romaji`, `partOfSpeech`, `meanings`.
-Иероглиф: `id`, `character`, `meanings`, `on`, `kun`, `components`, `wordIds`, необязательное `mnemonic`.
-`components` — визуальные составляющие для разбора, а не утверждение об этимологии.
+Иероглиф: `id`, `character`, `meanings`, `on`, `kun`, `components`, `wordIds`, необязательные `componentMeanings` и `mnemonic`.
+`components` — визуальные составляющие для запоминания. `componentMeanings: {[component]: string}` задаёт
+русские переводы или ассоциативные образы всех составляющих; если поле указано, его ключи должны точно
+совпадать с `components`. `mnemonic` — короткая фраза, связывающая эти образы со значением иероглифа.
+Это мнемоника, а не словарные ключи кандзи или утверждение об этимологии. В демо заполнены все иероглифы.
 Грамматика: `id`, `title`, `explanation`, `examples: [{text, translation}]`, `relatedIds`.
+Примеры грамматики также поддерживают необязательные `hiragana`, `romaji`, `literal`, `natural` и `segments`.
+Формат `segments` такой же, как у предложений: непустой массив `{text, reading?}`, восстанавливающий `text`.
+В демо все примеры содержат эти слои; старые примеры с `text` и `translation` остаются допустимыми.
 
 Zod-схемы и типы экспортируются из `src/domain/content.ts`. Неизвестные поля запрещены.
 ID используют латинские строчные буквы, цифры, точки и дефисы и остаются стабильными при редактуре текста.

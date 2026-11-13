@@ -68,6 +68,33 @@ test('dictionary word occurrence navigates back to its source sentence', async (
   await expect(page.locator('[id="sentence-demo.s2"]')).toHaveClass(/sentence-active/);
 });
 
+test('reader details return to the sentence and canvas settings control examples', async ({ page }) => {
+  await page.goto(`./#/${readerPath}`);
+  const first = page.locator('[id="sentence-demo.s1"]');
+  await first.locator('.token-list button').first().click();
+  await expect(page).toHaveURL(/#\/words\/asa\?returnTo=/);
+  await page.getByRole('link', { name: 'Вернуться к чтению' }).click();
+  await expect(first).toHaveClass(/sentence-active/);
+
+  await page.goto('./#/settings');
+  await page.getByText('Режим полотна').click();
+  await expect(page.getByRole('checkbox', { name: 'Режим полотна' })).toBeChecked();
+  await page.getByText('Хирагана', { exact: true }).click();
+  await expect(page.getByRole('checkbox', { name: 'Хирагана', exact: true })).toBeChecked();
+  await page.getByText('Хирагана · отдельной строкой').click();
+  await expect(page.getByRole('checkbox', { name: 'Хирагана · отдельной строкой' })).toBeChecked();
+  await page.getByText('Буквально · отдельной строкой').click();
+  await expect(page.getByRole('checkbox', { name: 'Буквально · отдельной строкой' })).toBeChecked();
+  await page.goto(`./#/${readerPath}`);
+  await expect(first.locator('.canvas-card').first()).toBeVisible();
+  await expect(first.locator('.translation-row p[lang="ja"]')).toHaveClass(/translation-line/);
+  await expect(first.locator('.translation-row p').filter({ hasText: 'Буквально' })).toHaveClass(/translation-line/);
+
+  await page.goto('./#/grammar/grammar.topic');
+  await expect(page.locator('.grammar-example').first().getByText('Хирагана')).toBeVisible();
+  await expect(page.locator('.grammar-example').first().getByText('Буквально')).toBeVisible();
+});
+
 test('quiz answer can be rated and appears in review history', async ({ page }) => {
   await page.goto('./#/reviews');
   await page.getByRole('button', { name: /Все/ }).click();

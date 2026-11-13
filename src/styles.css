@@ -958,10 +958,21 @@ footer span {
   margin-top: 5px;
 }
 .translation-row p {
-  font: 400 0.75rem 'DM Sans';
+  font: 400 var(--translation-size, 12px) 'DM Sans';
   color: #777481;
   margin: 0;
   line-height: 1.6;
+}
+.translation-row p[lang='ja'],
+.translation-row p.reading-row {
+  font-size: var(--reading-size, 12px);
+}
+.translation-row .translation-line {
+  flex-basis: 100%;
+}
+.translation-row ruby rt,
+.grammar-example ruby rt {
+  font-size: 0.7em;
 }
 .translation-row p b {
   font-size: 0.58rem;
@@ -998,13 +1009,14 @@ footer span {
   border-radius: 7px;
   padding: 7px 9px;
   cursor: pointer;
+  color: var(--ink);
 }
 .token-list button b {
-  font-size: 0.72rem;
+  font-size: var(--words-size, 12px);
 }
 .token-list button span,
 .token-list button small {
-  font: 400 0.64rem 'DM Sans';
+  font: 400 var(--words-size, 12px) 'DM Sans';
   color: #827f8d;
 }
 .inline-links {
@@ -1018,8 +1030,55 @@ footer span {
   padding: 5px 8px;
   background: #f0edf8;
   color: #655d87;
-  font-size: 0.71rem;
+  font-size: var(--kanji-size, 12px);
   cursor: pointer;
+}
+.canvas-list {
+  display: grid;
+  gap: 8px;
+}
+.canvas-card {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  font-size: var(--words-size, 12px);
+}
+.canvas-card b { font-size: 1.2em; }
+.canvas-card small { color: var(--muted); }
+.analysis-expanded section:has(> .canvas-list:not(.token-list)) .canvas-card {
+  font-size: var(--kanji-size, 12px);
+}
+.grammar-notes {
+  font-size: var(--grammar-size, 12px);
+}
+.grammar-example {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 12px 0;
+  font-size: var(--grammar-size, 12px);
+}
+.grammar-example > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--translation-size, 12px);
+}
+.grammar-example > p:first-child {
+  color: var(--ink);
+  flex-basis: 100%;
+}
+.grammar-example .translation-line {
+  flex-basis: 100%;
+}
+.grammar-examples .grammar-example > p {
+  display: inline;
+}
+.grammar-example p[lang='ja'],
+.grammar-example p.reading-row {
+  font-size: var(--reading-size, 12px);
 }
 .inline-links button span {
   color: #938da7;
@@ -1115,7 +1174,7 @@ footer span {
   color: #898494;
 }
 .entity-card > p:not(.entity-reading) {
-  font-size: 1rem;
+  font-size: var(--entity-size, 16px);
   line-height: 1.7;
 }
 .entity-actions {
@@ -1537,6 +1596,25 @@ html[data-theme='dark'] .answer-option {
 html[data-theme='dark'] .button-outline:hover:not(:disabled) {
   background: #34303c;
 }
+html[data-theme='dark'] .dictionary-row:hover,
+html[data-theme='dark'] .occurrence-row:hover,
+html[data-theme='dark'] .book-card:hover {
+  background: #302e39;
+  color: var(--ink);
+}
+html[data-theme='dark'] .inline-links button,
+html[data-theme='dark'] .inline-links a,
+html[data-theme='dark'] .translation-row p b,
+html[data-theme='dark'] .filter-tabs button.selected,
+html[data-theme='dark'] .segmented button.active {
+  background: #393447;
+  color: #e7dff9;
+}
+html[data-theme='dark'] .inline-links button span,
+html[data-theme='dark'] .dictionary-row:hover .dict-main small,
+html[data-theme='dark'] .occurrence-row:hover small {
+  color: #c9bedf;
+}
 html[data-theme='dark'] .form-row select {
   color: var(--ink);
 }
@@ -1801,7 +1879,7 @@ html[data-theme='dark'] .form-row select {
   padding: 0.8rem;
 }
 .grammar-note > p {
-  font-size: 0.92rem;
+  font-size: var(--grammar-size, 12px);
   line-height: 1.7;
 }
 @media (max-width: 390px) {
@@ -1977,7 +2055,7 @@ html[data-theme='dark'] .reveal-button {
   padding: 8px 10px;
   border-radius: 7px;
   background: var(--cream);
-  font-size: 0.75rem;
+  font-size: var(--grammar-size, 12px);
 }
 .grammar-notes small {
   display: block;

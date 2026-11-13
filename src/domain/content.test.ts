@@ -1,10 +1,42 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { catalogSchema, chapterSchema, dictionarySchema, validateChapterReferences } from './content';
+import { catalogSchema, chapterSchema, dictionarySchema, grammarSchema, kanjiSchema, validateChapterReferences } from './content';
 
 const read = (path: string): unknown => JSON.parse(readFileSync(`public/${path}`, 'utf8'));
 
 describe('book format', () => {
+  it('provides mnemonic component meanings and validates their correspondence', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    for (const kanji of dictionary.kanji) {
+      expect(kanji.mnemonic).toBeTruthy();
+      expect(Object.keys(kanji.componentMeanings ?? {}).sort()).toEqual([...kanji.components].sort());
+      expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: undefined, mnemonic: undefined }).success).toBe(true);
+    }
+    const kanji = dictionary.kanji[0];
+    expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: {} }).success).toBe(false);
+    expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: { ...kanji.componentMeanings, unknown: 'образ' } }).success)
+      .toBe(false);
+    expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: { ...kanji.componentMeanings, 十: '' } }).success)
+      .toBe(false);
+  });
+
+  it('provides grammar example display layers and rejects malformed ruby', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    for (const grammar of dictionary.grammar) {
+      for (const example of grammar.examples) {
+        for (const field of ['hiragana', 'romaji', 'literal', 'natural'] as const) {
+          expect(example[field]).toBeTruthy();
+        }
+        expect(example.segments?.map((segment) => segment.text).join('')).toBe(example.text);
+        expect(example.segments?.some((segment) => segment.reading)).toBe(true);
+      }
+    }
+    const grammar = dictionary.grammar[0];
+    expect(grammarSchema.safeParse({ ...grammar, examples: [{ text: '猫。', translation: 'Кошка.' }] }).success).toBe(true);
+    grammar.examples[0].segments = [{ text: '違', reading: 'ちが' }];
+    expect(grammarSchema.safeParse(grammar).success).toBe(false);
+  });
+
   it('validates all shipped chapters and dictionary references', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
     const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
