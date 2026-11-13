@@ -1,6 +1,6 @@
 
-const CACHE = 'readfold-40913522bca6';
-const SHELL = ["./","./index.html","./brand/icon.jpg","./privacy.html","./terms.html","./googlef53875cf353db667.html","./assets/index-B_RLYEVF.js","./assets/index-S0YFZR9i.css","./assets/language-D1l4zjXA.js","./assets/local-mrCQITVc.js","./assets/react-b1lT2Cb-.js","./assets/supabase-CelhU-Wa.js","./assets/validation-D1g8DkzT.js"];
+const CACHE = 'readfold-ceb48374ad46';
+const SHELL = ["./","./index.html","./brand/icon.jpg","./privacy.html","./terms.html","./googlef53875cf353db667.html","./assets/index--yFevWa0.js","./assets/index-CBrwel72.css","./assets/language-D1l4zjXA.js","./assets/local-mrCQITVc.js","./assets/react-b1lT2Cb-.js","./assets/supabase-CelhU-Wa.js","./assets/validation-D1g8DkzT.js"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
 });

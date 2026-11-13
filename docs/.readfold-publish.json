@@ -3,12 +3,12 @@
   "base": "/ReadFold/",
   "files": [
     {
-      "path": "assets/index-B_RLYEVF.js",
-      "sha256": "e95e72afeba03d82f1ca31f51a1b3f9667c840437e9f71d22d8e24fb30805a9a"
+      "path": "assets/index--yFevWa0.js",
+      "sha256": "f717098b42f96c6ecf7beb161162a48f4ea6021b8ea5b028fe1325c71bd35f2a"
     },
     {
-      "path": "assets/index-S0YFZR9i.css",
-      "sha256": "371991dfc7755fa48eeebdd6c51312bccc67625d48093937696e45e3507cbaf3"
+      "path": "assets/index-CBrwel72.css",
+      "sha256": "fda70b3203d70befaee230ae526f2e38725c42b76d952c0f9d37f1e07eab8116"
     },
     {
       "path": "assets/language-D1l4zjXA.js",
@@ -44,7 +44,7 @@
     },
     {
       "path": "books/dictionary.json",
-      "sha256": "84f1e4036a2b6b5b4155f394b34d1fc3fbcb8ed24ca77db9a8376332677f81aa"
+      "sha256": "cf75aa49c40ac40ae046247e5d67e154c494d720f20cd4739a5ad249b3c751af"
     },
     {
       "path": "brand/icon.jpg",
@@ -56,7 +56,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "6b0f5af936439e56d6f201be49477301f3b7c1b33787ac01d17acb8a06ecb4db"
+      "sha256": "7775e9229a3f5422726dc064bceaa577f680c09c10051a0960fe696c13da6a5b"
     },
     {
       "path": "privacy.html",
@@ -64,7 +64,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "3aa3b634a064f0e97f76208e77f66263b230fbb54c47aa0e915a483dfab7d86e"
+      "sha256": "16f307022f79a37b5aa8b5e3a4560e89681e0ddbd5439e8539b33dd05f11957f"
     },
     {
       "path": "terms.html",

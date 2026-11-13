@@ -264,7 +264,13 @@
       ],
       "wordIds": [
         "asa"
-      ]
+      ],
+      "componentMeanings": {
+        "十": "десять",
+        "日": "солнце",
+        "月": "луна"
+      },
+      "mnemonic": "Утром десять лучей солнца провожают луну."
     },
     {
       "id": "kanji.watashi",
@@ -285,7 +291,12 @@
       ],
       "wordIds": [
         "watashi"
-      ]
+      ],
+      "componentMeanings": {
+        "禾": "колос",
+        "厶": "личное"
+      },
+      "mnemonic": "Этот колос — мой личный: я берегу его для себя."
     },
     {
       "id": "kanji.kou",
@@ -305,7 +316,12 @@
       ],
       "wordIds": [
         "kouen"
-      ]
+      ],
+      "componentMeanings": {
+        "八": "восемь",
+        "厶": "личное"
+      },
+      "mnemonic": "Восемь человек делятся личным — и оно становится общественным."
     },
     {
       "id": "kanji.en",
@@ -325,7 +341,12 @@
       ],
       "wordIds": [
         "kouen"
-      ]
+      ],
+      "componentMeanings": {
+        "囗": "ограда",
+        "袁": "человек в длинной одежде"
+      },
+      "mnemonic": "За оградой человек в длинной одежде гуляет по саду."
     },
     {
       "id": "kanji.iku",
@@ -348,7 +369,12 @@
       ],
       "wordIds": [
         "iku"
-      ]
+      ],
+      "componentMeanings": {
+        "彳": "шаг левой ногой",
+        "亍": "шаг правой ногой"
+      },
+      "mnemonic": "Шаг левой, шаг правой — так мы идём вперёд."
     },
     {
       "id": "kanji.chiisai",
@@ -369,7 +395,11 @@
       ],
       "wordIds": [
         "chiisana"
-      ]
+      ],
+      "componentMeanings": {
+        "小": "маленькая фигурка"
+      },
+      "mnemonic": "Маленькая фигурка раскинула руки: она совсем мала."
     },
     {
       "id": "kanji.neko",
@@ -389,7 +419,12 @@
       ],
       "wordIds": [
         "neko"
-      ]
+      ],
+      "componentMeanings": {
+        "犭": "зверь",
+        "苗": "росток"
+      },
+      "mnemonic": "Зверь прячется среди ростков — это кошка."
     },
     {
       "id": "kanji.ki",
@@ -410,7 +445,11 @@
       ],
       "wordIds": [
         "ki"
-      ]
+      ],
+      "componentMeanings": {
+        "木": "дерево"
+      },
+      "mnemonic": "Ствол, ветви и корни складываются в дерево."
     },
     {
       "id": "kanji.shita",
@@ -435,7 +474,12 @@
       ],
       "wordIds": [
         "shita"
-      ]
+      ],
+      "componentMeanings": {
+        "一": "одна черта",
+        "卜": "указатель"
+      },
+      "mnemonic": "Под одной чертой указатель направлен вниз."
     },
     {
       "id": "kanji.mizu",
@@ -454,7 +498,11 @@
       ],
       "wordIds": [
         "mizu"
-      ]
+      ],
+      "componentMeanings": {
+        "水": "вода"
+      },
+      "mnemonic": "Струя посередине и брызги по краям помогают увидеть воду."
     },
     {
       "id": "kanji.nomu",
@@ -474,7 +522,12 @@
       ],
       "wordIds": [
         "nomu"
-      ]
+      ],
+      "componentMeanings": {
+        "飠": "еда",
+        "欠": "зевок"
+      },
+      "mnemonic": "После еды рот раскрывается, словно для зевка: пора пить."
     },
     {
       "id": "kanji.tsugi",
@@ -496,7 +549,12 @@
       ],
       "wordIds": [
         "tsugi"
-      ]
+      ],
+      "componentMeanings": {
+        "冫": "лёд",
+        "欠": "зевок"
+      },
+      "mnemonic": "На льду ждёшь и зеваешь: кто следующий?"
     },
     {
       "id": "kanji.hi",
@@ -517,7 +575,11 @@
       ],
       "wordIds": [
         "hi"
-      ]
+      ],
+      "componentMeanings": {
+        "日": "солнце"
+      },
+      "mnemonic": "Солнце выглядывает из окошка — начинается день."
     }
   ],
   "grammar": [
@@ -528,7 +590,34 @@
       "examples": [
         {
           "text": "私は公園へ行きます。",
-          "translation": "Я иду в парк."
+          "translation": "Я иду в парк.",
+          "hiragana": "わたしはこうえんへいきます。",
+          "romaji": "Watashi wa kōen e ikimasu.",
+          "literal": "Я [тема] парк [направление] иду.",
+          "natural": "Я иду в парк.",
+          "segments": [
+            {
+              "text": "私",
+              "reading": "わたし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -543,7 +632,27 @@
       "examples": [
         {
           "text": "公園へ行きます。",
-          "translation": "Иду в парк."
+          "translation": "Иду в парк.",
+          "hiragana": "こうえんへいきます。",
+          "romaji": "Kōen e ikimasu.",
+          "literal": "Парк [направление] иду.",
+          "natural": "Иду в парк.",
+          "segments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "へ"
+            },
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -557,7 +666,27 @@
       "examples": [
         {
           "text": "水を飲みます。",
-          "translation": "Пью воду."
+          "translation": "Пью воду.",
+          "hiragana": "みずをのみます。",
+          "romaji": "Mizu o nomimasu.",
+          "literal": "Воду [объект] пью.",
+          "natural": "Пью воду.",
+          "segments": [
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "みます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -571,7 +700,27 @@
       "examples": [
         {
           "text": "公園に猫がいます。",
-          "translation": "В парке есть кошка."
+          "translation": "В парке есть кошка.",
+          "hiragana": "こうえんにねこがいます。",
+          "romaji": "Kōen ni neko ga imasu.",
+          "literal": "Парк [местонахождение] кошка [подлежащее] есть.",
+          "natural": "В парке есть кошка.",
+          "segments": [
+            {
+              "text": "公園",
+              "reading": "こうえん"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "がいます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -586,7 +735,41 @@
       "examples": [
         {
           "text": "木の下で水を飲みます。",
-          "translation": "Пью воду под деревом."
+          "translation": "Пью воду под деревом.",
+          "hiragana": "きのしたでみずをのみます。",
+          "romaji": "Ki no shita de mizu o nomimasu.",
+          "literal": "Дерево [связь] низ [место действия] воду [объект] пью.",
+          "natural": "Пью воду под деревом.",
+          "segments": [
+            {
+              "text": "木",
+              "reading": "き"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "下",
+              "reading": "した"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "みます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -600,7 +783,34 @@
       "examples": [
         {
           "text": "木の下に猫がいます。",
-          "translation": "Под деревом есть кошка."
+          "translation": "Под деревом есть кошка.",
+          "hiragana": "きのしたにねこがいます。",
+          "romaji": "Ki no shita ni neko ga imasu.",
+          "literal": "Дерево [связь] низ [местонахождение] кошка [подлежащее] есть.",
+          "natural": "Под деревом есть кошка.",
+          "segments": [
+            {
+              "text": "木",
+              "reading": "き"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "下",
+              "reading": "した"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "がいます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -614,7 +824,27 @@
       "examples": [
         {
           "text": "猫に水をあげます。",
-          "translation": "Даю кошке воду."
+          "translation": "Даю кошке воду.",
+          "hiragana": "ねこにみずをあげます。",
+          "romaji": "Neko ni mizu o agemasu.",
+          "literal": "Кошке [получатель] воду [объект] даю.",
+          "natural": "Даю кошке воду.",
+          "segments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "をあげます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -628,7 +858,34 @@
       "examples": [
         {
           "text": "猫は水を飲んでいます。",
-          "translation": "Кошка пьёт воду."
+          "translation": "Кошка пьёт воду.",
+          "hiragana": "ねこはみずをのんでいます。",
+          "romaji": "Neko wa mizu o nonde imasu.",
+          "literal": "Кошка [тема] воду [объект] пьёт [действие в процессе].",
+          "natural": "Кошка пьёт воду.",
+          "segments": [
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "飲",
+              "reading": "の"
+            },
+            {
+              "text": "んでいます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
@@ -642,7 +899,34 @@
       "examples": [
         {
           "text": "私は猫に水をあげます。",
-          "translation": "Я даю кошке воду."
+          "translation": "Я даю кошке воду.",
+          "hiragana": "わたしはねこにみずをあげます。",
+          "romaji": "Watashi wa neko ni mizu o agemasu.",
+          "literal": "Я [тема] кошке [получатель] воду [объект] даю.",
+          "natural": "Я даю кошке воду.",
+          "segments": [
+            {
+              "text": "私",
+              "reading": "わたし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "猫",
+              "reading": "ねこ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "水",
+              "reading": "みず"
+            },
+            {
+              "text": "をあげます。"
+            }
+          ]
         }
       ],
       "relatedIds": [
