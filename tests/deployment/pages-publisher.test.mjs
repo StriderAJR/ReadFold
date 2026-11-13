@@ -93,7 +93,15 @@ test('rejects symbolic links in build output', async (context) => {
   assert.equal(dirname(assets), join(site.workspace, 'dist'));
   await rm(assets, { recursive: true });
   await mkdir(join(site.workspace, 'outside'));
-  await symlink(join(site.workspace, 'outside'), join(site.workspace, 'dist/assets'), 'junction');
+  try {
+    await symlink(join(site.workspace, 'outside'), join(site.workspace, 'dist/assets'), 'junction');
+  } catch (error) {
+    if (process.platform === 'win32' && error?.code === 'EPERM') {
+      context.skip('Windows does not permit creating a junction in this environment');
+      return;
+    }
+    throw error;
+  }
   await assert.rejects(publishDocs(site.workspace), /Symbolic links/);
   assert.equal(await site.read('docs/index.html'), 'old landing');
 });

@@ -10,6 +10,8 @@ describe('book format', () => {
     const entries = new Map(dictionary.kanji.map((kanji) => [kanji.character, kanji]));
     for (const kanji of dictionary.kanji) {
       expect(kanji.mnemonic).toBeTruthy();
+      expect(kanji.mnemonic).not.toMatch(/^(Вспомни образы|Начертание)/);
+      expect(new Set(kanji.components).size).toBe(kanji.components.length);
       expect(Object.keys(kanji.componentMeanings ?? {}).sort()).toEqual([...kanji.components].sort());
       expect(kanji.on.length + kanji.kun.length).toBeGreaterThan(0);
       for (const component of kanji.components) {
@@ -79,7 +81,7 @@ describe('book format', () => {
         expect(entry).toBeDefined();
         expect(entry?.meanings.length).toBeGreaterThan(0);
         expect(entry?.on.length || entry?.kun.length).toBeTruthy();
-        expect(entry?.components.length).toBeGreaterThan(0);
+        expect(entry?.components).not.toContain(character);
         expect(entry?.mnemonic).toBeTruthy();
       }
     }
@@ -128,8 +130,8 @@ describe('book format', () => {
     const entry = dictionary.kanji.find((kanji) => kanji.components.length > 0)!;
     const invalid = structuredClone(dictionary);
     const target = invalid.kanji.find((kanji) => kanji.id === entry.id)!;
-    target.components = ['未'];
-    target.componentMeanings = { 未: 'ещё нет' };
+    target.components = ['\uE000'];
+    target.componentMeanings = { '\uE000': 'неизвестная часть' };
     expect(dictionarySchema.safeParse(invalid).success).toBe(false);
     target.components = [target.character];
     target.componentMeanings = { [target.character]: 'сам' };

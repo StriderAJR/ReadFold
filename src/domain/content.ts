@@ -45,7 +45,7 @@ export const wordSchema = z
 export const kanjiSchema = z
   .object({
     id: idSchema,
-    character: z.string().length(1),
+    character: z.string().refine((value) => [...value].length === 1, 'Expected one character'),
     meanings: z.array(textSchema).min(1),
     on: z.array(textSchema),
     kun: z.array(textSchema),
