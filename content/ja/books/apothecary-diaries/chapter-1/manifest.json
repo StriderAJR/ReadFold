@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "id": "apothecary-diaries.chapter-1",
+  "bookId": "apothecary-diaries",
+  "title": "１　猫猫",
+  "parts": [
+    "part-001.json",
+    "part-002.json",
+    "part-003.json",
+    "part-004.json",
+    "part-005.json",
+    "part-006.json",
+    "part-007.json"
+  ]
+}

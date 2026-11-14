@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:夜伽",
+    "surface": "夜伽",
+    "dictionaryForm": "夜伽",
+    "reading": "よとぎ",
+    "romaji": "yotogi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "ночное сопровождение; проведение ночи с господином"
+    ]
+  },
+  {
+    "id": "ja:word:命じる",
+    "surface": "命じる",
+    "dictionaryForm": "命じる",
+    "reading": "めいじる",
+    "romaji": "meijiru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "приказывать"
+    ]
+  },
+  {
+    "id": "ja:word:移動",
+    "surface": "移動",
+    "dictionaryForm": "移動",
+    "reading": "いどう",
+    "romaji": "idō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "перемещение; смена места"
+    ]
+  },
+  {
+    "id": "ja:word:二度目",
+    "surface": "二度目",
+    "dictionaryForm": "二度目",
+    "reading": "にどめ",
+    "romaji": "nidome",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "второй раз"
+    ]
+  },
+  {
+    "id": "ja:word:御手付き",
+    "surface": "御手付き",
+    "dictionaryForm": "御手付き",
+    "reading": "おてつき",
+    "romaji": "otetsuki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "женщина, удостоенная интимного внимания господина; само это внимание"
+    ]
+  },
+  {
+    "id": "ja:word:出世",
+    "surface": "出世",
+    "dictionaryForm": "出世",
+    "reading": "しゅっせ",
+    "romaji": "shusse",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "возвышение; продвижение в положении"
+    ]
+  },
+  {
+    "id": "ja:word:意味する",
+    "surface": "意味する",
+    "dictionaryForm": "意味する",
+    "reading": "いみする",
+    "romaji": "imi suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "означать"
+    ]
+  },
+  {
+    "id": "ja:word:一方",
+    "surface": "一方",
+    "dictionaryForm": "一方",
+    "reading": "いっぽう",
+    "romaji": "ippō",
+    "partOfSpeech": "существительное, союз",
+    "meanings": [
+      "с другой стороны"
+    ]
+  },
+  {
+    "id": "ja:word:食指",
+    "surface": "食指",
+    "dictionaryForm": "食指",
+    "reading": "しょくし",
+    "romaji": "shokushi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "указательный палец; в выражении о возникновении желания"
+    ]
+  },
+  {
+    "id": "ja:word:動かす",
+    "surface": "動かす",
+    "dictionaryForm": "動かす",
+    "reading": "うごかす",
+    "romaji": "ugokasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "двигать; приводить в движение; пробуждать желание"
+    ]
+  },
+  {
+    "id": "ja:word:適齢",
+    "surface": "適齢",
+    "dictionaryForm": "適齢",
+    "reading": "てきれい",
+    "romaji": "tekirei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "подходящий возраст"
+    ]
+  },
+  {
+    "id": "ja:word:過ぎる",
+    "surface": "過ぎる",
+    "dictionaryForm": "過ぎる",
+    "reading": "すぎる",
+    "romaji": "sugiru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "проходить, миновать; превышать меру"
+    ]
+  },
+  {
+    "id": "ja:word:よほど",
+    "surface": "よほど",
+    "dictionaryForm": "よほど",
+    "reading": "よほど",
+    "romaji": "yohodo",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "очень; в значительной степени"
+    ]
+  },
+  {
+    "id": "ja:word:実家",
+    "surface": "実家",
+    "dictionaryForm": "実家",
+    "reading": "じっか",
+    "romaji": "jikka",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "родной дом; родительская семья"
+    ]
+  },
+  {
+    "id": "ja:word:権力",
+    "surface": "権力",
+    "dictionaryForm": "権力",
+    "reading": "けんりょく",
+    "romaji": "kenryoku",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "власть; влияние"
+    ]
+  },
+  {
+    "id": "ja:word:下げる",
+    "surface": "下げる",
+    "dictionaryForm": "下げる",
+    "reading": "さげる",
+    "romaji": "sageru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "понижать; снижать"
+    ]
+  },
+  {
+    "id": "ja:word:最悪",
+    "surface": "最悪",
+    "dictionaryForm": "最悪",
+    "reading": "さいあく",
+    "romaji": "saiaku",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": [
+      "наихудший; худший случай"
+    ]
+  },
+  {
+    "id": "ja:word:下賜する",
+    "surface": "下賜する",
+    "dictionaryForm": "下賜する",
+    "reading": "かしする",
+    "romaji": "kashi suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "жаловать нижестоящему; даровать подданному"
+    ]
+  },
+  {
+    "id": "ja:word:不幸",
+    "surface": "不幸",
+    "dictionaryForm": "不幸",
+    "reading": "ふこう",
+    "romaji": "fukō",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": [
+      "несчастье; несчастный"
+    ]
+  },
+  {
+    "id": "ja:word:相手",
+    "surface": "相手",
+    "dictionaryForm": "相手",
+    "reading": "あいて",
+    "romaji": "aite",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "другой участник; тот, с кем имеют дело"
+    ]
+  },
+  {
+    "id": "ja:word:よる",
+    "surface": "よる",
+    "dictionaryForm": "よる",
+    "reading": "よる",
+    "romaji": "yoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "зависеть от; определяться чем-либо"
+    ]
+  },
+  {
+    "id": "ja:word:官女",
+    "surface": "官女",
+    "dictionaryForm": "官女",
+    "reading": "かんじょ",
+    "romaji": "kanjo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "придворная женщина; дворцовая служительница"
+    ]
+  },
+  {
+    "id": "ja:word:一番",
+    "surface": "一番",
+    "dictionaryForm": "一番",
+    "reading": "いちばん",
+    "romaji": "ichiban",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "больше всего; самый"
+    ]
+  },
+  {
+    "id": "ja:word:恐れる",
+    "surface": "恐れる",
+    "dictionaryForm": "恐れる",
+    "reading": "おそれる",
+    "romaji": "osoreru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "бояться; страшиться"
+    ]
+  }
+]

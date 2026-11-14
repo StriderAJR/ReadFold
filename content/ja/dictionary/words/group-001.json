@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:朝",
+    "surface": "朝",
+    "dictionaryForm": "朝",
+    "reading": "あさ",
+    "romaji": "asa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "утро"
+    ]
+  },
+  {
+    "id": "ja:word:私",
+    "surface": "私",
+    "dictionaryForm": "私",
+    "reading": "わたし",
+    "romaji": "watashi",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "я"
+    ]
+  },
+  {
+    "id": "ja:word:は",
+    "surface": "は",
+    "dictionaryForm": "は",
+    "reading": "は",
+    "romaji": "wa",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "тема высказывания"
+    ]
+  },
+  {
+    "id": "ja:word:公園",
+    "surface": "公園",
+    "dictionaryForm": "公園",
+    "reading": "こうえん",
+    "romaji": "kōen",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "парк"
+    ]
+  },
+  {
+    "id": "ja:word:へ",
+    "surface": "へ",
+    "dictionaryForm": "へ",
+    "reading": "へ",
+    "romaji": "e",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "направление движения"
+    ]
+  },
+  {
+    "id": "ja:word:行く",
+    "surface": "行く",
+    "dictionaryForm": "行く",
+    "reading": "いく",
+    "romaji": "iku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "идти"
+    ]
+  },
+  {
+    "id": "ja:word:に",
+    "surface": "に",
+    "dictionaryForm": "に",
+    "reading": "に",
+    "romaji": "ni",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "место или адресат"
+    ]
+  },
+  {
+    "id": "ja:word:小さな",
+    "surface": "小さな",
+    "dictionaryForm": "小さな",
+    "reading": "ちいさな",
+    "romaji": "chiisana",
+    "partOfSpeech": "определение",
+    "meanings": [
+      "маленький"
+    ]
+  },
+  {
+    "id": "ja:word:猫",
+    "surface": "猫",
+    "dictionaryForm": "猫",
+    "reading": "ねこ",
+    "romaji": "neko",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "кошка"
+    ]
+  },
+  {
+    "id": "ja:word:が",
+    "surface": "が",
+    "dictionaryForm": "が",
+    "reading": "が",
+    "romaji": "ga",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "подлежащее"
+    ]
+  },
+  {
+    "id": "ja:word:いる",
+    "surface": "いる",
+    "dictionaryForm": "いる",
+    "reading": "いる",
+    "romaji": "iru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "находиться (о живом)"
+    ]
+  },
+  {
+    "id": "ja:word:木",
+    "surface": "木",
+    "dictionaryForm": "木",
+    "reading": "き",
+    "romaji": "ki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дерево"
+    ]
+  },
+  {
+    "id": "ja:word:の",
+    "surface": "の",
+    "dictionaryForm": "の",
+    "reading": "の",
+    "romaji": "no",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "связь определений"
+    ]
+  },
+  {
+    "id": "ja:word:下",
+    "surface": "下",
+    "dictionaryForm": "下",
+    "reading": "した",
+    "romaji": "shita",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "низ; под"
+    ]
+  },
+  {
+    "id": "ja:word:で",
+    "surface": "で",
+    "dictionaryForm": "で",
+    "reading": "で",
+    "romaji": "de",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "место действия"
+    ]
+  },
+  {
+    "id": "ja:word:水",
+    "surface": "水",
+    "dictionaryForm": "水",
+    "reading": "みず",
+    "romaji": "mizu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "вода"
+    ]
+  },
+  {
+    "id": "ja:word:を",
+    "surface": "を",
+    "dictionaryForm": "を",
+    "reading": "を",
+    "romaji": "o",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "прямое дополнение"
+    ]
+  },
+  {
+    "id": "ja:word:飲む",
+    "surface": "飲む",
+    "dictionaryForm": "飲む",
+    "reading": "のむ",
+    "romaji": "nomu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "пить"
+    ]
+  },
+  {
+    "id": "ja:word:次",
+    "surface": "次",
+    "dictionaryForm": "次",
+    "reading": "つぎ",
+    "romaji": "tsugi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "следующий"
+    ]
+  },
+  {
+    "id": "ja:word:日",
+    "surface": "日",
+    "dictionaryForm": "日",
+    "reading": "ひ",
+    "romaji": "hi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "день"
+    ]
+  },
+  {
+    "id": "ja:word:また",
+    "surface": "また",
+    "dictionaryForm": "また",
+    "reading": "また",
+    "romaji": "mata",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "снова"
+    ]
+  },
+  {
+    "id": "ja:word:あげる",
+    "surface": "あげる",
+    "dictionaryForm": "あげる",
+    "reading": "あげる",
+    "romaji": "ageru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "давать"
+    ]
+  },
+  {
+    "id": "ja:word:露天",
+    "surface": "露天",
+    "dictionaryForm": "露天",
+    "reading": "ろてん",
+    "romaji": "roten",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "уличная торговая палатка"
+    ]
+  },
+  {
+    "id": "ja:word:串焼き",
+    "surface": "串焼き",
+    "dictionaryForm": "串焼き",
+    "reading": "くしやき",
+    "romaji": "kushiyaki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жареные на шампуре кусочки пищи; шашлычок"
+    ]
+  }
+]

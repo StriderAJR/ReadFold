@@ -1,0 +1,19 @@
+{
+  "id": "ja:kanji:水",
+  "character": "水",
+  "meanings": [
+    "вода"
+  ],
+  "on": [
+    "スイ"
+  ],
+  "kun": [
+    "みず"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:水"
+  ],
+  "componentMeanings": {},
+  "mnemonic": "Центральная струя и брызги по краям напоминают воду."
+}

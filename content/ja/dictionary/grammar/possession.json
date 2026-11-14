@@ -1,0 +1,75 @@
+{
+  "id": "ja:grammar:possession",
+  "title": "の: связь существительных",
+  "explanation": "Первое существительное определяет второе: 木の下 — место под деревом, 次の日 — следующий день.",
+  "examples": [
+    {
+      "text": "木の下に猫がいます。",
+      "translation": "Под деревом есть кошка.",
+      "hiragana": "きのしたにねこがいます。",
+      "romaji": "Ki no shita ni neko ga imasu.",
+      "literal": "Дерево [связь] низ [местонахождение] кошка [подлежащее] есть.",
+      "natural": "Под деревом есть кошка.",
+      "segments": [
+        {
+          "text": "木",
+          "reading": "き"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "下",
+          "reading": "した"
+        },
+        {
+          "text": "に"
+        },
+        {
+          "text": "猫",
+          "reading": "ねこ"
+        },
+        {
+          "text": "がいます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:existence"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Первое существительное определяет второе: "
+    },
+    {
+      "reading": "き",
+      "text": "木"
+    },
+    {
+      "reading": "の",
+      "text": "の"
+    },
+    {
+      "reading": "した",
+      "text": "下"
+    },
+    {
+      "text": " — место под деревом, "
+    },
+    {
+      "text": "次"
+    },
+    {
+      "reading": "の",
+      "text": "の"
+    },
+    {
+      "reading": "ひ",
+      "text": "日"
+    },
+    {
+      "text": " — следующий день."
+    }
+  ]
+}

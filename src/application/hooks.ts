@@ -4,7 +4,7 @@ import { reduceOperations } from '../infrastructure/local/repository';
 import { contentProvider } from '../infrastructure/content-provider';
 import { local, refreshUserData, synchronize, syncEngine, useSession, useLocalFailure } from './runtime';
 import { z } from 'zod';
-import type { BookMetadata, Chapter, Sentence } from '../domain/content';
+import type { BookMetadata, Chapter, DictionaryKind, Sentence } from '../domain/content';
 
 export const preferencesSchema = z.object({
   language: z.enum(['ru', 'en']),
@@ -112,7 +112,29 @@ export function useSyncInfo() {
   return query.data ?? { pending: 0, status: 'loading' };
 }
 export const useCatalog = () => useQuery({ queryKey: ['catalog'], queryFn: contentProvider.catalog });
-export const useDictionary = () => useQuery({ queryKey: ['dictionary'], queryFn: contentProvider.dictionary });
+export const useDictionaryIndex = () => useQuery({ queryKey: ['dictionary-index'], queryFn: contentProvider.dictionaryIndex });
+export const useDictionary = (enabled = true) => useQuery({
+  queryKey: ['dictionary'],
+  queryFn: contentProvider.dictionary,
+  enabled,
+});
+export const useDictionarySection = (kind: DictionaryKind) => useQuery({
+  queryKey: ['dictionary', kind],
+  queryFn: () => contentProvider.dictionarySection(kind),
+});
+export const useDictionaryEntity = (id: string, enabled = true) => useQuery({
+  queryKey: ['dictionary-entity', id],
+  queryFn: () => contentProvider.dictionaryEntity(id),
+  enabled: enabled && Boolean(id),
+});
+export const useDictionaryEntities = (ids: readonly string[] | undefined, enabled = true) => {
+  const uniqueIds = [...new Set(ids ?? [])].sort();
+  return useQuery({
+    queryKey: ['dictionary-entities', uniqueIds],
+    queryFn: () => contentProvider.dictionaryEntities(uniqueIds),
+    enabled: enabled && uniqueIds.length > 0,
+  });
+};
 export const useChapter = (path: string | undefined) =>
   useQuery({
     queryKey: ['chapter', path],
@@ -125,30 +147,27 @@ export function useOccurrences(kind: 'words' | 'kanji' | 'grammar', id: string, 
     queryKey: ['occurrences', kind, id],
     enabled,
     queryFn: async () => {
-      const books = await contentProvider.catalog();
+      const [books, locations] = await Promise.all([contentProvider.catalog(), contentProvider.occurrences(id)]);
       const occurrences: { book: BookMetadata; chapter: Chapter; sentence: Sentence }[] = [];
-      let partial = false;
-      for (const book of books) {
-        for (const metadata of book.chapters) {
-          try {
-            const chapter = await contentProvider.chapter(metadata.path);
-            for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
-              const matches =
-                kind === 'words'
-                  ? sentence.wordOccurrences.some((word) => word.wordId === id)
-                  : kind === 'kanji'
-                    ? sentence.kanjiIds.includes(id)
-                    : sentence.grammarOccurrences.some((occurrence) => occurrence.grammarId === id);
-              if (matches) {
-                occurrences.push({ book, chapter, sentence });
-              }
-            }
-          } catch {
-            partial = true;
-          }
+      const chapterPaths = [...new Set(locations.map((location) => location.chapterPath))];
+      const chapters = await Promise.all(chapterPaths.map(async (path) => {
+        try {
+          return [path, await contentProvider.chapter(path)] as const;
+        } catch {
+          return [path, null] as const;
+        }
+      }));
+      const chaptersByPath = new Map(chapters);
+      for (const location of locations) {
+        const book = books.find((entry) => entry.id === location.bookId);
+        const chapter = chaptersByPath.get(location.chapterPath);
+        const sentence = chapter?.paragraphs.flatMap((paragraph) => paragraph.sentences)
+          .find((entry) => entry.id === location.sentenceId);
+        if (book && chapter && sentence) {
+          occurrences.push({ book, chapter, sentence });
         }
       }
-      return { occurrences, partial };
+      return { occurrences, partial: occurrences.length < locations.length };
     },
   });
 }

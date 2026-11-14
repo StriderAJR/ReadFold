@@ -1,8 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { dictionarySchema } from './content';
+import { dictionaryIndexSchema, dictionarySchema, grammarShardSchema, kanjiShardSchema, wordShardSchema } from './content';
 import { buildQuiz, checkAnswer } from './quiz';
-const dictionary = dictionarySchema.parse(JSON.parse(readFileSync('public/books/dictionary.json', 'utf8')));
+const read = (path: string) => JSON.parse(readFileSync(`.local-tools/content/${path}`, 'utf8'));
+const index = dictionaryIndexSchema.parse(read('ja/dictionary/index.json'));
+const dictionary = dictionarySchema.parse({
+  schemaVersion: 2,
+  words: index.sections.words.flatMap((path) => wordShardSchema.parse(read(path)).entries),
+  kanji: index.sections.kanji.flatMap((path) => kanjiShardSchema.parse(read(path)).entries),
+  grammar: index.sections.grammar.flatMap((path) => grammarShardSchema.parse(read(path)).entries),
+});
 describe('data-based quizzes', () => {
   it('covers all supported task types deterministically', () => {
     const tasks = buildQuiz(dictionary);

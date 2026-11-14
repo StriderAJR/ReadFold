@@ -1,0 +1,19 @@
+{
+  "id": "ja:kanji:用",
+  "character": "用",
+  "meanings": [
+    "использовать"
+  ],
+  "on": [
+    "ヨウ"
+  ],
+  "kun": [
+    "もちいる"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:専用"
+  ],
+  "mnemonic": "Вертикали и перекладины похожи на готовый к использованию стеллаж.",
+  "componentMeanings": {}
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:礼儀",
+    "surface": "礼儀",
+    "dictionaryForm": "礼儀",
+    "reading": "れいぎ",
+    "romaji": "reigi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "этикет; правила приличия"
+    ]
+  },
+  {
+    "id": "ja:word:教える",
+    "surface": "教える",
+    "dictionaryForm": "教える",
+    "reading": "おしえる",
+    "romaji": "oshieru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "обучать; объяснять"
+    ]
+  },
+  {
+    "id": "ja:word:文字",
+    "surface": "文字",
+    "dictionaryForm": "文字",
+    "reading": "もじ",
+    "romaji": "moji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "письменность; письменные знаки"
+    ]
+  },
+  {
+    "id": "ja:word:難しい",
+    "surface": "難しい",
+    "dictionaryForm": "難しい",
+    "reading": "むずかしい",
+    "romaji": "muzukashii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "трудный; сложный"
+    ]
+  },
+  {
+    "id": "ja:word:識字率",
+    "surface": "識字率",
+    "dictionaryForm": "識字率",
+    "reading": "しきじりつ",
+    "romaji": "shikijiritsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "уровень грамотности; доля грамотных"
+    ]
+  },
+  {
+    "id": "ja:word:田舎",
+    "surface": "田舎",
+    "dictionaryForm": "田舎",
+    "reading": "いなか",
+    "romaji": "inaka",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "деревня; сельская местность"
+    ]
+  },
+  {
+    "id": "ja:word:半分",
+    "surface": "半分",
+    "dictionaryForm": "半分",
+    "reading": "はんぶん",
+    "romaji": "hanbun",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "половина"
+    ]
+  },
+  {
+    "id": "ja:word:越す",
+    "surface": "越す",
+    "dictionaryForm": "越す",
+    "reading": "こす",
+    "romaji": "kosu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "превышать; переходить за предел"
+    ]
+  },
+  {
+    "id": "ja:word:大きい",
+    "surface": "大きい",
+    "dictionaryForm": "大きい",
+    "reading": "おおきい",
+    "romaji": "ōkii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "большой"
+    ]
+  },
+  {
+    "id": "ja:word:なる",
+    "surface": "なる",
+    "dictionaryForm": "なる",
+    "reading": "なる",
+    "romaji": "naru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "становиться"
+    ]
+  },
+  {
+    "id": "ja:word:弊害",
+    "surface": "弊害",
+    "dictionaryForm": "弊害",
+    "reading": "へいがい",
+    "romaji": "heigai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "пагубные последствия; вред"
+    ]
+  },
+  {
+    "id": "ja:word:量",
+    "surface": "量",
+    "dictionaryForm": "量",
+    "reading": "りょう",
+    "romaji": "ryō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "количество; объём"
+    ]
+  },
+  {
+    "id": "ja:word:増える",
+    "surface": "増える",
+    "dictionaryForm": "増える",
+    "reading": "ふえる",
+    "romaji": "fueru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "увеличиваться; расти"
+    ]
+  },
+  {
+    "id": "ja:word:質",
+    "surface": "質",
+    "dictionaryForm": "質",
+    "reading": "しつ",
+    "romaji": "shitsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "качество"
+    ]
+  },
+  {
+    "id": "ja:word:先帝",
+    "surface": "先帝",
+    "dictionaryForm": "先帝",
+    "reading": "せんてい",
+    "romaji": "sentei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "прежний император; покойный император"
+    ]
+  },
+  {
+    "id": "ja:word:花",
+    "surface": "花",
+    "dictionaryForm": "花",
+    "reading": "はな",
+    "romaji": "hana",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "цветок"
+    ]
+  },
+  {
+    "id": "ja:word:園",
+    "surface": "園",
+    "dictionaryForm": "園",
+    "reading": "その",
+    "romaji": "sono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "сад"
+    ]
+  },
+  {
+    "id": "ja:word:到底",
+    "surface": "到底",
+    "dictionaryForm": "到底",
+    "reading": "とうてい",
+    "romaji": "tōtei",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "никак; совершенно; с отрицанием «далеко не»"
+    ]
+  },
+  {
+    "id": "ja:word:及ぶ",
+    "surface": "及ぶ",
+    "dictionaryForm": "及ぶ",
+    "reading": "およぶ",
+    "romaji": "oyobu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "достигать; сравняться"
+    ]
+  },
+  {
+    "id": "ja:word:妃",
+    "surface": "妃",
+    "dictionaryForm": "妃",
+    "reading": "きさき",
+    "romaji": "kisaki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "супруга правителя; императорская супруга"
+    ]
+  },
+  {
+    "id": "ja:word:合わせる",
+    "surface": "合わせる",
+    "dictionaryForm": "合わせる",
+    "reading": "あわせる",
+    "romaji": "awaseru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "объединять; складывать; вместе насчитывать"
+    ]
+  },
+  {
+    "id": "ja:word:二千人",
+    "surface": "二千人",
+    "dictionaryForm": "二千人",
+    "reading": "にせんにん",
+    "romaji": "nisennin",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "две тысячи человек"
+    ]
+  },
+  {
+    "id": "ja:word:加える",
+    "surface": "加える",
+    "dictionaryForm": "加える",
+    "reading": "くわえる",
+    "romaji": "kuwaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "добавлять"
+    ]
+  },
+  {
+    "id": "ja:word:三千",
+    "surface": "三千",
+    "dictionaryForm": "三千",
+    "reading": "さんぜん",
+    "romaji": "sanzen",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "три тысячи"
+    ]
+  }
+]

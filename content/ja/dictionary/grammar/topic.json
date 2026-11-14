@@ -1,0 +1,61 @@
+{
+  "id": "ja:grammar:topic",
+  "title": "は: тема",
+  "explanation": "Частица は выделяет тему: о ком или о чём говорится. Как частица читается わ (wa).",
+  "examples": [
+    {
+      "text": "私は公園へ行きます。",
+      "translation": "Я иду в парк.",
+      "hiragana": "わたしはこうえんへいきます。",
+      "romaji": "Watashi wa kōen e ikimasu.",
+      "literal": "Я [тема] парк [направление] иду.",
+      "natural": "Я иду в парк.",
+      "segments": [
+        {
+          "text": "私",
+          "reading": "わたし"
+        },
+        {
+          "text": "は"
+        },
+        {
+          "text": "公園",
+          "reading": "こうえん"
+        },
+        {
+          "text": "へ"
+        },
+        {
+          "text": "行",
+          "reading": "い"
+        },
+        {
+          "text": "きます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:direction",
+    "ja:grammar:polite"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Частица "
+    },
+    {
+      "reading": "は",
+      "text": "は"
+    },
+    {
+      "text": " выделяет тему: о ком или о чём говорится. Как частица читается "
+    },
+    {
+      "reading": "わ",
+      "text": "わ"
+    },
+    {
+      "text": " (wa)."
+    }
+  ]
+}

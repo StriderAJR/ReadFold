@@ -1,0 +1,23 @@
+{
+  "id": "ja:kanji:比",
+  "character": "比",
+  "meanings": [
+    "сравнивать"
+  ],
+  "on": [
+    "ヒ"
+  ],
+  "kun": [
+    "くらべる"
+  ],
+  "components": [
+    "匕"
+  ],
+  "wordIds": [
+    "ja:word:比べる"
+  ],
+  "mnemonic": "Две ложки положили рядом, чтобы сравнить размер.",
+  "componentMeanings": {
+    "匕": "ложка"
+  }
+}

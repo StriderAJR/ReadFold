@@ -33,7 +33,7 @@ const fontSizeOptions = [
 ] as const;
 export function SettingsPage() {
   const { t } = useTranslation();
-  const { user } = useAppData();
+  const { user } = useAppData({ loadDictionary: false });
   const [importStatus, setImportStatus] = useState('');
   const signedIn = useSession((state) => Boolean(state.identity));
   const p = user.preferences;
@@ -230,7 +230,7 @@ export function SettingsPage() {
 export function AccountPage() {
   const { t } = useTranslation();
   const session = useSession();
-  const { user } = useAppData();
+  const { user } = useAppData({ loadDictionary: false });
   const [error, setError] = useState('');
   async function login(provider: 'google' | 'github') {
     if (!services) {
@@ -316,22 +316,44 @@ export function AccountPage() {
 }
 export function DiagnosticsPage() {
   const { t } = useTranslation();
-  const { user } = useAppData();
+  const { user } = useAppData({ loadDictionary: false });
+  const identity = useSession((state) => state.identity);
   const [items, setItems] = useState<Diagnostic[]>([]);
   const [syncEvents, setSyncEvents] = useState<SyncDiagnosticEvent[]>([]);
+  const [lastSuccessfulSync, setLastSuccessfulSync] = useState<number>();
   const [loaded, setLoaded] = useState(false);
   const [reportStatus, setReportStatus] = useState('');
   const [sharing, setSharing] = useState(false);
+  const [syncing, setSyncing] = useState(false);
   const developerEmail = 'alexander.aj.ranger@gmail.com';
   useEffect(() => {
-    void Promise.all([local.exportDiagnostics(), local.exportSyncEvents()])
-      .then(([diagnostics, events]) => {
+    void Promise.all([local.exportDiagnostics(), local.exportSyncEvents(), local.getLastSuccessfulSync()])
+      .then(([diagnostics, events, lastSync]) => {
         setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
         setSyncEvents(events.sort((a, b) => b.occurredAt - a.occurredAt));
+        setLastSuccessfulSync(lastSync);
         setLoaded(true);
       })
       .catch(() => setReportStatus(t('localSaveError')));
   }, [t]);
+  async function forceSync() {
+    setSyncing(true);
+    setReportStatus('');
+    try {
+      const result = await synchronize(true);
+      const [diagnostics, events, lastSync] = await Promise.all([
+        local.exportDiagnostics(), local.exportSyncEvents(), local.getLastSuccessfulSync(),
+      ]);
+      setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
+      setSyncEvents(events.sort((a, b) => b.occurredAt - a.occurredAt));
+      setLastSuccessfulSync(lastSync);
+      setReportStatus(result === 'synced' ? t('synced') : result === 'disabled' ? t('syncDisabled') : t('syncError'));
+    } catch {
+      setReportStatus(t('syncError'));
+    } finally {
+      setSyncing(false);
+    }
+  }
   async function shareReport() {
     const fileName = 'readfold-diagnostics.json';
     const subject = t('diagnosticEmailSubject');
@@ -376,6 +398,14 @@ export function DiagnosticsPage() {
       <PageTitle title={t('diagnostics')} />
       <Card className="diagnostics-card">
         <p className="muted">{t('diagnosticsHelp')}</p>
+        <p className="muted">
+          {t('lastSuccessfulSync')}: {lastSuccessfulSync
+            ? new Intl.DateTimeFormat(user.preferences.language, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(lastSuccessfulSync))
+            : t('noSuccessfulSync')}
+        </p>
+        <Button variant="outline" disabled={syncing || !identity || !user.preferences.syncEnabled} onClick={() => void forceSync()}>
+          {t(syncing ? 'syncingNow' : 'forceSync')}
+        </Button>
         {items.map((item) => (
           <div className="diagnostic-entry" key={`${item.category}-${item.code}-${item.status ?? 'none'}`}>
             <div className="diagnostic-entry-heading">

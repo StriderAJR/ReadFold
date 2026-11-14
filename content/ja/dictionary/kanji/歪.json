@@ -1,0 +1,25 @@
+{
+  "id": "ja:kanji:歪",
+  "character": "歪",
+  "meanings": [
+    "кривой"
+  ],
+  "on": [
+    "ワイ"
+  ],
+  "kun": [
+    "ゆがむ"
+  ],
+  "components": [
+    "不",
+    "正"
+  ],
+  "componentMeanings": {
+    "不": "не",
+    "正": "правильный"
+  },
+  "wordIds": [
+    "ja:word:歪"
+  ],
+  "mnemonic": "То, что неправильно, стоит криво."
+}

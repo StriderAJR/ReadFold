@@ -33,7 +33,7 @@ export class SyncEngine {
     private transport: SyncTransport,
   ) {}
 
-  sync(ownerId: string): Promise<void> {
+  sync(ownerId: string, force = false): Promise<void> {
     if (ownerId === GUEST_OWNER) {
       return Promise.resolve();
     }
@@ -41,24 +41,24 @@ export class SyncEngine {
     if (existing) {
       return existing;
     }
-    const task = this.withLock(ownerId).finally(() => {
+    const task = this.withLock(ownerId, force).finally(() => {
       this.running.delete(ownerId);
     });
     this.running.set(ownerId, task);
     return task;
   }
 
-  private async withLock(ownerId: string): Promise<void> {
+  private async withLock(ownerId: string, force: boolean): Promise<void> {
     if (typeof navigator !== 'undefined' && navigator.locks) {
-      await navigator.locks.request(`readfold-sync:${ownerId}`, () => this.run(ownerId));
+      await navigator.locks.request(`readfold-sync:${ownerId}`, () => this.run(ownerId, force));
     } else {
-      await this.run(ownerId);
+      await this.run(ownerId, force);
     }
   }
 
-  private async run(ownerId: string): Promise<void> {
+  private async run(ownerId: string, force: boolean): Promise<void> {
     this.status = 'syncing';
-    const entries = (await this.repository.getOutbox(ownerId)).filter((entry) => entry.nextAttemptAt <= Date.now());
+    const entries = (await this.repository.getOutbox(ownerId)).filter((entry) => force || entry.nextAttemptAt <= Date.now());
     let pending = entries;
     let phase: 'push' | 'pull' = entries.length ? 'push' : 'pull';
     let batchSize = entries.length;
@@ -86,7 +86,11 @@ export class SyncEngine {
         }
         cursor = page.cursor;
       }
-      this.status = (await this.repository.getOutbox(ownerId)).length ? 'retrying' : 'synced';
+      const remaining = (await this.repository.getOutbox(ownerId)).length;
+      this.status = remaining ? 'retrying' : 'synced';
+      if (!remaining) {
+        await this.repository.markSyncSuccessful();
+      }
     } catch (error: unknown) {
       const failure = typeof error === 'object' && error !== null ? (error as SyncFailure) : {};
       const status = failure.status;

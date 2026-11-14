@@ -1,0 +1,53 @@
+{
+  "id": "ja:grammar:direction",
+  "title": "へ: направление",
+  "explanation": "После места частица へ обозначает направление движения. Читается え (e).",
+  "examples": [
+    {
+      "text": "公園へ行きます。",
+      "translation": "Иду в парк.",
+      "hiragana": "こうえんへいきます。",
+      "romaji": "Kōen e ikimasu.",
+      "literal": "Парк [направление] иду.",
+      "natural": "Иду в парк.",
+      "segments": [
+        {
+          "text": "公園",
+          "reading": "こうえん"
+        },
+        {
+          "text": "へ"
+        },
+        {
+          "text": "行",
+          "reading": "い"
+        },
+        {
+          "text": "きます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:existence"
+  ],
+  "explanationSegments": [
+    {
+      "text": "После места частица "
+    },
+    {
+      "reading": "へ",
+      "text": "へ"
+    },
+    {
+      "text": " обозначает направление движения. Читается "
+    },
+    {
+      "reading": "え",
+      "text": "え"
+    },
+    {
+      "text": " (e)."
+    }
+  ]
+}

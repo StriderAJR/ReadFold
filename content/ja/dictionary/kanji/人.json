@@ -1,0 +1,30 @@
+{
+  "id": "ja:kanji:人",
+  "character": "人",
+  "meanings": [
+    "человек"
+  ],
+  "on": [
+    "ジン",
+    "ニン"
+  ],
+  "kun": [
+    "ひと",
+    "り",
+    "と"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:村人",
+    "ja:word:人さらい",
+    "ja:word:個人",
+    "ja:word:殿上人",
+    "ja:word:二千人",
+    "ja:word:二人",
+    "ja:word:主人",
+    "ja:word:大人しい",
+    "ja:word:人生"
+  ],
+  "mnemonic": "Два расходящихся штриха напоминают шагающего человека.",
+  "componentMeanings": {}
+}

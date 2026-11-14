@@ -1,0 +1,22 @@
+{
+  "id": "ja:kanji:面",
+  "character": "面",
+  "meanings": [
+    "лицо"
+  ],
+  "on": [
+    "メン",
+    "ベン"
+  ],
+  "kun": [
+    "おも",
+    "おもて",
+    "つら"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:真面目"
+  ],
+  "mnemonic": "Лицо заключено в рамку, а внутри видны глаза и нос.",
+  "componentMeanings": {}
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:食う",
+    "surface": "食う",
+    "dictionaryForm": "食う",
+    "reading": "くう",
+    "romaji": "kuu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "есть, жрать; разговорное «есть»"
+    ]
+  },
+  {
+    "id": "ja:word:先日",
+    "surface": "先日",
+    "dictionaryForm": "先日",
+    "reading": "せんじつ",
+    "romaji": "senjitsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "на днях; недавно"
+    ]
+  },
+  {
+    "id": "ja:word:薬草",
+    "surface": "薬草",
+    "dictionaryForm": "薬草",
+    "reading": "やくそう",
+    "romaji": "yakusō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лекарственная трава"
+    ]
+  },
+  {
+    "id": "ja:word:探す",
+    "surface": "探す",
+    "dictionaryForm": "探す",
+    "reading": "さがす",
+    "romaji": "sagasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "искать"
+    ]
+  },
+  {
+    "id": "ja:word:森",
+    "surface": "森",
+    "dictionaryForm": "森",
+    "reading": "もり",
+    "romaji": "mori",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лес"
+    ]
+  },
+  {
+    "id": "ja:word:出かける",
+    "surface": "出かける",
+    "dictionaryForm": "出かける",
+    "reading": "でかける",
+    "romaji": "dekakeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "выходить; отправляться куда-либо"
+    ]
+  },
+  {
+    "id": "ja:word:出会う",
+    "surface": "出会う",
+    "dictionaryForm": "出会う",
+    "reading": "であう",
+    "romaji": "deau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "встречать; сталкиваться"
+    ]
+  },
+  {
+    "id": "ja:word:村人",
+    "surface": "村人",
+    "dictionaryForm": "村人",
+    "reading": "むらびと",
+    "romaji": "murabito",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "житель деревни; селянин"
+    ]
+  },
+  {
+    "id": "ja:word:壱",
+    "surface": "壱",
+    "dictionaryForm": "壱",
+    "reading": "いち",
+    "romaji": "ichi",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "один, формальная запись"
+    ]
+  },
+  {
+    "id": "ja:word:弐",
+    "surface": "弐",
+    "dictionaryForm": "弐",
+    "reading": "に",
+    "romaji": "ni",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "два, формальная запись"
+    ]
+  },
+  {
+    "id": "ja:word:参",
+    "surface": "参",
+    "dictionaryForm": "参",
+    "reading": "さん",
+    "romaji": "san",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "три, формальная запись"
+    ]
+  },
+  {
+    "id": "ja:word:言う",
+    "surface": "言う",
+    "dictionaryForm": "言う",
+    "reading": "いう",
+    "romaji": "iu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "говорить; называться"
+    ]
+  },
+  {
+    "id": "ja:word:名",
+    "surface": "名",
+    "dictionaryForm": "名",
+    "reading": "な",
+    "romaji": "na",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "имя; название"
+    ]
+  },
+  {
+    "id": "ja:word:人さらい",
+    "surface": "人さらい",
+    "dictionaryForm": "人さらい",
+    "reading": "ひとさらい",
+    "romaji": "hitosarai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "похититель людей; похищение людей"
+    ]
+  },
+  {
+    "id": "ja:word:まったく",
+    "surface": "まったく",
+    "dictionaryForm": "まったく",
+    "reading": "まったく",
+    "romaji": "mattaku",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "совершенно; право же"
+    ]
+  },
+  {
+    "id": "ja:word:強大",
+    "surface": "強大",
+    "dictionaryForm": "強大",
+    "reading": "きょうだい",
+    "romaji": "kyōdai",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "мощный; могущественный; огромный"
+    ]
+  },
+  {
+    "id": "ja:word:迷惑",
+    "surface": "迷惑",
+    "dictionaryForm": "迷惑",
+    "reading": "めいわく",
+    "romaji": "meiwaku",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": [
+      "неприятности; причиняющий неудобства"
+    ]
+  },
+  {
+    "id": "ja:word:極まりない",
+    "surface": "極まりない",
+    "dictionaryForm": "極まりない",
+    "reading": "きわまりない",
+    "romaji": "kiwamarinai",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "безмерный; чрезвычайный"
+    ]
+  },
+  {
+    "id": "ja:word:結婚",
+    "surface": "結婚",
+    "dictionaryForm": "結婚",
+    "reading": "けっこん",
+    "romaji": "kekkon",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "брак; вступление в брак"
+    ]
+  },
+  {
+    "id": "ja:word:活動",
+    "surface": "活動",
+    "dictionaryForm": "活動",
+    "reading": "かつどう",
+    "romaji": "katsudō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "деятельность"
+    ]
+  },
+  {
+    "id": "ja:word:略する",
+    "surface": "略する",
+    "dictionaryForm": "略する",
+    "reading": "りゃくする",
+    "romaji": "ryaku suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "сокращать, употреблять сокращённое название"
+    ]
+  },
+  {
+    "id": "ja:word:婚活",
+    "surface": "婚活",
+    "dictionaryForm": "婚活",
+    "reading": "こんかつ",
+    "romaji": "konkatsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "поиск партнёра для вступления в брак"
+    ]
+  },
+  {
+    "id": "ja:word:宮廷",
+    "surface": "宮廷",
+    "dictionaryForm": "宮廷",
+    "reading": "きゅうてい",
+    "romaji": "kyūtei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "императорский двор; дворец"
+    ]
+  },
+  {
+    "id": "ja:word:女狩り",
+    "surface": "女狩り",
+    "dictionaryForm": "女狩り",
+    "reading": "おんながり",
+    "romaji": "onnagari",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "охота на женщин"
+    ]
+  }
+]

@@ -454,6 +454,21 @@ export class LocalRepository {
     });
   }
 
+  async markSyncSuccessful(): Promise<number> {
+    const timestamp = Date.now();
+    await this.db.transaction('rw', this.db.metadata, this.db.diagnostics, this.db.syncEvents, async () => {
+      await this.db.metadata.put({ key: 'lastSuccessfulSync', value: String(timestamp) });
+      await this.db.diagnostics.where('category').equals('sync').delete();
+      await this.db.syncEvents.clear();
+    });
+    return timestamp;
+  }
+
+  async getLastSuccessfulSync(): Promise<number | undefined> {
+    const value = Number((await this.db.metadata.get('lastSuccessfulSync'))?.value);
+    return Number.isFinite(value) && value > 0 ? value : undefined;
+  }
+
   async exportSyncEvents(): Promise<SyncDiagnosticEvent[]> {
     const cutoff = Date.now() - diagnosticLifetime;
     await this.db.syncEvents.where('occurredAt').below(cutoff).delete();

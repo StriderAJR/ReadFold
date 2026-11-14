@@ -32,14 +32,14 @@ export function currentOwner() {
 export async function refreshUserData() {
   await queryClient.invalidateQueries({ queryKey: ['user'] });
 }
-export async function synchronize() {
+export async function synchronize(force = false) {
   const identity = useSession.getState().identity;
   if (identity && syncEngine) {
     const state = reduceOperations(await local.getOperations(identity.appUserId));
     if (!state.preferences.syncEnabled || useSession.getState().identity?.appUserId !== identity.appUserId) {
       return 'disabled';
     }
-    await syncEngine.sync(identity.appUserId);
+    await syncEngine.sync(identity.appUserId, force);
     await refreshUserData();
     return syncEngine.status;
   }

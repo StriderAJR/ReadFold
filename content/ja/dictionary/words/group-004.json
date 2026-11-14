@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:まあ",
+    "surface": "まあ",
+    "dictionaryForm": "まあ",
+    "reading": "まあ",
+    "romaji": "mā",
+    "partOfSpeech": "междометие, наречие",
+    "meanings": [
+      "ну; что ж; вообще-то"
+    ]
+  },
+  {
+    "id": "ja:word:給金",
+    "surface": "給金",
+    "dictionaryForm": "給金",
+    "reading": "きゅうきん",
+    "romaji": "kyūkin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жалованье; плата за работу"
+    ]
+  },
+  {
+    "id": "ja:word:もらう",
+    "surface": "もらう",
+    "dictionaryForm": "もらう",
+    "reading": "もらう",
+    "romaji": "morau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "получать"
+    ]
+  },
+  {
+    "id": "ja:word:二年",
+    "surface": "二年",
+    "dictionaryForm": "二年",
+    "reading": "にねん",
+    "romaji": "ninen",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "два года"
+    ]
+  },
+  {
+    "id": "ja:word:働く",
+    "surface": "働く",
+    "dictionaryForm": "働く",
+    "reading": "はたらく",
+    "romaji": "hataraku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "работать"
+    ]
+  },
+  {
+    "id": "ja:word:市井",
+    "surface": "市井",
+    "dictionaryForm": "市井",
+    "reading": "しせい",
+    "romaji": "shisei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "простонародная городская среда; жизнь простых людей"
+    ]
+  },
+  {
+    "id": "ja:word:戻る",
+    "surface": "戻る",
+    "dictionaryForm": "戻る",
+    "reading": "もどる",
+    "romaji": "modoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "возвращаться"
+    ]
+  },
+  {
+    "id": "ja:word:就職先",
+    "surface": "就職先",
+    "dictionaryForm": "就職先",
+    "reading": "しゅうしょくさき",
+    "romaji": "shūshokusaki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место трудоустройства; работодатель"
+    ]
+  },
+  {
+    "id": "ja:word:悪い",
+    "surface": "悪い",
+    "dictionaryForm": "悪い",
+    "reading": "わるい",
+    "romaji": "warui",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "плохой"
+    ]
+  },
+  {
+    "id": "ja:word:個人",
+    "surface": "個人",
+    "dictionaryForm": "個人",
+    "reading": "こじん",
+    "romaji": "kojin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "отдельный человек; личность"
+    ]
+  },
+  {
+    "id": "ja:word:意思",
+    "surface": "意思",
+    "dictionaryForm": "意思",
+    "reading": "いし",
+    "romaji": "ishi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "воля; намерение"
+    ]
+  },
+  {
+    "id": "ja:word:来る",
+    "surface": "来る",
+    "dictionaryForm": "来る",
+    "reading": "くる",
+    "romaji": "kuru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "приходить"
+    ]
+  },
+  {
+    "id": "ja:word:場合",
+    "surface": "場合",
+    "dictionaryForm": "場合",
+    "reading": "ばあい",
+    "romaji": "baai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "случай; обстоятельства"
+    ]
+  },
+  {
+    "id": "ja:word:薬師",
+    "surface": "薬師",
+    "dictionaryForm": "薬師",
+    "reading": "くすし",
+    "romaji": "kusushi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лекарь; изготовитель лекарств"
+    ]
+  },
+  {
+    "id": "ja:word:それなり",
+    "surface": "それなり",
+    "dictionaryForm": "それなり",
+    "reading": "それなり",
+    "romaji": "sorenari",
+    "partOfSpeech": "существительное, наречие",
+    "meanings": [
+      "по-своему; в соответствующей мере; достаточно сносно"
+    ]
+  },
+  {
+    "id": "ja:word:生活",
+    "surface": "生活",
+    "dictionaryForm": "生活",
+    "reading": "せいかつ",
+    "romaji": "seikatsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жизнь; образ жизни"
+    ]
+  },
+  {
+    "id": "ja:word:する",
+    "surface": "する",
+    "dictionaryForm": "する",
+    "reading": "する",
+    "romaji": "suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "делать"
+    ]
+  },
+  {
+    "id": "ja:word:はた迷惑",
+    "surface": "はた迷惑",
+    "dictionaryForm": "はた迷惑",
+    "reading": "はためいわく",
+    "romaji": "hatameiwaku",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": [
+      "неприятность для окружающих; доставляющий другим неудобства"
+    ]
+  },
+  {
+    "id": "ja:word:話",
+    "surface": "話",
+    "dictionaryForm": "話",
+    "reading": "はなし",
+    "romaji": "hanashi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "рассказ; дело; вопрос"
+    ]
+  },
+  {
+    "id": "ja:word:妙齢",
+    "surface": "妙齢",
+    "dictionaryForm": "妙齢",
+    "reading": "みょうれい",
+    "romaji": "myōrei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "молодой, брачный возраст девушки"
+    ]
+  },
+  {
+    "id": "ja:word:娘",
+    "surface": "娘",
+    "dictionaryForm": "娘",
+    "reading": "むすめ",
+    "romaji": "musume",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дочь; девушка"
+    ]
+  },
+  {
+    "id": "ja:word:捕まえる",
+    "surface": "捕まえる",
+    "dictionaryForm": "捕まえる",
+    "reading": "つかまえる",
+    "romaji": "tsukamaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "ловить; хватать"
+    ]
+  },
+  {
+    "id": "ja:word:宦官",
+    "surface": "宦官",
+    "dictionaryForm": "宦官",
+    "reading": "かんがん",
+    "romaji": "kangan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "евнух, дворцовый служащий"
+    ]
+  },
+  {
+    "id": "ja:word:売る",
+    "surface": "売る",
+    "dictionaryForm": "売る",
+    "reading": "うる",
+    "romaji": "uru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "продавать"
+    ]
+  }
+]

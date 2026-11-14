@@ -1,0 +1,22 @@
+{
+  "id": "ja:kanji:七",
+  "character": "七",
+  "meanings": [
+    "семь"
+  ],
+  "on": [
+    "シチ"
+  ],
+  "kun": [
+    "なな",
+    "ななつ",
+    "なの"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:壱七",
+    "ja:word:十七"
+  ],
+  "mnemonic": "Перекладина и загнутый штрих образуют семёрку с крючком.",
+  "componentMeanings": {}
+}

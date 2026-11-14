@@ -1,0 +1,27 @@
+{
+  "id": "ja:kanji:女",
+  "character": "女",
+  "meanings": [
+    "женщина"
+  ],
+  "on": [
+    "ジョ",
+    "ニョ",
+    "ニョウ"
+  ],
+  "kun": [
+    "おんな",
+    "め"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:女狩り",
+    "ja:word:女官",
+    "ja:word:女",
+    "ja:word:下女",
+    "ja:word:官女",
+    "ja:word:侍女"
+  ],
+  "mnemonic": "Перекрещённые руки и согнутая поза напоминают сидящую женщину.",
+  "componentMeanings": {}
+}

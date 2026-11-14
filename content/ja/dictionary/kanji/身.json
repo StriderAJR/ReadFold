@@ -1,0 +1,19 @@
+{
+  "id": "ja:kanji:身",
+  "character": "身",
+  "meanings": [
+    "тело"
+  ],
+  "on": [
+    "シン"
+  ],
+  "kun": [
+    "み"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:身代わり"
+  ],
+  "mnemonic": "Высокий силуэт с вытянутой ногой помогает представить тело.",
+  "componentMeanings": {}
+}

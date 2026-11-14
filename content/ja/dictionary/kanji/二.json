@@ -1,0 +1,29 @@
+{
+  "id": "ja:kanji:二",
+  "character": "二",
+  "meanings": [
+    "два"
+  ],
+  "on": [
+    "ニ",
+    "ジ"
+  ],
+  "kun": [
+    "ふた",
+    "ふたつ",
+    "ふたたび"
+  ],
+  "components": [
+    "一"
+  ],
+  "wordIds": [
+    "ja:word:二年",
+    "ja:word:二千人",
+    "ja:word:二人",
+    "ja:word:二度目"
+  ],
+  "mnemonic": "Две параллельные черты легко пересчитать: один, два.",
+  "componentMeanings": {
+    "一": "одна черта"
+  }
+}

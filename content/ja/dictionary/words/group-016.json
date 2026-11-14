@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:わかる",
+    "surface": "わかる",
+    "dictionaryForm": "わかる",
+    "reading": "わかる",
+    "romaji": "wakaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "понимать; знать"
+    ]
+  },
+  {
+    "id": "ja:word:人生",
+    "surface": "人生",
+    "dictionaryForm": "人生",
+    "reading": "じんせい",
+    "romaji": "jinsei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жизнь человека"
+    ]
+  },
+  {
+    "id": "ja:word:齢",
+    "surface": "齢",
+    "dictionaryForm": "齢",
+    "reading": "よわい",
+    "romaji": "yowai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "возраст; лета"
+    ]
+  },
+  {
+    "id": "ja:word:十七",
+    "surface": "十七",
+    "dictionaryForm": "十七",
+    "reading": "じゅうなな",
+    "romaji": "jūnana",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "семнадцать"
+    ]
+  },
+  {
+    "id": "ja:word:達観する",
+    "surface": "達観する",
+    "dictionaryForm": "達観する",
+    "reading": "たっかんする",
+    "romaji": "takkan suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "смотреть на вещи отрешённо и мудро; постигать суть"
+    ]
+  },
+  {
+    "id": "ja:word:思考",
+    "surface": "思考",
+    "dictionaryForm": "思考",
+    "reading": "しこう",
+    "romaji": "shikō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мышление; мыслительный процесс"
+    ]
+  },
+  {
+    "id": "ja:word:持ち主",
+    "surface": "持ち主",
+    "dictionaryForm": "持ち主",
+    "reading": "もちぬし",
+    "romaji": "mochinushi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "обладатель; владелец"
+    ]
+  },
+  {
+    "id": "ja:word:抑える",
+    "surface": "抑える",
+    "dictionaryForm": "抑える",
+    "reading": "おさえる",
+    "romaji": "osaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "сдерживать; подавлять"
+    ]
+  },
+  {
+    "id": "ja:word:好奇心",
+    "surface": "好奇心",
+    "dictionaryForm": "好奇心",
+    "reading": "こうきしん",
+    "romaji": "kōkishin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "любопытство"
+    ]
+  },
+  {
+    "id": "ja:word:知識欲",
+    "surface": "知識欲",
+    "dictionaryForm": "知識欲",
+    "reading": "ちしきよく",
+    "romaji": "chishikiyoku",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жажда знаний"
+    ]
+  },
+  {
+    "id": "ja:word:ほんの",
+    "surface": "ほんの",
+    "dictionaryForm": "ほんの",
+    "reading": "ほんの",
+    "romaji": "honno",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "всего лишь; совсем немного"
+    ]
+  },
+  {
+    "id": "ja:word:少し",
+    "surface": "少し",
+    "dictionaryForm": "少し",
+    "reading": "すこし",
+    "romaji": "sukoshi",
+    "partOfSpeech": "наречие, существительное",
+    "meanings": [
+      "немного"
+    ]
+  },
+  {
+    "id": "ja:word:正義感",
+    "surface": "正義感",
+    "dictionaryForm": "正義感",
+    "reading": "せいぎかん",
+    "romaji": "seigikan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "чувство справедливости"
+    ]
+  },
+  {
+    "id": "ja:word:数日後",
+    "surface": "数日後",
+    "dictionaryForm": "数日後",
+    "reading": "すうじつご",
+    "romaji": "sūjitsugo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "несколько дней спустя"
+    ]
+  },
+  {
+    "id": "ja:word:怪奇",
+    "surface": "怪奇",
+    "dictionaryForm": "怪奇",
+    "reading": "かいき",
+    "romaji": "kaiki",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": [
+      "загадочное, зловещее явление; сверхъестественная странность"
+    ]
+  },
+  {
+    "id": "ja:word:真相",
+    "surface": "真相",
+    "dictionaryForm": "真相",
+    "reading": "しんそう",
+    "romaji": "shinsō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "истинное положение дел; подоплёка"
+    ]
+  },
+  {
+    "id": "ja:word:暴く",
+    "surface": "暴く",
+    "dictionaryForm": "暴く",
+    "reading": "あばく",
+    "romaji": "abaku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "раскрывать; разоблачать"
+    ]
+  },
+  {
+    "id": "ja:word:生まれる",
+    "surface": "生まれる",
+    "dictionaryForm": "生まれる",
+    "reading": "うまれる",
+    "romaji": "umareru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "рождаться"
+    ]
+  },
+  {
+    "id": "ja:word:乳幼児",
+    "surface": "乳幼児",
+    "dictionaryForm": "乳幼児",
+    "reading": "にゅうようじ",
+    "romaji": "nyūyōji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "младенцы и дети раннего возраста"
+    ]
+  },
+  {
+    "id": "ja:word:連続死",
+    "surface": "連続死",
+    "dictionaryForm": "連続死",
+    "reading": "れんぞくし",
+    "romaji": "renzokushi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "череда смертей; последовательные смерти"
+    ]
+  },
+  {
+    "id": "ja:word:先代",
+    "surface": "先代",
+    "dictionaryForm": "先代",
+    "reading": "せんだい",
+    "romaji": "sendai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "предыдущее поколение; прежний правитель"
+    ]
+  },
+  {
+    "id": "ja:word:側室",
+    "surface": "側室",
+    "dictionaryForm": "側室",
+    "reading": "そくしつ",
+    "romaji": "sokushitsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "наложница правителя; второстепенная супруга"
+    ]
+  },
+  {
+    "id": "ja:word:呪い",
+    "surface": "呪い",
+    "dictionaryForm": "呪い",
+    "reading": "のろい",
+    "romaji": "noroi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "проклятие"
+    ]
+  },
+  {
+    "id": "ja:word:やる",
+    "surface": "やる",
+    "dictionaryForm": "やる",
+    "reading": "やる",
+    "romaji": "yaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "делать; заниматься чем-либо"
+    ]
+  }
+]

@@ -3,11 +3,13 @@ import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, ListChecks, Search, Sparkles, X } from 'lucide-react';
 import { useAppData, PageTitle, ErrorState, BookCard, BookArt } from './Common';
+import { useDictionary, useDictionaryIndex } from '../application/hooks';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 export function HomePage() {
   const { t } = useTranslation();
-  const { user, catalog, dictionary } = useAppData();
+  const { user, catalog } = useAppData({ loadDictionary: false });
+  const dictionaryIndex = useDictionaryIndex();
   const books = catalog.data ?? [];
   const reading = Object.entries(user.data?.readings ?? {}).sort(([, a], [, b]) =>
     b.updatedAt.localeCompare(a.updatedAt),
@@ -42,7 +44,7 @@ export function HomePage() {
               {t('library')}
             </span>
             <span>
-              <b>{dictionary.data?.words.length ?? '—'}</b>
+              <b>{dictionaryIndex.data ? Object.keys(dictionaryIndex.data.byId).filter((id) => id.startsWith('ja:word:')).length : '—'}</b>
               {t('words')}
             </span>
             <span>
@@ -132,8 +134,9 @@ export function HomePage() {
 }
 export function LibraryPage() {
   const { t } = useTranslation();
-  const { catalog, user, dictionary } = useAppData();
   const [query, setQuery] = useState('');
+  const { catalog, user } = useAppData({ loadDictionary: false });
+  const dictionary = useDictionary(query.trim().length > 0);
   const [filter, setFilter] = useState('all');
   const [difficulty, setDifficulty] = useState('all');
   const recent = Object.keys(user.data?.readings ?? {}).map((id) => id.split('/')[0]);
@@ -216,7 +219,7 @@ export function LibraryPage() {
 export function BookPage() {
   const { bookId = '' } = useParams();
   const { t } = useTranslation();
-  const { catalog, user } = useAppData();
+  const { catalog, user } = useAppData({ loadDictionary: false });
   const book = catalog.data?.find((b) => b.id === bookId);
   if (!book) {
     return <ErrorState message={catalog.isLoading ? t('loading') : t('noResults')} />;

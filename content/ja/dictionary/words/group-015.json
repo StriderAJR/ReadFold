@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:外",
+    "surface": "外",
+    "dictionaryForm": "外",
+    "reading": "そと",
+    "romaji": "soto",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "снаружи; внешняя сторона"
+    ]
+  },
+  {
+    "id": "ja:word:出る",
+    "surface": "出る",
+    "dictionaryForm": "出る",
+    "reading": "でる",
+    "romaji": "deru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "выходить"
+    ]
+  },
+  {
+    "id": "ja:word:だれ",
+    "surface": "だれ",
+    "dictionaryForm": "だれ",
+    "reading": "だれ",
+    "romaji": "dare",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "кто"
+    ]
+  },
+  {
+    "id": "ja:word:迎え",
+    "surface": "迎え",
+    "dictionaryForm": "迎え",
+    "reading": "むかえ",
+    "romaji": "mukae",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "встреча; приход за кем-либо"
+    ]
+  },
+  {
+    "id": "ja:word:くれる",
+    "surface": "くれる",
+    "dictionaryForm": "くれる",
+    "reading": "くれる",
+    "romaji": "kureru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "делать что-либо для говорящего или близкого ему лица"
+    ]
+  },
+  {
+    "id": "ja:word:隣",
+    "surface": "隣",
+    "dictionaryForm": "隣",
+    "reading": "となり",
+    "romaji": "tonari",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "соседнее место; по соседству"
+    ]
+  },
+  {
+    "id": "ja:word:洗い場",
+    "surface": "洗い場",
+    "dictionaryForm": "洗い場",
+    "reading": "あらいば",
+    "romaji": "araiba",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место для мытья или стирки"
+    ]
+  },
+  {
+    "id": "ja:word:たくさん",
+    "surface": "たくさん",
+    "dictionaryForm": "たくさん",
+    "reading": "たくさん",
+    "romaji": "takusan",
+    "partOfSpeech": "наречие, существительное",
+    "meanings": [
+      "много; большое количество"
+    ]
+  },
+  {
+    "id": "ja:word:残る",
+    "surface": "残る",
+    "dictionaryForm": "残る",
+    "reading": "のこる",
+    "romaji": "nokoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "оставаться"
+    ]
+  },
+  {
+    "id": "ja:word:好き",
+    "surface": "好き",
+    "dictionaryForm": "好き",
+    "reading": "すき",
+    "romaji": "suki",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "нравящийся; по собственному желанию"
+    ]
+  },
+  {
+    "id": "ja:word:いただく",
+    "surface": "いただく",
+    "dictionaryForm": "いただく",
+    "reading": "いただく",
+    "romaji": "itadaku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "получать; скромная форма"
+    ]
+  },
+  {
+    "id": "ja:word:分",
+    "surface": "分",
+    "dictionaryForm": "分",
+    "reading": "ぶん",
+    "romaji": "bun",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "доля; соответствующее количество"
+    ]
+  },
+  {
+    "id": "ja:word:働き",
+    "surface": "働き",
+    "dictionaryForm": "働き",
+    "reading": "はたらき",
+    "romaji": "hataraki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "работа; труд; выполненная работа"
+    ]
+  },
+  {
+    "id": "ja:word:つもり",
+    "surface": "つもり",
+    "dictionaryForm": "つもり",
+    "reading": "つもり",
+    "romaji": "tsumori",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "намерение; план"
+    ]
+  },
+  {
+    "id": "ja:word:真面目",
+    "surface": "真面目",
+    "dictionaryForm": "真面目",
+    "reading": "まじめ",
+    "romaji": "majime",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "серьёзный; добросовестный"
+    ]
+  },
+  {
+    "id": "ja:word:大人しい",
+    "surface": "大人しい",
+    "dictionaryForm": "大人しい",
+    "reading": "おとなしい",
+    "romaji": "otonashii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "тихий; послушный; спокойный"
+    ]
+  },
+  {
+    "id": "ja:word:そのうち",
+    "surface": "そのうち",
+    "dictionaryForm": "そのうち",
+    "reading": "そのうち",
+    "romaji": "sono uchi",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "со временем; рано или поздно"
+    ]
+  },
+  {
+    "id": "ja:word:まさか",
+    "surface": "まさか",
+    "dictionaryForm": "まさか",
+    "reading": "まさか",
+    "romaji": "masaka",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "неужели; уж не; с отрицанием «вряд ли»"
+    ]
+  },
+  {
+    "id": "ja:word:ありえる",
+    "surface": "ありえる",
+    "dictionaryForm": "ありえる",
+    "reading": "ありえる",
+    "romaji": "arieru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "быть возможным"
+    ]
+  },
+  {
+    "id": "ja:word:残念",
+    "surface": "残念",
+    "dictionaryForm": "残念",
+    "reading": "ざんねん",
+    "romaji": "zannen",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "досадный; вызывающий сожаление"
+    ]
+  },
+  {
+    "id": "ja:word:考え",
+    "surface": "考え",
+    "dictionaryForm": "考え",
+    "reading": "かんがえ",
+    "romaji": "kangae",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мысль; рассуждение; замысел"
+    ]
+  },
+  {
+    "id": "ja:word:甘い",
+    "surface": "甘い",
+    "dictionaryForm": "甘い",
+    "reading": "あまい",
+    "romaji": "amai",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "сладкий; наивный; недостаточно строгий"
+    ]
+  },
+  {
+    "id": "ja:word:何",
+    "surface": "何",
+    "dictionaryForm": "何",
+    "reading": "なに",
+    "romaji": "nani",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "что"
+    ]
+  },
+  {
+    "id": "ja:word:起こる",
+    "surface": "起こる",
+    "dictionaryForm": "起こる",
+    "reading": "おこる",
+    "romaji": "okoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "случаться; происходить"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "id": "ja:kanji:一",
+  "character": "一",
+  "meanings": [
+    "один"
+  ],
+  "on": [
+    "イチ",
+    "イツ"
+  ],
+  "kun": [
+    "ひと",
+    "ひとつ"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:一生",
+    "ja:word:一度",
+    "ja:word:一方",
+    "ja:word:一番"
+  ],
+  "mnemonic": "Одна ровная черта обозначает один.",
+  "componentMeanings": {}
+}

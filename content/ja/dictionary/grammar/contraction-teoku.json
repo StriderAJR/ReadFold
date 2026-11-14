@@ -1,0 +1,64 @@
+{
+  "id": "ja:grammar:contraction-teoku",
+  "title": "ておく → とく",
+  "explanation": "В разговорной речи ておく сокращается до とく: 置いておいて → 置いといて.",
+  "examples": [
+    {
+      "text": "机に置いといて。",
+      "translation": "Оставь на столе.",
+      "hiragana": "つくえにおいといて。",
+      "romaji": "Tsukue ni oitōite.",
+      "literal": "На столе оставь.",
+      "natural": "Оставь на столе.",
+      "segments": [
+        {
+          "text": "机",
+          "reading": "つくえ"
+        },
+        {
+          "text": "に置いといて。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [],
+  "explanationSegments": [
+    {
+      "text": "В разговорной речи "
+    },
+    {
+      "reading": "ておく",
+      "text": "ておく"
+    },
+    {
+      "text": " сокращается до "
+    },
+    {
+      "reading": "とく",
+      "text": "とく"
+    },
+    {
+      "text": ": "
+    },
+    {
+      "text": "置"
+    },
+    {
+      "reading": "いておいて",
+      "text": "いておいて"
+    },
+    {
+      "text": " → "
+    },
+    {
+      "text": "置"
+    },
+    {
+      "reading": "いといて",
+      "text": "いといて"
+    },
+    {
+      "text": "."
+    }
+  ]
+}

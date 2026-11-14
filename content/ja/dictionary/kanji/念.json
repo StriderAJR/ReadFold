@@ -1,0 +1,23 @@
+{
+  "id": "ja:kanji:念",
+  "character": "念",
+  "meanings": [
+    "мысль"
+  ],
+  "on": [
+    "ネン"
+  ],
+  "kun": [],
+  "components": [
+    "今",
+    "心"
+  ],
+  "wordIds": [
+    "ja:word:残念"
+  ],
+  "mnemonic": "То, что сейчас в сердце, занимает мысли.",
+  "componentMeanings": {
+    "今": "сейчас",
+    "心": "сердце"
+  }
+}

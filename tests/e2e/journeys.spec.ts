@@ -68,6 +68,16 @@ test('dictionary word occurrence navigates back to its source sentence', async (
   await expect(page.locator('[id="sentence-demo.s2"]')).toHaveClass(/sentence-active/);
 });
 
+test('grammar card adds the current book sentence and contextual role', async ({ page }) => {
+  await page.goto('./#/read/demo/demo.chapter-1');
+  const sentence = page.locator('[id="sentence-demo.s1"]');
+  await sentence.locator('[data-entity-id="ja:grammar:topic"] .text-link').click();
+  await expect(page).toHaveURL(/#\/grammar\/ja%3Agrammar%3Atopic\?returnTo=/);
+  const bookExample = page.locator('.in-book-grammar-example');
+  await expect(bookExample.getByRole('heading', { name: 'Пример из этой книги' })).toBeVisible();
+  await expect(bookExample).toContainText('は выделяет 私');
+});
+
 test('reader details return to the sentence and canvas settings control examples', async ({ page }) => {
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');

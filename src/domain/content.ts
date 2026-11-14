@@ -67,6 +67,7 @@ export const grammarSchema = z
     id: grammarIdSchema,
     title: textSchema,
     explanation: textSchema,
+    explanationSegments: z.array(z.object({ text: textSchema, reading: textSchema.optional() }).strict()).min(1).optional(),
     examples: z.array(z.object({
       text: textSchema,
       translation: textSchema,
@@ -79,8 +80,9 @@ export const grammarSchema = z
       example.segments.map((segment) => segment.text).join('') === example.text
     ), { message: 'Segments must reproduce example text', path: ['segments'] })).min(1),
     relatedIds: z.array(grammarIdSchema),
-  })
-  .strict();
+  }).strict().refine((grammar) => !grammar.explanationSegments || grammar.explanationSegments.map((segment) => segment.text).join('') === grammar.explanation, {
+    message: 'Segments must reproduce grammar explanation', path: ['explanationSegments'],
+  });
 export const dictionarySchema = z
   .object({
     schemaVersion: z.literal(2),
@@ -149,6 +151,80 @@ export const dictionarySchema = z
       }
     });
   });
+const dictionaryKindSchema = z.enum(['words', 'kanji', 'grammar']);
+const publishedContentPathSchema = z.string()
+  .regex(/^books\/[A-Za-z0-9._/-]+\.json$/)
+  .refine((path) => path.split('/').every((part) => part !== '..' && part !== '.'), 'Unsafe published content path');
+const dictionaryShardPathSchema = z.string()
+  .regex(/^ja\/dictionary\/[A-Za-z0-9._/-]+\.json$/)
+  .refine((path) => path.split('/').every((part) => part !== '..' && part !== '.'), 'Unsafe dictionary shard path');
+const occurrenceShardPathSchema = z.string()
+  .regex(/^ja\/occurrences\/[A-Za-z0-9._/-]+\.json$/)
+  .refine((path) => path.split('/').every((part) => part !== '..' && part !== '.'), 'Unsafe occurrence shard path');
+const dictionaryIndexEntrySchema = z.object({
+  kind: dictionaryKindSchema,
+  file: dictionaryShardPathSchema,
+  occurrencesFile: occurrenceShardPathSchema,
+}).strict();
+export const dictionaryIndexSchema = z.object({
+  schemaVersion: z.literal(1),
+  sections: z.object({
+    words: z.array(dictionaryShardPathSchema),
+    kanji: z.array(dictionaryShardPathSchema),
+    grammar: z.array(dictionaryShardPathSchema),
+  }).strict(),
+  byId: z.record(idSchema, dictionaryIndexEntrySchema),
+}).strict().superRefine((index, context) => {
+  const allSectionPaths = [...index.sections.words, ...index.sections.kanji, ...index.sections.grammar];
+  if (new Set(allSectionPaths).size !== allSectionPaths.length) {
+    context.addIssue({ code: z.ZodIssueCode.custom, path: ['sections'], message: 'Shard files must belong to one section' });
+  }
+  for (const kind of ['words', 'kanji', 'grammar'] as const) {
+    if (new Set(index.sections[kind]).size !== index.sections[kind].length) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['sections', kind], message: 'Duplicate shard path' });
+    }
+  }
+  for (const [id, entry] of Object.entries(index.byId)) {
+    const typedId = entry.kind === 'words'
+      ? wordIdSchema
+      : entry.kind === 'kanji'
+        ? kanjiIdSchema
+        : grammarIdSchema;
+    if (!typedId.safeParse(id).success) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['byId', id], message: 'ID prefix does not match card kind' });
+    }
+    if (!index.sections[entry.kind].includes(entry.file)) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['byId', id, 'file'], message: 'Card file is not in its section' });
+    }
+  }
+});
+export const wordShardSchema = z.object({ schemaVersion: z.literal(1), kind: z.literal('words'), entries: z.array(wordSchema) }).strict()
+  .superRefine((shard, context) => {
+    if (!uniqueIds(shard.entries)) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['entries'], message: 'Duplicate word IDs in shard' });
+    }
+  });
+export const kanjiShardSchema = z.object({ schemaVersion: z.literal(1), kind: z.literal('kanji'), entries: z.array(kanjiSchema) }).strict()
+  .superRefine((shard, context) => {
+    if (!uniqueIds(shard.entries)) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['entries'], message: 'Duplicate kanji IDs in shard' });
+    }
+  });
+export const grammarShardSchema = z.object({ schemaVersion: z.literal(1), kind: z.literal('grammar'), entries: z.array(grammarSchema) }).strict()
+  .superRefine((shard, context) => {
+    if (!uniqueIds(shard.entries)) {
+      context.addIssue({ code: z.ZodIssueCode.custom, path: ['entries'], message: 'Duplicate grammar IDs in shard' });
+    }
+  });
+export const occurrenceShardSchema = z.object({
+  schemaVersion: z.literal(1),
+  byId: z.record(idSchema, z.array(z.object({
+    bookId: idSchema,
+    chapterId: idSchema,
+    chapterPath: publishedContentPathSchema,
+    sentenceId: idSchema,
+  }).strict())),
+}).strict();
 export const sentenceSchema = z
   .object({
     id: idSchema,
@@ -174,7 +250,13 @@ export const sentenceSchema = z
       )
       .min(1),
     kanjiIds: z.array(kanjiIdSchema),
-    grammarOccurrences: z.array(z.object({ grammarId: grammarIdSchema, role: textSchema }).strict()),
+    grammarOccurrences: z.array(z.object({
+      grammarId: grammarIdSchema,
+      role: textSchema,
+      roleSegments: z.array(z.object({ text: textSchema, reading: textSchema.optional() }).strict()).min(1).optional(),
+    }).strict().refine((occurrence) => !occurrence.roleSegments || occurrence.roleSegments.map((segment) => segment.text).join('') === occurrence.role, {
+      message: 'Segments must reproduce grammar role', path: ['roleSegments'],
+    })),
   })
   .strict()
   .refine((sentence) => sentence.segments.map((segment) => segment.text).join('') === sentence.text, {
@@ -207,9 +289,14 @@ export type Word = z.infer<typeof wordSchema>;
 export type Kanji = z.infer<typeof kanjiSchema>;
 export type Grammar = z.infer<typeof grammarSchema>;
 export type Dictionary = z.infer<typeof dictionarySchema>;
+export type DictionaryKind = z.infer<typeof dictionaryKindSchema>;
+export type DictionaryIndex = z.infer<typeof dictionaryIndexSchema>;
+export type DictionaryEntries = Pick<Dictionary, 'words' | 'kanji' | 'grammar'>;
+export type DictionaryEntry = Word | Kanji | Grammar;
+export type OccurrenceLocation = z.infer<typeof occurrenceShardSchema>['byId'][string][number];
 
 /** Validate links after independently parsing externally loaded files. */
-export function validateChapterReferences(chapter: Chapter, book: BookMetadata, dictionary: Dictionary): void {
+export function validateChapterReferences(chapter: Chapter, book: BookMetadata, dictionary: DictionaryEntries): void {
   const metadata = book.chapters.find((item) => item.id === chapter.id);
   const sentences = chapter.paragraphs.flatMap((paragraph) => paragraph.sentences);
   if (chapter.bookId !== book.id || !metadata || metadata.sentenceCount !== sentences.length) {

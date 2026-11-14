@@ -1,0 +1,90 @@
+{
+  "id": "ja:grammar:polite",
+  "title": "〜ます: вежливая форма",
+  "explanation": "Основа глагола + ます образует вежливую непрошедшую форму: настоящее, привычное или будущее действие. 行く → 行きます; 飲む → 飲みます.",
+  "examples": [
+    {
+      "text": "水を飲みます。",
+      "translation": "Пью воду.",
+      "hiragana": "みずをのみます。",
+      "romaji": "Mizu o nomimasu.",
+      "literal": "Воду [объект] пью.",
+      "natural": "Пью воду.",
+      "segments": [
+        {
+          "text": "水",
+          "reading": "みず"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "飲",
+          "reading": "の"
+        },
+        {
+          "text": "みます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:progressive"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Основа глагола + "
+    },
+    {
+      "reading": "ます",
+      "text": "ます"
+    },
+    {
+      "text": " образует вежливую непрошедшую форму: настоящее, привычное или будущее действие. "
+    },
+    {
+      "reading": "い",
+      "text": "行"
+    },
+    {
+      "reading": "く",
+      "text": "く"
+    },
+    {
+      "text": " → "
+    },
+    {
+      "reading": "い",
+      "text": "行"
+    },
+    {
+      "reading": "きます",
+      "text": "きます"
+    },
+    {
+      "text": "; "
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "む",
+      "text": "む"
+    },
+    {
+      "text": " → "
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "みます",
+      "text": "みます"
+    },
+    {
+      "text": "."
+    }
+  ]
+}

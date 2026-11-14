@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:理",
+    "surface": "理",
+    "dictionaryForm": "理",
+    "reading": "り",
+    "romaji": "ri",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "разумный порядок; логика; смысл"
+    ]
+  },
+  {
+    "id": "ja:word:かなう",
+    "surface": "かなう",
+    "dictionaryForm": "かなう",
+    "reading": "かなう",
+    "romaji": "kanau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "соответствовать; согласовываться"
+    ]
+  },
+  {
+    "id": "ja:word:考える",
+    "surface": "考える",
+    "dictionaryForm": "考える",
+    "reading": "かんがえる",
+    "romaji": "kangaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "думать; размышлять"
+    ]
+  },
+  {
+    "id": "ja:word:籠",
+    "surface": "籠",
+    "dictionaryForm": "籠",
+    "reading": "かご",
+    "romaji": "kago",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "корзина"
+    ]
+  },
+  {
+    "id": "ja:word:そば",
+    "surface": "そば",
+    "dictionaryForm": "そば",
+    "reading": "そば",
+    "romaji": "soba",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "поблизости; рядом"
+    ]
+  },
+  {
+    "id": "ja:word:並べる",
+    "surface": "並べる",
+    "dictionaryForm": "並べる",
+    "reading": "ならべる",
+    "romaji": "naraberu",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "расставлять; располагать в ряд"
+    ]
+  },
+  {
+    "id": "ja:word:汚れ物",
+    "surface": "汚れ物",
+    "dictionaryForm": "汚れ物",
+    "reading": "よごれもの",
+    "romaji": "yogoremono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "грязные вещи; грязное бельё"
+    ]
+  },
+  {
+    "id": "ja:word:当たる",
+    "surface": "当たる",
+    "dictionaryForm": "当たる",
+    "reading": "あたる",
+    "romaji": "ataru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "попадать; подвергаться воздействию; быть освещённым"
+    ]
+  },
+  {
+    "id": "ja:word:洗濯済み",
+    "surface": "洗濯済み",
+    "dictionaryForm": "洗濯済み",
+    "reading": "せんたくずみ",
+    "romaji": "sentakuzumi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "уже выстиранный; стирка завершена"
+    ]
+  },
+  {
+    "id": "ja:word:持ち手",
+    "surface": "持ち手",
+    "dictionaryForm": "持ち手",
+    "reading": "もちて",
+    "romaji": "mochite",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "ручка предмета"
+    ]
+  },
+  {
+    "id": "ja:word:かける",
+    "surface": "かける",
+    "dictionaryForm": "かける",
+    "reading": "かける",
+    "romaji": "kakeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "вешать; подвешивать"
+    ]
+  },
+  {
+    "id": "ja:word:木札",
+    "surface": "木札",
+    "dictionaryForm": "木札",
+    "reading": "きふだ",
+    "romaji": "kifuda",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "деревянная бирка; деревянная табличка"
+    ]
+  },
+  {
+    "id": "ja:word:植物",
+    "surface": "植物",
+    "dictionaryForm": "植物",
+    "reading": "しょくぶつ",
+    "romaji": "shokubutsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "растение"
+    ]
+  },
+  {
+    "id": "ja:word:模する",
+    "surface": "模する",
+    "dictionaryForm": "模する",
+    "reading": "もする",
+    "romaji": "mo suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "изображать по образцу; подражать форме"
+    ]
+  },
+  {
+    "id": "ja:word:絵",
+    "surface": "絵",
+    "dictionaryForm": "絵",
+    "reading": "え",
+    "romaji": "e",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "рисунок; изображение"
+    ]
+  },
+  {
+    "id": "ja:word:数字",
+    "surface": "数字",
+    "dictionaryForm": "数字",
+    "reading": "すうじ",
+    "romaji": "sūji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "цифра; число, записанное цифрами"
+    ]
+  },
+  {
+    "id": "ja:word:書く",
+    "surface": "書く",
+    "dictionaryForm": "書く",
+    "reading": "かく",
+    "romaji": "kaku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "писать"
+    ]
+  },
+  {
+    "id": "ja:word:字",
+    "surface": "字",
+    "dictionaryForm": "字",
+    "reading": "じ",
+    "romaji": "ji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "письменный знак; буква; грамотность"
+    ]
+  },
+  {
+    "id": "ja:word:読む",
+    "surface": "読む",
+    "dictionaryForm": "読む",
+    "reading": "よむ",
+    "romaji": "yomu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "читать"
+    ]
+  },
+  {
+    "id": "ja:word:なんせ",
+    "surface": "なんせ",
+    "dictionaryForm": "なんせ",
+    "reading": "なんせ",
+    "romaji": "nanse",
+    "partOfSpeech": "союз, наречие",
+    "meanings": [
+      "ведь; как-никак"
+    ]
+  },
+  {
+    "id": "ja:word:攫う",
+    "surface": "攫う",
+    "dictionaryForm": "攫う",
+    "reading": "さらう",
+    "romaji": "sarau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "похищать; умыкать"
+    ]
+  },
+  {
+    "id": "ja:word:連れ込む",
+    "surface": "連れ込む",
+    "dictionaryForm": "連れ込む",
+    "reading": "つれこむ",
+    "romaji": "tsurekomu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "приводить внутрь; затаскивать"
+    ]
+  },
+  {
+    "id": "ja:word:前",
+    "surface": "前",
+    "dictionaryForm": "前",
+    "reading": "まえ",
+    "romaji": "mae",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "перед; до; раньше"
+    ]
+  },
+  {
+    "id": "ja:word:最低限",
+    "surface": "最低限",
+    "dictionaryForm": "最低限",
+    "reading": "さいていげん",
+    "romaji": "saiteigen",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "необходимый минимум"
+    ]
+  }
+]

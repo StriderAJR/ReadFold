@@ -17,7 +17,7 @@ function managedPath(path) {
   }
   return (
     rootFiles.has(path) ||
-    (/^(assets|books|brand|covers)\/[a-zA-Z0-9_./-]+\.(js|css|json|png|jpe?g|webp|svg|ico|woff2?)$/.test(path) &&
+    (/^(assets|books|ja|brand|covers)\/[a-zA-Z0-9_./-]+\.(js|css|json|png|jpe?g|webp|svg|ico|woff2?)$/.test(path) &&
       !path.split('/').some((part) => part.startsWith('.')))
   );
 }
@@ -81,7 +81,7 @@ export async function publishDocs(workspace = process.cwd()) {
   if (!html.includes('/ReadFold/assets/') || html.includes('/src/')) {
     throw new Error('Build must use /ReadFold/ and compiled assets');
   }
-  const reference = await readFile(await safePath(workspace, join('public', verification)));
+  const reference = await readFile(await safePath(workspace, join('dist_public', verification)));
   if (hash(await readFile(join(source, verification))) !== hash(reference)) {
     throw new Error('Google verification differs from public source');
   }

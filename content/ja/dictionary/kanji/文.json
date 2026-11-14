@@ -1,0 +1,21 @@
+{
+  "id": "ja:kanji:文",
+  "character": "文",
+  "meanings": [
+    "текст"
+  ],
+  "on": [
+    "ブン",
+    "モン"
+  ],
+  "kun": [
+    "ふみ",
+    "あや"
+  ],
+  "components": [],
+  "componentMeanings": {},
+  "wordIds": [
+    "ja:word:文字"
+  ],
+  "mnemonic": "Крыша над перекрещёнными линиями похожа на узор письменного текста."
+}

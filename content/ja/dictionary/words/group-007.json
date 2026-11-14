@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:石畳",
+    "surface": "石畳",
+    "dictionaryForm": "石畳",
+    "reading": "いしだたみ",
+    "romaji": "ishidatami",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "каменная мостовая; мощение камнем"
+    ]
+  },
+  {
+    "id": "ja:word:水場",
+    "surface": "水場",
+    "dictionaryForm": "水場",
+    "reading": "みずば",
+    "romaji": "mizuba",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место у воды; место для мытья"
+    ]
+  },
+  {
+    "id": "ja:word:男",
+    "surface": "男",
+    "dictionaryForm": "男",
+    "reading": "おとこ",
+    "romaji": "otoko",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мужчина"
+    ]
+  },
+  {
+    "id": "ja:word:召使",
+    "surface": "召使",
+    "dictionaryForm": "召使",
+    "reading": "めしつかい",
+    "romaji": "meshitsukai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "слуга"
+    ]
+  },
+  {
+    "id": "ja:word:大量",
+    "surface": "大量",
+    "dictionaryForm": "大量",
+    "reading": "たいりょう",
+    "romaji": "tairyō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "большое количество"
+    ]
+  },
+  {
+    "id": "ja:word:洗濯物",
+    "surface": "洗濯物",
+    "dictionaryForm": "洗濯物",
+    "reading": "せんたくもの",
+    "romaji": "sentakumono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "бельё для стирки или после стирки"
+    ]
+  },
+  {
+    "id": "ja:word:洗う",
+    "surface": "洗う",
+    "dictionaryForm": "洗う",
+    "reading": "あらう",
+    "romaji": "arau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "мыть; стирать"
+    ]
+  },
+  {
+    "id": "ja:word:基本",
+    "surface": "基本",
+    "dictionaryForm": "基本",
+    "reading": "きほん",
+    "romaji": "kihon",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "основа; в основном"
+    ]
+  },
+  {
+    "id": "ja:word:男子",
+    "surface": "男子",
+    "dictionaryForm": "男子",
+    "reading": "だんし",
+    "romaji": "danshi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лицо мужского пола; мужчина"
+    ]
+  },
+  {
+    "id": "ja:word:禁制",
+    "surface": "禁制",
+    "dictionaryForm": "禁制",
+    "reading": "きんせい",
+    "romaji": "kinsei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "запрет; запрещение входа"
+    ]
+  },
+  {
+    "id": "ja:word:入る",
+    "surface": "入る",
+    "dictionaryForm": "入る",
+    "reading": "はいる",
+    "romaji": "hairu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "входить"
+    ]
+  },
+  {
+    "id": "ja:word:国",
+    "surface": "国",
+    "dictionaryForm": "国",
+    "reading": "くに",
+    "romaji": "kuni",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "страна; государство"
+    ]
+  },
+  {
+    "id": "ja:word:高貴",
+    "surface": "高貴",
+    "dictionaryForm": "高貴",
+    "reading": "こうき",
+    "romaji": "kōki",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "знатный; благородный"
+    ]
+  },
+  {
+    "id": "ja:word:かた",
+    "surface": "かた",
+    "dictionaryForm": "かた",
+    "reading": "かた",
+    "romaji": "kata",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "человек, лицо; уважительное обозначение"
+    ]
+  },
+  {
+    "id": "ja:word:血縁",
+    "surface": "血縁",
+    "dictionaryForm": "血縁",
+    "reading": "けつえん",
+    "romaji": "ketsuen",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "кровное родство; кровные родственники"
+    ]
+  },
+  {
+    "id": "ja:word:あと",
+    "surface": "あと",
+    "dictionaryForm": "あと",
+    "reading": "あと",
+    "romaji": "ato",
+    "partOfSpeech": "наречие, существительное",
+    "meanings": [
+      "ещё; кроме того; после"
+    ]
+  },
+  {
+    "id": "ja:word:大切",
+    "surface": "大切",
+    "dictionaryForm": "大切",
+    "reading": "たいせつ",
+    "romaji": "taisetsu",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "важный; дорогой"
+    ]
+  },
+  {
+    "id": "ja:word:失う",
+    "surface": "失う",
+    "dictionaryForm": "失う",
+    "reading": "うしなう",
+    "romaji": "ushinau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "терять; лишаться"
+    ]
+  },
+  {
+    "id": "ja:word:元",
+    "surface": "元",
+    "dictionaryForm": "元",
+    "reading": "もと",
+    "romaji": "moto",
+    "partOfSpeech": "существительное, префикс",
+    "meanings": [
+      "бывший; прежний"
+    ]
+  },
+  {
+    "id": "ja:word:男性",
+    "surface": "男性",
+    "dictionaryForm": "男性",
+    "reading": "だんせい",
+    "romaji": "dansei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мужчина; мужской пол"
+    ]
+  },
+  {
+    "id": "ja:word:もちろん",
+    "surface": "もちろん",
+    "dictionaryForm": "もちろん",
+    "reading": "もちろん",
+    "romaji": "mochiron",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "разумеется; конечно"
+    ]
+  },
+  {
+    "id": "ja:word:そこ",
+    "surface": "そこ",
+    "dictionaryForm": "そこ",
+    "reading": "そこ",
+    "romaji": "soko",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "там; то место"
+    ]
+  },
+  {
+    "id": "ja:word:後者",
+    "surface": "後者",
+    "dictionaryForm": "後者",
+    "reading": "こうしゃ",
+    "romaji": "kōsha",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "последний из упомянутых; второй"
+    ]
+  },
+  {
+    "id": "ja:word:歪",
+    "surface": "歪",
+    "dictionaryForm": "歪",
+    "reading": "いびつ",
+    "romaji": "ibitsu",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "искажённый; неправильный; противоестественный"
+    ]
+  }
+]

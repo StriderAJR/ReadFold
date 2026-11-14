@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:酒代",
+    "surface": "酒代",
+    "dictionaryForm": "酒代",
+    "reading": "さかだい",
+    "romaji": "sakadai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "деньги на выпивку"
+    ]
+  },
+  {
+    "id": "ja:word:稼ぐ",
+    "surface": "稼ぐ",
+    "dictionaryForm": "稼ぐ",
+    "reading": "かせぐ",
+    "romaji": "kasegu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "зарабатывать"
+    ]
+  },
+  {
+    "id": "ja:word:それとも",
+    "surface": "それとも",
+    "dictionaryForm": "それとも",
+    "reading": "それとも",
+    "romaji": "soretomo",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "или же"
+    ]
+  },
+  {
+    "id": "ja:word:己",
+    "surface": "己",
+    "dictionaryForm": "己",
+    "reading": "おのれ",
+    "romaji": "onore",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "сам; собственный"
+    ]
+  },
+  {
+    "id": "ja:word:身代わり",
+    "surface": "身代わり",
+    "dictionaryForm": "身代わり",
+    "reading": "みがわり",
+    "romaji": "migawari",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "замена другому человеку; тот, кто идёт вместо другого"
+    ]
+  },
+  {
+    "id": "ja:word:どうでもいい",
+    "surface": "どうでもいい",
+    "dictionaryForm": "どうでもいい",
+    "reading": "どうでもいい",
+    "romaji": "dō demo ii",
+    "partOfSpeech": "выражение",
+    "meanings": [
+      "безразлично; не имеет значения"
+    ]
+  },
+  {
+    "id": "ja:word:どんな",
+    "surface": "どんな",
+    "dictionaryForm": "どんな",
+    "reading": "どんな",
+    "romaji": "donna",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "какой; каков бы ни был"
+    ]
+  },
+  {
+    "id": "ja:word:理由",
+    "surface": "理由",
+    "dictionaryForm": "理由",
+    "reading": "りゆう",
+    "romaji": "riyū",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "причина"
+    ]
+  },
+  {
+    "id": "ja:word:ある:exist",
+    "surface": "ある",
+    "dictionaryForm": "ある",
+    "reading": "ある",
+    "romaji": "aru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "быть; иметься"
+    ]
+  },
+  {
+    "id": "ja:word:ある:indefinite",
+    "surface": "ある",
+    "dictionaryForm": "ある",
+    "reading": "ある",
+    "romaji": "aru",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "некий; один определённый"
+    ]
+  },
+  {
+    "id": "ja:word:とばっちり",
+    "surface": "とばっちり",
+    "dictionaryForm": "とばっちり",
+    "reading": "とばっちり",
+    "romaji": "tobacchiri",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "незаслуженные неприятности из-за чужих действий"
+    ]
+  },
+  {
+    "id": "ja:word:受ける",
+    "surface": "受ける",
+    "dictionaryForm": "受ける",
+    "reading": "うける",
+    "romaji": "ukeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "получать; подвергаться"
+    ]
+  },
+  {
+    "id": "ja:word:変わる",
+    "surface": "変わる",
+    "dictionaryForm": "変わる",
+    "reading": "かわる",
+    "romaji": "kawaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "меняться"
+    ]
+  },
+  {
+    "id": "ja:word:後宮",
+    "surface": "後宮",
+    "dictionaryForm": "後宮",
+    "reading": "こうきゅう",
+    "romaji": "kōkyū",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "задний дворец; женские покои императорского дворца"
+    ]
+  },
+  {
+    "id": "ja:word:場所",
+    "surface": "場所",
+    "dictionaryForm": "場所",
+    "reading": "ばしょ",
+    "romaji": "basho",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место"
+    ]
+  },
+  {
+    "id": "ja:word:一生",
+    "surface": "一生",
+    "dictionaryForm": "一生",
+    "reading": "いっしょう",
+    "romaji": "isshō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "вся жизнь"
+    ]
+  },
+  {
+    "id": "ja:word:関わる",
+    "surface": "関わる",
+    "dictionaryForm": "関わる",
+    "reading": "かかわる",
+    "romaji": "kakawaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "иметь отношение; быть связанным"
+    ]
+  },
+  {
+    "id": "ja:word:むせ返る",
+    "surface": "むせ返る",
+    "dictionaryForm": "むせ返る",
+    "reading": "むせかえる",
+    "romaji": "musekaeru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "задыхаться от сильного запаха; вызывать удушье"
+    ]
+  },
+  {
+    "id": "ja:word:化粧",
+    "surface": "化粧",
+    "dictionaryForm": "化粧",
+    "reading": "けしょう",
+    "romaji": "keshō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "косметика; макияж"
+    ]
+  },
+  {
+    "id": "ja:word:香",
+    "surface": "香",
+    "dictionaryForm": "香",
+    "reading": "こう",
+    "romaji": "kō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "благовония; аромат"
+    ]
+  },
+  {
+    "id": "ja:word:衣",
+    "surface": "衣",
+    "dictionaryForm": "衣",
+    "reading": "ころも",
+    "romaji": "koromo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "одежда; одеяние"
+    ]
+  },
+  {
+    "id": "ja:word:纏う",
+    "surface": "纏う",
+    "dictionaryForm": "纏う",
+    "reading": "まとう",
+    "romaji": "matou",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "надевать; облачаться"
+    ]
+  },
+  {
+    "id": "ja:word:女官",
+    "surface": "女官",
+    "dictionaryForm": "女官",
+    "reading": "にょかん",
+    "romaji": "nyokan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "придворная служительница; придворная дама"
+    ]
+  },
+  {
+    "id": "ja:word:唇",
+    "surface": "唇",
+    "dictionaryForm": "唇",
+    "reading": "くちびる",
+    "romaji": "kuchibiru",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "губы"
+    ]
+  }
+]

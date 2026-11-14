@@ -1,0 +1,74 @@
+{
+  "id": "ja:grammar:location",
+  "title": "で: место действия",
+  "explanation": "Частица で указывает, где происходит действие. Для местонахождения с いる используется に.",
+  "examples": [
+    {
+      "text": "木の下で水を飲みます。",
+      "translation": "Пью воду под деревом.",
+      "hiragana": "きのしたでみずをのみます。",
+      "romaji": "Ki no shita de mizu o nomimasu.",
+      "literal": "Дерево [связь] низ [место действия] воду [объект] пью.",
+      "natural": "Пью воду под деревом.",
+      "segments": [
+        {
+          "text": "木",
+          "reading": "き"
+        },
+        {
+          "text": "の"
+        },
+        {
+          "text": "下",
+          "reading": "した"
+        },
+        {
+          "text": "で"
+        },
+        {
+          "text": "水",
+          "reading": "みず"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "飲",
+          "reading": "の"
+        },
+        {
+          "text": "みます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:existence"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Частица "
+    },
+    {
+      "reading": "で",
+      "text": "で"
+    },
+    {
+      "text": " указывает, где происходит действие. Для местонахождения с "
+    },
+    {
+      "reading": "いる",
+      "text": "いる"
+    },
+    {
+      "text": " используется "
+    },
+    {
+      "reading": "に",
+      "text": "に"
+    },
+    {
+      "text": "."
+    }
+  ]
+}

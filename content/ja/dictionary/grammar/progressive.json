@@ -1,0 +1,93 @@
+{
+  "id": "ja:grammar:progressive",
+  "title": "〜ている: действие в процессе",
+  "explanation": "Форма на て + いる может описывать текущее действие. 飲む → 飲んでいる; вежливо 飲んでいます.",
+  "examples": [
+    {
+      "text": "猫は水を飲んでいます。",
+      "translation": "Кошка пьёт воду.",
+      "hiragana": "ねこはみずをのんでいます。",
+      "romaji": "Neko wa mizu o nonde imasu.",
+      "literal": "Кошка [тема] воду [объект] пьёт [действие в процессе].",
+      "natural": "Кошка пьёт воду.",
+      "segments": [
+        {
+          "text": "猫",
+          "reading": "ねこ"
+        },
+        {
+          "text": "は"
+        },
+        {
+          "text": "水",
+          "reading": "みず"
+        },
+        {
+          "text": "を"
+        },
+        {
+          "text": "飲",
+          "reading": "の"
+        },
+        {
+          "text": "んでいます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:polite"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Форма на "
+    },
+    {
+      "reading": "て",
+      "text": "て"
+    },
+    {
+      "text": " + "
+    },
+    {
+      "reading": "いる",
+      "text": "いる"
+    },
+    {
+      "text": " может описывать текущее действие. "
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "む",
+      "text": "む"
+    },
+    {
+      "text": " → "
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "んでいる",
+      "text": "んでいる"
+    },
+    {
+      "text": "; вежливо "
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "んでいます",
+      "text": "んでいます"
+    },
+    {
+      "text": "."
+    }
+  ]
+}

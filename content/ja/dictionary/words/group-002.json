@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:食べる",
+    "surface": "食べる",
+    "dictionaryForm": "食べる",
+    "reading": "たべる",
+    "romaji": "taberu",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "есть, принимать пищу"
+    ]
+  },
+  {
+    "id": "ja:word:曇天",
+    "surface": "曇天",
+    "dictionaryForm": "曇天",
+    "reading": "どんてん",
+    "romaji": "donten",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "пасмурное небо"
+    ]
+  },
+  {
+    "id": "ja:word:見上げる",
+    "surface": "見上げる",
+    "dictionaryForm": "見上げる",
+    "reading": "みあげる",
+    "romaji": "miageru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "поднимать взгляд; смотреть вверх"
+    ]
+  },
+  {
+    "id": "ja:word:猫猫",
+    "surface": "猫猫",
+    "dictionaryForm": "猫猫",
+    "reading": "まおまお",
+    "romaji": "Maomao",
+    "partOfSpeech": "имя собственное",
+    "meanings": [
+      "Маомао, имя героини"
+    ]
+  },
+  {
+    "id": "ja:word:溜息",
+    "surface": "溜息",
+    "dictionaryForm": "溜息",
+    "reading": "ためいき",
+    "romaji": "tameiki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "вздох"
+    ]
+  },
+  {
+    "id": "ja:word:つく:breath",
+    "surface": "つく",
+    "dictionaryForm": "つく",
+    "reading": "つく",
+    "romaji": "tsuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "делать вздох; испускать"
+    ]
+  },
+  {
+    "id": "ja:word:周り",
+    "surface": "周り",
+    "dictionaryForm": "周り",
+    "reading": "まわり",
+    "romaji": "mawari",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "окружение; то, что вокруг"
+    ]
+  },
+  {
+    "id": "ja:word:自分",
+    "surface": "自分",
+    "dictionaryForm": "自分",
+    "reading": "じぶん",
+    "romaji": "jibun",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "сам; себя"
+    ]
+  },
+  {
+    "id": "ja:word:今",
+    "surface": "今",
+    "dictionaryForm": "今",
+    "reading": "いま",
+    "romaji": "ima",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "сейчас; настоящее время"
+    ]
+  },
+  {
+    "id": "ja:word:見る",
+    "surface": "見る",
+    "dictionaryForm": "見る",
+    "reading": "みる",
+    "romaji": "miru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "видеть; смотреть"
+    ]
+  },
+  {
+    "id": "ja:word:中",
+    "surface": "中",
+    "dictionaryForm": "中",
+    "reading": "なか",
+    "romaji": "naka",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "середина; внутренность; среди"
+    ]
+  },
+  {
+    "id": "ja:word:最も",
+    "surface": "最も",
+    "dictionaryForm": "最も",
+    "reading": "もっとも",
+    "romaji": "mottomo",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "больше всего; наиболее"
+    ]
+  },
+  {
+    "id": "ja:word:美しい",
+    "surface": "美しい",
+    "dictionaryForm": "美しい",
+    "reading": "うつくしい",
+    "romaji": "utsukushii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "красивый; прекрасный"
+    ]
+  },
+  {
+    "id": "ja:word:きらびやか",
+    "surface": "きらびやか",
+    "dictionaryForm": "きらびやか",
+    "reading": "きらびやか",
+    "romaji": "kirabiyaka",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "блистательный; роскошный"
+    ]
+  },
+  {
+    "id": "ja:word:世界",
+    "surface": "世界",
+    "dictionaryForm": "世界",
+    "reading": "せかい",
+    "romaji": "sekai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мир"
+    ]
+  },
+  {
+    "id": "ja:word:そして",
+    "surface": "そして",
+    "dictionaryForm": "そして",
+    "reading": "そして",
+    "romaji": "soshite",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "и; затем"
+    ]
+  },
+  {
+    "id": "ja:word:瘴気",
+    "surface": "瘴気",
+    "dictionaryForm": "瘴気",
+    "reading": "しょうき",
+    "romaji": "shōki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "миазмы; вредоносные испарения"
+    ]
+  },
+  {
+    "id": "ja:word:蠢く",
+    "surface": "蠢く",
+    "dictionaryForm": "蠢く",
+    "reading": "うごめく",
+    "romaji": "ugomeku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "шевелиться; кишеть"
+    ]
+  },
+  {
+    "id": "ja:word:濁る",
+    "surface": "濁る",
+    "dictionaryForm": "濁る",
+    "reading": "にごる",
+    "romaji": "nigoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "мутнеть; становиться мутным"
+    ]
+  },
+  {
+    "id": "ja:word:澱",
+    "surface": "澱",
+    "dictionaryForm": "澱",
+    "reading": "おり",
+    "romaji": "ori",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "осадок; отстой"
+    ]
+  },
+  {
+    "id": "ja:word:もう",
+    "surface": "もう",
+    "dictionaryForm": "もう",
+    "reading": "もう",
+    "romaji": "mō",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "уже"
+    ]
+  },
+  {
+    "id": "ja:word:三か月",
+    "surface": "三か月",
+    "dictionaryForm": "三か月",
+    "reading": "さんかげつ",
+    "romaji": "sankagetsu",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "три месяца"
+    ]
+  },
+  {
+    "id": "ja:word:おやじ",
+    "surface": "おやじ",
+    "dictionaryForm": "おやじ",
+    "reading": "おやじ",
+    "romaji": "oyaji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "отец; батя; старик"
+    ]
+  },
+  {
+    "id": "ja:word:飯",
+    "surface": "飯",
+    "dictionaryForm": "飯",
+    "reading": "めし",
+    "romaji": "meshi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "еда; варёный рис"
+    ]
+  }
+]

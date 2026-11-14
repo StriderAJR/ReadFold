@@ -1,0 +1,22 @@
+{
+  "id": "ja:kanji:己",
+  "character": "己",
+  "meanings": [
+    "сам"
+  ],
+  "on": [
+    "コ",
+    "キ"
+  ],
+  "kun": [
+    "おのれ",
+    "つちのと",
+    "な"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:己"
+  ],
+  "mnemonic": "Извилистый незамкнутый контур — моя собственная дорожка: я сам.",
+  "componentMeanings": {}
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ja:kanji:手",
+  "character": "手",
+  "meanings": [
+    "рука"
+  ],
+  "on": [
+    "シュ",
+    "ズ"
+  ],
+  "kun": [
+    "て",
+    "た"
+  ],
+  "components": [],
+  "componentMeanings": {},
+  "wordIds": [
+    "ja:word:持ち手",
+    "ja:word:手足",
+    "ja:word:派手",
+    "ja:word:御手付き",
+    "ja:word:相手"
+  ],
+  "mnemonic": "Пальцы расходятся от ладони, а снизу тянется запястье: это рука."
+}

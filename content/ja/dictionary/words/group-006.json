@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:薄っぺらい",
+    "surface": "薄っぺらい",
+    "dictionaryForm": "薄っぺらい",
+    "reading": "うすっぺらい",
+    "romaji": "usupperai",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "тонкий; поверхностный; пустой"
+    ]
+  },
+  {
+    "id": "ja:word:笑み",
+    "surface": "笑み",
+    "dictionaryForm": "笑み",
+    "reading": "えみ",
+    "romaji": "emi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "улыбка"
+    ]
+  },
+  {
+    "id": "ja:word:張り付く",
+    "surface": "張り付く",
+    "dictionaryForm": "張り付く",
+    "reading": "はりつく",
+    "romaji": "haritsuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "прилипать; застывать на поверхности"
+    ]
+  },
+  {
+    "id": "ja:word:薬屋",
+    "surface": "薬屋",
+    "dictionaryForm": "薬屋",
+    "reading": "くすりや",
+    "romaji": "kusuriya",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "аптекарь; аптекарская лавка"
+    ]
+  },
+  {
+    "id": "ja:word:思う",
+    "surface": "思う",
+    "dictionaryForm": "思う",
+    "reading": "おもう",
+    "romaji": "omou",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "думать; полагать"
+    ]
+  },
+  {
+    "id": "ja:word:女",
+    "surface": "女",
+    "dictionaryForm": "女",
+    "reading": "おんな",
+    "romaji": "onna",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "женщина"
+    ]
+  },
+  {
+    "id": "ja:word:恐ろしい",
+    "surface": "恐ろしい",
+    "dictionaryForm": "恐ろしい",
+    "reading": "おそろしい",
+    "romaji": "osoroshii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "страшный; ужасающий"
+    ]
+  },
+  {
+    "id": "ja:word:毒",
+    "surface": "毒",
+    "dictionaryForm": "毒",
+    "reading": "どく",
+    "romaji": "doku",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "яд"
+    ]
+  },
+  {
+    "id": "ja:word:殿上人",
+    "surface": "殿上人",
+    "dictionaryForm": "殿上人",
+    "reading": "てんじょうびと",
+    "romaji": "tenjōbito",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "высокопоставленный придворный; вельможа"
+    ]
+  },
+  {
+    "id": "ja:word:住まう",
+    "surface": "住まう",
+    "dictionaryForm": "住まう",
+    "reading": "すまう",
+    "romaji": "sumau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "жить; обитать"
+    ]
+  },
+  {
+    "id": "ja:word:御殿",
+    "surface": "御殿",
+    "dictionaryForm": "御殿",
+    "reading": "ごてん",
+    "romaji": "goten",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дворец; господские покои"
+    ]
+  },
+  {
+    "id": "ja:word:城下",
+    "surface": "城下",
+    "dictionaryForm": "城下",
+    "reading": "じょうか",
+    "romaji": "jōka",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "город у замка; город под стенами замка"
+    ]
+  },
+  {
+    "id": "ja:word:花街",
+    "surface": "花街",
+    "dictionaryForm": "花街",
+    "reading": "はなまち",
+    "romaji": "hanamachi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "квартал увеселений; квартал куртизанок"
+    ]
+  },
+  {
+    "id": "ja:word:足元",
+    "surface": "足元",
+    "dictionaryForm": "足元",
+    "reading": "あしもと",
+    "romaji": "ashimoto",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место у ног; под ногами"
+    ]
+  },
+  {
+    "id": "ja:word:置く",
+    "surface": "置く",
+    "dictionaryForm": "置く",
+    "reading": "おく",
+    "romaji": "oku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "ставить; класть; держать у себя"
+    ]
+  },
+  {
+    "id": "ja:word:洗濯籠",
+    "surface": "洗濯籠",
+    "dictionaryForm": "洗濯籠",
+    "reading": "せんたくかご",
+    "romaji": "sentakukago",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "корзина для белья"
+    ]
+  },
+  {
+    "id": "ja:word:抱える",
+    "surface": "抱える",
+    "dictionaryForm": "抱える",
+    "reading": "かかえる",
+    "romaji": "kakaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "обхватывать руками; нести в руках"
+    ]
+  },
+  {
+    "id": "ja:word:建物",
+    "surface": "建物",
+    "dictionaryForm": "建物",
+    "reading": "たてもの",
+    "romaji": "tatemono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "здание"
+    ]
+  },
+  {
+    "id": "ja:word:奥",
+    "surface": "奥",
+    "dictionaryForm": "奥",
+    "reading": "おく",
+    "romaji": "oku",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "глубина; внутренняя часть"
+    ]
+  },
+  {
+    "id": "ja:word:向かう",
+    "surface": "向かう",
+    "dictionaryForm": "向かう",
+    "reading": "むかう",
+    "romaji": "mukau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "направляться"
+    ]
+  },
+  {
+    "id": "ja:word:表",
+    "surface": "表",
+    "dictionaryForm": "表",
+    "reading": "おもて",
+    "romaji": "omote",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "передняя сторона; парадная часть"
+    ]
+  },
+  {
+    "id": "ja:word:違う",
+    "surface": "違う",
+    "dictionaryForm": "違う",
+    "reading": "ちがう",
+    "romaji": "chigau",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "отличаться"
+    ]
+  },
+  {
+    "id": "ja:word:殺風景",
+    "surface": "殺風景",
+    "dictionaryForm": "殺風景",
+    "reading": "さっぷうけい",
+    "romaji": "sappūkei",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "унылый; невзрачный; лишённый украшений"
+    ]
+  },
+  {
+    "id": "ja:word:中庭",
+    "surface": "中庭",
+    "dictionaryForm": "中庭",
+    "reading": "なかにわ",
+    "romaji": "nakaniwa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "внутренний двор"
+    ]
+  }
+]

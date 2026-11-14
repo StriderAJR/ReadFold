@@ -1,0 +1,2664 @@
+{
+  "paragraphs": [
+    {
+      "id": "apothecary-diaries.chapter-1.p023",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-1.s033",
+          "text": "（はやく仕事終わらせよう）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "はやく"
+            },
+            {
+              "reading": "しごと",
+              "text": "仕事"
+            },
+            {
+              "reading": "おわらせよう",
+              "text": "終わらせよう"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（はやくしごとおわらせよう）",
+          "romaji": "(Hayaku shigoto owaraseyō)",
+          "literal": "(Давай поскорее закончим работу.)",
+          "natural": "(Поскорее бы закончить работу.)",
+          "kanjiIds": [
+            "ja:kanji:仕",
+            "ja:kanji:事",
+            "ja:kanji:終"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:早い",
+              "surface": "はやく",
+              "hiragana": "はやく",
+              "romaji": "hayaku",
+              "meaning": "ранний; быстрый",
+              "inflection": "Форма словарной единицы 早い",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:仕事",
+              "surface": "仕事",
+              "hiragana": "しごと",
+              "romaji": "shigoto",
+              "meaning": "работа",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:終わらせる",
+              "surface": "終わらせよう",
+              "hiragana": "おわらせよう",
+              "romaji": "owaraseyō",
+              "meaning": "заканчивать; доводить до конца",
+              "inflection": "Форма словарной единицы 終わらせる",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:adverbial",
+              "role": "はやく относится к 終わらせよう: Маомао хочет расправиться с работой поскорее.",
+              "roleSegments": [
+                {
+                  "text": "はやく",
+                  "reading": "はやく"
+                },
+                {
+                  "text": " относится к "
+                },
+                {
+                  "text": "終わらせよう",
+                  "reading": "おわらせよう"
+                },
+                {
+                  "text": ": Маомао хочет расправиться с работой поскорее."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:particle-omission",
+              "role": "В 仕事終わらせよう опущено を после 仕事: в мысленной разговорной реплике объект и так понятен.",
+              "roleSegments": [
+                {
+                  "text": "В "
+                },
+                {
+                  "text": "仕事",
+                  "reading": "しごと"
+                },
+                {
+                  "text": "終わらせよう",
+                  "reading": "おわらせよう"
+                },
+                {
+                  "text": " опущено を после "
+                },
+                {
+                  "text": "仕事",
+                  "reading": "しごと"
+                },
+                {
+                  "text": ": в мысленной разговорной реплике объект и так понятен."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:causative",
+              "role": "終わらせる от 終わる делает работу объектом завершения: Маомао сама собирается довести её до конца.",
+              "roleSegments": [
+                {
+                  "text": "終わらせる",
+                  "reading": "おわらせる"
+                },
+                {
+                  "text": " от 終わる делает работу объектом завершения: Маомао сама собирается довести её до конца."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:volitional",
+              "role": "終わらせよう выражает решение, принятое про себя: «закончу-ка работу».",
+              "roleSegments": [
+                {
+                  "text": "終わらせよう",
+                  "reading": "おわらせよう"
+                },
+                {
+                  "text": " выражает решение, принятое про себя: «закончу-ка работу»."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-1.p024",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-1.s034",
+          "text": "梅の花と『壱七』と書かれた札の籠を見つけると、小走りに歩く。",
+          "segments": [
+            {
+              "reading": "うめ",
+              "text": "梅"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "はな",
+              "text": "花"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "『"
+            },
+            {
+              "reading": "いちなな",
+              "text": "壱七"
+            },
+            {
+              "text": "』"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "reading": "かかれた",
+              "text": "書かれた"
+            },
+            {
+              "reading": "ふだ",
+              "text": "札"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "かご",
+              "text": "籠"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "みつける",
+              "text": "見つける"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "こばしり",
+              "text": "小走り"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "reading": "あるく",
+              "text": "歩く"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "うめのはなと『いちなな』とかかれたふだのかごをみつけると、こばしりにあるく。",
+          "romaji": "Ume no hana to ‘ichinana’ to kakareta fuda no kago o mitsukeru to, kobashiri ni aruku.",
+          "literal": "Обнаружив корзину с биркой, на которой цветок сливы и написано «один семь», она идёт мелкой рысью.",
+          "natural": "Найдя корзину с изображением сливового цветка и цифрами «один, семь» на бирке, она засеменила прочь.",
+          "kanjiIds": [
+            "ja:kanji:梅",
+            "ja:kanji:花",
+            "ja:kanji:壱",
+            "ja:kanji:七",
+            "ja:kanji:書",
+            "ja:kanji:札",
+            "ja:kanji:籠",
+            "ja:kanji:見",
+            "ja:kanji:小",
+            "ja:kanji:走",
+            "ja:kanji:歩"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:梅",
+              "surface": "梅",
+              "hiragana": "うめ",
+              "romaji": "ume",
+              "meaning": "слива японская; умэ",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:花",
+              "surface": "花",
+              "hiragana": "はな",
+              "romaji": "hana",
+              "meaning": "цветок",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:壱七",
+              "surface": "壱七",
+              "hiragana": "いちなな",
+              "romaji": "ichinana",
+              "meaning": "цифры «один, семь» на бирке",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:書く",
+              "surface": "書かれた",
+              "hiragana": "かかれた",
+              "romaji": "kakareta",
+              "meaning": "писать",
+              "inflection": "Форма словарной единицы 書く",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:札",
+              "surface": "札",
+              "hiragana": "ふだ",
+              "romaji": "fuda",
+              "meaning": "бирка; табличка",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:籠",
+              "surface": "籠",
+              "hiragana": "かご",
+              "romaji": "kago",
+              "meaning": "корзина",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:見つける",
+              "surface": "見つける",
+              "hiragana": "みつける",
+              "romaji": "mitsukeru",
+              "meaning": "находить; замечать",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:小走り",
+              "surface": "小走り",
+              "hiragana": "こばしり",
+              "romaji": "kobashiri",
+              "meaning": "мелкая рысь; короткие быстрые шаги",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:歩く",
+              "surface": "歩く",
+              "hiragana": "あるく",
+              "romaji": "aruku",
+              "meaning": "идти; ходить",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:and",
+              "role": "梅の花と『壱七』 перечисляет два опознавательных знака на бирке: сливовый цветок и цифры.",
+              "roleSegments": [
+                {
+                  "text": "梅",
+                  "reading": "うめ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "花",
+                  "reading": "はな"
+                },
+                {
+                  "text": "と『"
+                },
+                {
+                  "text": "壱七",
+                  "reading": "いちなな"
+                },
+                {
+                  "text": "』 перечисляет два опознавательных знака на бирке: сливовый цветок и цифры."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:quotation",
+              "role": "Второе と, перед 書かれた, закрывает содержание нанесённой отметки: на бирке изображены цветок и «壱七».",
+              "roleSegments": [
+                {
+                  "text": "Второе と, перед "
+                },
+                {
+                  "text": "書かれた",
+                  "reading": "かかれた"
+                },
+                {
+                  "text": ", закрывает содержание нанесённой отметки: на бирке изображены цветок и «"
+                },
+                {
+                  "text": "壱七",
+                  "reading": "いちなな"
+                },
+                {
+                  "text": "»."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "書かれた описывает знаки как уже нанесённые на бирку; кто их нанёс, не сообщается.",
+              "roleSegments": [
+                {
+                  "text": "書かれた",
+                  "reading": "かかれた"
+                },
+                {
+                  "text": " описывает знаки как уже нанесённые на бирку; кто их нанёс, не сообщается."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "梅の花と『壱七』と書かれた определяет 札, а 札の уточняет нужную 籠: корзину опознают по бирке.",
+              "roleSegments": [
+                {
+                  "text": "梅",
+                  "reading": "うめ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "花",
+                  "reading": "はな"
+                },
+                {
+                  "text": "と『"
+                },
+                {
+                  "text": "壱七",
+                  "reading": "いちなな"
+                },
+                {
+                  "text": "』と"
+                },
+                {
+                  "text": "書かれた",
+                  "reading": "かかれた"
+                },
+                {
+                  "text": " определяет "
+                },
+                {
+                  "text": "札",
+                  "reading": "ふだ"
+                },
+                {
+                  "text": ", а "
+                },
+                {
+                  "text": "札",
+                  "reading": "ふだ"
+                },
+                {
+                  "text": "の уточняет нужную "
+                },
+                {
+                  "text": "籠",
+                  "reading": "かご"
+                },
+                {
+                  "text": ": корзину опознают по бирке."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:conditional-to",
+              "role": "見つけると связывает находку нужной корзины с немедленным продолжением пути.",
+              "roleSegments": [
+                {
+                  "text": "見つける",
+                  "reading": "みつける"
+                },
+                {
+                  "text": "と связывает находку нужной корзины с немедленным продолжением пути."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:manner-ni",
+              "role": "小走りに характеризует 歩く: Маомао идёт торопливым мелким шагом.",
+              "roleSegments": [
+                {
+                  "text": "小走り",
+                  "reading": "こばしり"
+                },
+                {
+                  "text": "に характеризует "
+                },
+                {
+                  "text": "歩く",
+                  "reading": "あるく"
+                },
+                {
+                  "text": ": Маомао идёт торопливым мелким шагом."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s035",
+          "text": "重く曇った空が泣き出す前に部屋に戻りたかった。",
+          "segments": [
+            {
+              "reading": "おもく",
+              "text": "重く"
+            },
+            {
+              "reading": "くもった",
+              "text": "曇った"
+            },
+            {
+              "reading": "そら",
+              "text": "空"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "reading": "なきだす",
+              "text": "泣き出す"
+            },
+            {
+              "reading": "まえ",
+              "text": "前"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "reading": "へや",
+              "text": "部屋"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "reading": "もどりたかった",
+              "text": "戻りたかった"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "おもくくもったそらがなきだすまえにへやにもどりたかった。",
+          "romaji": "Omoku kumotta sora ga nakidasu mae ni heya ni modoritakatta.",
+          "literal": "Она хотела вернуться в комнату до того, как тяжело затянутое тучами небо заплачет.",
+          "natural": "Ей хотелось вернуться в комнату прежде, чем тяжёлое хмурое небо расплачется.",
+          "kanjiIds": [
+            "ja:kanji:重",
+            "ja:kanji:曇",
+            "ja:kanji:空",
+            "ja:kanji:泣",
+            "ja:kanji:出",
+            "ja:kanji:前",
+            "ja:kanji:部",
+            "ja:kanji:屋",
+            "ja:kanji:戻"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:重い",
+              "surface": "重く",
+              "hiragana": "おもく",
+              "romaji": "omoku",
+              "meaning": "тяжёлый",
+              "inflection": "Форма словарной единицы 重い",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:曇る",
+              "surface": "曇った",
+              "hiragana": "くもった",
+              "romaji": "kumotta",
+              "meaning": "покрываться облаками; хмуриться",
+              "inflection": "Форма словарной единицы 曇る",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:空",
+              "surface": "空",
+              "hiragana": "そら",
+              "romaji": "sora",
+              "meaning": "небо",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:泣き出す",
+              "surface": "泣き出す",
+              "hiragana": "なきだす",
+              "romaji": "nakidasu",
+              "meaning": "начинать плакать",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:前",
+              "surface": "前",
+              "hiragana": "まえ",
+              "romaji": "mae",
+              "meaning": "перед; до; раньше",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:部屋",
+              "surface": "部屋",
+              "hiragana": "へや",
+              "romaji": "heya",
+              "meaning": "комната",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:戻る",
+              "surface": "戻りたかった",
+              "hiragana": "もどりたかった",
+              "romaji": "modoritakatta",
+              "meaning": "возвращаться",
+              "inflection": "Форма словарной единицы 戻る",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:adverbial",
+              "role": "重く относится к 曇った: небо затянуто тучами тяжело, мрачно.",
+              "roleSegments": [
+                {
+                  "text": "重く",
+                  "reading": "おもく"
+                },
+                {
+                  "text": " относится к "
+                },
+                {
+                  "text": "曇った",
+                  "reading": "くもった"
+                },
+                {
+                  "text": ": небо затянуто тучами тяжело, мрачно."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "重く曇った определяет 空, создавая образ тяжёлого хмурого неба.",
+              "roleSegments": [
+                {
+                  "text": "重く",
+                  "reading": "おもく"
+                },
+                {
+                  "text": "曇った",
+                  "reading": "くもった"
+                },
+                {
+                  "text": " определяет "
+                },
+                {
+                  "text": "空",
+                  "reading": "そら"
+                },
+                {
+                  "text": ", создавая образ тяжёлого хмурого неба."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:start-dasu",
+              "role": "泣き出す переносит начало плача на небо: вот-вот начнётся дождь.",
+              "roleSegments": [
+                {
+                  "text": "泣き出す",
+                  "reading": "なきだす"
+                },
+                {
+                  "text": " переносит начало плача на небо: вот-вот начнётся дождь."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:before",
+              "role": "空が泣き出す前に задаёт желаемый срок возвращения: успеть до дождя.",
+              "roleSegments": [
+                {
+                  "text": "空",
+                  "reading": "そら"
+                },
+                {
+                  "text": "が"
+                },
+                {
+                  "text": "泣き出す",
+                  "reading": "なきだす"
+                },
+                {
+                  "text": "前",
+                  "reading": "まえ"
+                },
+                {
+                  "text": "に задаёт желаемый срок возвращения: успеть до дождя."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:destination-ni",
+              "role": "部屋に называет место, куда Маомао хочет вернуться, — свою комнату.",
+              "roleSegments": [
+                {
+                  "text": "部屋",
+                  "reading": "へや"
+                },
+                {
+                  "text": "に называет место, куда Маомао хочет вернуться, — свою комнату."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:desire",
+              "role": "戻りたかった передаёт её желание в тот момент: ей хотелось поскорее оказаться в комнате.",
+              "roleSegments": [
+                {
+                  "text": "戻りたかった",
+                  "reading": "もどりたかった"
+                },
+                {
+                  "text": " передаёт её желание в тот момент: ей хотелось поскорее оказаться в комнате."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-1.p025",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-1.s036",
+          "text": "籠の洗濯物の主は、下級妃嬪である。",
+          "segments": [
+            {
+              "reading": "かご",
+              "text": "籠"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "せんたくもの",
+              "text": "洗濯物"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "ぬし",
+              "text": "主"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "かきゅう",
+              "text": "下級"
+            },
+            {
+              "reading": "ひひん",
+              "text": "妃嬪"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "かごのせんたくもののぬしは、かきゅうひひんである。",
+          "romaji": "Kago no sentakumono no nushi wa, kakyū hihin de aru.",
+          "literal": "Хозяйка белья в корзине — наложница низшего ранга.",
+          "natural": "Бельё в корзине принадлежало наложнице низшего ранга.",
+          "kanjiIds": [
+            "ja:kanji:籠",
+            "ja:kanji:洗",
+            "ja:kanji:濯",
+            "ja:kanji:物",
+            "ja:kanji:主",
+            "ja:kanji:下",
+            "ja:kanji:級",
+            "ja:kanji:妃",
+            "ja:kanji:嬪"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:籠",
+              "surface": "籠",
+              "hiragana": "かご",
+              "romaji": "kago",
+              "meaning": "корзина",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:洗濯物",
+              "surface": "洗濯物",
+              "hiragana": "せんたくもの",
+              "romaji": "sentakumono",
+              "meaning": "бельё для стирки или после стирки",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:主",
+              "surface": "主",
+              "hiragana": "ぬし",
+              "romaji": "nushi",
+              "meaning": "хозяин; владелец",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:下級",
+              "surface": "下級",
+              "hiragana": "かきゅう",
+              "romaji": "kakyū",
+              "meaning": "низший ранг; младший разряд",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:妃嬪",
+              "surface": "妃嬪",
+              "hiragana": "ひひん",
+              "romaji": "hihin",
+              "meaning": "императорские супруги и наложницы",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "籠の洗濯物 указывает на бельё, находящееся в корзине.",
+              "roleSegments": [
+                {
+                  "text": "籠",
+                  "reading": "かご"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "洗濯物",
+                  "reading": "せんたくもの"
+                },
+                {
+                  "text": " указывает на бельё, находящееся в корзине."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "洗濯物の主 связывает бельё с его хозяйкой, чей ранг назван далее.",
+              "roleSegments": [
+                {
+                  "text": "洗濯物",
+                  "reading": "せんたくもの"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "主",
+                  "reading": "ぬし"
+                },
+                {
+                  "text": " связывает бельё с его хозяйкой, чей ранг назван далее."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:topic",
+              "role": "主は делает хозяйку белья темой нового пояснения: далее назван её ранг.",
+              "roleSegments": [
+                {
+                  "text": "主",
+                  "reading": "ぬし"
+                },
+                {
+                  "text": "は делает хозяйку белья темой нового пояснения: далее назван её ранг."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:formal-copula",
+              "role": "下級妃嬪である устанавливает, кому принадлежит бельё: наложнице низшего ранга.",
+              "roleSegments": [
+                {
+                  "text": "下級",
+                  "reading": "かきゅう"
+                },
+                {
+                  "text": "妃嬪",
+                  "reading": "ひひん"
+                },
+                {
+                  "text": "である устанавливает, кому принадлежит бельё: наложнице низшего ранга."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s037",
+          "text": "与えられた個室は他の下妃に比べ調度の質が豪華だが派手すぎる。",
+          "segments": [
+            {
+              "reading": "あたえられた",
+              "text": "与えられた"
+            },
+            {
+              "reading": "こしつ",
+              "text": "個室"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "reading": "ほか",
+              "text": "他"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "かひ",
+              "text": "下妃"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "reading": "くらべ",
+              "text": "比べ"
+            },
+            {
+              "reading": "ちょうど",
+              "text": "調度"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "しつ",
+              "text": "質"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "reading": "ごうか",
+              "text": "豪華"
+            },
+            {
+              "text": "だ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "reading": "はで",
+              "text": "派手"
+            },
+            {
+              "text": "すぎる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "あたえられたこしつはほかのかひにくらべちょうどのしつがごうかだがはですぎる。",
+          "romaji": "Ataerareta koshitsu wa hoka no kahi ni kurabe chōdo no shitsu ga gōka da ga hade sugiru.",
+          "literal": "В отведённой ей отдельной комнате обстановка по качеству роскошнее, чем у других младших супруг, но чересчур броская.",
+          "natural": "В отведённой ей комнате обстановка была роскошнее, чем у других младших супруг, но слишком уж кричащая.",
+          "kanjiIds": [
+            "ja:kanji:与",
+            "ja:kanji:個",
+            "ja:kanji:室",
+            "ja:kanji:他",
+            "ja:kanji:下",
+            "ja:kanji:妃",
+            "ja:kanji:比",
+            "ja:kanji:調",
+            "ja:kanji:度",
+            "ja:kanji:質",
+            "ja:kanji:豪",
+            "ja:kanji:華",
+            "ja:kanji:派",
+            "ja:kanji:手"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:与える",
+              "surface": "与えられた",
+              "hiragana": "あたえられた",
+              "romaji": "ataerareta",
+              "meaning": "давать; предоставлять",
+              "inflection": "Форма словарной единицы 与える",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:個室",
+              "surface": "個室",
+              "hiragana": "こしつ",
+              "romaji": "koshitsu",
+              "meaning": "отдельная комната",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:他",
+              "surface": "他",
+              "hiragana": "ほか",
+              "romaji": "hoka",
+              "meaning": "другой; прочие",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:下妃",
+              "surface": "下妃",
+              "hiragana": "かひ",
+              "romaji": "kahi",
+              "meaning": "супруга правителя младшего ранга",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:比べる",
+              "surface": "比べ",
+              "hiragana": "くらべ",
+              "romaji": "kurabe",
+              "meaning": "сравнивать",
+              "inflection": "Форма словарной единицы 比べる",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:調度",
+              "surface": "調度",
+              "hiragana": "ちょうど",
+              "romaji": "chōdo",
+              "meaning": "обстановка; предметы убранства",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:質",
+              "surface": "質",
+              "hiragana": "しつ",
+              "romaji": "shitsu",
+              "meaning": "качество",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:豪華",
+              "surface": "豪華",
+              "hiragana": "ごうか",
+              "romaji": "gōka",
+              "meaning": "роскошный",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:派手",
+              "surface": "派手",
+              "hiragana": "はで",
+              "romaji": "hade",
+              "meaning": "броский; яркий; кричащий",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:過ぎる",
+              "surface": "すぎる",
+              "hiragana": "すぎる",
+              "romaji": "sugiru",
+              "meaning": "проходить, миновать; превышать меру",
+              "inflection": "Форма словарной единицы 過ぎる",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "与えられた показывает, что отдельную комнату хозяйке выделили; она получила её по дворцовому порядку.",
+              "roleSegments": [
+                {
+                  "text": "与えられた",
+                  "reading": "あたえられた"
+                },
+                {
+                  "text": " показывает, что отдельную комнату хозяйке выделили; она получила её по дворцовому порядку."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "与えられた определяет 個室: оценивается именно предоставленная этой наложнице комната.",
+              "roleSegments": [
+                {
+                  "text": "与えられた",
+                  "reading": "あたえられた"
+                },
+                {
+                  "text": " определяет "
+                },
+                {
+                  "text": "個室",
+                  "reading": "こしつ"
+                },
+                {
+                  "text": ": оценивается именно предоставленная этой наложнице комната."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:comparison-ni-kurabe",
+              "role": "他の下妃に比べ вводит сравнение с другими младшими супругами и, по смыслу, с обстановкой их комнат.",
+              "roleSegments": [
+                {
+                  "text": "他",
+                  "reading": "ほか"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "下妃",
+                  "reading": "かひ"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "比べ",
+                  "reading": "くらべ"
+                },
+                {
+                  "text": " вводит сравнение с другими младшими супругами и, по смыслу, с обстановкой их комнат."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:subject",
+              "role": "調度の質が выделяет предмет оценки 豪華だ: роскошью отличается качество обстановки.",
+              "roleSegments": [
+                {
+                  "text": "調度",
+                  "reading": "ちょうど"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "質",
+                  "reading": "しつ"
+                },
+                {
+                  "text": "が выделяет предмет оценки "
+                },
+                {
+                  "text": "豪華",
+                  "reading": "ごうか"
+                },
+                {
+                  "text": "だ: роскошью отличается качество обстановки."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:concessive-ga",
+              "role": "豪華だが соединяет признание роскоши с отрицательной оценкой её чрезмерной броскости.",
+              "roleSegments": [
+                {
+                  "text": "豪華",
+                  "reading": "ごうか"
+                },
+                {
+                  "text": "だが соединяет признание роскоши с отрицательной оценкой её чрезмерной броскости."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:excess-sugiru",
+              "role": "派手すぎる означает, что обстановка слишком кричащая на вкус наблюдающей Маомао.",
+              "roleSegments": [
+                {
+                  "text": "派手",
+                  "reading": "はで"
+                },
+                {
+                  "text": "すぎる",
+                  "reading": "すぎる"
+                },
+                {
+                  "text": " означает, что обстановка слишком кричащая на вкус наблюдающей Маомао."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s038",
+          "text": "部屋の主は、豪商の娘かなにかと予想される。",
+          "segments": [
+            {
+              "reading": "へや",
+              "text": "部屋"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "ぬし",
+              "text": "主"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "ごうしょう",
+              "text": "豪商"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "むすめ",
+              "text": "娘"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "なにか"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "reading": "よそうされる",
+              "text": "予想される"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "へやのぬしは、ごうしょうのむすめかなにかとよそうされる。",
+          "romaji": "Heya no nushi wa, gōshō no musume ka nanika to yosō sareru.",
+          "literal": "Предполагается, что хозяйка комнаты — дочь богатого купца или кто-то в этом роде.",
+          "natural": "Вероятно, хозяйка была дочерью богатого купца или кем-то в этом роде.",
+          "kanjiIds": [
+            "ja:kanji:部",
+            "ja:kanji:屋",
+            "ja:kanji:主",
+            "ja:kanji:豪",
+            "ja:kanji:商",
+            "ja:kanji:娘",
+            "ja:kanji:予",
+            "ja:kanji:想"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:部屋",
+              "surface": "部屋",
+              "hiragana": "へや",
+              "romaji": "heya",
+              "meaning": "комната",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:主",
+              "surface": "主",
+              "hiragana": "ぬし",
+              "romaji": "nushi",
+              "meaning": "хозяин; владелец",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:豪商",
+              "surface": "豪商",
+              "hiragana": "ごうしょう",
+              "romaji": "gōshō",
+              "meaning": "богатый купец; крупный торговец",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:娘",
+              "surface": "娘",
+              "hiragana": "むすめ",
+              "romaji": "musume",
+              "meaning": "дочь; девушка",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:なにか",
+              "surface": "なにか",
+              "hiragana": "なにか",
+              "romaji": "nanika",
+              "meaning": "что-то; кто-то; что-либо подобное",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:予想する",
+              "surface": "予想される",
+              "hiragana": "よそうされる",
+              "romaji": "yosōsareru",
+              "meaning": "предполагать; ожидать",
+              "inflection": "Форма словарной единицы 予想する",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "部屋の主 обозначает хозяйку именно этой комнаты.",
+              "roleSegments": [
+                {
+                  "text": "部屋",
+                  "reading": "へや"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "主",
+                  "reading": "ぬし"
+                },
+                {
+                  "text": " обозначает хозяйку именно этой комнаты."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "豪商の娘 обозначает дочь богатого торговца — предполагаемое происхождение хозяйки.",
+              "roleSegments": [
+                {
+                  "text": "豪商",
+                  "reading": "ごうしょう"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "娘",
+                  "reading": "むすめ"
+                },
+                {
+                  "text": " обозначает дочь богатого торговца — предполагаемое происхождение хозяйки."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:or-something",
+              "role": "豪商の娘かなにか оставляет происхождение приблизительным: дочь крупного купца или кто-то в этом роде.",
+              "roleSegments": [
+                {
+                  "text": "豪商",
+                  "reading": "ごうしょう"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "娘",
+                  "reading": "むすめ"
+                },
+                {
+                  "text": "か"
+                },
+                {
+                  "text": "なにか",
+                  "reading": "なにか"
+                },
+                {
+                  "text": " оставляет происхождение приблизительным: дочь крупного купца или кто-то в этом роде."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:quotation",
+              "role": "と перед 予想される вводит содержание предположения о происхождении хозяйки.",
+              "roleSegments": [
+                {
+                  "text": "と перед "
+                },
+                {
+                  "text": "予想される",
+                  "reading": "よそうされる"
+                },
+                {
+                  "text": " вводит содержание предположения о происхождении хозяйки."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "予想される подаёт догадку без названного автора: по обстановке можно предположить, из какой она семьи.",
+              "roleSegments": [
+                {
+                  "text": "予想される",
+                  "reading": "よそうされる"
+                },
+                {
+                  "text": " подаёт догадку без названного автора: по обстановке можно предположить, из какой она семьи."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s039",
+          "text": "位持ちともなれば自分専用の下女を持つことができるが、位の低い妃はせいぜい二人までしか置くことができない。",
+          "segments": [
+            {
+              "reading": "くらいもち",
+              "text": "位持ち"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "text": "なれば"
+            },
+            {
+              "reading": "じぶん",
+              "text": "自分"
+            },
+            {
+              "reading": "せんよう",
+              "text": "専用"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "げじょ",
+              "text": "下女"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "もつ",
+              "text": "持つ"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "できる"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "くらい",
+              "text": "位"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "ひくい",
+              "text": "低い"
+            },
+            {
+              "reading": "きさき",
+              "text": "妃"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "せいぜい"
+            },
+            {
+              "reading": "ふたり",
+              "text": "二人"
+            },
+            {
+              "text": "まで"
+            },
+            {
+              "text": "しか"
+            },
+            {
+              "reading": "おく",
+              "text": "置く"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "できない"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "くらいもちともなればじぶんせんようのげじょをもつことができるが、くらいのひくいきさきはせいぜいふたりまでしかおくことができない。",
+          "romaji": "Kuraimochi to mo nareba jibun sen'yō no gejo o motsu koto ga dekiru ga, kurai no hikui kisaki wa seizei futari made shika oku koto ga dekinai.",
+          "literal": "Когда имеешь ранг, можно держать служанок исключительно для себя, но супруга низкого ранга может иметь самое большее двоих.",
+          "natural": "Обладательницам ранга полагались собственные служанки, но жёнам низких рангов дозволялось держать не больше двух.",
+          "kanjiIds": [
+            "ja:kanji:位",
+            "ja:kanji:持",
+            "ja:kanji:自",
+            "ja:kanji:分",
+            "ja:kanji:専",
+            "ja:kanji:用",
+            "ja:kanji:下",
+            "ja:kanji:女",
+            "ja:kanji:低",
+            "ja:kanji:妃",
+            "ja:kanji:二",
+            "ja:kanji:人",
+            "ja:kanji:置"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:位持ち",
+              "surface": "位持ち",
+              "hiragana": "くらいもち",
+              "romaji": "kuraimochi",
+              "meaning": "обладатель ранга",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:なる",
+              "surface": "なれば",
+              "hiragana": "なれば",
+              "romaji": "nareba",
+              "meaning": "становиться",
+              "inflection": "Форма словарной единицы なる",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:自分",
+              "surface": "自分",
+              "hiragana": "じぶん",
+              "romaji": "jibun",
+              "meaning": "сам; себя",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:専用",
+              "surface": "専用",
+              "hiragana": "せんよう",
+              "romaji": "sen'yō",
+              "meaning": "исключительное пользование; личное пользование",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:下女",
+              "surface": "下女",
+              "hiragana": "げじょ",
+              "romaji": "gejo",
+              "meaning": "служанка низшего положения",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持つ",
+              "hiragana": "もつ",
+              "romaji": "motsu",
+              "meaning": "иметь; держать; обладать",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:できる",
+              "surface": "できる",
+              "hiragana": "できる",
+              "romaji": "dekiru",
+              "meaning": "мочь; быть способным; быть возможным",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:位",
+              "surface": "位",
+              "hiragana": "くらい",
+              "romaji": "kurai",
+              "meaning": "ранг; положение",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:低い",
+              "surface": "低い",
+              "hiragana": "ひくい",
+              "romaji": "hikui",
+              "meaning": "низкий",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "きさき",
+              "romaji": "kisaki",
+              "meaning": "супруга правителя; императорская супруга",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:せいぜい",
+              "surface": "せいぜい",
+              "hiragana": "せいぜい",
+              "romaji": "seizei",
+              "meaning": "самое большее; максимум",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:二人",
+              "surface": "二人",
+              "hiragana": "ふたり",
+              "romaji": "futari",
+              "meaning": "два человека",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:置く",
+              "surface": "置く",
+              "hiragana": "おく",
+              "romaji": "oku",
+              "meaning": "ставить; класть; держать у себя",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:できる",
+              "surface": "できない",
+              "hiragana": "できない",
+              "romaji": "dekinai",
+              "meaning": "мочь; быть способным; быть возможным",
+              "inflection": "Форма словарной единицы できる",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:status-tomo-nareba",
+              "role": "位持ちともなれば подчёркивает достаточный статус: если уж женщина обладает рангом, ей положены свои служанки.",
+              "roleSegments": [
+                {
+                  "text": "位持ち",
+                  "reading": "くらいもち"
+                },
+                {
+                  "text": "とも"
+                },
+                {
+                  "text": "なれば",
+                  "reading": "なれば"
+                },
+                {
+                  "text": " подчёркивает достаточный статус: если уж женщина обладает рангом, ей положены свои служанки."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:subject-no",
+              "role": "В 位の低い частица の отмечает субъект признака: низок ранг; весь оборот определяет 妃.",
+              "roleSegments": [
+                {
+                  "text": "В "
+                },
+                {
+                  "text": "位",
+                  "reading": "くらい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "低い",
+                  "reading": "ひくい"
+                },
+                {
+                  "text": " частица の отмечает субъект признака: низок ранг; весь оборот определяет "
+                },
+                {
+                  "text": "妃",
+                  "reading": "きさき"
+                },
+                {
+                  "text": "."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:ability-koto-ga-dekiru",
+              "role": "持つことができる обозначает право иметь личных служанок, возникающее с получением ранга.",
+              "roleSegments": [
+                {
+                  "text": "持つ",
+                  "reading": "もつ"
+                },
+                {
+                  "text": "ことが"
+                },
+                {
+                  "text": "できる",
+                  "reading": "できる"
+                },
+                {
+                  "text": " обозначает право иметь личных служанок, возникающее с получением ранга."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:ability-koto-ga-dekiru",
+              "role": "置くことができない ограничивает число служанок у наложницы низкого ранга: содержать больше двух она не может.",
+              "roleSegments": [
+                {
+                  "text": "置く",
+                  "reading": "おく"
+                },
+                {
+                  "text": "ことが"
+                },
+                {
+                  "text": "できない",
+                  "reading": "できない"
+                },
+                {
+                  "text": " ограничивает число служанок у наложницы низкого ранга: содержать больше двух она не может."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:concessive-ga",
+              "role": "が противопоставляет общее право на личных служанок особым ограничениям для низких рангов."
+            },
+            {
+              "grammarId": "ja:grammar:limit-made",
+              "role": "二人まで устанавливает предельное число служанок — две включительно.",
+              "roleSegments": [
+                {
+                  "text": "二人",
+                  "reading": "ふたり"
+                },
+                {
+                  "text": "まで устанавливает предельное число служанок — две включительно."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:shika-negative",
+              "role": "二人までしか…できない запрещает превышать этот предел: больше двух держать нельзя.",
+              "roleSegments": [
+                {
+                  "text": "二人",
+                  "reading": "ふたり"
+                },
+                {
+                  "text": "までしか…"
+                },
+                {
+                  "text": "できない",
+                  "reading": "できない"
+                },
+                {
+                  "text": " запрещает превышать этот предел: больше двух держать нельзя."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s040",
+          "text": "ゆえに、猫猫のような特に仕えるべき主人のいない下女がこうして洗濯物を運んだりするのである。",
+          "segments": [
+            {
+              "text": "ゆえに"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "まおまお",
+              "text": "猫猫"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ような"
+            },
+            {
+              "reading": "とくに",
+              "text": "特に"
+            },
+            {
+              "reading": "つかえる",
+              "text": "仕える"
+            },
+            {
+              "text": "べき"
+            },
+            {
+              "reading": "しゅじん",
+              "text": "主人"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "いない"
+            },
+            {
+              "reading": "げじょ",
+              "text": "下女"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "こうして"
+            },
+            {
+              "reading": "せんたくもの",
+              "text": "洗濯物"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "はこんだり",
+              "text": "運んだり"
+            },
+            {
+              "text": "する"
+            },
+            {
+              "text": "のである"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ゆえに、まおまおのようなとくにつかえるべきしゅじんのいないげじょがこうしてせんたくものをはこんだりするのである。",
+          "romaji": "Yue ni, Maomao no yō na toku ni tsukaeru beki shujin no inai gejo ga kō shite sentakumono o hakondari suru no de aru.",
+          "literal": "Поэтому служанки вроде Маомао, у которых нет определённого хозяина, которому нужно служить, вот так носят бельё и делают прочее.",
+          "natural": "Поэтому бельё и прочие вещи разносили такие служанки, как Маомао, не закреплённые за определённым господином.",
+          "kanjiIds": [
+            "ja:kanji:猫",
+            "ja:kanji:特",
+            "ja:kanji:仕",
+            "ja:kanji:主",
+            "ja:kanji:人",
+            "ja:kanji:下",
+            "ja:kanji:女",
+            "ja:kanji:洗",
+            "ja:kanji:濯",
+            "ja:kanji:物",
+            "ja:kanji:運"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:猫猫",
+              "surface": "猫猫",
+              "hiragana": "まおまお",
+              "romaji": "Maomao",
+              "meaning": "Маомао, имя героини",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:特に",
+              "surface": "特に",
+              "hiragana": "とくに",
+              "romaji": "toku ni",
+              "meaning": "особенно; в частности",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:仕える",
+              "surface": "仕える",
+              "hiragana": "つかえる",
+              "romaji": "tsukaeru",
+              "meaning": "служить кому-либо",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:主人",
+              "surface": "主人",
+              "hiragana": "しゅじん",
+              "romaji": "shujin",
+              "meaning": "хозяин; господин",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:下女",
+              "surface": "下女",
+              "hiragana": "げじょ",
+              "romaji": "gejo",
+              "meaning": "служанка низшего положения",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:こうして",
+              "surface": "こうして",
+              "hiragana": "こうして",
+              "romaji": "kō shite",
+              "meaning": "таким образом; вот так",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:洗濯物",
+              "surface": "洗濯物",
+              "hiragana": "せんたくもの",
+              "romaji": "sentakumono",
+              "meaning": "бельё для стирки или после стирки",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:運ぶ",
+              "surface": "運んだり",
+              "hiragana": "はこんだり",
+              "romaji": "hakondari",
+              "meaning": "носить; переносить; доставлять",
+              "inflection": "Форма словарной единицы 運ぶ",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:する",
+              "surface": "する",
+              "hiragana": "する",
+              "romaji": "suru",
+              "meaning": "делать",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:ゆえに",
+              "surface": "ゆえに",
+              "hiragana": "ゆえに",
+              "romaji": "yue ni",
+              "meaning": "поэтому; вследствие этого",
+              "role": "Связующее слово в контексте"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:similarity-you",
+              "role": "猫猫のような приводит Маомао как пример служанок без личного господина.",
+              "roleSegments": [
+                {
+                  "text": "猫猫",
+                  "reading": "まおまお"
+                },
+                {
+                  "text": "のような приводит Маомао как пример служанок без личного господина."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:obligation-beki",
+              "role": "仕えるべき主人 означает господина, которому служанка должна была бы служить по назначению.",
+              "roleSegments": [
+                {
+                  "text": "仕える",
+                  "reading": "つかえる"
+                },
+                {
+                  "text": "べき"
+                },
+                {
+                  "text": "主人",
+                  "reading": "しゅじん"
+                },
+                {
+                  "text": " означает господина, которому служанка должна была бы служить по назначению."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:subject-no",
+              "role": "В 主人のいない частица の соответствует が: отсутствует именно закреплённый за служанкой господин.",
+              "roleSegments": [
+                {
+                  "text": "В "
+                },
+                {
+                  "text": "主人",
+                  "reading": "しゅじん"
+                },
+                {
+                  "text": "のいない частица の соответствует が: отсутствует именно закреплённый за служанкой господин."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:representative-tari",
+              "role": "洗濯物を運んだりする приводит разнос белья как один из обычных видов работы таких служанок.",
+              "roleSegments": [
+                {
+                  "text": "洗濯物",
+                  "reading": "せんたくもの"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "運んだり",
+                  "reading": "はこんだり"
+                },
+                {
+                  "text": "する",
+                  "reading": "する"
+                },
+                {
+                  "text": " приводит разнос белья как один из обычных видов работы таких служанок."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:explanatory-no-da",
+              "role": "のである завершает объяснение устройства труда: поэтому поручения по разносу достаются служанкам вроде Маомао."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-1.p026",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-1.s041",
+          "text": "下級妃嬪は後宮内で個室を持つことを許されているが、場所は宮内の端にあり、皇帝の目につくことはめったにない。",
+          "segments": [
+            {
+              "reading": "かきゅう",
+              "text": "下級"
+            },
+            {
+              "reading": "ひひん",
+              "text": "妃嬪"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "reading": "こうきゅうない",
+              "text": "後宮内"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "reading": "こしつ",
+              "text": "個室"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "もつ",
+              "text": "持つ"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "ゆるされている",
+              "text": "許されている"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "ばしょ",
+              "text": "場所"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "reading": "きゅうない",
+              "text": "宮内"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "はし",
+              "text": "端"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "あり"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "こうてい",
+              "text": "皇帝"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "め",
+              "text": "目"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "つく"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "めったに"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "かきゅうひひんはこうきゅうないでこしつをもつことをゆるされているが、ばしょはきゅうないのはしにあり、こうていのめにつくことはめったにない。",
+          "romaji": "Kakyū hihin wa kōkyūnai de koshitsu o motsu koto o yurusarete iru ga, basho wa kyūnai no hashi ni ari, kōtei no me ni tsuku koto wa metta ni nai.",
+          "literal": "Наложницам низших рангов разрешается иметь отдельную комнату в заднем дворце, но место находится на краю дворца и редко попадается на глаза императору.",
+          "natural": "Наложницам низших рангов позволяли иметь в заднем дворце собственные комнаты, но селили их на отшибе, где они редко попадались императору на глаза.",
+          "kanjiIds": [
+            "ja:kanji:下",
+            "ja:kanji:級",
+            "ja:kanji:妃",
+            "ja:kanji:嬪",
+            "ja:kanji:後",
+            "ja:kanji:宮",
+            "ja:kanji:内",
+            "ja:kanji:個",
+            "ja:kanji:室",
+            "ja:kanji:持",
+            "ja:kanji:許",
+            "ja:kanji:場",
+            "ja:kanji:所",
+            "ja:kanji:端",
+            "ja:kanji:皇",
+            "ja:kanji:帝",
+            "ja:kanji:目"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:下級",
+              "surface": "下級",
+              "hiragana": "かきゅう",
+              "romaji": "kakyū",
+              "meaning": "низший ранг; младший разряд",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:妃嬪",
+              "surface": "妃嬪",
+              "hiragana": "ひひん",
+              "romaji": "hihin",
+              "meaning": "императорские супруги и наложницы",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:後宮",
+              "surface": "後宮内",
+              "hiragana": "こうきゅうない",
+              "romaji": "kōkyūnai",
+              "meaning": "задний дворец; женские покои императорского дворца",
+              "inflection": "Форма словарной единицы 後宮",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:個室",
+              "surface": "個室",
+              "hiragana": "こしつ",
+              "romaji": "koshitsu",
+              "meaning": "отдельная комната",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持つ",
+              "hiragana": "もつ",
+              "romaji": "motsu",
+              "meaning": "иметь; держать; обладать",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:許す",
+              "surface": "許されている",
+              "hiragana": "ゆるされている",
+              "romaji": "yurusareteiru",
+              "meaning": "разрешать; позволять",
+              "inflection": "Форма словарной единицы 許す",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:場所",
+              "surface": "場所",
+              "hiragana": "ばしょ",
+              "romaji": "basho",
+              "meaning": "место",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:宮内",
+              "surface": "宮内",
+              "hiragana": "きゅうない",
+              "romaji": "kyūnai",
+              "meaning": "внутри дворца; дворцовая территория",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:端",
+              "surface": "端",
+              "hiragana": "はし",
+              "romaji": "hashi",
+              "meaning": "край",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:ある:exist",
+              "surface": "あり",
+              "hiragana": "あり",
+              "romaji": "ari",
+              "meaning": "быть; иметься",
+              "inflection": "Форма словарной единицы ある",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:皇帝",
+              "surface": "皇帝",
+              "hiragana": "こうてい",
+              "romaji": "kōtei",
+              "meaning": "император",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:目",
+              "surface": "目",
+              "hiragana": "め",
+              "romaji": "me",
+              "meaning": "глаз",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:つく:notice",
+              "surface": "つく",
+              "hiragana": "つく",
+              "romaji": "tsuku",
+              "meaning": "попадать на глаза; привлекать внимание",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:めった",
+              "surface": "めったに",
+              "hiragana": "めったに",
+              "romaji": "mettani",
+              "meaning": "с отрицанием: редко; почти никогда",
+              "inflection": "Форма словарной единицы めった",
+              "role": "Лексическое значение в контексте предложения"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:location",
+              "role": "後宮内で обозначает территорию, на которой младшим наложницам разрешено иметь отдельные комнаты.",
+              "roleSegments": [
+                {
+                  "text": "後宮内",
+                  "reading": "こうきゅうない"
+                },
+                {
+                  "text": "で обозначает территорию, на которой младшим наложницам разрешено иметь отдельные комнаты."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:nominalizer-koto",
+              "role": "個室を持つこと превращает обладание комнатой в предмет разрешения: разрешено именно иметь её.",
+              "roleSegments": [
+                {
+                  "text": "個室",
+                  "reading": "こしつ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "持つ",
+                  "reading": "もつ"
+                },
+                {
+                  "text": "こと превращает обладание комнатой в предмет разрешения: разрешено именно иметь её."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "許されている показывает, что право предоставлено наложницам дворцовым порядком, а не устанавливается ими самими.",
+              "roleSegments": [
+                {
+                  "text": "許されている",
+                  "reading": "ゆるされている"
+                },
+                {
+                  "text": " показывает, что право предоставлено наложницам дворцовым порядком, а не устанавливается ими самими."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:concessive-ga",
+              "role": "が противопоставляет формальную привилегию отдельной комнаты неудобному месту её расположения."
+            },
+            {
+              "grammarId": "ja:grammar:location-ni",
+              "role": "宮内の端に указывает, где расположены комнаты, — на краю дворцовой территории.",
+              "roleSegments": [
+                {
+                  "text": "宮内",
+                  "reading": "きゅうない"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "端",
+                  "reading": "はし"
+                },
+                {
+                  "text": "に указывает, где расположены комнаты, — на краю дворцовой территории."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:rarely-negative",
+              "role": "皇帝の目につくことはめったにない передаёт последствие удалённости: женщины почти никогда не попадаются императору на глаза.",
+              "roleSegments": [
+                {
+                  "text": "皇帝",
+                  "reading": "こうてい"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "目",
+                  "reading": "め"
+                },
+                {
+                  "text": "に"
+                },
+                {
+                  "text": "つく",
+                  "reading": "つく"
+                },
+                {
+                  "text": "ことは"
+                },
+                {
+                  "text": "めったに",
+                  "reading": "めったに"
+                },
+                {
+                  "text": "ない передаёт последствие удалённости: женщины почти никогда не попадаются императору на глаза."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-1.s042",
+          "text": "それでも、一度でも夜伽を命じられれば部屋の移動ができ、二度目の御手付きは出世を意味している。",
+          "segments": [
+            {
+              "text": "それでも"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "いちど",
+              "text": "一度"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "reading": "よとぎ",
+              "text": "夜伽"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "めいじられれば",
+              "text": "命じられれば"
+            },
+            {
+              "reading": "へや",
+              "text": "部屋"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "いどう",
+              "text": "移動"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "でき"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "reading": "にどめ",
+              "text": "二度目"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "reading": "おてつき",
+              "text": "御手付き"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "reading": "しゅっせ",
+              "text": "出世"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "reading": "いみしている",
+              "text": "意味している"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "それでも、いちどでもよとぎをめいじられればへやのいどうができ、にどめのおてつきはしゅっせをいみしている。",
+          "romaji": "Soredemo, ichido demo yotogi o meijirarereba heya no idō ga deki, nidome no otetsuki wa shusse o imi shite iru.",
+          "literal": "И всё же, если хоть раз прикажут сопровождать ночью, можно сменить комнату, а второе прикосновение государя означает повышение.",
+          "natural": "И всё же один-единственный приказ провести ночь с императором позволял перебраться в другие покои, а второй визит к нему означал возвышение.",
+          "kanjiIds": [
+            "ja:kanji:一",
+            "ja:kanji:度",
+            "ja:kanji:夜",
+            "ja:kanji:伽",
+            "ja:kanji:命",
+            "ja:kanji:部",
+            "ja:kanji:屋",
+            "ja:kanji:移",
+            "ja:kanji:動",
+            "ja:kanji:二",
+            "ja:kanji:目",
+            "ja:kanji:御",
+            "ja:kanji:手",
+            "ja:kanji:付",
+            "ja:kanji:出",
+            "ja:kanji:世",
+            "ja:kanji:意",
+            "ja:kanji:味"
+          ],
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:一度",
+              "surface": "一度",
+              "hiragana": "いちど",
+              "romaji": "ichido",
+              "meaning": "один раз",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:夜伽",
+              "surface": "夜伽",
+              "hiragana": "よとぎ",
+              "romaji": "yotogi",
+              "meaning": "ночное сопровождение; проведение ночи с господином",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:命じる",
+              "surface": "命じられれば",
+              "hiragana": "めいじられれば",
+              "romaji": "meijirarereba",
+              "meaning": "приказывать",
+              "inflection": "Форма словарной единицы 命じる",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:部屋",
+              "surface": "部屋",
+              "hiragana": "へや",
+              "romaji": "heya",
+              "meaning": "комната",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:移動",
+              "surface": "移動",
+              "hiragana": "いどう",
+              "romaji": "idō",
+              "meaning": "перемещение; смена места",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:できる",
+              "surface": "でき",
+              "hiragana": "でき",
+              "romaji": "deki",
+              "meaning": "мочь; быть способным; быть возможным",
+              "inflection": "Форма словарной единицы できる",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:二度目",
+              "surface": "二度目",
+              "hiragana": "にどめ",
+              "romaji": "nidome",
+              "meaning": "второй раз",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:御手付き",
+              "surface": "御手付き",
+              "hiragana": "おてつき",
+              "romaji": "otetsuki",
+              "meaning": "женщина, удостоенная интимного внимания господина; само это внимание",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:出世",
+              "surface": "出世",
+              "hiragana": "しゅっせ",
+              "romaji": "shusse",
+              "meaning": "возвышение; продвижение в положении",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:意味する",
+              "surface": "意味している",
+              "hiragana": "いみしている",
+              "romaji": "imishiteiru",
+              "meaning": "означать",
+              "inflection": "Форма словарной единицы 意味する",
+              "role": "Лексическое значение в контексте предложения"
+            },
+            {
+              "wordId": "ja:word:それでも",
+              "surface": "それでも",
+              "hiragana": "それでも",
+              "romaji": "soredemo",
+              "meaning": "и всё же; даже при этом",
+              "role": "Связующее слово в контексте"
+            }
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:even-demo",
+              "role": "一度でも подчёркивает достаточность единственного случая: даже один вызов к императору меняет положение.",
+              "roleSegments": [
+                {
+                  "text": "一度",
+                  "reading": "いちど"
+                },
+                {
+                  "text": "でも подчёркивает достаточность единственного случая: даже один вызов к императору меняет положение."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "夜伽を命じられれば описывает приказ, полученный женщиной: её вызывают провести ночь с императором.",
+              "roleSegments": [
+                {
+                  "text": "夜伽",
+                  "reading": "よとぎ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "命じられれば",
+                  "reading": "めいじられれば"
+                },
+                {
+                  "text": " описывает приказ, полученный женщиной: её вызывают провести ночь с императором."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:conditional-ba",
+              "role": "命じられれば ставит условие переселения: если такой приказ поступит, станет возможен переезд.",
+              "roleSegments": [
+                {
+                  "text": "命じられれば",
+                  "reading": "めいじられれば"
+                },
+                {
+                  "text": " ставит условие переселения: если такой приказ поступит, станет возможен переезд."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:stem-link",
+              "role": "でき соединяет возможность переехать с дальнейшим пояснением о втором императорском внимании.",
+              "roleSegments": [
+                {
+                  "text": "でき",
+                  "reading": "でき"
+                },
+                {
+                  "text": " соединяет возможность переехать с дальнейшим пояснением о втором императорском внимании."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:topic",
+              "role": "二度目の御手付きは переводит разговор ко второму случаю близости: далее объясняется его значение.",
+              "roleSegments": [
+                {
+                  "text": "二度目",
+                  "reading": "にどめ"
+                },
+                {
+                  "text": "の"
+                },
+                {
+                  "text": "御手付き",
+                  "reading": "おてつき"
+                },
+                {
+                  "text": "は переводит разговор ко второму случаю близости: далее объясняется его значение."
+                }
+              ]
+            },
+            {
+              "grammarId": "ja:grammar:resultative-te-iru",
+              "role": "出世を意味している устанавливает устойчивое соответствие в дворцовой системе: второе внимание означает возвышение.",
+              "roleSegments": [
+                {
+                  "text": "出世",
+                  "reading": "しゅっせ"
+                },
+                {
+                  "text": "を"
+                },
+                {
+                  "text": "意味している",
+                  "reading": "いみしている"
+                },
+                {
+                  "text": " устанавливает устойчивое соответствие в дворцовой системе: второе внимание означает возвышение."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

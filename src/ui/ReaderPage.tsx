@@ -3,10 +3,11 @@ import { ChevronLeft, ChevronRight, Settings, Check, Sparkles } from 'lucide-rea
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
-import { useCatalog, useChapter, useDictionary, useUserData } from '../application/hooks';
-import type { Dictionary, Sentence } from '../domain/content';
+import { useCatalog, useChapter, useDictionaryEntities, useDictionaryIndex, useUserData } from '../application/hooks';
+import type { DictionaryEntries, Sentence } from '../domain/content';
 import type { LearningStatus, ReaderPreferences } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
+import { GrammarText } from './GrammarText';
 import { KanjiReadings } from './KanjiReadings';
 import { LayerHint } from './LayerHint';
 
@@ -23,7 +24,7 @@ function KanjiComponentNode({
 }: {
   character: string;
   meaning?: string;
-  kanji: Dictionary['kanji'];
+  kanji: DictionaryEntries['kanji'];
   ancestors: string[];
   depth: number;
 }) {
@@ -68,7 +69,7 @@ function KanjiComponentNode({
   );
 }
 
-function KanjiMemory({ item, kanji }: { item: Dictionary['kanji'][number]; kanji: Dictionary['kanji'] }) {
+function KanjiMemory({ item, kanji }: { item: DictionaryEntries['kanji'][number]; kanji: DictionaryEntries['kanji'] }) {
   const components = item.components.filter((component) => component !== item.character);
   return (
     <>
@@ -135,7 +136,7 @@ function SentenceBlock({
   selected: boolean;
   open: boolean;
   preferences: ReaderPreferences;
-  dictionary: Dictionary;
+  dictionary: DictionaryEntries;
   learning: Record<string, LearningStatus>;
   saving: boolean;
   onOpen: () => void;
@@ -160,6 +161,12 @@ function SentenceBlock({
   const visibleWords = sentence.wordOccurrences.filter((word) => showItem(word.wordId));
   const shownKanji = visibleKanji.filter(({ id }) => showItem(id));
   const visibleGrammar = sentence.grammarOccurrences.filter((occurrence) => showItem(occurrence.grammarId));
+  const grammarGroups = new Map<string, { role: string; roleSegments?: { text: string; reading?: string }[] }[]>();
+  for (const occurrence of visibleGrammar) {
+    const roles = grammarGroups.get(occurrence.grammarId) ?? [];
+    roles.push({ role: occurrence.role, roleSegments: occurrence.roleSegments });
+    grammarGroups.set(occurrence.grammarId, roles);
+  }
 
   return (
     <article
@@ -331,19 +338,19 @@ function SentenceBlock({
               <section>
                 <h4>{t('grammarLabel')}</h4>
                 <div className="grammar-notes">
-                  {visibleGrammar.map(({ grammarId: id, role }, occurrenceIndex) => {
+                  {[...grammarGroups].map(([id, roles]) => {
                     const item = dictionary.grammar.find((entry) => entry.id === id);
                     return (
                       item && (
-                        <div className="grammar-note learning-card" data-entity-id={id} key={`${id}-${occurrenceIndex}`}>
+                        <div className="grammar-note learning-card" data-entity-id={id} key={id}>
                           <LearningToggle label={item.title} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="text-link" onClick={() => onEntity(id)}>
                             {item.title}
                           </button>
-                          <p>{role}</p>
+                          {roles.map(({ role, roleSegments }, roleIndex) => <p key={`${roleIndex}-${role}`}><GrammarText text={role} segments={roleSegments} preferences={preferences} /></p>)}
                           <details>
                             <summary>{t('reveal')}</summary>
-                            <p>{item.explanation}</p>
+                            <p><GrammarText text={item.explanation} segments={item.explanationSegments} preferences={preferences} /></p>
                             {item.examples.map((example) => <GrammarExample key={example.text} example={example} preferences={preferences} />)}
                           </details>
                         </div>
@@ -406,11 +413,17 @@ export function ReaderPage() {
   const requestedSentence = params.get('sentence');
   const user = useUserData();
   const catalog = useCatalog();
-  const dictionary = useDictionary();
+  const dictionaryIndex = useDictionaryIndex();
   const book = catalog.data?.find((item) => item.id === bookId);
   const chapterMeta = book?.chapters.find((item) => item.id === chapterId);
   const chapterQuery = useChapter(chapterMeta?.path);
   const chapter = chapterQuery.data;
+  const referencedIds = chapter?.paragraphs.flatMap((paragraph) => paragraph.sentences.flatMap((sentence) => [
+    ...sentence.wordOccurrences.map((entry) => entry.wordId),
+    ...sentence.kanjiIds,
+    ...sentence.grammarOccurrences.map((entry) => entry.grammarId),
+  ]));
+  const dictionary = useDictionaryEntities(referencedIds);
   const sentences = useMemo(() => chapter?.paragraphs.flatMap((paragraph) => paragraph.sentences) ?? [], [chapter]);
   const readingKey = `${bookId}/${chapterId}`;
   const saved = user.data?.readings[readingKey];
@@ -516,11 +529,8 @@ export function ReaderPage() {
     document.getElementById(`sentence-${sentence.id}`)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }
   function openEntity(id: string, sentenceId: string) {
-    const kind = dictionary.data?.kanji.some((item) => item.id === id)
-      ? 'kanji'
-      : dictionary.data?.grammar.some((item) => item.id === id)
-        ? 'grammar'
-        : 'words';
+    const kind = dictionaryIndex.data?.byId[id]?.kind ??
+      (id.startsWith('ja:kanji:') ? 'kanji' : id.startsWith('ja:grammar:') ? 'grammar' : 'words');
     const returnTo = `/read/${bookId}/${chapterId}?sentence=${encodeURIComponent(sentenceId)}`;
     navigate(`/${kind}/${encodeURIComponent(id)}?returnTo=${encodeURIComponent(returnTo)}`);
   }
@@ -549,7 +559,13 @@ export function ReaderPage() {
       </div>
     );
   }
-  const emptyDictionary: Dictionary = { schemaVersion: 2, words: [], kanji: [], grammar: [] };
+  if (dictionary.isLoading) {
+    return <div className="loading-skeleton" aria-label={t('loading')} />;
+  }
+  if (dictionary.isError) {
+    return <div className="state-card" role="alert"><p>{t('error')}</p><Button variant="outline" onClick={() => void dictionary.refetch()}>{t('retry')}</Button></div>;
+  }
+  const emptyDictionary: DictionaryEntries = { words: [], kanji: [], grammar: [] };
   const style = {
     '--reader-size': `${preferences.fontSize}px`,
     '--reading-size': `${preferences.readingFontSize}px`,

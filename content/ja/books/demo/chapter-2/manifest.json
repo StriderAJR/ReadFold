@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "id": "demo.chapter-2",
+  "bookId": "demo",
+  "title": "На следующий день",
+  "parts": [
+    "part-001.json"
+  ]
+}

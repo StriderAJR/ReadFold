@@ -1,0 +1,21 @@
+{
+  "id": "ja:kanji:月",
+  "character": "月",
+  "meanings": [
+    "луна, месяц"
+  ],
+  "on": [
+    "ゲツ",
+    "ガツ"
+  ],
+  "kun": [
+    "つき"
+  ],
+  "components": [],
+  "wordIds": [
+    "ja:word:三か月",
+    "ja:word:満月"
+  ],
+  "mnemonic": "Узкий месяц с двумя полосками внутри похож на лунное окно.",
+  "componentMeanings": {}
+}

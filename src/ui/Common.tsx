@@ -15,10 +15,10 @@ export function download(name: string, value: unknown) {
   anchor.click();
   URL.revokeObjectURL(href);
 }
-export function useAppData() {
+export function useAppData(options: { loadDictionary?: boolean } = {}) {
   const query = useUserData();
   const catalog = useCatalog();
-  const dictionary = useDictionary();
+  const dictionary = useDictionary(options.loadDictionary ?? true);
   const user = {
     ...query,
     save: async (input: Parameters<typeof query.save>[0]) => {

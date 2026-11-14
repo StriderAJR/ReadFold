@@ -5,20 +5,71 @@ import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
 import { useAppData, PageTitle, ErrorState } from './Common';
 import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
-import { useOccurrences } from '../application/hooks';
+import { useCatalog, useChapter, useDictionaryEntities, useDictionaryEntity, useDictionarySection, useOccurrences } from '../application/hooks';
 import type { LearningStatus } from '../domain/user-state';
 import { canonicalEntityId } from '../domain/entity-id-migration';
 import { GrammarExample } from './GrammarExample';
 import { KanjiReadings } from './KanjiReadings';
+import { GrammarText } from './GrammarText';
+
+function parseReturnContext(value: string | null): { bookId: string; chapterId: string; sentenceId: string } | null {
+  const match = value?.match(/^\/read\/([a-z0-9.-]+)\/([a-z0-9.-]+)\?sentence=([a-z0-9.-]+)$/);
+  return match ? { bookId: match[1], chapterId: match[2], sentenceId: match[3] } : null;
+}
+
+function InBookGrammarExample({
+  grammarId,
+  context,
+  genericExamples,
+  preferences,
+}: {
+  grammarId: string;
+  context: { bookId: string; chapterId: string; sentenceId: string };
+  genericExamples: import('../domain/content').Grammar['examples'];
+  preferences: import('../domain/user-state').ReaderPreferences;
+}) {
+  const { t } = useTranslation();
+  const catalog = useCatalog();
+  const book = catalog.data?.find((entry) => entry.id === context.bookId);
+  const metadata = book?.chapters.find((entry) => entry.id === context.chapterId);
+  const chapter = useChapter(metadata?.path);
+  const sentence = chapter.data?.paragraphs.flatMap((paragraph) => paragraph.sentences)
+    .find((entry) => entry.id === context.sentenceId);
+  const roles = sentence?.grammarOccurrences.filter((occurrence) => occurrence.grammarId === grammarId) ?? [];
+  if (!sentence || !roles.length) {
+    return null;
+  }
+  const example: import('../domain/content').Grammar['examples'][number] = {
+    text: sentence.text,
+    translation: sentence.natural,
+    hiragana: sentence.hiragana,
+    romaji: sentence.romaji,
+    literal: sentence.literal,
+    natural: sentence.natural,
+    segments: sentence.segments,
+  };
+  return (
+    <section className="grammar-examples in-book-grammar-example">
+      <h3>{t('bookExample')}</h3>
+      {!genericExamples.some((candidate) => candidate.text === sentence.text) && (
+        <GrammarExample example={example} preferences={preferences} />
+      )}
+      {roles.map((occurrence, index) => (
+        <p key={`${occurrence.grammarId}-${index}`}><small>{t('contextRole')}:</small> <GrammarText text={occurrence.role} segments={occurrence.roleSegments} preferences={preferences} /></p>
+      ))}
+    </section>
+  );
+}
+
 export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const { t } = useTranslation();
-  const { user, dictionary, catalog } = useAppData();
+  const { user, catalog } = useAppData({ loadDictionary: false });
+  const dictionary = useDictionarySection(kind);
   const [search, setSearch] = useSearchParams();
   const [query, setQuery] = useState(search.get('q') ?? '');
   const [statusFilter, setStatusFilter] = useState('all');
   const [sort, setSort] = useState('alphabetical');
-  const items =
-    kind === 'words' ? dictionary.data?.words : kind === 'kanji' ? dictionary.data?.kanji : dictionary.data?.grammar;
+  const items = dictionary.data;
   const matched = (items ?? [])
     .filter((item) => {
       const status = user.data?.learning[item.id];
@@ -95,7 +146,7 @@ export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }
                     : '';
             const meaning =
               kind === 'grammar' && 'explanation' in item
-                ? item.explanation
+                ? <GrammarText text={item.explanation} segments={'explanationSegments' in item ? item.explanationSegments : undefined} preferences={user.preferences} />
                 : 'meanings' in item
                   ? item.meanings.join('、')
                   : '';
@@ -122,17 +173,14 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const { id = '' } = useParams();
   const [searchParams] = useSearchParams();
   const requestedReturn = searchParams.get('returnTo');
-  const returnTo = requestedReturn && /^\/read\/[a-z0-9.-]+\/[a-z0-9.-]+\?sentence=[a-z0-9.-]+$/.test(requestedReturn)
-    ? requestedReturn : null;
+  const returnContext = parseReturnContext(requestedReturn);
+  const returnTo = returnContext ? requestedReturn : null;
   const { t } = useTranslation();
-  const { user, dictionary } = useAppData();
-  const dict = dictionary.data;
-  const item =
-    kind === 'words'
-      ? dict?.words.find((x) => x.id === id)
-      : kind === 'kanji'
-        ? dict?.kanji.find((x) => x.id === id)
-        : dict?.grammar.find((x) => x.id === id);
+  const { user } = useAppData({ loadDictionary: false });
+  const dictionary = useDictionaryEntity(id);
+  const item = dictionary.data;
+  const linkedIds = item && 'wordIds' in item ? item.wordIds : item && 'relatedIds' in item ? item.relatedIds : [];
+  const linkedCards = useDictionaryEntities(linkedIds, Boolean(item));
   const occurrences = useOccurrences(kind, id, Boolean(item));
   const detail = occurrences.data?.occurrences ?? [];
   const [limit, setLimit] = useState(25);
@@ -142,7 +190,10 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
     ) ?? [];
   const previousStatus = (manualStatuses.at(-2)?.payload.status ?? 'encountered') as LearningStatus;
   if (!item) {
-    return <ErrorState message={dictionary.isLoading ? t('loading') : t('noResults')} />;
+    return <ErrorState
+      message={dictionary.isLoading ? t('loading') : dictionary.isError ? t('error') : t('noResults')}
+      retry={dictionary.isError ? () => void dictionary.refetch() : undefined}
+    />;
   }
   let title = '';
   let sub = '';
@@ -159,7 +210,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
     kanjiReadings = <KanjiReadings on={item.on} kun={item.kun} romaji={user.preferences.romaji} />;
     meaning = item.meanings.join('、');
     related = item.wordIds.flatMap((wordId) => {
-      const word = dict?.words.find((entry) => entry.id === wordId);
+      const word = linkedCards.data?.words.find((entry) => entry.id === wordId);
       return word ? [{ id: word.id, label: word.surface, kind: 'words' as const }] : [];
     });
   } else if (kind === 'grammar' && 'title' in item) {
@@ -168,7 +219,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
     meaning = item.explanation;
     examples = item.examples;
     related = item.relatedIds.flatMap((relatedId) => {
-      const grammar = dict?.grammar.find((entry) => entry.id === relatedId);
+      const grammar = linkedCards.data?.grammar.find((entry) => entry.id === relatedId);
       return grammar ? [{ id: grammar.id, label: grammar.title, kind: 'grammar' as const }] : [];
     });
   }
@@ -203,7 +254,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
         ) : (
           <>
             <p className="entity-reading">{sub}</p>
-            <p>{meaning}</p>
+            <p>{kind === 'grammar' ? <GrammarText text={meaning} segments={'explanationSegments' in item ? item.explanationSegments : undefined} preferences={user.preferences} /> : meaning}</p>
           </>
         )}
         {examples.length > 0 && (
@@ -212,6 +263,14 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
               <GrammarExample key={i} example={ex} preferences={user.preferences} />
             ))}
           </div>
+        )}
+        {kind === 'grammar' && returnContext && (
+          <InBookGrammarExample
+            grammarId={id}
+            context={returnContext}
+            genericExamples={examples}
+            preferences={user.preferences}
+          />
         )}
         {kind === 'kanji' && 'character' in item && (
           <section className="kanji-mnemonic" aria-label={t('mnemonic')}>

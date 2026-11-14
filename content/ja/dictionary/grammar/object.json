@@ -1,0 +1,72 @@
+{
+  "id": "ja:grammar:object",
+  "title": "を: объект действия",
+  "explanation": "Частица を (читается お, o) отмечает прямое дополнение: 水を飲む — пить воду.",
+  "examples": [
+    {
+      "text": "猫に水をあげます。",
+      "translation": "Даю кошке воду.",
+      "hiragana": "ねこにみずをあげます。",
+      "romaji": "Neko ni mizu o agemasu.",
+      "literal": "Кошке [получатель] воду [объект] даю.",
+      "natural": "Даю кошке воду.",
+      "segments": [
+        {
+          "text": "猫",
+          "reading": "ねこ"
+        },
+        {
+          "text": "に"
+        },
+        {
+          "text": "水",
+          "reading": "みず"
+        },
+        {
+          "text": "をあげます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:recipient"
+  ],
+  "explanationSegments": [
+    {
+      "text": "Частица "
+    },
+    {
+      "reading": "を",
+      "text": "を"
+    },
+    {
+      "text": " (читается "
+    },
+    {
+      "reading": "お",
+      "text": "お"
+    },
+    {
+      "text": ", o) отмечает прямое дополнение: "
+    },
+    {
+      "reading": "みず",
+      "text": "水"
+    },
+    {
+      "reading": "を",
+      "text": "を"
+    },
+    {
+      "reading": "の",
+      "text": "飲"
+    },
+    {
+      "reading": "む",
+      "text": "む"
+    },
+    {
+      "text": " — пить воду."
+    }
+  ]
+}

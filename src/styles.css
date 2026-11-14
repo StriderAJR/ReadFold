@@ -19,6 +19,8 @@
   --purple: #63568e;
   --green: #567e69;
   --shadow: 0 12px 32px #342b2210;
+  --selection-ink: #211d2b;
+  --selection-bg: #f5a18e;
 }
 * {
   box-sizing: border-box;
@@ -2121,16 +2123,14 @@ html[data-theme='dark'] {
   --cream: #191920;
   --line: #393742;
   --shadow: 0 12px 32px #0003;
+  --selection-ink: #fff;
+  --selection-bg: #7666a8;
   background: var(--cream);
   color: var(--ink);
 }
 ::selection {
-  color: #211d2b;
-  background: #f5a18e;
-}
-html[data-theme='dark'] ::selection {
-  color: #17151d;
-  background: #f5a18e;
+  color: var(--selection-ink);
+  background: var(--selection-bg);
 }
 html[data-theme='dark'] body {
   background: var(--cream);
@@ -2182,6 +2182,13 @@ html[data-theme='dark'] .occurrence-row:hover,
 html[data-theme='dark'] .book-card:hover {
   background: #302e39;
   color: var(--ink);
+}
+html[data-theme='dark'] .chapter-row:hover {
+  background: #302e39;
+  color: var(--ink);
+}
+html[data-theme='dark'] .chapter-name small {
+  color: var(--muted);
 }
 html[data-theme='dark'] .inline-links button,
 html[data-theme='dark'] .inline-links a,
@@ -2572,6 +2579,9 @@ html[data-theme='dark'] .reveal-button {
 }
 
 .reader-toolbar {
+  position: sticky;
+  top: 82px;
+  z-index: 9;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -2581,6 +2591,8 @@ html[data-theme='dark'] .reveal-button {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--paper);
+  box-shadow: 0 8px 24px #211b2b12;
+  backdrop-filter: blur(14px);
 }
 .reader-toolbar .reader-mode {
   display: flex;
@@ -2833,7 +2845,7 @@ html[data-theme='dark'] .reader-toolbar .reader-mode button[aria-pressed='true']
 }
 @media (max-width: 760px) {
   .reader-toolbar {
-    position: relative;
+    top: 64px;
     align-items: flex-start;
   }
   .reader-toolbar .reader-mode {

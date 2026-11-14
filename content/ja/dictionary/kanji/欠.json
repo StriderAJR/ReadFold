@@ -1,0 +1,18 @@
+{
+  "id": "ja:kanji:欠",
+  "character": "欠",
+  "meanings": [
+    "недоставать; зевать"
+  ],
+  "on": [
+    "ケツ"
+  ],
+  "kun": [
+    "かける",
+    "かく"
+  ],
+  "components": [],
+  "componentMeanings": {},
+  "wordIds": [],
+  "mnemonic": "Человек запрокинул голову и открыл рот в зевке."
+}

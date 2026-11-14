@@ -1,0 +1,26 @@
+{
+  "id": "ja:kanji:枯",
+  "character": "枯",
+  "meanings": [
+    "засыхать"
+  ],
+  "on": [
+    "コ"
+  ],
+  "kun": [
+    "かれる",
+    "からす"
+  ],
+  "components": [
+    "木",
+    "古"
+  ],
+  "componentMeanings": {
+    "木": "дерево",
+    "古": "старый"
+  },
+  "wordIds": [
+    "ja:word:枯れ枝"
+  ],
+  "mnemonic": "Старое дерево засыхает."
+}

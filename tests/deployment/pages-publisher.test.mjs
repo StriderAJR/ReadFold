@@ -23,8 +23,9 @@ async function fixture(context) {
   await put('dist/privacy.html', 'new privacy');
   await put('dist/terms.html', 'new terms');
   await put('dist/books/catalog.json', '[]');
+  await put('dist/ja/dictionary/index.json', '{"sections":{}}');
   await put('dist/googlef53875cf353db667.html', 'google-verification');
-  await put('public/googlef53875cf353db667.html', 'google-verification');
+  await put('dist_public/googlef53875cf353db667.html', 'google-verification');
   await put('docs/googlef53875cf353db667.html', 'google-verification');
   await put('docs/index.html', 'old landing');
   await put('docs/privacy.html', 'old privacy');
@@ -39,6 +40,7 @@ test('publishes compiled assets, preserves Markdown and verification, and backs 
   assert.equal(await site.read('docs/index.html'), await site.read('dist/index.html'));
   assert.equal(await site.read('docs/privacy.html'), 'new privacy');
   assert.equal(await site.read('docs/architecture.md'), '# Keep documentation');
+  assert.equal(await site.read('docs/ja/dictionary/index.json'), '{"sections":{}}');
   assert.equal(await site.read('docs/googlef53875cf353db667.html'), 'google-verification');
   assert.equal(await site.read('docs/.nojekyll'), '');
   assert.equal(await site.read(`${result.backup}/files/index.html`), 'old landing');

@@ -1,13 +1,34 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { catalogSchema, chapterSchema, dictionarySchema, grammarSchema, kanjiSchema, validateChapterReferences } from './content';
+import {
+  catalogSchema,
+  chapterSchema,
+  dictionaryIndexSchema,
+  dictionarySchema,
+  grammarSchema,
+  grammarShardSchema,
+  kanjiSchema,
+  kanjiShardSchema,
+  occurrenceShardSchema,
+  validateChapterReferences,
+  wordShardSchema,
+} from './content';
 import { legacyEntityIdMap } from './entity-id-migration';
 
-const read = (path: string): unknown => JSON.parse(readFileSync(`public/${path}`, 'utf8'));
+const read = (path: string): unknown => JSON.parse(readFileSync(`.local-tools/content/${path}`, 'utf8'));
+const readDictionary = () => {
+  const index = dictionaryIndexSchema.parse(read('ja/dictionary/index.json'));
+  return dictionarySchema.parse({
+    schemaVersion: 2,
+    words: index.sections.words.flatMap((path) => wordShardSchema.parse(read(path)).entries),
+    kanji: index.sections.kanji.flatMap((path) => kanjiShardSchema.parse(read(path)).entries),
+    grammar: index.sections.grammar.flatMap((path) => grammarShardSchema.parse(read(path)).entries),
+  });
+};
 
 describe('book format', () => {
   it('provides mnemonic component meanings and validates their correspondence', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const entries = new Map(dictionary.kanji.map((kanji) => [kanji.character, kanji]));
     for (const kanji of dictionary.kanji) {
       expect(kanji.mnemonic).toBeTruthy();
@@ -20,7 +41,7 @@ describe('book format', () => {
       }
       expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: undefined, mnemonic: undefined }).success).toBe(true);
     }
-    const kanji = dictionary.kanji[0];
+    const kanji = dictionary.kanji.find((entry) => entry.components.length > 0)!;
     expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: {} }).success).toBe(false);
     expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: { ...kanji.componentMeanings, unknown: 'образ' } }).success)
       .toBe(false);
@@ -29,7 +50,7 @@ describe('book format', () => {
   });
 
   it('provides grammar example display layers and rejects malformed ruby', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     for (const grammar of dictionary.grammar) {
       for (const example of grammar.examples) {
         for (const field of ['hiragana', 'romaji', 'literal', 'natural'] as const) {
@@ -47,7 +68,7 @@ describe('book format', () => {
 
   it('validates all shipped chapters and dictionary references', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const demoBook = catalog.find((book) => book.id === 'demo');
     expect(demoBook?.chapters).toHaveLength(2);
     for (const book of catalog) {
@@ -71,7 +92,7 @@ describe('book format', () => {
   });
 
   it('links every kanji in the Apothecary Diaries chapter to a detailed card', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const chapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
     const entries = new Map(dictionary.kanji.map((entry) => [entry.character, entry]));
     for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
@@ -90,7 +111,7 @@ describe('book format', () => {
   });
 
   it('links grammar for every Apothecary Diaries sentence without duplicate references', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const chapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
     const grammar = new Map(dictionary.grammar.map((entry) => [entry.id, entry]));
     for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
@@ -117,7 +138,7 @@ describe('book format', () => {
 
   it('rejects unknown and duplicate dictionary references', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const chapter = chapterSchema.parse(read(catalog[0].chapters[0].path));
     chapter.paragraphs[0].sentences[0].wordOccurrences[0].wordId = 'ja:word:unknown';
     expect(() => validateChapterReferences(chapter, catalog[0], dictionary)).toThrow('Unknown dictionary reference');
@@ -128,7 +149,7 @@ describe('book format', () => {
   });
 
   it('rejects collisions between dictionary types', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const ids = [...dictionary.words, ...dictionary.kanji, ...dictionary.grammar].map((entry) => entry.id);
     expect(new Set(ids).size).toBe(ids.length);
     dictionary.kanji[0].id = dictionary.words[0].id;
@@ -142,7 +163,7 @@ describe('book format', () => {
   });
 
   it('rejects missing, unreadable, duplicate, and cyclic kanji components', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const entry = dictionary.kanji.find((kanji) => kanji.components.length > 0)!;
     const invalid = structuredClone(dictionary);
     const target = invalid.kanji.find((kanji) => kanji.id === entry.id)!;
@@ -171,12 +192,12 @@ describe('book format', () => {
     expect(catalogSchema.safeParse([withoutVersion]).success).toBe(false);
     const chapter = chapterSchema.parse(read(catalog[0].chapters[0].path));
     chapter.paragraphs[0].sentences[0].grammarOccurrences[0].grammarId = 'ja:grammar:unknown';
-    expect(() => validateChapterReferences(chapter, catalog[0], dictionarySchema.parse(read('books/dictionary.json'))))
+    expect(() => validateChapterReferences(chapter, catalog[0], readDictionary()))
       .toThrow('Unknown dictionary reference');
   });
 
   it('requires kind-prefixed Unicode IDs and distinct homonym cards', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     expect(dictionary.words.filter((word) => word.dictionaryForm === 'ある').map((word) => word.id)).toEqual([
       'ja:word:ある:exist', 'ja:word:ある:indefinite',
     ]);
@@ -187,11 +208,47 @@ describe('book format', () => {
   });
 
   it('maps every previous entity ID exactly once to a live card', () => {
-    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const dictionary = readDictionary();
     const liveIds = new Set([...dictionary.words, ...dictionary.kanji, ...dictionary.grammar].map((entry) => entry.id));
     const targets = Object.values(legacyEntityIdMap);
     expect(Object.keys(legacyEntityIdMap)).toHaveLength(1051);
     expect(new Set(targets).size).toBe(targets.length);
     expect(targets.every((id) => liveIds.has(id))).toBe(true);
+  });
+
+  it('indexes only card files and produces resolvable occurrence locations', () => {
+    const index = dictionaryIndexSchema.parse(read('ja/dictionary/index.json'));
+    const dictionary = readDictionary();
+    const entries = [...dictionary.words, ...dictionary.kanji, ...dictionary.grammar];
+    const indexedIds = Object.keys(index.byId);
+    expect(new Set(indexedIds).size).toBe(indexedIds.length);
+    expect(new Set(indexedIds)).toEqual(new Set(entries.map((entry) => entry.id)));
+    const occurrenceShards = new Map<string, ReturnType<typeof occurrenceShardSchema.parse>>();
+    const chapters = new Map<string, ReturnType<typeof chapterSchema.parse>>();
+    const catalog = catalogSchema.parse(read('books/catalog.json'));
+    for (const [id, reference] of Object.entries(index.byId)) {
+      const section = index.sections[reference.kind];
+      expect(section).toContain(reference.file);
+      if (!occurrenceShards.has(reference.occurrencesFile)) {
+        occurrenceShards.set(reference.occurrencesFile, occurrenceShardSchema.parse(read(reference.occurrencesFile)));
+      }
+      for (const location of occurrenceShards.get(reference.occurrencesFile)?.byId[id] ?? []) {
+        const book = catalog.find((entry) => entry.id === location.bookId);
+        expect(book?.chapters.some((item) => item.id === location.chapterId && item.path === location.chapterPath)).toBe(true);
+        let chapter = chapters.get(location.chapterPath);
+        if (!chapter) {
+          chapter = chapterSchema.parse(read(location.chapterPath));
+          chapters.set(location.chapterPath, chapter);
+        }
+        const sentence = chapter.paragraphs.flatMap((paragraph) => paragraph.sentences).find((entry) => entry.id === location.sentenceId);
+        expect(sentence).toBeDefined();
+        const hasId = reference.kind === 'words'
+          ? sentence?.wordOccurrences.some((occurrence) => occurrence.wordId === id)
+          : reference.kind === 'kanji'
+            ? sentence?.kanjiIds.includes(id)
+            : sentence?.grammarOccurrences.some((occurrence) => occurrence.grammarId === id);
+        expect(hasId).toBe(true);
+      }
+    }
   });
 });

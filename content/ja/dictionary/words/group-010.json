@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:大所帯",
+    "surface": "大所帯",
+    "dictionaryForm": "大所帯",
+    "reading": "おおじょたい",
+    "romaji": "ōjotai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "большое хозяйство; большая группа проживающих вместе"
+    ]
+  },
+  {
+    "id": "ja:word:最下層",
+    "surface": "最下層",
+    "dictionaryForm": "最下層",
+    "reading": "さいかそう",
+    "romaji": "saikasō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "самый низший слой"
+    ]
+  },
+  {
+    "id": "ja:word:下女",
+    "surface": "下女",
+    "dictionaryForm": "下女",
+    "reading": "げじょ",
+    "romaji": "gejo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "служанка низшего положения"
+    ]
+  },
+  {
+    "id": "ja:word:官職",
+    "surface": "官職",
+    "dictionaryForm": "官職",
+    "reading": "かんしょく",
+    "romaji": "kanshoku",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "официальная должность; государственная должность"
+    ]
+  },
+  {
+    "id": "ja:word:特に",
+    "surface": "特に",
+    "dictionaryForm": "特に",
+    "reading": "とくに",
+    "romaji": "toku ni",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "особенно; в частности"
+    ]
+  },
+  {
+    "id": "ja:word:後ろ盾",
+    "surface": "後ろ盾",
+    "dictionaryForm": "後ろ盾",
+    "reading": "うしろだて",
+    "romaji": "ushirodate",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "покровительство; покровитель"
+    ]
+  },
+  {
+    "id": "ja:word:数合わせ",
+    "surface": "数合わせ",
+    "dictionaryForm": "数合わせ",
+    "reading": "かずあわせ",
+    "romaji": "kazuawase",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "добор до нужного числа; заполнение численности"
+    ]
+  },
+  {
+    "id": "ja:word:妥当",
+    "surface": "妥当",
+    "dictionaryForm": "妥当",
+    "reading": "だとう",
+    "romaji": "datō",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "уместный; соответствующий; обоснованный"
+    ]
+  },
+  {
+    "id": "ja:word:牡丹",
+    "surface": "牡丹",
+    "dictionaryForm": "牡丹",
+    "reading": "ぼたん",
+    "romaji": "botan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "пион"
+    ]
+  },
+  {
+    "id": "ja:word:豊満",
+    "surface": "豊満",
+    "dictionaryForm": "豊満",
+    "reading": "ほうまん",
+    "romaji": "hōman",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "пышный; полнотелый"
+    ]
+  },
+  {
+    "id": "ja:word:肉体",
+    "surface": "肉体",
+    "dictionaryForm": "肉体",
+    "reading": "にくたい",
+    "romaji": "nikutai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "тело"
+    ]
+  },
+  {
+    "id": "ja:word:満月",
+    "surface": "満月",
+    "dictionaryForm": "満月",
+    "reading": "まんげつ",
+    "romaji": "mangetsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "полная луна; полнолуние"
+    ]
+  },
+  {
+    "id": "ja:word:白い",
+    "surface": "白い",
+    "dictionaryForm": "白い",
+    "reading": "しろい",
+    "romaji": "shiroi",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "белый"
+    ]
+  },
+  {
+    "id": "ja:word:肌",
+    "surface": "肌",
+    "dictionaryForm": "肌",
+    "reading": "はだ",
+    "romaji": "hada",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "кожа"
+    ]
+  },
+  {
+    "id": "ja:word:持つ",
+    "surface": "持つ",
+    "dictionaryForm": "持つ",
+    "reading": "もつ",
+    "romaji": "motsu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "иметь; держать; обладать"
+    ]
+  },
+  {
+    "id": "ja:word:まだ",
+    "surface": "まだ",
+    "dictionaryForm": "まだ",
+    "reading": "まだ",
+    "romaji": "mada",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "ещё; пока"
+    ]
+  },
+  {
+    "id": "ja:word:下妃",
+    "surface": "下妃",
+    "dictionaryForm": "下妃",
+    "reading": "かひ",
+    "romaji": "kahi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "супруга правителя младшего ранга"
+    ]
+  },
+  {
+    "id": "ja:word:位",
+    "surface": "位",
+    "dictionaryForm": "位",
+    "reading": "くらい",
+    "romaji": "kurai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "ранг; положение"
+    ]
+  },
+  {
+    "id": "ja:word:つく:rank",
+    "surface": "つく",
+    "dictionaryForm": "つく",
+    "reading": "つく",
+    "romaji": "tsuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "занимать должность или положение"
+    ]
+  },
+  {
+    "id": "ja:word:可能性",
+    "surface": "可能性",
+    "dictionaryForm": "可能性",
+    "reading": "かのうせい",
+    "romaji": "kanōsei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "возможность; вероятность"
+    ]
+  },
+  {
+    "id": "ja:word:そばかす",
+    "surface": "そばかす",
+    "dictionaryForm": "そばかす",
+    "reading": "そばかす",
+    "romaji": "sobakasu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "веснушки"
+    ]
+  },
+  {
+    "id": "ja:word:浮く",
+    "surface": "浮く",
+    "dictionaryForm": "浮く",
+    "reading": "うく",
+    "romaji": "uku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "всплывать; проступать на поверхности"
+    ]
+  },
+  {
+    "id": "ja:word:健康的",
+    "surface": "健康的",
+    "dictionaryForm": "健康的",
+    "reading": "けんこうてき",
+    "romaji": "kenkōteki",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "здоровый; имеющий здоровый вид"
+    ]
+  },
+  {
+    "id": "ja:word:枯れ枝",
+    "surface": "枯れ枝",
+    "dictionaryForm": "枯れ枝",
+    "reading": "かれえだ",
+    "romaji": "kareeda",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "сухая ветка"
+    ]
+  }
+]

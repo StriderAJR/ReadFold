@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:手足",
+    "surface": "手足",
+    "dictionaryForm": "手足",
+    "reading": "てあし",
+    "romaji": "teashi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "руки и ноги; конечности"
+    ]
+  },
+  {
+    "id": "ja:word:早い",
+    "surface": "早い",
+    "dictionaryForm": "早い",
+    "reading": "はやい",
+    "romaji": "hayai",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "ранний; быстрый"
+    ]
+  },
+  {
+    "id": "ja:word:仕事",
+    "surface": "仕事",
+    "dictionaryForm": "仕事",
+    "reading": "しごと",
+    "romaji": "shigoto",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "работа"
+    ]
+  },
+  {
+    "id": "ja:word:終わらせる",
+    "surface": "終わらせる",
+    "dictionaryForm": "終わらせる",
+    "reading": "おわらせる",
+    "romaji": "owaraseru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "заканчивать; доводить до конца"
+    ]
+  },
+  {
+    "id": "ja:word:梅",
+    "surface": "梅",
+    "dictionaryForm": "梅",
+    "reading": "うめ",
+    "romaji": "ume",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "слива японская; умэ"
+    ]
+  },
+  {
+    "id": "ja:word:壱七",
+    "surface": "壱七",
+    "dictionaryForm": "壱七",
+    "reading": "いちなな",
+    "romaji": "ichinana",
+    "partOfSpeech": "цифровая маркировка",
+    "meanings": [
+      "цифры «один, семь» на бирке"
+    ]
+  },
+  {
+    "id": "ja:word:札",
+    "surface": "札",
+    "dictionaryForm": "札",
+    "reading": "ふだ",
+    "romaji": "fuda",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "бирка; табличка"
+    ]
+  },
+  {
+    "id": "ja:word:見つける",
+    "surface": "見つける",
+    "dictionaryForm": "見つける",
+    "reading": "みつける",
+    "romaji": "mitsukeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "находить; замечать"
+    ]
+  },
+  {
+    "id": "ja:word:小走り",
+    "surface": "小走り",
+    "dictionaryForm": "小走り",
+    "reading": "こばしり",
+    "romaji": "kobashiri",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "мелкая рысь; короткие быстрые шаги"
+    ]
+  },
+  {
+    "id": "ja:word:歩く",
+    "surface": "歩く",
+    "dictionaryForm": "歩く",
+    "reading": "あるく",
+    "romaji": "aruku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "идти; ходить"
+    ]
+  },
+  {
+    "id": "ja:word:重い",
+    "surface": "重い",
+    "dictionaryForm": "重い",
+    "reading": "おもい",
+    "romaji": "omoi",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "тяжёлый"
+    ]
+  },
+  {
+    "id": "ja:word:曇る",
+    "surface": "曇る",
+    "dictionaryForm": "曇る",
+    "reading": "くもる",
+    "romaji": "kumoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "покрываться облаками; хмуриться"
+    ]
+  },
+  {
+    "id": "ja:word:空",
+    "surface": "空",
+    "dictionaryForm": "空",
+    "reading": "そら",
+    "romaji": "sora",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "небо"
+    ]
+  },
+  {
+    "id": "ja:word:泣き出す",
+    "surface": "泣き出す",
+    "dictionaryForm": "泣き出す",
+    "reading": "なきだす",
+    "romaji": "nakidasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "начинать плакать"
+    ]
+  },
+  {
+    "id": "ja:word:部屋",
+    "surface": "部屋",
+    "dictionaryForm": "部屋",
+    "reading": "へや",
+    "romaji": "heya",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "комната"
+    ]
+  },
+  {
+    "id": "ja:word:主",
+    "surface": "主",
+    "dictionaryForm": "主",
+    "reading": "ぬし",
+    "romaji": "nushi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "хозяин; владелец"
+    ]
+  },
+  {
+    "id": "ja:word:下級",
+    "surface": "下級",
+    "dictionaryForm": "下級",
+    "reading": "かきゅう",
+    "romaji": "kakyū",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "низший ранг; младший разряд"
+    ]
+  },
+  {
+    "id": "ja:word:妃嬪",
+    "surface": "妃嬪",
+    "dictionaryForm": "妃嬪",
+    "reading": "ひひん",
+    "romaji": "hihin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "императорские супруги и наложницы"
+    ]
+  },
+  {
+    "id": "ja:word:与える",
+    "surface": "与える",
+    "dictionaryForm": "与える",
+    "reading": "あたえる",
+    "romaji": "ataeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "давать; предоставлять"
+    ]
+  },
+  {
+    "id": "ja:word:個室",
+    "surface": "個室",
+    "dictionaryForm": "個室",
+    "reading": "こしつ",
+    "romaji": "koshitsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "отдельная комната"
+    ]
+  },
+  {
+    "id": "ja:word:他",
+    "surface": "他",
+    "dictionaryForm": "他",
+    "reading": "ほか",
+    "romaji": "hoka",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "другой; прочие"
+    ]
+  },
+  {
+    "id": "ja:word:比べる",
+    "surface": "比べる",
+    "dictionaryForm": "比べる",
+    "reading": "くらべる",
+    "romaji": "kuraberu",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "сравнивать"
+    ]
+  },
+  {
+    "id": "ja:word:調度",
+    "surface": "調度",
+    "dictionaryForm": "調度",
+    "reading": "ちょうど",
+    "romaji": "chōdo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "обстановка; предметы убранства"
+    ]
+  },
+  {
+    "id": "ja:word:豪華",
+    "surface": "豪華",
+    "dictionaryForm": "豪華",
+    "reading": "ごうか",
+    "romaji": "gōka",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "роскошный"
+    ]
+  }
+]

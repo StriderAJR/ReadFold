@@ -1,0 +1,23 @@
+{
+  "id": "ja:kanji:森",
+  "character": "森",
+  "meanings": [
+    "лес"
+  ],
+  "on": [
+    "シン"
+  ],
+  "kun": [
+    "もり"
+  ],
+  "components": [
+    "木"
+  ],
+  "wordIds": [
+    "ja:word:森"
+  ],
+  "mnemonic": "Три дерева сомкнулись в густой лес.",
+  "componentMeanings": {
+    "木": "дерево"
+  }
+}

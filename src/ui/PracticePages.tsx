@@ -206,7 +206,7 @@ export function ReviewsPage() {
 }
 export function StatisticsPage() {
   const { t } = useTranslation();
-  const { catalog, user } = useAppData();
+  const { catalog, user } = useAppData({ loadDictionary: false });
   const readings = user.data?.readings ?? {};
   const learning = user.data?.learning ?? {};
   const reviews = user.data?.reviews ?? [];

@@ -1,0 +1,17 @@
+{
+  "id": "ja:kanji:車",
+  "character": "車",
+  "meanings": [
+    "колесо; машина"
+  ],
+  "on": [
+    "シャ"
+  ],
+  "kun": [
+    "くるま"
+  ],
+  "components": [],
+  "componentMeanings": {},
+  "wordIds": [],
+  "mnemonic": "Ось проходит через кузов, соединяя верхнее и нижнее колёса."
+}

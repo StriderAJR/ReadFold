@@ -5,6 +5,7 @@ import { publishDocs } from './pages-publisher.mjs';
 
 const workspace = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const checks = [
+  ['generated content', '--experimental-strip-types', 'scripts/build-content.mjs', '--output', '.local-tools/content'],
   ['typecheck', 'node_modules/typescript/bin/tsc', '-b'],
   ['lint', 'node_modules/eslint/bin/eslint.js', '.'],
   ['unit tests', 'node_modules/vitest/vitest.mjs', 'run'],

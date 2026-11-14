@@ -1,0 +1,67 @@
+{
+  "id": "ja:grammar:recipient",
+  "title": "に: получатель",
+  "explanation": "С あげる частица に отмечает получателя, а を — то, что дают.",
+  "examples": [
+    {
+      "text": "私は猫に水をあげます。",
+      "translation": "Я даю кошке воду.",
+      "hiragana": "わたしはねこにみずをあげます。",
+      "romaji": "Watashi wa neko ni mizu o agemasu.",
+      "literal": "Я [тема] кошке [получатель] воду [объект] даю.",
+      "natural": "Я даю кошке воду.",
+      "segments": [
+        {
+          "text": "私",
+          "reading": "わたし"
+        },
+        {
+          "text": "は"
+        },
+        {
+          "text": "猫",
+          "reading": "ねこ"
+        },
+        {
+          "text": "に"
+        },
+        {
+          "text": "水",
+          "reading": "みず"
+        },
+        {
+          "text": "をあげます。"
+        }
+      ]
+    }
+  ],
+  "relatedIds": [
+    "ja:grammar:object"
+  ],
+  "explanationSegments": [
+    {
+      "text": "С "
+    },
+    {
+      "reading": "あげる",
+      "text": "あげる"
+    },
+    {
+      "text": " частица "
+    },
+    {
+      "reading": "に",
+      "text": "に"
+    },
+    {
+      "text": " отмечает получателя, а "
+    },
+    {
+      "reading": "を",
+      "text": "を"
+    },
+    {
+      "text": " — то, что дают."
+    }
+  ]
+}

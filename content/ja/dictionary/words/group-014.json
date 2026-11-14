@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:扉",
+    "surface": "扉",
+    "dictionaryForm": "扉",
+    "reading": "とびら",
+    "romaji": "tobira",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дверь"
+    ]
+  },
+  {
+    "id": "ja:word:軽い",
+    "surface": "軽い",
+    "dictionaryForm": "軽い",
+    "reading": "かるい",
+    "romaji": "karui",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "лёгкий; несильный"
+    ]
+  },
+  {
+    "id": "ja:word:叩く",
+    "surface": "叩く",
+    "dictionaryForm": "叩く",
+    "reading": "たたく",
+    "romaji": "tataku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "стучать; ударять"
+    ]
+  },
+  {
+    "id": "ja:word:開ける",
+    "surface": "開ける",
+    "dictionaryForm": "開ける",
+    "reading": "あける",
+    "romaji": "akeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "открывать"
+    ]
+  },
+  {
+    "id": "ja:word:無愛想",
+    "surface": "無愛想",
+    "dictionaryForm": "無愛想",
+    "reading": "ぶあいそう",
+    "romaji": "buaisō",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "неприветливый; нелюбезный"
+    ]
+  },
+  {
+    "id": "ja:word:返事",
+    "surface": "返事",
+    "dictionaryForm": "返事",
+    "reading": "へんじ",
+    "romaji": "henji",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "ответ"
+    ]
+  },
+  {
+    "id": "ja:word:部屋付",
+    "surface": "部屋付",
+    "dictionaryForm": "部屋付",
+    "reading": "へやづき",
+    "romaji": "heyazuki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "закреплённый за комнатой; приставленный к покоям"
+    ]
+  },
+  {
+    "id": "ja:word:侍女",
+    "surface": "侍女",
+    "dictionaryForm": "侍女",
+    "reading": "じじょ",
+    "romaji": "jijo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "личная служанка; камеристка"
+    ]
+  },
+  {
+    "id": "ja:word:甘ったるい",
+    "surface": "甘ったるい",
+    "dictionaryForm": "甘ったるい",
+    "reading": "あまったるい",
+    "romaji": "amattarui",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "приторно-сладкий"
+    ]
+  },
+  {
+    "id": "ja:word:匂い",
+    "surface": "匂い",
+    "dictionaryForm": "匂い",
+    "reading": "におい",
+    "romaji": "nioi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "запах; аромат"
+    ]
+  },
+  {
+    "id": "ja:word:漂わせる",
+    "surface": "漂わせる",
+    "dictionaryForm": "漂わせる",
+    "reading": "ただよわせる",
+    "romaji": "tadayowaseru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "распространять вокруг; источать"
+    ]
+  },
+  {
+    "id": "ja:word:酒杯",
+    "surface": "酒杯",
+    "dictionaryForm": "酒杯",
+    "reading": "しゅはい",
+    "romaji": "shuhai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "чаша для вина"
+    ]
+  },
+  {
+    "id": "ja:word:揺らす",
+    "surface": "揺らす",
+    "dictionaryForm": "揺らす",
+    "reading": "ゆらす",
+    "romaji": "yurasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "покачивать; раскачивать"
+    ]
+  },
+  {
+    "id": "ja:word:誉めそやす",
+    "surface": "誉めそやす",
+    "dictionaryForm": "誉めそやす",
+    "reading": "ほめそやす",
+    "romaji": "homesoyasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "превозносить; расхваливать"
+    ]
+  },
+  {
+    "id": "ja:word:容姿",
+    "surface": "容姿",
+    "dictionaryForm": "容姿",
+    "reading": "ようし",
+    "romaji": "yōshi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "внешность; облик"
+    ]
+  },
+  {
+    "id": "ja:word:所詮",
+    "surface": "所詮",
+    "dictionaryForm": "所詮",
+    "reading": "しょせん",
+    "romaji": "shosen",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "в конце концов; всего лишь"
+    ]
+  },
+  {
+    "id": "ja:word:井",
+    "surface": "井",
+    "dictionaryForm": "井",
+    "reading": "い",
+    "romaji": "i",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "колодец"
+    ]
+  },
+  {
+    "id": "ja:word:蛙",
+    "surface": "蛙",
+    "dictionaryForm": "蛙",
+    "reading": "かわず",
+    "romaji": "kawazu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лягушка; литературное чтение"
+    ]
+  },
+  {
+    "id": "ja:word:絢爛",
+    "surface": "絢爛",
+    "dictionaryForm": "絢爛",
+    "reading": "けんらん",
+    "romaji": "kenran",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "великолепный; блистательный"
+    ]
+  },
+  {
+    "id": "ja:word:花々",
+    "surface": "花々",
+    "dictionaryForm": "花々",
+    "reading": "はなばな",
+    "romaji": "hanabana",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "цветы; множество цветов"
+    ]
+  },
+  {
+    "id": "ja:word:気圧される",
+    "surface": "気圧される",
+    "dictionaryForm": "気圧される",
+    "reading": "けおされる",
+    "romaji": "keosareru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "быть подавленным чужим величием или напором"
+    ]
+  },
+  {
+    "id": "ja:word:鼻っ柱",
+    "surface": "鼻っ柱",
+    "dictionaryForm": "鼻っ柱",
+    "reading": "はなっぱしら",
+    "romaji": "hanappashira",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "переносица; спесь; гордость"
+    ]
+  },
+  {
+    "id": "ja:word:折る",
+    "surface": "折る",
+    "dictionaryForm": "折る",
+    "reading": "おる",
+    "romaji": "oru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "ломать; сбивать гордость"
+    ]
+  },
+  {
+    "id": "ja:word:最近",
+    "surface": "最近",
+    "dictionaryForm": "最近",
+    "reading": "さいきん",
+    "romaji": "saikin",
+    "partOfSpeech": "существительное, наречие",
+    "meanings": [
+      "недавно; в последнее время"
+    ]
+  }
+]

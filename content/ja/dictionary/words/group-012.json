@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:派手",
+    "surface": "派手",
+    "dictionaryForm": "派手",
+    "reading": "はで",
+    "romaji": "hade",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "броский; яркий; кричащий"
+    ]
+  },
+  {
+    "id": "ja:word:豪商",
+    "surface": "豪商",
+    "dictionaryForm": "豪商",
+    "reading": "ごうしょう",
+    "romaji": "gōshō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "богатый купец; крупный торговец"
+    ]
+  },
+  {
+    "id": "ja:word:なにか",
+    "surface": "なにか",
+    "dictionaryForm": "なにか",
+    "reading": "なにか",
+    "romaji": "nanika",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "что-то; кто-то; что-либо подобное"
+    ]
+  },
+  {
+    "id": "ja:word:予想する",
+    "surface": "予想する",
+    "dictionaryForm": "予想する",
+    "reading": "よそうする",
+    "romaji": "yosō suru",
+    "partOfSpeech": "глагол III группы",
+    "meanings": [
+      "предполагать; ожидать"
+    ]
+  },
+  {
+    "id": "ja:word:位持ち",
+    "surface": "位持ち",
+    "dictionaryForm": "位持ち",
+    "reading": "くらいもち",
+    "romaji": "kuraimochi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "обладатель ранга"
+    ]
+  },
+  {
+    "id": "ja:word:専用",
+    "surface": "専用",
+    "dictionaryForm": "専用",
+    "reading": "せんよう",
+    "romaji": "sen'yō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "исключительное пользование; личное пользование"
+    ]
+  },
+  {
+    "id": "ja:word:できる",
+    "surface": "できる",
+    "dictionaryForm": "できる",
+    "reading": "できる",
+    "romaji": "dekiru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "мочь; быть способным; быть возможным"
+    ]
+  },
+  {
+    "id": "ja:word:低い",
+    "surface": "低い",
+    "dictionaryForm": "低い",
+    "reading": "ひくい",
+    "romaji": "hikui",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "низкий"
+    ]
+  },
+  {
+    "id": "ja:word:せいぜい",
+    "surface": "せいぜい",
+    "dictionaryForm": "せいぜい",
+    "reading": "せいぜい",
+    "romaji": "seizei",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "самое большее; максимум"
+    ]
+  },
+  {
+    "id": "ja:word:二人",
+    "surface": "二人",
+    "dictionaryForm": "二人",
+    "reading": "ふたり",
+    "romaji": "futari",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "два человека"
+    ]
+  },
+  {
+    "id": "ja:word:ゆえに",
+    "surface": "ゆえに",
+    "dictionaryForm": "ゆえに",
+    "reading": "ゆえに",
+    "romaji": "yue ni",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "поэтому; вследствие этого"
+    ]
+  },
+  {
+    "id": "ja:word:仕える",
+    "surface": "仕える",
+    "dictionaryForm": "仕える",
+    "reading": "つかえる",
+    "romaji": "tsukaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "служить кому-либо"
+    ]
+  },
+  {
+    "id": "ja:word:主人",
+    "surface": "主人",
+    "dictionaryForm": "主人",
+    "reading": "しゅじん",
+    "romaji": "shujin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "хозяин; господин"
+    ]
+  },
+  {
+    "id": "ja:word:こうして",
+    "surface": "こうして",
+    "dictionaryForm": "こうして",
+    "reading": "こうして",
+    "romaji": "kō shite",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "таким образом; вот так"
+    ]
+  },
+  {
+    "id": "ja:word:運ぶ",
+    "surface": "運ぶ",
+    "dictionaryForm": "運ぶ",
+    "reading": "はこぶ",
+    "romaji": "hakobu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "носить; переносить; доставлять"
+    ]
+  },
+  {
+    "id": "ja:word:許す",
+    "surface": "許す",
+    "dictionaryForm": "許す",
+    "reading": "ゆるす",
+    "romaji": "yurusu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "разрешать; позволять"
+    ]
+  },
+  {
+    "id": "ja:word:宮内",
+    "surface": "宮内",
+    "dictionaryForm": "宮内",
+    "reading": "きゅうない",
+    "romaji": "kyūnai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "внутри дворца; дворцовая территория"
+    ]
+  },
+  {
+    "id": "ja:word:端",
+    "surface": "端",
+    "dictionaryForm": "端",
+    "reading": "はし",
+    "romaji": "hashi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "край"
+    ]
+  },
+  {
+    "id": "ja:word:皇帝",
+    "surface": "皇帝",
+    "dictionaryForm": "皇帝",
+    "reading": "こうてい",
+    "romaji": "kōtei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "император"
+    ]
+  },
+  {
+    "id": "ja:word:目",
+    "surface": "目",
+    "dictionaryForm": "目",
+    "reading": "め",
+    "romaji": "me",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "глаз"
+    ]
+  },
+  {
+    "id": "ja:word:つく:notice",
+    "surface": "つく",
+    "dictionaryForm": "つく",
+    "reading": "つく",
+    "romaji": "tsuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "попадать на глаза; привлекать внимание"
+    ]
+  },
+  {
+    "id": "ja:word:めった",
+    "surface": "めった",
+    "dictionaryForm": "めった",
+    "reading": "めった",
+    "romaji": "metta",
+    "partOfSpeech": "наречное выражение",
+    "meanings": [
+      "с отрицанием: редко; почти никогда"
+    ]
+  },
+  {
+    "id": "ja:word:それでも",
+    "surface": "それでも",
+    "dictionaryForm": "それでも",
+    "reading": "それでも",
+    "romaji": "soredemo",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "и всё же; даже при этом"
+    ]
+  },
+  {
+    "id": "ja:word:一度",
+    "surface": "一度",
+    "dictionaryForm": "一度",
+    "reading": "いちど",
+    "romaji": "ichido",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "один раз"
+    ]
+  }
+]

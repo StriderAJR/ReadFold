@@ -1,0 +1,24 @@
+{
+  "id": "ja:kanji:意",
+  "character": "意",
+  "meanings": [
+    "намерение"
+  ],
+  "on": [
+    "イ"
+  ],
+  "kun": [],
+  "components": [
+    "音",
+    "心"
+  ],
+  "wordIds": [
+    "ja:word:意思",
+    "ja:word:意味する"
+  ],
+  "mnemonic": "Звук из глубины сердца выражает намерение.",
+  "componentMeanings": {
+    "音": "звук",
+    "心": "сердце"
+  }
+}
