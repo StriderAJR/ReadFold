@@ -60,7 +60,7 @@
     },
     {
       "path": "ja/dictionary/components.json",
-      "sha256": "6626d059b95cab1b66ca9fba33845b7c6e18f10cfb40f440d0cdc1d84ca8d267"
+      "sha256": "fd592060d8f4bc50932ada5d86a33cf99a0cd6459ad7fa59f71f2bb1165b8390"
     },
     {
       "path": "ja/dictionary/grammar/ability-koto-ga-dekiru.json",
@@ -628,15 +628,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u20089.json",
-      "sha256": "4177d97c06de91f9108d6f658d76e335315ae1b270c647ceadc58e9487825aeb"
+      "sha256": "f3e5d5e81f0499c032df09edfdc12a19730e1c6dcf0b612123f4491df89adb78"
     },
     {
       "path": "ja/dictionary/kanji/u2008e.json",
-      "sha256": "5a20c83cb8d650071303445a89e6bfbecd9e43ccafabe64e38f18820f2f02eae"
+      "sha256": "8691c1371e0ec91f289148e096819b5dedafa5c64844409131cf7aeae7aea74c"
     },
     {
       "path": "ja/dictionary/kanji/u200a4.json",
-      "sha256": "82f959fa2d0f81b95a65373904efe2ee04ddddb4bf4631367c068295d4eaca1c"
+      "sha256": "8b8dec5077a55ccf5acd87288919f2708eda7ae6f38345d0158049180f875fcb"
     },
     {
       "path": "ja/dictionary/kanji/u27607.json",
@@ -700,7 +700,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e02.json",
-      "sha256": "57349f04d2c4f47d416e6f34afdd26b263f4a8b092c1808cfcdf73c3757a9540"
+      "sha256": "b6dc0dd175ab532784962a94d3904902dbc64207f5a27fb9b68aae88a41cb177"
     },
     {
       "path": "ja/dictionary/kanji/u4e03.json",
@@ -720,11 +720,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e0d.json",
-      "sha256": "d6f9a7d140c2e6042095cfec180dd3607aa814a02a93b1610af0c65ec70624ce"
+      "sha256": "87a4e7ed89ee475bd78d45cddc2853503bcff9bf9f0b5999c9f6f271df1c68ba"
     },
     {
       "path": "ja/dictionary/kanji/u4e0e.json",
-      "sha256": "644f6ca7543e903549712fb6a6a25df8f239113174903e3d535b08bd1776fd4c"
+      "sha256": "4d152c243e89e681b87aa57de211c60ce67b71a503140eb9983c11a17599165c"
     },
     {
       "path": "ja/dictionary/kanji/u4e16.json",
@@ -732,7 +732,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e26.json",
-      "sha256": "2888d0e12044b5cf76de3b69199b9de5d3910e1e63696cc4eeb1fa7d47df4790"
+      "sha256": "1488d0a2a4193569064c33cab08e0ab4c1c1a190e3f18bca7d3e900fdec27b52"
     },
     {
       "path": "ja/dictionary/kanji/u4e28.json",
@@ -748,7 +748,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e32.json",
-      "sha256": "69692cf753412da7dcccf66d391233e2130782dab59cabc7b8fb490850884fe6"
+      "sha256": "c84ecb65487d2215a324eec7e3aeb8aba7ecca203405fc7fdf965bfb1526466b"
     },
     {
       "path": "ja/dictionary/kanji/u4e36.json",
@@ -772,11 +772,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e42.json",
-      "sha256": "57751856df2ca7a1bb27c1eb199546204571cc671f6a6d3309d31b736fe843b5"
+      "sha256": "a49060b2edafabb3829902d3e507e3bd46ec3dcf2741b9b8a6c80074dea8c1bf"
     },
     {
       "path": "ja/dictionary/kanji/u4e43.json",
-      "sha256": "097454f3404bcce0e8a237a7cff618f8357556526b7692db280077c2e20d14e0"
+      "sha256": "6eb0dd92a20fd9ed18a4b380f4d7208ecc71087e0864e6ae0805283b2ab47fd1"
     },
     {
       "path": "ja/dictionary/kanji/u4e59.json",
@@ -792,19 +792,19 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e5e.json",
-      "sha256": "bd0bc9c6cb793f9297412d2f8369abfbe3127188eff36ac014f16197c37cd8ac"
+      "sha256": "852f24952ea0855b7e42c75e01f60f8662c4f9c4609ff4b1e600f3b05919a888"
     },
     {
       "path": "ja/dictionary/kanji/u4e5f.json",
-      "sha256": "1dfa1098028bac13ea542a5e255a3fe18244a3201e4fc60c4327d7969a55898b"
+      "sha256": "a0f69fca3c805f0985b6f0c8ae06c205e97e1d8082785563779b4be41bbdd702"
     },
     {
       "path": "ja/dictionary/kanji/u4e60.json",
-      "sha256": "f9e33477567ef8ca78337ddf68669acffb2448157f16c2fc8dbc9166ace8efda"
+      "sha256": "a94b7756ed8248ee26ba0027420c2b9df7ed7f21aad5fd9669881a03e3ba022c"
     },
     {
       "path": "ja/dictionary/kanji/u4e73.json",
-      "sha256": "c7566615381b9f97d5c91e2d1016472da20d911bfad896b147fa77edd989040f"
+      "sha256": "36d19e8e34bfa9a087b4c87ab7becb7d4585cd50bc370480a6b83d6e594e5a0c"
     },
     {
       "path": "ja/dictionary/kanji/u4e85.json",
@@ -812,11 +812,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e88.json",
-      "sha256": "9dfbbc3dd58183caf1a8a604b377967cb130a77f33009b2c43e3f5baddf0b388"
+      "sha256": "49e006985d864ece2526f3378f666f04b17f44a5b1144a17b085dddd50616a64"
     },
     {
       "path": "ja/dictionary/kanji/u4e8b.json",
-      "sha256": "4833256b3c4d20df636a56993bfdac528b278882c5e2376114c7bdc14177b129"
+      "sha256": "82ead984ba714d65fe082b74fe28275d48044b2dcfe86fc834e5f98b43406961"
     },
     {
       "path": "ja/dictionary/kanji/u4e8c.json",
@@ -828,11 +828,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4e95.json",
-      "sha256": "ad64aa143ae37d16c29f4df9a2f2b7aff65f28f90d94bae1d3e54a1b9fb084b3"
+      "sha256": "be26bc429b43a6fd0ba9b31c2d96a7afb5b604d5fc278aab5c358fb37ff61212"
     },
     {
       "path": "ja/dictionary/kanji/u4e9f.json",
-      "sha256": "f7cd1d75fc06d151feb792baa0fa1d4232fc076174c2d5644b26b3b64ed4b11b"
+      "sha256": "1c05dc4b58c4de8cb2482eaa32cd84685b1cf649a9a6cf7d35669b6ef4d6530c"
     },
     {
       "path": "ja/dictionary/kanji/u4ea0.json",
@@ -852,7 +852,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u4eca.json",
-      "sha256": "19bdeb8452e93a597ae74ff07a4b7031663b940d195cdc9c2a26823e6f16905e"
+      "sha256": "bc1100920dd2e47bd46c1fa92cb611cb8a8a421468a786ea010ebe715b197d8f"
     },
     {
       "path": "ja/dictionary/kanji/u4ed5.json",
@@ -860,11 +860,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4ed6.json",
-      "sha256": "1b300cbbc93be7d6e937d4eafd43fbbde10219df5434c267491adae190a7c685"
+      "sha256": "40a50588097f7c6244f67bdd8763b29322f22520fac41ac99ec0fb780b6a9bbf"
     },
     {
       "path": "ja/dictionary/kanji/u4ed8.json",
-      "sha256": "3de6b9b8128f7909361c231440b8fbfef72ece3ac2197699638d0f049f42b144"
+      "sha256": "e425d36cbbd64745ad43e1a3fd234fc689f83ef1febbf48f52b9dcd8dbfb9560"
     },
     {
       "path": "ja/dictionary/kanji/u4ee3.json",
@@ -872,11 +872,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u4f1a.json",
-      "sha256": "c2859688615c774c7afce17b26762ccaf26cc9cd7fb3e8d07a6819ee270e7622"
+      "sha256": "7f6f4c261d62309ea3d5e3ec88b1e7afb2bba8b4d607b6d3404ee1508922cb95"
     },
     {
       "path": "ja/dictionary/kanji/u4f3d.json",
-      "sha256": "8db08fad12075a30de72260ecc7c14ff77ee338c11a807c561b63dcc06ce28d5"
+      "sha256": "794f7007408c87f792f9f8ce5ff7625a3530c5bbe0143757f457e118b448561e"
     },
     {
       "path": "ja/dictionary/kanji/u4f4d.json",
@@ -884,47 +884,47 @@
     },
     {
       "path": "ja/dictionary/kanji/u4f4e.json",
-      "sha256": "d23e9463a61818588e0e5c30f654853cad29e52a43f7fc2c87894a55a7d33496"
+      "sha256": "6b0a20119ffa60a5d0165dc6dc24a5ef7134a7fb7d9bba1798c94d5ccb75381f"
     },
     {
       "path": "ja/dictionary/kanji/u4f4f.json",
-      "sha256": "b68bf411120047cf04bc8f7be4c3a2fdcc1e7d06f4f00d900fd92abcf4934bad"
+      "sha256": "9b51cc738c4f12286880dd53b642c597d22d9486544b9b18d25ec34c114db40b"
     },
     {
       "path": "ja/dictionary/kanji/u4f53.json",
-      "sha256": "a4de78f4921aaef87293fdb4d5b43fadb94cef2782ec98d539c8bf42612256c3"
+      "sha256": "134d90879a997704aa0dc2cc2cb8186cd055834cbd61302fe42f239a6faf57c6"
     },
     {
       "path": "ja/dictionary/kanji/u4f55.json",
-      "sha256": "ebe787c8c471db577af83e6da7536b12999efb557072500aaf9a443bf70d4952"
+      "sha256": "18bf27c53ec82966d0a996cf3b7bbf18e0b609fb2414598bc6f6a027492734c6"
     },
     {
       "path": "ja/dictionary/kanji/u4f7f.json",
-      "sha256": "543c4b8a3ffa324b72e1e5f940747eeb17e5e801e97465b2c10c11fe5c89da51"
+      "sha256": "b5e783dc97c56f544a713917da868e6689d2722ae73f2d96cb54f700ef389502"
     },
     {
       "path": "ja/dictionary/kanji/u4f8d.json",
-      "sha256": "21560617d4fbeb28a20fdfc3be278c375bfdb65666126f1bab920dd25df34c49"
+      "sha256": "306c3dfd3bc1c5ee448dd58925b4ae9ad680a91d580d77121988d359498aa52a"
     },
     {
       "path": "ja/dictionary/kanji/u500b.json",
-      "sha256": "0daf1ca14c589a0bb52905aa7cb18760bd199b26f1acbd99055f09cd6f3f8021"
+      "sha256": "afa55a738f7acec6f7d82fd4183cde0efc54c1b24e67b444938eca23994ddef3"
     },
     {
       "path": "ja/dictionary/kanji/u5065.json",
-      "sha256": "0f89c258ea67825b44b99447f2c724496beb336fd6942959e71f94683ec2d8cc"
+      "sha256": "3c89d0fd9d89a2eb47ee871ca62940cb64524dd197063bb284c1d6ba563be8ca"
     },
     {
       "path": "ja/dictionary/kanji/u5074.json",
-      "sha256": "1f9970160db7ee1807157d61d9bca5f69af06387f42fa76d4d29d3689a99a45a"
+      "sha256": "365305782b48590e1e6a2defe74ced31f64ed1e1c81e5a840de57a62d2d4bb34"
     },
     {
       "path": "ja/dictionary/kanji/u50cd.json",
-      "sha256": "76122a32ee92bfc96f81b9f136c75ce541af2a739c15a8392b8f89ab82495e7e"
+      "sha256": "6af43f53569bcf9d20595ecd7ecb01a753bd18a1f8e14909dab63a8f90f26a9b"
     },
     {
       "path": "ja/dictionary/kanji/u5100.json",
-      "sha256": "16a63e84108a14ee00bf500cd9f8f1d6643953f117ce7e3246dd3c38723f7c8d"
+      "sha256": "a207c6698529e55e99fa6a4816553bddbfc9a54194df3c0a238e3cbf6832a291"
     },
     {
       "path": "ja/dictionary/kanji/u513f.json",
@@ -936,11 +936,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u5143.json",
-      "sha256": "e38f6f969b2945de9dace861e9afdf192b0333ba8905bb05b1b9c074856ba7b5"
+      "sha256": "3ed7b2c8e124b436ae86d95fa70d364fa061701bd2c9aabaa111c7a23d5107dd"
     },
     {
       "path": "ja/dictionary/kanji/u5148.json",
-      "sha256": "65ba3e3e432e8665a7181cc09ab9dfe39a5b230c21c3bfe652f736c8613d191f"
+      "sha256": "0049933725155d922996d783962fa2e4394cbc55d889272e68f936085de94738"
     },
     {
       "path": "ja/dictionary/kanji/u5150.json",
@@ -952,11 +952,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u516b.json",
-      "sha256": "d1e1c5ddf89716422fe61f39756a1669d4863a44336ac0366ec4a7d96751cde5"
+      "sha256": "884ae7551935aad3b4a04e769cce77c22d251c9ad64e07704c76b312bdc1787b"
     },
     {
       "path": "ja/dictionary/kanji/u516c.json",
-      "sha256": "7db00e13c58bc5fbd5da92013a3bbd280c9baf0350b099fd22570ce4f15987e2"
+      "sha256": "53d4910fee5801e5ff65dc00628bb2ddb21cc4580e1816521564a3e13c85f3f9"
     },
     {
       "path": "ja/dictionary/kanji/u5182.json",
@@ -1012,15 +1012,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5230.json",
-      "sha256": "40ea8e7a5844ebb1465e44e87186fd6f929c81d8c521a894978a5f3240b0a5d7"
+      "sha256": "0f2f2517dc88b3ced68fd83013d1a34eec0659e77f6f4f5be3e682f53499d993"
     },
     {
       "path": "ja/dictionary/kanji/u5236.json",
-      "sha256": "c09bc83ad5ac25cebedce823572db5f84a0f2cd10521db4aa4603407378e2dde"
+      "sha256": "ffaad83db85ac6d9187f4a7aa7ef922fae62aab572d57ea46965ecccebe15118"
     },
     {
       "path": "ja/dictionary/kanji/u524d.json",
-      "sha256": "b7806e2841008918a57b75589c65d0b2bf4179d70eade6d57923779cd25ac28f"
+      "sha256": "c45b099c21b0a6be5891af28c5946fd70cdf4c8236528bdad4778447692a9aab"
     },
     {
       "path": "ja/dictionary/kanji/u529b.json",
@@ -1040,7 +1040,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u52ff.json",
-      "sha256": "39187f1f466d00c08dd1157d6a940c236e31e20e818748ba95df0b255ff8d04d"
+      "sha256": "d830e840d65348bb62c1c9a11817e12e7f390161e239c6d405673d10ec9ea878"
     },
     {
       "path": "ja/dictionary/kanji/u5302.json",
@@ -1064,7 +1064,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u534a.json",
-      "sha256": "7f0e4915a699f20f874ca900aef0ad89e794d7881dc04259016a104097578b51"
+      "sha256": "6adf4cac4b28beb5fb6d61abb810167710193fa5285d9dedfc40dec0379d7161"
     },
     {
       "path": "ja/dictionary/kanji/u535c.json",
@@ -1076,7 +1076,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u536c.json",
-      "sha256": "9274e9e8b673a98084bd78887b0c7830f8e60ca5a23a5f71119ec96b46944854"
+      "sha256": "7e18c67ffa6758c1a5b9ec81afcfe2a8383892b94f25d2db56b6576e35a8416b"
     },
     {
       "path": "ja/dictionary/kanji/u5382.json",
@@ -1088,7 +1088,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u53c2.json",
-      "sha256": "1b11083b026f171cee8e94476b7c01d51b44d95352540b693669d58c2195ccd2"
+      "sha256": "01ca08643ed8f1a064665d6b2ce8a533c18e8c51ba6111cd2b2d26ae19980319"
     },
     {
       "path": "ja/dictionary/kanji/u53c8.json",
@@ -1096,7 +1096,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u53ca.json",
-      "sha256": "cfb5477c5e6fb4da5e058a83959f1bdee2a1cf597e2702076e9b753667d03eea"
+      "sha256": "26f93ea79679dfc5382a94f5e99a02e50c86f74cbae1e3b22f5f2bfa0d0019de"
     },
     {
       "path": "ja/dictionary/kanji/u53d7.json",
@@ -1112,7 +1112,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u53e9.json",
-      "sha256": "7d6eb68b5d2962a45c10fedca14aeb3ebebccfd8ac29028f9cc69196a1282023"
+      "sha256": "ed9d463b80acbfb7acd565b83422c71499d3db4775e3886f3085eefd390f5cf0"
     },
     {
       "path": "ja/dictionary/kanji/u53ec.json",
@@ -1124,11 +1124,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u5404.json",
-      "sha256": "dde7cf7e9873d99da8697801bd8666aeff21b41b8870c2a17dc5c063513d453c"
+      "sha256": "a41c3ccf6fb55194864a4a4bf20ef0bb20fceab560702ad1032337cf8c25694d"
     },
     {
       "path": "ja/dictionary/kanji/u5408.json",
-      "sha256": "6cc118190054e0ae0ba3301e048a12332d55ed84beefa37e1b2f8848be51bf31"
+      "sha256": "a551a5a4f047444c5e0807d2df30b7612a71717bcba473378468505de5472de2"
     },
     {
       "path": "ja/dictionary/kanji/u5409.json",
@@ -1140,27 +1140,27 @@
     },
     {
       "path": "ja/dictionary/kanji/u5411.json",
-      "sha256": "09c8db59536c8d5a5810af8378f34b4f7374392b08e2fe8215c09cd31eac3163"
+      "sha256": "78ef22d6d76e5a861ed1b83b7bf567b781b9579aee5e73dfa123cd7828ef9f79"
     },
     {
       "path": "ja/dictionary/kanji/u5468.json",
-      "sha256": "871a76791b783efaf04a49134d777e6e4cef45de0b23348994195e9923538fc3"
+      "sha256": "e187aed20bd312ca94de5b7468e54e6fa5d86daa0f58434eece79d3b176b38d4"
     },
     {
       "path": "ja/dictionary/kanji/u546a.json",
-      "sha256": "10a18fba66b28c6a74de557049e9dbdc8f9a0f807bf95ce3a03925ff413f1eb5"
+      "sha256": "2befe46215b9bb3757433b3aea72b14b0e5b00ec66119826056e507e99234ec2"
     },
     {
       "path": "ja/dictionary/kanji/u5473.json",
-      "sha256": "a10013788cdffce74e396dbed5c20b63a3136228217bfa368c1a478a7ca19914"
+      "sha256": "6b63c4ace03dd9cb0b08d49f7ecd0e5e4f62adb832e37de1ccab0e77422a05e2"
     },
     {
       "path": "ja/dictionary/kanji/u547d.json",
-      "sha256": "79f8bd79aa84609f452d2bed42e588e27ec3565b602d4fe80ec1c4c1eaa5f281"
+      "sha256": "6e296443c496c2673ac8c944c51b2ba560e1e1800fc5bf40f2004c2867ccdc80"
     },
     {
       "path": "ja/dictionary/kanji/u54b8.json",
-      "sha256": "a0082bf822e05bcc944a97e2b8a283841f1e5aad8374d0cc20e749c2e8af8cdd"
+      "sha256": "e7bc55e579b4fbe94370be0e778e90b8ff5eee5ed63273b00c78ae26bfbc8602"
     },
     {
       "path": "ja/dictionary/kanji/u54bc.json",
@@ -1168,15 +1168,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5507.json",
-      "sha256": "47b3246e679635ea8f836ec23cf74ed180649cecdbc895ad00b8fc332bdd54bd"
+      "sha256": "cdb5ae259eb8c3b341e23f52d394f9d42dcd8b0d3e40d9f135084085c49ec577"
     },
     {
       "path": "ja/dictionary/kanji/u5546.json",
-      "sha256": "f45ff0a1cc2d288a82a761cc03200f084d391288964627e8e877ad92f7aa12dc"
+      "sha256": "2044fbbf7fdc15f08e24fb23a6c2044234c385c65aed59c1ebfc38c4f71bcd00"
     },
     {
       "path": "ja/dictionary/kanji/u5547.json",
-      "sha256": "83dc4629e466acc99f1d2e611045ef94bc3717cc5731f674dfa124752d63f4bc"
+      "sha256": "fbebc9868de4ffdf8cbd6749be297b55c6cb8e0b217bf7dcae81ad970b0d91c4"
     },
     {
       "path": "ja/dictionary/kanji/u56d7.json",
@@ -1184,7 +1184,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u56fd.json",
-      "sha256": "9cc1664714f63e67d059e440645e06bcfb5884e7df671c7d45ed5d3c615ffea1"
+      "sha256": "9734f047bdcd02b6a8b2fbb11847a6de658fbf0966b12b14c2afc95b79c6e253"
     },
     {
       "path": "ja/dictionary/kanji/u5712.json",
@@ -1204,15 +1204,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u57fa.json",
-      "sha256": "04dd684c0d678609a4a206695ac4eca52d7467e2eeeb213f3d4dbbbfe6d01f94"
+      "sha256": "a04744a9eba320832f37215a140485a93b3d42c1ab0a702cdca104e5db3d9df6"
     },
     {
       "path": "ja/dictionary/kanji/u5834.json",
-      "sha256": "8f052a6b0c350d322765b6184027ac9d0242e503fed160752aeb130af377e07b"
+      "sha256": "a0e0f26bee07ff85c600ba6d9e8e5b017fde2bd03b5e2c8b9ec7d8994ed05daf"
     },
     {
       "path": "ja/dictionary/kanji/u5897.json",
-      "sha256": "2b8f72634bb04c3a12b583f7c07a4f5e9a4a65a076190d7a28487db1bac35eb8"
+      "sha256": "c564d1d92bb59174b67bea733edd06aaafbca42de4d999a58ebae6cd666d92fc"
     },
     {
       "path": "ja/dictionary/kanji/u58eb.json",
@@ -1224,7 +1224,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u58f2.json",
-      "sha256": "ba0b43fffc1d1dd7ad6ba4953b51c85ce199069d165728e63a880020cabd1a30"
+      "sha256": "a4c4429c9bc80ecfac00d8943639ee3e74e761d8c0a81d47095d4f80d25f0a28"
     },
     {
       "path": "ja/dictionary/kanji/u5902.json",
@@ -1232,7 +1232,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5909.json",
-      "sha256": "7653c56dca2dd5acabc5663ef4b3bed9dd7e9dcc807a363d8ab993c50f457e4b"
+      "sha256": "a087255af1b3021013397d16259ceb592e4d0eea49bebe2f55e8e28b395496be"
     },
     {
       "path": "ja/dictionary/kanji/u5915.json",
@@ -1244,7 +1244,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u591c.json",
-      "sha256": "002bb1cc857c9af3273b739da416ece379a3a3d0049e541eba9da5ec1af2535b"
+      "sha256": "114fffc32530d4d433b41a85fd89ad73919c05fa04caa4a2cd22e6f61c88f84b"
     },
     {
       "path": "ja/dictionary/kanji/u5927.json",
@@ -1256,15 +1256,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5931.json",
-      "sha256": "d4ce9e95b9ff4ccc013acc948f705a2d4be1490283b5e1893631aaa9e413478b"
+      "sha256": "bc2d5c1621a47bcfcded66b5518e403009c8e06fce0ff7bce73e48fc96c2d3f3"
     },
     {
       "path": "ja/dictionary/kanji/u5947.json",
-      "sha256": "a8b9f0c95c5c03975fe5073cd7f86188fa6f7e34f371966427181a5e05436128"
+      "sha256": "51a4dc2d3868cc581dd3304776dcac13ac323e6fa4312b2dc21ac51e5fef35f2"
     },
     {
       "path": "ja/dictionary/kanji/u5965.json",
-      "sha256": "5dafef5c03af3283bb839c50958e531d7eb2e7e23eb70a603864d6760b1d7a8b"
+      "sha256": "f129ccf4fa4276454ea0ef2c84d77f9d7472e4adfbbba6b338d538bea3a688d5"
     },
     {
       "path": "ja/dictionary/kanji/u5973.json",
@@ -1276,15 +1276,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5983.json",
-      "sha256": "f169b02260a903e37f890fd717b779ccdbcdd1a9588fa51f60a779a1560a09a4"
+      "sha256": "50c6abbdaf50361e9c331bfadc8c9bd2ebf2dab4bc4d0076b027ca709b57bfd1"
     },
     {
       "path": "ja/dictionary/kanji/u5999.json",
-      "sha256": "e7ddfaccfc365e7ba0dd30dfdb8d7925af4514ccad6be08daa09d0edca10851a"
+      "sha256": "4ad5c73c5174d5dae1f35993e2a5d41997738c3c951ef16d93187e582aeb758a"
     },
     {
       "path": "ja/dictionary/kanji/u59a5.json",
-      "sha256": "dafc41a8320b3d44e7ec73d558259b4def3f3e187eda7e2b9fa611f41aa0a081"
+      "sha256": "a8870040bdcbee7c3c3493d8d71db91bec1caa637aa2652bf7596d3432a184f9"
     },
     {
       "path": "ja/dictionary/kanji/u59ff.json",
@@ -1292,15 +1292,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5a18.json",
-      "sha256": "ed05f7ac0a0bd07be5be5ca02e67c076ab2b0869ab5213ccd08cffd3417815d5"
+      "sha256": "f2768924ead1ef0b8ca2263a7a2eb4c059ef7d8ca020cd3e919b2dd0c27ee330"
     },
     {
       "path": "ja/dictionary/kanji/u5a5a.json",
-      "sha256": "cf3f6460238523708436b2d24652a06a68cfce3f2bbe02b1f1cffbbf0610e57c"
+      "sha256": "8c38a5d51b0d5836866b1b87fe822d5f78a271326c0eeca7c00166b7383825c4"
     },
     {
       "path": "ja/dictionary/kanji/u5b2a.json",
-      "sha256": "fca46bddb5132c03dfae3bb08f29d0eaa765cf98cdba12a66ecd1d4396c683d4"
+      "sha256": "c7730466debac12569ff89bc239fe831db28dfc97edb8c8746c99a6fff649caf"
     },
     {
       "path": "ja/dictionary/kanji/u5b50.json",
@@ -1316,7 +1316,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5b88.json",
-      "sha256": "36b5848b42c287bde8bce05690f8ab30154fcbf58bcbf6428a41709c0c6f4474"
+      "sha256": "4e24b5e1309397feea84919bee0dd0cc9939bf46568036bf152f7f68df9922a9"
     },
     {
       "path": "ja/dictionary/kanji/u5b98.json",
@@ -1324,15 +1324,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5b9f.json",
-      "sha256": "b3939b3028a80c502026c2d7c43c4b722cba870bc7244891bfc83c7e056c7be4"
+      "sha256": "cc96fb1e0b606c3b87fe831446548a8ee7bc887800f981ef747f35fdcd7063e1"
     },
     {
       "path": "ja/dictionary/kanji/u5ba4.json",
-      "sha256": "893e3ec9a99b851023c1d7d1302025242580169b0dbbf6a09bd0b437e826104e"
+      "sha256": "f1d424cfefd8a7e55983a20bd4e533fb6987864c1cfd57372de2ba4ce2d0dfd8"
     },
     {
       "path": "ja/dictionary/kanji/u5ba6.json",
-      "sha256": "f1354eb7b15c6b69082b33caf0ed58e1bce534df31f90f403c0784fe5a4d94d8"
+      "sha256": "e687cea9d0e13ac514b3d69f1fd87011c7886839209a69c664521a9b3e637c70"
     },
     {
       "path": "ja/dictionary/kanji/u5bae.json",
@@ -1340,7 +1340,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5bb3.json",
-      "sha256": "bdd9eeaa291c9a70cf899ab714157a480ca8fd5ce0a9f3293e9730544c8e9c6e"
+      "sha256": "a2e360a3583569075a5da412d5203fd831e3c351b4dda656a55c970ad381ca19"
     },
     {
       "path": "ja/dictionary/kanji/u5bb6.json",
@@ -1352,11 +1352,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u5bf8.json",
-      "sha256": "f6ec61560f84e6b97e5a07bb665a2be3c92089f727a904444920469e73586101"
+      "sha256": "294e4daa555c235b46a56f263ffe9232f4fbe732f60973073081da29b3bc8311"
     },
     {
       "path": "ja/dictionary/kanji/u5c02.json",
-      "sha256": "0b7e5a619e1268f124b0a57167043eedc655188425a85e9c4cc6ec17c7601c5f"
+      "sha256": "ba88ae035e344c95751d0968525620817baa74f2ea724581cc13b8350aab5c35"
     },
     {
       "path": "ja/dictionary/kanji/u5c0f.json",
@@ -1368,7 +1368,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5c1a.json",
-      "sha256": "0a12861835b105ab1ee3f2b60a5db45c37f12eca6d9ba965a2260a21039e955e"
+      "sha256": "207a8a424a96caefa5b645e5bcce3a232ab783cbb75005873c10764dc5bed47b"
     },
     {
       "path": "ja/dictionary/kanji/u5c24.json",
@@ -1376,23 +1376,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u5c2d.json",
-      "sha256": "1ad2ec6f5050fcfcb057ff5aa67e370fe78a33f8693999bd321ce9745c3fd44c"
+      "sha256": "6871c18093d8aa94a50dbc567e210d1d6790f1874cd619a6978da9f1772e936a"
     },
     {
       "path": "ja/dictionary/kanji/u5c31.json",
-      "sha256": "5d63eceb4c8885cc9efcb7dad0746539875535876e9c85cd0b578f89e1c9b94c"
+      "sha256": "17c933300c9a6ac679fb0e1f7127ea16a4130267286cf3c653ab59a672f7d0a5"
     },
     {
       "path": "ja/dictionary/kanji/u5c38.json",
-      "sha256": "d041b0237ce6e434686f911303087a9d21725e70fd129a3cb3a67915099bfc2e"
+      "sha256": "df77f17259003cee3554ba70fb4e6ca69256de2fe3cae74ca1be0db0e711152b"
     },
     {
       "path": "ja/dictionary/kanji/u5c4b.json",
-      "sha256": "e84212347c61db02ac8d561b357194f40e43e63fc38f29117afc53d9484d9f87"
+      "sha256": "ee3efc8032e15e07e554342446a34a2997515ad3fe3875f41cef1abcb755a0ab"
     },
     {
       "path": "ja/dictionary/kanji/u5c64.json",
-      "sha256": "bfddf5cc984dd3cc16bfe9b8bfbc5f16c6fdbe2db731ee8745f9d0d5d6bb1849"
+      "sha256": "477033a8f9bd949103e9400e6d40e7de7432760a776998baa423f9d55321ecb0"
     },
     {
       "path": "ja/dictionary/kanji/u5c71.json",
@@ -1400,15 +1400,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5de5.json",
-      "sha256": "314290d38355d3401f4d1e0d8f058226c4b924ed4da7904922c0b816d9a17684"
+      "sha256": "5d6ce0de49c9a7ec9e435d57fe2f645fb469dca4192779c5a4e9e080274cf7a2"
     },
     {
       "path": "ja/dictionary/kanji/u5df1.json",
-      "sha256": "774867607e2ac0a6417523b48a53f841fe4032da0c8e174d76cca528f2d3377c"
+      "sha256": "1f18bd60781f703adf483544d7518ff1ccea843839c322784bff3de5830de1f4"
     },
     {
       "path": "ja/dictionary/kanji/u5df2.json",
-      "sha256": "aeeda54f0ee6b50a3dce1a882bd23c0d1b11319b8dc0194b5ea497ea2337be03"
+      "sha256": "964ad3c1ed7943baab12a4b24e170bc5343d5e95f83300ab73e51a50301642bf"
     },
     {
       "path": "ja/dictionary/kanji/u5dfe.json",
@@ -1420,15 +1420,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5e1d.json",
-      "sha256": "05662b9c910fb527f8e688b4c87fc13f959645b0505eaa78b3a9dcb1b5e752df"
+      "sha256": "f4335eebc65bbc1ac7cd80915c46a7162e0919835cd4f7381896bf91cda4fb13"
     },
     {
       "path": "ja/dictionary/kanji/u5e2b.json",
-      "sha256": "bd348896addf7b3007e424a48f20ad38dc874d3bacc8356ef646b4ea386cc668"
+      "sha256": "be0519c8d2a920165c7a634dfc6f43507b2cb2be1e95f2f9ce3ea6ba97266178"
     },
     {
       "path": "ja/dictionary/kanji/u5e2f.json",
-      "sha256": "8a26cd2503c1814be8931a6a7b360da1f1b6eb9e1f21e9c2c0ad6f4ceb7c4812"
+      "sha256": "8a5bf7cfe816259c14bf309ba020b1cbe177382b2714466b78b0218c6ae50024"
     },
     {
       "path": "ja/dictionary/kanji/u5e72.json",
@@ -1436,15 +1436,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u5e74.json",
-      "sha256": "d794f0d40bf06fb9a0f06eae1356005a5197087f86e92177f11fa7ed8928f377"
+      "sha256": "e09c03a9f3607fee180bb1572e041daa8d1717e37aeb0213dd6991096f27818f"
     },
     {
       "path": "ja/dictionary/kanji/u5e76.json",
-      "sha256": "cb233bbdc7320d6ccaf98d6cd9148d82d9996722877f66e48b50bd1cf3063c46"
+      "sha256": "f51b1a14453fad5d068bdbfc11a569f2f4bafdf748aaa868a114fd63fcbda28c"
     },
     {
       "path": "ja/dictionary/kanji/u5e78.json",
-      "sha256": "4c2515b97cec4fe00f9a75ad5b859f842b77a648d8b8c5fe18c1be1b906c62bd"
+      "sha256": "53bbf0e4b80e5b93314664c535417b507b6668272a2eefa28e56fb3a09d49a24"
     },
     {
       "path": "ja/dictionary/kanji/u5e7a.json",
@@ -1460,27 +1460,27 @@
     },
     {
       "path": "ja/dictionary/kanji/u5e95.json",
-      "sha256": "516bb76bc27fa0ccd9fe428961b97c542caf68bafa1c03003715b19b7f9760ab"
+      "sha256": "50ef5509dd9a67f8de7348725997838853993e93c837d43978f86b0bddf5b1d8"
     },
     {
       "path": "ja/dictionary/kanji/u5ea6.json",
-      "sha256": "cca69b03407dc09e95fd69f2eea0cae27282bc79c61105bf3bcb3b71d75fa855"
+      "sha256": "17aa74e89eba941d44347cb310f54a3e32c80cb9025d98a32f3f32bcac051032"
     },
     {
       "path": "ja/dictionary/kanji/u5ead.json",
-      "sha256": "9e6e615b367c32aebd8898a20db1634532ec0d10f4bc1a84f41f8705af13274b"
+      "sha256": "4755e7d62753cbd1946da1f03d66bd47f6a42f44b48be8be1c68ff0d7261d7ed"
     },
     {
       "path": "ja/dictionary/kanji/u5eb7.json",
-      "sha256": "5f121cdcfe0e9b955ac00cfdb946f19868fd03465bba3a730957c9ed38c2bf63"
+      "sha256": "0e772d785f7e0f63df39b3857c4a55021395a6d4cafee5df3676877534efb41d"
     },
     {
       "path": "ja/dictionary/kanji/u5ef4.json",
-      "sha256": "57c446a901befe94bb3b1c75faf5102fd9962dd53c94fc8a684737cd136e352a"
+      "sha256": "79466abf3753412d709e497bea75db1e14b4b1177e2557d55e670cf9056f3b2e"
     },
     {
       "path": "ja/dictionary/kanji/u5ef7.json",
-      "sha256": "c1f96823f6e948321d468ea9fd14790411799c2da15013fd20658ace465c71ad"
+      "sha256": "952b8722a8bf7679628a4ce6749aaca7bb0e495f996cbb8d74f963b711448613"
     },
     {
       "path": "ja/dictionary/kanji/u5efa.json",
@@ -1488,11 +1488,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u5efe.json",
-      "sha256": "dad57fc6f3bb7de84f1da1038efd56a5f4c863d2ae5ae070366131ba9b488417"
+      "sha256": "d14104bc29373ad0e5a12b45248c18e14f775b5684c359f2e6347c7f3c44efdd"
     },
     {
       "path": "ja/dictionary/kanji/u5f0a.json",
-      "sha256": "22182f0580359be25db515aa052723b7f2910e31a3a61caa330e381d679a21be"
+      "sha256": "32db2daa785ae558c7a0502dd94897c087dd1870464c3033a09b14598c4c037c"
     },
     {
       "path": "ja/dictionary/kanji/u5f0b.json",
@@ -1500,7 +1500,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5f10.json",
-      "sha256": "b005b26a7613dd0d0bd52956bcbd740f4854e734f352e8131320ec3b34e40264"
+      "sha256": "df0c42614952053fde6d3aacaf82723f47cb9f14cc6a491df01fcd8249caae97"
     },
     {
       "path": "ja/dictionary/kanji/u5f13.json",
@@ -1512,27 +1512,27 @@
     },
     {
       "path": "ja/dictionary/kanji/u5f37.json",
-      "sha256": "4df738ab30799857fa5b7ff9d04ada37be57724b71c3211fa5b0eb53eec1ba18"
+      "sha256": "e6b849c954e039312334bccf6b526b79c8fd15e29914553706045f2a4d37a43e"
     },
     {
       "path": "ja/dictionary/kanji/u5f50.json",
-      "sha256": "cb403d49ced3ea12d51b9bcbac1816d8358e2fcb51dd368767158af2e0ad349b"
+      "sha256": "b38389f7153a459d05685294b1080972ff7dc801386e1df15124cad8cea283d7"
     },
     {
       "path": "ja/dictionary/kanji/u5f51.json",
-      "sha256": "b6b05ec99f8276183f862262bad9630fd7e443565c6a04314cdf467722deef73"
+      "sha256": "7f0e689a032191a3c5607aeb195a7716708f5ebd47ea78aea1c6a989f49e0b3b"
     },
     {
       "path": "ja/dictionary/kanji/u5f53.json",
-      "sha256": "7ccabbcaeac156b4b7f4ada668aa4805b7386cfe8a0e0f737dfded0d4b8ce0b9"
+      "sha256": "4a7c542b0645e171b0b6df7985548682543baa34d97a5891b3154946509f3e37"
     },
     {
       "path": "ja/dictionary/kanji/u5f56.json",
-      "sha256": "f561ae38465fae69f0333ddf549e6ecdc03d231eb01dff2db4e8580b429be0d8"
+      "sha256": "bfc5b408d53691a7ff33133d8d4da767f02addb7157e4b798671d5d84766c320"
     },
     {
       "path": "ja/dictionary/kanji/u5f61.json",
-      "sha256": "e66fd1885b6ed19e17b28aa9c8116e228ae52d3babdafdf3a44e8906a6e8a8a9"
+      "sha256": "46f42b82a6d47702c5c9bf1a185e2e9d40fba1d354f10ddbe79a42ef707217b3"
     },
     {
       "path": "ja/dictionary/kanji/u5f73.json",
@@ -1540,11 +1540,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u5f8c.json",
-      "sha256": "f19e3a34e073c14a4d9ca22c9b274da0e9a0a4bf26a4b020efdcd7bb18fa3967"
+      "sha256": "cc8980247a0be553d8d2e4e38633ed77041d04a841a190bb5931e1238c21ea09"
     },
     {
       "path": "ja/dictionary/kanji/u5fa1.json",
-      "sha256": "141a1202f210c1db0ae715dbcfd06b739fd87f3c74315d81f4f8b544e59cdaa3"
+      "sha256": "ddcb7877201c4b13ec07fd63ac55f32274c0c7ef9811193571e2cec7ef3061ef"
     },
     {
       "path": "ja/dictionary/kanji/u5fc3.json",
@@ -1556,7 +1556,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u5fd9.json",
-      "sha256": "65dec313b4ca7ff696e13d746779f95b6b04d9644376669e4960c0cc5e9ff8e1"
+      "sha256": "e4ca00a776f88f9cb20dc8cf8c7efb90e137ef51a32018f8645c527b9494da49"
     },
     {
       "path": "ja/dictionary/kanji/u5ff5.json",
@@ -1576,23 +1576,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u6050.json",
-      "sha256": "8cfe9bd0c43ceef79715cf806dcb38798d7ed42e36489189ca6d138ce76d69d9"
+      "sha256": "c96d9b571ced30ca40213aa5d4f5538004524c515e083b48fe71620578bf43ea"
     },
     {
       "path": "ja/dictionary/kanji/u606f.json",
-      "sha256": "b06fc324f683100a7e8285b7db65837f6d943920ccbbe1c98e97ff48b2b5aa00"
+      "sha256": "151b5449b90fa504e4f9142c49567188a30a898f7d65316e58998c2bce6f03dc"
     },
     {
       "path": "ja/dictionary/kanji/u60aa.json",
-      "sha256": "cc26cf662c914941ad6def3884b5349475aaece72a494dfc270544151593cb12"
+      "sha256": "d210cdff416737c715c56128d6c3a3839a3c045ebaa57179583e34c749745565"
     },
     {
       "path": "ja/dictionary/kanji/u60d1.json",
-      "sha256": "f021e7146f23d289715222e41fc5865b97e2dbd2ccb1b2389369aa44d08778f5"
+      "sha256": "e06d5865141310890cdc7a44861512d1a248a89f3d7dccddc9595183cf0173f5"
     },
     {
       "path": "ja/dictionary/kanji/u60f3.json",
-      "sha256": "5b3dff543dcedfb7d777f9604b7eee99f47b6534c2730aea035f7a69192a4534"
+      "sha256": "1e55bd992ad9ec87b6634c42f9845abb449bd0027f9639bdd8689f7c686eedeb"
     },
     {
       "path": "ja/dictionary/kanji/u610f.json",
@@ -1604,7 +1604,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u611f.json",
-      "sha256": "c387089f9ea8c059c541de0dfadc4eeb1937112d3702c28cf20f0d64f58416b0"
+      "sha256": "5ee30fbb8956b3224a8575a8f039cb515c6a60227b71e54380a5af157f7b0e36"
     },
     {
       "path": "ja/dictionary/kanji/u6208.json",
@@ -1612,15 +1612,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u620a.json",
-      "sha256": "dfc9c9d487cb3f078b63a92d131dda38081e4a3ba72dd0aa58dd76e96f514874"
+      "sha256": "5433bf832eb7bcb1975cf809646bc3ed68302e66f092c4a83b3035e4845f02ac"
     },
     {
       "path": "ja/dictionary/kanji/u6210.json",
-      "sha256": "1cc9bb51e32933c32d46f6db6b584e3a72755eb4501768970b6d6b91b587ea16"
+      "sha256": "41fb014de80304af5f3f921b7605a8587e8402788ff84545b92ee6a8e663f7a6"
     },
     {
       "path": "ja/dictionary/kanji/u6238.json",
-      "sha256": "e841d08f15cb28a6ba76a7126ba92b2a99936b11123d801ced269428cb6bf993"
+      "sha256": "b1760f8dd21d031d99ce3d271bc507abc5546e0a2df3c26877a3f50bed1a8f2f"
     },
     {
       "path": "ja/dictionary/kanji/u623b.json",
@@ -1632,7 +1632,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6249.json",
-      "sha256": "ed5237c7b7d9e6145c65d67dca573f790543044171155b2f7f92a4c2a34d896c"
+      "sha256": "df9aff571a99f4f7d7127acd781c7b3def012ea687b8c041009f2d2b42e2edc9"
     },
     {
       "path": "ja/dictionary/kanji/u624b.json",
@@ -1644,23 +1644,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u624e.json",
-      "sha256": "dbbc7686178da0cb3e948133e40b797af7687a083495a7713b2618a66c18780f"
+      "sha256": "dc27831172d9a4488112930e230fbce9084edb9a7c2c306b0b71b4f773a4b1c8"
     },
     {
       "path": "ja/dictionary/kanji/u6291.json",
-      "sha256": "cf071dc32f238c35c56813f89cd6d45cfd05555a8357723d75a825f97d211718"
+      "sha256": "641ce5c7a7ce7de3978f88a1bc4a87401602d7239e5c4960c324e3035072f266"
     },
     {
       "path": "ja/dictionary/kanji/u6298.json",
-      "sha256": "cd3de70145d7c191197bb4fd189a132c8f6590abb7569895fb4f0d647753a3be"
+      "sha256": "9f6083b1eca84baaea9afcac3469d5468902c7d905b38be8eb8cb8e47c404f89"
     },
     {
       "path": "ja/dictionary/kanji/u62b1.json",
-      "sha256": "70c4d1ae4efe1584262076f804c7a7a729de2e7c8c08c3fed544525b54efa5d3"
+      "sha256": "4a5b7eebc977d83773927428afa1074d7571b4ebae16f2ac57e3a9655323e3a9"
     },
     {
       "path": "ja/dictionary/kanji/u6301.json",
-      "sha256": "8c7bc046c27142bebfcab4f62436e2d392186e123d61d1cbbc5e8aafa37ee6ef"
+      "sha256": "0f8accdc37ca35a1aa409ec23aa93c03f9c7325509ea4ff2ad789be59c4fc878"
     },
     {
       "path": "ja/dictionary/kanji/u6307.json",
@@ -1668,31 +1668,31 @@
     },
     {
       "path": "ja/dictionary/kanji/u6355.json",
-      "sha256": "8979bbd7137a5f140a240a1c0d1a7a10076425fdba265f0a90071c03f0b5a845"
+      "sha256": "b87b9e4937215cd33f3090c2dc39cd378551f660de44ebee6778e476a0f7a927"
     },
     {
       "path": "ja/dictionary/kanji/u63a2.json",
-      "sha256": "f0f0f6c692ea9040b68f3621bb1ed0da9e54dec88c3abb4195f7b69da9167f49"
+      "sha256": "b29e9e8ee74fd0cacdbff9e74fecef0ab62d7b1bf85326a4ef9b046e06dc5354"
     },
     {
       "path": "ja/dictionary/kanji/u63fa.json",
-      "sha256": "9e8fa49f15b07b7d00be6f80bc220cc22da0275b2a0df102468b7e467cfce12a"
+      "sha256": "d0c9933dfb3395dbcc488d143410b18cc265a7682eb8e9e3ce26c6d4111b8ecc"
     },
     {
       "path": "ja/dictionary/kanji/u652b.json",
-      "sha256": "01befc68ec7b47bf0ff625c8702c40db2cb2b484d6ef7e46fa0ad4a13199d5e0"
+      "sha256": "854ec56f158e94dd49d6c8ac732317567389f54181c1458fc6bf9dd953752f2a"
     },
     {
       "path": "ja/dictionary/kanji/u652f.json",
-      "sha256": "9e8cb403dc50274acec184e0d032b6e2eaa7cfe0df57239cc7144b896f13d9fb"
+      "sha256": "1314448ce870b008b82e574d6a8208b93ddaa22275e841d7ef0d8565fd1fbd67"
     },
     {
       "path": "ja/dictionary/kanji/u6559.json",
-      "sha256": "55904f4c8aae01f32a5aa6d9eea76463370afe13e640f3308eed3392692d6962"
+      "sha256": "d1fe4f77b7f938b84cff14d5cf7e9f25f9c3f463758402903aabfc8f8c2f7494"
     },
     {
       "path": "ja/dictionary/kanji/u6570.json",
-      "sha256": "d9a73d474bf86cc736d6f31249c21afe18f07b95608528bf0325b322e3d43e3f"
+      "sha256": "c558f211f6f996b49e7b2bcff921358461e799cfa65fd627b97ba91f01d8f67a"
     },
     {
       "path": "ja/dictionary/kanji/u6587.json",
@@ -1704,7 +1704,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u65b9.json",
-      "sha256": "1f3f702e8c50065c64646f3eac140de2873a2f3912af2a10983240aff25e0cdb"
+      "sha256": "3cc92b2412123440105603da5356738dfaa71237516cecb9b301bc6b1d610857"
     },
     {
       "path": "ja/dictionary/kanji/u65e5.json",
@@ -1712,19 +1712,19 @@
     },
     {
       "path": "ja/dictionary/kanji/u666f.json",
-      "sha256": "3e2c3d9978c2ecc40b2e6ec5a2eccdae0abbce9244ebf46e884ca736b3969592"
+      "sha256": "8027501a0da684fcf1c9b0e5df3c35119feb9bca0be33a74909b0282400b39f0"
     },
     {
       "path": "ja/dictionary/kanji/u66b4.json",
-      "sha256": "a8be2c15ecb511c2a87b415980bb350c77362ca53d639c3b24e7abcbc9c0b26f"
+      "sha256": "8146e03915c0dbf68f68b838f011ac2ee8185f7696f54834d00d39fd40fe2fee"
     },
     {
       "path": "ja/dictionary/kanji/u66c7.json",
-      "sha256": "827f9eb8087456dbe0e4bfd3a1ef1f4ec3143c6bdfac3af8783ec4258b24af5c"
+      "sha256": "4ad6468c7fbeb4e95bb1ad5b0316a0e04ab754860d663630c18956bf49f8a7b4"
     },
     {
       "path": "ja/dictionary/kanji/u66f8.json",
-      "sha256": "e843566b8d6122a8c53f274e070ea3f94a47347cce927b91b29e4515f391f0cc"
+      "sha256": "8bb904ee8b7a1a71b89d29cc42e86e37f20a5a6df79685d2473623815c7e0bbe"
     },
     {
       "path": "ja/dictionary/kanji/u6700.json",
@@ -1736,7 +1736,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u671d.json",
-      "sha256": "4fd072064948c6255c188bd9a99574024d2d56f1234faf885a3a047d53184fa4"
+      "sha256": "537c64840703f0a518e4033c06f71b25c03275909e3c908c6a204df23ac6f3b3"
     },
     {
       "path": "ja/dictionary/kanji/u6728.json",
@@ -1744,7 +1744,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u672c.json",
-      "sha256": "036ac7f586793f0a1c5e3ab77461e5e4a0d8b85508cee25c927d769c41a0233d"
+      "sha256": "e6c19278b14af2f3abc8fe1f1458347fc2bea1fb1e8d8f0c6e70d53560569da9"
     },
     {
       "path": "ja/dictionary/kanji/u672d.json",
@@ -1756,7 +1756,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6765.json",
-      "sha256": "817a67924d8a4b85d8acba02b84ceb321a509208258319ba0eb0ba65979d4171"
+      "sha256": "1b6189d3acd5c507e2794e6c01139e493c30d36d3d00feb0be39e175f6db315c"
     },
     {
       "path": "ja/dictionary/kanji/u676f.json",
@@ -1764,7 +1764,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6770.json",
-      "sha256": "a921094e88615a7805feee667932a30e1bf6e3c3486ecbe68946edcf7f83c62f"
+      "sha256": "35b5ed920aebd6d7f62ae95f7017784e65d67cf1c93e26bb5d35002dcc53c6c0"
     },
     {
       "path": "ja/dictionary/kanji/u679d.json",
@@ -1780,7 +1780,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6885.json",
-      "sha256": "aa0fffb3fb746e32ea9593537137400361a149e9f167980bfa2ae94eaa91e260"
+      "sha256": "481fe265301b4f36063004fb3018b1df2e7c3f1d7c14d5aabae37a467d512357"
     },
     {
       "path": "ja/dictionary/kanji/u68ee.json",
@@ -1788,19 +1788,19 @@
     },
     {
       "path": "ja/dictionary/kanji/u690d.json",
-      "sha256": "3f142e2f2dc152761aa05ab2a86a465ef04ef8491da9e892208665dbc068486f"
+      "sha256": "88ef751f0ac1e0e9a121a2b23fc0c952dec8fe80aa44bd04130c3cb51a444edf"
     },
     {
       "path": "ja/dictionary/kanji/u6975.json",
-      "sha256": "2bca9065770390c042db027324ba014e466c370d3abcda772eacf73e76a17610"
+      "sha256": "f83b1ddc4c93ceb29e189afb126677d2422a5c1b14e9e19878e168acfc8a55b1"
     },
     {
       "path": "ja/dictionary/kanji/u6a21.json",
-      "sha256": "077a2ba23ac24ef0f4e3d8d244e31553aa895939bdb4273169d63eb2c9d1becb"
+      "sha256": "ced2c5f329a6d0735fa998a68fddbb5fc9cc7c48171e705c37801b6d17e221c5"
     },
     {
       "path": "ja/dictionary/kanji/u6a29.json",
-      "sha256": "9a4808c394e25fb20a2011db60f998f8cb526539cf54a3e756948e2c6809b49d"
+      "sha256": "20dae507db8117360d4be2f5a26b5536ff373ba1f6f6c114f7276a45ad4a273e"
     },
     {
       "path": "ja/dictionary/kanji/u6b20.json",
@@ -1812,7 +1812,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6b32.json",
-      "sha256": "9bbdba2fdaf42ab32a40381963309ca357304a2322bfc945829f74753a920d4c"
+      "sha256": "fe268f308c5899e60c3dec36fac97c57680b7d8bb32d1b475ca1cf75f63dd41b"
     },
     {
       "path": "ja/dictionary/kanji/u6b62.json",
@@ -1824,7 +1824,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6b69.json",
-      "sha256": "2afd4eb359fa21042a0fc53bd6e420b3c27f0fda0c30af3309068bbab0b2a9dd"
+      "sha256": "e97d2b5fb0c80caf70973c9a16d48fcb7145fc87c19142ef87166b011e59d87b"
     },
     {
       "path": "ja/dictionary/kanji/u6b6a.json",
@@ -1832,7 +1832,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6b6f.json",
-      "sha256": "546a11185c3ddd1655c8b3b2f1e64fc6db280ede4b5627bfaf535923f3da1c0f"
+      "sha256": "a92a5e43e73a504b1140f835a60ee03accfac03351e6c187890d5bbf105ef210"
     },
     {
       "path": "ja/dictionary/kanji/u6b79.json",
@@ -1848,7 +1848,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6bb3.json",
-      "sha256": "376e991090de70157b8b03256a2714c6dbb3927752de8f16d08a4d935f5a8b0c"
+      "sha256": "460112cb13441499a6201f716debd745c639a5cb0e6e62433849a535db116168"
     },
     {
       "path": "ja/dictionary/kanji/u6bba.json",
@@ -1856,7 +1856,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6bbf.json",
-      "sha256": "400b5eed249cb5982555b39f5dd9f61635d1333b7373ff4372b7aeab5cc735d4"
+      "sha256": "456f0f43a0b634dfbe3a59d966e471ed1407a83cbc293c48bc16b694f69e466e"
     },
     {
       "path": "ja/dictionary/kanji/u6bcb.json",
@@ -1876,7 +1876,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6c0f.json",
-      "sha256": "127b9a3301b2b1b30e98bfcee5a3c9615ade3b4bf2c85dfedd7298e6425bdba5"
+      "sha256": "90869a96eb16fffb51996cf36710c5fa7977bfd3e465f262bd4c95cb41047187"
     },
     {
       "path": "ja/dictionary/kanji/u6c14.json",
@@ -1892,7 +1892,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6c35.json",
-      "sha256": "af8f3876edeb2259616ea5bec17810d8a423f88b25f3cb5e55e9f31cdfdfd7c8"
+      "sha256": "d6ee0a407b7fb20e154e262d6314dc3e6825220646e0e02f2ae427f16d31c6c0"
     },
     {
       "path": "ja/dictionary/kanji/u6c3a.json",
@@ -1900,7 +1900,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6c41.json",
-      "sha256": "b9f82b0912cde9f2b550e0ba3445252dd528815e1d631a1fda41a1a210eaf920"
+      "sha256": "57e4a327f15f9aecf221e3e1dd8d2db42d5ba95e8e78bf6c7df76f43f4bb4eb3"
     },
     {
       "path": "ja/dictionary/kanji/u6c5a.json",
@@ -1908,7 +1908,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6ce3.json",
-      "sha256": "7965a67851dc170738dfdfae8e0e59e44c400893ab236c1aa250b5b4b17d3e1d"
+      "sha256": "14f28c1c578640a041252943049795d024dcdd64e314746285e2d949338aab3f"
     },
     {
       "path": "ja/dictionary/kanji/u6d17.json",
@@ -1920,7 +1920,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u6d3e.json",
-      "sha256": "13fee3e5ee034e89e12735da935122151d1359b375a7ddd435d961a9e209d571"
+      "sha256": "d1a5ba97ee56ce317981eb84c5ac824373320905d18fb2937befea796e72a88d"
     },
     {
       "path": "ja/dictionary/kanji/u6d6e.json",
@@ -1928,11 +1928,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u6e08.json",
-      "sha256": "b91adb106be0885f2482941f1ec550dfe539ad5074dbc4c6f1ffb34fd6c59d5e"
+      "sha256": "876d2488f194e88ed4b729d332985cad90ed408ef848706ea814106e193dbc24"
     },
     {
       "path": "ja/dictionary/kanji/u6e80.json",
-      "sha256": "408d5d38597c3909a905ab3b7f9488b2e472c06907d3f93accf459265754dc78"
+      "sha256": "aac1c47e3bd1f570bf614ea5c9a2b2ea425fca2d38bb304f7d012e0f2042c76f"
     },
     {
       "path": "ja/dictionary/kanji/u6e9c.json",
@@ -1940,11 +1940,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u6ef4.json",
-      "sha256": "3f8482ddd0bfaf93e44b76965699b432ec2c248d5e4017f26de345df1385a24b"
+      "sha256": "af6e9b2519e67b7a19b4836d2e36d51df42a13b630a1381696ae9053d4c28ae2"
     },
     {
       "path": "ja/dictionary/kanji/u6f02.json",
-      "sha256": "65e05af607de09b9afa6507d1da287b429646153b37bdc863e8bf044d47a42f5"
+      "sha256": "f4db5064caef84686ab9f50c02e1ab3b6164cb8cd9109a7804be855dd7e10dcd"
     },
     {
       "path": "ja/dictionary/kanji/u6fb1.json",
@@ -1952,11 +1952,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u6fc1.json",
-      "sha256": "9b535827d5da8e1831c1993a1746ff513c905312fcfb7563c124289fed65ad96"
+      "sha256": "f0fbabac1677b5819f2c559a8298449c7c980690e90dffe23756841615b8be66"
     },
     {
       "path": "ja/dictionary/kanji/u6fef.json",
-      "sha256": "874d69911d064d7f121939bdc9eb824af50cb1741fae1c23d5aba7fdddc29995"
+      "sha256": "8fe17557c8902955a040c4bb964210a5502bd5bae70af6b95e9cb33b5104325f"
     },
     {
       "path": "ja/dictionary/kanji/u706b.json",
@@ -1964,19 +1964,19 @@
     },
     {
       "path": "ja/dictionary/kanji/u706c.json",
-      "sha256": "b7ced58b352c904be2aa4b42a700443268f37ad18a1441d462a2bb01cfe21cce"
+      "sha256": "78c385089998aae1aaa4dd5e98922827c8667bd44fe83e9633d724889883ce00"
     },
     {
       "path": "ja/dictionary/kanji/u7121.json",
-      "sha256": "cd1cfa5e73525e5a6ea02fa888742e91326b1258ceb4762b8c89c1765cea940f"
+      "sha256": "8973dbbc57f50b57f4809e23d26a27dfbeed55d93b37a054fefbe667acae40c4"
     },
     {
       "path": "ja/dictionary/kanji/u713c.json",
-      "sha256": "0d5b6f3992e80ae2a73a4327d1eda409410ce3bc5d39bc2aa0759701ee205302"
+      "sha256": "8e1b848e716200eaa2ebe83c2e67b7046fbe6a345754618da804e89126af4b29"
     },
     {
       "path": "ja/dictionary/kanji/u721b.json",
-      "sha256": "465893f4925ba5835d01baa2a6458669c0b3f24ff5c4f56715af904d5cc793ea"
+      "sha256": "4fb1978799342e11bd786960396b8af7b869060728048ebc9f0f45443a2fd647"
     },
     {
       "path": "ja/dictionary/kanji/u722a.json",
@@ -1996,15 +1996,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u7261.json",
-      "sha256": "c91208d241ff7ef20672b5e87bf61874eef1237590d3bc605be094a26584314b"
+      "sha256": "be87ae0bc1c7a0c702e0d2770e602336dbdb9d81c0ceccbc4b994194211b8e48"
     },
     {
       "path": "ja/dictionary/kanji/u7269.json",
-      "sha256": "cdabe5fd72c84296314a31223ab4d386383196a4fa50d63df9edf7ca0d5a3384"
+      "sha256": "ae7793ac9b29a820b27a97d25c59c89cc9d18935e5e6831b2cf7d28b984082a5"
     },
     {
       "path": "ja/dictionary/kanji/u7279.json",
-      "sha256": "09d3eaba05d5caeab688b5403b93943485adc158da5f45d1eaccaecc49b4d3ba"
+      "sha256": "b63ae6c4bd40bc6495f214725f19a07f00720d18fcf52096e6ecac5f67ef9681"
     },
     {
       "path": "ja/dictionary/kanji/u72ad.json",
@@ -2012,11 +2012,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u72af.json",
-      "sha256": "73e71ba6fddd230efb3ddba0e941306123c7980472192540883de1e34bd3ea02"
+      "sha256": "96f7503e6fdb323c16eba308a9ed5cc907b2a78516db4c8b5a43d6c30b1ef2d6"
     },
     {
       "path": "ja/dictionary/kanji/u72e9.json",
-      "sha256": "43e42447bd688fdf0d31d5c8eebe4394128ba9ba8a04ad36a16381a68de5b911"
+      "sha256": "fb3fa2519f3d12019ddaa4d3514914eb2c7c880c9d003f1dfcc804a73b42c1f8"
     },
     {
       "path": "ja/dictionary/kanji/u732b.json",
@@ -2028,11 +2028,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u7387.json",
-      "sha256": "8571f68531112d037e4054a7f2fdb7fedbc6d1b8f1c8f42cb539d4a68e584ce0"
+      "sha256": "1267768c33abcc2de6e7d3740b640fce1f454a8d6af863baacf4cbfa4ba17895"
     },
     {
       "path": "ja/dictionary/kanji/u738b.json",
-      "sha256": "f1dd26478ff36cab0b6a99a37bd8373541e8ff1d8eeb395b183160769e3d5fa7"
+      "sha256": "f07be836ba10bfbd659e9a0817aa3737b2a10aa3e600e6cc02ca5cbb227ef5c0"
     },
     {
       "path": "ja/dictionary/kanji/u7406.json",
@@ -2040,11 +2040,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u7518.json",
-      "sha256": "173d2ff1dc853936fee21dd15fde93e3d9454fbadb1a707434a17ec1393faf73"
+      "sha256": "dbc08b6b1e5f1cb5031db365626ea31a2db49d98a6b1de76e77e792104fcdcc4"
     },
     {
       "path": "ja/dictionary/kanji/u751f.json",
-      "sha256": "f96cb16951945edf9ddb35027ed1fa3c917665a73565a6f06a508a8dcd72e060"
+      "sha256": "d8753e2c64751694dd14779a197dea3b21d86db68273ccf00d46b0969302b7b9"
     },
     {
       "path": "ja/dictionary/kanji/u7528.json",
@@ -2052,11 +2052,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u7530.json",
-      "sha256": "71b4c890800a30e83198f15698ae42df8da4f46ebf488c9a2802cadeca059391"
+      "sha256": "6344543a9104d332f374ecfa95edf4078f7131cf639f7269d20dc4100d1f7740"
     },
     {
       "path": "ja/dictionary/kanji/u7531.json",
-      "sha256": "3883174de9d968f9f80a113d1b6f1f3004a73911de598f797ed46030271edb96"
+      "sha256": "d1cbebea80d475dcf15d0d274a2d642a5a668eb51f83622d0b7c097227bfceee"
     },
     {
       "path": "ja/dictionary/kanji/u7537.json",
@@ -2064,15 +2064,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u754c.json",
-      "sha256": "12f7eaafd4c69a0018cafbafb12a1c99d2591ca45842c9018f22df855e240d6c"
+      "sha256": "3ac50a9c37b26d0cf7802177f0fd8db04efd0a2f2889726aa0a5d76be44024c4"
     },
     {
       "path": "ja/dictionary/kanji/u7559.json",
-      "sha256": "78f9cc0e2a43ba755165fd64cf1d72c2ff51dde78f20cbc6d3f53042dcf0fb1d"
+      "sha256": "0e6cdb6dcc935ca633c7d3d9eea5fb9c116bf33d01fda74505a4ed7b696e8b2e"
     },
     {
       "path": "ja/dictionary/kanji/u7565.json",
-      "sha256": "e7b2eef1dae6f612355c060cf6ff4dad67686fd1523492003a2441aa0e3d1bdd"
+      "sha256": "d7a0ce4002eb93ffe88b10f5e9b20e2965882241aecb1f8d5bf522f6aaaf8e62"
     },
     {
       "path": "ja/dictionary/kanji/u756a.json",
@@ -2080,7 +2080,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7573.json",
-      "sha256": "71a9b935589ff0d206decfcaf018c2942d08766917d5389a5829363e330a9a35"
+      "sha256": "183f1be20081f8da99b9faaae5166f4c3871a4820764496be3c699c1d7df7aef"
     },
     {
       "path": "ja/dictionary/kanji/u7592.json",
@@ -2088,15 +2088,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u7634.json",
-      "sha256": "c7934a1a27e041224ffeb910cd3f2acc1f6bc76489cb9e910f989feb85f2d8af"
+      "sha256": "132adbf4ce3352670b79cea00619019320da08f3e68af363071ec2ed1f7c6aa0"
     },
     {
       "path": "ja/dictionary/kanji/u767d.json",
-      "sha256": "3141ad2f1d66bb985fa3deb978bf27748e4a5b4c24fbd788272ae94c3bb90953"
+      "sha256": "ee11f61343811db4d73658eb68711d2b9db7841cae8571daa8bf1d8f7b984fd6"
     },
     {
       "path": "ja/dictionary/kanji/u7684.json",
-      "sha256": "f943e05711cc1b82fe7c1d54903a2b9e03b91159d1349d5205ef266f04a03598"
+      "sha256": "794af1b8e69f0839acdbf154235cdb1651c0deef001e43680f0e1f078a5062a0"
     },
     {
       "path": "ja/dictionary/kanji/u7687.json",
@@ -2104,7 +2104,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u76ee.json",
-      "sha256": "2d8b49c1decc81b002f53e736c5ba771c2d048bcb10e9572d04deb4e487569ef"
+      "sha256": "49838571446b02f07628791821381a490c7ca78ff2a5332d20b69ef1b2383e88"
     },
     {
       "path": "ja/dictionary/kanji/u76f8.json",
@@ -2112,11 +2112,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u76fe.json",
-      "sha256": "3ecc014cec076ce7728a73b3031024b2590108e74cd00c4cea83ab71d333d98c"
+      "sha256": "32a84b48b5a808ce3977bd168ef8ff2f4c083612f8581f2679fb962c70f130eb"
     },
     {
       "path": "ja/dictionary/kanji/u771f.json",
-      "sha256": "f3b197534176de48e79f15c678674fb4e8a529cd8928b08ea0d667e3f4ef1728"
+      "sha256": "4260db200670b8fed69e3d221dce0ca83e56137c53d89d2a44d4d65f0166766a"
     },
     {
       "path": "ja/dictionary/kanji/u77e2.json",
@@ -2128,11 +2128,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u77f3.json",
-      "sha256": "520785eb4461eef637cf71487d4086ca20545ae34668c81c0d88fe04f0f107ab"
+      "sha256": "98363931432c9c19bb2dbf6a0001cc3745b454acfa15be5b051c8adad00f4096"
     },
     {
       "path": "ja/dictionary/kanji/u793a.json",
-      "sha256": "b7242fc3368245622538d511fa3603c11d536d5ca279f57f26cd81fda49272b5"
+      "sha256": "5e153b93542f5aba9cbb9962364c34d55b638c1bfdcd0f8250056acb8fc5db76"
     },
     {
       "path": "ja/dictionary/kanji/u793b.json",
@@ -2148,7 +2148,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u79be.json",
-      "sha256": "f36550bf1516799af24243c6acbf76070626b4f03b451b3bb45f527dc8452042"
+      "sha256": "f99b6a75aa00324d5277f7b61b7c566fbd38f94b7485ad18423a691633cba69b"
     },
     {
       "path": "ja/dictionary/kanji/u79c1.json",
@@ -2156,7 +2156,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u79fb.json",
-      "sha256": "5c012b8b27d99d4d442472c062051139aa1f2e7763c0ba18bf70079530cc2401"
+      "sha256": "6dbafd1f5c76f60d6dca7de15a14475bb07fbbd2b3ff7e38ad0c81c4c797e677"
     },
     {
       "path": "ja/dictionary/kanji/u7a3c.json",
@@ -2164,7 +2164,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7a74.json",
-      "sha256": "4123a5514333a1c6473703ec4bf186a1df83e4478fbd02ddb688e000afb0f231"
+      "sha256": "a2516dd9e3c7e039ccf2e70722c025812158cb4de47a8821a8e9abf81369a9bd"
     },
     {
       "path": "ja/dictionary/kanji/u7a7a.json",
@@ -2172,11 +2172,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u7acb.json",
-      "sha256": "0f0b0bdda5be9fe8a84120a9a298b16581fa5e71fbba2727544824d2b8569b41"
+      "sha256": "a7416591ea1924bde4f4ae3d4950fbe0071341f26ee4156b16a44036c4b233c2"
     },
     {
       "path": "ja/dictionary/kanji/u7aef.json",
-      "sha256": "42251c13e8ff122ae66cba08e73423b7cf57514033ca5b11220f09e4d01e9a66"
+      "sha256": "6ee8dd30665d6d2bdc05ff51a12a6a0a33f5ac2a242b1cc8093ed2b6219a95fd"
     },
     {
       "path": "ja/dictionary/kanji/u7af9.json",
@@ -2184,7 +2184,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7b11.json",
-      "sha256": "b3f3f34943239019943d8ad9c137cf05f80101d07f34f0f3bc08d39dc0244155"
+      "sha256": "8820f59cbf15af1c01d16dac6102f5fcd59139f1c1fb5e71bd861b230bea3778"
     },
     {
       "path": "ja/dictionary/kanji/u7c60.json",
@@ -2208,7 +2208,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7d42.json",
-      "sha256": "c2c9b1520f1b1b8c9f137b2d229d9d57aa42efb092bd589face4c2f1f2ca8d0a"
+      "sha256": "7b06e08e91b75a5db4c30b5c214e416dde73cce03fa8c74089ad9fd63862a42b"
     },
     {
       "path": "ja/dictionary/kanji/u7d50.json",
@@ -2220,7 +2220,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7d66.json",
-      "sha256": "eb967f70f4c02862a99e2ace918af3160c2d43c9cc6b9bf00deb7f47fa8f39d4"
+      "sha256": "db54cb74a2feb2abe7d394532c22006204997a81d846dad83b9147a37ce63eae"
     },
     {
       "path": "ja/dictionary/kanji/u7d75.json",
@@ -2228,15 +2228,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u7d9a.json",
-      "sha256": "ff29ac1ee91d1f1f1a3f4a820d6ae9710222a2d2365899a082b108097d52e48b"
+      "sha256": "638d67e8211d0cd7f451ec1168065839ffbeaead1d42bef70c972733738880ff"
     },
     {
       "path": "ja/dictionary/kanji/u7e01.json",
-      "sha256": "7a25fada31a1ca9f01f7bb72c82767b9b65701adea53373a5aadd60ecbfaeb3e"
+      "sha256": "2f77c52f071509a1eb754be831cb5f080b2549b7bf6c60951d6301724ea641f5"
     },
     {
       "path": "ja/dictionary/kanji/u7e8f.json",
-      "sha256": "c7015d8250b96264548902bbfb0319df419b2a17a9a27f6ea197b6e36c8ec30f"
+      "sha256": "62e0d481304abc70a9d7cd705959d80582148cb5c7ab6977549e115ec4c9fc5b"
     },
     {
       "path": "ja/dictionary/kanji/u7f52.json",
@@ -2244,7 +2244,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u7f6e.json",
-      "sha256": "df2fce403913152d946a932add16fe36d0f6212018552e603001daee67d75f4f"
+      "sha256": "e6c2b1c95179961b388404b876ebaa89657e7d655b931220ab5039edebd3b35e"
     },
     {
       "path": "ja/dictionary/kanji/u7f8a.json",
@@ -2256,11 +2256,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u7fa9.json",
-      "sha256": "31f54b4145ae41bdea9a724eb598564d020176954657c9384131b652f93dd203"
+      "sha256": "1ec4ecdc20f0623a9d9713ed5afe14215eb70a54095d505daf0868bfdf72227b"
     },
     {
       "path": "ja/dictionary/kanji/u7fbd.json",
-      "sha256": "a141ec3e3ab9aa84cc9f67aca23810795cab7613dfc4550f931e8103e0b31e8d"
+      "sha256": "00482d7c4491c2a1c5cd5171b30f5a6ae2bd112022424e2d727fd07b99df8913"
     },
     {
       "path": "ja/dictionary/kanji/u7fdf.json",
@@ -2268,15 +2268,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u8001.json",
-      "sha256": "a2571f9fc262c9d6654cbde78ac686899e559191e6bdd46f33868237fa27cbd9"
+      "sha256": "4d38e8cdce0c8f198dd9475c4e68bc4f628fcdd9ae6564d0d002d4708e24b058"
     },
     {
       "path": "ja/dictionary/kanji/u8003.json",
-      "sha256": "951aaa11e10a3a4ff5607457ea33225c5a25660b21ce3eb6f8adaa72ecd94277"
+      "sha256": "59375319f623ca0509c0f19c88c4e45411d471a980fee026a4aceaafa486063a"
     },
     {
       "path": "ja/dictionary/kanji/u8005.json",
-      "sha256": "5f0aa1dd6552db45c7ba106d79b71d05f8f33e32847406546a1de6cdc44e1445"
+      "sha256": "d3a4fa03303a69ec4ba955bb02bde472984eedd18080bbecf99b6ee65575481d"
     },
     {
       "path": "ja/dictionary/kanji/u800c.json",
@@ -2296,15 +2296,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u8089.json",
-      "sha256": "04604f5a0d9076c639b6ae8c6028b497c8e252cfce5564efd398a06c2c87a5f0"
+      "sha256": "7090346055a2df55db5db105dbe05445c50503d932d1294619434dc745bd9400"
     },
     {
       "path": "ja/dictionary/kanji/u808c.json",
-      "sha256": "46bcd4bb20e546b3c55140efd8684fbac44afcc2c90eed83ddc84d88b0b38353"
+      "sha256": "8e7af6db3d4a9d78946aed7d3816cd16b106ddcd8ede1acca272e064f1cd2d06"
     },
     {
       "path": "ja/dictionary/kanji/u80fd.json",
-      "sha256": "336066ce5de6198ec22493ff1d810dbaf6d157c2a371651029c15497d2c6518b"
+      "sha256": "58413519bf5cf6a9aa91659e654948b30beef5e0c068201e72327ee3c0143b43"
     },
     {
       "path": "ja/dictionary/kanji/u81e3.json",
@@ -2316,15 +2316,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u81f3.json",
-      "sha256": "35124f6cb4ba2d7a2ae59f83e1a111dcde407a6d6dfc4240b2c0046ac6462b44"
+      "sha256": "e64dd735fa9102891e336f8a47c49b433ec160e81f610f4db879d2195e0b4690"
     },
     {
       "path": "ja/dictionary/kanji/u820c.json",
-      "sha256": "8f0f78ca083ae2ddf5a1780bdbb3e0487bbfc264a0d2c7a9e2f5579280b805e5"
+      "sha256": "c270a9d585f7c76479dbec7da6a7a3a18adbd96ee19042d8c7bfe6ab5de67a06"
     },
     {
       "path": "ja/dictionary/kanji/u820e.json",
-      "sha256": "316352fa7225081c678714ceae1693dfeb32daa566c4a16c055d761aed55f563"
+      "sha256": "406c0699d2667f60c1d4d02cc10ef814391cbb8cc14e56cbc06dad7d41eb0ccb"
     },
     {
       "path": "ja/dictionary/kanji/u821b.json",
@@ -2336,11 +2336,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u8279.json",
-      "sha256": "90bc24604a5c1a8330a214f1c03a99fd7645b159eac101b36ef1887c5965a76f"
+      "sha256": "7ba413287abb6f39d1f729607d0f3b11e8c0d0831383c9d075990667c049a5a6"
     },
     {
       "path": "ja/dictionary/kanji/u827e.json",
-      "sha256": "095373e4fb617784419c72ecbc6d39b1d20dd2005316b87c143cc2b3a7e31bab"
+      "sha256": "2073804612b672c8cd1d8a8a4fc99444f60b42d3713cd74f9e51b0c5f323259f"
     },
     {
       "path": "ja/dictionary/kanji/u82b1.json",
@@ -2348,23 +2348,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u82d7.json",
-      "sha256": "6252ede00d4c62f5343404160421d1ab2b77ca9df8bda053beaea160ae4d2f22"
+      "sha256": "08dafeb386aef18386a767e5a55337fb25ba9c45ffc7ab90930d96f27bcb1fc6"
     },
     {
       "path": "ja/dictionary/kanji/u8349.json",
-      "sha256": "112f760cc5422a7464e31c17ed475bf5ed7423308e4f53356568d55e497cdc5c"
+      "sha256": "bc7b0be71e00ce0af3517863bdab2f0e007465fc16b63eabd0372d2309117a19"
     },
     {
       "path": "ja/dictionary/kanji/u83ef.json",
-      "sha256": "08f7a60fd00fc49b99dde07079687b455398962974d8d0eb74d9dfdf7deac1f3"
+      "sha256": "ea4997b2301dba2d1c36698cba00942f5b02047b23603db63f95367dbb88dd3e"
     },
     {
       "path": "ja/dictionary/kanji/u8584.json",
-      "sha256": "fcf8540508caf5a346a8286714f8342fcf89884c5496eeb71cc2c048fc2c2dca"
+      "sha256": "26e54d6f31289795f8224f22f585ea8339b91aa7d743304c490b938a3d0a2567"
     },
     {
       "path": "ja/dictionary/kanji/u85ac.json",
-      "sha256": "04923fe0c930c37a2ef29c7f056b938b11f6136f704c3ed6ab48908f736d8e8c"
+      "sha256": "858690bf97717a5f257657d52d9ba7c60c64d5056f20afa24ff967cde3796256"
     },
     {
       "path": "ja/dictionary/kanji/u866b.json",
@@ -2372,15 +2372,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u86d9.json",
-      "sha256": "3af8f8e8c1c05a0cf3515e431bc9f45bc92ec5987b1325a79e702a1d455eb659"
+      "sha256": "8703eeebe2c205db867e616ccdce7123237e79cc4460a03ee52df6b6771d9859"
     },
     {
       "path": "ja/dictionary/kanji/u8822.json",
-      "sha256": "266cc457a05efc0e26eed974a3b8fbbb49ec84cc452bf32b10f7c7028b2ed5d3"
+      "sha256": "0b94cd91b0b893b738265f9a6b48a1ee4bd0a91b10e938e706d10be98938c0fa"
     },
     {
       "path": "ja/dictionary/kanji/u8840.json",
-      "sha256": "e12cebdd68c1c8b6c9e153cbcacf26e52a708d7c9bc49a85a21402167009738a"
+      "sha256": "177b171a6c5b95aa691fba54c93a69c78558a649fe159e0090b7545761b1e734"
     },
     {
       "path": "ja/dictionary/kanji/u884c.json",
@@ -2388,19 +2388,19 @@
     },
     {
       "path": "ja/dictionary/kanji/u8857.json",
-      "sha256": "e986c45d4b66935e1e520dcd4bc83e4d2ef73c4f632c6a08532c8a37e9a69a8c"
+      "sha256": "b34b5353256614d5ae7e0f8eb896b29a08bdc20a0d28314b3cfccb07ab660527"
     },
     {
       "path": "ja/dictionary/kanji/u8863.json",
-      "sha256": "314666686e2501adc3a7a30ae0895c0bad9bdb27dba424b4ce3cc6461d08d1c0"
+      "sha256": "49f9ec71ec281b8dc236501b62df618d160d2b55d6246a686fa68f0b72d24ff6"
     },
     {
       "path": "ja/dictionary/kanji/u8868.json",
-      "sha256": "d2b5b62a15d6cc830bb7220a18125fa164cc34fea6ed0d5d71d44559beb3a33b"
+      "sha256": "9489be8e6657a6893efd911c2a86222333de0067cb2d5c34e65076b90d81cf5f"
     },
     {
       "path": "ja/dictionary/kanji/u8881.json",
-      "sha256": "5f99bef8993d8f9df2b39ed430b60e58942696bfea2bc3eaf2ac4c48ab2d2f99"
+      "sha256": "ad00233b76321d96158a8101b8d8aa8457faab21ea8dc1a3bc3510862561e670"
     },
     {
       "path": "ja/dictionary/kanji/u897f.json",
@@ -2412,7 +2412,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u89b3.json",
-      "sha256": "61239f70aabe9b00c1f98309356d435bed7c8f623d1d398b05ff74883c3aa515"
+      "sha256": "c21103b190ca102ac9e7980fd5bdebfb4448fe2d628d8ead4fcf7878859627bd"
     },
     {
       "path": "ja/dictionary/kanji/u8a00.json",
@@ -2420,11 +2420,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u8a31.json",
-      "sha256": "1a74efb06bc052f1e734d0515339f01ddaefa7196d99d7e6392beba4c865d03e"
+      "sha256": "6c1553a2c08042c6b174acbf55e0c94d36c9c58ff705e0b11b565e19b3973fe3"
     },
     {
       "path": "ja/dictionary/kanji/u8a6e.json",
-      "sha256": "08949d49e91321d2f655d3ad811025a3d268d9659799910c243c9f68d9719a1c"
+      "sha256": "81c2d04db9b058ce77c09a3be9d567efb2c3a3f25cc4fd3e06d8bf46fea63501"
     },
     {
       "path": "ja/dictionary/kanji/u8a71.json",
@@ -2432,7 +2432,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u8a89.json",
-      "sha256": "c47f9d77bd52f3dd3cc7d29bbfe47b88a7209df965f90f56d99b9fbac3e8b9f5"
+      "sha256": "e0be5ed1ac2509879b25b360d4af4ba0622cf911cbfd4c9122ed88fcdb7ac265"
     },
     {
       "path": "ja/dictionary/kanji/u8aad.json",
@@ -2440,23 +2440,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u8abf.json",
-      "sha256": "b78a09c5f69416ca0a8a157f9f7c59e47286c70e2b069357c9df6cb793c62693"
+      "sha256": "3151e4b1eb640514dbc096dfe17f6000aa0bcfe4b42161f00e8ccd36e3403a19"
     },
     {
       "path": "ja/dictionary/kanji/u8b58.json",
-      "sha256": "df7fd72bd15c7ad27e05891c4a956023653079043dae27445f32f9fa13ec87b0"
+      "sha256": "63229c3f25482e894ca45ad512ad69f1c3bab82b7cf643288e393fb8c6011a16"
     },
     {
       "path": "ja/dictionary/kanji/u8c37.json",
-      "sha256": "82c2419760244d6ebac09646fb7a66e3902c5adb38a81ff4526bfb108f745cd1"
+      "sha256": "31579f73af156a383f139b506eb33bc6bf13bde458da1a1c2ac848d9e3769619"
     },
     {
       "path": "ja/dictionary/kanji/u8c46.json",
-      "sha256": "291e6c2f6497f323e1004e537cbad0511dcf056cee8daf6c04b5aae88786781c"
+      "sha256": "21b4255a805ca5fb8e58145f58b7910cfb874e6c35571fbe31bc38f78b57c7a5"
     },
     {
       "path": "ja/dictionary/kanji/u8c4a.json",
-      "sha256": "dccd5af1d2d4f0787c4065536fa9f9a7bce8b73d956790749321a10f09608f2d"
+      "sha256": "09a0e1e1fe59a4ae98d0d2c0d2ce7c6c3a712b0cc66e68353f235753a2b59971"
     },
     {
       "path": "ja/dictionary/kanji/u8c55.json",
@@ -2468,11 +2468,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u8c9d.json",
-      "sha256": "23cab85b537c11fd47536c40b7b3f7e34e423dc7b807635fef466d1fa68ae403"
+      "sha256": "edfe1a703d28a2e6dc8846ff9e93001aaea9a932e01b184355f3bde5ef6fbc28"
     },
     {
       "path": "ja/dictionary/kanji/u8cb4.json",
-      "sha256": "1e6ef6e705ec91731d18b786185cca94d5586134e5c5d56fc3f09e66e84f0765"
+      "sha256": "f3d9294f306df9d63c70577b0994bfcc5cda567564b9a1190280a9d7900926e2"
     },
     {
       "path": "ja/dictionary/kanji/u8cb7.json",
@@ -2480,7 +2480,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u8cdc.json",
-      "sha256": "64897788c32a3fea50566c0c9b8a6667fd14a584780f1c355e5476b4320a830c"
+      "sha256": "c93a8ab36e3ff13aff5ae14cbdd0576bb0a411e6aa1a25e6e505eb986ec230cc"
     },
     {
       "path": "ja/dictionary/kanji/u8cea.json",
@@ -2496,7 +2496,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u8d8a.json",
-      "sha256": "8fb5d7fff9dfd0e0c3d719286d023c1edff5834cb4ca53264986982a1944773b"
+      "sha256": "52f1a989ad413f17ab58708e4db07c25eebb222b93812776cfd6e10b090a37c7"
     },
     {
       "path": "ja/dictionary/kanji/u8db3.json",
@@ -2516,11 +2516,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u8efd.json",
-      "sha256": "0f67ae4bab7453bb012c7d797fee78cf4340a5a62abd05844f4e8ebea2580ca2"
+      "sha256": "b7d2a27d51fd6e1df0e42e5431bf763fd519e71d6564d5d9de7cc14b73a08739"
     },
     {
       "path": "ja/dictionary/kanji/u8f9b.json",
-      "sha256": "60a0625ee1449483f0e13f4414ebb5177020a12b7210f0b7ad85a2924683ca0a"
+      "sha256": "40b0f86e5cf885a86b659f50fa2340802b3034d75f47ec99132b949447a7bee1"
     },
     {
       "path": "ja/dictionary/kanji/u8fb0.json",
@@ -2544,7 +2544,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u8fd4.json",
-      "sha256": "6f6511e5696ad646b3f8331a366598f2e7103dd78618594dfe6651a52979d87c"
+      "sha256": "2517c9d561bbabba12623d1cf4ab234eccda3845a44fdc9f53adb6ab5db2f02c"
     },
     {
       "path": "ja/dictionary/kanji/u8ff7.json",
@@ -2556,7 +2556,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u904b.json",
-      "sha256": "7efce98e9e3b02b6dc65510e1f5187073049c6fe2620fb8c90071e8cd4395c97"
+      "sha256": "caac2b00e208ada5d0cec8b9ab71430bba0a01092694318a7a4120023b05d8e4"
     },
     {
       "path": "ja/dictionary/kanji/u904e.json",
@@ -2568,23 +2568,23 @@
     },
     {
       "path": "ja/dictionary/kanji/u9055.json",
-      "sha256": "b1cee0361dd5de8eb96127c70acb964b51ac9ac42687756197fd6d81c136115f"
+      "sha256": "b633ffc1bcb5b873a9a0809400a8281b4d398811916f86ad325f5c319159973c"
     },
     {
       "path": "ja/dictionary/kanji/u9069.json",
-      "sha256": "934ea9953bace1d16f2a3c20aa0bb5d5ce88bc76aed52e763e38e1b9cc4f56cc"
+      "sha256": "f8f16fc1b29074717f833fc200f1ef732b9f78ecdb807a557892b4d73a974a76"
     },
     {
       "path": "ja/dictionary/kanji/u90a6.json",
-      "sha256": "9cd6ba1967b679d6c192538e0f45042a61852f0f447b1f82f485625cfd8694d5"
+      "sha256": "04d1fd42add6053ada6f41566fee065b37cff1bac13f2476630acb84bec5a48c"
     },
     {
       "path": "ja/dictionary/kanji/u90e8.json",
-      "sha256": "be379fd2396b0bd8ab8a8911e1a39393372baa8cbde84208c1a427a650dc15bd"
+      "sha256": "f333394580aa4f6bab5c95b52a799a57d793183f3107c79a0c71cb8c1c989849"
     },
     {
       "path": "ja/dictionary/kanji/u9149.json",
-      "sha256": "2ca4c89071e21ca6c174d2130b6c7124857648796ceea847d834124bfe9823bd"
+      "sha256": "547a3276fefb2e97634ca1b1a19202917ec4e7715eb09782d18cdaa81125fdfa"
     },
     {
       "path": "ja/dictionary/kanji/u9152.json",
@@ -2592,7 +2592,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u91c6.json",
-      "sha256": "5f316e9dc2c9fa90f14448a2237ca983c691b7a14671c7ff62edb19befb99270"
+      "sha256": "91cf8fcdef0f8a8006ea71c8defe45b04f3e27da18bede88045034c989252adf"
     },
     {
       "path": "ja/dictionary/kanji/u91cc.json",
@@ -2600,15 +2600,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u91cd.json",
-      "sha256": "99304b69d3edc50249ad2a5ac86cd3b4d824d5df40ba426c6be918014f397936"
+      "sha256": "ce26886d062c11d52cb5c416f75e037846327df57d92560809967588787c240d"
     },
     {
       "path": "ja/dictionary/kanji/u91cf.json",
-      "sha256": "4bb154774ee4037f2a440dcf27446395f6ad28d799db0ff9b86b524332dc065e"
+      "sha256": "d91bddf7c36e00671d9d88a065b785da35a992f10af49e355ce0e3ae0447d085"
     },
     {
       "path": "ja/dictionary/kanji/u91d1.json",
-      "sha256": "7d77e20ec9f366257fced4002068a7d665433b7c80c8171e756b0baf7e5c9b9f"
+      "sha256": "19811769191421200f4c15290be3cb06f3d2e75b2313368862ed92866d352224"
     },
     {
       "path": "ja/dictionary/kanji/u9577.json",
@@ -2624,7 +2624,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u95a2.json",
-      "sha256": "09428ea986e91051f3dc908a49c4a68b9feba47cdb91fef117fc87adda6df325"
+      "sha256": "aa4aa381ccb870749cc5c442e8a6b2041a538cebcd54482e3bd0118b269565b7"
     },
     {
       "path": "ja/dictionary/kanji/u961d.json",
@@ -2632,15 +2632,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u9621.json",
-      "sha256": "ff164760c99348c83c89ad9b96cbfbacd38978b9b0844ea4694b478de9134558"
+      "sha256": "dbba20e381a446a3c62d7128b1c5ca33c0b6c6341ccd86e189d02efd7440641c"
     },
     {
       "path": "ja/dictionary/kanji/u9650.json",
-      "sha256": "8f09eaa845b27f021d04e4f3f6cec3e8b91886c6ca833114081273faa6a78e70"
+      "sha256": "fa1e12f2b382f2775dbbefcbe7780cf210374f96e48ce7605123cc847205008f"
     },
     {
       "path": "ja/dictionary/kanji/u96a3.json",
-      "sha256": "051f08fb5738a70b6f62f3405a42c393b1724e95541760d5e5f959c337ae8c31"
+      "sha256": "c3d911e30ce023a442083e9b771a11bd15bc0becc69fa1734e745bf68bddd7c6"
     },
     {
       "path": "ja/dictionary/kanji/u96b6.json",
@@ -2652,11 +2652,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u96e3.json",
-      "sha256": "398a62cdff5d86187f42dd0b6c2fdee90ebef0606e4a36253d91ca2b15238eda"
+      "sha256": "db6bd49f953e096a365354a274da2eef2ade054624036d1c222a4b71f4168c8e"
     },
     {
       "path": "ja/dictionary/kanji/u96e8.json",
-      "sha256": "5f3e0cefa5a8809c5f1a102f807dcc0c215ed56aaae15315c820ed42e70002be"
+      "sha256": "212194b79ebab87bd277b163c0d15085f1a635f0399281b681c3a1744659908b"
     },
     {
       "path": "ja/dictionary/kanji/u9732.json",
@@ -2676,15 +2676,15 @@
     },
     {
       "path": "ja/dictionary/kanji/u97f3.json",
-      "sha256": "994cf902b0b762f2f55349b9ef9c194cb1336e186609b8909c14cc4551c07601"
+      "sha256": "6b8362c1373d11ffe8b4c1fcccd6d40c00a8c70e4f492af7e3f9df06cb2ce43f"
     },
     {
       "path": "ja/dictionary/kanji/u98a8.json",
-      "sha256": "cfb71b8c848966313003450f4c5df1fc496de45933e0c8a41f3a4401fda62058"
+      "sha256": "96fc361d64f022b57748ccfc11e52882473018e095b451ab8640236e7caafc6e"
     },
     {
       "path": "ja/dictionary/kanji/u98df.json",
-      "sha256": "c78a5a88cf690bac8bc8c313573a98367a1ca90adc10007e3f85a0796ee1f6fc"
+      "sha256": "4e4c31edb4db129bf4d158c279a0ab9a5b6cbbafe01d33c03897e5ee33528c1c"
     },
     {
       "path": "ja/dictionary/kanji/u98e0.json",
@@ -2692,7 +2692,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u98ef.json",
-      "sha256": "825b262132b092d2702f8704bf3fbbab3f777bbbb475675df5e0fb0844ba3d4a"
+      "sha256": "d0ce447df97a0b880b2d96431e857b05795211abcca7387618250db4023bd22f"
     },
     {
       "path": "ja/dictionary/kanji/u98f2.json",
@@ -2708,11 +2708,11 @@
     },
     {
       "path": "ja/dictionary/kanji/u9f3b.json",
-      "sha256": "e0a366353137b5ec770ef29d5df42d59baf940e5dc26d48aa46102bf7a62d1c2"
+      "sha256": "20e790220254f1dad5030510b5d00e0b1837c56a6257c4c20bb421b483777bcf"
     },
     {
       "path": "ja/dictionary/kanji/u9f62.json",
-      "sha256": "f4e3f274473b7dfd596b489c9102cf6dbf31cb858e3479df2eb8804681224d2a"
+      "sha256": "be07efbc6df644623ef9950716138fac641e0797d908bcfd0198c6408d5f75f2"
     },
     {
       "path": "ja/dictionary/kanji/u9f8d.json",
@@ -2728,7 +2728,7 @@
     },
     {
       "path": "ja/dictionary/kanji/u9fb6.json",
-      "sha256": "3420e80cf6c5c1dc2968276281cb87cb331db696296c6635cb8e06371a33e6e7"
+      "sha256": "da59f3602338b6c2483c24c3d1158d4a35e79db081668061fad74c373461b4e7"
     },
     {
       "path": "ja/dictionary/kanji/uff5c.json",
