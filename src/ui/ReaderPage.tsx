@@ -153,13 +153,13 @@ function SentenceBlock({
     ? sentence.kanjiIds.map((id) => ({ id, item: dictionary.kanji.find((entry) => entry.id === id) })).filter((entry) => entry.item)
     : [...new Set(Array.from(sentence.text).filter((character) => /\p{Script=Han}/u.test(character)))].map((character) => ({ id: character, item: undefined }));
   const hiddenKnown = adaptiveFilter && [
-    ...(preferences.words ? sentence.words.map((word) => word.wordId) : []),
+    ...(preferences.words ? sentence.wordOccurrences.map((word) => word.wordId) : []),
     ...(preferences.kanji ? sentence.kanjiIds : []),
-    ...(preferences.grammar ? sentence.grammarIds : []),
+    ...(preferences.grammar ? sentence.grammarOccurrences.map((occurrence) => occurrence.grammarId) : []),
   ].some(isKnown);
-  const visibleWords = sentence.words.filter((word) => showItem(word.wordId));
+  const visibleWords = sentence.wordOccurrences.filter((word) => showItem(word.wordId));
   const shownKanji = visibleKanji.filter(({ id }) => showItem(id));
-  const visibleGrammar = sentence.grammarIds.filter(showItem);
+  const visibleGrammar = sentence.grammarOccurrences.filter((occurrence) => showItem(occurrence.grammarId));
 
   return (
     <article
@@ -234,17 +234,20 @@ function SentenceBlock({
                 <div className={`token-list ${preferences.canvasMode ? 'canvas-list' : ''}`}>
                   {visibleWords.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
+                    const reading = word.hiragana;
+                    const showWordFurigana = preferences.furigana && reading && /\p{Script=Han}/u.test(word.surface);
+                    const wordLabel = showWordFurigana ? <ruby>{word.surface}<rt>{reading}</rt></ruby> : word.surface;
                     return preferences.canvasMode ? (
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
-                          <b>{word.surface}</b>
+                          <b>{wordLabel}</b>
                         </button>
                         <div className="canvas-card-body">
                           <span className="canvas-card-meaning">{word.meaning}</span>
                           {entry && (
                             <div className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
                               <small>{entry.partOfSpeech}</small>
                             </div>
                           )}
@@ -260,13 +263,13 @@ function SentenceBlock({
                       <div className="token-word-card learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <button className="token-word-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
-                          <b>{word.surface}</b>
+                          <b>{wordLabel}</b>
                         </button>
                         <span className="token-word-body">
                           <span>{word.meaning}</span>
                           {entry && (
                             <span className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana ? entry.reading : '', preferences.romaji ? entry.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
                               <small>{entry.partOfSpeech}</small>
                             </span>
                           )}
@@ -328,16 +331,16 @@ function SentenceBlock({
               <section>
                 <h4>{t('grammarLabel')}</h4>
                 <div className="grammar-notes">
-                  {visibleGrammar.map((id) => {
+                  {visibleGrammar.map(({ grammarId: id, role }, occurrenceIndex) => {
                     const item = dictionary.grammar.find((entry) => entry.id === id);
                     return (
                       item && (
-                        <div className="grammar-note learning-card" data-entity-id={id} key={id}>
+                        <div className="grammar-note learning-card" data-entity-id={id} key={`${id}-${occurrenceIndex}`}>
                           <LearningToggle label={item.title} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="text-link" onClick={() => onEntity(id)}>
                             {item.title}
                           </button>
-                          <p>{sentence.grammarRoles?.[id] ?? item.explanation}</p>
+                          <p>{role}</p>
                           <details>
                             <summary>{t('reveal')}</summary>
                             <p>{item.explanation}</p>
@@ -488,9 +491,9 @@ export function ReaderPage() {
         payload: { sentenceId: sentence.id, position, bookId, chapterId },
       });
       const references = new Set([
-        ...sentence.words.map((word) => word.wordId),
+        ...sentence.wordOccurrences.map((word) => word.wordId),
         ...sentence.kanjiIds,
-        ...sentence.grammarIds,
+        ...sentence.grammarOccurrences.map((occurrence) => occurrence.grammarId),
       ]);
       for (const id of references) {
         if (!user.data?.learning[id]) {
@@ -519,7 +522,7 @@ export function ReaderPage() {
         ? 'grammar'
         : 'words';
     const returnTo = `/read/${bookId}/${chapterId}?sentence=${encodeURIComponent(sentenceId)}`;
-    navigate(`/${kind}/${id}?returnTo=${encodeURIComponent(returnTo)}`);
+    navigate(`/${kind}/${encodeURIComponent(id)}?returnTo=${encodeURIComponent(returnTo)}`);
   }
 
   if (!book || !chapterMeta) {
@@ -546,7 +549,7 @@ export function ReaderPage() {
       </div>
     );
   }
-  const emptyDictionary: Dictionary = { schemaVersion: 1, words: [], kanji: [], grammar: [] };
+  const emptyDictionary: Dictionary = { schemaVersion: 2, words: [], kanji: [], grammar: [] };
   const style = {
     '--reader-size': `${preferences.fontSize}px`,
     '--reading-size': `${preferences.readingFontSize}px`,

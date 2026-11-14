@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "demo.chapter-2",
   "bookId": "demo",
   "title": "На следующий день",
@@ -51,83 +51,107 @@
           "romaji": "Tsugi no hi, watashi wa mata kōen e ikimasu.",
           "literal": "Следующий [связь] день, я [тема] снова парк [направление] иду.",
           "natural": "На следующий день я снова иду в парк.",
-          "words": [
+          "kanjiIds": [
+            "ja:kanji:次",
+            "ja:kanji:日",
+            "ja:kanji:私",
+            "ja:kanji:公",
+            "ja:kanji:園",
+            "ja:kanji:行"
+          ],
+          "wordOccurrences": [
             {
-              "wordId": "tsugi",
+              "wordId": "ja:word:次",
               "surface": "次",
+              "hiragana": "つぎ",
+              "romaji": "tsugi",
               "meaning": "следующий",
               "role": "определение к 日"
             },
             {
-              "wordId": "no",
+              "wordId": "ja:word:の",
               "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
               "meaning": "связь определений",
               "role": "связь существительных"
             },
             {
-              "wordId": "hi",
+              "wordId": "ja:word:日",
               "surface": "日",
+              "hiragana": "ひ",
+              "romaji": "hi",
               "meaning": "день",
               "role": "время"
             },
             {
-              "wordId": "watashi",
+              "wordId": "ja:word:私",
               "surface": "私",
+              "hiragana": "わたし",
+              "romaji": "watashi",
               "meaning": "я",
               "role": "тема"
             },
             {
-              "wordId": "wa",
+              "wordId": "ja:word:は",
               "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
               "meaning": "тема высказывания",
               "role": "маркер темы"
             },
             {
-              "wordId": "mata",
+              "wordId": "ja:word:また",
               "surface": "また",
+              "hiragana": "また",
+              "romaji": "mata",
               "meaning": "снова",
               "role": "обстоятельство повторения"
             },
             {
-              "wordId": "kouen",
+              "wordId": "ja:word:公園",
               "surface": "公園",
+              "hiragana": "こうえん",
+              "romaji": "kōen",
               "meaning": "парк",
               "role": "направление"
             },
             {
-              "wordId": "e",
+              "wordId": "ja:word:へ",
               "surface": "へ",
+              "hiragana": "へ",
+              "romaji": "e",
               "meaning": "направление движения",
               "role": "маркер направления"
             },
             {
-              "wordId": "iku",
+              "wordId": "ja:word:行く",
               "surface": "行きます",
+              "hiragana": "いきます",
+              "romaji": "ikimasu",
               "meaning": "иду",
               "inflection": "Вежливая непрошедшая форма",
               "role": "сказуемое"
             }
           ],
-          "kanjiIds": [
-            "kanji.tsugi",
-            "kanji.hi",
-            "kanji.watashi",
-            "kanji.kou",
-            "kanji.en",
-            "kanji.iku"
-          ],
-          "grammarIds": [
-            "grammar.possession",
-            "grammar.topic",
-            "grammar.direction",
-            "grammar.polite"
-          ],
-          "grammarRoles": {
-            "grammar.possession": "の связывает 次 и 日: следующий день.",
-            "grammar.topic": "は выделяет 私 как тему.",
-            "grammar.direction": "へ после 公園 указывает направление движения.",
-            "grammar.polite": "行きます — вежливая непрошедшая форма: иду."
-          }
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "の связывает 次 и 日: следующий день."
+            },
+            {
+              "grammarId": "ja:grammar:topic",
+              "role": "は выделяет 私 как тему."
+            },
+            {
+              "grammarId": "ja:grammar:direction",
+              "role": "へ после 公園 указывает направление движения."
+            },
+            {
+              "grammarId": "ja:grammar:polite",
+              "role": "行きます — вежливая непрошедшая форма: иду."
+            }
+          ]
         },
         {
           "id": "demo.s5",
@@ -159,66 +183,84 @@
           "romaji": "Neko wa ki no shita ni imasu.",
           "literal": "Кошка [тема] дерево [связь] под [местонахождение] находится.",
           "natural": "Кошка находится под деревом.",
-          "words": [
+          "kanjiIds": [
+            "ja:kanji:猫",
+            "ja:kanji:木",
+            "ja:kanji:下"
+          ],
+          "wordOccurrences": [
             {
-              "wordId": "neko",
+              "wordId": "ja:word:猫",
               "surface": "猫",
+              "hiragana": "ねこ",
+              "romaji": "neko",
               "meaning": "кошка",
               "role": "тема"
             },
             {
-              "wordId": "wa",
+              "wordId": "ja:word:は",
               "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
               "meaning": "тема высказывания",
               "role": "маркер темы"
             },
             {
-              "wordId": "ki",
+              "wordId": "ja:word:木",
               "surface": "木",
+              "hiragana": "き",
+              "romaji": "ki",
               "meaning": "дерево",
               "role": "определение к 下"
             },
             {
-              "wordId": "no",
+              "wordId": "ja:word:の",
               "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
               "meaning": "связь определений",
               "role": "связь существительных"
             },
             {
-              "wordId": "shita",
+              "wordId": "ja:word:下",
               "surface": "下",
+              "hiragana": "した",
+              "romaji": "shita",
               "meaning": "низ; под",
               "role": "место существования"
             },
             {
-              "wordId": "ni",
+              "wordId": "ja:word:に",
               "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
               "meaning": "в / под (местонахождение)",
               "role": "маркер места"
             },
             {
-              "wordId": "iru",
+              "wordId": "ja:word:いる",
               "surface": "います",
+              "hiragana": "います",
+              "romaji": "imasu",
               "meaning": "находится",
               "inflection": "Вежливая непрошедшая форма",
               "role": "сказуемое"
             }
           ],
-          "kanjiIds": [
-            "kanji.neko",
-            "kanji.ki",
-            "kanji.shita"
-          ],
-          "grammarIds": [
-            "grammar.topic",
-            "grammar.possession",
-            "grammar.existence"
-          ],
-          "grammarRoles": {
-            "grammar.topic": "は выделяет уже известную кошку как тему.",
-            "grammar.possession": "木の下 означает место под деревом.",
-            "grammar.existence": "木の下に задаёт местонахождение; います сообщает, где находится кошка."
-          }
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:topic",
+              "role": "は выделяет уже известную кошку как тему."
+            },
+            {
+              "grammarId": "ja:grammar:possession",
+              "role": "木の下 означает место под деревом."
+            },
+            {
+              "grammarId": "ja:grammar:existence",
+              "role": "木の下に задаёт местонахождение; います сообщает, где находится кошка."
+            }
+          ]
         },
         {
           "id": "demo.s6",
@@ -250,68 +292,88 @@
           "romaji": "Watashi wa neko ni mizu o agemasu.",
           "literal": "Я [тема] кошке [получатель] воду [объект] даю.",
           "natural": "Я даю кошке воду.",
-          "words": [
+          "kanjiIds": [
+            "ja:kanji:私",
+            "ja:kanji:猫",
+            "ja:kanji:水"
+          ],
+          "wordOccurrences": [
             {
-              "wordId": "watashi",
+              "wordId": "ja:word:私",
               "surface": "私",
+              "hiragana": "わたし",
+              "romaji": "watashi",
               "meaning": "я",
               "role": "тема"
             },
             {
-              "wordId": "wa",
+              "wordId": "ja:word:は",
               "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
               "meaning": "тема высказывания",
               "role": "маркер темы"
             },
             {
-              "wordId": "neko",
+              "wordId": "ja:word:猫",
               "surface": "猫",
+              "hiragana": "ねこ",
+              "romaji": "neko",
               "meaning": "кошка",
               "role": "получатель"
             },
             {
-              "wordId": "ni",
+              "wordId": "ja:word:に",
               "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
               "meaning": "кому: кошке",
               "role": "маркер получателя"
             },
             {
-              "wordId": "mizu",
+              "wordId": "ja:word:水",
               "surface": "水",
+              "hiragana": "みず",
+              "romaji": "mizu",
               "meaning": "вода",
               "role": "прямое дополнение"
             },
             {
-              "wordId": "o",
+              "wordId": "ja:word:を",
               "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
               "meaning": "прямое дополнение",
               "role": "маркер объекта"
             },
             {
-              "wordId": "ageru",
+              "wordId": "ja:word:あげる",
               "surface": "あげます",
+              "hiragana": "あげます",
+              "romaji": "agemasu",
               "meaning": "даю",
               "inflection": "Вежливая непрошедшая форма",
               "role": "сказуемое"
             }
           ],
-          "kanjiIds": [
-            "kanji.watashi",
-            "kanji.neko",
-            "kanji.mizu"
-          ],
-          "grammarIds": [
-            "grammar.topic",
-            "grammar.recipient",
-            "grammar.object",
-            "grammar.polite"
-          ],
-          "grammarRoles": {
-            "grammar.topic": "は выделяет 私 как тему.",
-            "grammar.recipient": "に после 猫 указывает получателя воды: кошке.",
-            "grammar.object": "を после 水 отмечает то, что дают.",
-            "grammar.polite": "あげます — вежливая непрошедшая форма あげる: даю."
-          }
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:topic",
+              "role": "は выделяет 私 как тему."
+            },
+            {
+              "grammarId": "ja:grammar:recipient",
+              "role": "に после 猫 указывает получателя воды: кошке."
+            },
+            {
+              "grammarId": "ja:grammar:object",
+              "role": "を после 水 отмечает то, что дают."
+            },
+            {
+              "grammarId": "ja:grammar:polite",
+              "role": "あげます — вежливая непрошедшая форма あげる: даю."
+            }
+          ]
         }
       ]
     }

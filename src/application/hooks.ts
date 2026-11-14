@@ -135,10 +135,10 @@ export function useOccurrences(kind: 'words' | 'kanji' | 'grammar', id: string, 
             for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
               const matches =
                 kind === 'words'
-                  ? sentence.words.some((word) => word.wordId === id)
+                  ? sentence.wordOccurrences.some((word) => word.wordId === id)
                   : kind === 'kanji'
                     ? sentence.kanjiIds.includes(id)
-                    : sentence.grammarIds.includes(id);
+                    : sentence.grammarOccurrences.some((occurrence) => occurrence.grammarId === id);
               if (matches) {
                 occurrences.push({ book, chapter, sentence });
               }

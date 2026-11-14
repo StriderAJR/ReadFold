@@ -1,6 +1,9 @@
 import { z } from 'zod';
 
-const idSchema = z.string().regex(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/);
+const idSchema = z.string().min(1).max(512).regex(/^[^\s\p{Cc}/\\?#%]+$/u);
+const wordIdSchema = idSchema.regex(/^ja:word:.+$/u, 'Expected ja:word:<lemma> ID');
+const kanjiIdSchema = idSchema.refine((value) => value.startsWith('ja:kanji:') && [...value.slice('ja:kanji:'.length)].length === 1, 'Expected ja:kanji:<character> ID');
+const grammarIdSchema = idSchema.regex(/^ja:grammar:.+$/u, 'Expected ja:grammar:<topic> ID');
 const textSchema = z.string().min(1);
 const uniqueIds = (items: readonly { id: string }[]) => new Set(items.map((item) => item.id)).size === items.length;
 const chapterMetadataSchema = z
@@ -33,7 +36,7 @@ export const bookMetadataSchema = z
 export const catalogSchema = z.array(bookMetadataSchema).refine(uniqueIds, 'Duplicate book IDs');
 export const wordSchema = z
   .object({
-    id: idSchema,
+    id: wordIdSchema,
     surface: textSchema,
     dictionaryForm: textSchema,
     reading: textSchema,
@@ -44,14 +47,14 @@ export const wordSchema = z
   .strict();
 export const kanjiSchema = z
   .object({
-    id: idSchema,
+    id: kanjiIdSchema,
     character: z.string().refine((value) => [...value].length === 1, 'Expected one character'),
     meanings: z.array(textSchema).min(1),
     on: z.array(textSchema),
     kun: z.array(textSchema),
     components: z.array(textSchema),
     componentMeanings: z.record(textSchema, textSchema).optional(),
-    wordIds: z.array(idSchema),
+    wordIds: z.array(wordIdSchema),
     mnemonic: textSchema.optional(),
   })
   .strict()
@@ -61,7 +64,7 @@ export const kanjiSchema = z
   ), { message: 'Component meanings must match visual components', path: ['componentMeanings'] });
 export const grammarSchema = z
   .object({
-    id: idSchema,
+    id: grammarIdSchema,
     title: textSchema,
     explanation: textSchema,
     examples: z.array(z.object({
@@ -75,12 +78,12 @@ export const grammarSchema = z
     }).strict().refine((example) => !example.segments || (
       example.segments.map((segment) => segment.text).join('') === example.text
     ), { message: 'Segments must reproduce example text', path: ['segments'] })).min(1),
-    relatedIds: z.array(idSchema),
+    relatedIds: z.array(grammarIdSchema),
   })
   .strict();
 export const dictionarySchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.literal(2),
     words: z.array(wordSchema),
     kanji: z.array(kanjiSchema),
     grammar: z.array(grammarSchema),
@@ -155,12 +158,14 @@ export const sentenceSchema = z
     romaji: textSchema,
     literal: textSchema,
     natural: textSchema,
-    words: z
+    wordOccurrences: z
       .array(
         z
           .object({
-            wordId: idSchema,
+            wordId: wordIdSchema,
             surface: textSchema,
+            hiragana: textSchema,
+            romaji: textSchema,
             meaning: textSchema,
             inflection: textSchema.optional(),
             role: textSchema.optional(),
@@ -168,22 +173,21 @@ export const sentenceSchema = z
           .strict(),
       )
       .min(1),
-    kanjiIds: z.array(idSchema),
-    grammarIds: z.array(idSchema),
-    grammarRoles: z.record(idSchema, textSchema).optional(),
+    kanjiIds: z.array(kanjiIdSchema),
+    grammarOccurrences: z.array(z.object({ grammarId: grammarIdSchema, role: textSchema }).strict()),
   })
   .strict()
   .refine((sentence) => sentence.segments.map((segment) => segment.text).join('') === sentence.text, {
     message: 'Segments must reproduce sentence text',
     path: ['segments'],
   })
-  .refine((sentence) => Object.keys(sentence.grammarRoles ?? {}).every((id) => sentence.grammarIds.includes(id)), {
-    message: 'Grammar roles must refer to sentence grammar IDs',
-    path: ['grammarRoles'],
+  .refine((sentence) => uniqueIds(sentence.kanjiIds.map((id) => ({ id }))), {
+    message: 'Duplicate kanji references',
+    path: ['kanjiIds'],
   });
 export const chapterSchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.literal(2),
     id: idSchema,
     bookId: idSchema,
     title: textSchema,
@@ -216,9 +220,10 @@ export function validateChapterReferences(chapter: Chapter, book: BookMetadata, 
   const grammar = new Set(dictionary.grammar.map((item) => item.id));
   for (const sentence of sentences) {
     if (
-      sentence.words.some((item) => !words.has(item.wordId)) ||
+      sentence.wordOccurrences.some((item) => !words.has(item.wordId)) ||
       sentence.kanjiIds.some((id) => !kanji.has(id)) ||
-      sentence.grammarIds.some((id) => !grammar.has(id))
+      sentence.grammarOccurrences.some((item) => !grammar.has(item.grammarId)) ||
+      sentence.wordOccurrences.some((item) => !sentence.text.includes(item.surface))
     ) {
       throw new Error(`Unknown dictionary reference in ${sentence.id}`);
     }

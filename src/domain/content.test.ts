@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { catalogSchema, chapterSchema, dictionarySchema, grammarSchema, kanjiSchema, validateChapterReferences } from './content';
+import { legacyEntityIdMap } from './entity-id-migration';
 
 const read = (path: string): unknown => JSON.parse(readFileSync(`public/${path}`, 'utf8'));
 
@@ -59,9 +60,10 @@ describe('book format', () => {
             const characters = [...sentence.text].filter((character) => /\p{Script=Han}/u.test(character));
             const referenced = dictionary.kanji.filter((entry) => sentence.kanjiIds.includes(entry.id));
             expect(characters.every((character) => referenced.some((entry) => entry.character === character))).toBe(true);
-            expect(sentence.words.every((word) => sentence.text.includes(word.surface))).toBe(true);
-            expect(sentence.words.every((word) => word.role && word.role !== 'член предложения')).toBe(true);
-            expect(Object.keys(sentence.grammarRoles ?? {}).sort()).toEqual([...sentence.grammarIds].sort());
+            expect(sentence.wordOccurrences.every((word) => sentence.text.includes(word.surface))).toBe(true);
+            expect(sentence.wordOccurrences.every((word) => word.hiragana && word.romaji)).toBe(true);
+            expect(sentence.wordOccurrences.every((word) => word.role && word.role !== 'член предложения')).toBe(true);
+            expect(sentence.grammarOccurrences.every((occurrence) => occurrence.role.trim())).toBe(true);
           }
         }
       }
@@ -90,11 +92,14 @@ describe('book format', () => {
   it('links grammar for every Apothecary Diaries sentence without duplicate references', () => {
     const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
     const chapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
-    const grammarIds = new Set(dictionary.grammar.map((entry) => entry.id));
+    const grammar = new Map(dictionary.grammar.map((entry) => [entry.id, entry]));
     for (const sentence of chapter.paragraphs.flatMap((paragraph) => paragraph.sentences)) {
-      expect(sentence.grammarIds.length, sentence.id).toBeGreaterThan(0);
-      expect(new Set(sentence.grammarIds).size, sentence.id).toBe(sentence.grammarIds.length);
-      expect(sentence.grammarIds.every((id) => grammarIds.has(id)), sentence.id).toBe(true);
+      expect(sentence.grammarOccurrences.length, sentence.id).toBeGreaterThan(0);
+      expect(sentence.grammarOccurrences.every(({ grammarId }) => grammar.has(grammarId)), sentence.id).toBe(true);
+      for (const { grammarId, role } of sentence.grammarOccurrences) {
+        expect(role.trim(), `${sentence.id}: ${grammarId}`).toBeTruthy();
+        expect(role, `${sentence.id}: ${grammarId}`).not.toBe(grammar.get(grammarId)?.explanation);
+      }
     }
   });
 
@@ -114,7 +119,7 @@ describe('book format', () => {
     const catalog = catalogSchema.parse(read('books/catalog.json'));
     const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
     const chapter = chapterSchema.parse(read(catalog[0].chapters[0].path));
-    chapter.paragraphs[0].sentences[0].words[0].wordId = 'unknown';
+    chapter.paragraphs[0].sentences[0].wordOccurrences[0].wordId = 'ja:word:unknown';
     expect(() => validateChapterReferences(chapter, catalog[0], dictionary)).toThrow('Unknown dictionary reference');
     dictionary.kanji[0].wordIds.push('missing');
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
@@ -128,7 +133,7 @@ describe('book format', () => {
     expect(new Set(ids).size).toBe(ids.length);
     dictionary.kanji[0].id = dictionary.words[0].id;
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
-    dictionary.kanji[0].id = 'kanji.unique';
+    dictionary.kanji[0].id = 'ja:kanji:風';
     dictionary.grammar[0].id = dictionary.words[0].id;
     dictionary.grammar.forEach((entry) => {
       entry.relatedIds = [];
@@ -154,7 +159,7 @@ describe('book format', () => {
     expect(dictionarySchema.safeParse(invalid).success).toBe(false);
     target.on = entry.on;
     target.kun = entry.kun;
-    invalid.kanji.push({ ...target, id: 'kanji.duplicate' });
+    invalid.kanji.push({ ...target, id: 'ja:kanji:風' });
     expect(dictionarySchema.safeParse(invalid).success).toBe(false);
   });
 
@@ -165,7 +170,28 @@ describe('book format', () => {
     delete withoutVersion.schemaVersion;
     expect(catalogSchema.safeParse([withoutVersion]).success).toBe(false);
     const chapter = chapterSchema.parse(read(catalog[0].chapters[0].path));
-    chapter.paragraphs[0].sentences[0].grammarRoles = { 'grammar.unknown': 'неизвестная роль' };
-    expect(chapterSchema.safeParse(chapter).success).toBe(false);
+    chapter.paragraphs[0].sentences[0].grammarOccurrences[0].grammarId = 'ja:grammar:unknown';
+    expect(() => validateChapterReferences(chapter, catalog[0], dictionarySchema.parse(read('books/dictionary.json'))))
+      .toThrow('Unknown dictionary reference');
+  });
+
+  it('requires kind-prefixed Unicode IDs and distinct homonym cards', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    expect(dictionary.words.filter((word) => word.dictionaryForm === 'ある').map((word) => word.id)).toEqual([
+      'ja:word:ある:exist', 'ja:word:ある:indefinite',
+    ]);
+    expect(dictionary.words.filter((word) => word.dictionaryForm === 'つく')).toHaveLength(3);
+    expect(dictionary.words.every((word) => word.id.startsWith('ja:word:'))).toBe(true);
+    expect(dictionary.kanji.every((kanji) => kanji.id === `ja:kanji:${kanji.character}`)).toBe(true);
+    expect(dictionary.grammar.every((grammar) => grammar.id.startsWith('ja:grammar:'))).toBe(true);
+  });
+
+  it('maps every previous entity ID exactly once to a live card', () => {
+    const dictionary = dictionarySchema.parse(read('books/dictionary.json'));
+    const liveIds = new Set([...dictionary.words, ...dictionary.kanji, ...dictionary.grammar].map((entry) => entry.id));
+    const targets = Object.values(legacyEntityIdMap);
+    expect(Object.keys(legacyEntityIdMap)).toHaveLength(1051);
+    expect(new Set(targets).size).toBe(targets.length);
+    expect(targets.every((id) => liveIds.has(id))).toBe(true);
   });
 });

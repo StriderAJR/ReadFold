@@ -22,6 +22,91 @@ function transport(overrides: Partial<SyncTransport> = {}): SyncTransport {
 }
 
 describe('local persistence and reconciliation', () => {
+  it('projects guest legacy progress without rewriting events, queued rows or backup copies', async () => {
+    const guest = repository();
+    const firstDevice = repository();
+    const secondDevice = repository();
+    await guest.record('guest', 'learning', 'asa', { status: 'known' });
+    await guest.record('guest', 'favorite', 'kanji.asa', { active: true });
+    await guest.record('guest', 'review', 'grammar.topic', { rating: 'good', dueAt: 123, taskId: 'grammar.grammar.topic' });
+    await guest.record('guest', 'reading', 'demo/demo.chapter-1', { sentenceId: 's1', position: 1 });
+    const backup = await guest.exportData('guest');
+    const pending = await guest.getOutbox('guest');
+    const state = reduceOperations(backup.operations);
+    expect(state.learning['ja:word:朝']).toBe('known');
+    expect(state.favorites).toEqual(['ja:kanji:朝']);
+    expect(state.reviews[0]).toMatchObject({
+      entityId: 'ja:grammar:topic', payload: { dueAt: 123, taskId: 'grammar.grammar.topic' },
+    });
+    expect(state.readings['demo/demo.chapter-1'].sentenceId).toBe('s1');
+    expect(await guest.exportData('guest')).toEqual(backup);
+    expect(await guest.getOutbox('guest')).toEqual(pending);
+
+    await firstDevice.importData('account', backup);
+    await firstDevice.importData('account', backup);
+    await secondDevice.importData('account', backup);
+    const copied = await firstDevice.getOperations('account');
+    expect(copied).toEqual(await secondDevice.getOperations('account'));
+    expect(copied.map((operation) => operation.entityId)).toEqual(backup.operations.map((operation) => operation.entityId));
+    await firstDevice.receive('account', await secondDevice.getOperations('account'), 4);
+    expect(reduceOperations(await firstDevice.getOperations('account')).reviews).toHaveLength(1);
+    expect(await guest.exportData('guest')).toEqual(backup);
+  });
+
+  it('reconciles old and new IDs across devices while retaining the immutable remote ledger', async () => {
+    const firstDevice = repository();
+    const secondDevice = repository();
+    const learned = await firstDevice.record('account', 'learning', 'asa', { status: 'known' });
+    const favorite = await firstDevice.record('account', 'favorite', 'asa', { active: true });
+    const reviewed = await firstDevice.record('account', 'review', 'asa', { rating: 'good', dueAt: 123 });
+    const ledger: UserOperation[] = [learned, favorite, reviewed];
+    const push = vi.fn(async (operations: UserOperation[]) => {
+      for (const operation of operations) {
+        const existing = ledger.find((entry) => entry.id === operation.id);
+        if (existing) {
+          expect(operation).toEqual(existing);
+        } else {
+          ledger.push(operation);
+        }
+      }
+    });
+    const remote = transport({
+      push,
+      pull: async (cursor) => ({ operations: ledger.slice(cursor), cursor: ledger.length }),
+    });
+    await new SyncEngine(firstDevice, remote).sync('account');
+    await new SyncEngine(secondDevice, remote).sync('account');
+    await secondDevice.record('account', 'learning', 'ja:word:朝', { status: 'learning' });
+    await secondDevice.record('account', 'favorite', 'ja:word:朝', { active: false });
+    const newReview = await secondDevice.record('account', 'review', 'ja:word:朝', { rating: 'easy', dueAt: 456 });
+    // An older app may still send automatic encounters under a legacy ID.
+    await firstDevice.record('account', 'learning', 'asa', { status: 'encountered', automatic: true });
+    await new SyncEngine(secondDevice, remote).sync('account');
+    await new SyncEngine(firstDevice, remote).sync('account');
+    await new SyncEngine(secondDevice, remote).sync('account');
+    for (const repo of [firstDevice, secondDevice]) {
+      const state = reduceOperations(await repo.getOperations('account'));
+      expect(state.learning).toEqual({ 'ja:word:朝': 'learning' });
+      expect(state.favorites).toEqual([]);
+      expect(state.reviews.map((operation) => operation.entityId)).toEqual(['ja:word:朝', 'ja:word:朝']);
+      expect(state.reviews.at(-1)).toEqual(newReview);
+      expect(await repo.getOutbox('account')).toEqual([]);
+      expect((await repo.exportData('account')).operations).toContainEqual(reviewed);
+    }
+    expect(ledger).toContainEqual(reviewed);
+    expect(ledger.filter((operation) => operation.id === reviewed.id)).toHaveLength(1);
+    await expect(firstDevice.receive('account', [{ ...reviewed, entityId: 'ja:word:朝' }], ledger.length))
+      .rejects.toThrow('Operation collision');
+  });
+
+  it('retains distinct homonym progress when legacy IDs are projected', async () => {
+    const repo = repository();
+    await repo.record('guest', 'learning', 'aru', { status: 'known' });
+    await repo.record('guest', 'learning', 'aru-indefinite', { status: 'learning' });
+    const state = reduceOperations(await repo.getOperations('guest'));
+    expect(state.learning).toEqual({ 'ja:word:ある:exist': 'known', 'ja:word:ある:indefinite': 'learning' });
+  });
+
   it('gives foreign backup copies the same immutable identity across independent devices', async () => {
     const source = repository();
     const firstDevice = repository();
@@ -105,15 +190,15 @@ describe('local persistence and reconciliation', () => {
       { ...base, id: 'z', payload: { status: 'known' } },
       { ...base, id: 'a' },
     ];
-    expect(reduceOperations(tied).learning.neko).toBe('known');
+    expect(reduceOperations(tied).learning['ja:word:猫']).toBe('known');
   });
   it('automatic encounters never downgrade explicit learning across devices', async () => {
     const repo = repository();
     await repo.record('a', 'learning', 'neko', { status: 'known' });
     await repo.record('a', 'learning', 'neko', { status: 'encountered', automatic: true });
-    expect(reduceOperations(await repo.getOperations('a')).learning.neko).toBe('known');
+    expect(reduceOperations(await repo.getOperations('a')).learning['ja:word:猫']).toBe('known');
     await repo.record('a', 'learning', 'neko', { status: 'encountered' });
-    expect(reduceOperations(await repo.getOperations('a')).learning.neko).toBe('encountered');
+    expect(reduceOperations(await repo.getOperations('a')).learning['ja:word:猫']).toBe('encountered');
     await expect(repo.record('a', 'learning', 'neko', { status: 'known', automatic: true })).rejects.toThrow();
   });
   it('rejects oversized or invalid operations atomically without poisoning outbox', async () => {

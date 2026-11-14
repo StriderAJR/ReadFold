@@ -7,7 +7,7 @@ import { Card } from '../components/ui/card';
 import { useAppData, PageTitle, download } from './Common';
 import { local, services, synchronize, syncEngine, useSession } from '../application/runtime';
 import type { ReaderPreferences } from '../domain/user-state';
-import type { Diagnostic } from '../infrastructure/local/repository';
+import type { Diagnostic, SyncDiagnosticEvent } from '../infrastructure/local/repository';
 const preferenceOptions: (keyof ReaderPreferences)[] = [
   'furigana',
   'romaji',
@@ -318,14 +318,16 @@ export function DiagnosticsPage() {
   const { t } = useTranslation();
   const { user } = useAppData();
   const [items, setItems] = useState<Diagnostic[]>([]);
+  const [syncEvents, setSyncEvents] = useState<SyncDiagnosticEvent[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [reportStatus, setReportStatus] = useState('');
   const [sharing, setSharing] = useState(false);
   const developerEmail = 'alexander.aj.ranger@gmail.com';
   useEffect(() => {
-    void local.exportDiagnostics()
-      .then((diagnostics) => {
+    void Promise.all([local.exportDiagnostics(), local.exportSyncEvents()])
+      .then(([diagnostics, events]) => {
         setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
+        setSyncEvents(events.sort((a, b) => b.occurredAt - a.occurredAt));
         setLoaded(true);
       })
       .catch(() => setReportStatus(t('localSaveError')));
@@ -335,7 +337,7 @@ export function DiagnosticsPage() {
     const subject = t('diagnosticEmailSubject');
     const body = t('diagnosticEmailBody', { fileName });
     const report = {
-      formatVersion: 1,
+      formatVersion: 2,
       createdAt: new Date().toISOString(),
       app: 'ReadFold',
       page: `${window.location.origin}${window.location.pathname}`,
@@ -343,6 +345,7 @@ export function DiagnosticsPage() {
       online: navigator.onLine,
       syncStatus: syncEngine?.status ?? 'unavailable',
       diagnostics: items,
+      syncEvents,
     };
     const file = new File([JSON.stringify(report, null, 2)], fileName, { type: 'application/json' });
     setSharing(true);
@@ -390,10 +393,28 @@ export function DiagnosticsPage() {
             </small>
           </div>
         ))}
-        {items.length === 0 && <p className="muted">{t('noData')}</p>}
+        {syncEvents.map((event) => (
+          <div className="diagnostic-entry" key={event.id ?? `${event.occurredAt}-${event.phase}`}>
+            <div className="diagnostic-entry-heading">
+              <b>{t(event.phase === 'push' ? 'diagnosticPush' : event.phase === 'pull' ? 'diagnosticPull' : 'diagnosticLocal')}</b>
+              {event.status && <span>{t('diagnosticStatus')}: {event.status}</span>}
+            </div>
+            <small>
+              {event.serverCode && <>{t('diagnosticServerCode')}: {event.serverCode} · </>}
+              {event.batchSize !== undefined && <>{t('diagnosticBatchSize')}: {event.batchSize} · </>}
+              {event.cursor !== undefined && <>{t('diagnosticCursor')}: {event.cursor} · </>}
+              {new Intl.DateTimeFormat(user.preferences.language, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(event.occurredAt))}
+            </small>
+          </div>
+        ))}
+        {items.length === 0 && syncEvents.length === 0 && <p className="muted">{t('noData')}</p>}
         <Button
           variant="outline"
-          onClick={async () => download('readfold-diagnostics.json', await local.exportDiagnostics())}
+          onClick={async () => download('readfold-diagnostics.json', {
+            formatVersion: 2,
+            diagnostics: await local.exportDiagnostics(),
+            syncEvents: await local.exportSyncEvents(),
+          })}
         >
           <FileDown size={16} />
           {t('exportDiagnostics')}

@@ -7,6 +7,7 @@ import { Card } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { useOccurrences } from '../application/hooks';
 import type { LearningStatus } from '../domain/user-state';
+import { canonicalEntityId } from '../domain/entity-id-migration';
 import { GrammarExample } from './GrammarExample';
 import { KanjiReadings } from './KanjiReadings';
 export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
@@ -99,7 +100,7 @@ export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }
                   ? item.meanings.join('、')
                   : '';
             return (
-              <Link className="dictionary-row" key={id} to={`/${kind}/${id}`}>
+              <Link className="dictionary-row" key={id} to={`/${kind}/${encodeURIComponent(id)}`}>
                 <span className="dict-main">
                   <b className={kind === 'kanji' ? 'kanji-large' : ''}>{label}</b>
                   <small>{detail}</small>
@@ -137,7 +138,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
   const [limit, setLimit] = useState(25);
   const manualStatuses =
     user.data?.operations.filter(
-      (operation) => operation.entityKind === 'learning' && operation.entityId === id && !operation.payload.automatic,
+      (operation) => operation.entityKind === 'learning' && canonicalEntityId(operation.entityId) === id && !operation.payload.automatic,
     ) ?? [];
   const previousStatus = (manualStatuses.at(-2)?.payload.status ?? 'encountered') as LearningStatus;
   if (!item) {
@@ -237,7 +238,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
             <h3>{t('related')}</h3>
             <div className="inline-links">
               {related.map((entry) => (
-                <Link key={entry.id} to={`/${entry.kind}/${entry.id}${returnTo ? `?returnTo=${encodeURIComponent(returnTo)}` : ''}`}>
+                <Link key={entry.id} to={`/${entry.kind}/${encodeURIComponent(entry.id)}${returnTo ? `?returnTo=${encodeURIComponent(returnTo)}` : ''}`}>
                   {entry.label}
                 </Link>
               ))}

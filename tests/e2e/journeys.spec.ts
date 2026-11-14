@@ -59,7 +59,7 @@ test('reader modes render distinct analysis behavior and preference survives rel
 });
 
 test('dictionary word occurrence navigates back to its source sentence', async ({ page }) => {
-  await page.goto('./#/words/neko');
+  await page.goto('./#/words/ja%3Aword%3A%E7%8C%AB');
   await expect(page.getByRole('heading', { name: '猫' })).toBeVisible();
   const occurrence = page.getByRole('link', { name: /公園に小さな猫がいます/ });
   await expect(occurrence).toBeVisible();
@@ -72,7 +72,7 @@ test('reader details return to the sentence and canvas settings control examples
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');
   await first.locator('.token-word-link').first().click();
-  await expect(page).toHaveURL(/#\/words\/asa\?returnTo=/);
+  await expect(page).toHaveURL(/#\/words\/ja%3Aword%3A%E6%9C%9D\?returnTo=/);
   await page.getByRole('link', { name: 'Вернуться к чтению' }).click();
   await expect(first).toHaveClass(/sentence-active/);
 
@@ -86,10 +86,11 @@ test('reader details return to the sentence and canvas settings control examples
   await expect(page.getByRole('checkbox', { name: 'Буквально · отдельной строкой' })).toBeChecked();
   await page.goto(`./#/${readerPath}`);
   await expect(first.locator('.canvas-card').first()).toBeVisible();
+  await expect(first.locator('.canvas-card-word').first().locator('ruby rt')).toHaveText('あさ');
   await expect(first.locator('.translation-row > p[lang="ja"]').first()).toHaveClass(/translation-line/);
   await expect(first.locator('.translation-row p:has([aria-label="Буквально"])').first()).toHaveClass(/translation-line/);
 
-  await page.goto('./#/grammar/grammar.topic');
+  await page.goto('./#/grammar/ja%3Agrammar%3Atopic');
   await expect(page.locator('.grammar-example').first().locator('[aria-label="Фуригана"]')).toBeVisible();
   await expect(page.locator('.grammar-example').first().locator('[aria-label="Буквально"]')).toBeVisible();
 });
@@ -235,18 +236,18 @@ test('adaptive hints for known words can always be revealed manually', async ({ 
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');
   await expect(first.locator('.analysis-expanded')).toBeVisible();
-  await expect(first.locator('[data-entity-id="asa"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="ja:word:朝"]')).toHaveCount(0);
   await first.getByTestId('show-known').click();
-  await expect(first.locator('[data-entity-id="asa"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="ja:word:朝"]')).toBeVisible();
   await expect(first.locator('.analysis-expanded')).toBeVisible();
 });
 
 test('known word, kanji, and grammar cards can be hidden adaptively and restored for undo', async ({ page }) => {
   await page.goto(`./#/${readerPath}`);
   const first = page.locator('[id="sentence-demo.s1"]');
-  const wordCard = first.locator('[data-entity-id="asa"]');
-  const kanjiCard = first.locator('[data-entity-id="kanji.asa"]');
-  const grammarCard = first.locator('[data-entity-id="grammar.topic"]');
+  const wordCard = first.locator('[data-entity-id="ja:word:朝"]');
+  const kanjiCard = first.locator('[data-entity-id="ja:kanji:朝"]');
+  const grammarCard = first.locator('[data-entity-id="ja:grammar:topic"]');
   for (const card of [wordCard, kanjiCard, grammarCard]) {
     await card.getByTestId('learning-toggle').click();
     await expect(card.getByTestId('learning-toggle')).toHaveAttribute('aria-pressed', 'true');
@@ -255,21 +256,21 @@ test('known word, kanji, and grammar cards can be hidden adaptively and restored
   await page.goto('./#/settings');
   await page.getByTestId('mode-select').getByRole('button', { name: 'Адаптивный' }).click();
   await page.goto(`./#/${readerPath}`);
-  await expect(first.locator('[data-entity-id="asa"]')).toHaveCount(0);
-  await expect(first.locator('[data-entity-id="kanji.asa"]')).toHaveCount(0);
-  await expect(first.locator('[data-entity-id="grammar.topic"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="ja:word:朝"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="ja:kanji:朝"]')).toHaveCount(0);
+  await expect(first.locator('[data-entity-id="ja:grammar:topic"]')).toHaveCount(0);
 
   await first.getByTestId('show-known').click();
-  for (const selector of ['asa', 'kanji.asa', 'grammar.topic']) {
+  for (const selector of ['ja:word:朝', 'ja:kanji:朝', 'ja:grammar:topic']) {
     const card = first.locator(`[data-entity-id="${selector}"]`);
     await expect(card).toBeVisible();
     await card.getByTestId('learning-toggle').click();
     await expect(card.getByTestId('learning-toggle')).toHaveAttribute('aria-pressed', 'false');
   }
   await page.reload();
-  await expect(first.locator('[data-entity-id="asa"]')).toBeVisible();
-  await expect(first.locator('[data-entity-id="kanji.asa"]')).toBeVisible();
-  await expect(first.locator('[data-entity-id="grammar.topic"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="ja:word:朝"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="ja:kanji:朝"]')).toBeVisible();
+  await expect(first.locator('[data-entity-id="ja:grammar:topic"]')).toBeVisible();
 });
 
 test('furigana toggle controls reading annotations without a separate hiragana layer', async ({ page }) => {
@@ -288,7 +289,13 @@ test('furigana toggle controls reading annotations without a separate hiragana l
   await expect(furigana).toBeChecked();
   await page.goto(`./#/${readerPath}`);
   await expect(first.locator('ruby').first()).toBeVisible();
-  await expect(first.locator('.token-word-card').first().locator('.word-card-meta')).toContainText('あさ');
+  await expect(first.locator('.token-word-card').first().locator('.token-word-link ruby rt')).toHaveText('あさ');
+  await expect(first.locator('.token-word-card').first().locator('.word-card-meta')).not.toContainText('あさ');
+
+  await page.goto('./#/read/apothecary-diaries/apothecary-diaries.chapter-1');
+  const inflectedWord = page.locator('[id="sentence-apothecary-diaries.chapter-1.s001"] [data-entity-id="ja:word:食べる"]');
+  await expect(inflectedWord.locator('ruby')).toContainText('食べたい');
+  await expect(inflectedWord.locator('ruby rt')).toHaveText('たべたい');
 });
 
 test('diagnostics report shares a local log file with support text', async ({ page }) => {

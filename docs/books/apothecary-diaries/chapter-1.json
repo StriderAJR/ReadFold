@@ -78,9 +78,10 @@
             "grammar.final-na"
           ],
           "grammarRoles": {
-            "grammar.possession": "の связывает 露天 и 串焼き: шашлычки уличного лотка.",
-            "grammar.subject": "が отмечает желаемое действие: именно串焼き хочется съесть.",
-            "grammar.desire": "食べたい образуется от основы 食べる + たい и выражает желание поесть."
+            "grammar.possession": "В 露天の串焼き частица の уточняет, откуда шашлычки: с уличного лотка.",
+            "grammar.subject": "В 串焼きが食べたい частица が выделяет желаемый объект: Маомао хочется именно шашлычков.",
+            "grammar.desire": "食べたい передаёт желание Маомао поесть: она мысленно мечтает о еде с лотка.",
+            "grammar.final-na": "Протяжное なあ завершает внутреннюю реплику мечтательным вздохом: «эх, поесть бы»."
           }
         }
       ]
@@ -176,7 +177,13 @@
             "grammar.te-form",
             "grammar.topic",
             "grammar.past"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.object": "曇天を и 溜息を обозначают объекты двух действий: Маомао смотрит на пасмурное небо и испускает вздох.",
+            "grammar.te-form": "見上げて связывает взгляд вверх со следующим действием 溜息をついた: посмотрела на небо и вздохнула.",
+            "grammar.topic": "猫猫は вводит Маомао как тему: далее говорится, что сделала именно она.",
+            "grammar.past": "ついた завершает рассказ о конкретном вздохе; вместе с 見上げて оба действия относятся к описываемому эпизоду."
+          }
         }
       ]
     },
@@ -388,19 +395,21 @@
             "kanji.u6fb1"
           ],
           "grammarIds": [
-            "grammar.topic",
-            "grammar.subject",
             "grammar.limit-made",
             "grammar.attributive",
-            "grammar.past",
             "grammar.scope-de",
             "grammar.superlative",
             "grammar.adjective-connective",
-            "grammar.na-adjective",
-            "grammar.possession",
-            "grammar.copula",
-            "grammar.plain-form"
-          ]
+            "grammar.copula"
+          ],
+          "grammarRoles": {
+            "grammar.limit-made": "今まで задаёт временную границу её опыта: всё виденное до настоящего момента.",
+            "grammar.attributive": "自分が今まで見た определяет 中: речь обо всём, что Маомао видела до этого; 瘴気蠢く определяет 濁った澱 — отстой, где кишат миазмы.",
+            "grammar.scope-de": "見た中で задаёт круг сравнения: среди всех миров и мест, которые ей доводилось видеть.",
+            "grammar.superlative": "最も относится к 美しくきらびやかな: этот мир кажется самым прекрасным и блистательным из виденных.",
+            "grammar.adjective-connective": "美しく соединяет два признака одного 世界: он и прекрасен, и ослепительно роскошен.",
+            "grammar.copula": "中だった завершает описание прошедшей формой: окружающий мир был одновременно роскошью и мутным отстоем."
+          }
         }
       ]
     },
@@ -496,11 +505,17 @@
             "grammar.question-ka",
             "grammar.progressive",
             "grammar.colloquial-contraction",
-            "grammar.explanatory-no-da",
             "grammar.conjecture-darou",
-            "grammar.copula",
             "grammar.particle-omission"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.counter": "三か月 отмеряет три месяца, проведённые вдали от дома; もう подчёркивает, что они уже прошли.",
+            "grammar.question-ka": "かあ после 三か月 передаёт задумчивое осознание срока, а か в конце — тревожный вопрос к самой себе об отце.",
+            "grammar.progressive": "В 食ってんだろうか форма 食っている относится к нынешней жизни отца: ест ли он, питается ли как следует.",
+            "grammar.colloquial-contraction": "食ってんだろうか разворачивается в 食っているのだろうか: разговорное сокращение делает мысль об отце непринуждённой.",
+            "grammar.conjecture-darou": "だろうか показывает, что Маомао не знает, как живёт отец, и гадает: «интересно, ест ли он?»",
+            "grammar.particle-omission": "В 飯食って между 飯 и 食って опущено を: «ест еду» звучит как привычная разговорная мысль."
+          }
         }
       ]
     },
@@ -703,22 +718,21 @@
             "kanji.u540d"
           ],
           "grammarIds": [
-            "grammar.object",
             "grammar.purpose-ni",
-            "grammar.target-ni",
             "grammar.te-miru",
             "grammar.conditional-ba",
-            "grammar.past",
-            "grammar.nominalizer-no",
-            "grammar.topic",
             "grammar.definition-to-iu",
-            "grammar.possession",
-            "grammar.attributive",
-            "grammar.copula",
-            "grammar.plain-form",
             "grammar.cleft-no-wa",
             "grammar.destination-ni"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.purpose-ni": "薬草を探しに указывает цель похода: Маомао отправилась в лес искать лекарственные травы.",
+            "grammar.te-miru": "出かけてみれば представляет поход через его неожиданный результат: стоило отправиться за травами, как встретились похитители.",
+            "grammar.conditional-ba": "ば в 出かけてみれば вводит уже случившийся эпизод: «когда отправилась, оказалось…».",
+            "grammar.definition-to-iu": "村人その壱、弐、参という名 передаёт условные названия троицы: «Селянин первый, второй и третий».",
+            "grammar.cleft-no-wa": "出会ったのは…人さらいだった выделяет, кого она встретила: за обозначениями «селяне» скрывались похитители.",
+            "grammar.destination-ni": "森に называет место, куда она направилась за травами, — в лес."
+          }
         }
       ]
     },
@@ -871,12 +885,17 @@
             "kanji.u72e9"
           ],
           "grammarIds": [
-            "grammar.copula",
             "grammar.kiwamarinai",
             "grammar.te-form",
             "grammar.possession",
             "grammar.formal-copula"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.kiwamarinai": "迷惑極まりない оценивает эту «брачную кампанию» как крайне обременительную и назойливую для похищенных девушек.",
+            "grammar.te-form": "略して вводит сокращённое название 結婚活動 — 婚活, связывая полное обозначение с его краткой формой.",
+            "grammar.possession": "宮廷の女狩り связывает охоту на женщин с дворцом: это набор женщин для императорского двора.",
+            "grammar.formal-copula": "女狩りである даёт прямое определение происходящему: за красивым названием стоит дворцовая охота на женщин."
+          }
         }
       ]
     },
@@ -1109,29 +1128,25 @@
             "kanji.u5408"
           ],
           "grammarIds": [
-            "grammar.topic",
-            "grammar.potential",
             "grammar.shi",
-            "grammar.approximate-hodo",
             "grammar.conditional-ba",
-            "grammar.target-ni",
-            "grammar.negative",
             "grammar.double-negative",
-            "grammar.additive-mo",
             "grammar.reason-node",
             "grammar.to-shite",
-            "grammar.i-adjective",
-            "grammar.explanatory-no-da",
             "grammar.concessive-ga",
             "grammar.instrument-de",
-            "grammar.past",
-            "grammar.attributive",
-            "grammar.baai",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula",
-            "grammar.destination-ni"
-          ]
+            "grammar.baai"
+          ],
+          "grammarRoles": {
+            "grammar.shi": "給金はもらえるし вводит первый довод в пользу службы: здесь хотя бы платят, а дальше следует ещё и возможность уйти.",
+            "grammar.conditional-ba": "二年ほど働けば ставит условие возвращения в город: отработать примерно два года.",
+            "grammar.double-negative": "戻れなくもない осторожно допускает возвращение в 市井: выйти обратно в обычную городскую жизнь всё-таки возможно.",
+            "grammar.reason-node": "ので связывает перечисленные преимущества с оценкой 悪くない: из-за платы и возможности уйти место работы не так уж плохо.",
+            "grammar.to-shite": "就職先としては ограничивает оценку: если рассматривать дворец именно как место работы.",
+            "grammar.concessive-ga": "が после 悪くないのだ противопоставляет удобства службы важной оговорке — добровольности прихода.",
+            "grammar.instrument-de": "個人の意思で указывает основание прихода: человек сам принял это решение.",
+            "grammar.baai": "来た場合 ограничивает всё положительное сказанное случаем, когда во дворец пришли по собственной воле."
+          }
         }
       ]
     },
@@ -1254,17 +1269,18 @@
           ],
           "grammarIds": [
             "grammar.to-shite",
-            "grammar.possession",
-            "grammar.object",
             "grammar.progressive",
-            "grammar.past",
             "grammar.attributive",
             "grammar.ni-viewpoint",
-            "grammar.topic",
-            "grammar.na-adjective",
-            "grammar.explanatory-no-da",
-            "grammar.copula"
-          ]
+            "grammar.explanatory-no-da"
+          ],
+          "grammarRoles": {
+            "grammar.to-shite": "薬師として обозначает занятие Маомао до похищения: она жила и работала как лекарь.",
+            "grammar.progressive": "生活をしていた описывает её прежний устойчивый образ жизни, а не одно отдельное действие.",
+            "grammar.attributive": "薬師としてそれなりの生活をしていた целиком определяет 猫猫: это Маомао, уже имевшая вполне сносную жизнь.",
+            "grammar.ni-viewpoint": "猫猫には задаёт её личную оценку: именно для неё такой набор во дворец — обуза.",
+            "grammar.explanatory-no-da": "話なのだ подводит объяснение её недовольства: у неё уже была своя жизнь, поэтому похищение принесло одни неприятности."
+          }
         }
       ]
     },
@@ -1511,23 +1527,23 @@
             "kanji.u8a71"
           ],
           "grammarIds": [
-            "grammar.topic",
             "grammar.plural-suffix",
-            "grammar.possession",
-            "grammar.object",
             "grammar.te-wa-repeat",
-            "grammar.target-ni",
             "grammar.stem-link",
-            "grammar.past",
             "grammar.question-ka",
-            "grammar.ni-suru",
             "grammar.causative",
-            "grammar.explanatory-no-da",
             "grammar.ni-viewpoint",
-            "grammar.indifference-demo-ii",
-            "grammar.copula",
-            "grammar.formal-copula"
-          ]
+            "grammar.indifference-demo-ii"
+          ],
+          "grammarRoles": {
+            "grammar.plural-suffix": "ども в 人さらいども придаёт обозначению похитителей пренебрежительный оттенок: «эти похитители».",
+            "grammar.te-wa-repeat": "捕まえては…売り изображает повторяющийся промысел: поймать девушку, продать её евнухам и снова повторить.",
+            "grammar.stem-link": "売り соединяет продажу девушек с 稼いだ: продажей они добывали деньги на выпивку.",
+            "grammar.question-ka": "稼いだか、それとも…させたのか противопоставляет две возможные причины похищения, ни одну из которых Маомао не выясняет.",
+            "grammar.causative": "身代わりにさせた означает, что девушку заставили послужить заменой собственной дочери похитителя.",
+            "grammar.ni-viewpoint": "猫猫には отмечает, для кого эти мотивы несущественны: для самой пострадавшей Маомао.",
+            "grammar.indifference-demo-ii": "どうでもいい話 отбрасывает обе версии как неважные: какой бы ни был мотив, ей от этого не легче."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s010",
@@ -1629,18 +1645,16 @@
           ],
           "grammarIds": [
             "grammar.regardless",
-            "grammar.subject",
-            "grammar.object",
-            "grammar.past",
             "grammar.nominalizer-no",
-            "grammar.topic",
-            "grammar.attributive",
             "grammar.negative",
-            "grammar.explanatory-no-da",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula"
-          ]
+            "grammar.explanatory-no-da"
+          ],
+          "grammarRoles": {
+            "grammar.regardless": "どんな理由があれ заранее допускает любые причины похитителей: ни одна из них не изменит последствий для Маомао.",
+            "grammar.nominalizer-no": "とばっちりを受けたの превращает «пострадала из-за чужих дел» в факт, о котором дальше говорится 変わらない.",
+            "grammar.negative": "変わらない означает, что факт остаётся неизменным: из-за чужих обстоятельств пострадала именно Маомао.",
+            "grammar.explanatory-no-da": "のである подчёркивает итог её рассуждения: мотивы не отменяют того, что пострадала она."
+          }
         }
       ]
     },
@@ -1730,14 +1744,17 @@
             "kanji.u95a2"
           ],
           "grammarIds": [
-            "grammar.negative",
-            "grammar.copula",
             "grammar.conditional-ba",
             "grammar.literary-naru",
             "grammar.target-ni",
-            "grammar.desire",
-            "grammar.past"
-          ]
+            "grammar.desire"
+          ],
+          "grammarRoles": {
+            "grammar.conditional-ba": "でなければ отсылает к похищению: если бы не эти обстоятельства, её отношение к заднему дворцу было бы совсем иным.",
+            "grammar.literary-naru": "後宮なる場所 книжно называет место: «это место, именуемое задним дворцом», с оттенком отчуждения.",
+            "grammar.target-ni": "場所に обозначает то, с чем Маомао не хотела иметь дела: с задним дворцом.",
+            "grammar.desire": "関わりたくなかった выражает отсутствие желания связываться с дворцом; 一生 усиливает его до «за всю жизнь»."
+          }
         }
       ]
     },
@@ -1909,17 +1926,18 @@
           ],
           "grammarIds": [
             "grammar.attributive",
-            "grammar.plain-form",
             "grammar.and",
-            "grammar.i-adjective",
-            "grammar.object",
-            "grammar.past",
             "grammar.possession",
-            "grammar.location-ni",
             "grammar.topic",
-            "grammar.subject",
             "grammar.resultative-te-iru"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.attributive": "美しい衣を纏った определяет 女官: перед нами придворные дамы, облачённые в красивые одежды.",
+            "grammar.and": "化粧と香 соединяет два источника удушливого впечатления — косметику и благовония.",
+            "grammar.possession": "女官の唇 связывает губы с придворными дамами; далее описывается их выражение.",
+            "grammar.topic": "唇には выделяет место улыбок: именно на губах дам заметны 薄っぺらい笑み — пустые, поверхностные улыбки.",
+            "grammar.resultative-te-iru": "張り付いていた описывает застывшее состояние улыбок: они словно приклеились к губам и оставались там."
+          }
         }
       ]
     },
@@ -2044,19 +2062,17 @@
             "kanji.u6bd2"
           ],
           "grammarIds": [
-            "grammar.object",
             "grammar.te-kuru",
-            "grammar.te-form",
-            "grammar.plain-form",
             "grammar.nominalizer-koto",
-            "grammar.attributive",
-            "grammar.possession",
             "grammar.comparison-hodo-negative",
-            "grammar.i-adjective",
-            "grammar.topic",
-            "grammar.negative",
             "grammar.quotation"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.te-kuru": "薬屋をやってきて связывает вывод с накопленным опытом: Маомао пришла к нему за время работы аптекарем.",
+            "grammar.nominalizer-koto": "思うこと обозначает мысль, вынесенную из этого опыта; её содержание раскрывается после запятой.",
+            "grammar.comparison-hodo-negative": "女の笑みほど恐ろしい毒はない ставит женскую улыбку выше всех ядов по опасности: столь страшного яда больше нет.",
+            "grammar.quotation": "Заключительное と оформляет «нет яда страшнее женской улыбки» как содержание мысли из 思うこと."
+          }
         }
       ]
     },
@@ -2178,17 +2194,19 @@
             "kanji.u5909"
           ],
           "grammarIds": [
-            "grammar.topic",
             "grammar.subject-no",
-            "grammar.attributive",
-            "grammar.plain-form",
-            "grammar.possession",
             "grammar.additive-mo",
             "grammar.negative",
             "grammar.explanatory-no-da",
-            "grammar.copula",
             "grammar.quotation"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.subject-no": "В 殿上人の住まう частица の отмечает тех, кто живёт во дворцах: знать; весь оборот определяет 御殿.",
+            "grammar.additive-mo": "御殿も…花街も ставит рядом оба места: это верно и для дворцов знати, и для квартала куртизанок.",
+            "grammar.negative": "変わらない утверждает отсутствие различий: опасность женских улыбок в обоих мирах одинакова.",
+            "grammar.explanatory-no-da": "のだ усиливает обобщающий вывод Маомао о сходстве дворца и квартала куртизанок.",
+            "grammar.quotation": "Финальное と продолжает передачу её мысли из предыдущего предложения: это ещё одна часть того, что она усвоила."
+          }
         }
       ]
     },
@@ -2310,15 +2328,17 @@
             "kanji.u5411"
           ],
           "grammarIds": [
-            "grammar.target-ni",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.object",
             "grammar.stem-link",
             "grammar.possession",
-            "grammar.plain-form",
             "grammar.destination-ni"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.attributive": "足元に置いた определяет 洗濯籠: она подхватывает ту корзину, которая стояла у её ног.",
+            "grammar.stem-link": "抱え связывает подхватывание корзины со следующим 向かう: взяв её в руки, Маомао идёт дальше.",
+            "grammar.possession": "建物の奥 обозначает внутреннюю, дальнюю часть именно этого здания.",
+            "grammar.destination-ni": "足元に показывает, куда прежде поставили корзину, а 奥に — куда Маомао теперь направляется."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s016",
@@ -2544,22 +2564,20 @@
           ],
           "grammarIds": [
             "grammar.comparison-to",
-            "grammar.topic",
-            "grammar.stem-link",
             "grammar.na-adjective",
             "grammar.location-ni",
-            "grammar.possession",
-            "grammar.subject",
-            "grammar.inanimate-existence",
             "grammar.indeterminate-tomo",
-            "grammar.negative",
-            "grammar.attributive",
             "grammar.plural-suffix",
-            "grammar.object",
-            "grammar.progressive",
-            "grammar.past",
-            "grammar.plain-form"
-          ]
+            "grammar.progressive"
+          ],
+          "grammarRoles": {
+            "grammar.comparison-to": "表とは違い сопоставляет двор с парадной стороной: здесь всё выглядит иначе.",
+            "grammar.na-adjective": "殺風景な определяет 中庭 как унылый, лишённый украшений внутренний двор.",
+            "grammar.location-ni": "中庭には указывает, где находится 石畳の水場, — во внутреннем дворе.",
+            "grammar.indeterminate-tomo": "男とも女ともつかない определяет слуг: по внешности нельзя понять, мужчины они или женщины.",
+            "grammar.plural-suffix": "召使たち обозначает группу слуг, занятую общей работой.",
+            "grammar.progressive": "洗っていた показывает стирку в процессе: Маомао видит слуг за работой с горами белья."
+          }
         }
       ]
     },
@@ -2638,9 +2656,12 @@
           ],
           "grammarIds": [
             "grammar.topic",
-            "grammar.copula",
             "grammar.formal-copula"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.topic": "後宮は задаёт предмет пояснения: далее рассказывается правило входа в задний дворец.",
+            "grammar.formal-copula": "男子禁制である утверждает действующий запрет: мужчинам в это место вход закрыт."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s018",
@@ -2822,21 +2843,20 @@
           ],
           "grammarIds": [
             "grammar.potential",
-            "grammar.nominalizer-no",
-            "grammar.topic",
             "grammar.scope-de",
             "grammar.superlative",
-            "grammar.na-adjective",
-            "grammar.and",
-            "grammar.object",
-            "grammar.past",
             "grammar.attributive",
             "grammar.only-dake",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula",
             "grammar.cleft-no-wa"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.potential": "入れる здесь означает «могут / имеют право войти», а не действие «впустить»: речь о допуске людей во дворец.",
+            "grammar.scope-de": "国で задаёт масштаб знатности: сравнение ведётся в пределах всей страны.",
+            "grammar.superlative": "最も高貴なかた называет самого высокопоставленного человека — подразумеваемого императора.",
+            "grammar.attributive": "大切なものを失った определяет 元男性: «бывшие мужчины» лишились важной части тела.",
+            "grammar.only-dake": "だけ ограничивает допуск перечисленными группами, включая евнухов; прочим мужчинам вход запрещён.",
+            "grammar.cleft-no-wa": "入れるのは…だけである выделяет разрешённый круг: войти могут только перечисленные далее люди."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s019",
@@ -2905,14 +2925,13 @@
           "grammarIds": [
             "grammar.location-ni",
             "grammar.existence",
-            "grammar.nominalizer-no",
-            "grammar.topic",
-            "grammar.attributive",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula",
             "grammar.cleft-no-wa"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.location-ni": "そこに указывает на только что описанное место у воды, где Маомао видит слуг.",
+            "grammar.existence": "いる относится к находящимся там людям; здесь не происходит действие, а устанавливается их присутствие.",
+            "grammar.cleft-no-wa": "そこにいるのは後者である уточняет, кто именно эти люди: последняя из названных групп, то есть евнухи."
+          }
         }
       ]
     },
@@ -3048,21 +3067,21 @@
             "kanji.u8003"
           ],
           "grammarIds": [
-            "grammar.copula",
             "grammar.quotation",
             "grammar.tsutsu",
-            "grammar.subject",
-            "grammar.target-ni",
             "grammar.resultative-te-iru",
             "grammar.cause-kara",
-            "grammar.progressive",
             "grammar.nominalizer-koto",
-            "grammar.attributive",
-            "grammar.explanatory-no-da",
-            "grammar.conjecture-darou",
-            "grammar.topic",
-            "grammar.plain-form"
-          ]
+            "grammar.conjecture-darou"
+          ],
+          "grammarRoles": {
+            "grammar.quotation": "Первое と после 歪だ передаёт оценку Маомао, а と перед 猫猫は考える замыкает всю её мысль о причинах такого порядка.",
+            "grammar.tsutsu": "思いつつ соединяет внутреннее несогласие с попыткой понять систему: хотя Маомао считает её ненормальной, она ищет в ней смысл.",
+            "grammar.resultative-te-iru": "理にかなっている описывает соответствие разумным основаниям: возможно, этот порядок всё же имеет практический смысл.",
+            "grammar.cause-kara": "から связывает предполагаемую разумность с やっている: так поступают потому, что в этом видят смысл.",
+            "grammar.nominalizer-koto": "やっていること собирает действующий порядок в единый предмет оценки: «то, что здесь делают».",
+            "grammar.conjecture-darou": "なのだろう выражает осторожную догадку Маомао о причинах дворцового устройства, а не установленное ею объяснение."
+          }
         }
       ]
     },
@@ -3203,16 +3222,17 @@
             "kanji.u898b"
           ],
           "grammarIds": [
-            "grammar.object",
             "grammar.conditional-to",
-            "grammar.possession",
             "grammar.location-ni",
-            "grammar.inanimate-existence",
             "grammar.attributive",
-            "grammar.passive",
-            "grammar.past",
-            "grammar.plain-form"
-          ]
+            "grammar.passive"
+          ],
+          "grammarRoles": {
+            "grammar.conditional-to": "籠を置くと обозначает переход к следующему действию в эпизоде: поставив свою корзину, Маомао смотрит на другие.",
+            "grammar.location-ni": "そばの建物の中に указывает, где находятся замеченные корзины, — внутри соседнего здания.",
+            "grammar.attributive": "建物の中にある и 並べられた последовательно определяют 籠: корзины находятся внутри и расставлены в ряд.",
+            "grammar.passive": "並べられた показывает результат чьих-то действий над корзинами: их расставили, но кто это сделал, не уточняется."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s022",
@@ -3297,16 +3317,17 @@
             "kanji.u6e08"
           ],
           "grammarIds": [
-            "grammar.copula",
             "grammar.negative",
-            "grammar.adjective-connective",
             "grammar.subject-no",
-            "grammar.past",
-            "grammar.attributive",
             "grammar.suffix-zumi",
-            "grammar.possession",
             "grammar.nominal-mono"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.negative": "汚れ物ではなく отрицает первое предположение о содержимом: это не грязные вещи.",
+            "grammar.subject-no": "В 日の当たった частица の соответствует が: солнце освещало эти вещи; оборот определяет подразумеваемое бельё.",
+            "grammar.suffix-zumi": "洗濯済み сообщает, что стирка уже закончена; の связывает эту характеристику с もの.",
+            "grammar.nominal-mono": "もの заменяет повторное название вещей: речь об уже выстиранном белье, на которое попадало солнце."
+          }
         }
       ]
     },
@@ -3383,11 +3404,15 @@
           "grammarIds": [
             "grammar.target-ni",
             "grammar.passive",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.object",
-            "grammar.plain-form"
-          ]
+            "grammar.object"
+          ],
+          "grammarRoles": {
+            "grammar.target-ni": "持ち手に указывает место крепления бирки: она висит на ручке корзины.",
+            "grammar.passive": "かけられた показывает, что бирку кто-то повесил; внимание направлено на саму бирку, а не на исполнителя.",
+            "grammar.attributive": "持ち手にかけられた целиком определяет 木札 и позволяет понять, на какую именно бирку смотрит Маомао.",
+            "grammar.object": "木札を отмечает предмет взгляда: Маомао рассматривает деревянную бирку."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s024",
@@ -3474,15 +3499,17 @@
             "kanji.u66f8"
           ],
           "grammarIds": [
-            "grammar.object",
-            "grammar.past",
             "grammar.attributive",
             "grammar.and",
-            "grammar.subject",
             "grammar.passive",
-            "grammar.resultative-te-iru",
-            "grammar.plain-form"
-          ]
+            "grammar.resultative-te-iru"
+          ],
+          "grammarRoles": {
+            "grammar.attributive": "植物を模した определяет 絵: это рисунок, воспроизводящий растение, а не слово с названием растения.",
+            "grammar.and": "絵と数字 соединяет две отметки на бирке — картинку и цифры.",
+            "grammar.passive": "書かれている описывает нанесённые кем-то знаки; автор надписи здесь не важен.",
+            "grammar.resultative-te-iru": "ている в 書かれている показывает сохраняющийся результат: картинка и цифры уже нанесены и видны на бирке."
+          }
         }
       ]
     },
@@ -3629,25 +3656,21 @@
             "kanji.u652b"
           ],
           "grammarIds": [
-            "grammar.possession",
-            "grammar.location-ni",
-            "grammar.topic",
-            "grammar.subject",
             "grammar.potential",
-            "grammar.negative",
-            "grammar.attributive",
             "grammar.nominal-mono",
-            "grammar.additive-mo",
-            "grammar.existence",
             "grammar.simile-gotoku",
             "grammar.passive",
-            "grammar.past",
             "grammar.even-sae",
-            "grammar.explanatory-no-da",
-            "grammar.copula",
-            "grammar.cause-kara",
-            "grammar.plain-form"
-          ]
+            "grammar.cause-kara"
+          ],
+          "grammarRoles": {
+            "grammar.potential": "字が読めない обозначает не нежелание читать, а отсутствие умения: среди служительниц есть неграмотные.",
+            "grammar.nominal-mono": "もの в 読めないもの и 攫われたもの обозначает людей: тех, кто не умеет читать, и тех, кого похитили.",
+            "grammar.simile-gotoku": "人さらいのごとく образно уподобляет насильственное доставление девушек во дворец похищению людей.",
+            "grammar.passive": "攫われた показывает, что эти женщины стали жертвами похищения; они не пришли сами.",
+            "grammar.even-sae": "さえ в 攫われたものさえいる подчёркивает крайний пример: есть даже похищенные девушки.",
+            "grammar.cause-kara": "のだから обосновывает, почему неграмотность неудивительна: ведь некоторые попали сюда после похищения."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s026",
@@ -3798,19 +3821,21 @@
             "kanji.u96e3"
           ],
           "grammarIds": [
-            "grammar.target-ni",
             "grammar.passive",
-            "grammar.attributive",
             "grammar.before",
-            "grammar.possession",
             "grammar.degree-kurai",
-            "grammar.topic",
             "grammar.concessive-ga",
             "grammar.to-naru-to",
-            "grammar.i-adjective",
-            "grammar.plain-form",
             "grammar.destination-ni"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.passive": "連れ込まれる и 教えられる описывают действия над девушками: их приводят и обучают.",
+            "grammar.before": "連れ込まれる前に относит обучение этикету ко времени до того, как девушек введут во дворец.",
+            "grammar.degree-kurai": "礼儀くらいは выделяет доступный минимум: хотя бы основным манерам их обучить можно.",
+            "grammar.concessive-ga": "が противопоставляет освоение этикета более трудной задаче — обучению письменности.",
+            "grammar.to-naru-to": "文字となると переводит оценку именно к грамотности: когда дело доходит до письма и чтения, всё сложно.",
+            "grammar.destination-ni": "宮廷に обозначает конечную точку принудительного перемещения девушек — дворец."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s027",
@@ -3910,18 +3935,19 @@
             "kanji.u8d8a"
           ],
           "grammarIds": [
-            "grammar.topic",
-            "grammar.possession",
             "grammar.scope-de",
             "grammar.conditional-ba",
-            "grammar.i-adjective",
             "grammar.evaluative-hou",
             "grammar.explanatory-no-da",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula",
             "grammar.particle-omission"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.scope-de": "田舎の娘で ограничивает оценку грамотности деревенскими девушками, а не всеми обитателями дворца.",
+            "grammar.conditional-ba": "半分越せば задаёт порог для положительной оценки: если грамотных окажется больше половины.",
+            "grammar.evaluative-hou": "いいほう означает, что даже чуть больше половины грамотных уже считалось бы хорошим показателем.",
+            "grammar.explanatory-no-da": "なのである оформляет пояснение низкой грамотности: такой результат для деревенских девушек уже неплох.",
+            "grammar.particle-omission": "В 半分越せば после 半分 не выражено を: имеется в виду превысить отметку в половину."
+          }
         }
       ]
     },
@@ -4066,20 +4092,21 @@
             "kanji.u60aa"
           ],
           "grammarIds": [
-            "grammar.adverbial",
             "grammar.adjective-naru",
             "grammar.excess-sugiru",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.possession",
-            "grammar.quotation",
             "grammar.potential",
-            "grammar.topic",
             "grammar.concessive-ga",
-            "grammar.subject",
-            "grammar.i-adjective",
-            "grammar.plain-form"
-          ]
+            "grammar.subject"
+          ],
+          "grammarRoles": {
+            "grammar.adjective-naru": "大きくなり описывает увеличение заднего дворца, а не просто его большой размер.",
+            "grammar.excess-sugiru": "なり過ぎた оценивает это увеличение как чрезмерное: дворец разросся сверх разумной меры.",
+            "grammar.attributive": "大きくなり過ぎた определяет 後宮: отрицательные последствия связаны именно с разросшимся дворцом.",
+            "grammar.potential": "弊害といえる передаёт допустимый вывод рассказчика: происходящее можно назвать вредным последствием такого разрастания.",
+            "grammar.concessive-ga": "量は増えたが противопоставляет рост количества ухудшению качества.",
+            "grammar.subject": "質が выделяет носителя отрицательного признака 悪い: плохо именно качество набранных людей."
+          }
         }
       ]
     },
@@ -4291,19 +4318,21 @@
             "kanji.u5e2f"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.target-ni",
-            "grammar.topic",
-            "grammar.negative",
             "grammar.concessive-mono-no",
             "grammar.te-form",
             "grammar.counter",
-            "grammar.object",
             "grammar.conditional-to",
-            "grammar.past",
-            "grammar.copula",
-            "grammar.plain-form"
-          ]
+            "grammar.copula"
+          ],
+          "grammarRoles": {
+            "grammar.target-ni": "先帝の花の園には задаёт недостижимый ориентир: «цветник» прежнего императора.",
+            "grammar.concessive-mono-no": "到底及ばないものの вводит уступку: хотя до прежнего гарема далеко, нынешний всё равно очень велик.",
+            "grammar.te-form": "合わせて объединяет 妃 и 女官 в общий подсчёт: жён и служительниц вместе две тысячи.",
+            "grammar.counter": "二千人 содержит счётчик людей 人; далее 三千 продолжает тот же подсчёт, не повторяя 人.",
+            "grammar.conditional-to": "宦官を加えると вводит результат прибавления евнухов: вместе получается уже три тысячи.",
+            "grammar.copula": "大所帯だった характеризует весь этот состав как огромное хозяйство в описываемое время."
+          }
         }
       ]
     },
@@ -4416,17 +4445,19 @@
             "kanji.u8077"
           ],
           "grammarIds": [
-            "grammar.topic",
             "grammar.scope-de",
             "grammar.possession",
-            "grammar.copula",
-            "grammar.stem-link",
             "grammar.even-sura",
             "grammar.resultative-te-iru",
-            "grammar.negative",
-            "grammar.plain-form",
             "grammar.formal-copula"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.scope-de": "その中で задаёт место Маомао внутри только что описанного огромного дворцового хозяйства.",
+            "grammar.possession": "最下層の下女 обозначает служанку самой низкой ступени; это положение Маомао в иерархии.",
+            "grammar.even-sura": "官職すら подчёркивает низкое положение: ей не досталось даже официальной должности.",
+            "grammar.resultative-te-iru": "もらっていない описывает текущее отсутствие результата назначения: никакой должности у неё так и нет.",
+            "grammar.formal-copula": "下女であり — соединительная форма である: утверждение её статуса связывается с отсутствием должности."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s031",
@@ -4559,20 +4590,20 @@
           ],
           "grammarIds": [
             "grammar.additive-mo",
-            "grammar.negative",
-            "grammar.adjective-connective",
             "grammar.passive",
-            "grammar.te-form",
             "grammar.ni-suru",
-            "grammar.past",
             "grammar.attributive",
             "grammar.ni-viewpoint",
-            "grammar.topic",
-            "grammar.subject",
-            "grammar.na-adjective",
-            "grammar.copula",
-            "grammar.formal-copula"
-          ]
+            "grammar.na-adjective"
+          ],
+          "grammarRoles": {
+            "grammar.additive-mo": "後ろ盾もなく означает, что у девушки нет даже покровителя, который мог бы улучшить её положение.",
+            "grammar.passive": "攫われて и 数合わせにされた показывают две навязанные девушке вещи: её похитили и использовали для заполнения числа.",
+            "grammar.ni-suru": "数合わせにされた указывает назначенную ей роль: ею просто довели набор до нужного количества.",
+            "grammar.attributive": "攫われて数合わせにされた определяет 娘, объясняя, о какой девушке и каких обстоятельствах идёт речь.",
+            "grammar.ni-viewpoint": "娘には задаёт мерку оценки: для девушки с такими исходными условиями это положение ожидаемо.",
+            "grammar.na-adjective": "妥当な определяет ところ как соответствующее обстоятельствам положение, а не удачный результат вообще."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s032",
@@ -4916,32 +4947,25 @@
             "kanji.u8db3"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.similarity-you",
-            "grammar.na-adjective",
             "grammar.list-ya",
-            "grammar.i-adjective",
             "grammar.exemplifying-demo",
-            "grammar.resultative-te-iru",
             "grammar.conditional-ba",
-            "grammar.target-ni",
-            "grammar.potential",
-            "grammar.attributive",
-            "grammar.additive-mo",
-            "grammar.past",
             "grammar.possibility-kamoshirenai",
-            "grammar.concessive-ga",
             "grammar.subject-no",
-            "grammar.nominalizer-no",
-            "grammar.topic",
-            "grammar.and",
             "grammar.degree-kurai",
-            "grammar.copula",
-            "grammar.plain-form",
-            "grammar.formal-copula",
-            "grammar.cleft-no-wa",
-            "grammar.inanimate-existence"
-          ]
+            "grammar.cleft-no-wa"
+          ],
+          "grammarRoles": {
+            "grammar.similarity-you": "牡丹のような, 満月のような и 枯れ枝のような рисуют контрастные сравнения: пион, полная луна и сухие ветви.",
+            "grammar.list-ya": "肉体や…肌 перечисляет примеры привлекательных достоинств, которые могли бы помочь получить ранг.",
+            "grammar.exemplifying-demo": "肌でも допускает хотя бы один такой дар внешности: будь у Маомао хотя бы подобная кожа.",
+            "grammar.conditional-ba": "持っていれば вводит нереальное для неё условие: если бы она обладала такой внешностью.",
+            "grammar.possibility-kamoshirenai": "可能性もあったかもしれない осторожно допускает шанс стать младшей супругой при этом условии.",
+            "grammar.subject-no": "В 猫猫の持つ и そばかすの浮いた частица の отмечает субъект: Маомао обладает, а веснушки проступают на коже.",
+            "grammar.degree-kurai": "手足くらい завершает скромный перечень реальных достоинств: только здоровая кожа да тонкие конечности.",
+            "grammar.cleft-no-wa": "猫猫の持つのは…くらいである противопоставляет мечте то, чем Маомао обладает в действительности."
+          }
         }
       ]
     },
@@ -5006,7 +5030,13 @@
             "grammar.particle-omission",
             "grammar.causative",
             "grammar.volitional"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.adverbial": "はやく относится к 終わらせよう: Маомао хочет расправиться с работой поскорее.",
+            "grammar.particle-omission": "В 仕事終わらせよう опущено を после 仕事: в мысленной разговорной реплике объект и так понятен.",
+            "grammar.causative": "終わらせる от 終わる делает работу объектом завершения: Маомао сама собирается довести её до конца.",
+            "grammar.volitional": "終わらせよう выражает решение, принятое про себя: «закончу-ка работу»."
+          }
         }
       ]
     },
@@ -5162,17 +5192,21 @@
             "kanji.u6b69"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.and",
             "grammar.quotation",
             "grammar.passive",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.object",
             "grammar.conditional-to",
-            "grammar.manner-ni",
-            "grammar.plain-form"
-          ]
+            "grammar.manner-ni"
+          ],
+          "grammarRoles": {
+            "grammar.and": "梅の花と『壱七』 перечисляет два опознавательных знака на бирке: сливовый цветок и цифры.",
+            "grammar.quotation": "Второе と, перед 書かれた, закрывает содержание нанесённой отметки: на бирке изображены цветок и «壱七».",
+            "grammar.passive": "書かれた описывает знаки как уже нанесённые на бирку; кто их нанёс, не сообщается.",
+            "grammar.attributive": "梅の花と『壱七』と書かれた определяет 札, а 札の уточняет нужную 籠: корзину опознают по бирке.",
+            "grammar.conditional-to": "見つけると связывает находку нужной корзины с немедленным продолжением пути.",
+            "grammar.manner-ni": "小走りに характеризует 歩く: Маомао идёт торопливым мелким шагом."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s035",
@@ -5283,14 +5317,20 @@
           ],
           "grammarIds": [
             "grammar.adverbial",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.subject",
             "grammar.start-dasu",
             "grammar.before",
             "grammar.destination-ni",
             "grammar.desire"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.adverbial": "重く относится к 曇った: небо затянуто тучами тяжело, мрачно.",
+            "grammar.attributive": "重く曇った определяет 空, создавая образ тяжёлого хмурого неба.",
+            "grammar.start-dasu": "泣き出す переносит начало плача на небо: вот-вот начнётся дождь.",
+            "grammar.before": "空が泣き出す前に задаёт желаемый срок возвращения: успеть до дождя.",
+            "grammar.destination-ni": "部屋に называет место, куда Маомао хочет вернуться, — свою комнату.",
+            "grammar.desire": "戻りたかった передаёт её желание в тот момент: ей хотелось поскорее оказаться в комнате."
+          }
         }
       ]
     },
@@ -5391,7 +5431,12 @@
             "grammar.possession",
             "grammar.topic",
             "grammar.formal-copula"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.possession": "籠の洗濯物の主 выстраивает цепочку: бельё находится в корзине, а у этого белья есть хозяйка.",
+            "grammar.topic": "主は делает хозяйку белья темой нового пояснения: далее назван её ранг.",
+            "grammar.formal-copula": "下級妃嬪である устанавливает, кому принадлежит бельё: наложнице низшего ранга."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s037",
@@ -5548,17 +5593,20 @@
           ],
           "grammarIds": [
             "grammar.passive",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.topic",
-            "grammar.possession",
             "grammar.comparison-ni-kurabe",
             "grammar.subject",
-            "grammar.copula",
             "grammar.concessive-ga",
-            "grammar.excess-sugiru",
-            "grammar.plain-form"
-          ]
+            "grammar.excess-sugiru"
+          ],
+          "grammarRoles": {
+            "grammar.passive": "与えられた показывает, что отдельную комнату хозяйке выделили; она получила её по дворцовому порядку.",
+            "grammar.attributive": "与えられた определяет 個室: оценивается именно предоставленная этой наложнице комната.",
+            "grammar.comparison-ni-kurabe": "他の下妃に比べ вводит сравнение с другими младшими супругами и, по смыслу, с обстановкой их комнат.",
+            "grammar.subject": "調度の質が выделяет предмет оценки 豪華だ: роскошью отличается качество обстановки.",
+            "grammar.concessive-ga": "豪華だが соединяет признание роскоши с отрицательной оценкой её чрезмерной броскости.",
+            "grammar.excess-sugiru": "派手すぎる означает, что обстановка слишком кричащая на вкус наблюдающей Маомао."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s038",
@@ -5664,12 +5712,16 @@
           ],
           "grammarIds": [
             "grammar.possession",
-            "grammar.topic",
             "grammar.or-something",
             "grammar.quotation",
-            "grammar.passive",
-            "grammar.plain-form"
-          ]
+            "grammar.passive"
+          ],
+          "grammarRoles": {
+            "grammar.possession": "部屋の主 обозначает хозяйку комнаты, а 豪商の娘 — дочь богатого торговца, предполагаемое происхождение этой женщины.",
+            "grammar.or-something": "豪商の娘かなにか оставляет происхождение приблизительным: дочь крупного купца или кто-то в этом роде.",
+            "grammar.quotation": "と перед 予想される вводит содержание предположения о происхождении хозяйки.",
+            "grammar.passive": "予想される подаёт догадку без названного автора: по обстановке можно предположить, из какой она семьи."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s039",
@@ -5882,18 +5934,20 @@
           ],
           "grammarIds": [
             "grammar.status-tomo-nareba",
-            "grammar.possession",
             "grammar.subject-no",
-            "grammar.attributive",
-            "grammar.object",
             "grammar.ability-koto-ga-dekiru",
             "grammar.concessive-ga",
-            "grammar.topic",
             "grammar.limit-made",
-            "grammar.shika-negative",
-            "grammar.negative",
-            "grammar.plain-form"
-          ]
+            "grammar.shika-negative"
+          ],
+          "grammarRoles": {
+            "grammar.status-tomo-nareba": "位持ちともなれば подчёркивает достаточный статус: если уж женщина обладает рангом, ей положены свои служанки.",
+            "grammar.subject-no": "В 位の低い частица の отмечает субъект признака: низок ранг; весь оборот определяет 妃.",
+            "grammar.ability-koto-ga-dekiru": "持つことができる обозначает право иметь личных служанок; 置くことができない далее ограничивает их число.",
+            "grammar.concessive-ga": "が противопоставляет общее право на личных служанок особым ограничениям для низких рангов.",
+            "grammar.limit-made": "二人まで устанавливает предельное число служанок — две включительно.",
+            "grammar.shika-negative": "二人までしか…できない запрещает превышать этот предел: больше двух держать нельзя."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s040",
@@ -6050,15 +6104,17 @@
           "grammarIds": [
             "grammar.similarity-you",
             "grammar.obligation-beki",
-            "grammar.attributive",
             "grammar.subject-no",
-            "grammar.negative",
-            "grammar.subject",
-            "grammar.object",
             "grammar.representative-tari",
-            "grammar.explanatory-no-da",
-            "grammar.formal-copula"
-          ]
+            "grammar.explanatory-no-da"
+          ],
+          "grammarRoles": {
+            "grammar.similarity-you": "猫猫のような приводит Маомао как пример служанок без личного господина.",
+            "grammar.obligation-beki": "仕えるべき主人 означает господина, которому служанка должна была бы служить по назначению.",
+            "grammar.subject-no": "В 主人のいない частица の соответствует が: отсутствует именно закреплённый за служанкой господин.",
+            "grammar.representative-tari": "洗濯物を運んだりする приводит разнос белья как один из обычных видов работы таких служанок.",
+            "grammar.explanatory-no-da": "のである завершает объяснение устройства труда: поэтому поручения по разносу достаются служанкам вроде Маомао."
+          }
         }
       ]
     },
@@ -6288,21 +6344,21 @@
             "kanji.u76ee"
           ],
           "grammarIds": [
-            "grammar.topic",
             "grammar.location",
-            "grammar.object",
             "grammar.nominalizer-koto",
             "grammar.passive",
-            "grammar.resultative-te-iru",
             "grammar.concessive-ga",
-            "grammar.possession",
             "grammar.location-ni",
-            "grammar.inanimate-existence",
-            "grammar.stem-link",
-            "grammar.target-ni",
-            "grammar.rarely-negative",
-            "grammar.plain-form"
-          ]
+            "grammar.rarely-negative"
+          ],
+          "grammarRoles": {
+            "grammar.location": "後宮内で обозначает территорию, на которой младшим наложницам разрешено иметь отдельные комнаты.",
+            "grammar.nominalizer-koto": "個室を持つこと превращает обладание комнатой в предмет разрешения: разрешено именно иметь её.",
+            "grammar.passive": "許されている показывает, что право предоставлено наложницам дворцовым порядком, а не устанавливается ими самими.",
+            "grammar.concessive-ga": "が противопоставляет формальную привилегию отдельной комнаты неудобному месту её расположения.",
+            "grammar.location-ni": "宮内の端に указывает, где расположены комнаты, — на краю дворцовой территории.",
+            "grammar.rarely-negative": "皇帝の目につくことはめったにない передаёт последствие удалённости: женщины почти никогда не попадаются императору на глаза."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s042",
@@ -6481,16 +6537,20 @@
           ],
           "grammarIds": [
             "grammar.even-demo",
-            "grammar.object",
             "grammar.passive",
             "grammar.conditional-ba",
-            "grammar.subject",
-            "grammar.possession",
-            "grammar.plain-form",
             "grammar.stem-link",
             "grammar.topic",
             "grammar.resultative-te-iru"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.even-demo": "一度でも подчёркивает достаточность единственного случая: даже один вызов к императору меняет положение.",
+            "grammar.passive": "夜伽を命じられれば описывает приказ, полученный женщиной: её вызывают провести ночь с императором.",
+            "grammar.conditional-ba": "命じられれば ставит условие переселения: если такой приказ поступит, станет возможен переезд.",
+            "grammar.stem-link": "でき соединяет возможность переехать с дальнейшим пояснением о втором императорском внимании.",
+            "grammar.topic": "二度目の御手付きは переводит разговор ко второму случаю близости: далее объясняется его значение.",
+            "grammar.resultative-te-iru": "出世を意味している устанавливает устойчивое соответствие в дворцовой системе: второе внимание означает возвышение."
+          }
         }
       ]
     },
@@ -6712,20 +6772,21 @@
             "kanji.u8cdc"
           ],
           "grammarIds": [
-            "grammar.object",
             "grammar.passive",
             "grammar.without-koto-naku",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.topic",
-            "grammar.possession",
-            "grammar.subject",
-            "grammar.inanimate-existence",
             "grammar.unless-nai-kagiri",
             "grammar.alternative-nari",
-            "grammar.te-shimau",
-            "grammar.plain-form"
-          ]
+            "grammar.te-shimau"
+          ],
+          "grammarRoles": {
+            "grammar.passive": "位が下げられる и 下賜される описывают действия над женщиной: её понижают в ранге или жалуют другому человеку.",
+            "grammar.without-koto-naku": "食指を動かされることなく означает, что император так и не проявил к женщине интереса.",
+            "grammar.attributive": "食指を動かされることなく適齢を過ぎた определяет 妃: речь о супруге, которая уже вышла из подходящего возраста, никого не заинтересовав.",
+            "grammar.unless-nai-kagiri": "よほど実家の権力がない限り вводит исключение: от понижения может защитить лишь очень влиятельная родная семья.",
+            "grammar.alternative-nari": "位が下げられるなり называет понижение ранга как один из возможных исходов; далее описан худший.",
+            "grammar.te-shimau": "下賜されてしまう подчёркивает нежелательный окончательный исход: женщину могут в итоге отдать кому-то в подарок."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s044",
@@ -6882,21 +6943,21 @@
             "kanji.u6050"
           ],
           "grammarIds": [
-            "grammar.subject",
             "grammar.whether-ka-douka",
-            "grammar.topic",
             "grammar.depend-ni-yoru",
-            "grammar.additive-mo",
-            "grammar.concessive-ga",
             "grammar.recipient",
             "grammar.passive",
             "grammar.nominalizer-koto",
-            "grammar.object",
-            "grammar.plural-tachi",
-            "grammar.progressive",
-            "grammar.appearance-you-da",
-            "grammar.copula"
-          ]
+            "grammar.appearance-you-da"
+          ],
+          "grammarRoles": {
+            "grammar.whether-ka-douka": "不幸かどうか формулирует вопрос без готового ответа: станет ли такая передача несчастьем.",
+            "grammar.depend-ni-yoru": "相手にもよる связывает ответ с получателем женщины: всё зависит в том числе от того, кому её пожалуют.",
+            "grammar.recipient": "宦官に обозначает получателя пожалования: женщину передают евнуху.",
+            "grammar.passive": "下賜される показывает женщину как ту, кого отдают другому человеку, без её собственного выбора.",
+            "grammar.nominalizer-koto": "宦官に下賜されること превращает такую участь в предмет страха придворных женщин.",
+            "grammar.appearance-you-da": "恐れているようだ передаёт вывод наблюдателя: судя по всему, именно этой участи они боятся больше всего."
+          }
         }
       ]
     },
@@ -6975,7 +7036,13 @@
             "grammar.object",
             "grammar.adverbial",
             "grammar.plain-form"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.topic": "猫猫は возвращает повествование от дворцовых правил к действиям Маомао.",
+            "grammar.object": "扉を обозначает предмет, по которому она стучит, — дверь комнаты.",
+            "grammar.adverbial": "軽く характеризует 叩く: Маомао стучит легко, негромко.",
+            "grammar.plain-form": "叩く ведёт сцену в повествовательном настоящем: после общих пояснений читатель снова видит конкретное действие."
+          }
         }
       ]
     },
@@ -7027,7 +7094,13 @@
             "grammar.te-oku",
             "grammar.contraction-teoku",
             "grammar.request-te"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.destination-ni": "そこに указывает место, где следует поставить и оставить принесённую корзину: «там».",
+            "grammar.te-oku": "В おいといて подразумевается 置いておいて: корзину просят поставить так, чтобы она оставалась на указанном месте.",
+            "grammar.contraction-teoku": "おいといて — разговорное сокращение 置いておいて; короткая форма подходит резкому бытовому ответу.",
+            "grammar.request-te": "Конечное て в おいといて оформляет прямую неформальную просьбу-приказ: «оставь»."
+          }
         }
       ]
     },
@@ -7160,14 +7233,14 @@
             "grammar.object",
             "grammar.stem-link",
             "grammar.attributive",
-            "grammar.nominalizer-no",
-            "grammar.topic",
-            "grammar.cleft-no-wa",
-            "grammar.possession",
-            "grammar.copula",
-            "grammar.past",
-            "grammar.plain-form"
-          ]
+            "grammar.cleft-no-wa"
+          ],
+          "grammarRoles": {
+            "grammar.object": "扉を и 返事を относятся к двум действиям одной служанки: она открывает дверь и отвечает.",
+            "grammar.stem-link": "開け соединяет открывание двери с 返事をする, не завершая предложение после первого действия.",
+            "grammar.attributive": "無愛想な определяет 返事: ответ звучит неприветливо.",
+            "grammar.cleft-no-wa": "扉を開け無愛想な返事をするのは…侍女だった раскрывает личность ответившей: это личная служанка хозяйки комнаты."
+          }
         }
       ]
     },
@@ -7290,14 +7363,18 @@
           ],
           "grammarIds": [
             "grammar.location",
-            "grammar.topic",
             "grammar.attributive",
-            "grammar.object",
             "grammar.causative",
-            "grammar.past",
             "grammar.subject",
             "grammar.progressive"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.location": "中では помещает следующую сцену внутрь комнаты, за только что открывшейся дверью.",
+            "grammar.attributive": "甘ったるい匂いを漂わせた определяет 妃: это наложница, от которой исходит приторно-сладкий запах.",
+            "grammar.causative": "漂わせた от 漂う показывает, что наложница распространяет вокруг себя запах; по-русски естественно «от неё тянет ароматом».",
+            "grammar.subject": "妃が называет участницу увиденной сцены: именно хозяйка комнаты покачивает чашу.",
+            "grammar.progressive": "酒杯を揺らしている показывает действие в момент взгляда Маомао: наложница сидит, покачивая винную чашу."
+          }
         }
       ]
     },
@@ -7465,19 +7542,21 @@
             "kanji.u86d9"
           ],
           "grammarIds": [
-            "grammar.destination-ni",
             "grammar.before",
-            "grammar.topic",
             "grammar.passive",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.formal-copula",
             "grammar.concessive-ga",
             "grammar.possession",
-            "grammar.copula",
-            "grammar.explanatory-no-da",
             "grammar.conjecture-darou"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.before": "宮内に入る前は выделяет прежний период её жизни: до попадания во дворец.",
+            "grammar.passive": "誉めそやされた показывает, что внешность женщины прежде расхваливали окружающие.",
+            "grammar.attributive": "誉めそやされた美しい определяет 容姿: говорится о красоте, за которую её раньше превозносили.",
+            "grammar.concessive-ga": "であるが противопоставляет прежнюю репутацию красавицы её более скромному положению среди дворцовых женщин.",
+            "grammar.possession": "井の中の蛙 буквально связывает лягушку с колодцем; здесь образ описывает узость прежнего опыта женщины.",
+            "grammar.conjecture-darou": "だったのであろう оформляет предположение рассказчика: видимо, вне дворца её представления о собственной красоте были слишком ограниченными."
+          }
         },
         {
           "id": "apothecary-diaries.chapter-1.s050",
@@ -7643,20 +7722,21 @@
             "kanji.u51fa"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.passive-agent-ni",
             "grammar.passive",
             "grammar.stem-link",
-            "grammar.object",
-            "grammar.topic",
-            "grammar.destination-ni",
             "grammar.additive-mo",
-            "grammar.volitional",
             "grammar.attempt-you-to-suru",
-            "grammar.negative",
-            "grammar.change-naku-naru",
-            "grammar.past"
-          ]
+            "grammar.change-naku-naru"
+          ],
+          "grammarRoles": {
+            "grammar.passive-agent-ni": "絢爛の花々に называет источник подавляющего впечатления: великолепные дворцовые красавицы затмили хозяйку.",
+            "grammar.passive": "気圧され и 鼻っ柱を折られ показывают, как женщина испытала чужое превосходство и лишилась прежней спеси.",
+            "grammar.stem-link": "気圧され、鼻っ柱を折られ связывает пережитые унижения с последующим изменением её поведения.",
+            "grammar.additive-mo": "外にも в сочетании с отрицанием подчёркивает замкнутость: она не пытается даже выйти наружу.",
+            "grammar.attempt-you-to-suru": "出ようとする обозначает попытку или намерение выйти из комнаты.",
+            "grammar.change-naku-naru": "出ようとしなくなった сообщает о перемене: в последнее время женщина перестала даже пытаться выходить."
+          }
         }
       ]
     },
@@ -7766,16 +7846,19 @@
             "kanji.u6765"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.colloquial-dewa",
-            "grammar.location",
-            "grammar.topic",
             "grammar.indefinite-mo-negative",
             "grammar.purpose-ni",
             "grammar.benefactive-te-kureru",
-            "grammar.negative",
             "grammar.final-yo"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.colloquial-dewa": "部屋の中じゃあ разворачивается в 部屋の中では: Маомао мысленно говорит о сидении взаперти разговорным тоном.",
+            "grammar.indefinite-mo-negative": "だれも…来てくれない охватывает всех возможных посетителей: никто за женщиной не придёт.",
+            "grammar.purpose-ni": "迎えに указывает цель возможного прихода: прийти за ней, позвать или забрать её.",
+            "grammar.benefactive-te-kureru": "来てくれない представляет ожидаемый визит как услугу самой женщине; Маомао мысленно оценивает ситуацию с её стороны.",
+            "grammar.final-yo": "よ придаёт внутреннему замечанию уверенный, слегка поучающий оттенок: сидя в комнате, внимания не дождёшься."
+          }
         }
       ]
     },
@@ -7904,12 +7987,17 @@
           "grammarIds": [
             "grammar.topic",
             "grammar.possession",
-            "grammar.object",
             "grammar.conditional-to",
             "grammar.destination-ni",
-            "grammar.past",
-            "grammar.plain-form"
-          ]
+            "grammar.past"
+          ],
+          "grammarRoles": {
+            "grammar.topic": "猫猫は вновь делает Маомао участницей основного действия после её мысленного замечания.",
+            "grammar.possession": "隣の部屋の洗濯籠 уточняет, какую корзину она забирает: корзину с бельём из соседней комнаты.",
+            "grammar.conditional-to": "もらうと отмечает последовательность: как только Маомао забрала корзину, она отправилась обратно.",
+            "grammar.destination-ni": "洗い場に называет конечную точку возвращения — место, где стирают бельё.",
+            "grammar.past": "戻った завершает эпизод возвращением Маомао к стирке."
+          }
         }
       ]
     },
@@ -7980,7 +8068,11 @@
           "grammarIds": [
             "grammar.topic",
             "grammar.resultative-te-iru"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.topic": "仕事は выделяет оставшуюся работу как следующую заботу Маомао.",
+            "grammar.resultative-te-iru": "残っている описывает сохраняющийся объём незаконченных дел; まだたくさん подчёркивает, что их всё ещё много."
+          }
         }
       ]
     },
@@ -8128,19 +8220,20 @@
           ],
           "grammarIds": [
             "grammar.cause-de",
-            "grammar.past",
             "grammar.not-wake-dewa-nai",
             "grammar.concessive-ga",
-            "grammar.topic",
-            "grammar.honorific-o",
             "grammar.humble-itadaku",
-            "grammar.resultative-te-iru",
             "grammar.reason-node",
-            "grammar.possession",
-            "grammar.intention-tsumori",
-            "grammar.formal-copula",
-            "grammar.plain-form"
-          ]
+            "grammar.intention-tsumori"
+          ],
+          "grammarRoles": {
+            "grammar.cause-de": "好きで указывает возможный мотив прихода — собственное желание, которое далее отрицается.",
+            "grammar.not-wake-dewa-nai": "好きできたわけではない отвергает вывод, будто Маомао пришла сюда по своей воле.",
+            "grammar.concessive-ga": "が противопоставляет вынужденный приход её готовности честно работать за получаемую плату.",
+            "grammar.humble-itadaku": "お給金はいただいている вежливо описывает получение жалованья: Маомао признаёт, что за службу ей платят.",
+            "grammar.reason-node": "ので связывает получение жалованья с решением отрабатывать его: раз платят, работа должна быть сделана.",
+            "grammar.intention-tsumori": "その分の働きはするつもり выражает её намерение выполнить работу, соответствующую полученной плате."
+          }
         }
       ]
     },
@@ -8242,7 +8335,13 @@
             "grammar.subject",
             "grammar.zero-copula",
             "grammar.formal-copula"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.topic": "基本は задаёт аспект характеристики — её основную натуру, а не случайное поведение в этот день.",
+            "grammar.subject": "それが отсылает к только что названной добросовестности и отождествляет этот характер с Маомао.",
+            "grammar.zero-copula": "После 真面目 опущено だ: краткое «в основе — добросовестная» звучит как ёмкая характеристика.",
+            "grammar.formal-copula": "元薬屋猫猫である завершает портрет: такова Маомао, бывшая аптекарша."
+          }
         }
       ]
     },
@@ -8315,9 +8414,14 @@
             "grammar.adverbial",
             "grammar.progressive",
             "grammar.conditional-ba",
-            "grammar.potential",
-            "grammar.plain-form"
-          ]
+            "grammar.potential"
+          ],
+          "grammarRoles": {
+            "grammar.adverbial": "大人しく характеризует 働く: работать спокойно и послушно, не привлекая к себе внимания.",
+            "grammar.progressive": "働いている предполагает продолжение такого труда в течение службы, а не одно рабочее действие.",
+            "grammar.conditional-ba": "働いていれば ставит условие будущего освобождения: если она будет и дальше тихо работать.",
+            "grammar.potential": "出られる выражает ожидаемую возможность выйти из дворца; そのうち относит её к неопределённому будущему."
+          }
         }
       ]
     },
@@ -8399,11 +8503,15 @@
           "grammarIds": [
             "grammar.result-ni-naru",
             "grammar.nominalizer-koto",
-            "grammar.topic",
             "grammar.possibility-uru",
-            "grammar.negative",
             "grammar.conjecture-darou"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.result-ni-naru": "御手付きになる обозначает переход в положение женщины, которой император уделил интимное внимание.",
+            "grammar.nominalizer-koto": "御手付きになること превращает возможную близость с императором в событие, вероятность которого Маомао оценивает.",
+            "grammar.possibility-uru": "ありえない отвергает такой исход как немыслимый для неё; まさか усиливает недоверие.",
+            "grammar.conjecture-darou": "だろう показывает её уверенное ожидание: уж с ней-то подобного наверняка не случится."
+          }
         }
       ]
     },
@@ -8502,13 +8610,18 @@
           ],
           "grammarIds": [
             "grammar.evaluative-koto-ni",
-            "grammar.attributive",
             "grammar.possession",
-            "grammar.topic",
             "grammar.past",
             "grammar.quotation",
             "grammar.potential"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.evaluative-koto-ni": "残念なことに заранее оценивает последующее сообщение как печальное: расчёты Маомао не оправдались.",
+            "grammar.possession": "猫猫の考え связывает ошибочную оценку именно с Маомао и её только что изложенными надеждами.",
+            "grammar.past": "甘かった оценивает её прежние мысли задним числом: они оказались наивными.",
+            "grammar.quotation": "と в 甘かったといえる вводит содержание вывода рассказчика о её расчётах.",
+            "grammar.potential": "いえる смягчает авторскую оценку до «можно сказать»: последующие события позволят назвать её рассуждения наивными."
+          }
         }
       ]
     },
@@ -8604,10 +8717,15 @@
             "grammar.embedded-question-ka",
             "grammar.negative",
             "grammar.definition-to-iu",
-            "grammar.generalization-mono-da",
-            "grammar.copula",
-            "grammar.plain-form"
-          ]
+            "grammar.generalization-mono-da"
+          ],
+          "grammarRoles": {
+            "grammar.subject": "それが отсылает ко всей мысли о непредсказуемости и делает её характеристикой жизни.",
+            "grammar.embedded-question-ka": "何が起こるか превращает «что случится?» во вложенный вопрос при わからない.",
+            "grammar.negative": "わからない отрицает знание будущего: невозможно заранее знать, что произойдёт.",
+            "grammar.definition-to-iu": "人生という связывает эту характеристику с названием «жизнь»: вот что называют жизнью.",
+            "grammar.generalization-mono-da": "人生というものだ придаёт фразе обобщающий смысл: непредсказуемость представлена как обычное свойство жизни."
+          }
         }
       ]
     },
@@ -8763,18 +8881,21 @@
             "kanji.u6291"
           ],
           "grammarIds": [
-            "grammar.possession",
             "grammar.standard-ni-shitewa",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.formal-copula",
             "grammar.concessive-ga",
             "grammar.potential",
-            "grammar.negative",
             "grammar.nominal-mono",
-            "grammar.subject",
             "grammar.inanimate-existence"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.standard-ni-shitewa": "齢十七の娘にしては задаёт возрастную мерку: для семнадцатилетней девушки её взгляд на мир необычно трезв.",
+            "grammar.attributive": "達観した определяет 思考 как отстранённый, зрелый взгляд; 抑えられない далее определяет もの.",
+            "grammar.concessive-ga": "であるが противопоставляет её рассудительность тому, чего она всё же не может в себе сдержать.",
+            "grammar.potential": "抑えられない выражает невозможность подавить внутренние побуждения, а не простой отказ это делать.",
+            "grammar.nominal-mono": "もの пока оставляет эти побуждения неназванными; их раскрывают следующие короткие фразы.",
+            "grammar.inanimate-existence": "ものがあった утверждает, что такие неподвластные ей побуждения существовали, несмотря на трезвость её ума."
+          }
         }
       ]
     },
@@ -8829,7 +8950,11 @@
           "grammarIds": [
             "grammar.and",
             "grammar.nominal-fragment"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.and": "と соединяет две названные силы — любопытство и жажду знаний.",
+            "grammar.nominal-fragment": "好奇心と知識欲 без сказуемого раскрывает もの из предыдущего предложения: именно эти побуждения Маомао не могла подавить."
+          }
         }
       ]
     },
@@ -8903,7 +9028,11 @@
           "grammarIds": [
             "grammar.possession",
             "grammar.nominal-fragment"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.possession": "ほんの少しの определяет 正義感, ограничивая его количество: всего лишь немного чувства справедливости.",
+            "grammar.nominal-fragment": "正義感 отдельной именной фразой добавляется к любопытству и жажде знаний как ещё одно несдерживаемое побуждение."
+          }
         }
       ]
     },
@@ -9026,13 +9155,18 @@
           ],
           "grammarIds": [
             "grammar.time-expression",
-            "grammar.topic",
             "grammar.indefinite-aru",
             "grammar.possession",
             "grammar.object",
-            "grammar.outcome-koto-ni-naru",
-            "grammar.plain-form"
-          ]
+            "grammar.outcome-koto-ni-naru"
+          ],
+          "grammarRoles": {
+            "grammar.time-expression": "この数日後 задаёт время будущего эпизода без に: спустя несколько дней после описываемой сцены.",
+            "grammar.indefinite-aru": "ある перед 怪奇 вводит пока не названное загадочное происшествие, которое уточняется дальше.",
+            "grammar.possession": "怪奇の真相 связывает подлинные обстоятельства с этим происшествием: раскрыть нужно именно его тайну.",
+            "grammar.object": "真相を отмечает то, что Маомао предстоит раскрыть, — правду за загадкой.",
+            "grammar.outcome-koto-ni-naru": "暴くことになる предвосхищает дальнейший ход событий: Маомао ещё не планирует расследование, но ей предстоит раскрыть тайну."
+          }
         }
       ]
     },
@@ -9114,9 +9248,14 @@
             "grammar.location",
             "grammar.attributive",
             "grammar.possession",
-            "grammar.plain-form",
             "grammar.nominal-fragment"
-          ]
+          ],
+          "grammarRoles": {
+            "grammar.location": "後宮で обозначает место рождения детей — задний дворец.",
+            "grammar.attributive": "後宮で生まれる определяет 乳幼児: речь о младенцах и маленьких детях, рождённых во дворце.",
+            "grammar.possession": "乳幼児の連続死 указывает, чьи последовательные смерти составляют загадочное происшествие.",
+            "grammar.nominal-fragment": "連続死 завершает отдельную именную фразу, раскрывающую 怪奇 из предыдущего предложения: загадкой станет череда детских смертей."
+          }
         }
       ]
     },
@@ -9244,16 +9383,20 @@
           ],
           "grammarIds": [
             "grammar.possession",
-            "grammar.copula",
             "grammar.quotation",
             "grammar.passive",
-            "grammar.past",
             "grammar.attributive",
-            "grammar.topic",
             "grammar.viewpoint-ni-totte",
-            "grammar.not-anything-demo",
-            "grammar.negative"
-          ]
+            "grammar.not-anything-demo"
+          ],
+          "grammarRoles": {
+            "grammar.possession": "先代の側室の呪い выстраивает приписываемый источник проклятия: наложница прежнего императора.",
+            "grammar.quotation": "呪いだと вводит чужое объяснение смертей: их называли проклятием.",
+            "grammar.passive": "言われた передаёт мнение без названного автора: так говорили о происшествии окружающие.",
+            "grammar.attributive": "先代の側室の呪いだと言われた определяет それ: имеется в виду то самое происшествие, которое считали проклятием.",
+            "grammar.viewpoint-ni-totte": "猫猫にとって задаёт оценку Маомао, отличающуюся от дворцовых слухов.",
+            "grammar.not-anything-demo": "怪奇でもなんでもなかった полностью отвергает сверхъестественную природу событий с её точки зрения: никакой мистики в них не было."
+          }
         }
       ]
     }

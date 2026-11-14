@@ -1,5 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import { z } from 'zod';
+import { canonicalEntityId } from '../../domain/entity-id-migration';
 import { defaultPreferences, type EntityKind, type LearningStatus, type UserOperation } from '../../domain/user-state';
 
 export const GUEST_OWNER = 'guest';
@@ -149,6 +150,15 @@ export interface Diagnostic {
   count: number;
   lastSeen: number;
 }
+export interface SyncDiagnosticEvent {
+  id?: number;
+  occurredAt: number;
+  phase: 'push' | 'pull' | 'local';
+  status?: number;
+  serverCode?: string;
+  batchSize?: number;
+  cursor?: number;
+}
 const diagnosticCodes = ['sync_failed', 'import_failed', 'cache_failed', 'storage_failed'];
 const diagnosticLifetime = 7 * 24 * 60 * 60 * 1000;
 function diagnosticReason(code: string, status?: number): DiagnosticReason {
@@ -206,6 +216,25 @@ function sanitizeDiagnostic(entry: Partial<Diagnostic>): Diagnostic {
       : diagnosticReason(code, status);
   return { code, category, status, reason, level, createdAt, lastSeen, count };
 }
+function sanitizeSyncEvent(entry: Partial<SyncDiagnosticEvent>): SyncDiagnosticEvent {
+  const phase = entry.phase === 'push' || entry.phase === 'pull' ? entry.phase : 'local';
+  const status =
+    Number.isInteger(entry.status) && entry.status! >= 100 && entry.status! <= 599 ? entry.status : undefined;
+  const serverCode =
+    typeof entry.serverCode === 'string' && /^[A-Z0-9_]{3,16}$/.test(entry.serverCode) ? entry.serverCode : undefined;
+  const batchSize = Number.isSafeInteger(entry.batchSize) && entry.batchSize! >= 0 ? entry.batchSize : undefined;
+  const cursor = Number.isSafeInteger(entry.cursor) && entry.cursor! >= 0 ? entry.cursor : undefined;
+  const id = Number.isSafeInteger(entry.id) && entry.id! > 0 ? entry.id : undefined;
+  return {
+    id,
+    occurredAt: Number.isFinite(entry.occurredAt) ? entry.occurredAt! : Date.now(),
+    phase,
+    status,
+    serverCode,
+    batchSize,
+    cursor,
+  };
+}
 
 export class LocalDatabase extends Dexie {
   operations!: Table<UserOperation, string>;
@@ -213,6 +242,7 @@ export class LocalDatabase extends Dexie {
   metadata!: Table<Metadata, string>;
   cache!: Table<CacheEntry, string>;
   diagnostics!: Table<Diagnostic, number>;
+  syncEvents!: Table<SyncDiagnosticEvent, number>;
   constructor(name = 'readfold') {
     super(name);
     this.version(1).stores({
@@ -243,6 +273,7 @@ export class LocalDatabase extends Dexie {
             Object.assign(entry, sanitizeDiagnostic(entry));
           });
       });
+    this.version(4).stores({ syncEvents: '++id, occurredAt' });
   }
 }
 
@@ -409,6 +440,26 @@ export class LocalRepository {
     });
   }
 
+  async recordSyncEvent(event: Omit<SyncDiagnosticEvent, 'id' | 'occurredAt'>): Promise<void> {
+    const safe = sanitizeSyncEvent({ ...event, occurredAt: Date.now() });
+    await this.db.transaction('rw', this.db.syncEvents, async () => {
+      await this.db.syncEvents.add(safe);
+      const cutoff = Date.now() - diagnosticLifetime;
+      await this.db.syncEvents.where('occurredAt').below(cutoff).delete();
+      const overflow = (await this.db.syncEvents.count()) - 200;
+      if (overflow > 0) {
+        const keys = await this.db.syncEvents.orderBy('occurredAt').limit(overflow).primaryKeys();
+        await this.db.syncEvents.bulkDelete(keys);
+      }
+    });
+  }
+
+  async exportSyncEvents(): Promise<SyncDiagnosticEvent[]> {
+    const cutoff = Date.now() - diagnosticLifetime;
+    await this.db.syncEvents.where('occurredAt').below(cutoff).delete();
+    return (await this.db.syncEvents.orderBy('occurredAt').toArray()).map(sanitizeSyncEvent);
+  }
+
   async getCache(key: string): Promise<unknown> {
     return (await this.db.cache.get(key))?.json;
   }
@@ -482,6 +533,8 @@ export function reduceOperations(operations: UserOperation[]) {
   );
   for (const operation of sorted) {
     const payload = operation.payload;
+    // Canonicalize only the projection: persisted and synchronized events are immutable.
+    const entityId = canonicalEntityId(operation.entityId);
     switch (operation.entityKind) {
       case 'reading': {
         const reading = state.readings[operation.entityId] ?? {
@@ -506,19 +559,19 @@ export function reduceOperations(operations: UserOperation[]) {
         break;
       }
       case 'learning': {
-        if (payload.automatic === true && state.learning[operation.entityId]) {
+        if (payload.automatic === true && state.learning[entityId]) {
           break;
         }
         if (['encountered', 'learning', 'known', 'mastered'].includes(String(payload.status))) {
-          state.learning[operation.entityId] = payload.status as LearningStatus;
+          state.learning[entityId] = payload.status as LearningStatus;
         }
         break;
       }
       case 'favorite': {
-        if (payload.active === true && !state.favorites.includes(operation.entityId)) {
-          state.favorites.push(operation.entityId);
+        if (payload.active === true && !state.favorites.includes(entityId)) {
+          state.favorites.push(entityId);
         } else if (payload.active === false) {
-          state.favorites = state.favorites.filter((id) => id !== operation.entityId);
+          state.favorites = state.favorites.filter((id) => id !== entityId);
         }
         break;
       }
@@ -534,7 +587,7 @@ export function reduceOperations(operations: UserOperation[]) {
         break;
       }
       case 'review': {
-        state.reviews.push(operation);
+        state.reviews.push(entityId === operation.entityId ? operation : { ...operation, entityId });
         break;
       }
     }

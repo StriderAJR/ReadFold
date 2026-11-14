@@ -1108,6 +1108,15 @@ footer span {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+.token-word-link ruby,
+.canvas-card-word .canvas-card-primary ruby {
+  ruby-position: over;
+}
+.token-word-link rt,
+.canvas-card-word .canvas-card-primary rt {
+  font-size: 0.45em;
+  font-weight: 400;
+}
 .token-word-body > span,
 .token-word-body > small {
   font: 400 var(--words-size, 16px) 'DM Sans', sans-serif;
@@ -1205,6 +1214,12 @@ footer span {
   gap: 4px 12px;
   padding: 10px 12px;
 }
+.canvas-card-word {
+  grid-template-columns: 4em minmax(0, 1fr);
+}
+.canvas-card-kanji {
+  grid-template-columns: 4em minmax(0, 1fr);
+}
 .canvas-card-primary {
   display: grid;
   place-items: start center;
@@ -1238,6 +1253,13 @@ footer span {
 }
 .canvas-card-primary b {
   font-size: 1em;
+}
+.canvas-card-word .canvas-card-primary b {
+  font-size: 2.5em;
+}
+.canvas-card-word .canvas-card-primary {
+  width: 100%;
+  box-sizing: border-box;
 }
 .canvas-card-body {
   display: grid;
@@ -1667,12 +1689,10 @@ footer span {
   margin: 0;
 }
 @media (max-width: 560px) {
-  .canvas-card-word,
   .canvas-card-kanji {
     grid-template-columns: 3.5em minmax(0, 1fr);
     gap: 6px 12px;
   }
-  .canvas-card-word .canvas-card-primary,
   .canvas-card-kanji .canvas-card-primary {
     display: flex;
     justify-content: center;
@@ -1686,9 +1706,6 @@ footer span {
     text-orientation: mixed;
     overflow-wrap: anywhere;
     text-align: center;
-  }
-  .canvas-card-word .canvas-card-primary {
-    font-size: 1.5em;
   }
   .canvas-card-kanji .canvas-card-primary {
     grid-row: 1 / span 2;

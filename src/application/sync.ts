@@ -5,6 +5,10 @@ export type SyncStatus = 'idle' | 'syncing' | 'synced' | 'offline' | 'auth-requi
 export interface SyncFailure {
   status?: number;
   retryAfter?: string | number;
+  serverCode?: string;
+  phase?: 'push' | 'pull';
+  batchSize?: number;
+  cursor?: number;
 }
 
 export function retryDelay(attempt: number, retryAfter?: string | number, now = Date.now()): number {
@@ -56,6 +60,9 @@ export class SyncEngine {
     this.status = 'syncing';
     const entries = (await this.repository.getOutbox(ownerId)).filter((entry) => entry.nextAttemptAt <= Date.now());
     let pending = entries;
+    let phase: 'push' | 'pull' = entries.length ? 'push' : 'pull';
+    let batchSize = entries.length;
+    let cursor = 0;
     try {
       if (entries.length) {
         const ids = new Set(entries.map((entry) => entry.id));
@@ -64,7 +71,9 @@ export class SyncEngine {
         await this.repository.acknowledge(entries.map((entry) => entry.id));
         pending = [];
       }
-      let cursor = await this.repository.getCursor(ownerId);
+      cursor = await this.repository.getCursor(ownerId);
+      phase = 'pull';
+      batchSize = 0;
       // The remote contract returns a bounded page and its last ledger sequence.
       for (;;) {
         const page = await this.transport.pull(cursor);
@@ -92,6 +101,13 @@ export class SyncEngine {
       const attempt = Math.max(0, ...pending.map((entry) => entry.attempts));
       await this.repository.retry(pending, retryDelay(attempt, failure.retryAfter));
       await this.repository.diagnostic('sync_failed', status);
+      await this.repository.recordSyncEvent({
+        phase: failure.phase ?? phase,
+        status,
+        serverCode: failure.serverCode,
+        batchSize: (failure.phase ?? phase) === 'push' ? failure.batchSize ?? batchSize : undefined,
+        cursor: (failure.phase ?? phase) === 'pull' ? failure.cursor ?? cursor : undefined,
+      });
     }
   }
 }

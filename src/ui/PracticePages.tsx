@@ -251,28 +251,28 @@ export function StatisticsPage() {
     [t('encounteredCount'), Object.keys(learning).length, t('encounteredCount')],
     [
       t('words'),
-      Object.keys(learning).filter((id) => !id.startsWith('kanji.') && !id.startsWith('grammar.')).length,
+      Object.keys(learning).filter((id) => id.startsWith('ja:word:')).length,
       t('words'),
     ],
-    [t('kanji'), Object.keys(learning).filter((id) => id.startsWith('kanji.')).length, t('kanji')],
-    [t('grammar'), Object.keys(learning).filter((id) => id.startsWith('grammar.')).length, t('grammar')],
+    [t('kanji'), Object.keys(learning).filter((id) => id.startsWith('ja:kanji:')).length, t('kanji')],
+    [t('grammar'), Object.keys(learning).filter((id) => id.startsWith('ja:grammar:')).length, t('grammar')],
     [
       t('knownWords'),
       Object.entries(learning).filter(
         ([id, status]) =>
-          !id.startsWith('kanji.') && !id.startsWith('grammar.') && (status === 'known' || status === 'mastered'),
+          id.startsWith('ja:word:') && (status === 'known' || status === 'mastered'),
       ).length,
       t('known'),
     ],
     [
       t('learningKanji'),
-      Object.entries(learning).filter(([id, status]) => id.startsWith('kanji.') && status === 'learning').length,
+      Object.entries(learning).filter(([id, status]) => id.startsWith('ja:kanji:') && status === 'learning').length,
       t('markLearning'),
     ],
     [
       t('learnedGrammar'),
       Object.entries(learning).filter(
-        ([id, status]) => id.startsWith('grammar.') && (status === 'known' || status === 'mastered'),
+        ([id, status]) => id.startsWith('ja:grammar:') && (status === 'known' || status === 'mastered'),
       ).length,
       t('known'),
     ],
