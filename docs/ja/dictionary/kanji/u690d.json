@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:植",
+      "character": "植",
+      "meanings": [
+        "сажать"
+      ],
+      "on": [
+        "ショク"
+      ],
+      "kun": [
+        "うえる",
+        "うわる"
+      ],
+      "components": [
+        "木",
+        "直"
+      ],
+      "componentMeanings": {
+        "木": "дерево",
+        "直": "прямой"
+      },
+      "wordIds": [
+        "ja:word:植物"
+      ],
+      "mnemonic": "Дерево слева сажают прямо, сверяясь с прямой опорой справа."
+    }
+  ]
+}

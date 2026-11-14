@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:grammar:past": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s002"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s052"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s058"
+      }
+    ]
+  }
+}

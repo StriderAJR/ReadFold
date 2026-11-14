@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:到",
+      "character": "到",
+      "meanings": [
+        "достигать"
+      ],
+      "on": [
+        "トウ"
+      ],
+      "kun": [
+        "いたる"
+      ],
+      "components": [
+        "至",
+        "刂"
+      ],
+      "componentMeanings": {
+        "至": "достигать",
+        "刂": "нож"
+      },
+      "wordIds": [
+        "ja:word:到底"
+      ],
+      "mnemonic": "Добрался до цели слева и воткнул справа нож как отметку: достиг!"
+    }
+  ]
+}

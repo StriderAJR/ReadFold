@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:草",
+      "character": "草",
+      "meanings": [
+        "трава"
+      ],
+      "on": [
+        "ソウ"
+      ],
+      "kun": [
+        "くさ",
+        "ぐさ"
+      ],
+      "components": [
+        "艹",
+        "早"
+      ],
+      "wordIds": [
+        "ja:word:薬草"
+      ],
+      "mnemonic": "Рано 早 утром над землёй уже торчит трава 艹: она выросла раньше нас.",
+      "componentMeanings": {
+        "艹": "трава",
+        "早": "рано"
+      }
+    }
+  ]
+}

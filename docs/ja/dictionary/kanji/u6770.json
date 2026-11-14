@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:杰",
+      "character": "杰",
+      "meanings": [
+        "выдающийся"
+      ],
+      "on": [
+        "ケツ"
+      ],
+      "kun": [],
+      "components": [
+        "木",
+        "灬"
+      ],
+      "componentMeanings": {
+        "木": "дерево",
+        "灬": "четыре огня"
+      },
+      "wordIds": [],
+      "mnemonic": "Дерево стоит над четырьмя огнями и не сгорает: выдающееся дерево!"
+    }
+  ]
+}

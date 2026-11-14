@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:阝",
+      "character": "阝",
+      "meanings": [
+        "холм или поселение; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "こざとへん",
+        "おおざと"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Вертикальный склон с выступами отмечает холм слева или поселение справа."
+    }
+  ]
+}

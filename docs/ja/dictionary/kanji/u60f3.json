@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:想",
+      "character": "想",
+      "meanings": [
+        "мысль"
+      ],
+      "on": [
+        "ソウ",
+        "ソ"
+      ],
+      "kun": [
+        "おもう"
+      ],
+      "components": [
+        "木",
+        "目",
+        "心"
+      ],
+      "wordIds": [
+        "ja:word:予想する",
+        "ja:word:無愛想"
+      ],
+      "mnemonic": "Глаз смотрит на дерево, а в сердце под ним рождается мысль о лесе.",
+      "componentMeanings": {
+        "木": "дерево",
+        "目": "глаз",
+        "心": "сердце"
+      }
+    }
+  ]
+}

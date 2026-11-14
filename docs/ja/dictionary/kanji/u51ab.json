@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:冫",
+      "character": "冫",
+      "meanings": [
+        "лёд; две капли"
+      ],
+      "on": [],
+      "kun": [
+        "にすい"
+      ],
+      "components": [
+        "丶"
+      ],
+      "componentMeanings": {
+        "丶": "точка"
+      },
+      "wordIds": [],
+      "mnemonic": "Две холодные капли застыли рядом друг с другом."
+    }
+  ]
+}

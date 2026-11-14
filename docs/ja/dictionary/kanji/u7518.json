@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:甘",
+      "character": "甘",
+      "meanings": [
+        "сладкий"
+      ],
+      "on": [
+        "カン"
+      ],
+      "kun": [
+        "あまい",
+        "あまえる",
+        "あまやかす",
+        "うまい"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:甘ったるい",
+        "ja:word:甘い"
+      ],
+      "mnemonic": "Рот с лакомством посередине: держу сладость на языке и не хочу отпускать.",
+      "componentMeanings": {}
+    }
+  ]
+}

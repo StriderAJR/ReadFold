@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:梅",
+      "character": "梅",
+      "meanings": [
+        "слива"
+      ],
+      "on": [
+        "バイ"
+      ],
+      "kun": [
+        "うめ"
+      ],
+      "components": [
+        "木",
+        "毎"
+      ],
+      "wordIds": [
+        "ja:word:梅"
+      ],
+      "componentMeanings": {
+        "木": "дерево",
+        "毎": "каждый"
+      },
+      "mnemonic": "У этого дерева каждый год жду сладких слив."
+    }
+  ]
+}

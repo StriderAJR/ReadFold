@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:康",
+      "character": "康",
+      "meanings": [
+        "здоровье"
+      ],
+      "on": [
+        "コウ"
+      ],
+      "kun": [],
+      "components": [
+        "广",
+        "隶"
+      ],
+      "componentMeanings": {
+        "广": "навес",
+        "隶": "рука над брызгами воды"
+      },
+      "wordIds": [
+        "ja:word:健康的"
+      ],
+      "mnemonic": "Под навесом рука плещется в воде: моем руки ради здоровья."
+    }
+  ]
+}

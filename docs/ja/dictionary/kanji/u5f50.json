@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:彐",
+      "character": "彐",
+      "meanings": [
+        "голова; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "けいがしら"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Угловатая голова в профиль: три черты — макушка, нос и подбородок."
+    }
+  ]
+}

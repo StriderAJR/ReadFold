@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:kanji:美": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s003"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s012"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s049"
+      }
+    ]
+  }
+}

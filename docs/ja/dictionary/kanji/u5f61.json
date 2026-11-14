@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:彡",
+      "character": "彡",
+      "meanings": [
+        "три штриха; узор"
+      ],
+      "on": [],
+      "kun": [
+        "さんづくり"
+      ],
+      "components": [
+        "ノ"
+      ],
+      "componentMeanings": {
+        "ノ": "косая прядь"
+      },
+      "wordIds": [],
+      "mnemonic": "Три одинаковые косые пряди образуют узор."
+    }
+  ]
+}

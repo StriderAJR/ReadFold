@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:丨",
+      "character": "丨",
+      "meanings": [
+        "вертикальный штрих"
+      ],
+      "on": [],
+      "kun": [
+        "たてぼう"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Один прямой штрих стоит, словно вертикальный столб."
+    }
+  ]
+}

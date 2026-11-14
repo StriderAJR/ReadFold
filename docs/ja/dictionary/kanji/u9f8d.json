@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:龍",
+      "character": "龍",
+      "meanings": [
+        "дракон"
+      ],
+      "on": [
+        "リュウ",
+        "ロウ"
+      ],
+      "kun": [
+        "たつ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "У дракона голова высоко поднята, а длинное тело справа свёрнуто несколькими изгибами."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:己",
+      "character": "己",
+      "meanings": [
+        "сам"
+      ],
+      "on": [
+        "コ",
+        "キ"
+      ],
+      "kun": [
+        "おのれ",
+        "つちのと",
+        "な"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:己"
+      ],
+      "mnemonic": "Контур заворачивается внутрь, но оставляет вход: я сам захожу в свой уголок.",
+      "componentMeanings": {}
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:書",
+      "character": "書",
+      "meanings": [
+        "писать"
+      ],
+      "on": [
+        "ショ"
+      ],
+      "kun": [
+        "かく",
+        "がき"
+      ],
+      "components": [
+        "聿",
+        "日"
+      ],
+      "componentMeanings": {
+        "聿": "кисть",
+        "日": "солнце"
+      },
+      "wordIds": [
+        "ja:word:書く"
+      ],
+      "mnemonic": "Кисть сверху пишет при свете солнца внизу: дневная запись."
+    }
+  ]
+}

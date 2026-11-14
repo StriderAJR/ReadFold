@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:廾",
+      "character": "廾",
+      "meanings": [
+        "две руки"
+      ],
+      "on": [],
+      "kun": [
+        "にじゅうあし"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две руки поднялись снизу и вместе держат горизонтальную перекладину."
+    }
+  ]
+}

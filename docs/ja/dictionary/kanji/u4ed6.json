@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:他",
+      "character": "他",
+      "meanings": [
+        "другой"
+      ],
+      "on": [
+        "タ"
+      ],
+      "kun": [
+        "ほか"
+      ],
+      "components": [
+        "亻",
+        "也"
+      ],
+      "wordIds": [
+        "ja:word:他"
+      ],
+      "mnemonic": "Человек слева увидел справа вешалку с чужим пальто: здесь уже был другой.",
+      "componentMeanings": {
+        "亻": "человек",
+        "也": "вешалка с крючками"
+      }
+    }
+  ]
+}

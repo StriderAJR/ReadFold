@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:禾",
+      "character": "禾",
+      "meanings": [
+        "колос"
+      ],
+      "on": [
+        "カ"
+      ],
+      "kun": [
+        "のぎ"
+      ],
+      "components": [
+        "ノ",
+        "木"
+      ],
+      "componentMeanings": {
+        "ノ": "поникший колос",
+        "木": "стебель с листьями"
+      },
+      "wordIds": [],
+      "mnemonic": "На стебле с листьями 木 сверху поник тяжёлый колос ノ."
+    }
+  ]
+}

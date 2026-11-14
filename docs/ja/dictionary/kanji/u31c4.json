@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:㇄",
+      "character": "㇄",
+      "meanings": [
+        "вертикальный штрих с изгибом; японское описание формы"
+      ],
+      "on": [],
+      "kun": [
+        "たてまがり"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Линия спускается вниз и закругляется вправо без верхнего крючка."
+    }
+  ]
+}

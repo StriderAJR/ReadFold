@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:工",
+      "character": "工",
+      "meanings": [
+        "работа; ремесло"
+      ],
+      "on": [
+        "コウ",
+        "ク"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две доски соединены стойкой: мастер проверяет свою работу."
+    }
+  ]
+}

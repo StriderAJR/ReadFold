@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:臣",
+      "character": "臣",
+      "meanings": [
+        "подданный; министр"
+      ],
+      "on": [
+        "シン",
+        "ジン"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Глаз в вертикальной рамке внимательно следит за приказом правителя."
+    }
+  ]
+}

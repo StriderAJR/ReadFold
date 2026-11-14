@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:折",
+      "character": "折",
+      "meanings": [
+        "сгибать"
+      ],
+      "on": [
+        "セツ",
+        "シャク"
+      ],
+      "kun": [
+        "おる",
+        "おり",
+        "おれる"
+      ],
+      "components": [
+        "扌",
+        "斤"
+      ],
+      "wordIds": [
+        "ja:word:折る"
+      ],
+      "mnemonic": "Рука сгибает ветку о рукоять топора, пока та не ломается.",
+      "componentMeanings": {
+        "扌": "рука",
+        "斤": "топор"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:廷",
+      "character": "廷",
+      "meanings": [
+        "двор"
+      ],
+      "on": [
+        "テイ"
+      ],
+      "kun": [],
+      "components": [
+        "廴",
+        "壬"
+      ],
+      "wordIds": [
+        "ja:word:宮廷"
+      ],
+      "mnemonic": "Длинная дорожка ведёт к человеку на помосте посреди дворцового двора.",
+      "componentMeanings": {
+        "廴": "длинная дорожка",
+        "壬": "человек на помосте"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:層",
+      "character": "層",
+      "meanings": [
+        "слой"
+      ],
+      "on": [
+        "ソウ"
+      ],
+      "kun": [],
+      "components": [
+        "尸",
+        "曾"
+      ],
+      "componentMeanings": {
+        "尸": "крыша",
+        "曾": "стопка коробок"
+      },
+      "wordIds": [
+        "ja:word:最下層"
+      ],
+      "mnemonic": "Под крышей коробки стоят одна на другой: слой за слоем."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:終",
+      "character": "終",
+      "meanings": [
+        "конец"
+      ],
+      "on": [
+        "シュウ"
+      ],
+      "kun": [
+        "おわる",
+        "おえる",
+        "つい",
+        "ついに"
+      ],
+      "components": [
+        "糸",
+        "冬"
+      ],
+      "wordIds": [
+        "ja:word:終わらせる"
+      ],
+      "componentMeanings": {
+        "糸": "нить",
+        "冬": "зима"
+      },
+      "mnemonic": "Нить 糸 календаря дотянулась до зимы 冬: году конец."
+    }
+  ]
+}

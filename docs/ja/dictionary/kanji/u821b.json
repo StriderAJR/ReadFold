@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:舛",
+      "character": "舛",
+      "meanings": [
+        "противоположные направления"
+      ],
+      "on": [
+        "セン"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две ноги развернулись в разные стороны и расходятся."
+    }
+  ]
+}

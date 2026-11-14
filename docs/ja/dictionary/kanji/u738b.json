@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:王",
+      "character": "王",
+      "meanings": [
+        "царь"
+      ],
+      "on": [
+        "オウ"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Три горизонтальные ступени и один царский посох сквозь них: царь правит на всех уровнях."
+    }
+  ]
+}

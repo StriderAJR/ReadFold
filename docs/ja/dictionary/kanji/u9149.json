@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:酉",
+      "character": "酉",
+      "meanings": [
+        "сосуд для вина; знак петуха"
+      ],
+      "on": [
+        "ユウ"
+      ],
+      "kun": [
+        "とり"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "В закрытом кувшине видна горизонтальная поверхность вина: представь сосуд, наполненный до этой черты."
+    }
+  ]
+}

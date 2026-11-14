@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:夂",
+      "character": "夂",
+      "meanings": [
+        "следующая нога; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "ふゆがしら"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Нога делает шаг вниз, оставляя за собой перекрещённый след."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:濯",
+      "character": "濯",
+      "meanings": [
+        "полоскать"
+      ],
+      "on": [
+        "タク"
+      ],
+      "kun": [
+        "すすぐ",
+        "ゆすぐ"
+      ],
+      "components": [
+        "氵",
+        "羽",
+        "隹"
+      ],
+      "componentMeanings": {
+        "氵": "вода",
+        "羽": "крылья",
+        "隹": "птица"
+      },
+      "wordIds": [
+        "ja:word:洗濯籠",
+        "ja:word:洗濯物",
+        "ja:word:洗濯済み"
+      ],
+      "mnemonic": "В воде слева птица справа полощет расправленные над ней крылья."
+    }
+  ]
+}

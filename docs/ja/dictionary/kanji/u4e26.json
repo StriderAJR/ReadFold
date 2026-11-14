@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:並",
+      "character": "並",
+      "meanings": [
+        "выстраивать"
+      ],
+      "on": [
+        "ヘイ",
+        "ホウ"
+      ],
+      "kun": [
+        "なみ",
+        "ならべる",
+        "ならぶ",
+        "ならびに"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [
+        "ja:word:並べる"
+      ],
+      "mnemonic": "Две одинаковые стойки под короткими рожками стоят на общей полке: их выстроили рядом."
+    }
+  ]
+}

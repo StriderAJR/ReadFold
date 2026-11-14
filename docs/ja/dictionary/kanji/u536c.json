@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:卬",
+      "character": "卬",
+      "meanings": [
+        "поднимать; высокий"
+      ],
+      "on": [
+        "ギョウ",
+        "ゴウ"
+      ],
+      "kun": [
+        "あおぐ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Слева высокая фигура выпрямилась, справа фигура согнула колени: слева голова поднята выше."
+    }
+  ]
+}

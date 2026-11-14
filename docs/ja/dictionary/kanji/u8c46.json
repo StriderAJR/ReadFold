@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:豆",
+      "character": "豆",
+      "meanings": [
+        "бобы"
+      ],
+      "on": [
+        "トウ",
+        "ズ"
+      ],
+      "kun": [
+        "まめ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Представь боб в квадратной чаше на ножке: сверху крышка, внизу широкая подставка."
+    }
+  ]
+}

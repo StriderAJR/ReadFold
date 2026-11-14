@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:｜",
+      "character": "｜",
+      "meanings": [
+        "вертикальная черта"
+      ],
+      "on": [],
+      "kun": [
+        "たてぼう"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Прямая палочка стоит вертикально от верха до низа."
+    }
+  ]
+}

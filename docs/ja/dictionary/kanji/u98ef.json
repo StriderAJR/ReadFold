@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:飯",
+      "character": "飯",
+      "meanings": [
+        "рис, еда"
+      ],
+      "on": [
+        "ハン"
+      ],
+      "kun": [
+        "めし"
+      ],
+      "components": [
+        "飠",
+        "厂",
+        "又"
+      ],
+      "wordIds": [
+        "ja:word:飯"
+      ],
+      "mnemonic": "Под навесом 厂 рука 又 подаёт еду 飠: в миске горячий варёный рис.",
+      "componentMeanings": {
+        "飠": "еда",
+        "厂": "навес",
+        "又": "рука"
+      }
+    }
+  ]
+}

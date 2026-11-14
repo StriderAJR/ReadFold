@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:方",
+      "character": "方",
+      "meanings": [
+        "направление"
+      ],
+      "on": [
+        "ホウ"
+      ],
+      "kun": [
+        "かた",
+        "がた"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:一方"
+      ],
+      "mnemonic": "Флажок на наклонном древке указывает направление ветра.",
+      "componentMeanings": {}
+    }
+  ]
+}

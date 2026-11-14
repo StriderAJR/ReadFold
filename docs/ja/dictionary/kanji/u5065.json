@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:健",
+      "character": "健",
+      "meanings": [
+        "здоровый"
+      ],
+      "on": [
+        "ケン"
+      ],
+      "kun": [
+        "すこやか"
+      ],
+      "components": [
+        "亻",
+        "建"
+      ],
+      "componentMeanings": {
+        "亻": "человек",
+        "建": "строить"
+      },
+      "wordIds": [
+        "ja:word:健康的"
+      ],
+      "mnemonic": "Человек слева весь день строит справа дом и не устаёт: какой здоровый!"
+    }
+  ]
+}

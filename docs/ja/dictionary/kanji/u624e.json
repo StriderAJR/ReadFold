@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:扎",
+      "character": "扎",
+      "meanings": [
+        "колоть; втыкать"
+      ],
+      "on": [
+        "サツ"
+      ],
+      "kun": [],
+      "components": [
+        "扌",
+        "乙"
+      ],
+      "componentMeanings": {
+        "扌": "рука",
+        "乙": "крючок"
+      },
+      "wordIds": [],
+      "mnemonic": "Рука слева втыкает крючок справа в подушку."
+    }
+  ]
+}

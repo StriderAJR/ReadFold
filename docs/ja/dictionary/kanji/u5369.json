@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:卩",
+      "character": "卩",
+      "meanings": [
+        "печать; коленопреклонённая фигура"
+      ],
+      "on": [],
+      "kun": [
+        "ふしづくり"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Фигура согнула колени, словно опустилась на колено перед печатью."
+    }
+  ]
+}

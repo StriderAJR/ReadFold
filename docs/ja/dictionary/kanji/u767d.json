@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:白",
+      "character": "白",
+      "meanings": [
+        "белый"
+      ],
+      "on": [
+        "ハク",
+        "ビャク"
+      ],
+      "kun": [
+        "しろ",
+        "しら",
+        "しろい"
+      ],
+      "components": [
+        "ノ",
+        "日"
+      ],
+      "componentMeanings": {
+        "ノ": "луч",
+        "日": "солнце"
+      },
+      "wordIds": [
+        "ja:word:白い"
+      ],
+      "mnemonic": "К солнцу 日 сверху добавили луч ノ: свет стал ослепительно белым."
+    }
+  ]
+}

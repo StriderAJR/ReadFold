@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:米",
+      "character": "米",
+      "meanings": [
+        "рис"
+      ],
+      "on": [
+        "ベイ",
+        "マイ"
+      ],
+      "kun": [
+        "こめ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "От центрального стебля расходятся рисовые зёрна."
+    }
+  ]
+}

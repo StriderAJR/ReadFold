@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:冎",
+      "character": "冎",
+      "meanings": [
+        "кости; костяная рамка"
+      ],
+      "on": [
+        "カ"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Наружная рамка 冂 окружает дополнительный внутренний выступ, словно контур сустава."
+    }
+  ]
+}

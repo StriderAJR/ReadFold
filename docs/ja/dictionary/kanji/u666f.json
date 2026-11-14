@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:景",
+      "character": "景",
+      "meanings": [
+        "пейзаж"
+      ],
+      "on": [
+        "ケイ"
+      ],
+      "kun": [],
+      "components": [
+        "日",
+        "京"
+      ],
+      "componentMeanings": {
+        "日": "солнце",
+        "京": "городская башня"
+      },
+      "wordIds": [
+        "ja:word:殺風景"
+      ],
+      "mnemonic": "Солнце над городской башней: красивый пейзаж для открытки."
+    }
+  ]
+}

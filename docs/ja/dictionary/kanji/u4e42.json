@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:乂",
+      "character": "乂",
+      "meanings": [
+        "скрещённые штрихи; упорядочивать"
+      ],
+      "on": [
+        "ガイ"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Два косых штриха ставят крест на беспорядке: всё упорядочено."
+    }
+  ]
+}

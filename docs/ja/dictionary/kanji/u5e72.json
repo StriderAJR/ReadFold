@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:干",
+      "character": "干",
+      "meanings": [
+        "сушить; вмешиваться"
+      ],
+      "on": [
+        "カン"
+      ],
+      "kun": [
+        "ほす",
+        "ひる"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "На вертикальной стойке с перекладинами развесили вещи сушиться."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:也",
+      "character": "也",
+      "meanings": [
+        "быть; связка"
+      ],
+      "on": [
+        "ヤ"
+      ],
+      "kun": [
+        "なり"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Длинный нижний крюк и торчащие сверху крючки похожи на вешалку: пусть здесь будет одежда."
+    }
+  ]
+}

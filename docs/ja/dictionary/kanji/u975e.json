@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:非",
+      "character": "非",
+      "meanings": [
+        "не; отрицание"
+      ],
+      "on": [
+        "ヒ"
+      ],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две стороны отвернулись друг от друга и отказываются соединяться."
+    }
+  ]
+}

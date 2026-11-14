@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:阡",
+      "character": "阡",
+      "meanings": [
+        "межа между полями"
+      ],
+      "on": [
+        "セン"
+      ],
+      "kun": [],
+      "components": [
+        "阝",
+        "千"
+      ],
+      "componentMeanings": {
+        "阝": "холм",
+        "千": "тысяча"
+      },
+      "wordIds": [],
+      "mnemonic": "У холма 阝 тысяча 千 полей: между ними тянутся узкие межи."
+    }
+  ]
+}

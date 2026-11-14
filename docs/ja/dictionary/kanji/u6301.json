@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:持",
+      "character": "持",
+      "meanings": [
+        "держать"
+      ],
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "もつ",
+        "もち",
+        "もてる"
+      ],
+      "components": [
+        "扌",
+        "寺"
+      ],
+      "componentMeanings": {
+        "扌": "рука",
+        "寺": "храм"
+      },
+      "wordIds": [
+        "ja:word:持ち手",
+        "ja:word:持つ",
+        "ja:word:位持ち",
+        "ja:word:持ち主"
+      ],
+      "mnemonic": "Огромная рука слева держит целый храм справа: крепкая хватка!"
+    }
+  ]
+}

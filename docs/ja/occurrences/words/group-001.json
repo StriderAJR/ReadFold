@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:word:朝": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      }
+    ],
+    "ja:word:私": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:は": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:公園": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:へ": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:行く": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s1"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:に": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:小さな": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      }
+    ],
+    "ja:word:猫": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:が": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      }
+    ],
+    "ja:word:いる": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s2"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      }
+    ],
+    "ja:word:木": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      }
+    ],
+    "ja:word:の": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      }
+    ],
+    "ja:word:下": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s5"
+      }
+    ],
+    "ja:word:で": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      }
+    ],
+    "ja:word:水": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:を": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      },
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:飲む": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-1",
+        "chapterPath": "books/demo/chapter-1.json",
+        "sentenceId": "demo.s3"
+      }
+    ],
+    "ja:word:次": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:日": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:また": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ],
+    "ja:word:あげる": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s6"
+      }
+    ],
+    "ja:word:露天": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s001"
+      }
+    ],
+    "ja:word:串焼き": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-1",
+        "chapterPath": "books/apothecary-diaries/chapter-1.json",
+        "sentenceId": "apothecary-diaries.chapter-1.s001"
+      }
+    ]
+  }
+}

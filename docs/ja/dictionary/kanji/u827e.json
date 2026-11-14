@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:艾",
+      "character": "艾",
+      "meanings": [
+        "полынь"
+      ],
+      "on": [
+        "ガイ"
+      ],
+      "kun": [
+        "よもぎ"
+      ],
+      "components": [
+        "艹",
+        "乂"
+      ],
+      "componentMeanings": {
+        "艹": "трава",
+        "乂": "скрещённые ножницы"
+      },
+      "wordIds": [],
+      "mnemonic": "Под травой 艹 скрестились ножницы 乂: ими срезают горькую полынь."
+    }
+  ]
+}

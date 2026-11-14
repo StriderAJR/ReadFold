@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:息",
+      "character": "息",
+      "meanings": [
+        "дыхание"
+      ],
+      "on": [
+        "ソク"
+      ],
+      "kun": [
+        "いき"
+      ],
+      "components": [
+        "自",
+        "心"
+      ],
+      "wordIds": [
+        "ja:word:溜息"
+      ],
+      "mnemonic": "Нос над сердцем: вдыхаю носом и чувствую, как спокойно бьётся сердце.",
+      "componentMeanings": {
+        "自": "нос",
+        "心": "сердце"
+      }
+    }
+  ]
+}

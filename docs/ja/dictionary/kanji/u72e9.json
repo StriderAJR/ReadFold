@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:狩",
+      "character": "狩",
+      "meanings": [
+        "охота"
+      ],
+      "on": [
+        "シュ"
+      ],
+      "kun": [
+        "かる",
+        "かり",
+        "がり"
+      ],
+      "components": [
+        "犭",
+        "守"
+      ],
+      "wordIds": [
+        "ja:word:女狩り"
+      ],
+      "mnemonic": "Зверь слева, страж справа: страж выслеживает зверя на охоте.",
+      "componentMeanings": {
+        "犭": "зверь",
+        "守": "страж"
+      }
+    }
+  ]
+}

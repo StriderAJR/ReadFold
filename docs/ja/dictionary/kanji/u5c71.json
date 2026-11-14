@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:山",
+      "character": "山",
+      "meanings": [
+        "гора"
+      ],
+      "on": [
+        "サン"
+      ],
+      "kun": [
+        "やま"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Три вершины стоят рядом; средняя гора выше остальных."
+    }
+  ]
+}

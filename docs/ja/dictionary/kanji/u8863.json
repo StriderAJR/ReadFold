@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:衣",
+      "character": "衣",
+      "meanings": [
+        "одежда"
+      ],
+      "on": [
+        "イ",
+        "エ"
+      ],
+      "kun": [
+        "ころも",
+        "きぬ",
+        "ぎ"
+      ],
+      "components": [
+        "亠",
+        "𧘇"
+      ],
+      "wordIds": [
+        "ja:word:衣"
+      ],
+      "mnemonic": "С вешалки 亠 свисают расходящиеся полы 𧘇: на ней висит одежда.",
+      "componentMeanings": {
+        "亠": "вешалка",
+        "𧘇": "полы одежды"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:羊",
+      "character": "羊",
+      "meanings": [
+        "овца"
+      ],
+      "on": [
+        "ヨウ"
+      ],
+      "kun": [
+        "ひつじ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Два рога торчат над мордой овцы."
+    }
+  ]
+}

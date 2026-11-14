@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:考",
+      "character": "考",
+      "meanings": [
+        "думать"
+      ],
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "かんがえる",
+        "かんがえ"
+      ],
+      "components": [
+        "耂",
+        "丂"
+      ],
+      "componentMeanings": {
+        "耂": "согнутая спина с палкой",
+        "丂": "скамейка"
+      },
+      "wordIds": [
+        "ja:word:考える",
+        "ja:word:考え",
+        "ja:word:思考"
+      ],
+      "mnemonic": "Старик с согнутой спиной 耂 присел на скамейку 丂 и думает."
+    }
+  ]
+}

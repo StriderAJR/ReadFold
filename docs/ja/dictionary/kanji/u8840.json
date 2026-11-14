@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:血",
+      "character": "血",
+      "meanings": [
+        "кровь"
+      ],
+      "on": [
+        "ケツ"
+      ],
+      "kun": [
+        "ち"
+      ],
+      "components": [
+        "ノ",
+        "皿"
+      ],
+      "componentMeanings": {
+        "ノ": "капля",
+        "皿": "блюдце"
+      },
+      "wordIds": [
+        "ja:word:血縁"
+      ],
+      "mnemonic": "Одна капля ノ упала сверху в блюдце 皿: в нём кровь."
+    }
+  ]
+}

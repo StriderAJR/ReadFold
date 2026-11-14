@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:娘",
+      "character": "娘",
+      "meanings": [
+        "дочь"
+      ],
+      "on": [
+        "ジョウ"
+      ],
+      "kun": [
+        "むすめ",
+        "こ"
+      ],
+      "components": [
+        "女",
+        "良"
+      ],
+      "wordIds": [
+        "ja:word:娘"
+      ],
+      "mnemonic": "Женщина слева отбирает лучшее зерно 良 для дочери.",
+      "componentMeanings": {
+        "女": "женщина",
+        "良": "хорошее; отборное"
+      }
+    }
+  ]
+}

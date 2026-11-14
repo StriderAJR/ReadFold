@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:牡",
+      "character": "牡",
+      "meanings": [
+        "самец"
+      ],
+      "on": [
+        "ボ"
+      ],
+      "kun": [
+        "おす"
+      ],
+      "components": [
+        "牜",
+        "土"
+      ],
+      "componentMeanings": {
+        "牜": "бык",
+        "土": "земля"
+      },
+      "wordIds": [
+        "ja:word:牡丹"
+      ],
+      "mnemonic": "Бык слева топает по земле справа: самец защищает территорию."
+    }
+  ]
+}

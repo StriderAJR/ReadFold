@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:㇏",
+      "character": "㇏",
+      "meanings": [
+        "правый нисходящий росчерк"
+      ],
+      "on": [],
+      "kun": [
+        "みぎはらい"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Штрих уходит вправо вниз и расширяется перед отрывом кисти."
+    }
+  ]
+}

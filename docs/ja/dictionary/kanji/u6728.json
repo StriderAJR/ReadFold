@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:木",
+      "character": "木",
+      "meanings": [
+        "дерево"
+      ],
+      "on": [
+        "モク",
+        "ボク"
+      ],
+      "kun": [
+        "き",
+        "こ"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:木"
+      ],
+      "componentMeanings": {},
+      "mnemonic": "Ствол, ветви и корни складываются в силуэт дерева."
+    }
+  ]
+}

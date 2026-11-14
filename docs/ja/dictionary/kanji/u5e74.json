@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:年",
+      "character": "年",
+      "meanings": [
+        "год"
+      ],
+      "on": [
+        "ネン"
+      ],
+      "kun": [
+        "とし"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:二年"
+      ],
+      "mnemonic": "Шесть штрихов похожи на стебель с колосом: созрел урожай — прошёл год.",
+      "componentMeanings": {}
+    }
+  ]
+}

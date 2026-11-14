@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:抱",
+      "character": "抱",
+      "meanings": [
+        "обнимать"
+      ],
+      "on": [
+        "ホウ"
+      ],
+      "kun": [
+        "だく",
+        "いだく",
+        "かかえる"
+      ],
+      "components": [
+        "扌",
+        "包"
+      ],
+      "componentMeanings": {
+        "扌": "рука",
+        "包": "свёрток"
+      },
+      "wordIds": [
+        "ja:word:抱える"
+      ],
+      "mnemonic": "Рука слева крепко прижимает свёрток справа: обнимает его."
+    }
+  ]
+}

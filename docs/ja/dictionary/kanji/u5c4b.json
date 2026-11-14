@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:屋",
+      "character": "屋",
+      "meanings": [
+        "лавка, дом"
+      ],
+      "on": [
+        "オク"
+      ],
+      "kun": [
+        "や"
+      ],
+      "components": [
+        "尸",
+        "至"
+      ],
+      "wordIds": [
+        "ja:word:薬屋",
+        "ja:word:部屋",
+        "ja:word:部屋付"
+      ],
+      "mnemonic": "Добрался под крышу — наконец-то дома!",
+      "componentMeanings": {
+        "尸": "крыша",
+        "至": "добраться"
+      }
+    }
+  ]
+}

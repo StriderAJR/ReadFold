@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:特",
+      "character": "特",
+      "meanings": [
+        "особый"
+      ],
+      "on": [
+        "トク"
+      ],
+      "kun": [],
+      "components": [
+        "牜",
+        "寺"
+      ],
+      "componentMeanings": {
+        "牜": "корова",
+        "寺": "храм"
+      },
+      "wordIds": [
+        "ja:word:特に"
+      ],
+      "mnemonic": "Корова у храма: её нарядили для праздника, она особенная."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:彑",
+      "character": "彑",
+      "meanings": [
+        "угловатая голова; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "けいがしら"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Угловатая голова наклонилась: косой лоб сверху, вытянутый подбородок снизу."
+    }
+  ]
+}

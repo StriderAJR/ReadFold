@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:禁",
+      "character": "禁",
+      "meanings": [
+        "запрещать"
+      ],
+      "on": [
+        "キン"
+      ],
+      "kun": [],
+      "components": [
+        "木",
+        "示"
+      ],
+      "componentMeanings": {
+        "木": "дерево",
+        "示": "алтарь"
+      },
+      "wordIds": [
+        "ja:word:禁制"
+      ],
+      "mnemonic": "Между двумя деревьями стоит алтарь: вход запрещён."
+    }
+  ]
+}

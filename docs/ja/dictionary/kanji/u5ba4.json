@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:室",
+      "character": "室",
+      "meanings": [
+        "комната"
+      ],
+      "on": [
+        "シツ"
+      ],
+      "kun": [
+        "むろ"
+      ],
+      "components": [
+        "宀",
+        "至"
+      ],
+      "wordIds": [
+        "ja:word:個室",
+        "ja:word:側室"
+      ],
+      "mnemonic": "Под крышей стрела дошла до земли и застряла: добралась до нашей комнаты.",
+      "componentMeanings": {
+        "宀": "крыша",
+        "至": "стрела, дошедшая до земли"
+      }
+    }
+  ]
+}

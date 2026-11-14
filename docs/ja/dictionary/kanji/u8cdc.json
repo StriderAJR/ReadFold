@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:賜",
+      "character": "賜",
+      "meanings": [
+        "даровать"
+      ],
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "たまわる",
+        "たまう",
+        "たもう"
+      ],
+      "components": [
+        "貝",
+        "易"
+      ],
+      "wordIds": [
+        "ja:word:下賜する"
+      ],
+      "mnemonic": "Ценную раковину 貝 отдают легко 易, без торга: её даруют.",
+      "componentMeanings": {
+        "貝": "ценная раковина",
+        "易": "легко"
+      }
+    }
+  ]
+}

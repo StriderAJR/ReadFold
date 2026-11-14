@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:置",
+      "character": "置",
+      "meanings": [
+        "класть"
+      ],
+      "on": [
+        "チ"
+      ],
+      "kun": [
+        "おく",
+        "おき"
+      ],
+      "components": [
+        "罒",
+        "直"
+      ],
+      "componentMeanings": {
+        "罒": "сетка",
+        "直": "прямой стеллаж"
+      },
+      "wordIds": [
+        "ja:word:置く"
+      ],
+      "mnemonic": "Сетку 罒 положили сверху на прямой стеллаж 直: пусть лежит на месте."
+    }
+  ]
+}

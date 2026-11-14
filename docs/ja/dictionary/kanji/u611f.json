@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:感",
+      "character": "感",
+      "meanings": [
+        "чувство"
+      ],
+      "on": [
+        "カン"
+      ],
+      "kun": [],
+      "components": [
+        "咸",
+        "心"
+      ],
+      "wordIds": [
+        "ja:word:正義感"
+      ],
+      "mnemonic": "Рот под лезвием не издаёт ни звука, но сердце внизу переполнено чувствами.",
+      "componentMeanings": {
+        "咸": "рот под лезвием",
+        "心": "сердце"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:氵",
+      "character": "氵",
+      "meanings": [
+        "вода; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "さんずい"
+      ],
+      "components": [
+        "丶"
+      ],
+      "componentMeanings": {
+        "丶": "капля"
+      },
+      "wordIds": [],
+      "mnemonic": "Три капли одна под другой: узкая полоска воды слева в знаке."
+    }
+  ]
+}

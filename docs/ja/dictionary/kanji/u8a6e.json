@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:詮",
+      "character": "詮",
+      "meanings": [
+        "выяснять"
+      ],
+      "on": [
+        "セン"
+      ],
+      "kun": [
+        "せんずる",
+        "かい",
+        "あきらか"
+      ],
+      "components": [
+        "言",
+        "全"
+      ],
+      "wordIds": [
+        "ja:word:所詮"
+      ],
+      "mnemonic": "Слова 言 раскрыли всё целиком 全: удалось выяснить правду.",
+      "componentMeanings": {
+        "言": "слова",
+        "全": "всё целиком"
+      }
+    }
+  ]
+}

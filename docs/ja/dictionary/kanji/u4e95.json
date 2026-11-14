@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:井",
+      "character": "井",
+      "meanings": [
+        "колодец"
+      ],
+      "on": [
+        "セイ",
+        "ショウ"
+      ],
+      "kun": [
+        "い"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:市井",
+        "ja:word:井"
+      ],
+      "mnemonic": "Две поперечные и две продольные балки образуют сруб колодца; вода видна в квадрате посередине.",
+      "componentMeanings": {}
+    }
+  ]
+}

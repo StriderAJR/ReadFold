@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:儀",
+      "character": "儀",
+      "meanings": [
+        "обряд"
+      ],
+      "on": [
+        "ギ"
+      ],
+      "kun": [],
+      "components": [
+        "亻",
+        "義"
+      ],
+      "componentMeanings": {
+        "亻": "человек",
+        "義": "справедливость"
+      },
+      "wordIds": [
+        "ja:word:礼儀"
+      ],
+      "mnemonic": "Человек слева торжественно кланяется знаку справедливости справа: исполняет обряд."
+    }
+  ]
+}

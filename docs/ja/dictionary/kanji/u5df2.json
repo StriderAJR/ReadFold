@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:已",
+      "character": "已",
+      "meanings": [
+        "уже"
+      ],
+      "on": [
+        "イ"
+      ],
+      "kun": [
+        "すでに"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Левая стенка уже поднялась выше середины: петля почти закрыта, дело уже сделано."
+    }
+  ]
+}

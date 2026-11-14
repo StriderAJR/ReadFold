@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:kanji:次": [
+      {
+        "bookId": "demo",
+        "chapterId": "demo.chapter-2",
+        "chapterPath": "books/demo/chapter-2.json",
+        "sentenceId": "demo.s4"
+      }
+    ]
+  }
+}

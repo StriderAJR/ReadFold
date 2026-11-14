@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:自",
+      "character": "自",
+      "meanings": [
+        "сам"
+      ],
+      "on": [
+        "ジ",
+        "シ"
+      ],
+      "kun": [
+        "みずから",
+        "おのずから",
+        "おのずと"
+      ],
+      "components": [
+        "ノ",
+        "目"
+      ],
+      "wordIds": [
+        "ja:word:自分"
+      ],
+      "mnemonic": "Черта над глазом напоминает жест к своему лицу: я сам.",
+      "componentMeanings": {
+        "ノ": "косой штрих",
+        "目": "глаз"
+      }
+    }
+  ]
+}

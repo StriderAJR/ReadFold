@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:齢",
+      "character": "齢",
+      "meanings": [
+        "возраст"
+      ],
+      "on": [
+        "レイ"
+      ],
+      "kun": [
+        "よわい",
+        "とし"
+      ],
+      "components": [
+        "歯",
+        "令"
+      ],
+      "wordIds": [
+        "ja:word:妙齢",
+        "ja:word:適齢",
+        "ja:word:齢"
+      ],
+      "mnemonic": "Зубам 歯 отдали приказ 令 построиться по возрасту: молочные впереди, взрослые следом.",
+      "componentMeanings": {
+        "歯": "зубы",
+        "令": "приказ"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:叩",
+      "character": "叩",
+      "meanings": [
+        "стучать"
+      ],
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "たたく"
+      ],
+      "components": [
+        "口",
+        "卩"
+      ],
+      "wordIds": [
+        "ja:word:叩く"
+      ],
+      "mnemonic": "Справа согнутый кулак стучит в квадратное окошко слева: тук-тук!",
+      "componentMeanings": {
+        "口": "квадратное окошко",
+        "卩": "согнутый кулак"
+      }
+    }
+  ]
+}

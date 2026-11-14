@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:釆",
+      "character": "釆",
+      "meanings": [
+        "различать"
+      ],
+      "on": [
+        "ハン"
+      ],
+      "kun": [],
+      "components": [
+        "ノ",
+        "米"
+      ],
+      "componentMeanings": {
+        "ノ": "пометка",
+        "米": "рис"
+      },
+      "wordIds": [],
+      "mnemonic": "Над рисом 米 поставили косую пометку ノ, чтобы различать сорта."
+    }
+  ]
+}

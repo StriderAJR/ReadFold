@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:气",
+      "character": "气",
+      "meanings": [
+        "пар; воздух"
+      ],
+      "on": [],
+      "kun": [
+        "きがまえ"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Верхние линии похожи на струи пара над изогнутым потоком воздуха."
+    }
+  ]
+}

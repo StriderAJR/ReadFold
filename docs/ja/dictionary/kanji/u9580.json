@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:門",
+      "character": "門",
+      "meanings": [
+        "ворота"
+      ],
+      "on": [
+        "モン"
+      ],
+      "kun": [
+        "かど"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две высокие створки оставили проход посередине ворот."
+    }
+  ]
+}

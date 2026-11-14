@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:返",
+      "character": "返",
+      "meanings": [
+        "возвращать"
+      ],
+      "on": [
+        "ヘン"
+      ],
+      "kun": [
+        "かえす",
+        "かえる"
+      ],
+      "components": [
+        "辶",
+        "反"
+      ],
+      "wordIds": [
+        "ja:word:むせ返る",
+        "ja:word:返事"
+      ],
+      "mnemonic": "Дорога 辶 упёрлась в разворот 反: пора возвращаться.",
+      "componentMeanings": {
+        "辶": "дорога",
+        "反": "разворот"
+      }
+    }
+  ]
+}

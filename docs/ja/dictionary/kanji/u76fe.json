@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:盾",
+      "character": "盾",
+      "meanings": [
+        "щит"
+      ],
+      "on": [
+        "ジュン"
+      ],
+      "kun": [
+        "たて"
+      ],
+      "components": [
+        "厂",
+        "十",
+        "目"
+      ],
+      "componentMeanings": {
+        "厂": "навес",
+        "十": "прицел",
+        "目": "глаз"
+      },
+      "wordIds": [
+        "ja:word:後ろ盾"
+      ],
+      "mnemonic": "Глаз 目 смотрит через прицел 十 из-под навеса 厂: стрелок укрылся за щитом."
+    }
+  ]
+}

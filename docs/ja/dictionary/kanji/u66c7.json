@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:曇",
+      "character": "曇",
+      "meanings": [
+        "быть пасмурным"
+      ],
+      "on": [
+        "ドン"
+      ],
+      "kun": [
+        "くもる"
+      ],
+      "components": [
+        "日",
+        "雲"
+      ],
+      "wordIds": [
+        "ja:word:曇天",
+        "ja:word:曇る"
+      ],
+      "mnemonic": "Солнце сверху упёрлось в большое облако под ним: стало пасмурно.",
+      "componentMeanings": {
+        "日": "солнце",
+        "雲": "облако"
+      }
+    }
+  ]
+}

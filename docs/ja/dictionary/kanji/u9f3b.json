@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:鼻",
+      "character": "鼻",
+      "meanings": [
+        "нос"
+      ],
+      "on": [
+        "ビ"
+      ],
+      "kun": [
+        "はな"
+      ],
+      "components": [
+        "自",
+        "田",
+        "廾"
+      ],
+      "wordIds": [
+        "ja:word:鼻っ柱"
+      ],
+      "mnemonic": "Сам 自 уткнулся носом в поле 田; двумя руками 廾 отряхиваю землю с носа.",
+      "componentMeanings": {
+        "自": "сам",
+        "田": "поле",
+        "廾": "две руки"
+      }
+    }
+  ]
+}

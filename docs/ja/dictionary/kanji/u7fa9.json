@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:義",
+      "character": "義",
+      "meanings": [
+        "справедливость"
+      ],
+      "on": [
+        "ギ"
+      ],
+      "kun": [],
+      "components": [
+        "羊",
+        "我"
+      ],
+      "wordIds": [
+        "ja:word:正義感"
+      ],
+      "mnemonic": "Овца 羊 забралась на меня 我: я защищаю слабого, даже когда тяжело. Вот справедливость!",
+      "componentMeanings": {
+        "羊": "овца",
+        "我": "я"
+      }
+    }
+  ]
+}

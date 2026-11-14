@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:雨",
+      "character": "雨",
+      "meanings": [
+        "дождь"
+      ],
+      "on": [
+        "ウ"
+      ],
+      "kun": [
+        "あめ",
+        "あま"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "mnemonic": "Небо стало окном: под верхней чертой видны центральная струя и четыре капли дождя.",
+      "wordIds": []
+    }
+  ]
+}

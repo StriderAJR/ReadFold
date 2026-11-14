@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:忙",
+      "character": "忙",
+      "meanings": [
+        "занятой"
+      ],
+      "on": [
+        "ボウ"
+      ],
+      "kun": [
+        "いそがしい"
+      ],
+      "components": [
+        "忄",
+        "亡"
+      ],
+      "componentMeanings": {
+        "忄": "сердце",
+        "亡": "исчезать"
+      },
+      "wordIds": [],
+      "mnemonic": "Сердце слева торопится: свободное время исчезло, я занят!"
+    }
+  ]
+}

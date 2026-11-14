@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:庭",
+      "character": "庭",
+      "meanings": [
+        "сад; двор"
+      ],
+      "on": [
+        "テイ"
+      ],
+      "kun": [
+        "にわ"
+      ],
+      "components": [
+        "广",
+        "廷"
+      ],
+      "componentMeanings": {
+        "广": "навес",
+        "廷": "двор"
+      },
+      "wordIds": [
+        "ja:word:中庭"
+      ],
+      "mnemonic": "Вдоль двора тянется навес: под ним отдыхают в саду."
+    }
+  ]
+}

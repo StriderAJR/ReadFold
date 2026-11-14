@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:刂",
+      "character": "刂",
+      "meanings": [
+        "нож; графическая часть"
+      ],
+      "on": [],
+      "kun": [
+        "りっとう"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Два узких лезвия стоят справа от разрезаемого предмета."
+    }
+  ]
+}

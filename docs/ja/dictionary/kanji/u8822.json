@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:蠢",
+      "character": "蠢",
+      "meanings": [
+        "шевелиться"
+      ],
+      "on": [
+        "シュン"
+      ],
+      "kun": [
+        "うごめく"
+      ],
+      "components": [
+        "春",
+        "虫"
+      ],
+      "wordIds": [
+        "ja:word:蠢く"
+      ],
+      "mnemonic": "Пришла весна 春, и под ней зашевелились два насекомых 虫.",
+      "componentMeanings": {
+        "春": "весна",
+        "虫": "насекомое"
+      }
+    }
+  ]
+}

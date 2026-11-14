@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:纏",
+      "character": "纏",
+      "meanings": [
+        "обматывать"
+      ],
+      "on": [
+        "テン"
+      ],
+      "kun": [
+        "まとう",
+        "まとめる"
+      ],
+      "components": [
+        "糸",
+        "廛"
+      ],
+      "wordIds": [
+        "ja:word:纏う"
+      ],
+      "mnemonic": "В торговой лавке 廛 нить 糸 обмотала весь прилавок.",
+      "componentMeanings": {
+        "糸": "нить",
+        "廛": "торговая лавка"
+      }
+    }
+  ]
+}

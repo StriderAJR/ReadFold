@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:殳",
+      "character": "殳",
+      "meanings": [
+        "удар; оружие"
+      ],
+      "on": [],
+      "kun": [
+        "るまた"
+      ],
+      "components": [
+        "几",
+        "又"
+      ],
+      "componentMeanings": {
+        "几": "рукоять",
+        "又": "рука"
+      },
+      "wordIds": [],
+      "mnemonic": "Рука внизу схватила рукоять сверху и замахнулась для удара."
+    }
+  ]
+}

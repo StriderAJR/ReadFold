@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:移",
+      "character": "移",
+      "meanings": [
+        "перемещать"
+      ],
+      "on": [
+        "イ"
+      ],
+      "kun": [
+        "うつる",
+        "うつす"
+      ],
+      "components": [
+        "禾",
+        "多"
+      ],
+      "wordIds": [
+        "ja:word:移動"
+      ],
+      "mnemonic": "Колосьев 禾 стало много 多: урожай приходится перемещать в амбар.",
+      "componentMeanings": {
+        "禾": "колос",
+        "多": "много"
+      }
+    }
+  ]
+}

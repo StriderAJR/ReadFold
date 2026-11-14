@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:巾",
+      "character": "巾",
+      "meanings": [
+        "полотенце; ткань"
+      ],
+      "on": [
+        "キン"
+      ],
+      "kun": [
+        "はば"
+      ],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Полотенце свисает с перекладины, а складка проходит посередине."
+    }
+  ]
+}

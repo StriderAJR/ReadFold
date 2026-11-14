@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:肌",
+      "character": "肌",
+      "meanings": [
+        "кожа"
+      ],
+      "on": [
+        "キ"
+      ],
+      "kun": [
+        "はだ"
+      ],
+      "components": [
+        "月",
+        "几"
+      ],
+      "componentMeanings": {
+        "月": "плоть",
+        "几": "столик"
+      },
+      "wordIds": [
+        "ja:word:肌"
+      ],
+      "mnemonic": "Плоть 月 прикрыли кожей, словно столик 几 скатертью."
+    }
+  ]
+}
