@@ -4,8 +4,8 @@ import { kanaToRomaji } from './kana';
 
 export function KanjiReadings({ on, kun, romaji = false }: { on: string[]; kun: string[]; romaji?: boolean }) {
   const { t } = useTranslation();
-  const onValue = `${on.join('、')}${romaji ? ` (${on.map(kanaToRomaji).join(', ')})` : ''}`;
-  const kunValue = `${kun.join('、')}${romaji ? ` (${kun.map(kanaToRomaji).join(', ')})` : ''}`;
+  const onValue = `${on.join('、')}${romaji ? ` (${on.map((reading) => kanaToRomaji(reading)).join(', ')})` : ''}`;
+  const kunValue = `${kun.join('、')}${romaji ? ` (${kun.map((reading) => kanaToRomaji(reading)).join(', ')})` : ''}`;
 
   return (
     <span className="kanji-readings">

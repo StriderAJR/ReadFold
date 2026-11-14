@@ -5,6 +5,12 @@ const wordIdSchema = idSchema.regex(/^ja:word:.+$/u, 'Expected ja:word:<lemma> I
 const kanjiIdSchema = idSchema.refine((value) => value.startsWith('ja:kanji:') && [...value.slice('ja:kanji:'.length)].length === 1, 'Expected ja:kanji:<character> ID');
 const grammarIdSchema = idSchema.regex(/^ja:grammar:.+$/u, 'Expected ja:grammar:<topic> ID');
 const textSchema = z.string().min(1);
+const wordFuriganaSegmentSchema = z.object({
+  text: textSchema,
+  reading: z.string().min(1).regex(/^[\p{Script=Hiragana}ー]+$/u).optional(),
+}).strict().refine((segment) => segment.reading === undefined || /^\p{Unified_Ideograph}$/u.test(segment.text), {
+  message: 'Word furigana reading must annotate one kanji', path: ['reading'],
+});
 const uniqueIds = (items: readonly { id: string }[]) => new Set(items.map((item) => item.id)).size === items.length;
 const chapterMetadataSchema = z
   .object({
@@ -241,12 +247,15 @@ export const sentenceSchema = z
             wordId: wordIdSchema,
             surface: textSchema,
             hiragana: textSchema,
+            furigana: z.array(wordFuriganaSegmentSchema).min(1).optional(),
             romaji: textSchema,
             meaning: textSchema,
             inflection: textSchema.optional(),
             role: textSchema.optional(),
           })
-          .strict(),
+          .strict().refine((occurrence) => !occurrence.furigana || (
+            occurrence.furigana.map((segment) => segment.text).join('') === occurrence.surface
+          ), { message: 'Furigana must reproduce word surface', path: ['furigana'] }),
       )
       .min(1),
     kanjiIds: z.array(kanjiIdSchema),

@@ -15,6 +15,15 @@ const layers = ['furigana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'g
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
 const genericWordRole = 'Лексическое значение в контексте предложения';
 
+function WordFurigana({ surface, segments }: { surface: string; segments?: { text: string; reading?: string }[] }) {
+  if (!segments || segments.map((segment) => segment.text).join('') !== surface) {
+    return <>{surface}</>;
+  }
+  return <>{segments.map((segment, index) => segment.reading
+    ? <ruby key={index}>{segment.text}<rt>{segment.reading}</rt></ruby>
+    : <span key={index}>{segment.text}</span>)}</>;
+}
+
 function KanjiComponentNode({
   character,
   meaning,
@@ -242,8 +251,10 @@ function SentenceBlock({
                   {visibleWords.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     const reading = word.hiragana;
-                    const showWordFurigana = preferences.furigana && reading && /\p{Script=Han}/u.test(word.surface);
-                    const wordLabel = showWordFurigana ? <ruby>{word.surface}<rt>{reading}</rt></ruby> : word.surface;
+                    const showWordFurigana = preferences.furigana && !!word.furigana?.some((segment) => segment.reading);
+                    const wordLabel = showWordFurigana
+                      ? <WordFurigana surface={word.surface} segments={word.furigana} />
+                      : word.surface;
                     return preferences.canvasMode ? (
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />

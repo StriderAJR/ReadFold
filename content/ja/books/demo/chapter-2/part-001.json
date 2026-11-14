@@ -62,7 +62,13 @@
               "hiragana": "つぎ",
               "romaji": "tsugi",
               "meaning": "следующий",
-              "role": "определение к 日"
+              "role": "определение к 日",
+              "furigana": [
+                {
+                  "text": "次",
+                  "reading": "つぎ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:の",
@@ -78,7 +84,13 @@
               "hiragana": "ひ",
               "romaji": "hi",
               "meaning": "день",
-              "role": "время"
+              "role": "время",
+              "furigana": [
+                {
+                  "text": "日",
+                  "reading": "ひ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:私",
@@ -86,7 +98,13 @@
               "hiragana": "わたし",
               "romaji": "watashi",
               "meaning": "я",
-              "role": "тема"
+              "role": "тема",
+              "furigana": [
+                {
+                  "text": "私",
+                  "reading": "わたし"
+                }
+              ]
             },
             {
               "wordId": "ja:word:は",
@@ -110,7 +128,17 @@
               "hiragana": "こうえん",
               "romaji": "kōen",
               "meaning": "парк",
-              "role": "направление"
+              "role": "направление",
+              "furigana": [
+                {
+                  "text": "公",
+                  "reading": "こう"
+                },
+                {
+                  "text": "園",
+                  "reading": "えん"
+                }
+              ]
             },
             {
               "wordId": "ja:word:へ",
@@ -127,7 +155,16 @@
               "romaji": "ikimasu",
               "meaning": "иду",
               "inflection": "Вежливая непрошедшая форма",
-              "role": "сказуемое"
+              "role": "сказуемое",
+              "furigana": [
+                {
+                  "text": "行",
+                  "reading": "い"
+                },
+                {
+                  "text": "きます"
+                }
+              ]
             }
           ],
           "grammarOccurrences": [
@@ -191,7 +228,13 @@
               "hiragana": "ねこ",
               "romaji": "neko",
               "meaning": "кошка",
-              "role": "тема"
+              "role": "тема",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "ねこ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:は",
@@ -207,7 +250,13 @@
               "hiragana": "き",
               "romaji": "ki",
               "meaning": "дерево",
-              "role": "определение к 下"
+              "role": "определение к 下",
+              "furigana": [
+                {
+                  "text": "木",
+                  "reading": "き"
+                }
+              ]
             },
             {
               "wordId": "ja:word:の",
@@ -223,7 +272,13 @@
               "hiragana": "した",
               "romaji": "shita",
               "meaning": "низ; под",
-              "role": "место существования"
+              "role": "место существования",
+              "furigana": [
+                {
+                  "text": "下",
+                  "reading": "した"
+                }
+              ]
             },
             {
               "wordId": "ja:word:に",
@@ -300,7 +355,13 @@
               "hiragana": "わたし",
               "romaji": "watashi",
               "meaning": "я",
-              "role": "тема"
+              "role": "тема",
+              "furigana": [
+                {
+                  "text": "私",
+                  "reading": "わたし"
+                }
+              ]
             },
             {
               "wordId": "ja:word:は",
@@ -316,7 +377,13 @@
               "hiragana": "ねこ",
               "romaji": "neko",
               "meaning": "кошка",
-              "role": "получатель"
+              "role": "получатель",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "ねこ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:に",
@@ -332,7 +399,13 @@
               "hiragana": "みず",
               "romaji": "mizu",
               "meaning": "вода",
-              "role": "прямое дополнение"
+              "role": "прямое дополнение",
+              "furigana": [
+                {
+                  "text": "水",
+                  "reading": "みず"
+                }
+              ]
             },
             {
               "wordId": "ja:word:を",

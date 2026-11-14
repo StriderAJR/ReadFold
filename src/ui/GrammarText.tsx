@@ -48,6 +48,15 @@ function renderRuby(text: string, reading: string): ReactNode {
   return <>{rendered}</>;
 }
 
+function romajiForChunk(chunk: string, endsAtParticleBoundary: boolean): string {
+  const particle = chunk[chunk.length - 1];
+  if (endsAtParticleBoundary && (particle === 'は' || particle === 'へ')) {
+    const stem = chunk.slice(0, -1);
+    return `${kanaToRomaji(stem)}${particle === 'は' ? 'wa' : 'e'}`;
+  }
+  return kanaToRomaji(chunk);
+}
+
 export function GrammarText({ text, segments, preferences }: { text: string; segments?: Segment[]; preferences: ReaderPreferences }): ReactNode {
   if (!segments) {
     return text;
@@ -55,23 +64,31 @@ export function GrammarText({ text, segments, preferences }: { text: string; seg
   const atoms: Atom[] = [];
   for (const segment of segments) {
     if (segment.reading) {
+      const readingEndsWithParticle = /[はへ](?=$|[\s、。・,.;:!?])/u.test(segment.text)
+        && /[はへ]$/u.test(segment.reading);
       atoms.push({
         display: preferences.furigana && /\p{Script=Han}/u.test(segment.text)
           ? renderRuby(segment.text, segment.reading)
           : segment.text,
         japanese: true,
-        romaji: kanaToRomaji(segment.reading),
+        romaji: romajiForChunk(segment.reading, readingEndsWithParticle),
       });
       continue;
     }
     const chunks = segment.text.match(/[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー々、。・「」『』（）]+|[^\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}ー々、。・「」『』（）]+/gu) ?? [];
+    let chunkOffset = 0;
     for (const chunk of chunks) {
       const japanese = japaneseCharacter.test(chunk[0]);
+      const endsAtParticleBoundary = /^[\s、。・,.;:!?]/u.test(segment.text.slice(chunkOffset + chunk.length))
+        || chunkOffset + chunk.length === segment.text.length;
       atoms.push({
         display: chunk,
         japanese,
-        romaji: japanese && !/\p{Script=Han}/u.test(chunk) ? kanaToRomaji(chunk) : '',
+        romaji: japanese && !/\p{Script=Han}/u.test(chunk)
+          ? romajiForChunk(chunk, endsAtParticleBoundary)
+          : '',
       });
+      chunkOffset += chunk.length;
     }
   }
 
@@ -94,7 +111,9 @@ export function GrammarText({ text, segments, preferences }: { text: string; seg
     if (preferences.romaji && romaji.length) {
       result.push(` (${romaji.join(' ')})`);
     }
-    if (index === start) index += 1;
+    if (index === start) {
+      index += 1;
+    }
   }
   return result;
 }

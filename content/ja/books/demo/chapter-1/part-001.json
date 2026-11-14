@@ -54,7 +54,13 @@
               "hiragana": "あさ",
               "romaji": "asa",
               "meaning": "утро",
-              "role": "время"
+              "role": "время",
+              "furigana": [
+                {
+                  "text": "朝",
+                  "reading": "あさ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:私",
@@ -62,7 +68,13 @@
               "hiragana": "わたし",
               "romaji": "watashi",
               "meaning": "я",
-              "role": "тема"
+              "role": "тема",
+              "furigana": [
+                {
+                  "text": "私",
+                  "reading": "わたし"
+                }
+              ]
             },
             {
               "wordId": "ja:word:は",
@@ -78,7 +90,17 @@
               "hiragana": "こうえん",
               "romaji": "kōen",
               "meaning": "парк",
-              "role": "направление"
+              "role": "направление",
+              "furigana": [
+                {
+                  "text": "公",
+                  "reading": "こう"
+                },
+                {
+                  "text": "園",
+                  "reading": "えん"
+                }
+              ]
             },
             {
               "wordId": "ja:word:へ",
@@ -95,7 +117,16 @@
               "romaji": "ikimasu",
               "meaning": "иду",
               "inflection": "Вежливая непрошедшая форма",
-              "role": "сказуемое"
+              "role": "сказуемое",
+              "furigana": [
+                {
+                  "text": "行",
+                  "reading": "い"
+                },
+                {
+                  "text": "きます"
+                }
+              ]
             }
           ],
           "grammarOccurrences": [
@@ -156,7 +187,17 @@
               "hiragana": "こうえん",
               "romaji": "kōen",
               "meaning": "парк",
-              "role": "место существования"
+              "role": "место существования",
+              "furigana": [
+                {
+                  "text": "公",
+                  "reading": "こう"
+                },
+                {
+                  "text": "園",
+                  "reading": "えん"
+                }
+              ]
             },
             {
               "wordId": "ja:word:に",
@@ -172,7 +213,16 @@
               "hiragana": "ちいさな",
               "romaji": "chiisana",
               "meaning": "маленький",
-              "role": "определение к 猫"
+              "role": "определение к 猫",
+              "furigana": [
+                {
+                  "text": "小",
+                  "reading": "ちい"
+                },
+                {
+                  "text": "さな"
+                }
+              ]
             },
             {
               "wordId": "ja:word:猫",
@@ -180,7 +230,13 @@
               "hiragana": "ねこ",
               "romaji": "neko",
               "meaning": "кошка",
-              "role": "подлежащее"
+              "role": "подлежащее",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "ねこ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:が",
@@ -265,7 +321,13 @@
               "hiragana": "ねこ",
               "romaji": "neko",
               "meaning": "кошка",
-              "role": "тема"
+              "role": "тема",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "ねこ"
+                }
+              ]
             },
             {
               "wordId": "ja:word:は",
@@ -281,7 +343,13 @@
               "hiragana": "き",
               "romaji": "ki",
               "meaning": "дерево",
-              "role": "определение к 下"
+              "role": "определение к 下",
+              "furigana": [
+                {
+                  "text": "木",
+                  "reading": "き"
+                }
+              ]
             },
             {
               "wordId": "ja:word:の",
@@ -297,7 +365,13 @@
               "hiragana": "した",
               "romaji": "shita",
               "meaning": "низ; под",
-              "role": "место действия"
+              "role": "место действия",
+              "furigana": [
+                {
+                  "text": "下",
+                  "reading": "した"
+                }
+              ]
             },
             {
               "wordId": "ja:word:で",
@@ -313,7 +387,13 @@
               "hiragana": "みず",
               "romaji": "mizu",
               "meaning": "вода",
-              "role": "прямое дополнение"
+              "role": "прямое дополнение",
+              "furigana": [
+                {
+                  "text": "水",
+                  "reading": "みず"
+                }
+              ]
             },
             {
               "wordId": "ja:word:を",
@@ -330,7 +410,16 @@
               "romaji": "nondeimasu",
               "meaning": "пьёт (сейчас)",
               "inflection": "Форма на て + います; 飲む → 飲んで",
-              "role": "сказуемое"
+              "role": "сказуемое",
+              "furigana": [
+                {
+                  "text": "飲",
+                  "reading": "の"
+                },
+                {
+                  "text": "んでいます"
+                }
+              ]
             }
           ],
           "grammarOccurrences": [

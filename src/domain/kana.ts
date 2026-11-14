@@ -24,8 +24,14 @@ const digraphs: Record<string, string> = {
   ぴゃ: 'pya', ぴゅ: 'pyu', ぴょ: 'pyo',
 };
 
-export function kanaToRomaji(value: string): string {
+export function kanaToRomaji(value: string, options: { particleContext?: boolean } = {}): string {
   const kana = value.replace(/[ァ-ヶ]/g, (character) => String.fromCharCode(character.charCodeAt(0) - 0x60));
+  if (options.particleContext && kana === 'は') {
+    return 'wa';
+  }
+  if (options.particleContext && kana === 'へ') {
+    return 'e';
+  }
   let result = '';
   for (let index = 0; index < kana.length; index += 1) {
     const character = kana[index];
