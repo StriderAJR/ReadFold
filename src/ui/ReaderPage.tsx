@@ -230,6 +230,7 @@ function SentenceBlock({
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     const reading = word.hiragana;
                     const showWordFurigana = preferences.furigana && !!word.furigana?.some((segment) => segment.reading);
+                    const wordMeta = [entry && entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ');
                     const wordLabel = showWordFurigana
                       ? <WordFurigana surface={word.surface} segments={word.furigana} />
                       : word.surface;
@@ -244,7 +245,7 @@ function SentenceBlock({
                             <span className="canvas-card-meaning canvas-word-detail">{word.meaning}</span>
                             {entry && (
                               <>
-                                <small className="canvas-word-detail">{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
+                                {wordMeta && <small className="canvas-word-detail">{wordMeta}</small>}
                                 <small className="canvas-word-detail">{entry.partOfSpeech}</small>
                               </>
                             )}
@@ -260,13 +261,13 @@ function SentenceBlock({
                           <b>{wordLabel}</b>
                         </button>
                         <span className="token-word-body">
-                          <span>{word.meaning}</span>
                           {entry && (
                             <span className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
+                              {wordMeta && <small>{wordMeta}</small>}
                               <small>{entry.partOfSpeech}</small>
                             </span>
                           )}
+                          <span>{word.meaning}</span>
                           {(word.inflection || (word.role && word.role !== genericWordRole)) && (
                             <span className="word-card-notes">
                               {word.inflection && <small>{word.inflection}</small>}
