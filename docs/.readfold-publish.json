@@ -3,12 +3,12 @@
   "base": "/ReadFold/",
   "files": [
     {
-      "path": "assets/index-0KkUqqZZ.css",
-      "sha256": "7c8bd7559dfce6e29355c03c279934bcb4db38c3dc45e62c1735a50cee8de358"
+      "path": "assets/index-B7eLmxnT.css",
+      "sha256": "95851a464c323d888b743635f4c20a84784fa7d0dd995d30c70e749426a945f1"
     },
     {
-      "path": "assets/index-DEQBF4XB.js",
-      "sha256": "11329a6e7a975d903570b2a1fcae4d3bfd8f39c4775b0fd011aeedd85466e257"
+      "path": "assets/index-OVfWyHrb.js",
+      "sha256": "dd525904146f61c7b8b6507d4f23eeeedcd507a06b2ceb7ae72f5559f124c944"
     },
     {
       "path": "assets/language-BwSMSIVv.js",
@@ -56,7 +56,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "1254abc200015ec5e86dc70df039e1474f9f9368cdaca5ebb7b262272714ad3b"
+      "sha256": "8007d6ee87195a968220304343f3c2660d8c8bf10e753bd8f947ed65535f7365"
     },
     {
       "path": "ja/dictionary/components.json",
@@ -5536,7 +5536,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "525bad4d70e9fecc761df8a57d30d9986697403f75892deda6adae8f18299484"
+      "sha256": "7874c5851afa22d183ba476b614b534d6e15ad4ac2eacb350059e28f11e04336"
     },
     {
       "path": "terms.html",
