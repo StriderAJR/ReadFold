@@ -236,23 +236,21 @@ function SentenceBlock({
                     return preferences.canvasMode ? (
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
-                        <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
-                          <b>{wordLabel}</b>
-                        </button>
-                        <div className="canvas-card-body">
-                          <span className="canvas-card-meaning">{word.meaning}</span>
-                          {entry && (
-                            <div className="word-card-meta">
-                              <small>{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
-                              <small>{entry.partOfSpeech}</small>
-                            </div>
-                          )}
-                          {(word.inflection || (word.role && word.role !== genericWordRole)) && (
-                            <div className="word-card-notes">
-                              {word.inflection && <small>{word.inflection}</small>}
-                              {word.role && word.role !== genericWordRole && <small>{word.role}</small>}
-                            </div>
-                          )}
+                        <div className="canvas-word-main">
+                          <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
+                            <b>{wordLabel}</b>
+                          </button>
+                          <div className="canvas-card-body canvas-word-details">
+                            <span className="canvas-card-meaning canvas-word-detail">{word.meaning}</span>
+                            {entry && (
+                              <>
+                                <small className="canvas-word-detail">{[entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ')}</small>
+                                <small className="canvas-word-detail">{entry.partOfSpeech}</small>
+                              </>
+                            )}
+                            {word.inflection && <small className="canvas-word-detail">{word.inflection}</small>}
+                            {word.role && word.role !== genericWordRole && <small className="canvas-word-detail">{word.role}</small>}
+                          </div>
                         </div>
                       </div>
                     ) : (
