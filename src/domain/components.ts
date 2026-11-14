@@ -8,6 +8,7 @@ export const visualComponentSchema = z.object({
   name: readableText,
   mnemonic: readableText,
   components: z.array(readableText).refine((parts) => new Set(parts).size === parts.length, 'Duplicate component references'),
+  reviewed: z.boolean().optional(),
 }).strict();
 
 export const componentDictionarySchema = z.array(visualComponentSchema).superRefine((entries, context) => {

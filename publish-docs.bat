@@ -21,7 +21,7 @@ if not exist "node_modules\vite\bin\vite.js" (
 )
 
 echo Checking and building ReadFold into docs...
-node scripts\publish-docs.mjs
+node scripts\publish-docs.mjs %*
 if errorlevel 1 goto failed
 
 echo.

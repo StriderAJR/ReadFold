@@ -28,7 +28,7 @@ export function ComponentLinks({ forms, fallback }: { forms: string[]; fallback?
           return entry ? (
             <div className="kanji-component" key={form}>
               <ComponentForm form={form} />
-              <span>{entry.name}</span>
+              <Link to={`/components/${encodeURIComponent(entry.id)}`}>{entry.name}</Link>
             </div>
           ) : (
             <div className="kanji-component" key={form}>

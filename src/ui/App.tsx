@@ -22,6 +22,7 @@ import { local, services, synchronize, useLocalFailure, useSession } from '../ap
 import { ReaderPage } from './ReaderPage';
 import { BookPage, HomePage, LibraryPage } from './CatalogPages';
 import { DictionaryPage, EntityPage } from './DictionaryPages';
+import { ComponentPage, ComponentsPage } from './ComponentPages';
 import { ReviewsPage, StatisticsPage } from './PracticePages';
 import { AccountPage, DiagnosticsPage, SettingsPage } from './AccountPages';
 import { ErrorState, download } from './Common';
@@ -268,6 +269,8 @@ export function App() {
           <Route path="/words" element={<DictionaryPage kind="words" />} />
           <Route path="/kanji" element={<DictionaryPage kind="kanji" />} />
           <Route path="/grammar" element={<DictionaryPage kind="grammar" />} />
+          <Route path="/components" element={<ComponentsPage />} />
+          <Route path="/components/:id" element={<ComponentPage />} />
           <Route path="/words/:id" element={<EntityPage kind="words" />} />
           <Route path="/kanji/:id" element={<EntityPage kind="kanji" />} />
           <Route path="/grammar/:id" element={<EntityPage kind="grammar" />} />

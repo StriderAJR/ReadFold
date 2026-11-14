@@ -4,6 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { publishDocs } from './pages-publisher.mjs';
 
 const workspace = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const skipTests = process.argv.includes('--skip-tests');
 const checks = [
   ['generated content', '--experimental-strip-types', 'scripts/build-content.mjs', '--output', '.local-tools/content'],
   ['typecheck', 'node_modules/typescript/bin/tsc', '-b'],
@@ -12,10 +13,16 @@ const checks = [
   ['publication tests', '--test', 'tests/deployment/pages-publisher.test.mjs'],
   ['SQL/RLS tests', 'scripts/test-sql.mjs'],
   ['production build', 'node_modules/vite/bin/vite.js', 'build'],
+  ['production content', '--experimental-strip-types', 'scripts/build-content.mjs', '--output', 'dist', '--no-manifest'],
   ['offline service worker', 'scripts/build-sw.mjs'],
   ['browser tests', 'node_modules/@playwright/test/cli.js', 'test', '--workers=1'],
 ];
+const testChecks = new Set(['unit tests', 'publication tests', 'SQL/RLS tests', 'browser tests']);
 for (const [name, ...args] of checks) {
+  if (skipTests && testChecks.has(name)) {
+    console.log(`Skipping ${name}…`);
+    continue;
+  }
   console.log(`Checking ${name}…`);
   const child = spawnSync(process.execPath, args, { cwd: workspace, stdio: 'inherit', windowsHide: true });
   if (child.error || child.status !== 0) {
