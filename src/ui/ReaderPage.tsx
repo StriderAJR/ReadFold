@@ -349,7 +349,7 @@ function SentenceBlock({
                 </div>
               </section>
             )}
-            <section className="repetition-block">
+            {preferences.showRepetition && <section className="repetition-block">
               <h4>{t('repetition')}</h4>
               <p className="repetition-source" lang="ja">
                 {sentence.segments.map((segment, partIndex) => (
@@ -386,7 +386,7 @@ function SentenceBlock({
                   </p>
                 )}
               </div>
-            </section>
+            </section>}
           </div>
         </div>
       )}
@@ -640,6 +640,10 @@ export function ReaderPage() {
             <label>
               <input type="checkbox" checked={preferences.translationsSeparateLine} onChange={(event) => void savePreference('translationsSeparateLine', event.target.checked)} />
               {t('translationsSeparateLine')}
+            </label>
+            <label>
+              <input type="checkbox" checked={preferences.showRepetition} onChange={(event) => void savePreference('showRepetition', event.target.checked)} />
+              {t('showRepetition')}
             </label>
           </div>
         </details>

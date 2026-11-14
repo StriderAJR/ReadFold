@@ -34,6 +34,7 @@ export const preferencesSchema = z.object({
   words: z.boolean(),
   kanji: z.boolean(),
   grammar: z.boolean(),
+  showRepetition: z.boolean(),
   adaptiveHideKnown: z.boolean(),
   syncEnabled: z.boolean(),
   dailyReviewLimit: z.number().int().min(1).max(100),

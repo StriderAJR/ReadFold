@@ -56,6 +56,7 @@ export interface ReaderPreferences {
   words: boolean;
   kanji: boolean;
   grammar: boolean;
+  showRepetition: boolean;
   adaptiveHideKnown: boolean;
   syncEnabled: boolean;
   dailyReviewLimit: number;
@@ -88,6 +89,7 @@ export const defaultPreferences: ReaderPreferences = {
   words: true,
   kanji: true,
   grammar: true,
+  showRepetition: true,
   adaptiveHideKnown: true,
   syncEnabled: true,
   dailyReviewLimit: 20,

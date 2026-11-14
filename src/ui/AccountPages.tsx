@@ -16,6 +16,7 @@ const preferenceOptions: (keyof ReaderPreferences)[] = [
   'words',
   'kanji',
   'grammar',
+  'showRepetition',
   'adaptiveHideKnown',
   'syncEnabled',
 ];

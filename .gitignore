@@ -8,3 +8,4 @@ playwright-report/
 *.tsbuildinfo
 .heartbeat-state/
 .local-tools/
+.codex-attachments
