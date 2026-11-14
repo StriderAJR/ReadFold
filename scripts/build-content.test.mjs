@@ -15,6 +15,9 @@ test('all editable cards and chapters produce complete location-only indexes rep
   assert.equal(collection.dictionary.words.length, 384);
   assert.equal(collection.dictionary.kanji.length, 527);
   assert.equal(collection.dictionary.grammar.length, 140);
+  assert.ok(collection.components.length > 0);
+  assert.deepEqual(JSON.parse(first.get('ja/dictionary/components.json')), collection.components);
+  assert.ok(collection.components.every((part) => !Object.hasOwn(index.byId, part.id)));
   assert.equal(collection.chapters.length, 3);
   assert.equal(collection.chapters.reduce((count, { chapter }) => count + chapter.paragraphs.flatMap((part) => part.sentences).length, 0), 71);
   for (const [id, location] of Object.entries(index.byId)) {
@@ -33,6 +36,10 @@ test('collection build rejects duplicate IDs, dangling links, malformed segments
   const duplicate = structuredClone(collection);
   duplicate.dictionary.words.push(duplicate.dictionary.words[0]);
   assert.throws(() => createContentArtifacts(duplicate), /Dictionary IDs must be globally unique|Duplicate dictionary IDs/);
+  const missingPart = structuredClone(collection);
+  missingPart.dictionary.kanji[0].components = ['неизвестная часть'];
+  missingPart.dictionary.kanji[0].componentMeanings = { 'неизвестная часть': 'неизвестная часть' };
+  assert.throws(() => createContentArtifacts(missingPart), /Unknown component/);
   const dangling = structuredClone(collection);
   dangling.chapters[0].chapter.paragraphs[0].sentences[0].wordOccurrences[0].wordId = 'ja:word:存在しない';
   assert.throws(() => createContentArtifacts(dangling), /Unknown dictionary reference/);

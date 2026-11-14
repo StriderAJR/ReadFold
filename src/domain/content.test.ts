@@ -37,7 +37,7 @@ describe('book format', () => {
       expect(Object.keys(kanji.componentMeanings ?? {}).sort()).toEqual([...kanji.components].sort());
       expect(kanji.on.length + kanji.kun.length).toBeGreaterThan(0);
       for (const component of kanji.components) {
-        expect(entries.has(component)).toBe(true);
+        expect(entries.has(component) || Boolean(kanji.componentMeanings?.[component]?.trim())).toBe(true);
       }
       expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: undefined, mnemonic: undefined }).success).toBe(true);
     }
@@ -162,7 +162,20 @@ describe('book format', () => {
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
   });
 
-  it('rejects missing, unreadable, duplicate, and cyclic kanji components', () => {
+  it('allows visual references to be resolved by the separate component dictionary', () => {
+    const dictionary = readDictionary();
+    const target = dictionary.kanji[0];
+    target.components = ['крыша с трубой'];
+    target.componentMeanings = { 'крыша с трубой': 'крыша домика с дымящей трубой' };
+    expect(dictionarySchema.safeParse(dictionary).success).toBe(true);
+    target.componentMeanings = undefined;
+    expect(dictionarySchema.safeParse(dictionary).success).toBe(true);
+    target.components = ['крыша с трубой', 'крыша с трубой'];
+    target.componentMeanings = { 'крыша с трубой': 'крыша домика' };
+    expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
+  });
+
+  it('rejects unreadable and cyclic components and invalid kanji records', () => {
     const dictionary = readDictionary();
     const entry = dictionary.kanji.find((kanji) => kanji.components.length > 0)!;
     const invalid = structuredClone(dictionary);

@@ -112,6 +112,7 @@ export function useSyncInfo() {
   return query.data ?? { pending: 0, status: 'loading' };
 }
 export const useCatalog = () => useQuery({ queryKey: ['catalog'], queryFn: contentProvider.catalog });
+export const useComponents = () => useQuery({ queryKey: ['components'], queryFn: contentProvider.components });
 export const useDictionaryIndex = () => useQuery({ queryKey: ['dictionary-index'], queryFn: contentProvider.dictionaryIndex });
 export const useDictionary = (enabled = true) => useQuery({
   queryKey: ['dictionary'],

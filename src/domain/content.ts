@@ -5,6 +5,7 @@ const wordIdSchema = idSchema.regex(/^ja:word:.+$/u, 'Expected ja:word:<lemma> I
 const kanjiIdSchema = idSchema.refine((value) => value.startsWith('ja:kanji:') && [...value.slice('ja:kanji:'.length)].length === 1, 'Expected ja:kanji:<character> ID');
 const grammarIdSchema = idSchema.regex(/^ja:grammar:.+$/u, 'Expected ja:grammar:<topic> ID');
 const textSchema = z.string().min(1);
+const componentSchema = z.string().trim().min(1).regex(/^[^\p{C}]+$/u, 'Expected a readable visual component');
 const wordFuriganaSegmentSchema = z.object({
   text: textSchema,
   reading: z.string().min(1).regex(/^[\p{Script=Hiragana}ー]+$/u).optional(),
@@ -58,12 +59,15 @@ export const kanjiSchema = z
     meanings: z.array(textSchema).min(1),
     on: z.array(textSchema),
     kun: z.array(textSchema),
-    components: z.array(textSchema),
+    components: z.array(componentSchema).refine((parts) => new Set(parts).size === parts.length, 'Duplicate visual components'),
     componentMeanings: z.record(textSchema, textSchema).optional(),
     wordIds: z.array(wordIdSchema),
     mnemonic: textSchema.optional(),
   })
   .strict()
+  .refine((kanji) => !kanji.components.includes(kanji.character), {
+    message: 'A kanji cannot be its own visual component', path: ['components'],
+  })
   .refine((kanji) => !kanji.componentMeanings || (
     kanji.components.every((component) => Object.hasOwn(kanji.componentMeanings ?? {}, component)) &&
     Object.keys(kanji.componentMeanings).every((component) => kanji.components.includes(component))
@@ -119,34 +123,7 @@ export const dictionarySchema = z
       if (kanji.on.length === 0 && kanji.kun.length === 0) {
         context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index], message: 'Kanji reading is required' });
       }
-      for (const component of kanji.components) {
-        if (!kanjiByCharacter.has(component)) {
-          context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index, 'components'], message: `Unknown component ${component}` });
-        }
-      }
     });
-    const visited = new Set<string>();
-    const active = new Set<string>();
-    const visit = (character: string): void => {
-      if (active.has(character)) {
-        context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji'], message: `Cyclic kanji components at ${character}` });
-        return;
-      }
-      if (visited.has(character)) {
-        return;
-      }
-      active.add(character);
-      for (const component of kanjiByCharacter.get(character)?.components ?? []) {
-        if (kanjiByCharacter.has(component)) {
-          visit(component);
-        }
-      }
-      active.delete(character);
-      visited.add(character);
-    };
-    for (const character of kanjiByCharacter.keys()) {
-      visit(character);
-    }
     dictionary.grammar.forEach((grammar, index) => {
       if (grammar.relatedIds.some((id) => !grammarIds.has(id))) {
         context.addIssue({

@@ -3,13 +3,15 @@ import { ChevronLeft, ChevronRight, Settings, Check, Sparkles } from 'lucide-rea
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
-import { useCatalog, useChapter, useDictionaryEntities, useDictionaryIndex, useUserData } from '../application/hooks';
+import { useCatalog, useChapter, useComponents, useDictionaryEntities, useDictionaryIndex, useUserData } from '../application/hooks';
 import type { DictionaryEntries, Sentence } from '../domain/content';
 import type { LearningStatus, ReaderPreferences } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
 import { GrammarText } from './GrammarText';
 import { KanjiReadings } from './KanjiReadings';
 import { LayerHint } from './LayerHint';
+import type { VisualComponent } from '../domain/components';
+import { ComponentForm } from './ComponentPages';
 
 const layers = ['furigana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
 const modes = ['detailed', 'adaptive', 'continuous'] as const;
@@ -24,86 +26,62 @@ function WordFurigana({ surface, segments }: { surface: string; segments?: { tex
     : <span key={index}>{segment.text}</span>)}</>;
 }
 
-function KanjiComponentNode({
-  character,
-  meaning,
-  kanji,
-  ancestors,
-  depth,
-}: {
+function KanjiComponentNode({ character, fallback, parts, ancestors }: {
   character: string;
-  meaning?: string;
-  kanji: DictionaryEntries['kanji'];
+  fallback?: string;
+  parts: readonly VisualComponent[];
   ancestors: string[];
-  depth: number;
 }) {
-  const entry = kanji.find((candidate) => candidate.character === character);
-  const children = depth < 8
-    ? (entry?.components ?? []).filter((component) => component !== character && !ancestors.includes(component))
-    : [];
-
-  const contents = (
-    <>
-      <b lang="ja">{character}</b>
-      {meaning && <span>{meaning}</span>}
-    </>
+  const { t } = useTranslation();
+  const entry = parts.find((candidate) => candidate.form === character);
+  const children = (entry?.components ?? []).filter((part) => part !== character && !ancestors.includes(part));
+  const contents = <><ComponentForm form={character} /><span>{entry?.name ?? fallback ?? t('componentUnavailable')}</span></>;
+  const description = entry && entry.components.length > 0 && entry.mnemonic && (
+    <small className="kanji-branch-mnemonic">{entry.mnemonic}</small>
   );
   return (
     <li>
       {children.length > 0 ? (
         <details className="kanji-component-branch">
           <summary className="kanji-tree-node">{contents}</summary>
-          {entry?.mnemonic && (
-            <small className="kanji-branch-mnemonic">
-              <span>{entry.mnemonic}</span>
-            </small>
-          )}
-          <ul>
-            {children.map((component) => (
-              <KanjiComponentNode
-                key={`${character}-${component}`}
-                character={component}
-                meaning={entry?.componentMeanings?.[component] ?? kanji.find((candidate) => candidate.character === component)?.meanings[0]}
-                kanji={kanji}
-                ancestors={[...ancestors, character]}
-                depth={depth + 1}
-              />
-            ))}
-          </ul>
+          {description}
+          <ul>{children.map((component) => (
+            <KanjiComponentNode key={`${character}-${component}`} character={component} parts={parts}
+              ancestors={[...ancestors, character]} />
+          ))}</ul>
         </details>
       ) : (
-        <span className="kanji-tree-node">{contents}</span>
+        <div className="kanji-component-leaf"><span className="kanji-tree-node">{contents}</span>{description}</div>
       )}
     </li>
   );
 }
 
-function KanjiMemory({ item, kanji }: { item: DictionaryEntries['kanji'][number]; kanji: DictionaryEntries['kanji'] }) {
+function KanjiMemory({ item }: { item: DictionaryEntries['kanji'][number] }) {
+  const { t } = useTranslation();
+  const dictionary = useComponents();
   const components = item.components.filter((component) => component !== item.character);
   return (
     <>
       {components.length > 0 && (
-        <small className="kanji-memory-row">
+        <div className="kanji-memory-row">
           <LayerHint label="mnemonicComponents" />
-          <ul className="kanji-component-tree">
-            {components.map((component) => (
-              <KanjiComponentNode
-                key={component}
-                character={component}
-                meaning={item.componentMeanings?.[component] ?? kanji.find((candidate) => candidate.character === component)?.meanings[0]}
-                kanji={kanji}
-                ancestors={[item.character]}
-                depth={1}
-              />
-            ))}
-          </ul>
-        </small>
+          {dictionary.isLoading ? <span role="status">{t('loading')}</span> : (
+            <div className="kanji-memory-parts">
+              {dictionary.isError && <span role="status">{t('error')}{' '}
+                <button type="button" onClick={() => void dictionary.refetch()}>{t('retry')}</button>
+              </span>}
+              <ul className="kanji-component-tree">
+                {components.map((component) => (
+                  <KanjiComponentNode key={component} character={component} parts={dictionary.data ?? []}
+                    fallback={dictionary.isError ? item.componentMeanings?.[component] : undefined} ancestors={[]} />
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       )}
-      {item.mnemonic && (
-        <small className="kanji-memory-row">
-          <span>{item.mnemonic}</span>
-        </small>
-      )}
+      {item.mnemonic && <small className="kanji-memory-row"><span>{item.mnemonic}</span></small>}
     </>
   );
 }
@@ -319,7 +297,7 @@ function SentenceBlock({
                           <div className="canvas-card-body">
                             <span className="canvas-card-meaning">{item.meanings.join(', ')}</span>
                             <small><KanjiReadings on={item.on} kun={item.kun} romaji={preferences.romaji} /></small>
-                            <KanjiMemory item={item} kanji={dictionary.kanji} />
+                            <KanjiMemory item={item} />
                           </div>
                         </div>
                       ) : (
@@ -331,7 +309,7 @@ function SentenceBlock({
                           <span className="kanji-inline-body">
                             <span>{item.meanings.join(', ')}</span>
                             <small><KanjiReadings on={item.on} kun={item.kun} romaji={preferences.romaji} /></small>
-                            <KanjiMemory item={item} kanji={dictionary.kanji} />
+                            <KanjiMemory item={item} />
                           </span>
                         </div>
                       )) : preferences.canvasMode ? (

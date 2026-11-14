@@ -11,6 +11,7 @@ import { canonicalEntityId } from '../domain/entity-id-migration';
 import { GrammarExample } from './GrammarExample';
 import { KanjiReadings } from './KanjiReadings';
 import { GrammarText } from './GrammarText';
+import { ComponentLinks } from './ComponentPages';
 
 function parseReturnContext(value: string | null): { bookId: string; chapterId: string; sentenceId: string } | null {
   const match = value?.match(/^\/read\/([a-z0-9.-]+)\/([a-z0-9.-]+)\?sentence=([a-z0-9.-]+)$/);
@@ -279,14 +280,7 @@ export function EntityPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }) {
             {item.components.length > 0 && (
               <div className="kanji-components">
                 <h4>{t('mnemonicComponents')}</h4>
-                <div className="kanji-component-list">
-                  {item.components.map((component) => (
-                    <div className="kanji-component" key={component}>
-                      <b lang="ja">{component}</b>
-                      <span>{item.componentMeanings?.[component] ?? component}</span>
-                    </div>
-                  ))}
-                </div>
+                <ComponentLinks forms={item.components} fallback={item.componentMeanings} />
               </div>
             )}
             {item.mnemonic && <p className="kanji-mnemonic-phrase">{item.mnemonic}</p>}

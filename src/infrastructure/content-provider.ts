@@ -16,6 +16,7 @@ import {
   type OccurrenceLocation,
 } from '../domain/content';
 import { canonicalEntityId } from '../domain/entity-id-migration';
+import { componentDictionarySchema } from '../domain/components';
 import { kanaToRomaji } from '../domain/kana';
 import { local } from '../application/runtime';
 
@@ -214,9 +215,6 @@ async function collectEntries(ids: readonly string[], index: DictionaryIndex): P
           results.words.push(entry);
         } else if (group.kind === 'kanji' && 'character' in entry) {
           results.kanji.push(entry);
-          for (const component of entry.components) {
-            pending.push(`ja:kanji:${component}`);
-          }
         } else if (group.kind === 'grammar' && 'relatedIds' in entry) {
           results.grammar.push(entry);
         } else {
@@ -242,6 +240,7 @@ async function loadIndexOrLegacy(): Promise<{ index: DictionaryIndex | null; leg
 }
 
 export const contentProvider = {
+  components: () => load('ja/dictionary/components.json', componentDictionarySchema),
   catalog: () => load('books/catalog.json', catalogSchema),
   dictionaryIndex: () => load('ja/dictionary/index.json', dictionaryIndexSchema),
   dictionary: async () => {

@@ -7,6 +7,24 @@ test.beforeEach(async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Кошка в парке' })).toBeVisible();
 });
 
+test('kanji reuse separate component cards and parts remain available offline', async ({ page, context }) => {
+  await page.goto('./#/kanji/ja%3Akanji%3A想');
+  const componentLink = page.locator('a[href*="/components/ja%3Acomponent%3Au5fc3"]');
+  await expect(componentLink).toBeVisible();
+  await componentLink.click();
+  await expect(page).toHaveURL(/\/components\/ja%3Acomponent%3Au5fc3/);
+  await expect(page.locator('.visual-component-card')).toBeVisible();
+  await expect(page.locator('.visual-component-card .kanji-mnemonic-phrase')).not.toBeEmpty();
+  await expect(page.locator('.kanji-readings')).toHaveCount(0);
+  await page.goto('./#/components?q=木');
+  await expect(page.locator('a[href*="/components/ja%3Acomponent%3Au6728"]')).toBeVisible();
+  await page.evaluate(async () => { await navigator.serviceWorker.ready; });
+  await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator('a[href*="/components/ja%3Acomponent%3Au6728"]')).toBeVisible();
+});
+
 test('catalog, chapter navigation, direct sentence hash, and reading progress survive reload', async ({ page }) => {
   await page.getByRole('link', { name: 'Кошка в парке' }).first().click();
   await expect(page).toHaveURL(/#\/book\/demo$/);
@@ -304,8 +322,9 @@ test('furigana toggle controls reading annotations without a separate hiragana l
 
   await page.goto('./#/read/apothecary-diaries/apothecary-diaries.chapter-1');
   const inflectedWord = page.locator('[id="sentence-apothecary-diaries.chapter-1.s001"] [data-entity-id="ja:word:食べる"]');
-  await expect(inflectedWord.locator('ruby')).toContainText('食べたい');
-  await expect(inflectedWord.locator('ruby rt')).toHaveText('たべたい');
+  await expect(inflectedWord.locator('ruby')).toContainText('食');
+  await expect(inflectedWord.locator('ruby rt')).toHaveText('た');
+  await expect(inflectedWord).toContainText('べたい');
 });
 
 test('diagnostics report shares a local log file with support text', async ({ page }) => {

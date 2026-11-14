@@ -31,7 +31,7 @@ self.addEventListener('fetch', event => {
       catch { return await fallback(); }
     }
     const cached = await cache.match(request, { ignoreVary: true });
-    if (!url.pathname.includes('/books/') && cached) { return cached; }
+    if (!url.pathname.includes('/books/') && !url.pathname.includes('/ja/') && cached) { return cached; }
     let response;
     try { response = await fetch(request); }
     catch (error) { if (cached) { return cached; } throw error; }

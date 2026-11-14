@@ -10,7 +10,11 @@ vi.mock('../application/runtime', () => ({
   },
 }));
 
-import { contentProvider } from './content-provider';
+
+async function createContentProvider() {
+  vi.resetModules();
+  return (await import('./content-provider')).contentProvider;
+}
 
 const read = (path: string): unknown => JSON.parse(readFileSync(`.local-tools/content/${path}`, 'utf8'));
 
@@ -21,6 +25,7 @@ afterEach(() => {
 
 describe('published content provider', () => {
   it('loads only cards needed by a chapter instead of the full dictionary', async () => {
+    const contentProvider = await createContentProvider();
     const requested: string[] = [];
     vi.stubGlobal('fetch', async (input: string | URL | Request) => {
       const path = new URL(String(input), 'http://readfold.test').pathname.replace(/^\/ReadFold\//, '').replace(/^\//, '');
@@ -47,11 +52,6 @@ describe('published content provider', () => {
       const reference = index.byId[id];
       expect(reference).toBeDefined();
       cardFiles.add(reference.file);
-      if (reference.kind === 'kanji') {
-        const shard = kanjiShardSchema.parse(read(reference.file));
-        const entry = shard.entries.find((item) => item.id === id);
-        pending.push(...(entry?.components ?? []).map((component) => `ja:kanji:${component}`));
-      }
     }
 
     expect(chapter.id).toBe('demo.chapter-1');
@@ -63,7 +63,39 @@ describe('published content provider', () => {
     expect(cardFiles.size).toBeLessThan(Object.values(index.sections).flat().length);
   });
 
+  it('keeps named visual parts without requesting nonexistent dictionary cards', async () => {
+    const contentProvider = await createContentProvider();
+    const index = dictionaryIndexSchema.parse(read('ja/dictionary/index.json'));
+    const reference = index.byId['ja:kanji:日'];
+    const shard = kanjiShardSchema.parse(read(reference.file));
+    const entry = shard.entries.find((item) => item.id === 'ja:kanji:日')!;
+    entry.components = ['окно с перекладиной'];
+    entry.componentMeanings = { 'окно с перекладиной': 'окно, в которое светит солнце' };
+    const requested: string[] = [];
+    vi.stubGlobal('fetch', async (input: string | URL | Request) => {
+      const path = new URL(String(input), 'http://readfold.test').pathname.replace(/^\/ReadFold\//, '').replace(/^\//, '');
+      requested.push(path);
+      return new Response(JSON.stringify(path === reference.file ? shard : read(path)), { status: 200 });
+    });
+    const entries = await contentProvider.dictionaryEntities(['ja:kanji:日']);
+    expect(entries.kanji).toEqual([entry]);
+    expect(new Set(requested)).toEqual(new Set(['ja/dictionary/index.json', reference.file]));
+  });
+
+  it('loads the component dictionary separately and caches it for offline use', async () => {
+    const contentProvider = await createContentProvider();
+    vi.stubGlobal('fetch', async () => new Response(JSON.stringify(read('ja/dictionary/components.json')), { status: 200 }));
+    const components = await contentProvider.components();
+    expect(components.length).toBeGreaterThan(0);
+    expect(components.every((entry) => entry.id.startsWith('ja:component:'))).toBe(true);
+    expect(cache.get('ja/dictionary/components.json')).toEqual(components);
+    vi.stubGlobal('fetch', async () => { throw new Error('offline'); });
+    const offlineProvider = await createContentProvider();
+    expect(await offlineProvider.components()).toEqual(components);
+  });
+
   it('opens every generated chapter through the runtime provider', async () => {
+    const contentProvider = await createContentProvider();
     vi.stubGlobal('fetch', async (input: string | URL | Request) => {
       const path = new URL(String(input), 'http://readfold.test').pathname.replace(/^\/ReadFold\//, '').replace(/^\//, '');
       return new Response(JSON.stringify(read(path)), { status: 200, headers: { 'Content-Type': 'application/json' } });
