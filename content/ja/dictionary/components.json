@@ -2440,5 +2440,343 @@
       "三",
       "丨"
     ]
+  },
+  {
+    "id": "ja:component:kanji-shang",
+    "form": "尚",
+    "name": "окно под крышей",
+    "mnemonic": "Небольшая крыша ⺌ нависает над проёмом 冂 и окном 口.",
+    "components": [
+      "⺌",
+      "冂",
+      "口"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-food",
+    "form": "食",
+    "name": "еда",
+    "mnemonic": "Человек 人 держит приготовленную еду 良.",
+    "components": [
+      "人",
+      "良"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-xiang",
+    "form": "向",
+    "name": "окно в стене",
+    "mnemonic": "Проём 冂 обрамляет отверстие 口, обращённое наружу.",
+    "components": [
+      "冂",
+      "口"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-guang",
+    "form": "光",
+    "name": "свет над фигурой",
+    "mnemonic": "Сияющие штрихи ⺌ над человеческой фигурой 儿 складываются в свет.",
+    "components": [
+      "⺌",
+      "儿"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-shi-world",
+    "form": "世",
+    "name": "перекрёстные поколения",
+    "mnemonic": "Вертикаль 丨 связывает горизонтали 廿, как поколения одного мира.",
+    "components": [
+      "廿",
+      "丨"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-huo",
+    "form": "活",
+    "name": "живой поток",
+    "mnemonic": "Вода 氵 течёт, пока язык 舌 говорит: жизнь продолжается.",
+    "components": [
+      "氵",
+      "舌"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-zhe",
+    "form": "者",
+    "name": "человек под старой крышей",
+    "mnemonic": "Старший человек 耂 виден в солнечном свете 日.",
+    "components": [
+      "耂",
+      "日"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-chu",
+    "form": "出",
+    "name": "выход из гор",
+    "mnemonic": "Один горный хребет 山 выступает из-за другого.",
+    "components": [
+      "山"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-bi",
+    "form": "比",
+    "name": "две похожие фигуры",
+    "mnemonic": "Две похожие фигуры стоят рядом, чтобы их сравнить.",
+    "components": []
+  },
+  {
+    "id": "ja:component:kanji-fang",
+    "form": "方",
+    "name": "указатель направления",
+    "mnemonic": "Угловатый знак указывает сторону света и направление.",
+    "components": []
+  },
+  {
+    "id": "ja:component:kanji-dong",
+    "form": "東",
+    "name": "солнце за деревом",
+    "mnemonic": "Солнце 日 поднимается за деревом 木 на востоке.",
+    "components": [
+      "木",
+      "日"
+    ]
+  },
+  {
+    "id": "ja:component:kanji-ma",
+    "form": "馬",
+    "name": "лошадь",
+    "mnemonic": "Вертикальные штрихи и хвост напоминают силуэт лошади.",
+    "components": []
+  },
+  {
+    "id": "ja:component:kanji-yo",
+    "form": "予",
+    "name": "знак предварения",
+    "mnemonic": "Угловатые штрихи образуют знак предстоящего действия.",
+    "components": []
+  },
+  {
+    "id": "ja:component:kanji-kin",
+    "form": "金",
+    "name": "металл и драгоценность",
+    "mnemonic": "Под верхней частью 人 скрывается драгоценность 王 — металл.",
+    "components": [
+      "人",
+      "王"
+    ]
+  },
+  {
+    "id": "ja:component:shape-u531a",
+    "form": "匚",
+    "name": "короб с открытой стороной",
+    "mnemonic": "Открытая грань оставляет доступ к содержимому.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u9801",
+    "form": "頁",
+    "name": "голова; страница",
+    "mnemonic": "Верхняя черта, глаз и нижняя часть складываются в образ головы.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u4e5d",
+    "form": "九",
+    "name": "девять; крюк",
+    "mnemonic": "Косой штрих заканчивается загнутым крюком.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u4f59",
+    "form": "余",
+    "name": "остаток",
+    "mnemonic": "Человек под крышей оставляет небольшой остаток.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u8f9b",
+    "form": "辛",
+    "name": "острый знак",
+    "mnemonic": "Вертикальный знак над чертой напоминает острый колышек.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u518a",
+    "form": "冊",
+    "name": "связка табличек",
+    "mnemonic": "Тонкие дощечки соединены боковой рамкой.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u81fc",
+    "form": "臼",
+    "name": "ступа",
+    "mnemonic": "Открытая ступа ждёт зерно для растирания.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u72ac",
+    "form": "犬",
+    "name": "собака",
+    "mnemonic": "К точкам и ногам большой фигуры добавлен хвост.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u592c",
+    "form": "夬",
+    "name": "развилка",
+    "mnemonic": "Фигура разрезает путь и принимает решение.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u9e7f",
+    "form": "鹿",
+    "name": "олень",
+    "mnemonic": "Узнаваемый силуэт рогатого зверя.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u5b9b",
+    "form": "宛",
+    "name": "изгиб под крышей",
+    "mnemonic": "Под крышей путь изгибается вокруг складки.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u723f",
+    "form": "爿",
+    "name": "половина доски",
+    "mnemonic": "Длинная стойка с поперечными зарубками напоминает половину доски.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u752c",
+    "form": "甬",
+    "name": "проход",
+    "mnemonic": "Угловой вход ведёт в проход.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u590d",
+    "form": "复",
+    "name": "возврат",
+    "mnemonic": "День проходит, и путник возвращается тем же путём.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u53da",
+    "form": "叚",
+    "name": "временная замена",
+    "mnemonic": "Вещь временно занята, пока её возвращают владельцу.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u4ea2",
+    "form": "亢",
+    "name": "возвышение",
+    "mnemonic": "Небольшой верхний знак поднимается над опорой.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u593e",
+    "form": "夾",
+    "name": "зажатый предмет",
+    "mnemonic": "Две фигуры окружают предмет с обеих сторон.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u5df4",
+    "form": "巴",
+    "name": "изогнутый хвост",
+    "mnemonic": "Изогнутый нижний штрих похож на хвост.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u4ea6",
+    "form": "亦",
+    "name": "также",
+    "mnemonic": "Фигура повторяет уже названное действие.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u53cb",
+    "form": "友",
+    "name": "друг",
+    "mnemonic": "Две руки помогают друг другу.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u9b3c",
+    "form": "鬼",
+    "name": "дух",
+    "mnemonic": "Фигура с большой головой напоминает духа.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u5352",
+    "form": "卒",
+    "name": "солдат",
+    "mnemonic": "Знак на одежде отличает рядового солдата.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u5f66",
+    "form": "彦",
+    "name": "учёный",
+    "mnemonic": "Стоящий человек с заметными чертами лица.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u6182",
+    "form": "憂",
+    "name": "тревога",
+    "mnemonic": "Голова и сердце несут груз заботы.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u79b8",
+    "form": "禸",
+    "name": "след зверя",
+    "mnemonic": "Следы лап оставлены на земле.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u8fb2",
+    "form": "農",
+    "name": "земледелие",
+    "mnemonic": "Ритм поля и времени обозначает земледельческий труд.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u6c38",
+    "form": "永",
+    "name": "вечность",
+    "mnemonic": "Течение воды продолжается без конца.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u8f9f",
+    "form": "辟",
+    "name": "разделять; отводить",
+    "mnemonic": "Знак срезает и отводит в сторону.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u4e4d",
+    "form": "乍",
+    "name": "резкий штрих",
+    "mnemonic": "Несколько штрихов образуют внезапный поворот.",
+    "components": []
+  },
+  {
+    "id": "ja:component:shape-u624d",
+    "form": "才",
+    "name": "талант; росток",
+    "mnemonic": "Маленький росток пробивается вверх и проявляет способности.",
+    "components": []
   }
 ]

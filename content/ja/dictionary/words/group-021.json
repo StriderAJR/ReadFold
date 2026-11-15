@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:ええ",
+    "surface": "ええ",
+    "dictionaryForm": "ええ",
+    "reading": "ええ",
+    "romaji": "ee",
+    "partOfSpeech": "междометие",
+    "meanings": [
+      "да; верно"
+    ]
+  },
+  {
+    "id": "ja:word:様",
+    "surface": "様",
+    "dictionaryForm": "様",
+    "reading": "さま",
+    "romaji": "sama",
+    "partOfSpeech": "суффикс",
+    "meanings": [
+      "уважительное обращение к человеку"
+    ]
+  },
+  {
+    "id": "ja:word:について",
+    "surface": "について",
+    "dictionaryForm": "について",
+    "reading": "について",
+    "romaji": "nitsuite",
+    "partOfSpeech": "составная частица",
+    "meanings": [
+      "о; относительно"
+    ]
+  },
+  {
+    "id": "ja:word:人",
+    "surface": "人",
+    "dictionaryForm": "人",
+    "reading": "にん",
+    "romaji": "nin",
+    "partOfSpeech": "счётный суффикс",
+    "meanings": [
+      "счётный суффикс для людей"
+    ]
+  },
+  {
+    "id": "ja:word:以上",
+    "surface": "以上",
+    "dictionaryForm": "以上",
+    "reading": "いじょう",
+    "romaji": "ijō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "свыше; больше; сверх указанного"
+    ]
+  },
+  {
+    "id": "ja:word:ところ",
+    "surface": "ところ",
+    "dictionaryForm": "ところ",
+    "reading": "ところ",
+    "romaji": "tokoro",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место; сторона; у кого-либо"
+    ]
+  },
+  {
+    "id": "ja:word:うわー",
+    "surface": "うわー",
+    "dictionaryForm": "うわー",
+    "reading": "うわー",
+    "romaji": "uwā",
+    "partOfSpeech": "междометие",
+    "meanings": [
+      "ух ты; ого"
+    ]
+  },
+  {
+    "id": "ja:word:とも",
+    "surface": "とも",
+    "dictionaryForm": "とも",
+    "reading": "とも",
+    "romaji": "tomo",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "оба; все из названного числа"
+    ]
+  },
+  {
+    "id": "ja:word:っけ",
+    "surface": "っけ",
+    "dictionaryForm": "っけ",
+    "reading": "っけ",
+    "romaji": "kke",
+    "partOfSpeech": "конечная частица",
+    "meanings": [
+      "вопрос при припоминании"
+    ]
+  },
+  {
+    "id": "ja:word:かしら",
+    "surface": "かしら",
+    "dictionaryForm": "かしら",
+    "reading": "かしら",
+    "romaji": "kashira",
+    "partOfSpeech": "конечная частица",
+    "meanings": [
+      "интересно; неужели"
+    ]
+  },
+  {
+    "id": "ja:word:ね",
+    "surface": "ね",
+    "dictionaryForm": "ね",
+    "reading": "ね",
+    "romaji": "ne",
+    "partOfSpeech": "конечная частица",
+    "meanings": [
+      "ожидание согласия собеседника"
+    ]
+  },
+  {
+    "id": "ja:word:それぞれ",
+    "surface": "それぞれ",
+    "dictionaryForm": "それぞれ",
+    "reading": "それぞれ",
+    "romaji": "sorezore",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "каждый; соответственно"
+    ]
+  },
+  {
+    "id": "ja:word:闊歩",
+    "surface": "闊歩",
+    "dictionaryForm": "闊歩",
+    "reading": "かっぽ",
+    "romaji": "kappo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "широкий шаг; вольное распространение"
+    ]
+  },
+  {
+    "id": "ja:word:宮女",
+    "surface": "宮女",
+    "dictionaryForm": "宮女",
+    "reading": "きゅうじょ",
+    "romaji": "kyūjo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дворцовая служанка; придворная женщина"
+    ]
+  },
+  {
+    "id": "ja:word:世継ぎ",
+    "surface": "世継ぎ",
+    "dictionaryForm": "世継ぎ",
+    "reading": "よつぎ",
+    "romaji": "yotsugi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "наследник; преемник"
+    ]
+  },
+  {
+    "id": "ja:word:や",
+    "surface": "や",
+    "dictionaryForm": "や",
+    "reading": "や",
+    "romaji": "ya",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "и; неполное перечисление"
+    ]
+  },
+  {
+    "id": "ja:word:はたまた",
+    "surface": "はたまた",
+    "dictionaryForm": "はたまた",
+    "reading": "はたまた",
+    "romaji": "hatamata",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "или же; а также"
+    ]
+  },
+  {
+    "id": "ja:word:いじめ",
+    "surface": "いじめ",
+    "dictionaryForm": "いじめ",
+    "reading": "いじめ",
+    "romaji": "ijime",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "травля; издевательства"
+    ]
+  },
+  {
+    "id": "ja:word:僻み",
+    "surface": "僻み",
+    "dictionaryForm": "僻み",
+    "reading": "ひがみ",
+    "romaji": "higami",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "зависть; обида"
+    ]
+  },
+  {
+    "id": "ja:word:悪評",
+    "surface": "悪評",
+    "dictionaryForm": "悪評",
+    "reading": "あくひょう",
+    "romaji": "akuhyō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дурная молва; плохая репутация"
+    ]
+  },
+  {
+    "id": "ja:word:うだる",
+    "surface": "うだる",
+    "dictionaryForm": "うだる",
+    "reading": "うだる",
+    "romaji": "udaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "изнемогать от жары"
+    ]
+  },
+  {
+    "id": "ja:word:暑さ",
+    "surface": "暑さ",
+    "dictionaryForm": "暑さ",
+    "reading": "あつさ",
+    "romaji": "atsusa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "жара; зной"
+    ]
+  },
+  {
+    "id": "ja:word:ふさわしい",
+    "surface": "ふさわしい",
+    "dictionaryForm": "ふさわしい",
+    "reading": "ふさわしい",
+    "romaji": "fusawashii",
+    "partOfSpeech": "прилагательное",
+    "meanings": [
+      "подходящий; соответствующий"
+    ]
+  },
+  {
+    "id": "ja:word:怪談",
+    "surface": "怪談",
+    "dictionaryForm": "怪談",
+    "reading": "かいだん",
+    "romaji": "kaidan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "страшная история; рассказ о привидениях"
+    ]
+  }
+]

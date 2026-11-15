@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:だけ",
+    "surface": "だけ",
+    "dictionaryForm": "だけ",
+    "reading": "だけ",
+    "romaji": "dake",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "только; всего лишь"
+    ]
+  },
+  {
+    "id": "ja:word:その",
+    "surface": "その",
+    "dictionaryForm": "その",
+    "reading": "その",
+    "romaji": "sono",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "тот; этот (упомянутый)"
+    ]
+  },
+  {
+    "id": "ja:word:まで",
+    "surface": "まで",
+    "dictionaryForm": "まで",
+    "reading": "まで",
+    "romaji": "made",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "до; вплоть до"
+    ]
+  },
+  {
+    "id": "ja:word:より",
+    "surface": "より",
+    "dictionaryForm": "より",
+    "reading": "より",
+    "romaji": "yori",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "чем; от; исходная точка сравнения"
+    ]
+  },
+  {
+    "id": "ja:word:しか",
+    "surface": "しか",
+    "dictionaryForm": "しか",
+    "reading": "しか",
+    "romaji": "shika",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "лишь; только (с отрицанием)"
+    ]
+  },
+  {
+    "id": "ja:word:ぐらい",
+    "surface": "ぐらい",
+    "dictionaryForm": "ぐらい",
+    "reading": "ぐらい",
+    "romaji": "gurai",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "примерно; около; в такой степени"
+    ]
+  },
+  {
+    "id": "ja:word:のだ",
+    "surface": "のだ",
+    "dictionaryForm": "のだ",
+    "reading": "のだ",
+    "romaji": "noda",
+    "partOfSpeech": "выражение",
+    "meanings": [
+      "поясняющая связка: дело в том, что"
+    ]
+  },
+  {
+    "id": "ja:word:思い当たる",
+    "surface": "思い当たる",
+    "dictionaryForm": "思い当たる",
+    "reading": "おもいあたる",
+    "romaji": "omoiataru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "припоминать подходящее; узнавать по признакам; догадываться"
+    ]
+  },
+  {
+    "id": "ja:word:いけない",
+    "surface": "いけない",
+    "dictionaryForm": "いけない",
+    "reading": "いけない",
+    "romaji": "ikenai",
+    "partOfSpeech": "выражение",
+    "meanings": [
+      "нельзя; недопустимо; нехорошо"
+    ]
+  },
+  {
+    "id": "ja:word:散々",
+    "surface": "散々",
+    "dictionaryForm": "散々",
+    "reading": "さんざん",
+    "romaji": "sanzan",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "многократно; вдоволь; до изнеможения"
+    ]
+  },
+  {
+    "id": "ja:word:どの",
+    "surface": "どの",
+    "dictionaryForm": "どの",
+    "reading": "どの",
+    "romaji": "dono",
+    "partOfSpeech": "именной суффикс",
+    "meanings": [
+      "господин; почтительное обращение после имени или титула"
+    ]
+  },
+  {
+    "id": "ja:word:ちいと",
+    "surface": "ちいと",
+    "dictionaryForm": "ちいと",
+    "reading": "ちいと",
+    "romaji": "chiito",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "чуть-чуть; немного (просторечное ちょっと)"
+    ]
+  },
+  {
+    "id": "ja:word:ばかし",
+    "surface": "ばかし",
+    "dictionaryForm": "ばかし",
+    "reading": "ばかし",
+    "romaji": "bakashi",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "всего лишь; немного (разговорное ばかり)"
+    ]
+  },
+  {
+    "id": "ja:word:手早い",
+    "surface": "手早い",
+    "dictionaryForm": "手早い",
+    "reading": "てばやい",
+    "romaji": "tebayai",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "быстрый и ловкий; проворный"
+    ]
+  },
+  {
+    "id": "ja:word:一括り",
+    "surface": "一括り",
+    "dictionaryForm": "一括り",
+    "reading": "ひとくくり",
+    "romaji": "hitokukuri",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "одна связка; объединение в одну группу"
+    ]
+  },
+  {
+    "id": "ja:word:規模",
+    "surface": "規模",
+    "dictionaryForm": "規模",
+    "reading": "きぼ",
+    "romaji": "kibo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "масштаб; размеры"
+    ]
+  },
+  {
+    "id": "ja:word:広大",
+    "surface": "広大",
+    "dictionaryForm": "広大",
+    "reading": "こうだい",
+    "romaji": "kōdai",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "обширный; огромный"
+    ]
+  },
+  {
+    "id": "ja:word:常時",
+    "surface": "常時",
+    "dictionaryForm": "常時",
+    "reading": "じょうじ",
+    "romaji": "jōji",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "постоянно; во всякое время"
+    ]
+  },
+  {
+    "id": "ja:word:泊まり込み",
+    "surface": "泊まり込み",
+    "dictionaryForm": "泊まり込み",
+    "reading": "とまりこみ",
+    "romaji": "tomarikomi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "проживание на месте работы; работа с ночёвкой"
+    ]
+  },
+  {
+    "id": "ja:word:五百",
+    "surface": "五百",
+    "dictionaryForm": "五百",
+    "reading": "ごひゃく",
+    "romaji": "gohyaku",
+    "partOfSpeech": "числительное",
+    "meanings": [
+      "пятьсот"
+    ]
+  },
+  {
+    "id": "ja:word:超える",
+    "surface": "超える",
+    "dictionaryForm": "超える",
+    "reading": "こえる",
+    "romaji": "koeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "превышать; превосходить; переходить за предел"
+    ]
+  },
+  {
+    "id": "ja:word:大部屋",
+    "surface": "大部屋",
+    "dictionaryForm": "大部屋",
+    "reading": "おおべや",
+    "romaji": "ōbeya",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "большая общая комната"
+    ]
+  },
+  {
+    "id": "ja:word:十人",
+    "surface": "十人",
+    "dictionaryForm": "十人",
+    "reading": "じゅうにん",
+    "romaji": "jūnin",
+    "partOfSpeech": "счётное выражение",
+    "meanings": [
+      "десять человек"
+    ]
+  },
+  {
+    "id": "ja:word:単位",
+    "surface": "単位",
+    "dictionaryForm": "単位",
+    "reading": "たんい",
+    "romaji": "tani",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "единица; группа определённого размера"
+    ]
+  }
+]

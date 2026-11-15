@@ -1,0 +1,809 @@
+{
+  "paragraphs": [
+    {
+      "id": "apothecary-diaries.chapter-2.p026",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s050",
+          "text": "（頭痛に腹痛に吐き気か）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "頭痛",
+              "reading": "ずつう"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "腹痛",
+              "reading": "ふくつう"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "吐き気",
+              "reading": "はきけ"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（ずつうにふくつうにはきけか）",
+          "romaji": "Zutsū ni fukutsū ni hakike ka.",
+          "literal": "(Головная боль, боль в животе, тошнота, значит.)",
+          "natural": "(Голова болит, живот болит, тошнит, значит.)",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:頭痛",
+              "surface": "頭痛",
+              "hiragana": "ずつう",
+              "romaji": "zutsū",
+              "meaning": "головная боль",
+              "role": "Маомао повторяет первый из услышанных симптомов.",
+              "furigana": [
+                {
+                  "text": "頭",
+                  "reading": "ず"
+                },
+                {
+                  "text": "痛",
+                  "reading": "つう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:腹痛",
+              "surface": "腹痛",
+              "hiragana": "ふくつう",
+              "romaji": "fukutsū",
+              "meaning": "боль в животе",
+              "role": "Второй симптом, который Маомао сопоставляет со своими знаниями.",
+              "furigana": [
+                {
+                  "text": "腹",
+                  "reading": "ふく"
+                },
+                {
+                  "text": "痛",
+                  "reading": "つう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:吐き気",
+              "surface": "吐き気",
+              "hiragana": "はきけ",
+              "romaji": "hakike",
+              "meaning": "тошнота",
+              "role": "Третий симптом в мысленном перечне.",
+              "furigana": [
+                {
+                  "text": "吐",
+                  "reading": "は"
+                },
+                {
+                  "text": "き"
+                },
+                {
+                  "text": "気",
+                  "reading": "け"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:か",
+              "surface": "か",
+              "hiragana": "か",
+              "romaji": "ka",
+              "meaning": "вопрос; размышление вслух"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:頭",
+            "ja:kanji:痛",
+            "ja:kanji:腹",
+            "ja:kanji:吐",
+            "ja:kanji:気"
+          ],
+          "grammarOccurrences": []
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p027",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s051",
+          "text": "思い当る症状だったが、決定打はない。",
+          "segments": [
+            {
+              "text": "思い当る",
+              "reading": "おもいあたる"
+            },
+            {
+              "text": "症状",
+              "reading": "しょうじょう"
+            },
+            {
+              "text": "だった"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "決定打",
+              "reading": "けっていだ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "おもいあたるしょうじょうだったが、けっていだはない。",
+          "romaji": "Omoitaru shōjō datta ga, ketteida wa nai.",
+          "literal": "Симптомы припоминались, но решающего довода нет.",
+          "natural": "Ей кое-что приходило на ум, но доказательств пока не было.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:思い当たる",
+              "surface": "思い当る",
+              "hiragana": "おもいあたる",
+              "romaji": "omoiataru",
+              "meaning": "вызывающие знакомые ассоциации",
+              "inflection": "вариант написания 思い当たる с сокращённой окуриганой",
+              "furigana": [
+                {
+                  "text": "思",
+                  "reading": "おも"
+                },
+                {
+                  "text": "い"
+                },
+                {
+                  "text": "当",
+                  "reading": "あた"
+                },
+                {
+                  "text": "る"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:症状",
+              "surface": "症状",
+              "hiragana": "しょうじょう",
+              "romaji": "shōjō",
+              "meaning": "симптомы",
+              "role": "Набор жалоб напоминает Маомао о возможном диагнозе.",
+              "furigana": [
+                {
+                  "text": "症",
+                  "reading": "しょう"
+                },
+                {
+                  "text": "状",
+                  "reading": "じょう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だった",
+              "hiragana": "だった",
+              "romaji": "datta",
+              "meaning": "были",
+              "inflection": "прошедшая форма связки だ"
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "но; хотя; тогда как"
+            },
+            {
+              "wordId": "ja:word:決定打",
+              "surface": "決定打",
+              "hiragana": "けっていだ",
+              "romaji": "ketteida",
+              "meaning": "решающий довод",
+              "role": "Пока нет факта, который подтвердил бы догадку.",
+              "furigana": [
+                {
+                  "text": "決",
+                  "reading": "けっ"
+                },
+                {
+                  "text": "定",
+                  "reading": "てい"
+                },
+                {
+                  "text": "打",
+                  "reading": "だ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:ない",
+              "surface": "ない",
+              "hiragana": "ない",
+              "romaji": "nai",
+              "meaning": "нет; отсутствующий"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:思",
+            "ja:kanji:当",
+            "ja:kanji:症",
+            "ja:kanji:状",
+            "ja:kanji:決",
+            "ja:kanji:定",
+            "ja:kanji:打"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:concessive-ga",
+              "role": "が ограничивает догадку: симптомы знакомы Маомао, но решающего доказательства нет."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s052",
+          "text": "予測だけで物事を考えるのはいけないと、散々おやじどのから言われていた。",
+          "segments": [
+            {
+              "text": "予測",
+              "reading": "よそく"
+            },
+            {
+              "text": "だけ"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "物事",
+              "reading": "ものごと"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "考える",
+              "reading": "かんがえる"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "いけない"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "散々",
+              "reading": "さんざん"
+            },
+            {
+              "text": "おやじ"
+            },
+            {
+              "text": "どの"
+            },
+            {
+              "text": "から"
+            },
+            {
+              "text": "言われていた",
+              "reading": "いわれていた"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "よそくだけでものごとをかんがえるのはいけないと、さんざんおやじどのからいわれていた。",
+          "romaji": "Yosoku dake de monogoto o kangaeru no wa ikenai to, sanzan oyaji-dono kara iwarete ita.",
+          "literal": "Ей много раз говорили, что нельзя судить о вещах лишь по прогнозу.",
+          "natural": "Приёмный отец не раз твердил ей, что нельзя строить выводы на одних догадках.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:予測",
+              "surface": "予測",
+              "hiragana": "よそく",
+              "romaji": "yosoku",
+              "meaning": "предположение",
+              "role": "То, на чём Маомао не должна основывать вывод.",
+              "furigana": [
+                {
+                  "text": "予",
+                  "reading": "よ"
+                },
+                {
+                  "text": "測",
+                  "reading": "そく"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だけ",
+              "surface": "だけ",
+              "hiragana": "だけ",
+              "romaji": "dake",
+              "meaning": "только; всего лишь"
+            },
+            {
+              "wordId": "ja:word:で",
+              "surface": "で",
+              "hiragana": "で",
+              "romaji": "de",
+              "meaning": "на основании; опираясь на"
+            },
+            {
+              "wordId": "ja:word:物事",
+              "surface": "物事",
+              "hiragana": "ものごと",
+              "romaji": "monogoto",
+              "meaning": "о происходящем",
+              "role": "Обобщённо называет предметы и события, о которых она рассуждает.",
+              "furigana": [
+                {
+                  "text": "物",
+                  "reading": "もの"
+                },
+                {
+                  "text": "事",
+                  "reading": "ごと"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:考える",
+              "surface": "考える",
+              "hiragana": "かんがえる",
+              "romaji": "kangaeru",
+              "meaning": "рассуждать",
+              "role": "Действие, которое нельзя совершать только на основании догадок.",
+              "furigana": [
+                {
+                  "text": "考",
+                  "reading": "かんが"
+                },
+                {
+                  "text": "える"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "номинализация действия «думать»"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:いけない",
+              "surface": "いけない",
+              "hiragana": "いけない",
+              "romaji": "ikenai",
+              "meaning": "нельзя; недопустимо; нехорошо"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; цитирование; условие"
+            },
+            {
+              "wordId": "ja:word:散々",
+              "surface": "散々",
+              "hiragana": "さんざん",
+              "romaji": "sanzan",
+              "meaning": "многократно; вдоволь; до изнеможения",
+              "furigana": [
+                {
+                  "text": "散",
+                  "reading": "さん"
+                },
+                {
+                  "text": "々",
+                  "reading": "ざん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:おやじ",
+              "surface": "おやじ",
+              "hiragana": "おやじ",
+              "romaji": "oyaji",
+              "meaning": "отец; батя; старик"
+            },
+            {
+              "wordId": "ja:word:どの",
+              "surface": "どの",
+              "hiragana": "どの",
+              "romaji": "dono",
+              "meaning": "господин; почтительное обращение после имени или титула"
+            },
+            {
+              "wordId": "ja:word:から",
+              "surface": "から",
+              "hiragana": "から",
+              "romaji": "kara",
+              "meaning": "от; из; потому что"
+            },
+            {
+              "wordId": "ja:word:言う",
+              "surface": "言われていた",
+              "hiragana": "いわれていた",
+              "romaji": "iwareteita",
+              "meaning": "ему неоднократно говорили",
+              "inflection": "страдательная форма в прошедшем длительном времени",
+              "furigana": [
+                {
+                  "text": "言",
+                  "reading": "い"
+                },
+                {
+                  "text": "われていた"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:予",
+            "ja:kanji:測",
+            "ja:kanji:物",
+            "ja:kanji:事",
+            "ja:kanji:考",
+            "ja:kanji:散",
+            "ja:kanji:言"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:only-dake",
+              "role": "だけで ограничивает основание рассуждений одним прогнозом; と вводит наставление, которое отец повторял Маомао."
+            },
+            {
+              "grammarId": "ja:grammar:passive",
+              "role": "言われていた — длительный пассив: Маомао много раз слышала наставления отца."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p028",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s053",
+          "text": "（ちいとばかし、行ってみるか）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "ちいと"
+            },
+            {
+              "text": "ばかし"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "行って",
+              "reading": "いって"
+            },
+            {
+              "text": "みる"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（ちいとばかし、いってみるか）",
+          "romaji": "Chīto bakashi, itte miru ka.",
+          "literal": "(Схожу-ка ненадолго и посмотрю.)",
+          "natural": "(Пожалуй, схожу взгляну.)",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:ちいと",
+              "surface": "ちいと",
+              "hiragana": "ちいと",
+              "romaji": "chiito",
+              "meaning": "чуть-чуть; немного (просторечное ちょっと)"
+            },
+            {
+              "wordId": "ja:word:ばかし",
+              "surface": "ばかし",
+              "hiragana": "ばかし",
+              "romaji": "bakashi",
+              "meaning": "всего лишь; немного (разговорное ばかり)"
+            },
+            {
+              "wordId": "ja:word:行く",
+              "surface": "行って",
+              "hiragana": "いって",
+              "romaji": "itte",
+              "meaning": "сходить",
+              "inflection": "て-форма",
+              "role": "Маомао решает лично проверить состояние супруги и ребёнка.",
+              "furigana": [
+                {
+                  "text": "行",
+                  "reading": "い"
+                },
+                {
+                  "text": "って"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:見る",
+              "surface": "みる",
+              "hiragana": "みる",
+              "romaji": "miru",
+              "meaning": "попробовать (вспомогательный глагол после て)"
+            },
+            {
+              "wordId": "ja:word:か",
+              "surface": "か",
+              "hiragana": "か",
+              "romaji": "ka",
+              "meaning": "вопрос; размышление вслух"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:行"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:te-miru",
+              "role": "行ってみる выражает намерение сходить и проверить на месте, что происходит."
+            },
+            {
+              "grammarId": "ja:grammar:question-ka",
+              "role": "か в конце превращает решение в мягкий вопрос самой себе."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p029",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s054",
+          "text": "猫猫は手早く仕事を終わらせることにした。",
+          "segments": [
+            {
+              "text": "猫猫",
+              "reading": "まおまお"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "手早く",
+              "reading": "てばやく"
+            },
+            {
+              "text": "仕事",
+              "reading": "しごと"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "終わらせる",
+              "reading": "おわらせる"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "した"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "まおまおはてばやくしごとをおわらせることにした。",
+          "romaji": "Maomao wa tebayaku shigoto o owaraseru koto ni shita.",
+          "literal": "Маомао решила быстро закончить работу.",
+          "natural": "Маомао решила поскорее управиться с делами.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:猫猫",
+              "surface": "猫猫",
+              "hiragana": "まおまお",
+              "romaji": "maomao",
+              "meaning": "Маомао",
+              "role": "Она принимает решение поторопиться.",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                },
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:手早い",
+              "surface": "手早く",
+              "hiragana": "てばやく",
+              "romaji": "tebayaku",
+              "meaning": "проворно; быстро",
+              "inflection": "наречная форма",
+              "furigana": [
+                {
+                  "text": "手",
+                  "reading": "て"
+                },
+                {
+                  "text": "早",
+                  "reading": "ばや"
+                },
+                {
+                  "text": "く"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:仕事",
+              "surface": "仕事",
+              "hiragana": "しごと",
+              "romaji": "shigoto",
+              "meaning": "работу",
+              "role": "Дело, которое Маомао собирается закончить быстрее.",
+              "furigana": [
+                {
+                  "text": "仕",
+                  "reading": "し"
+                },
+                {
+                  "text": "事",
+                  "reading": "ごと"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:終わらせる",
+              "surface": "終わらせる",
+              "hiragana": "おわらせる",
+              "romaji": "owaraseru",
+              "meaning": "закончить",
+              "role": "Указывает, что она намерена завершить текущую работу.",
+              "furigana": [
+                {
+                  "text": "終",
+                  "reading": "お"
+                },
+                {
+                  "text": "わらせる"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:こと",
+              "surface": "こと",
+              "hiragana": "こと",
+              "romaji": "koto",
+              "meaning": "дело; факт; номинализация действия"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:する",
+              "surface": "した",
+              "hiragana": "した",
+              "romaji": "shita",
+              "meaning": "решила сделать",
+              "inflection": "прошедшая форма; ことにした — приняла решение"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:猫",
+            "ja:kanji:手",
+            "ja:kanji:早",
+            "ja:kanji:仕",
+            "ja:kanji:事",
+            "ja:kanji:終"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:nominalizer-koto",
+              "role": "ことにした оформляет завершение работы как принятое Маомао решение."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

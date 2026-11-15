@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:ほとんど",
+    "surface": "ほとんど",
+    "dictionaryForm": "ほとんど",
+    "reading": "ほとんど",
+    "romaji": "hotondo",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "почти; с отрицанием: почти не"
+    ]
+  },
+  {
+    "id": "ja:word:進める",
+    "surface": "進める",
+    "dictionaryForm": "進める",
+    "reading": "すすめる",
+    "romaji": "susumeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "продвигать; продолжать"
+    ]
+  },
+  {
+    "id": "ja:word:だの",
+    "surface": "だの",
+    "dictionaryForm": "だの",
+    "reading": "だの",
+    "romaji": "dano",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "то одно, то другое; перечисление примеров"
+    ]
+  },
+  {
+    "id": "ja:word:だからといって",
+    "surface": "だからといって",
+    "dictionaryForm": "だからといって",
+    "reading": "だからといって",
+    "romaji": "dakaratoitte",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "даже если так; из этого ещё не следует"
+    ]
+  },
+  {
+    "id": "ja:word:一言",
+    "surface": "一言",
+    "dictionaryForm": "一言",
+    "reading": "ひとこと",
+    "romaji": "hitokoto",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "одно слово; короткая фраза"
+    ]
+  },
+  {
+    "id": "ja:word:一族郎党",
+    "surface": "一族郎党",
+    "dictionaryForm": "一族郎党",
+    "reading": "いちぞくろうとう",
+    "romaji": "ichizokurōtō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "весь род и его приближённые"
+    ]
+  },
+  {
+    "id": "ja:word:皆殺し",
+    "surface": "皆殺し",
+    "dictionaryForm": "皆殺し",
+    "reading": "みなごろし",
+    "romaji": "minagoroshi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "поголовное истребление"
+    ]
+  },
+  {
+    "id": "ja:word:法",
+    "surface": "法",
+    "dictionaryForm": "法",
+    "reading": "ほう",
+    "romaji": "hō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "закон"
+    ]
+  },
+  {
+    "id": "ja:word:むしろ",
+    "surface": "むしろ",
+    "dictionaryForm": "むしろ",
+    "reading": "むしろ",
+    "romaji": "mushiro",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "скорее; напротив"
+    ]
+  },
+  {
+    "id": "ja:word:異端",
+    "surface": "異端",
+    "dictionaryForm": "異端",
+    "reading": "いたん",
+    "romaji": "itan",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "ересь; неортодоксальные взгляды"
+    ]
+  },
+  {
+    "id": "ja:word:しかし",
+    "surface": "しかし",
+    "dictionaryForm": "しかし",
+    "reading": "しかし",
+    "romaji": "shikashi",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "однако; но"
+    ]
+  },
+  {
+    "id": "ja:word:頭",
+    "surface": "頭",
+    "dictionaryForm": "頭",
+    "reading": "あたま",
+    "romaji": "atama",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "голова; ум"
+    ]
+  },
+  {
+    "id": "ja:word:言い切る",
+    "surface": "言い切る",
+    "dictionaryForm": "言い切る",
+    "reading": "いいきる",
+    "romaji": "iikiru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "утверждать уверенно; сказать категорично"
+    ]
+  },
+  {
+    "id": "ja:word:根拠",
+    "surface": "根拠",
+    "dictionaryForm": "根拠",
+    "reading": "こんきょ",
+    "romaji": "konkyo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "основание; доказательство"
+    ]
+  },
+  {
+    "id": "ja:word:なんらか",
+    "surface": "なんらか",
+    "dictionaryForm": "なんらか",
+    "reading": "なんらか",
+    "romaji": "nanraka",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "какой-либо; некоторый"
+    ]
+  },
+  {
+    "id": "ja:word:もしかして",
+    "surface": "もしかして",
+    "dictionaryForm": "もしかして",
+    "reading": "もしかして",
+    "romaji": "moshikashite",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "может быть; возможно"
+    ]
+  },
+  {
+    "id": "ja:word:的",
+    "surface": "的",
+    "dictionaryForm": "的",
+    "reading": "てき",
+    "romaji": "teki",
+    "partOfSpeech": "суффикс",
+    "meanings": [
+      "свойственный чему-либо; образует определение"
+    ]
+  },
+  {
+    "id": "ja:word:どういう",
+    "surface": "どういう",
+    "dictionaryForm": "どういう",
+    "reading": "どういう",
+    "romaji": "dōiu",
+    "partOfSpeech": "определение",
+    "meanings": [
+      "какой; что за"
+    ]
+  },
+  {
+    "id": "ja:word:ふう",
+    "surface": "ふう",
+    "dictionaryForm": "ふう",
+    "reading": "ふう",
+    "romaji": "fū",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "способ; манера"
+    ]
+  },
+  {
+    "id": "ja:word:負ける",
+    "surface": "負ける",
+    "dictionaryForm": "負ける",
+    "reading": "まける",
+    "romaji": "makeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "проигрывать; уступать"
+    ]
+  },
+  {
+    "id": "ja:word:しばらく",
+    "surface": "しばらく",
+    "dictionaryForm": "しばらく",
+    "reading": "しばらく",
+    "romaji": "shibaraku",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "некоторое время; спустя некоторое время"
+    ]
+  },
+  {
+    "id": "ja:word:けど",
+    "surface": "けど",
+    "dictionaryForm": "けど",
+    "reading": "けど",
+    "romaji": "kedo",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "но; хотя"
+    ]
+  },
+  {
+    "id": "ja:word:だんだん",
+    "surface": "だんだん",
+    "dictionaryForm": "だんだん",
+    "reading": "だんだん",
+    "romaji": "dandan",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "постепенно"
+    ]
+  },
+  {
+    "id": "ja:word:窓",
+    "surface": "窓",
+    "dictionaryForm": "窓",
+    "reading": "まど",
+    "romaji": "mado",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "окно"
+    ]
+  }
+]

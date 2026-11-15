@@ -1,0 +1,267 @@
+[
+  {
+    "id": "ja:word:と",
+    "surface": "と",
+    "dictionaryForm": "と",
+    "reading": "と",
+    "romaji": "to",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "и; с; показатель цитаты или условия"
+    ]
+  },
+  {
+    "id": "ja:word:も",
+    "surface": "も",
+    "dictionaryForm": "も",
+    "reading": "も",
+    "romaji": "mo",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "тоже; даже"
+    ]
+  },
+  {
+    "id": "ja:word:だ",
+    "surface": "だ",
+    "dictionaryForm": "だ",
+    "reading": "だ",
+    "romaji": "da",
+    "partOfSpeech": "связка",
+    "meanings": [
+      "быть; являться"
+    ]
+  },
+  {
+    "id": "ja:word:です",
+    "surface": "です",
+    "dictionaryForm": "です",
+    "reading": "です",
+    "romaji": "desu",
+    "partOfSpeech": "вежливая связка",
+    "meanings": [
+      "быть; являться (вежливо)"
+    ]
+  },
+  {
+    "id": "ja:word:ない",
+    "surface": "ない",
+    "dictionaryForm": "ない",
+    "reading": "ない",
+    "romaji": "nai",
+    "partOfSpeech": "прилагательное",
+    "meanings": [
+      "не иметься; отсутствующий"
+    ]
+  },
+  {
+    "id": "ja:word:か",
+    "surface": "か",
+    "dictionaryForm": "か",
+    "reading": "か",
+    "romaji": "ka",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "показатель вопроса"
+    ]
+  },
+  {
+    "id": "ja:word:な",
+    "surface": "な",
+    "dictionaryForm": "な",
+    "reading": "な",
+    "romaji": "na",
+    "partOfSpeech": "служебное слово",
+    "meanings": [
+      "связь определения с существительным после прилагательных на な",
+      "эмоциональное завершение фразы"
+    ]
+  },
+  {
+    "id": "ja:word:ん",
+    "surface": "ん",
+    "dictionaryForm": "ん",
+    "reading": "ん",
+    "romaji": "n",
+    "partOfSpeech": "служебное слово",
+    "meanings": [
+      "разговорная форма пояснительного の"
+    ]
+  },
+  {
+    "id": "ja:word:て",
+    "surface": "て",
+    "dictionaryForm": "て",
+    "reading": "て",
+    "romaji": "te",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "соединение действий или состояний"
+    ]
+  },
+  {
+    "id": "ja:word:ながら",
+    "surface": "ながら",
+    "dictionaryForm": "ながら",
+    "reading": "ながら",
+    "romaji": "nagara",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "одновременно с; делая"
+    ]
+  },
+  {
+    "id": "ja:word:って",
+    "surface": "って",
+    "dictionaryForm": "って",
+    "reading": "って",
+    "romaji": "tte",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "разговорный показатель цитаты или пересказа"
+    ]
+  },
+  {
+    "id": "ja:word:たち",
+    "surface": "たち",
+    "dictionaryForm": "たち",
+    "reading": "たち",
+    "romaji": "tachi",
+    "partOfSpeech": "суффикс",
+    "meanings": [
+      "множественность лиц"
+    ]
+  },
+  {
+    "id": "ja:word:ばかり",
+    "surface": "ばかり",
+    "dictionaryForm": "ばかり",
+    "reading": "ばかり",
+    "romaji": "bakari",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "только; исключительно; приблизительно"
+    ]
+  },
+  {
+    "id": "ja:word:から",
+    "surface": "から",
+    "dictionaryForm": "から",
+    "reading": "から",
+    "romaji": "kara",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "от; из; потому что"
+    ]
+  },
+  {
+    "id": "ja:word:らしい",
+    "surface": "らしい",
+    "dictionaryForm": "らしい",
+    "reading": "らしい",
+    "romaji": "rashii",
+    "partOfSpeech": "вспомогательное слово",
+    "meanings": [
+      "по-видимому; похоже"
+    ]
+  },
+  {
+    "id": "ja:word:よう",
+    "surface": "よう",
+    "dictionaryForm": "よう",
+    "reading": "よう",
+    "romaji": "yō",
+    "partOfSpeech": "служебное существительное",
+    "meanings": [
+      "подобие; видимость; способ"
+    ]
+  },
+  {
+    "id": "ja:word:わけ",
+    "surface": "わけ",
+    "dictionaryForm": "わけ",
+    "reading": "わけ",
+    "romaji": "wake",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "причина; основание; обстоятельство"
+    ]
+  },
+  {
+    "id": "ja:word:こと",
+    "surface": "こと",
+    "dictionaryForm": "こと",
+    "reading": "こと",
+    "romaji": "koto",
+    "partOfSpeech": "служебное существительное",
+    "meanings": [
+      "дело; факт; номинализация действия"
+    ]
+  },
+  {
+    "id": "ja:word:それ",
+    "surface": "それ",
+    "dictionaryForm": "それ",
+    "reading": "それ",
+    "romaji": "sore",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "это; то"
+    ]
+  },
+  {
+    "id": "ja:word:そんな",
+    "surface": "そんな",
+    "dictionaryForm": "そんな",
+    "reading": "そんな",
+    "romaji": "sonna",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "такой; подобный"
+    ]
+  },
+  {
+    "id": "ja:word:あの",
+    "surface": "あの",
+    "dictionaryForm": "あの",
+    "reading": "あの",
+    "romaji": "ano",
+    "partOfSpeech": "определительное слово",
+    "meanings": [
+      "тот; вон тот"
+    ]
+  },
+  {
+    "id": "ja:word:おまえ",
+    "surface": "おまえ",
+    "dictionaryForm": "おまえ",
+    "reading": "おまえ",
+    "romaji": "omae",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "ты (фамильярно или грубо)"
+    ]
+  },
+  {
+    "id": "ja:word:いや",
+    "surface": "いや",
+    "dictionaryForm": "いや",
+    "reading": "いや",
+    "romaji": "iya",
+    "partOfSpeech": "междометие",
+    "meanings": [
+      "нет; постой; выражение возражения"
+    ]
+  },
+  {
+    "id": "ja:word:以前",
+    "surface": "以前",
+    "dictionaryForm": "以前",
+    "reading": "いぜん",
+    "romaji": "izen",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "раньше; до; прежде"
+    ]
+  }
+]

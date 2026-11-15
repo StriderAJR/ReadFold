@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ja:word:いわれ",
+    "surface": "いわれ",
+    "dictionaryForm": "いわれ",
+    "reading": "いわれ",
+    "romaji": "iware",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "основание; причина; происхождение"
+    ]
+  },
+  {
+    "id": "ja:word:やぶ",
+    "surface": "やぶ",
+    "dictionaryForm": "やぶ",
+    "reading": "やぶ",
+    "romaji": "yabu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "лекарь-недоучка; плохой врач"
+    ]
+  },
+  {
+    "id": "ja:word:あんなに",
+    "surface": "あんなに",
+    "dictionaryForm": "あんなに",
+    "reading": "あんなに",
+    "romaji": "anna ni",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "настолько; так сильно"
+    ]
+  },
+  {
+    "id": "ja:word:近く",
+    "surface": "近く",
+    "dictionaryForm": "近く",
+    "reading": "ちかく",
+    "romaji": "chikaku",
+    "partOfSpeech": "существительное; наречие",
+    "meanings": [
+      "поблизости; близко"
+    ]
+  },
+  {
+    "id": "ja:word:気づく",
+    "surface": "気づく",
+    "dictionaryForm": "気づく",
+    "reading": "きづく",
+    "romaji": "kizuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "замечать; осознавать"
+    ]
+  },
+  {
+    "id": "ja:word:死亡",
+    "surface": "死亡",
+    "dictionaryForm": "死亡",
+    "reading": "しぼう",
+    "romaji": "shibō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "смерть; кончина"
+    ]
+  },
+  {
+    "id": "ja:word:おぼつかない",
+    "surface": "おぼつかない",
+    "dictionaryForm": "おぼつかない",
+    "reading": "おぼつかない",
+    "romaji": "obotsukanai",
+    "partOfSpeech": "прилагательное",
+    "meanings": [
+      "ненадёжный; неуверенный; нетвёрдый"
+    ]
+  },
+  {
+    "id": "ja:word:身体",
+    "surface": "身体",
+    "dictionaryForm": "身体",
+    "reading": "からだ",
+    "romaji": "karada",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "тело; организм"
+    ]
+  },
+  {
+    "id": "ja:word:ぶつぶつ",
+    "surface": "ぶつぶつ",
+    "dictionaryForm": "ぶつぶつ",
+    "reading": "ぶつぶつ",
+    "romaji": "butsubutsu",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "бормоча; ворча; вполголоса"
+    ]
+  },
+  {
+    "id": "ja:word:ひとりごと",
+    "surface": "ひとりごと",
+    "dictionaryForm": "ひとりごと",
+    "reading": "ひとりごと",
+    "romaji": "hitorigoto",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "разговор с собой; слова, обращённые к себе"
+    ]
+  },
+  {
+    "id": "ja:word:つぶやく",
+    "surface": "つぶやく",
+    "dictionaryForm": "つぶやく",
+    "reading": "つぶやく",
+    "romaji": "tsubuyaku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "бормотать; шептать"
+    ]
+  },
+  {
+    "id": "ja:word:騒動",
+    "surface": "騒動",
+    "dictionaryForm": "騒動",
+    "reading": "そうどう",
+    "romaji": "sōdō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "переполох; смута; ссора"
+    ]
+  },
+  {
+    "id": "ja:word:場",
+    "surface": "場",
+    "dictionaryForm": "場",
+    "reading": "ば",
+    "romaji": "ba",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "место; обстановка"
+    ]
+  },
+  {
+    "id": "ja:word:書き物",
+    "surface": "書き物",
+    "dictionaryForm": "書き物",
+    "reading": "かきもの",
+    "romaji": "kakimono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "письменная работа; принадлежности для письма"
+    ]
+  },
+  {
+    "id": "ja:word:よって",
+    "surface": "よって",
+    "dictionaryForm": "よって",
+    "reading": "よって",
+    "romaji": "yotte",
+    "partOfSpeech": "союз",
+    "meanings": [
+      "поэтому; вследствие этого"
+    ]
+  },
+  {
+    "id": "ja:word:通り過ぎる",
+    "surface": "通り過ぎる",
+    "dictionaryForm": "通り過ぎる",
+    "reading": "とおりすぎる",
+    "romaji": "tōrisugiru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "проходить мимо"
+    ]
+  },
+  {
+    "id": "ja:word:人物",
+    "surface": "人物",
+    "dictionaryForm": "人物",
+    "reading": "じんぶつ",
+    "romaji": "jinbutsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "человек; личность"
+    ]
+  },
+  {
+    "id": "ja:word:くれる:give",
+    "surface": "くれる",
+    "dictionaryForm": "くれる",
+    "reading": "くれる",
+    "romaji": "kureru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "давать; уделять (в том числе внимание)"
+    ]
+  }
+]

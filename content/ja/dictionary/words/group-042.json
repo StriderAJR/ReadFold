@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:現在",
+    "surface": "現在",
+    "dictionaryForm": "現在",
+    "reading": "げんざい",
+    "romaji": "genzai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "настоящее время; сейчас"
+    ]
+  },
+  {
+    "id": "ja:word:住む",
+    "surface": "住む",
+    "dictionaryForm": "住む",
+    "reading": "すむ",
+    "romaji": "sumu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "жить; проживать"
+    ]
+  },
+  {
+    "id": "ja:word:生母",
+    "surface": "生母",
+    "dictionaryForm": "生母",
+    "reading": "せいぼ",
+    "romaji": "seibo",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "родная мать"
+    ]
+  },
+  {
+    "id": "ja:word:ご",
+    "surface": "ご",
+    "dictionaryForm": "ご",
+    "reading": "ご",
+    "romaji": "go",
+    "partOfSpeech": "префикс",
+    "meanings": [
+      "уважительный префикс"
+    ]
+  },
+  {
+    "id": "ja:word:帝",
+    "surface": "帝",
+    "dictionaryForm": "帝",
+    "reading": "みかど",
+    "romaji": "mikado",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "император"
+    ]
+  },
+  {
+    "id": "ja:word:后",
+    "surface": "后",
+    "dictionaryForm": "后",
+    "reading": "きさき",
+    "romaji": "kisaki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "императрица; главная супруга императора"
+    ]
+  },
+  {
+    "id": "ja:word:唯一",
+    "surface": "唯一",
+    "dictionaryForm": "唯一",
+    "reading": "ゆいいつ",
+    "romaji": "yuiitsu",
+    "partOfSpeech": "существительное; наречие",
+    "meanings": [
+      "единственный; единственно"
+    ]
+  },
+  {
+    "id": "ja:word:最高",
+    "surface": "最高",
+    "dictionaryForm": "最高",
+    "reading": "さいこう",
+    "romaji": "saikō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "самый высокий; высший"
+    ]
+  },
+  {
+    "id": "ja:word:権力者",
+    "surface": "権力者",
+    "dictionaryForm": "権力者",
+    "reading": "けんりょくしゃ",
+    "romaji": "kenryokusha",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "властитель; человек, обладающий властью"
+    ]
+  },
+  {
+    "id": "ja:word:見える",
+    "surface": "見える",
+    "dictionaryForm": "見える",
+    "reading": "みえる",
+    "romaji": "mieru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "быть видимым; показываться"
+    ]
+  },
+  {
+    "id": "ja:word:光景",
+    "surface": "光景",
+    "dictionaryForm": "光景",
+    "reading": "こうけい",
+    "romaji": "kōkei",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "вид; картина; зрелище"
+    ]
+  },
+  {
+    "id": "ja:word:さほど",
+    "surface": "さほど",
+    "dictionaryForm": "さほど",
+    "reading": "さほど",
+    "romaji": "sahodo",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "настолько; в такой степени (обычно с отрицанием)"
+    ]
+  },
+  {
+    "id": "ja:word:もの",
+    "surface": "もの",
+    "dictionaryForm": "もの",
+    "reading": "もの",
+    "romaji": "mono",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "вещь; нечто; человек; то, что"
+    ]
+  },
+  {
+    "id": "ja:word:罵る",
+    "surface": "罵る",
+    "dictionaryForm": "罵る",
+    "reading": "ののしる",
+    "romaji": "nonoshiru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "бранить; ругать; оскорблять"
+    ]
+  },
+  {
+    "id": "ja:word:うつむく",
+    "surface": "うつむく",
+    "dictionaryForm": "うつむく",
+    "reading": "うつむく",
+    "romaji": "utsumuku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "опускать голову; смотреть вниз"
+    ]
+  },
+  {
+    "id": "ja:word:狼狽える",
+    "surface": "狼狽える",
+    "dictionaryForm": "狼狽える",
+    "reading": "うろたえる",
+    "romaji": "urotaeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "растеряться; паниковать"
+    ]
+  },
+  {
+    "id": "ja:word:仲裁",
+    "surface": "仲裁",
+    "dictionaryForm": "仲裁",
+    "reading": "ちゅうさい",
+    "romaji": "chūsai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "посредничество; улаживание ссоры"
+    ]
+  },
+  {
+    "id": "ja:word:あんまり",
+    "surface": "あんまり",
+    "dictionaryForm": "あんまり",
+    "reading": "あんまり",
+    "romaji": "anmari",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "слишком; с отрицанием: не особенно"
+    ]
+  },
+  {
+    "id": "ja:word:至極",
+    "surface": "至極",
+    "dictionaryForm": "至極",
+    "reading": "しごく",
+    "romaji": "shigoku",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "чрезвычайно; в высшей степени"
+    ]
+  },
+  {
+    "id": "ja:word:冷静",
+    "surface": "冷静",
+    "dictionaryForm": "冷静",
+    "reading": "れいせい",
+    "romaji": "reisei",
+    "partOfSpeech": "прилагательное на な",
+    "meanings": [
+      "спокойный; хладнокровный"
+    ]
+  },
+  {
+    "id": "ja:word:感想",
+    "surface": "感想",
+    "dictionaryForm": "感想",
+    "reading": "かんそう",
+    "romaji": "kansō",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "впечатление; мнение"
+    ]
+  },
+  {
+    "id": "ja:word:第三者",
+    "surface": "第三者",
+    "dictionaryForm": "第三者",
+    "reading": "だいさんしゃ",
+    "romaji": "daisansha",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "третье лицо; сторонний наблюдатель"
+    ]
+  },
+  {
+    "id": "ja:word:つまり",
+    "surface": "つまり",
+    "dictionaryForm": "つまり",
+    "reading": "つまり",
+    "romaji": "tsumari",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "то есть; иначе говоря"
+    ]
+  },
+  {
+    "id": "ja:word:野次馬",
+    "surface": "野次馬",
+    "dictionaryForm": "野次馬",
+    "reading": "やじうま",
+    "romaji": "yajiuma",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "зевака; любопытный наблюдатель"
+    ]
+  }
+]

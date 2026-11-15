@@ -1,0 +1,85 @@
+[
+  {"id":"ja:word:あーあ","surface":"あーあ","dictionaryForm":"あーあ","reading":"あーあ","romaji":"āā","partOfSpeech":"междометие","meanings":["эх; ну вот; вздох досады или разочарования"]},
+  {"id":"ja:word:やっぱり","surface":"やっぱり","dictionaryForm":"やっぱり","reading":"やっぱり","romaji":"yappari","partOfSpeech":"наречие","meanings":["всё-таки; как и ожидалось; всё же"]},
+  {
+    "id": "ja:word:妻",
+    "surface": "妻",
+    "dictionaryForm": "妻",
+    "reading": "つま",
+    "romaji": "tsuma",
+    "partOfSpeech": "существительное",
+    "meanings": ["жена; супруга"]
+  },
+  {
+    "id": "ja:word:聞く",
+    "surface": "聞く",
+    "dictionaryForm": "聞く",
+    "reading": "きく",
+    "romaji": "kiku",
+    "partOfSpeech": "глагол I группы",
+    "meanings": ["слышать; слушать; спрашивать"]
+  },
+  {
+    "id": "ja:word:用事",
+    "surface": "用事",
+    "dictionaryForm": "用事",
+    "reading": "ようじ",
+    "romaji": "yōji",
+    "partOfSpeech": "существительное",
+    "meanings": ["дело; поручение; необходимость"]
+  },
+  {
+    "id": "ja:word:離れる",
+    "surface": "離れる",
+    "dictionaryForm": "離れる",
+    "reading": "はなれる",
+    "romaji": "hanareru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": ["отдаляться; покидать; отходить"]
+  },
+  {
+    "id": "ja:word:作る",
+    "surface": "作る",
+    "dictionaryForm": "作る",
+    "reading": "つくる",
+    "romaji": "tsukuru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": ["делать; создавать; готовить"]
+  },
+  {
+    "id": "ja:word:妓楼",
+    "surface": "妓楼",
+    "dictionaryForm": "妓楼",
+    "reading": "ぎろう",
+    "romaji": "girō",
+    "partOfSpeech": "существительное",
+    "meanings": ["дом куртизанок; публичный дом"]
+  },
+  {
+    "id": "ja:word:馬鹿",
+    "surface": "馬鹿",
+    "dictionaryForm": "馬鹿",
+    "reading": "ばか",
+    "romaji": "baka",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": ["глупец; дурак; глупость"]
+  },
+  {
+    "id": "ja:word:知る",
+    "surface": "知る",
+    "dictionaryForm": "知る",
+    "reading": "しる",
+    "romaji": "shiru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": ["знать; узнавать"]
+  },
+  {
+    "id": "ja:word:洗練",
+    "surface": "洗練",
+    "dictionaryForm": "洗練",
+    "reading": "せんれん",
+    "romaji": "senren",
+    "partOfSpeech": "существительное, на-прилагательное",
+    "meanings": ["изысканность; утончённость"]
+  }
+]

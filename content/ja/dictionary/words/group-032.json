@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:詰め込む",
+    "surface": "詰め込む",
+    "dictionaryForm": "詰め込む",
+    "reading": "つめこむ",
+    "romaji": "tsumekomu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "тесно набивать; втискивать"
+    ]
+  },
+  {
+    "id": "ja:word:持ち",
+    "surface": "持ち",
+    "dictionaryForm": "持ち",
+    "reading": "もち",
+    "romaji": "mochi",
+    "partOfSpeech": "именной суффикс",
+    "meanings": [
+      "имеющий; обладатель чего-либо"
+    ]
+  },
+  {
+    "id": "ja:word:中妃",
+    "surface": "中妃",
+    "dictionaryForm": "中妃",
+    "reading": "ちゅうひ",
+    "romaji": "chūhi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "супруга среднего ранга"
+    ]
+  },
+  {
+    "id": "ja:word:棟",
+    "surface": "棟",
+    "dictionaryForm": "棟",
+    "reading": "むね",
+    "romaji": "mune",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "корпус; отдельное здание"
+    ]
+  },
+  {
+    "id": "ja:word:上妃",
+    "surface": "上妃",
+    "dictionaryForm": "上妃",
+    "reading": "じょうひ",
+    "romaji": "jōhi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "супруга высшего ранга"
+    ]
+  },
+  {
+    "id": "ja:word:庭園",
+    "surface": "庭園",
+    "dictionaryForm": "庭園",
+    "reading": "ていえん",
+    "romaji": "teien",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "сад; дворцовый сад"
+    ]
+  },
+  {
+    "id": "ja:word:含める",
+    "surface": "含める",
+    "dictionaryForm": "含める",
+    "reading": "ふくめる",
+    "romaji": "fukumeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "включать; учитывать вместе с остальным"
+    ]
+  },
+  {
+    "id": "ja:word:そこいら",
+    "surface": "そこいら",
+    "dictionaryForm": "そこいら",
+    "reading": "そこいら",
+    "romaji": "sokoira",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "в тех местах; где-нибудь поблизости; обычный окрестный"
+    ]
+  },
+  {
+    "id": "ja:word:町",
+    "surface": "町",
+    "dictionaryForm": "町",
+    "reading": "まち",
+    "romaji": "machi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "город; городок; квартал"
+    ]
+  },
+  {
+    "id": "ja:word:ずっと",
+    "surface": "ずっと",
+    "dictionaryForm": "ずっと",
+    "reading": "ずっと",
+    "romaji": "zutto",
+    "partOfSpeech": "наречие",
+    "meanings": [
+      "гораздо; намного; всё время"
+    ]
+  },
+  {
+    "id": "ja:word:広い",
+    "surface": "広い",
+    "dictionaryForm": "広い",
+    "reading": "ひろい",
+    "romaji": "hiroi",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "широкий; просторный"
+    ]
+  },
+  {
+    "id": "ja:word:持ち場",
+    "surface": "持ち場",
+    "dictionaryForm": "持ち場",
+    "reading": "もちば",
+    "romaji": "mochiba",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "пост; участок работы; закреплённое место"
+    ]
+  },
+  {
+    "id": "ja:word:東側",
+    "surface": "東側",
+    "dictionaryForm": "東側",
+    "reading": "ひがしがわ",
+    "romaji": "higashigawa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "восточная сторона"
+    ]
+  },
+  {
+    "id": "ja:word:言いつける",
+    "surface": "言いつける",
+    "dictionaryForm": "言いつける",
+    "reading": "いいつける",
+    "romaji": "iitsukeru",
+    "partOfSpeech": "глагол II группы",
+    "meanings": [
+      "приказывать; поручать; доносить"
+    ]
+  },
+  {
+    "id": "ja:word:とき",
+    "surface": "とき",
+    "dictionaryForm": "とき",
+    "reading": "とき",
+    "romaji": "toki",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "время; случай; момент, когда"
+    ]
+  },
+  {
+    "id": "ja:word:暇",
+    "surface": "暇",
+    "dictionaryForm": "暇",
+    "reading": "ひま",
+    "romaji": "hima",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "свободное время; досуг"
+    ]
+  },
+  {
+    "id": "ja:word:いい",
+    "surface": "いい",
+    "dictionaryForm": "いい",
+    "reading": "いい",
+    "romaji": "ii",
+    "partOfSpeech": "и-прилагательное",
+    "meanings": [
+      "хороший; подходящий; достаточный"
+    ]
+  },
+  {
+    "id": "ja:word:上等",
+    "surface": "上等",
+    "dictionaryForm": "上等",
+    "reading": "じょうとう",
+    "romaji": "jōtō",
+    "partOfSpeech": "на-прилагательное",
+    "meanings": [
+      "высококачественный; превосходный"
+    ]
+  },
+  {
+    "id": "ja:word:絹",
+    "surface": "絹",
+    "dictionaryForm": "絹",
+    "reading": "きぬ",
+    "romaji": "kinu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "шёлк"
+    ]
+  },
+  {
+    "id": "ja:word:おる",
+    "surface": "おる",
+    "dictionaryForm": "おる",
+    "reading": "おる",
+    "romaji": "oru",
+    "partOfSpeech": "вспомогательный глагол",
+    "meanings": [
+      "быть; находиться; обозначает продолжающееся состояние после て"
+    ]
+  },
+  {
+    "id": "ja:word:西側",
+    "surface": "西側",
+    "dictionaryForm": "西側",
+    "reading": "にしがわ",
+    "romaji": "nishigawa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "западная сторона"
+    ]
+  },
+  {
+    "id": "ja:word:水質",
+    "surface": "水質",
+    "dictionaryForm": "水質",
+    "reading": "すいしつ",
+    "romaji": "suishitsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "качество воды"
+    ]
+  },
+  {
+    "id": "ja:word:差",
+    "surface": "差",
+    "dictionaryForm": "差",
+    "reading": "さ",
+    "romaji": "sa",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "разница; различие"
+    ]
+  },
+  {
+    "id": "ja:word:人間",
+    "surface": "人間",
+    "dictionaryForm": "人間",
+    "reading": "にんげん",
+    "romaji": "ningen",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "человек; люди"
+    ]
+  }
+]

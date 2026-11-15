@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "id": "apothecary-diaries.chapter-2",
+  "bookId": "apothecary-diaries",
+  "title": "２　二人の妃",
+  "parts": [
+    "part-001.json",
+    "part-002.json",
+    "part-003.json",
+    "part-004.json",
+    "part-005.json"
+  ]
+}

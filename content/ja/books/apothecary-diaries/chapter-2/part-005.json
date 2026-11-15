@@ -1,0 +1,6148 @@
+{
+  "paragraphs": [
+    {
+      "id": "apothecary-diaries.chapter-2.p040",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s074",
+          "text": "現在、後宮で一番大きな部屋に住むのは、東宮のご生母梨花妃である。",
+          "segments": [
+            {
+              "text": "現在",
+              "reading": "げんざい"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "後宮",
+              "reading": "こうきゅう"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "一番",
+              "reading": "いちばん"
+            },
+            {
+              "text": "大きな",
+              "reading": "おおきな"
+            },
+            {
+              "text": "部屋",
+              "reading": "へや"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "住む",
+              "reading": "すむ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "東宮",
+              "reading": "とうぐう"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ご"
+            },
+            {
+              "text": "生母",
+              "reading": "せいぼ"
+            },
+            {
+              "text": "梨花",
+              "reading": "りふぁ"
+            },
+            {
+              "text": "妃",
+              "reading": "ひ"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "げんざい、こうきゅうでいちばんおおきなへやにすむのは、とうぐうのごせいぼりふぁひである。",
+          "romaji": "Genzai, kōkyū de ichiban ōkina heya ni sumu no wa, Tōgū no goseibo Rifa-hi de aru.",
+          "literal": "Сейчас в самой большой комнате заднего дворца живёт Рифа-хи, родная мать наследного принца.",
+          "natural": "В самой большой резиденции гарема жила Рифа-хи — мать наследного принца.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:現在",
+              "surface": "現在",
+              "hiragana": "げんざい",
+              "romaji": "genzai",
+              "meaning": "настоящее время; сейчас",
+              "furigana": [
+                {
+                  "text": "現",
+                  "reading": "げん"
+                },
+                {
+                  "text": "在",
+                  "reading": "ざい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:後宮",
+              "surface": "後宮",
+              "hiragana": "こうきゅう",
+              "romaji": "kōkyū",
+              "meaning": "внутренний дворец; гарем",
+              "furigana": [
+                {
+                  "text": "後",
+                  "reading": "こう"
+                },
+                {
+                  "text": "宮",
+                  "reading": "きゅう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:で",
+              "surface": "で",
+              "hiragana": "で",
+              "romaji": "de",
+              "meaning": "в; при; соединительная форма связки"
+            },
+            {
+              "wordId": "ja:word:一番",
+              "surface": "一番",
+              "hiragana": "いちばん",
+              "romaji": "ichiban",
+              "meaning": "больше всего; самый",
+              "furigana": [
+                {
+                  "text": "一",
+                  "reading": "いち"
+                },
+                {
+                  "text": "番",
+                  "reading": "ばん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:大きい",
+              "surface": "大きな",
+              "hiragana": "おおきな",
+              "romaji": "ōkina",
+              "meaning": "самой большой",
+              "inflection": "Определительная форма 大きい",
+              "furigana": [
+                {
+                  "text": "大",
+                  "reading": "おお"
+                },
+                {
+                  "text": "きな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:部屋",
+              "surface": "部屋",
+              "hiragana": "へや",
+              "romaji": "heya",
+              "meaning": "комната",
+              "furigana": [
+                {
+                  "text": "部",
+                  "reading": "へ"
+                },
+                {
+                  "text": "屋",
+                  "reading": "や"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:住む",
+              "surface": "住む",
+              "hiragana": "すむ",
+              "romaji": "sumu",
+              "meaning": "жить; проживать",
+              "furigana": [
+                {
+                  "text": "住",
+                  "reading": "す"
+                },
+                {
+                  "text": "む"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:東宮",
+              "surface": "東宮",
+              "hiragana": "とうぐう",
+              "romaji": "tōgū",
+              "meaning": "наследный принц; наследник престола",
+              "furigana": [
+                {
+                  "text": "東",
+                  "reading": "とう"
+                },
+                {
+                  "text": "宮",
+                  "reading": "ぐう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:ご",
+              "surface": "ご",
+              "hiragana": "ご",
+              "romaji": "go",
+              "meaning": "уважительный префикс"
+            },
+            {
+              "wordId": "ja:word:生母",
+              "surface": "生母",
+              "hiragana": "せいぼ",
+              "romaji": "seibo",
+              "meaning": "родная мать",
+              "furigana": [
+                {
+                  "text": "生",
+                  "reading": "せい"
+                },
+                {
+                  "text": "母",
+                  "reading": "ぼ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:梨花",
+              "surface": "梨花",
+              "hiragana": "りふぁ",
+              "romaji": "Rifa",
+              "meaning": "Рифа, имя императорской супруги",
+              "furigana": [
+                {
+                  "text": "梨花",
+                  "reading": "りふぁ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "ひ",
+              "romaji": "hi",
+              "meaning": "императорская супруга",
+              "inflection": "Чтение ひ в титуле",
+              "furigana": [
+                {
+                  "text": "妃",
+                  "reading": "ひ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "である",
+              "hiragana": "である",
+              "romaji": "de aru",
+              "meaning": "является",
+              "inflection": "Книжная форма связки"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:現",
+            "ja:kanji:在",
+            "ja:kanji:後",
+            "ja:kanji:宮",
+            "ja:kanji:一",
+            "ja:kanji:番",
+            "ja:kanji:大",
+            "ja:kanji:部",
+            "ja:kanji:屋",
+            "ja:kanji:住",
+            "ja:kanji:東",
+            "ja:kanji:生",
+            "ja:kanji:母",
+            "ja:kanji:梨",
+            "ja:kanji:花",
+            "ja:kanji:妃"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:cleft-no-wa",
+              "role": "住むのは выделяет мать наследного принца как ответ на вопрос о том, кто занимает крупнейшие покои."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s075",
+          "text": "帝が后を持たぬ中、男児を唯一持つ梨花妃がここの最高権力者といえる。",
+          "segments": [
+            {
+              "text": "帝",
+              "reading": "みかど"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "后",
+              "reading": "きさき"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "持たぬ",
+              "reading": "もたぬ"
+            },
+            {
+              "text": "中",
+              "reading": "なか"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "男児",
+              "reading": "おのこ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "唯一",
+              "reading": "ゆいいつ"
+            },
+            {
+              "text": "持つ",
+              "reading": "もつ"
+            },
+            {
+              "text": "梨花",
+              "reading": "りふぁ"
+            },
+            {
+              "text": "妃",
+              "reading": "ひ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "ここ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "最高",
+              "reading": "さいこう"
+            },
+            {
+              "text": "権力者",
+              "reading": "けんりょくしゃ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "いえる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "みかどがきさきをもたぬなか、おのこをゆいいつもつりふぁひがここのさいこうけんりょくしゃといえる。",
+          "romaji": "Mikado ga kisaki o motanu naka, onoko o yuiitsu motsu Rifa-hi ga koko no saikō kenryokusha to ieru.",
+          "literal": "Пока у императора нет императрицы, Рифа-хи, единственная мать сына, может считаться здесь высшей властью.",
+          "natural": "Поскольку император не взял императрицу, единственная мать мальчика-наследника, Рифа-хи, считалась здесь главной.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:帝",
+              "surface": "帝",
+              "hiragana": "みかど",
+              "romaji": "mikado",
+              "meaning": "император",
+              "furigana": [
+                {
+                  "text": "帝",
+                  "reading": "みかど"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:后",
+              "surface": "后",
+              "hiragana": "きさき",
+              "romaji": "kisaki",
+              "meaning": "императрица; главная супруга императора",
+              "furigana": [
+                {
+                  "text": "后",
+                  "reading": "きさき"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持たぬ",
+              "hiragana": "もたぬ",
+              "romaji": "motanu",
+              "meaning": "не имеет",
+              "inflection": "Литературная отрицательная форма 持つ",
+              "furigana": [
+                {
+                  "text": "持",
+                  "reading": "も"
+                },
+                {
+                  "text": "たぬ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:中",
+              "surface": "中",
+              "hiragana": "なか",
+              "romaji": "naka",
+              "meaning": "середина; внутренность; среди",
+              "furigana": [
+                {
+                  "text": "中",
+                  "reading": "なか"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:男子",
+              "surface": "男児",
+              "hiragana": "おのこ",
+              "romaji": "onoko",
+              "meaning": "мальчик; сын",
+              "inflection": "Авторское чтение おのこ; вариант написания",
+              "furigana": [
+                {
+                  "text": "男児",
+                  "reading": "おのこ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:唯一",
+              "surface": "唯一",
+              "hiragana": "ゆいいつ",
+              "romaji": "yuiitsu",
+              "meaning": "единственный; единственно",
+              "furigana": [
+                {
+                  "text": "唯",
+                  "reading": "ゆい"
+                },
+                {
+                  "text": "一",
+                  "reading": "いつ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持つ",
+              "hiragana": "もつ",
+              "romaji": "motsu",
+              "meaning": "иметь; держать; обладать",
+              "furigana": [
+                {
+                  "text": "持",
+                  "reading": "も"
+                },
+                {
+                  "text": "つ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:梨花",
+              "surface": "梨花",
+              "hiragana": "りふぁ",
+              "romaji": "Rifa",
+              "meaning": "Рифа, имя императорской супруги",
+              "furigana": [
+                {
+                  "text": "梨花",
+                  "reading": "りふぁ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "ひ",
+              "romaji": "hi",
+              "meaning": "императорская супруга",
+              "inflection": "Чтение ひ в титуле",
+              "furigana": [
+                {
+                  "text": "妃",
+                  "reading": "ひ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:ここ",
+              "surface": "ここ",
+              "hiragana": "ここ",
+              "romaji": "koko",
+              "meaning": "здесь; это место"
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:最高",
+              "surface": "最高",
+              "hiragana": "さいこう",
+              "romaji": "saikō",
+              "meaning": "самый высокий; высший",
+              "furigana": [
+                {
+                  "text": "最",
+                  "reading": "さい"
+                },
+                {
+                  "text": "高",
+                  "reading": "こう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:権力者",
+              "surface": "権力者",
+              "hiragana": "けんりょくしゃ",
+              "romaji": "kenryokusha",
+              "meaning": "властитель; человек, обладающий властью",
+              "furigana": [
+                {
+                  "text": "権",
+                  "reading": "けん"
+                },
+                {
+                  "text": "力",
+                  "reading": "りょく"
+                },
+                {
+                  "text": "者",
+                  "reading": "しゃ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:言う",
+              "surface": "いえる",
+              "hiragana": "いえる",
+              "romaji": "ieru",
+              "meaning": "можно назвать",
+              "inflection": "Потенциальная форма 言う"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:帝",
+            "ja:kanji:后",
+            "ja:kanji:持",
+            "ja:kanji:中",
+            "ja:kanji:男",
+            "ja:kanji:児",
+            "ja:kanji:唯",
+            "ja:kanji:一",
+            "ja:kanji:梨",
+            "ja:kanji:花",
+            "ja:kanji:妃",
+            "ja:kanji:最",
+            "ja:kanji:高",
+            "ja:kanji:権",
+            "ja:kanji:力",
+            "ja:kanji:者"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:negative",
+              "role": "持たぬ — книжная отрицательная форма: у императора нет императрицы."
+            },
+            {
+              "grammarId": "ja:grammar:subject",
+              "role": "梨花妃が после темы帝の后持たぬ中 обозначает субъект утверждения: именно Рифа-хи считается главной."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p041",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s076",
+          "text": "そんな中、見えた光景はさほど市井と変わらないものだった。",
+          "segments": [
+            {
+              "text": "そんな"
+            },
+            {
+              "text": "中",
+              "reading": "なか"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "見えた",
+              "reading": "みえた"
+            },
+            {
+              "text": "光景",
+              "reading": "こうけい"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "さほど"
+            },
+            {
+              "text": "市井",
+              "reading": "しせい"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "変わらない",
+              "reading": "かわらない"
+            },
+            {
+              "text": "もの"
+            },
+            {
+              "text": "だった"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "そんななか、みえたこうけいはさほどしせいとかわらないものだった。",
+          "romaji": "Sonna naka, mieta kōkei wa sahodo shisei to kawaranai mono datta.",
+          "literal": "И всё же увиденная сцена мало отличалась от городской жизни.",
+          "natural": "И всё же увиденное мало отличалось от обычной городской жизни.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:そんな",
+              "surface": "そんな",
+              "hiragana": "そんな",
+              "romaji": "sonna",
+              "meaning": "такой; подобный"
+            },
+            {
+              "wordId": "ja:word:中",
+              "surface": "中",
+              "hiragana": "なか",
+              "romaji": "naka",
+              "meaning": "середина; внутренность; среди",
+              "furigana": [
+                {
+                  "text": "中",
+                  "reading": "なか"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:見える",
+              "surface": "見えた",
+              "hiragana": "みえた",
+              "romaji": "mieta",
+              "meaning": "открывшаяся взору",
+              "inflection": "Прошедшая форма 見える",
+              "furigana": [
+                {
+                  "text": "見",
+                  "reading": "み"
+                },
+                {
+                  "text": "えた"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:光景",
+              "surface": "光景",
+              "hiragana": "こうけい",
+              "romaji": "kōkei",
+              "meaning": "вид; картина; зрелище",
+              "furigana": [
+                {
+                  "text": "光",
+                  "reading": "こう"
+                },
+                {
+                  "text": "景",
+                  "reading": "けい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:さほど",
+              "surface": "さほど",
+              "hiragana": "さほど",
+              "romaji": "sahodo",
+              "meaning": "настолько; в такой степени (обычно с отрицанием)"
+            },
+            {
+              "wordId": "ja:word:市井",
+              "surface": "市井",
+              "hiragana": "しせい",
+              "romaji": "shisei",
+              "meaning": "обычная жизнь горожан; простой люд",
+              "furigana": [
+                {
+                  "text": "市",
+                  "reading": "し"
+                },
+                {
+                  "text": "井",
+                  "reading": "せい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:変わる",
+              "surface": "変わらない",
+              "hiragana": "かわらない",
+              "romaji": "kawaranai",
+              "meaning": "не отличается",
+              "inflection": "Отрицательная форма 変わる",
+              "furigana": [
+                {
+                  "text": "変",
+                  "reading": "か"
+                },
+                {
+                  "text": "わらない"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:もの",
+              "surface": "もの",
+              "hiragana": "もの",
+              "romaji": "mono",
+              "meaning": "вещь; нечто; человек; то, что"
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だった",
+              "hiragana": "だった",
+              "romaji": "datta",
+              "meaning": "было",
+              "inflection": "Прошедшая форма связки だ"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:中",
+            "ja:kanji:見",
+            "ja:kanji:光",
+            "ja:kanji:景",
+            "ja:kanji:市",
+            "ja:kanji:井",
+            "ja:kanji:変"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:comparison-to",
+              "role": "市井と変わらない сравнивает увиденную сцену с обычной жизнью простых горожан."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p042",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s077",
+          "text": "罵る女とうつむく女と狼狽える女たちと仲裁する男である。",
+          "segments": [
+            {
+              "text": "罵る",
+              "reading": "ののしる"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "うつむく"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "狼狽える",
+              "reading": "うろたえる"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "たち"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "仲裁",
+              "reading": "ちゅうさい"
+            },
+            {
+              "text": "する"
+            },
+            {
+              "text": "男",
+              "reading": "おとこ"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ののしるおんなとうつむくおんなとうろたえるおんなたちとちゅうさいするおとこである。",
+          "romaji": "Nonoshiru onna to utsumuku onna to urotaeru onna-tachi to chūsai suru otoko de aru.",
+          "literal": "Женщина, которая бранится, женщина, опустившая голову, растерянные служанки и мужчина, который их разнимает.",
+          "natural": "Одна женщина кричала, другая понурилась, служанки растерялись, а мужчина пытался их унять.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:罵る",
+              "surface": "罵る",
+              "hiragana": "ののしる",
+              "romaji": "nonoshiru",
+              "meaning": "бранить; ругать; оскорблять",
+              "furigana": [
+                {
+                  "text": "罵",
+                  "reading": "ののし"
+                },
+                {
+                  "text": "る"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:女",
+              "surface": "女",
+              "hiragana": "おんな",
+              "romaji": "onna",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "おんな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:うつむく",
+              "surface": "うつむく",
+              "hiragana": "うつむく",
+              "romaji": "utsumuku",
+              "meaning": "опускать голову; смотреть вниз"
+            },
+            {
+              "wordId": "ja:word:女",
+              "surface": "女",
+              "hiragana": "おんな",
+              "romaji": "onna",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "おんな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:狼狽える",
+              "surface": "狼狽える",
+              "hiragana": "うろたえる",
+              "romaji": "urotaeru",
+              "meaning": "теряются",
+              "furigana": [
+                {
+                  "text": "狼狽",
+                  "reading": "うろた"
+                },
+                {
+                  "text": "える"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:女",
+              "surface": "女",
+              "hiragana": "おんな",
+              "romaji": "onna",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "おんな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:たち",
+              "surface": "たち",
+              "hiragana": "たち",
+              "romaji": "tachi",
+              "meaning": "множественность лиц"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:仲裁",
+              "surface": "仲裁",
+              "hiragana": "ちゅうさい",
+              "romaji": "chūsai",
+              "meaning": "посредничество; улаживание ссоры",
+              "furigana": [
+                {
+                  "text": "仲",
+                  "reading": "ちゅう"
+                },
+                {
+                  "text": "裁",
+                  "reading": "さい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:する",
+              "surface": "する",
+              "hiragana": "する",
+              "romaji": "suru",
+              "meaning": "осуществлять"
+            },
+            {
+              "wordId": "ja:word:男",
+              "surface": "男",
+              "hiragana": "おとこ",
+              "romaji": "otoko",
+              "meaning": "мужчина",
+              "furigana": [
+                {
+                  "text": "男",
+                  "reading": "おとこ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "である",
+              "hiragana": "である",
+              "romaji": "de aru",
+              "meaning": "является",
+              "inflection": "Книжная форма связки"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:罵",
+            "ja:kanji:女",
+            "ja:kanji:狼",
+            "ja:kanji:狽",
+            "ja:kanji:仲",
+            "ja:kanji:裁",
+            "ja:kanji:男"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:and",
+              "role": "Повторяющееся と соединяет четыре фигуры в перечень увиденной сцены."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p043",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s078",
+          "text": "（妓楼とあんまり変わらないな）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "妓楼",
+              "reading": "ぎろう"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "あんまり"
+            },
+            {
+              "text": "変わらない",
+              "reading": "かわらない"
+            },
+            {
+              "text": "な"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（ぎろうとあんまりかわらないな）",
+          "romaji": "(Girō to anmari kawaranai na.)",
+          "literal": "(Не так уж отличается от публичного дома.)",
+          "natural": "(Почти как в борделе.)",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:妓楼",
+              "surface": "妓楼",
+              "hiragana": "ぎろう",
+              "romaji": "girō",
+              "meaning": "дом куртизанок; публичный дом",
+              "furigana": [
+                {
+                  "text": "妓",
+                  "reading": "ぎ"
+                },
+                {
+                  "text": "楼",
+                  "reading": "ろう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:あんまり",
+              "surface": "あんまり",
+              "hiragana": "あんまり",
+              "romaji": "anmari",
+              "meaning": "слишком; с отрицанием: не особенно"
+            },
+            {
+              "wordId": "ja:word:変わる",
+              "surface": "変わらない",
+              "hiragana": "かわらない",
+              "romaji": "kawaranai",
+              "meaning": "не отличается",
+              "inflection": "Отрицательная форма 変わる",
+              "furigana": [
+                {
+                  "text": "変",
+                  "reading": "か"
+                },
+                {
+                  "text": "わらない"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:な",
+              "surface": "な",
+              "hiragana": "な",
+              "romaji": "na",
+              "meaning": "эмоциональное завершение фразы"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:妓",
+            "ja:kanji:楼",
+            "ja:kanji:変"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:comparison-to",
+              "role": "妓楼と…変わらない сравнивает внутренний дворец с публичным домом."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p044",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s079",
+          "text": "至極冷静な感想を持ち、第三者、つまり野次馬に加わる猫猫。",
+          "segments": [
+            {
+              "text": "至極",
+              "reading": "しごく"
+            },
+            {
+              "text": "冷静",
+              "reading": "れいせい"
+            },
+            {
+              "text": "な"
+            },
+            {
+              "text": "感想",
+              "reading": "かんそう"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "持ち",
+              "reading": "もち"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "第三者",
+              "reading": "だいさんしゃ"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "つまり"
+            },
+            {
+              "text": "野次馬",
+              "reading": "やじうま"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "加わる",
+              "reading": "くわわる"
+            },
+            {
+              "text": "猫猫",
+              "reading": "まおまお"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "しごくれいせいなかんそうをもち、だいさんしゃ、つまりやじうまにくわわるまおまお。",
+          "romaji": "Shigoku reisei na kansō o mochi, daisansha, tsumari yajiuma ni kuwawaru Maomao.",
+          "literal": "Совершенно спокойно отнесясь к увиденному, Маомао присоединяется к третьим лицам — зевакам.",
+          "natural": "Сохраняя полное спокойствие, Маомао присоединилась к толпе зевак.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:至極",
+              "surface": "至極",
+              "hiragana": "しごく",
+              "romaji": "shigoku",
+              "meaning": "чрезвычайно; в высшей степени",
+              "furigana": [
+                {
+                  "text": "至",
+                  "reading": "し"
+                },
+                {
+                  "text": "極",
+                  "reading": "ごく"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:冷静",
+              "surface": "冷静",
+              "hiragana": "れいせい",
+              "romaji": "reisei",
+              "meaning": "спокойный; хладнокровный",
+              "furigana": [
+                {
+                  "text": "冷",
+                  "reading": "れい"
+                },
+                {
+                  "text": "静",
+                  "reading": "せい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:な",
+              "surface": "な",
+              "hiragana": "な",
+              "romaji": "na",
+              "meaning": "связывает определение с существительным"
+            },
+            {
+              "wordId": "ja:word:感想",
+              "surface": "感想",
+              "hiragana": "かんそう",
+              "romaji": "kansō",
+              "meaning": "впечатление; мнение",
+              "furigana": [
+                {
+                  "text": "感",
+                  "reading": "かん"
+                },
+                {
+                  "text": "想",
+                  "reading": "そう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持ち",
+              "hiragana": "もち",
+              "romaji": "mochi",
+              "meaning": "имея",
+              "inflection": "Соединительная основа 持つ",
+              "furigana": [
+                {
+                  "text": "持",
+                  "reading": "も"
+                },
+                {
+                  "text": "ち"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:第三者",
+              "surface": "第三者",
+              "hiragana": "だいさんしゃ",
+              "romaji": "daisansha",
+              "meaning": "третье лицо; сторонний наблюдатель",
+              "furigana": [
+                {
+                  "text": "第",
+                  "reading": "だい"
+                },
+                {
+                  "text": "三",
+                  "reading": "さん"
+                },
+                {
+                  "text": "者",
+                  "reading": "しゃ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:つまり",
+              "surface": "つまり",
+              "hiragana": "つまり",
+              "romaji": "tsumari",
+              "meaning": "то есть; иначе говоря"
+            },
+            {
+              "wordId": "ja:word:野次馬",
+              "surface": "野次馬",
+              "hiragana": "やじうま",
+              "romaji": "yajiuma",
+              "meaning": "зевака; любопытный наблюдатель",
+              "furigana": [
+                {
+                  "text": "野",
+                  "reading": "や"
+                },
+                {
+                  "text": "次",
+                  "reading": "じ"
+                },
+                {
+                  "text": "馬",
+                  "reading": "うま"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:加わる",
+              "surface": "加わる",
+              "hiragana": "くわわる",
+              "romaji": "kuwawaru",
+              "meaning": "присоединяться; прибавляться",
+              "furigana": [
+                {
+                  "text": "加",
+                  "reading": "くわ"
+                },
+                {
+                  "text": "わる"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:猫猫",
+              "surface": "猫猫",
+              "hiragana": "まおまお",
+              "romaji": "Maomao",
+              "meaning": "Маомао; имя героини",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                },
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:至",
+            "ja:kanji:極",
+            "ja:kanji:冷",
+            "ja:kanji:静",
+            "ja:kanji:感",
+            "ja:kanji:想",
+            "ja:kanji:持",
+            "ja:kanji:第",
+            "ja:kanji:三",
+            "ja:kanji:者",
+            "ja:kanji:野",
+            "ja:kanji:次",
+            "ja:kanji:馬",
+            "ja:kanji:加",
+            "ja:kanji:猫"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:nominal-fragment",
+              "role": "Фраза заканчивается на 猫猫 и опускает сказуемое: это краткая авторская зарисовка о том, как она присоединяется к зевакам."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p045",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s080",
+          "text": "罵る女は後宮の最高権力者で、うつむく女はそれに次ぐ存在、狼狽えるのは侍女たちで、仲裁に入るのはすでに男でなくなった医師だと、周りのささやきと風貌からわかった。",
+          "segments": [
+            {
+              "text": "罵る",
+              "reading": "ののしる"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "後宮",
+              "reading": "こうきゅう"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "最高",
+              "reading": "さいこう"
+            },
+            {
+              "text": "権力者",
+              "reading": "けんりょくしゃ"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "うつむく"
+            },
+            {
+              "text": "女",
+              "reading": "おんな"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "それ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "次ぐ",
+              "reading": "つぐ"
+            },
+            {
+              "text": "存在",
+              "reading": "そんざい"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "狼狽える",
+              "reading": "うろたえる"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "侍女",
+              "reading": "じじょ"
+            },
+            {
+              "text": "たち"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "仲裁",
+              "reading": "ちゅうさい"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "入る",
+              "reading": "はいる"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "すでに"
+            },
+            {
+              "text": "男",
+              "reading": "おとこ"
+            },
+            {
+              "text": "で"
+            },
+            {
+              "text": "なくなった"
+            },
+            {
+              "text": "医師",
+              "reading": "いし"
+            },
+            {
+              "text": "だ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "周り",
+              "reading": "まわり"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ささやき"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "風貌",
+              "reading": "ふうぼう"
+            },
+            {
+              "text": "から"
+            },
+            {
+              "text": "わかった"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ののしるおんなはこうきゅうのさいこうけんりょくしゃで、うつむくおんなはそれにつぐそんざい、うろたえるのはじじょたちで、ちゅうさいにはいるのはすでにおとこでなくなったいしだと、まわりのささやきとふうぼうからわかった。",
+          "romaji": "Nonoshiru onna wa kōkyū no saikō kenryokusha de, utsumuku onna wa sore ni tsugu sonzai, urotaeru no wa jijo-tachi de, chūsai ni hairu no wa sudeni otoko de nakunatta ishi da to, mawari no sasayaki to fūbō kara wakatta.",
+          "literal": "По шёпоту и облику Маомао поняла: бранящаяся женщина — высшая власть дворца, понурившаяся — следующая по положению, растерявшиеся — служанки, а вступивший в спор врач уже не мужчина.",
+          "natural": "По слухам и внешнему виду Маомао поняла, кто есть кто: первая женщина была главной супругой, вторая — следующей по рангу, растерянные — её служанками, а их разнимал врач-евнух.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:罵る",
+              "surface": "罵る",
+              "hiragana": "ののしる",
+              "romaji": "nonoshiru",
+              "meaning": "бранить; ругать; оскорблять",
+              "furigana": [
+                {
+                  "text": "罵",
+                  "reading": "ののし"
+                },
+                {
+                  "text": "る"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:女",
+              "surface": "女",
+              "hiragana": "おんな",
+              "romaji": "onna",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "おんな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:後宮",
+              "surface": "後宮",
+              "hiragana": "こうきゅう",
+              "romaji": "kōkyū",
+              "meaning": "внутренний дворец",
+              "furigana": [
+                {
+                  "text": "後",
+                  "reading": "こう"
+                },
+                {
+                  "text": "宮",
+                  "reading": "きゅう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:最高",
+              "surface": "最高",
+              "hiragana": "さいこう",
+              "romaji": "saikō",
+              "meaning": "самый высокий; высший",
+              "furigana": [
+                {
+                  "text": "最",
+                  "reading": "さい"
+                },
+                {
+                  "text": "高",
+                  "reading": "こう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:権力者",
+              "surface": "権力者",
+              "hiragana": "けんりょくしゃ",
+              "romaji": "kenryokusha",
+              "meaning": "властитель; человек, обладающий властью",
+              "furigana": [
+                {
+                  "text": "権",
+                  "reading": "けん"
+                },
+                {
+                  "text": "力",
+                  "reading": "りょく"
+                },
+                {
+                  "text": "者",
+                  "reading": "しゃ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "で",
+              "hiragana": "で",
+              "romaji": "de",
+              "meaning": "является; соединяет описание с продолжением",
+              "inflection": "Соединительная форма связки だ"
+            },
+            {
+              "wordId": "ja:word:うつむく",
+              "surface": "うつむく",
+              "hiragana": "うつむく",
+              "romaji": "utsumuku",
+              "meaning": "опускать голову; смотреть вниз"
+            },
+            {
+              "wordId": "ja:word:女",
+              "surface": "女",
+              "hiragana": "おんな",
+              "romaji": "onna",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "おんな"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:それ",
+              "surface": "それ",
+              "hiragana": "それ",
+              "romaji": "sore",
+              "meaning": "это; то"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:次ぐ",
+              "surface": "次ぐ",
+              "hiragana": "つぐ",
+              "romaji": "tsugu",
+              "meaning": "следовать за; быть следующим по положению",
+              "furigana": [
+                {
+                  "text": "次",
+                  "reading": "つ"
+                },
+                {
+                  "text": "ぐ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:存在",
+              "surface": "存在",
+              "hiragana": "そんざい",
+              "romaji": "sonzai",
+              "meaning": "существование; существо; значимая фигура",
+              "furigana": [
+                {
+                  "text": "存",
+                  "reading": "そん"
+                },
+                {
+                  "text": "在",
+                  "reading": "ざい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:狼狽える",
+              "surface": "狼狽える",
+              "hiragana": "うろたえる",
+              "romaji": "urotaeru",
+              "meaning": "теряются",
+              "furigana": [
+                {
+                  "text": "狼狽",
+                  "reading": "うろた"
+                },
+                {
+                  "text": "える"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:侍女",
+              "surface": "侍女",
+              "hiragana": "じじょ",
+              "romaji": "jijo",
+              "meaning": "личная служанка",
+              "furigana": [
+                {
+                  "text": "侍",
+                  "reading": "じ"
+                },
+                {
+                  "text": "女",
+                  "reading": "じょ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:たち",
+              "surface": "たち",
+              "hiragana": "たち",
+              "romaji": "tachi",
+              "meaning": "множественность лиц"
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "で",
+              "hiragana": "で",
+              "romaji": "de",
+              "meaning": "является; соединяет описание с продолжением",
+              "inflection": "Соединительная форма связки だ"
+            },
+            {
+              "wordId": "ja:word:仲裁",
+              "surface": "仲裁",
+              "hiragana": "ちゅうさい",
+              "romaji": "chūsai",
+              "meaning": "посредничество; улаживание ссоры",
+              "furigana": [
+                {
+                  "text": "仲",
+                  "reading": "ちゅう"
+                },
+                {
+                  "text": "裁",
+                  "reading": "さい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:入る",
+              "surface": "入る",
+              "hiragana": "はいる",
+              "romaji": "hairu",
+              "meaning": "входить",
+              "furigana": [
+                {
+                  "text": "入",
+                  "reading": "はい"
+                },
+                {
+                  "text": "る"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:すでに",
+              "surface": "すでに",
+              "hiragana": "すでに",
+              "romaji": "sudeni",
+              "meaning": "уже"
+            },
+            {
+              "wordId": "ja:word:男",
+              "surface": "男",
+              "hiragana": "おとこ",
+              "romaji": "otoko",
+              "meaning": "мужчина",
+              "furigana": [
+                {
+                  "text": "男",
+                  "reading": "おとこ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "で",
+              "hiragana": "で",
+              "romaji": "de",
+              "meaning": "является; соединяет описание с продолжением",
+              "inflection": "Соединительная форма связки だ"
+            },
+            {
+              "wordId": "ja:word:なる",
+              "surface": "なくなった",
+              "hiragana": "なくなった",
+              "romaji": "nakunatta",
+              "meaning": "перестал быть",
+              "inflection": "Отрицательная форма なく + прошедшая форма なる"
+            },
+            {
+              "wordId": "ja:word:医師",
+              "surface": "医師",
+              "hiragana": "いし",
+              "romaji": "ishi",
+              "meaning": "врач",
+              "furigana": [
+                {
+                  "text": "医",
+                  "reading": "い"
+                },
+                {
+                  "text": "師",
+                  "reading": "し"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だ",
+              "hiragana": "だ",
+              "romaji": "da",
+              "meaning": "быть; являться"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:周り",
+              "surface": "周り",
+              "hiragana": "まわり",
+              "romaji": "mawari",
+              "meaning": "окружение; люди вокруг",
+              "furigana": [
+                {
+                  "text": "周",
+                  "reading": "まわ"
+                },
+                {
+                  "text": "り"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:ささやき",
+              "surface": "ささやき",
+              "hiragana": "ささやき",
+              "romaji": "sasayaki",
+              "meaning": "шёпот; перешёптывание"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:風貌",
+              "surface": "風貌",
+              "hiragana": "ふうぼう",
+              "romaji": "fūbō",
+              "meaning": "внешность; облик",
+              "furigana": [
+                {
+                  "text": "風",
+                  "reading": "ふう"
+                },
+                {
+                  "text": "貌",
+                  "reading": "ぼう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:から",
+              "surface": "から",
+              "hiragana": "から",
+              "romaji": "kara",
+              "meaning": "от; из; потому что"
+            },
+            {
+              "wordId": "ja:word:わかる",
+              "surface": "わかった",
+              "hiragana": "わかった",
+              "romaji": "wakatta",
+              "meaning": "поняла",
+              "inflection": "Прошедшая форма わかる"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:罵",
+            "ja:kanji:女",
+            "ja:kanji:後",
+            "ja:kanji:宮",
+            "ja:kanji:最",
+            "ja:kanji:高",
+            "ja:kanji:権",
+            "ja:kanji:力",
+            "ja:kanji:者",
+            "ja:kanji:次",
+            "ja:kanji:存",
+            "ja:kanji:在",
+            "ja:kanji:狼",
+            "ja:kanji:狽",
+            "ja:kanji:侍",
+            "ja:kanji:仲",
+            "ja:kanji:裁",
+            "ja:kanji:入",
+            "ja:kanji:男",
+            "ja:kanji:医",
+            "ja:kanji:師",
+            "ja:kanji:周",
+            "ja:kanji:風",
+            "ja:kanji:貌"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:quotation",
+              "role": "医師だと цитирует вывод Маомао о том, кто именно вмешался в спор."
+            },
+            {
+              "grammarId": "ja:grammar:past",
+              "role": "わかった показывает, что Маомао установила роли по слухам и внешности."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p046",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s081",
+          "text": "「おまえが悪いんだ。",
+          "segments": [
+            {
+              "text": "「"
+            },
+            {
+              "text": "おまえ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "悪い",
+              "reading": "わるい"
+            },
+            {
+              "text": "ん"
+            },
+            {
+              "text": "だ"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "「おまえがわるいんだ。",
+          "romaji": "Omae ga warui n da.",
+          "literal": "Это ты виновата.",
+          "natural": "Это всё из-за тебя!",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:おまえ",
+              "surface": "おまえ",
+              "hiragana": "おまえ",
+              "romaji": "omae",
+              "meaning": "ты (фамильярно или грубо)"
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:悪い",
+              "surface": "悪い",
+              "hiragana": "わるい",
+              "romaji": "warui",
+              "meaning": "плохой; виноватый",
+              "furigana": [
+                {
+                  "text": "悪",
+                  "reading": "わる"
+                },
+                {
+                  "text": "い"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:ん",
+              "surface": "ん",
+              "hiragana": "ん",
+              "romaji": "n",
+              "meaning": "пояснительный показатель"
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だ",
+              "hiragana": "だ",
+              "romaji": "da",
+              "meaning": "быть; являться"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:悪"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:explanatory-no-da",
+              "role": "んだ придаёт обвинению оттенок уверенного объяснения: говорящая представляет свою версию как очевидную."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s082",
+          "text": "自分が娘を産んだからって、男子の吾子を呪い殺す気だろう！」",
+          "segments": [
+            {
+              "text": "自分",
+              "reading": "じぶん"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "娘",
+              "reading": "むすめ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "産んだ",
+              "reading": "うんだ"
+            },
+            {
+              "text": "から"
+            },
+            {
+              "text": "って"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "男子",
+              "reading": "おのこ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "吾子",
+              "reading": "あこ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "呪い殺す",
+              "reading": "のろいころす"
+            },
+            {
+              "text": "気",
+              "reading": "き"
+            },
+            {
+              "text": "だろう"
+            },
+            {
+              "text": "！」"
+            }
+          ],
+          "hiragana": "じぶんがむすめをうんだからって、おのこのあこをのろいころすきだろう！」",
+          "romaji": "Jibun ga musume o unda kara tte, onoko no ako o noroi korosu ki darō!",
+          "literal": "Раз ты родила дочь, значит, хочешь проклятием убить моего сына!",
+          "natural": "Ты родила девочку и теперь хочешь проклясть моего мальчика насмерть!",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:自分",
+              "surface": "自分",
+              "hiragana": "じぶん",
+              "romaji": "jibun",
+              "meaning": "сам; себя",
+              "furigana": [
+                {
+                  "text": "自",
+                  "reading": "じ"
+                },
+                {
+                  "text": "分",
+                  "reading": "ぶん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:娘",
+              "surface": "娘",
+              "hiragana": "むすめ",
+              "romaji": "musume",
+              "meaning": "дочь; девочка",
+              "furigana": [
+                {
+                  "text": "娘",
+                  "reading": "むすめ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:生む",
+              "surface": "産んだ",
+              "hiragana": "うんだ",
+              "romaji": "unda",
+              "meaning": "родила",
+              "inflection": "Прошедшая форма; вариант написания 生む",
+              "furigana": [
+                {
+                  "text": "産",
+                  "reading": "う"
+                },
+                {
+                  "text": "んだ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:から",
+              "surface": "から",
+              "hiragana": "から",
+              "romaji": "kara",
+              "meaning": "от; из; потому что"
+            },
+            {
+              "wordId": "ja:word:って",
+              "surface": "って",
+              "hiragana": "って",
+              "romaji": "tte",
+              "meaning": "разговорный показатель цитаты или пересказа"
+            },
+            {
+              "wordId": "ja:word:男子",
+              "surface": "男子",
+              "hiragana": "おのこ",
+              "romaji": "onoko",
+              "meaning": "мальчик; сын",
+              "inflection": "Контекстное чтение おのこ",
+              "furigana": [
+                {
+                  "text": "男子",
+                  "reading": "おのこ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:吾子",
+              "surface": "吾子",
+              "hiragana": "あこ",
+              "romaji": "ako",
+              "meaning": "моё дитя; собственный ребёнок",
+              "furigana": [
+                {
+                  "text": "吾",
+                  "reading": "あ"
+                },
+                {
+                  "text": "子",
+                  "reading": "こ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:呪い殺す",
+              "surface": "呪い殺す",
+              "hiragana": "のろいころす",
+              "romaji": "noroikorosu",
+              "meaning": "убить проклятием; заклясть насмерть",
+              "furigana": [
+                {
+                  "text": "呪",
+                  "reading": "のろ"
+                },
+                {
+                  "text": "い"
+                },
+                {
+                  "text": "殺",
+                  "reading": "ころ"
+                },
+                {
+                  "text": "す"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:気",
+              "surface": "気",
+              "hiragana": "き",
+              "romaji": "ki",
+              "meaning": "намерение; желание; настроение",
+              "furigana": [
+                {
+                  "text": "気",
+                  "reading": "き"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だろう",
+              "hiragana": "だろう",
+              "romaji": "darō",
+              "meaning": "ведь; наверное",
+              "inflection": "Предположительная форма だ"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:自",
+            "ja:kanji:分",
+            "ja:kanji:娘",
+            "ja:kanji:産",
+            "ja:kanji:男",
+            "ja:kanji:子",
+            "ja:kanji:吾",
+            "ja:kanji:呪",
+            "ja:kanji:殺",
+            "ja:kanji:気"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:cause-kara",
+              "role": "娘を産んだからって подаёт рождение дочери как обвиняемую причину, будто оно объясняет проклятие."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p047",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s083",
+          "text": "美しい顔は歪むとそれは恐ろしいものになる。",
+          "segments": [
+            {
+              "text": "美しい",
+              "reading": "うつくしい"
+            },
+            {
+              "text": "顔",
+              "reading": "かお"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "歪む",
+              "reading": "ゆがむ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "それ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "恐ろしい",
+              "reading": "おそろしい"
+            },
+            {
+              "text": "もの"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "なる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "うつくしいかおはゆがむとそれはおそろしいものになる。",
+          "romaji": "Utsukushii kao wa yugamu to sore wa osoroshii mono ni naru.",
+          "literal": "Когда прекрасное лицо искажается, оно становится ужасным.",
+          "natural": "Даже прекрасное лицо, искажённое гневом, становилось страшным.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:美しい",
+              "surface": "美しい",
+              "hiragana": "うつくしい",
+              "romaji": "utsukushii",
+              "meaning": "прекрасный; красивый",
+              "furigana": [
+                {
+                  "text": "美",
+                  "reading": "うつく"
+                },
+                {
+                  "text": "しい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:顔",
+              "surface": "顔",
+              "hiragana": "かお",
+              "romaji": "kao",
+              "meaning": "лицо; выражение лица",
+              "furigana": [
+                {
+                  "text": "顔",
+                  "reading": "かお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:歪む",
+              "surface": "歪む",
+              "hiragana": "ゆがむ",
+              "romaji": "yugamu",
+              "meaning": "искажаться; кривиться",
+              "furigana": [
+                {
+                  "text": "歪",
+                  "reading": "ゆが"
+                },
+                {
+                  "text": "む"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:それ",
+              "surface": "それ",
+              "hiragana": "それ",
+              "romaji": "sore",
+              "meaning": "это; то"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:恐ろしい",
+              "surface": "恐ろしい",
+              "hiragana": "おそろしい",
+              "romaji": "osoroshii",
+              "meaning": "страшный; ужасный",
+              "furigana": [
+                {
+                  "text": "恐",
+                  "reading": "おそ"
+                },
+                {
+                  "text": "ろしい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:もの",
+              "surface": "もの",
+              "hiragana": "もの",
+              "romaji": "mono",
+              "meaning": "вещь; нечто; человек; то, что"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:なる",
+              "surface": "なる",
+              "hiragana": "なる",
+              "romaji": "naru",
+              "meaning": "становиться"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:美",
+            "ja:kanji:顔",
+            "ja:kanji:歪",
+            "ja:kanji:恐"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:conditional-to",
+              "role": "歪むと показывает, как искажённое лицо становится страшным."
+            },
+            {
+              "grammarId": "ja:grammar:result-ni-naru",
+              "role": "ものになる называет результат превращения: прекрасное лицо становится пугающим."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s084",
+          "text": "幽鬼のような白い肌と悪鬼のごときまなざしは、頬に手を添える美女に向けられている。",
+          "segments": [
+            {
+              "text": "幽鬼",
+              "reading": "ゆうき"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "よう"
+            },
+            {
+              "text": "な"
+            },
+            {
+              "text": "白い",
+              "reading": "しろい"
+            },
+            {
+              "text": "肌",
+              "reading": "はだ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "悪鬼",
+              "reading": "あっき"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ごとき"
+            },
+            {
+              "text": "まなざし"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "頬",
+              "reading": "ほお"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "手",
+              "reading": "て"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "添える",
+              "reading": "そえる"
+            },
+            {
+              "text": "美女",
+              "reading": "びじょ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "向けられている",
+              "reading": "むけられている"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ゆうきのようなしろいはだとあっきのごときまなざしは、ほおにてをそえるびじょにむけられている。",
+          "romaji": "Yūki no yō na shiroi hada to gotoki manazashi wa, hō ni te o soeru bijo ni mukerarete iru.",
+          "literal": "Бледная, как призрак, кожа и взгляд злого духа направлены на красавицу, приложившую руку к щеке.",
+          "natural": "Призрачно-бледная кожа и взгляд демона были обращены к красавице, державшейся за щёку.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:幽鬼",
+              "surface": "幽鬼",
+              "hiragana": "ゆうき",
+              "romaji": "yūki",
+              "meaning": "призрак; привидение",
+              "furigana": [
+                {
+                  "text": "幽",
+                  "reading": "ゆう"
+                },
+                {
+                  "text": "鬼",
+                  "reading": "き"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:よう",
+              "surface": "よう",
+              "hiragana": "よう",
+              "romaji": "yō",
+              "meaning": "подобие; видимость; способ"
+            },
+            {
+              "wordId": "ja:word:な",
+              "surface": "な",
+              "hiragana": "な",
+              "romaji": "na",
+              "meaning": "связывает определение с существительным"
+            },
+            {
+              "wordId": "ja:word:白い",
+              "surface": "白い",
+              "hiragana": "しろい",
+              "romaji": "shiroi",
+              "meaning": "белый; бледный",
+              "furigana": [
+                {
+                  "text": "白",
+                  "reading": "しろ"
+                },
+                {
+                  "text": "い"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:肌",
+              "surface": "肌",
+              "hiragana": "はだ",
+              "romaji": "hada",
+              "meaning": "кожа",
+              "furigana": [
+                {
+                  "text": "肌",
+                  "reading": "はだ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:悪鬼",
+              "surface": "悪鬼",
+              "hiragana": "あっき",
+              "romaji": "akki",
+              "meaning": "злой дух; демон",
+              "furigana": [
+                {
+                  "text": "悪",
+                  "reading": "あっ"
+                },
+                {
+                  "text": "鬼",
+                  "reading": "き"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:ごとし",
+              "surface": "ごとき",
+              "hiragana": "ごとき",
+              "romaji": "gotoki",
+              "meaning": "словно; подобный",
+              "inflection": "Определительная форма ごとし"
+            },
+            {
+              "wordId": "ja:word:まなざし",
+              "surface": "まなざし",
+              "hiragana": "まなざし",
+              "romaji": "manazashi",
+              "meaning": "взгляд; выражение глаз"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:頬",
+              "surface": "頬",
+              "hiragana": "ほお",
+              "romaji": "hō",
+              "meaning": "щека",
+              "furigana": [
+                {
+                  "text": "頬",
+                  "reading": "ほお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:手",
+              "surface": "手",
+              "hiragana": "て",
+              "romaji": "te",
+              "meaning": "рука; работа; усилия",
+              "furigana": [
+                {
+                  "text": "手",
+                  "reading": "て"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:添える",
+              "surface": "添える",
+              "hiragana": "そえる",
+              "romaji": "soeru",
+              "meaning": "прикладывать; добавлять; сопровождать",
+              "furigana": [
+                {
+                  "text": "添",
+                  "reading": "そ"
+                },
+                {
+                  "text": "える"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:美女",
+              "surface": "美女",
+              "hiragana": "びじょ",
+              "romaji": "bijo",
+              "meaning": "красавица",
+              "furigana": [
+                {
+                  "text": "美",
+                  "reading": "び"
+                },
+                {
+                  "text": "女",
+                  "reading": "じょ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:向ける",
+              "surface": "向けられている",
+              "hiragana": "むけられている",
+              "romaji": "mukerarete iru",
+              "meaning": "обращён",
+              "inflection": "Пассивная форма с ている",
+              "furigana": [
+                {
+                  "text": "向",
+                  "reading": "む"
+                },
+                {
+                  "text": "けられている"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:幽",
+            "ja:kanji:鬼",
+            "ja:kanji:白",
+            "ja:kanji:肌",
+            "ja:kanji:悪",
+            "ja:kanji:頬",
+            "ja:kanji:手",
+            "ja:kanji:添",
+            "ja:kanji:美",
+            "ja:kanji:女",
+            "ja:kanji:向"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:similarity-you",
+              "role": "幽鬼のような сравнивает бледность кожи с призраком."
+            },
+            {
+              "grammarId": "ja:grammar:simile-gotoku",
+              "role": "悪鬼のごとき уподобляет взгляд злому духу и усиливает описание гнева."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p048",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s085",
+          "text": "「そんなわけないとわかっているでしょう。",
+          "segments": [
+            {
+              "text": "「"
+            },
+            {
+              "text": "そんな"
+            },
+            {
+              "text": "わけ"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "わかっている"
+            },
+            {
+              "text": "でしょう"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "「そんなわけないとわかっているでしょう。",
+          "romaji": "Sonna wake nai to wakatte iru deshō.",
+          "literal": "Вы же знаете, что это не так.",
+          "natural": "Вы ведь знаете, что это неправда.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:そんな",
+              "surface": "そんな",
+              "hiragana": "そんな",
+              "romaji": "sonna",
+              "meaning": "такой; подобный"
+            },
+            {
+              "wordId": "ja:word:わけ",
+              "surface": "わけ",
+              "hiragana": "わけ",
+              "romaji": "wake",
+              "meaning": "причина; основание; обстоятельство"
+            },
+            {
+              "wordId": "ja:word:ない",
+              "surface": "ない",
+              "hiragana": "ない",
+              "romaji": "nai",
+              "meaning": "не иметься; отсутствующий"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:わかる",
+              "surface": "わかっている",
+              "hiragana": "わかっている",
+              "romaji": "wakatte iru",
+              "meaning": "понимаете",
+              "inflection": "Форма ている: состояние понимания"
+            },
+            {
+              "wordId": "ja:word:です",
+              "surface": "でしょう",
+              "hiragana": "でしょう",
+              "romaji": "deshō",
+              "meaning": "ведь; вероятно",
+              "inflection": "Предположительная вежливая форма"
+            }
+          ],
+          "kanjiIds": [],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:conjecture-darou",
+              "role": "でしょう смягчает подтверждение, ожидая, что собеседница сама признает: обвинение ложно."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s086",
+          "text": "小鈴も同じように苦しんでいるのですから」",
+          "segments": [
+            {
+              "text": "小鈴",
+              "reading": "しゃおりん"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "text": "同じ",
+              "reading": "おなじ"
+            },
+            {
+              "text": "よう"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "苦しんでいる",
+              "reading": "くるしんでいる"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "から"
+            },
+            {
+              "text": "」"
+            }
+          ],
+          "hiragana": "しゃおりんもおなじようにくるしんでいるのですから」",
+          "romaji": "Shaorin mo onaji yō ni kurushinde iru no desu kara.",
+          "literal": "Ведь Сяолинь страдает точно так же.",
+          "natural": "Ведь Сяолинь тоже тяжело переносит болезнь.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:小鈴",
+              "surface": "小鈴",
+              "hiragana": "しゃおりん",
+              "romaji": "Shaorin",
+              "meaning": "Сяолин, дочь Гёкуё",
+              "furigana": [
+                {
+                  "text": "小",
+                  "reading": "しゃお"
+                },
+                {
+                  "text": "鈴",
+                  "reading": "りん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:も",
+              "surface": "も",
+              "hiragana": "も",
+              "romaji": "mo",
+              "meaning": "тоже; даже"
+            },
+            {
+              "wordId": "ja:word:同じ",
+              "surface": "同じ",
+              "hiragana": "おなじ",
+              "romaji": "onaji",
+              "meaning": "одинаковый; тот же самый",
+              "furigana": [
+                {
+                  "text": "同",
+                  "reading": "おな"
+                },
+                {
+                  "text": "じ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:よう",
+              "surface": "よう",
+              "hiragana": "よう",
+              "romaji": "yō",
+              "meaning": "подобие; видимость; способ"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:苦しむ",
+              "surface": "苦しんでいる",
+              "hiragana": "くるしんでいる",
+              "romaji": "kurushinde iru",
+              "meaning": "страдает",
+              "inflection": "Форма ている",
+              "furigana": [
+                {
+                  "text": "苦",
+                  "reading": "くる"
+                },
+                {
+                  "text": "しんでいる"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:です",
+              "surface": "です",
+              "hiragana": "です",
+              "romaji": "desu",
+              "meaning": "быть; являться (вежливо)"
+            },
+            {
+              "wordId": "ja:word:から",
+              "surface": "から",
+              "hiragana": "から",
+              "romaji": "kara",
+              "meaning": "от; из; потому что"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:小",
+            "ja:kanji:鈴",
+            "ja:kanji:同",
+            "ja:kanji:苦"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:cause-kara",
+              "role": "のですから с から подкрепляет просьбу напоминанием: Сяолинь тоже страдает."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p049",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s087",
+          "text": "赤い髪に翡翠の目を持つ女性は、冷静に答える。",
+          "segments": [
+            {
+              "text": "赤い",
+              "reading": "あかい"
+            },
+            {
+              "text": "髪",
+              "reading": "かみ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "翡翠",
+              "reading": "ひすい"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "目",
+              "reading": "め"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "持つ",
+              "reading": "もつ"
+            },
+            {
+              "text": "女性",
+              "reading": "じょせい"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "冷静",
+              "reading": "れいせい"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "答える",
+              "reading": "こたえる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "あかいかみにひすいのめをもつじょせいは、れいせいにこたえる。",
+          "romaji": "Akai kami ni hisui no me o motsu josei wa, reisei ni kotaeru.",
+          "literal": "Женщина с рыжими волосами и нефритовыми глазами отвечает спокойно.",
+          "natural": "Красноволосая женщина с нефритовыми глазами ответила сдержанно.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:赤い",
+              "surface": "赤い",
+              "hiragana": "あかい",
+              "romaji": "akai",
+              "meaning": "красный; рыжий",
+              "furigana": [
+                {
+                  "text": "赤",
+                  "reading": "あか"
+                },
+                {
+                  "text": "い"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:髪",
+              "surface": "髪",
+              "hiragana": "かみ",
+              "romaji": "kami",
+              "meaning": "волосы",
+              "furigana": [
+                {
+                  "text": "髪",
+                  "reading": "かみ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:翡翠",
+              "surface": "翡翠",
+              "hiragana": "ひすい",
+              "romaji": "hisui",
+              "meaning": "нефрит; жадеит",
+              "furigana": [
+                {
+                  "text": "翡",
+                  "reading": "ひ"
+                },
+                {
+                  "text": "翠",
+                  "reading": "すい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:目",
+              "surface": "目",
+              "hiragana": "め",
+              "romaji": "me",
+              "meaning": "глаз",
+              "furigana": [
+                {
+                  "text": "目",
+                  "reading": "め"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:持つ",
+              "surface": "持つ",
+              "hiragana": "もつ",
+              "romaji": "motsu",
+              "meaning": "иметь; носить при себе",
+              "furigana": [
+                {
+                  "text": "持",
+                  "reading": "も"
+                },
+                {
+                  "text": "つ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:女性",
+              "surface": "女性",
+              "hiragana": "じょせい",
+              "romaji": "josei",
+              "meaning": "женщина",
+              "furigana": [
+                {
+                  "text": "女",
+                  "reading": "じょ"
+                },
+                {
+                  "text": "性",
+                  "reading": "せい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:冷静",
+              "surface": "冷静",
+              "hiragana": "れいせい",
+              "romaji": "reisei",
+              "meaning": "спокойный; хладнокровный",
+              "furigana": [
+                {
+                  "text": "冷",
+                  "reading": "れい"
+                },
+                {
+                  "text": "静",
+                  "reading": "せい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:答える",
+              "surface": "答える",
+              "hiragana": "こたえる",
+              "romaji": "kotaeru",
+              "meaning": "отвечать",
+              "furigana": [
+                {
+                  "text": "答",
+                  "reading": "こた"
+                },
+                {
+                  "text": "える"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:赤",
+            "ja:kanji:髪",
+            "ja:kanji:翡",
+            "ja:kanji:翠",
+            "ja:kanji:目",
+            "ja:kanji:持",
+            "ja:kanji:女",
+            "ja:kanji:性",
+            "ja:kanji:冷",
+            "ja:kanji:静",
+            "ja:kanji:答"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "翡翠の目を持つ определяет 女性: речь о женщине с нефритовыми глазами."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s088",
+          "text": "西方の血を色濃く継ぐ玉葉妃は顔を上げると医者の顔を見る。",
+          "segments": [
+            {
+              "text": "西方",
+              "reading": "せいほう"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "血",
+              "reading": "ち"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "色濃く",
+              "reading": "いろこく"
+            },
+            {
+              "text": "継ぐ",
+              "reading": "つぐ"
+            },
+            {
+              "text": "玉葉",
+              "reading": "ぎょくよう"
+            },
+            {
+              "text": "妃",
+              "reading": "ひ"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "顔",
+              "reading": "かお"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "上げる",
+              "reading": "あげる"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "医者",
+              "reading": "いしゃ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "顔",
+              "reading": "かお"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "見る",
+              "reading": "みる"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "せいほうのちをいろこくつぐぎょくようひはかおをあげるといしゃのかおをみる。",
+          "romaji": "Seihō no chi o irokoku tsugu Gyokuyō-hi wa kao o ageru to isha no kao o miru.",
+          "literal": "Гёкуё-хи, в чьих жилах течёт кровь западных народов, поднимает лицо и смотрит на врача.",
+          "natural": "Гёкуё-хи, унаследовавшая заметные западные черты, подняла голову и посмотрела на врача.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:西方",
+              "surface": "西方",
+              "hiragana": "せいほう",
+              "romaji": "seihō",
+              "meaning": "запад; западные земли",
+              "furigana": [
+                {
+                  "text": "西",
+                  "reading": "せい"
+                },
+                {
+                  "text": "方",
+                  "reading": "ほう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:血",
+              "surface": "血",
+              "hiragana": "ち",
+              "romaji": "chi",
+              "meaning": "кровь; происхождение",
+              "furigana": [
+                {
+                  "text": "血",
+                  "reading": "ち"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:色濃い",
+              "surface": "色濃く",
+              "hiragana": "いろこく",
+              "romaji": "irokoku",
+              "meaning": "явственно",
+              "inflection": "Наречная форма 色濃い",
+              "furigana": [
+                {
+                  "text": "色",
+                  "reading": "いろ"
+                },
+                {
+                  "text": "濃",
+                  "reading": "こ"
+                },
+                {
+                  "text": "く"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:継ぐ",
+              "surface": "継ぐ",
+              "hiragana": "つぐ",
+              "romaji": "tsugu",
+              "meaning": "наследовать; продолжать",
+              "furigana": [
+                {
+                  "text": "継",
+                  "reading": "つ"
+                },
+                {
+                  "text": "ぐ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:玉葉",
+              "surface": "玉葉",
+              "hiragana": "ぎょくよう",
+              "romaji": "gyokuyō",
+              "meaning": "Гёкуё, имя супруги императора",
+              "furigana": [
+                {
+                  "text": "玉",
+                  "reading": "ぎょく"
+                },
+                {
+                  "text": "葉",
+                  "reading": "よう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "ひ",
+              "romaji": "hi",
+              "meaning": "императорская супруга",
+              "inflection": "Чтение ひ в титуле",
+              "furigana": [
+                {
+                  "text": "妃",
+                  "reading": "ひ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:顔",
+              "surface": "顔",
+              "hiragana": "かお",
+              "romaji": "kao",
+              "meaning": "лицо; выражение лица",
+              "furigana": [
+                {
+                  "text": "顔",
+                  "reading": "かお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:上げる",
+              "surface": "上げる",
+              "hiragana": "あげる",
+              "romaji": "ageru",
+              "meaning": "поднимать; повышать",
+              "furigana": [
+                {
+                  "text": "上",
+                  "reading": "あ"
+                },
+                {
+                  "text": "げる"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:医者",
+              "surface": "医者",
+              "hiragana": "いしゃ",
+              "romaji": "isha",
+              "meaning": "врач; лекарь",
+              "furigana": [
+                {
+                  "text": "医",
+                  "reading": "い"
+                },
+                {
+                  "text": "者",
+                  "reading": "しゃ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:顔",
+              "surface": "顔",
+              "hiragana": "かお",
+              "romaji": "kao",
+              "meaning": "лицо; выражение лица",
+              "furigana": [
+                {
+                  "text": "顔",
+                  "reading": "かお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:見る",
+              "surface": "見る",
+              "hiragana": "みる",
+              "romaji": "miru",
+              "meaning": "видеть; смотреть",
+              "furigana": [
+                {
+                  "text": "見",
+                  "reading": "み"
+                },
+                {
+                  "text": "る"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:西",
+            "ja:kanji:方",
+            "ja:kanji:血",
+            "ja:kanji:色",
+            "ja:kanji:濃",
+            "ja:kanji:継",
+            "ja:kanji:玉",
+            "ja:kanji:葉",
+            "ja:kanji:妃",
+            "ja:kanji:顔",
+            "ja:kanji:上",
+            "ja:kanji:医",
+            "ja:kanji:者",
+            "ja:kanji:見"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "西方の血を色濃く継ぐ определяет 玉葉妃, поясняя её происхождение."
+            },
+            {
+              "grammarId": "ja:grammar:conditional-to",
+              "role": "顔を上げると описывает действие, за которым следует взгляд на врача."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p050",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s089",
+          "text": "「ですので、娘のほうの容体も診ていただきたいのです」",
+          "segments": [
+            {
+              "text": "「"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "ので"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "娘",
+              "reading": "むすめ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ほう"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "容体",
+              "reading": "ようたい"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "text": "診て",
+              "reading": "みて"
+            },
+            {
+              "text": "いただきたい"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "です"
+            },
+            {
+              "text": "」"
+            }
+          ],
+          "hiragana": "「ですので、むすめのほうのようたいもみていただきたいのです」",
+          "romaji": "Desu node, musume no hō no yōtai mo mite itadakitai no desu.",
+          "literal": "Поэтому я хотела бы попросить вас осмотреть и мою дочь.",
+          "natural": "Поэтому прошу вас осмотреть и мою дочь.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:です",
+              "surface": "です",
+              "hiragana": "です",
+              "romaji": "desu",
+              "meaning": "быть; являться (вежливо)"
+            },
+            {
+              "wordId": "ja:word:ので",
+              "surface": "ので",
+              "hiragana": "ので",
+              "romaji": "node",
+              "meaning": "поскольку; так как"
+            },
+            {
+              "wordId": "ja:word:娘",
+              "surface": "娘",
+              "hiragana": "むすめ",
+              "romaji": "musume",
+              "meaning": "дочь",
+              "furigana": [
+                {
+                  "text": "娘",
+                  "reading": "むすめ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:ほう",
+              "surface": "ほう",
+              "hiragana": "ほう",
+              "romaji": "hō",
+              "meaning": "сторона; один из сравниваемых предметов"
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:容体",
+              "surface": "容体",
+              "hiragana": "ようたい",
+              "romaji": "yōtai",
+              "meaning": "состояние больного",
+              "furigana": [
+                {
+                  "text": "容",
+                  "reading": "よう"
+                },
+                {
+                  "text": "体",
+                  "reading": "たい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:も",
+              "surface": "も",
+              "hiragana": "も",
+              "romaji": "mo",
+              "meaning": "тоже; даже"
+            },
+            {
+              "wordId": "ja:word:診る",
+              "surface": "診て",
+              "hiragana": "みて",
+              "romaji": "mite",
+              "meaning": "осмотреть; осматривая",
+              "inflection": "Форма て глагола 診る",
+              "furigana": [
+                {
+                  "text": "診",
+                  "reading": "み"
+                },
+                {
+                  "text": "て"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:いただく",
+              "surface": "いただきたい",
+              "hiragana": "いただきたい",
+              "romaji": "itadakitai",
+              "meaning": "хотела бы получить услугу",
+              "inflection": "Форма желания от いただく"
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:です",
+              "surface": "です",
+              "hiragana": "です",
+              "romaji": "desu",
+              "meaning": "быть; являться (вежливо)"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:娘",
+            "ja:kanji:容",
+            "ja:kanji:体",
+            "ja:kanji:診"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:humble-itadaku",
+              "role": "診ていただきたい — почтительная просьба принять действие врача как услугу для говорящей."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p051",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s090",
+          "text": "仲裁に入ったものの、原因は医師にあるらしい。",
+          "segments": [
+            {
+              "text": "仲裁",
+              "reading": "ちゅうさい"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "入った",
+              "reading": "はいった"
+            },
+            {
+              "text": "ものの"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "原因",
+              "reading": "げんいん"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "医師",
+              "reading": "いし"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "ある"
+            },
+            {
+              "text": "らしい"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ちゅうさいにはいったものの、げんいんはいしにあるらしい。",
+          "romaji": "Chūsai ni haitta mono no, gen'in wa ishi ni aru rashii.",
+          "literal": "Хотя он вмешался, похоже, причина в самом враче.",
+          "natural": "Он попытался вмешаться, но, похоже, виноват был сам врач.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:仲裁",
+              "surface": "仲裁",
+              "hiragana": "ちゅうさい",
+              "romaji": "chūsai",
+              "meaning": "посредничество; улаживание ссоры",
+              "furigana": [
+                {
+                  "text": "仲",
+                  "reading": "ちゅう"
+                },
+                {
+                  "text": "裁",
+                  "reading": "さい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:入る",
+              "surface": "入った",
+              "hiragana": "はいった",
+              "romaji": "haitta",
+              "meaning": "вступил",
+              "inflection": "Прошедшая форма 入る",
+              "furigana": [
+                {
+                  "text": "入",
+                  "reading": "はい"
+                },
+                {
+                  "text": "った"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:ものの",
+              "surface": "ものの",
+              "hiragana": "ものの",
+              "romaji": "monono",
+              "meaning": "хотя; несмотря на то что"
+            },
+            {
+              "wordId": "ja:word:原因",
+              "surface": "原因",
+              "hiragana": "げんいん",
+              "romaji": "gen'in",
+              "meaning": "причина; источник",
+              "furigana": [
+                {
+                  "text": "原",
+                  "reading": "げん"
+                },
+                {
+                  "text": "因",
+                  "reading": "いん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:医師",
+              "surface": "医師",
+              "hiragana": "いし",
+              "romaji": "ishi",
+              "meaning": "врач",
+              "furigana": [
+                {
+                  "text": "医",
+                  "reading": "い"
+                },
+                {
+                  "text": "師",
+                  "reading": "し"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:ある:exist",
+              "surface": "ある",
+              "hiragana": "ある",
+              "romaji": "aru",
+              "meaning": "иметься; быть"
+            },
+            {
+              "wordId": "ja:word:らしい",
+              "surface": "らしい",
+              "hiragana": "らしい",
+              "romaji": "rashii",
+              "meaning": "по-видимому; похоже"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:仲",
+            "ja:kanji:裁",
+            "ja:kanji:入",
+            "ja:kanji:原",
+            "ja:kanji:因",
+            "ja:kanji:医",
+            "ja:kanji:師"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:concessive-mono-no",
+              "role": "仲裁に入ったものの признаёт, что врач вмешался, но противопоставляет этому его роль в причине спора."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s091",
+          "text": "医者が東宮ばかり診て、自分の娘を診ないことに抗議をしにきたようである。",
+          "segments": [
+            {
+              "text": "医者",
+              "reading": "いしゃ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "東宮",
+              "reading": "とうぐう"
+            },
+            {
+              "text": "ばかり"
+            },
+            {
+              "text": "診て",
+              "reading": "みて"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "自分",
+              "reading": "じぶん"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "娘",
+              "reading": "むすめ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "診ない",
+              "reading": "みない"
+            },
+            {
+              "text": "こと"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "抗議",
+              "reading": "こうぎ"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "きた"
+            },
+            {
+              "text": "よう"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "いしゃがとうぐうばかりみて、じぶんのむすめをみないことにこうぎをしにきたようである。",
+          "romaji": "Isha ga Tōgū bakari mite, jibun no musume o minai koto ni kōgi o shi ni kita yō de aru.",
+          "literal": "Похоже, она пришла возразить, что врач осматривает только наследного принца и не смотрит на её дочь.",
+          "natural": "Она пришла протестовать: врач занимается только наследным принцем, а её дочь не осматривает.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:医者",
+              "surface": "医者",
+              "hiragana": "いしゃ",
+              "romaji": "isha",
+              "meaning": "врач; лекарь",
+              "furigana": [
+                {
+                  "text": "医",
+                  "reading": "い"
+                },
+                {
+                  "text": "者",
+                  "reading": "しゃ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:東宮",
+              "surface": "東宮",
+              "hiragana": "とうぐう",
+              "romaji": "tōgū",
+              "meaning": "наследный принц; наследник престола",
+              "furigana": [
+                {
+                  "text": "東",
+                  "reading": "とう"
+                },
+                {
+                  "text": "宮",
+                  "reading": "ぐう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:ばかり",
+              "surface": "ばかり",
+              "hiragana": "ばかり",
+              "romaji": "bakari",
+              "meaning": "только; исключительно; приблизительно"
+            },
+            {
+              "wordId": "ja:word:診る",
+              "surface": "診て",
+              "hiragana": "みて",
+              "romaji": "mite",
+              "meaning": "осмотреть; осматривая",
+              "inflection": "Форма て глагола 診る",
+              "furigana": [
+                {
+                  "text": "診",
+                  "reading": "み"
+                },
+                {
+                  "text": "て"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:自分",
+              "surface": "自分",
+              "hiragana": "じぶん",
+              "romaji": "jibun",
+              "meaning": "собственный; свой",
+              "furigana": [
+                {
+                  "text": "自",
+                  "reading": "じ"
+                },
+                {
+                  "text": "分",
+                  "reading": "ぶん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:娘",
+              "surface": "娘",
+              "hiragana": "むすめ",
+              "romaji": "musume",
+              "meaning": "дочь",
+              "furigana": [
+                {
+                  "text": "娘",
+                  "reading": "むすめ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:診る",
+              "surface": "診ない",
+              "hiragana": "みない",
+              "romaji": "minai",
+              "meaning": "не осматривает",
+              "inflection": "Отрицательная форма 診る",
+              "furigana": [
+                {
+                  "text": "診",
+                  "reading": "み"
+                },
+                {
+                  "text": "ない"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:こと",
+              "surface": "こと",
+              "hiragana": "こと",
+              "romaji": "koto",
+              "meaning": "дело; факт; номинализация действия"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:抗議",
+              "surface": "抗議",
+              "hiragana": "こうぎ",
+              "romaji": "kōgi",
+              "meaning": "протест; возражение",
+              "furigana": [
+                {
+                  "text": "抗",
+                  "reading": "こう"
+                },
+                {
+                  "text": "議",
+                  "reading": "ぎ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:する",
+              "surface": "し",
+              "hiragana": "し",
+              "romaji": "shi",
+              "meaning": "делать",
+              "inflection": "Соединительная основа する"
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:来る",
+              "surface": "きた",
+              "hiragana": "きた",
+              "romaji": "kita",
+              "meaning": "пришла",
+              "inflection": "Прошедшая форма 来る"
+            },
+            {
+              "wordId": "ja:word:よう",
+              "surface": "よう",
+              "hiragana": "よう",
+              "romaji": "yō",
+              "meaning": "подобие; видимость; способ"
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "である",
+              "hiragana": "である",
+              "romaji": "de aru",
+              "meaning": "является",
+              "inflection": "Книжная форма связки"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:医",
+            "ja:kanji:者",
+            "ja:kanji:東",
+            "ja:kanji:宮",
+            "ja:kanji:診",
+            "ja:kanji:自",
+            "ja:kanji:分",
+            "ja:kanji:娘",
+            "ja:kanji:抗",
+            "ja:kanji:議"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:bakari",
+              "role": "東宮ばかり診て ограничивает действия врача одним наследным принцем и подразумевает, что дочери он не уделяет внимания."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p052",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s092",
+          "text": "母親としてはわからなくもないが、後宮という仕組みから男児優先は当然である。",
+          "segments": [
+            {
+              "text": "母親",
+              "reading": "ははおや"
+            },
+            {
+              "text": "として"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "わからなく"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "後宮",
+              "reading": "こうきゅう"
+            },
+            {
+              "text": "という"
+            },
+            {
+              "text": "仕組み",
+              "reading": "しくみ"
+            },
+            {
+              "text": "から"
+            },
+            {
+              "text": "男児",
+              "reading": "おのこ"
+            },
+            {
+              "text": "優先",
+              "reading": "ゆうせん"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "当然",
+              "reading": "とうぜん"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ははおやとしてはわからなくもないが、こうきゅうというしくみからおのこゆうせんはとうぜんである。",
+          "romaji": "Hahaoya to shite wa wakaranaku mo nai ga, kōkyū to iu shikumi kara onoko yūsen wa tōzen de aru.",
+          "literal": "Как мать, она понятна, но порядок гарема естественным образом ставит мальчика выше.",
+          "natural": "Материнские чувства можно понять, но в гареме сыновьям по заведённому порядку отдавали предпочтение.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:母親",
+              "surface": "母親",
+              "hiragana": "ははおや",
+              "romaji": "hahaoya",
+              "meaning": "мать",
+              "furigana": [
+                {
+                  "text": "母",
+                  "reading": "はは"
+                },
+                {
+                  "text": "親",
+                  "reading": "おや"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:として",
+              "surface": "として",
+              "hiragana": "として",
+              "romaji": "to shite",
+              "meaning": "в качестве; как"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:わかる",
+              "surface": "わからなく",
+              "hiragana": "わからなく",
+              "romaji": "wakaranaku",
+              "meaning": "не понять",
+              "inflection": "Соединительная форма отрицания わかる"
+            },
+            {
+              "wordId": "ja:word:も",
+              "surface": "も",
+              "hiragana": "も",
+              "romaji": "mo",
+              "meaning": "тоже; даже"
+            },
+            {
+              "wordId": "ja:word:ない",
+              "surface": "ない",
+              "hiragana": "ない",
+              "romaji": "nai",
+              "meaning": "не иметься; отсутствующий"
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            },
+            {
+              "wordId": "ja:word:後宮",
+              "surface": "後宮",
+              "hiragana": "こうきゅう",
+              "romaji": "kōkyū",
+              "meaning": "внутренний дворец",
+              "furigana": [
+                {
+                  "text": "後",
+                  "reading": "こう"
+                },
+                {
+                  "text": "宮",
+                  "reading": "きゅう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:という",
+              "surface": "という",
+              "hiragana": "という",
+              "romaji": "to iu",
+              "meaning": "называемый; то, что"
+            },
+            {
+              "wordId": "ja:word:仕組み",
+              "surface": "仕組み",
+              "hiragana": "しくみ",
+              "romaji": "shikumi",
+              "meaning": "устройство; система; механизм",
+              "furigana": [
+                {
+                  "text": "仕",
+                  "reading": "し"
+                },
+                {
+                  "text": "組",
+                  "reading": "く"
+                },
+                {
+                  "text": "み"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:から",
+              "surface": "から",
+              "hiragana": "から",
+              "romaji": "kara",
+              "meaning": "от; из; потому что"
+            },
+            {
+              "wordId": "ja:word:男子",
+              "surface": "男児",
+              "hiragana": "おのこ",
+              "romaji": "onoko",
+              "meaning": "мальчик; сын",
+              "inflection": "Авторское чтение おのこ; вариант написания",
+              "furigana": [
+                {
+                  "text": "男児",
+                  "reading": "おのこ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:優先",
+              "surface": "優先",
+              "hiragana": "ゆうせん",
+              "romaji": "yūsen",
+              "meaning": "приоритет; предпочтение",
+              "furigana": [
+                {
+                  "text": "優",
+                  "reading": "ゆう"
+                },
+                {
+                  "text": "先",
+                  "reading": "せん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:当然",
+              "surface": "当然",
+              "hiragana": "とうぜん",
+              "romaji": "tōzen",
+              "meaning": "естественный; закономерный; разумеется",
+              "furigana": [
+                {
+                  "text": "当",
+                  "reading": "とう"
+                },
+                {
+                  "text": "然",
+                  "reading": "ぜん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "である",
+              "hiragana": "である",
+              "romaji": "de aru",
+              "meaning": "является",
+              "inflection": "Книжная форма связки"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:母",
+            "ja:kanji:親",
+            "ja:kanji:後",
+            "ja:kanji:宮",
+            "ja:kanji:仕",
+            "ja:kanji:組",
+            "ja:kanji:男",
+            "ja:kanji:児",
+            "ja:kanji:優",
+            "ja:kanji:先",
+            "ja:kanji:当",
+            "ja:kanji:然"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:concessive-ga",
+              "role": "わからなくもないが частично признаёт материнские чувства, затем противопоставляет им порядок гарема."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s093",
+          "text": "医師にしてみれば、いわれのないと言いたい顔であるのだが。",
+          "segments": [
+            {
+              "text": "医師",
+              "reading": "いし"
+            },
+            {
+              "text": "にしてみれば"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "いわれ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "言いたい",
+              "reading": "いいたい"
+            },
+            {
+              "text": "顔",
+              "reading": "かお"
+            },
+            {
+              "text": "である"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "だ"
+            },
+            {
+              "text": "が"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "いしにしてみれば、いわれのないといいたいかおであるのだが。",
+          "romaji": "Ishi ni shite mireba, iware no nai to iitai kao de aru no da ga.",
+          "literal": "С точки зрения врача, на его лице написано, что упрёк несправедлив.",
+          "natural": "Врач же выглядел так, будто хотел сказать, что обвиняют его без причины.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:医師",
+              "surface": "医師",
+              "hiragana": "いし",
+              "romaji": "ishi",
+              "meaning": "врач",
+              "furigana": [
+                {
+                  "text": "医",
+                  "reading": "い"
+                },
+                {
+                  "text": "師",
+                  "reading": "し"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:にしてみれば",
+              "surface": "にしてみれば",
+              "hiragana": "にしてみれば",
+              "romaji": "ni shite mireba",
+              "meaning": "с точки зрения; если поставить себя на место"
+            },
+            {
+              "wordId": "ja:word:いわれ",
+              "surface": "いわれ",
+              "hiragana": "いわれ",
+              "romaji": "iware",
+              "meaning": "основание; причина; происхождение"
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:ない",
+              "surface": "ない",
+              "hiragana": "ない",
+              "romaji": "nai",
+              "meaning": "не иметься; отсутствующий"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:言う",
+              "surface": "言いたい",
+              "hiragana": "いいたい",
+              "romaji": "iitai",
+              "meaning": "хочет сказать",
+              "inflection": "Форма желания 言う",
+              "furigana": [
+                {
+                  "text": "言",
+                  "reading": "い"
+                },
+                {
+                  "text": "いたい"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:顔",
+              "surface": "顔",
+              "hiragana": "かお",
+              "romaji": "kao",
+              "meaning": "лицо; выражение лица",
+              "furigana": [
+                {
+                  "text": "顔",
+                  "reading": "かお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "である",
+              "hiragana": "である",
+              "romaji": "de aru",
+              "meaning": "является",
+              "inflection": "Книжная форма связки"
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だ",
+              "hiragana": "だ",
+              "romaji": "da",
+              "meaning": "быть; являться"
+            },
+            {
+              "wordId": "ja:word:が",
+              "surface": "が",
+              "hiragana": "が",
+              "romaji": "ga",
+              "meaning": "подлежащее"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:医",
+            "ja:kanji:師",
+            "ja:kanji:言",
+            "ja:kanji:顔"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:viewpoint-ni-totte",
+              "role": "医師にしてみれば задаёт точку зрения врача, которому обвинение кажется необоснованным."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p053",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s094",
+          "text": "（馬鹿だろう、あのやぶ）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "馬鹿",
+              "reading": "ばか"
+            },
+            {
+              "text": "だろう"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "あの"
+            },
+            {
+              "text": "やぶ"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（ばかだろう、あのやぶ）",
+          "romaji": "(Baka darō, ano yabu.)",
+          "literal": "(Да он же дурак, этот шарлатан.)",
+          "natural": "(Вот же идиот, этот лекарь-недоучка.)",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:馬鹿",
+              "surface": "馬鹿",
+              "hiragana": "ばか",
+              "romaji": "baka",
+              "meaning": "дурак; глупец",
+              "furigana": [
+                {
+                  "text": "馬",
+                  "reading": "ば"
+                },
+                {
+                  "text": "鹿",
+                  "reading": "か"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:だ",
+              "surface": "だろう",
+              "hiragana": "だろう",
+              "romaji": "darō",
+              "meaning": "ведь; наверное",
+              "inflection": "Предположительная форма だ"
+            },
+            {
+              "wordId": "ja:word:あの",
+              "surface": "あの",
+              "hiragana": "あの",
+              "romaji": "ano",
+              "meaning": "тот; вон тот"
+            },
+            {
+              "wordId": "ja:word:やぶ",
+              "surface": "やぶ",
+              "hiragana": "やぶ",
+              "romaji": "yabu",
+              "meaning": "лекарь-недоучка; плохой врач"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:馬",
+            "ja:kanji:鹿"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:nominal-fragment",
+              "role": "Внутренний монолог обрывается на существительном やぶ, усиливая резкую оценку лекаря."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p054",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s095",
+          "text": "妃二人のあんなに近くにいて気づかないとは。",
+          "segments": [
+            {
+              "text": "妃",
+              "reading": "ひ"
+            },
+            {
+              "text": "二人",
+              "reading": "ふたり"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "あんなに"
+            },
+            {
+              "text": "近く",
+              "reading": "ちかく"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "いて"
+            },
+            {
+              "text": "気づかない",
+              "reading": "きづかない"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ひふたりのあんなにちかくにいてきづかないとは。",
+          "romaji": "Hi futari no anna ni chikaku ni ite kizukanai to wa.",
+          "literal": "Как можно не заметить, находясь так близко к обеим супругам.",
+          "natural": "И как он мог не заметить, находясь рядом с обеими супругами?",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "ひ",
+              "romaji": "hi",
+              "meaning": "императорская супруга",
+              "inflection": "Чтение ひ в титуле",
+              "furigana": [
+                {
+                  "text": "妃",
+                  "reading": "ひ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:二人",
+              "surface": "二人",
+              "hiragana": "ふたり",
+              "romaji": "futari",
+              "meaning": "двое; два человека",
+              "furigana": [
+                {
+                  "text": "二人",
+                  "reading": "ふたり"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:あんなに",
+              "surface": "あんなに",
+              "hiragana": "あんなに",
+              "romaji": "anna ni",
+              "meaning": "настолько; так сильно"
+            },
+            {
+              "wordId": "ja:word:近く",
+              "surface": "近く",
+              "hiragana": "ちかく",
+              "romaji": "chikaku",
+              "meaning": "поблизости; близко",
+              "furigana": [
+                {
+                  "text": "近",
+                  "reading": "ちか"
+                },
+                {
+                  "text": "く"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:いる",
+              "surface": "いて",
+              "hiragana": "いて",
+              "romaji": "ite",
+              "meaning": "находясь",
+              "inflection": "Форма て глагола いる"
+            },
+            {
+              "wordId": "ja:word:気づく",
+              "surface": "気づかない",
+              "hiragana": "きづかない",
+              "romaji": "kizukanai",
+              "meaning": "не замечает",
+              "inflection": "Отрицательная форма 気づく",
+              "furigana": [
+                {
+                  "text": "気",
+                  "reading": "き"
+                },
+                {
+                  "text": "づかない"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:妃",
+            "ja:kanji:二",
+            "ja:kanji:人",
+            "ja:kanji:近",
+            "ja:kanji:気"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:location-ni",
+              "role": "近くに указывает, насколько близко врач находится к обеим супругам."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s096",
+          "text": "いや、それ以前に知らないのか？",
+          "segments": [
+            {
+              "text": "いや"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "それ"
+            },
+            {
+              "text": "以前",
+              "reading": "いぜん"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "知らない",
+              "reading": "しらない"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "？"
+            }
+          ],
+          "hiragana": "いや、それいぜんにしらないのか？",
+          "romaji": "Iya, sore izen ni shiranai no ka?",
+          "literal": "Нет, может, он не знает этого ещё с самого начала?",
+          "natural": "Хотя, может, он вообще ничего не знает?",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:いや",
+              "surface": "いや",
+              "hiragana": "いや",
+              "romaji": "iya",
+              "meaning": "нет; постой; выражение возражения"
+            },
+            {
+              "wordId": "ja:word:それ",
+              "surface": "それ",
+              "hiragana": "それ",
+              "romaji": "sore",
+              "meaning": "это; то"
+            },
+            {
+              "wordId": "ja:word:以前",
+              "surface": "以前",
+              "hiragana": "いぜん",
+              "romaji": "izen",
+              "meaning": "раньше; до; прежде",
+              "furigana": [
+                {
+                  "text": "以",
+                  "reading": "い"
+                },
+                {
+                  "text": "前",
+                  "reading": "ぜん"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:知る",
+              "surface": "知らない",
+              "hiragana": "しらない",
+              "romaji": "shiranai",
+              "meaning": "не знает",
+              "inflection": "Отрицательная форма 知る",
+              "furigana": [
+                {
+                  "text": "知",
+                  "reading": "し"
+                },
+                {
+                  "text": "らない"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь с определением или оформление пояснения"
+            },
+            {
+              "wordId": "ja:word:か",
+              "surface": "か",
+              "hiragana": "か",
+              "romaji": "ka",
+              "meaning": "показатель вопроса"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:以",
+            "ja:kanji:前",
+            "ja:kanji:知"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:before",
+              "role": "それ以前に переносит сомнение к более раннему вопросу: возможно, врач вообще не знает о причине."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p055",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s097",
+          "text": "乳幼児の死亡、頭痛、腹痛、吐き気。",
+          "segments": [
+            {
+              "text": "乳幼児",
+              "reading": "にゅうようじ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "死亡",
+              "reading": "しぼう"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "頭痛",
+              "reading": "ずつう"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "腹痛",
+              "reading": "ふくつう"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "吐き気",
+              "reading": "はきけ"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "にゅうようじのしぼう、ずつう、ふくつう、はきけ。",
+          "romaji": "Nyūyōji no shibō, zutsū, fukutsū, hakike.",
+          "literal": "Смерть младенцев, головная боль, боль в животе, тошнота.",
+          "natural": "Младенческая смертность, головные боли, боли в животе, тошнота.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:乳幼児",
+              "surface": "乳幼児",
+              "hiragana": "にゅうようじ",
+              "romaji": "nyūyōji",
+              "meaning": "младенцы и дети раннего возраста",
+              "furigana": [
+                {
+                  "text": "乳",
+                  "reading": "にゅう"
+                },
+                {
+                  "text": "幼",
+                  "reading": "よう"
+                },
+                {
+                  "text": "児",
+                  "reading": "じ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:死亡",
+              "surface": "死亡",
+              "hiragana": "しぼう",
+              "romaji": "shibō",
+              "meaning": "смерть; кончина",
+              "furigana": [
+                {
+                  "text": "死",
+                  "reading": "し"
+                },
+                {
+                  "text": "亡",
+                  "reading": "ぼう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:頭痛",
+              "surface": "頭痛",
+              "hiragana": "ずつう",
+              "romaji": "zutsū",
+              "meaning": "головная боль",
+              "furigana": [
+                {
+                  "text": "頭",
+                  "reading": "ず"
+                },
+                {
+                  "text": "痛",
+                  "reading": "つう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:腹痛",
+              "surface": "腹痛",
+              "hiragana": "ふくつう",
+              "romaji": "fukutsū",
+              "meaning": "боль в животе",
+              "furigana": [
+                {
+                  "text": "腹",
+                  "reading": "ふく"
+                },
+                {
+                  "text": "痛",
+                  "reading": "つう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:吐き気",
+              "surface": "吐き気",
+              "hiragana": "はきけ",
+              "romaji": "hakike",
+              "meaning": "тошнота",
+              "furigana": [
+                {
+                  "text": "吐",
+                  "reading": "は"
+                },
+                {
+                  "text": "き"
+                },
+                {
+                  "text": "気",
+                  "reading": "け"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:乳",
+            "ja:kanji:幼",
+            "ja:kanji:児",
+            "ja:kanji:死",
+            "ja:kanji:亡",
+            "ja:kanji:頭",
+            "ja:kanji:痛",
+            "ja:kanji:腹",
+            "ja:kanji:吐",
+            "ja:kanji:気"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:nominal-fragment",
+              "role": "Перечень симптомов обрывается без сказуемого и фиксирует улики, которые Маомао связывает между собой."
+            }
+          ]
+        },
+        {
+          "id": "apothecary-diaries.chapter-2.s098",
+          "text": "そして、梨花妃の白い肌とおぼつかない身体。",
+          "segments": [
+            {
+              "text": "そして"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "梨花",
+              "reading": "りふぁ"
+            },
+            {
+              "text": "妃",
+              "reading": "ひ"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "白い",
+              "reading": "しろい"
+            },
+            {
+              "text": "肌",
+              "reading": "はだ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "おぼつかない"
+            },
+            {
+              "text": "身体",
+              "reading": "からだ"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "そして、りふぁひのしろいはだとおぼつかないからだ。",
+          "romaji": "Soshite, Rifa-hi no shiroi hada to obotsukanai karada.",
+          "literal": "И ещё — бледная кожа и слабое тело Рифа-хи.",
+          "natural": "А ещё Рифа-хи была бледной и едва держалась на ногах.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:そして",
+              "surface": "そして",
+              "hiragana": "そして",
+              "romaji": "soshite",
+              "meaning": "и; затем"
+            },
+            {
+              "wordId": "ja:word:梨花",
+              "surface": "梨花",
+              "hiragana": "りふぁ",
+              "romaji": "Rifa",
+              "meaning": "Рифа, имя супруги императора",
+              "furigana": [
+                {
+                  "text": "梨花",
+                  "reading": "りふぁ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:妃",
+              "surface": "妃",
+              "hiragana": "ひ",
+              "romaji": "hi",
+              "meaning": "императорская супруга",
+              "inflection": "Чтение ひ в титуле",
+              "furigana": [
+                {
+                  "text": "妃",
+                  "reading": "ひ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:白い",
+              "surface": "白い",
+              "hiragana": "しろい",
+              "romaji": "shiroi",
+              "meaning": "белый; бледный",
+              "furigana": [
+                {
+                  "text": "白",
+                  "reading": "しろ"
+                },
+                {
+                  "text": "い"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:肌",
+              "surface": "肌",
+              "hiragana": "はだ",
+              "romaji": "hada",
+              "meaning": "кожа",
+              "furigana": [
+                {
+                  "text": "肌",
+                  "reading": "はだ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:おぼつかない",
+              "surface": "おぼつかない",
+              "hiragana": "おぼつかない",
+              "romaji": "obotsukanai",
+              "meaning": "ненадёжный; неуверенный; нетвёрдый"
+            },
+            {
+              "wordId": "ja:word:身体",
+              "surface": "身体",
+              "hiragana": "からだ",
+              "romaji": "karada",
+              "meaning": "тело; организм",
+              "furigana": [
+                {
+                  "text": "身体",
+                  "reading": "からだ"
+                }
+              ]
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:梨",
+            "ja:kanji:花",
+            "ja:kanji:妃",
+            "ja:kanji:白",
+            "ja:kanji:肌",
+            "ja:kanji:身",
+            "ja:kanji:体"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:nominal-fragment",
+              "role": "Вторая назывная фраза добавляет к перечню симптомов бледность и слабость Рифа-хи."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p056",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s099",
+          "text": "ぶつぶつとひとりごとをつぶやきながら、猫猫は騒動の場を後にした。",
+          "segments": [
+            {
+              "text": "ぶつぶつ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "ひとりごと"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "つぶやき"
+            },
+            {
+              "text": "ながら"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "猫猫",
+              "reading": "まおまお"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "騒動",
+              "reading": "そうどう"
+            },
+            {
+              "text": "の"
+            },
+            {
+              "text": "場",
+              "reading": "ば"
+            },
+            {
+              "text": "を"
+            },
+            {
+              "text": "後",
+              "reading": "あと"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "した"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "ぶつぶつとひとりごとをつぶやきながら、まおまおはそうどうのばをあとにした。",
+          "romaji": "Butsubutsu to hitorigoto o tsubuyaki nagara, Maomao wa sōdō no ba o ato ni shita.",
+          "literal": "Бормоча себе под нос, Маомао покинула место переполоха.",
+          "natural": "Бурча что-то себе под нос, Маомао ушла с места ссоры.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:ぶつぶつ",
+              "surface": "ぶつぶつ",
+              "hiragana": "ぶつぶつ",
+              "romaji": "butsubutsu",
+              "meaning": "бормоча; ворча; вполголоса"
+            },
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:ひとりごと",
+              "surface": "ひとりごと",
+              "hiragana": "ひとりごと",
+              "romaji": "hitorigoto",
+              "meaning": "разговор с собой; слова, обращённые к себе"
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:つぶやく",
+              "surface": "つぶやき",
+              "hiragana": "つぶやき",
+              "romaji": "tsubuyaki",
+              "meaning": "бормоча",
+              "inflection": "Соединительная основа つぶやく"
+            },
+            {
+              "wordId": "ja:word:ながら",
+              "surface": "ながら",
+              "hiragana": "ながら",
+              "romaji": "nagara",
+              "meaning": "одновременно с; делая"
+            },
+            {
+              "wordId": "ja:word:猫猫",
+              "surface": "猫猫",
+              "hiragana": "まおまお",
+              "romaji": "Maomao",
+              "meaning": "Маомао; имя героини",
+              "furigana": [
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                },
+                {
+                  "text": "猫",
+                  "reading": "まお"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:騒動",
+              "surface": "騒動",
+              "hiragana": "そうどう",
+              "romaji": "sōdō",
+              "meaning": "переполох; смута; ссора",
+              "furigana": [
+                {
+                  "text": "騒",
+                  "reading": "そう"
+                },
+                {
+                  "text": "動",
+                  "reading": "どう"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:の",
+              "surface": "の",
+              "hiragana": "の",
+              "romaji": "no",
+              "meaning": "связь определений"
+            },
+            {
+              "wordId": "ja:word:場",
+              "surface": "場",
+              "hiragana": "ば",
+              "romaji": "ba",
+              "meaning": "место; обстановка",
+              "furigana": [
+                {
+                  "text": "場",
+                  "reading": "ば"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:を",
+              "surface": "を",
+              "hiragana": "を",
+              "romaji": "o",
+              "meaning": "прямое дополнение"
+            },
+            {
+              "wordId": "ja:word:後",
+              "surface": "後",
+              "hiragana": "あと",
+              "romaji": "ato",
+              "meaning": "после; потом",
+              "furigana": [
+                {
+                  "text": "後",
+                  "reading": "あと"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:する",
+              "surface": "した",
+              "hiragana": "した",
+              "romaji": "shita",
+              "meaning": "сделала",
+              "inflection": "Прошедшая форма する"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:猫",
+            "ja:kanji:騒",
+            "ja:kanji:動",
+            "ja:kanji:場",
+            "ja:kanji:後"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:past",
+              "role": "後にした передаёт завершённый уход Маомао с места ссоры."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p057",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s100",
+          "text": "（なにか、書き物はないか）",
+          "segments": [
+            {
+              "text": "（"
+            },
+            {
+              "text": "なにか"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "書き物",
+              "reading": "かきもの"
+            },
+            {
+              "text": "は"
+            },
+            {
+              "text": "ない"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "）"
+            }
+          ],
+          "hiragana": "（なにか、かきものはないか）",
+          "romaji": "(Nanika, kakimono wa nai ka?)",
+          "literal": "(Нет ли чего-нибудь, чтобы записать?)",
+          "natural": "(Есть у кого-нибудь бумага?)",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:なにか",
+              "surface": "なにか",
+              "hiragana": "なにか",
+              "romaji": "nanika",
+              "meaning": "что-нибудь"
+            },
+            {
+              "wordId": "ja:word:書き物",
+              "surface": "書き物",
+              "hiragana": "かきもの",
+              "romaji": "kakimono",
+              "meaning": "письменная работа; принадлежности для письма",
+              "furigana": [
+                {
+                  "text": "書",
+                  "reading": "か"
+                },
+                {
+                  "text": "き"
+                },
+                {
+                  "text": "物",
+                  "reading": "もの"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:は",
+              "surface": "は",
+              "hiragana": "は",
+              "romaji": "wa",
+              "meaning": "тема высказывания"
+            },
+            {
+              "wordId": "ja:word:ない",
+              "surface": "ない",
+              "hiragana": "ない",
+              "romaji": "nai",
+              "meaning": "не иметься; отсутствующий"
+            },
+            {
+              "wordId": "ja:word:か",
+              "surface": "か",
+              "hiragana": "か",
+              "romaji": "ka",
+              "meaning": "показатель вопроса"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:書",
+            "ja:kanji:物"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:question-ka",
+              "role": "ないか оформляет внутренний вопрос-поиск: есть ли бумага, на которой можно записать наблюдения."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p058",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s101",
+          "text": "と、考えながら。",
+          "segments": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "考え",
+              "reading": "かんがえ"
+            },
+            {
+              "text": "ながら"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "と、かんがえながら。",
+          "romaji": "To, kangae nagara.",
+          "literal": "Так размышляя.",
+          "natural": "Думая об этом.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:と",
+              "surface": "と",
+              "hiragana": "と",
+              "romaji": "to",
+              "meaning": "и; с; показатель цитаты или условия"
+            },
+            {
+              "wordId": "ja:word:考える",
+              "surface": "考え",
+              "hiragana": "かんがえ",
+              "romaji": "kangae",
+              "meaning": "размышляя",
+              "inflection": "Соединительная основа 考える",
+              "furigana": [
+                {
+                  "text": "考",
+                  "reading": "かんが"
+                },
+                {
+                  "text": "え"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:ながら",
+              "surface": "ながら",
+              "hiragana": "ながら",
+              "romaji": "nagara",
+              "meaning": "одновременно с; делая"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:考"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:quotation",
+              "role": "Цитатное と отсылает к мысли из предыдущей реплики: Маомао продолжает размышлять."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apothecary-diaries.chapter-2.p059",
+      "sentences": [
+        {
+          "id": "apothecary-diaries.chapter-2.s102",
+          "text": "よって、通り過ぎる人物に目もくれなかった。",
+          "segments": [
+            {
+              "text": "よって"
+            },
+            {
+              "text": "、"
+            },
+            {
+              "text": "通り過ぎる",
+              "reading": "とおりすぎる"
+            },
+            {
+              "text": "人物",
+              "reading": "じんぶつ"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "目",
+              "reading": "め"
+            },
+            {
+              "text": "も"
+            },
+            {
+              "text": "くれなかった"
+            },
+            {
+              "text": "。"
+            }
+          ],
+          "hiragana": "よって、とおりすぎるじんぶつにめもくれなかった。",
+          "romaji": "Yotte, tōrisugiru jinbutsu ni me mo kurenakatta.",
+          "literal": "Поэтому она даже не взглянула на человека, проходившего мимо.",
+          "natural": "Поэтому Маомао даже не заметила прохожего.",
+          "wordOccurrences": [
+            {
+              "wordId": "ja:word:よって",
+              "surface": "よって",
+              "hiragana": "よって",
+              "romaji": "yotte",
+              "meaning": "поэтому; вследствие этого"
+            },
+            {
+              "wordId": "ja:word:通り過ぎる",
+              "surface": "通り過ぎる",
+              "hiragana": "とおりすぎる",
+              "romaji": "tōrisugiru",
+              "meaning": "проходить мимо",
+              "furigana": [
+                {
+                  "text": "通",
+                  "reading": "とお"
+                },
+                {
+                  "text": "り"
+                },
+                {
+                  "text": "過",
+                  "reading": "す"
+                },
+                {
+                  "text": "ぎる"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:人物",
+              "surface": "人物",
+              "hiragana": "じんぶつ",
+              "romaji": "jinbutsu",
+              "meaning": "человек; личность",
+              "furigana": [
+                {
+                  "text": "人",
+                  "reading": "じん"
+                },
+                {
+                  "text": "物",
+                  "reading": "ぶつ"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:に",
+              "surface": "に",
+              "hiragana": "に",
+              "romaji": "ni",
+              "meaning": "место или адресат"
+            },
+            {
+              "wordId": "ja:word:目",
+              "surface": "目",
+              "hiragana": "め",
+              "romaji": "me",
+              "meaning": "глаз; взгляд",
+              "furigana": [
+                {
+                  "text": "目",
+                  "reading": "め"
+                }
+              ]
+            },
+            {
+              "wordId": "ja:word:も",
+              "surface": "も",
+              "hiragana": "も",
+              "romaji": "mo",
+              "meaning": "тоже; даже"
+            },
+            {
+              "wordId": "ja:word:くれる:give",
+              "surface": "くれなかった",
+              "hiragana": "くれなかった",
+              "romaji": "kurenakatta",
+              "meaning": "не уделила",
+              "inflection": "Прошедшая отрицательная форма くれる в 目もくれない"
+            }
+          ],
+          "kanjiIds": [
+            "ja:kanji:通",
+            "ja:kanji:過",
+            "ja:kanji:人",
+            "ja:kanji:物",
+            "ja:kanji:目"
+          ],
+          "grammarOccurrences": [
+            {
+              "grammarId": "ja:grammar:attributive",
+              "role": "通り過ぎる определяет 人物: это человек, проходящий мимо."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

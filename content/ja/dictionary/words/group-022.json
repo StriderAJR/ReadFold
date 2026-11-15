@@ -1,0 +1,266 @@
+[
+  {
+    "id": "ja:word:めく",
+    "surface": "めく",
+    "dictionaryForm": "めく",
+    "reading": "めく",
+    "romaji": "meku",
+    "partOfSpeech": "суффиксальный глагол",
+    "meanings": [
+      "походить на; приобретать признаки"
+    ]
+  },
+  {
+    "id": "ja:word:よ",
+    "surface": "よ",
+    "dictionaryForm": "よ",
+    "reading": "よ",
+    "romaji": "yo",
+    "partOfSpeech": "конечная частица",
+    "meanings": [
+      "подчёркивание сообщения собеседнику"
+    ]
+  },
+  {
+    "id": "ja:word:わ",
+    "surface": "わ",
+    "dictionaryForm": "わ",
+    "reading": "わ",
+    "romaji": "wa",
+    "partOfSpeech": "конечная частица",
+    "meanings": [
+      "мягкое подчёркивание утверждения"
+    ]
+  },
+  {
+    "id": "ja:word:指す",
+    "surface": "指す",
+    "dictionaryForm": "指す",
+    "reading": "さす",
+    "romaji": "sasu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "указывать; подразумевать"
+    ]
+  },
+  {
+    "id": "ja:word:時代",
+    "surface": "時代",
+    "dictionaryForm": "時代",
+    "reading": "じだい",
+    "romaji": "jidai",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "эпоха; период"
+    ]
+  },
+  {
+    "id": "ja:word:一人",
+    "surface": "一人",
+    "dictionaryForm": "一人",
+    "reading": "ひとり",
+    "romaji": "hitori",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "один человек"
+    ]
+  },
+  {
+    "id": "ja:word:どれ",
+    "surface": "どれ",
+    "dictionaryForm": "どれ",
+    "reading": "どれ",
+    "romaji": "dore",
+    "partOfSpeech": "местоимение",
+    "meanings": [
+      "который; каждый из названных"
+    ]
+  },
+  {
+    "id": "ja:word:ころ",
+    "surface": "ころ",
+    "dictionaryForm": "ころ",
+    "reading": "ころ",
+    "romaji": "koro",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "время; пора; возраст"
+    ]
+  },
+  {
+    "id": "ja:word:幼子",
+    "surface": "幼子",
+    "dictionaryForm": "幼子",
+    "reading": "おさなご",
+    "romaji": "osanago",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "маленький ребёнок; младенец"
+    ]
+  },
+  {
+    "id": "ja:word:死亡率",
+    "surface": "死亡率",
+    "dictionaryForm": "死亡率",
+    "reading": "しぼうりつ",
+    "romaji": "shibōritsu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "смертность"
+    ]
+  },
+  {
+    "id": "ja:word:高い",
+    "surface": "高い",
+    "dictionaryForm": "高い",
+    "reading": "たかい",
+    "romaji": "takai",
+    "partOfSpeech": "прилагательное",
+    "meanings": [
+      "высокий"
+    ]
+  },
+  {
+    "id": "ja:word:当たり前",
+    "surface": "当たり前",
+    "dictionaryForm": "当たり前",
+    "reading": "あたりまえ",
+    "romaji": "atarimae",
+    "partOfSpeech": "прилагательное na",
+    "meanings": [
+      "обычный; естественный; само собой разумеющийся"
+    ]
+  },
+  {
+    "id": "ja:word:三人",
+    "surface": "三人",
+    "dictionaryForm": "三人",
+    "reading": "さんにん",
+    "romaji": "sannin",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "три человека"
+    ]
+  },
+  {
+    "id": "ja:word:おかしい",
+    "surface": "おかしい",
+    "dictionaryForm": "おかしい",
+    "reading": "おかしい",
+    "romaji": "okashii",
+    "partOfSpeech": "прилагательное",
+    "meanings": [
+      "странный; подозрительный"
+    ]
+  },
+  {
+    "id": "ja:word:生き残る",
+    "surface": "生き残る",
+    "dictionaryForm": "生き残る",
+    "reading": "いきのこる",
+    "romaji": "ikinokoru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "выживать; оставаться в живых"
+    ]
+  },
+  {
+    "id": "ja:word:含む",
+    "surface": "含む",
+    "dictionaryForm": "含む",
+    "reading": "ふくむ",
+    "romaji": "fukumu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "содержать; держать во рту"
+    ]
+  },
+  {
+    "id": "ja:word:至る",
+    "surface": "至る",
+    "dictionaryForm": "至る",
+    "reading": "いたる",
+    "romaji": "itaru",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "достигать; приходить к"
+    ]
+  },
+  {
+    "id": "ja:word:うち",
+    "surface": "うち",
+    "dictionaryForm": "うち",
+    "reading": "うち",
+    "romaji": "uchi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "среди; внутри некоторой группы"
+    ]
+  },
+  {
+    "id": "ja:word:公主",
+    "surface": "公主",
+    "dictionaryForm": "公主",
+    "reading": "こうしゅ",
+    "romaji": "kōshu",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "дочь императора; принцесса"
+    ]
+  },
+  {
+    "id": "ja:word:のみ",
+    "surface": "のみ",
+    "dictionaryForm": "のみ",
+    "reading": "のみ",
+    "romaji": "nomi",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "только; лишь"
+    ]
+  },
+  {
+    "id": "ja:word:継承権",
+    "surface": "継承権",
+    "dictionaryForm": "継承権",
+    "reading": "けいしょうけん",
+    "romaji": "keishōken",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "право наследования"
+    ]
+  },
+  {
+    "id": "ja:word:姫君",
+    "surface": "姫君",
+    "dictionaryForm": "姫君",
+    "reading": "ひめぎみ",
+    "romaji": "himegimi",
+    "partOfSpeech": "существительное",
+    "meanings": [
+      "принцесса; знатная девушка"
+    ]
+  },
+  {
+    "id": "ja:word:殺す",
+    "surface": "殺す",
+    "dictionaryForm": "殺す",
+    "reading": "ころす",
+    "romaji": "korosu",
+    "partOfSpeech": "глагол I группы",
+    "meanings": [
+      "убивать"
+    ]
+  },
+  {
+    "id": "ja:word:など",
+    "surface": "など",
+    "dictionaryForm": "など",
+    "reading": "など",
+    "romaji": "nado",
+    "partOfSpeech": "частица",
+    "meanings": [
+      "и тому подобное; например"
+    ]
+  }
+]
