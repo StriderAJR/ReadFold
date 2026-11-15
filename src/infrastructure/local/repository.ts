@@ -34,6 +34,7 @@ const preferencesSchema = z
     words: z.boolean(),
     kanji: z.boolean(),
     grammar: z.boolean(),
+    showRepetition: z.boolean(),
     adaptiveHideKnown: z.boolean(),
     syncEnabled: z.boolean(),
     dailyReviewLimit: z.number().int().min(1).max(1000),
@@ -595,6 +596,9 @@ export function reduceOperations(operations: UserOperation[]) {
           if (typeof payload[key] === typeof defaultPreferences[key]) {
             Object.assign(state.preferences, { [key]: payload[key] });
           }
+        }
+        if (typeof payload.compactMode !== 'boolean' && typeof payload.canvasMode === 'boolean') {
+          state.preferences.compactMode = payload.canvasMode;
         }
         if (typeof payload.cardScalePercent !== 'number' && typeof payload.cardFontSize === 'number') {
           state.preferences.cardScalePercent = Math.min(150, Math.max(70, Math.round((payload.cardFontSize / 16) * 100)));

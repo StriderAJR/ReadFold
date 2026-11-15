@@ -25,7 +25,7 @@ describe('independent reader preferences', () => {
     const reduced = reduceOperations([reading, preferences]);
     expect(reduced.preferences.furigana).toBe(false);
     expect(reduced.preferences.romaji).toBe(true);
-    expect(reduced.preferences.canvasMode).toBe(true);
+    expect(reduced.preferences.compactMode).toBe(true);
     expect(reduced.preferences.readingFontSize).toBe(22);
     expect(reduced.preferences.naturalSeparateLine).toBe(true);
     expect(reduced.preferences.natural).toBe(defaultPreferences.natural);

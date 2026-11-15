@@ -17,7 +17,6 @@ const preferenceOptions: (keyof ReaderPreferences)[] = [
   'kanji',
   'grammar',
   'showRepetition',
-  'adaptiveHideKnown',
   'syncEnabled',
 ];
 const separateLineOptions = [
@@ -46,18 +45,14 @@ export function SettingsPage() {
       <PageTitle title={t('settings')} />
       <div className="settings-layout">
         <Card className="settings-card">
-          <h2>{t('mode')}</h2>
-          <div className="segmented" data-testid="mode-select">
-            {(['detailed', 'adaptive', 'continuous'] as const).map((mode) => (
-              <button className={p.mode === mode ? 'active' : ''} key={mode} onClick={() => set('mode', mode)}>
-                {t(mode)}
-              </button>
-            ))}
-          </div>
-          <p className="muted">{t('adaptiveInfo')}</p>
           <label className="switch-row">
-            <span>{t('canvasMode')}</span>
-            <input type="checkbox" checked={p.canvasMode} onChange={(e) => set('canvasMode', e.target.checked)} />
+            <span>{t('compactMode')}</span>
+            <input type="checkbox" checked={p.compactMode} onChange={(e) => set('compactMode', e.target.checked)} />
+            <i />
+          </label>
+          <label className="switch-row">
+            <span>{t('hideKnown')}</span>
+            <input type="checkbox" checked={p.adaptiveHideKnown} onChange={(e) => set('adaptiveHideKnown', e.target.checked)} />
             <i />
           </label>
           {preferenceOptions.map((key) => (

@@ -41,7 +41,7 @@ export interface ReaderPreferences {
   lineHeight: number;
   width: number;
   mode: ReadingMode;
-  canvasMode: boolean;
+  compactMode: boolean;
   furigana: boolean;
   furiganaSeparateLine: boolean;
   hiragana: boolean;
@@ -74,7 +74,7 @@ export const defaultPreferences: ReaderPreferences = {
   lineHeight: 2,
   width: 760,
   mode: 'detailed',
-  canvasMode: false,
+  compactMode: true,
   furigana: true,
   furiganaSeparateLine: false,
   hiragana: false,

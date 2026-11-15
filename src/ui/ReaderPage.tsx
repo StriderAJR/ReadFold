@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
-import { ChevronLeft, ChevronRight, Settings, Check, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Settings, Check } from 'lucide-react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
@@ -13,7 +13,6 @@ import { LayerHint } from './LayerHint';
 import { ComponentForm } from './ComponentPages';
 
 const layers = ['furigana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
-const modes = ['detailed', 'adaptive', 'continuous'] as const;
 const genericWordRole = 'Лексическое значение в контексте предложения';
 
 function WordFurigana({ surface, segments }: { surface: string; segments?: { text: string; reading?: string }[] }) {
@@ -131,7 +130,7 @@ function SentenceBlock({
 }) {
   const { t } = useTranslation();
   const [showKnown, setShowKnown] = useState(false);
-  const adaptiveFilter = preferences.mode === 'adaptive' && preferences.adaptiveHideKnown;
+  const adaptiveFilter = preferences.adaptiveHideKnown;
   const isKnown = (id: string) => learning[id] === 'known' || learning[id] === 'mastered';
   const showItem = (id: string) => !adaptiveFilter || showKnown || !isKnown(id);
   const showAnalysis = open;
@@ -158,7 +157,7 @@ function SentenceBlock({
     <article
       data-testid="reader-sentence"
       id={`sentence-${sentence.id}`}
-      className={`sentence-block ${selected ? 'sentence-active' : ''} ${preferences.mode === 'continuous' ? 'continuous-sentence' : ''}`}
+      className={`sentence-block ${selected ? 'sentence-active' : ''}`}
     >
       <button
         className="sentence-text"
@@ -192,7 +191,7 @@ function SentenceBlock({
               {t(showKnown ? 'hideKnownCards' : 'showKnownCards')}
             </button>
           )}
-          <div className={`translation-row ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
+          <div className={`translation-row ${preferences.compactMode || preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
             {preferences.furigana && preferences.furiganaSeparateLine && (
               <p className="translation-line" lang="ja">
                 <LayerHint label="furigana" />
@@ -224,7 +223,7 @@ function SentenceBlock({
             {preferences.words && visibleWords.length > 0 && (
               <section>
                 <h4>{t('wordsLabel')}</h4>
-                <div className={`token-list ${preferences.canvasMode ? 'canvas-list' : ''}`}>
+                <div className={`token-list ${preferences.compactMode ? 'canvas-list' : ''}`}>
                   {visibleWords.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     const reading = word.hiragana;
@@ -233,7 +232,7 @@ function SentenceBlock({
                     const wordLabel = showWordFurigana
                       ? <WordFurigana surface={word.surface} segments={word.furigana} />
                       : word.surface;
-                    return preferences.canvasMode ? (
+                    return preferences.compactMode ? (
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <div className="canvas-word-main">
@@ -283,10 +282,10 @@ function SentenceBlock({
             {preferences.kanji && shownKanji.length > 0 && (
               <section>
                 <h4>{t('kanjiLabel')}</h4>
-                <div className={preferences.canvasMode ? 'canvas-list' : 'inline-links kanji-inline-list'}>
+                <div className={preferences.compactMode ? 'canvas-list' : 'inline-links kanji-inline-list'}>
                   {shownKanji.map(({ id, item }) => {
                     return (
-                      item ? (preferences.canvasMode ? (
+                      item ? (preferences.compactMode ? (
                         <div className="canvas-card canvas-card-kanji learning-card" data-entity-id={id} key={id}>
                           <LearningToggle label={item.character} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
@@ -310,7 +309,7 @@ function SentenceBlock({
                             <KanjiMemory item={item} />
                           </span>
                         </div>
-                      )) : preferences.canvasMode ? (
+                      )) : preferences.compactMode ? (
                         <div className="canvas-card canvas-card-kanji" key={id}>
                           <div className="canvas-card-primary" lang="ja"><b>{id}</b></div>
                           <div className="canvas-card-body"><span className="canvas-card-meaning">{t('kanjiDetailsUnavailable')}</span></div>
@@ -360,7 +359,7 @@ function SentenceBlock({
                   </span>
                 ))}
               </p>
-              <div className={`translation-row repetition-lines ${preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
+              <div className={`translation-row repetition-lines ${preferences.compactMode || preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
                 {preferences.furigana && preferences.furiganaSeparateLine && (
                   <p className="translation-line" lang="ja">
                     <LayerHint label="furigana" /> {sentence.segments.map((segment, partIndex) => segment.reading ? (
@@ -566,45 +565,18 @@ export function ReaderPage() {
   } as CSSProperties;
 
   return (
-    <div className={`reader-view reader-${preferences.mode}`} style={style}>
+    <div className="reader-view" style={style}>
       <div className="reader-top">
         <Link className="back-link" to={`/book/${bookId}`}>
           <ChevronLeft size={16} />
           {book.title}
         </Link>
         <span className="reader-chapter-label">{chapterMeta.title}</span>
-        <Link className="reader-settings" to="/settings">
-          <Settings size={17} />
-          <span>{t('settings')}</span>
-        </Link>
-      </div>
-      <div className="reader-header">
-        <p className="eyebrow">
-          {book.title} · {chapterMeta.title}
-        </p>
-        <h1>{chapter.title}</h1>
-        <p>
-          {t(preferences.mode)} · {sentences.length} {t('sentence').toLowerCase()}
-        </p>
-      </div>
-      <div className="reader-toolbar">
-        <div className="segmented" data-testid="mode-select" aria-label={t('mode')}>
-          {modes.map((mode) => (
-            <button
-              key={mode}
-              aria-pressed={preferences.mode === mode}
-              className={preferences.mode === mode ? 'active' : ''}
-              onClick={() => {
-                setOpened('');
-                void savePreference('mode', mode);
-              }}
-            >
-              {t(mode)}
-            </button>
-          ))}
-        </div>
-        <details className="layer-options" ref={layerOptionsRef}>
-          <summary>{t('settings')}</summary>
+        <details className="layer-options reader-settings-menu" ref={layerOptionsRef}>
+          <summary className="reader-settings">
+            <Settings size={17} />
+            <span>{t('settings')}</span>
+          </summary>
           <div>
             <label className="reader-range-row">
               <span>{t('mainText')} <b>{preferences.fontSize}px</b></span>
@@ -621,24 +593,15 @@ export function ReaderPage() {
               <input type="range" min="70" max="150" step="5" value={preferences.cardScalePercent} onChange={(event) => void savePreference('cardScalePercent', Number(event.target.value))} />
             </label>
             <label className="reader-canvas-row">
-              <span>{t('canvasMode')}</span>
-              <input type="checkbox" checked={preferences.canvasMode} onChange={(event) => void savePreference('canvasMode', event.target.checked)} />
+              <span>{t('compactMode')}</span>
+              <input type="checkbox" checked={preferences.compactMode} onChange={(event) => void savePreference('compactMode', event.target.checked)} />
             </label>
             {layers.map((layer) => (
               <label key={layer}>
-                <input
-                  data-testid={`layer-${layer}`}
-                  type="checkbox"
-                  checked={preferences[layer]}
-                  onChange={(event) => void savePreference(layer, event.target.checked)}
-                />
+                <input data-testid={`layer-${layer}`} type="checkbox" checked={preferences[layer]} onChange={(event) => void savePreference(layer, event.target.checked)} />
                 {t(layer)}
               </label>
             ))}
-            <label>
-              <input type="checkbox" checked={preferences.translationsSeparateLine} onChange={(event) => void savePreference('translationsSeparateLine', event.target.checked)} />
-              {t('translationsSeparateLine')}
-            </label>
             <label>
               <input type="checkbox" checked={preferences.showRepetition} onChange={(event) => void savePreference('showRepetition', event.target.checked)} />
               {t('showRepetition')}
@@ -646,12 +609,15 @@ export function ReaderPage() {
           </div>
         </details>
       </div>
-      {preferences.mode === 'adaptive' && (
-        <div className="adaptive-banner">
-          <Sparkles size={16} />
-          {t('adaptiveInfo')}
-        </div>
-      )}
+      <div className="reader-header">
+        <p className="eyebrow">
+          {book.title} · {chapterMeta.title}
+        </p>
+        <h1>{chapter.title}</h1>
+        <p>
+          {sentences.length} {t('sentence').toLowerCase()}
+        </p>
+      </div>
       {saveFailed && (
         <p role="alert" className="form-error">
           {t('localSaveError')}
@@ -668,7 +634,7 @@ export function ReaderPage() {
                   sentence={sentence}
                   index={position}
                   selected={selected === sentence.id}
-                  open={preferences.canvasMode || preferences.mode !== 'continuous' || opened === sentence.id}
+                  open={preferences.compactMode || opened === sentence.id}
                   preferences={preferences}
                   dictionary={dictionary.data ?? emptyDictionary}
                   learning={user.data?.learning ?? {}}

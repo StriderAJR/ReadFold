@@ -19,7 +19,7 @@ export const preferencesSchema = z.object({
   lineHeight: z.number().min(1.4).max(3),
   width: z.number().min(480).max(1100),
   mode: z.enum(['detailed', 'adaptive', 'continuous']),
-  canvasMode: z.boolean(),
+  compactMode: z.boolean(),
   furigana: z.boolean(),
   furiganaSeparateLine: z.boolean(),
   hiragana: z.boolean(),
@@ -47,6 +47,9 @@ export function safePreferences(input: Record<string, unknown>): ReaderPreferenc
       Object.assign(result, { [key]: parsed.data });
     }
   }
+  if (typeof input.compactMode !== 'boolean' && typeof input.canvasMode === 'boolean') {
+    result.compactMode = input.canvasMode;
+  }
   if (typeof input.cardScalePercent !== 'number' && typeof input.cardFontSize === 'number') {
     result.cardScalePercent = Math.min(150, Math.max(70, Math.round((input.cardFontSize / 16) * 100)));
   }
@@ -64,7 +67,12 @@ export function useUserData() {
   });
   const mutate = useMutation({
     mutationFn: async (input: { kind: EntityKind; id: string; payload: Record<string, unknown> }) => {
-      await local.record(owner, input.kind, input.id, input.payload);
+      let payload = input.payload;
+      if (input.kind === 'preferences' && typeof payload.compactMode === 'boolean') {
+        payload = { ...payload, canvasMode: payload.compactMode };
+        delete payload.compactMode;
+      }
+      await local.record(owner, input.kind, input.id, payload);
       useLocalFailure.getState().setFailed(false);
       await refreshUserData();
       if (safePreferences(query.data?.preferences ?? {}).syncEnabled) {

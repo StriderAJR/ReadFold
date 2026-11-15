@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import {
   ChartNoAxesColumn,
   CircleHelp,
+  ChevronLeft,
+  ChevronRight,
   Home,
   Languages,
   Library,
@@ -41,6 +43,7 @@ const nav = [
 function Layout({ children }: { children: ReactNode }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
   useEffect(() => {
     if (!open) {
       return;
@@ -56,7 +59,6 @@ function Layout({ children }: { children: ReactNode }) {
   const user = useUserData();
   const syncInfo = useSyncInfo();
   const localFailure = useLocalFailure((state) => state.failed);
-  const identity = useSession((state) => state.identity);
   const syncStatusLabel = t(
     ({
       loading: 'loading',
@@ -88,7 +90,7 @@ function Layout({ children }: { children: ReactNode }) {
   }, [user.preferences.theme]);
   return (
     <div className="app-shell">
-      <aside id="primary-sidebar" className={`sidebar ${open ? 'sidebar-open' : ''}`}>
+      <aside id="primary-sidebar" className={`sidebar ${collapsed ? 'sidebar-collapsed' : ''} ${open ? 'sidebar-open' : ''}`}>
         <Link className="brand" to="/" onClick={() => setOpen(false)}>
           <img src={`${import.meta.env.BASE_URL}brand/icon.jpg`} alt="" />
           <span>
@@ -121,46 +123,20 @@ function Layout({ children }: { children: ReactNode }) {
             <span>{syncStatusLabel}{syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}</span>
           )}
         </div>
+        <div className="sidebar-actions">
+          <Button variant="ghost" size="icon" aria-label={t('theme')} title={t('theme')} onClick={() => void user.save({ kind: 'preferences', id: 'reader', payload: { theme: user.preferences.theme === 'dark' ? 'light' : 'dark' } })}>
+            {user.preferences.theme === 'dark' ? <Sun /> : <Moon />}
+          </Button>
+          <Button variant="ghost" size="icon" className="sidebar-collapse" aria-label={collapsed ? t('expandSidebar') : t('collapseSidebar')} title={collapsed ? t('expandSidebar') : t('collapseSidebar')} onClick={() => setCollapsed(!collapsed)}>
+            {collapsed ? <ChevronRight /> : <ChevronLeft />}
+          </Button>
+        </div>
       </aside>
       {open && <button aria-label={t('back')} className="sidebar-scrim" onClick={() => setOpen(false)} />}
       <div className="main-column">
-        <header className="topbar">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="mobile-menu"
-            aria-label={t('library')}
-            aria-controls="primary-sidebar"
-            aria-expanded={open}
-            onClick={() => setOpen(!open)}
-          >
-            {open ? <X /> : <Menu />}
-          </Button>
-          <Link to="/" className="mobile-brand">
-            ReadFold
-          </Link>
-          <div className="topbar-spacer" />
-          <Link className="topbar-link" to="/account">
-            <span className="avatar">
-              <UserRound size={17} />
-            </span>
-            <span>{identity ? t('account') : t('guest')}</span>
-          </Link>
-          <Button
-            variant="ghost"
-            size="icon"
-            aria-label={t('theme')}
-            onClick={() =>
-              void user.save({
-                kind: 'preferences',
-                id: 'reader',
-                payload: { theme: user.preferences.theme === 'dark' ? 'light' : 'dark' },
-              })
-            }
-          >
-            {user.preferences.theme === 'dark' ? <Sun /> : <Moon />}
-          </Button>
-        </header>
+        <Button variant="ghost" size="icon" className="mobile-menu" aria-label={t('openNavigation')} aria-controls="primary-sidebar" aria-expanded={open} onClick={() => setOpen(!open)}>
+          {open ? <X /> : <Menu />}
+        </Button>
         {(localFailure || user.saveError || user.isError || syncInfo.status === 'syncError') && (
           <div className="global-alert" role="status">
             {localFailure || user.saveError || user.isError ? (

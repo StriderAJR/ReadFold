@@ -1,7 +1,7 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 const assets = await readdir('dist/assets');
-const staticFiles = ['index.html', 'brand/icon.jpg', 'privacy.html', 'terms.html', 'googlef53875cf353db667.html'];
+const staticFiles = ['index.html', 'brand/icon.jpg', 'brand/favicon.svg', 'privacy.html', 'terms.html', 'googlef53875cf353db667.html'];
 const hash = createHash('sha256').update(assets.join(','));
 for (const file of staticFiles) {
   hash.update(await readFile(`dist/${file}`));
