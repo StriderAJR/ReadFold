@@ -11,15 +11,14 @@ test('all editable cards and chapters produce complete location-only indexes rep
   const second = createContentArtifacts(collection);
   assert.deepEqual([...first], [...second]);
   const index = JSON.parse(first.get('ja/dictionary/index.json'));
-  assert.equal(Object.keys(index.byId).length, 1051);
-  assert.equal(collection.dictionary.words.length, 384);
-  assert.equal(collection.dictionary.kanji.length, 527);
-  assert.equal(collection.dictionary.grammar.length, 140);
+  assert.equal(Object.keys(index.byId).length,
+    collection.dictionary.words.length + collection.dictionary.kanji.length + collection.dictionary.grammar.length);
   assert.ok(collection.components.length > 0);
   assert.deepEqual(JSON.parse(first.get('ja/dictionary/components.json')), collection.components);
   assert.ok(collection.components.every((part) => !Object.hasOwn(index.byId, part.id)));
-  assert.equal(collection.chapters.length, 3);
-  assert.equal(collection.chapters.reduce((count, { chapter }) => count + chapter.paragraphs.flatMap((part) => part.sentences).length, 0), 71);
+  assert.equal(collection.chapters.length, collection.catalog.reduce((count, book) => count + book.chapters.length, 0));
+  assert.equal(collection.chapters.reduce((count, { chapter }) => count + chapter.paragraphs.flatMap((part) => part.sentences).length, 0),
+    collection.catalog.reduce((count, book) => count + book.chapters.reduce((sum, chapter) => sum + chapter.sentenceCount, 0), 0));
   for (const [id, location] of Object.entries(index.byId)) {
     assert.deepEqual(Object.keys(location).sort(), ['file', 'kind', 'occurrencesFile']);
     const shard = JSON.parse(first.get(location.file));

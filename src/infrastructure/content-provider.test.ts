@@ -33,9 +33,9 @@ describe('published content provider', () => {
       return new Response(JSON.stringify(read(path)), { status: 200, headers: { 'Content-Type': 'application/json' } });
     });
 
-    const chapter = await contentProvider.chapter('books/demo/chapter-1.json');
+    const chapter = await contentProvider.chapter('books/apothecary-diaries/chapter-1.json');
     const index = dictionaryIndexSchema.parse(read('ja/dictionary/index.json'));
-    const sourceChapter = chapterSchema.parse(read('books/demo/chapter-1.json'));
+    const sourceChapter = chapterSchema.parse(read('books/apothecary-diaries/chapter-1.json'));
     const pending = sourceChapter.paragraphs.flatMap((paragraph) => paragraph.sentences.flatMap((sentence) => [
       ...sentence.wordOccurrences.map((entry) => entry.wordId),
       ...sentence.kanjiIds,
@@ -54,10 +54,10 @@ describe('published content provider', () => {
       cardFiles.add(reference.file);
     }
 
-    expect(chapter.id).toBe('demo.chapter-1');
+    expect(chapter.id).toBe('apothecary-diaries.chapter-1');
     expect(requested).toContain('books/catalog.json');
     expect(requested).toContain('ja/dictionary/index.json');
-    expect(requested).toContain('books/demo/chapter-1.json');
+    expect(requested).toContain('books/apothecary-diaries/chapter-1.json');
     expect(new Set(requested.filter((path) => path.startsWith('ja/dictionary/') && path !== 'ja/dictionary/index.json'))).toEqual(cardFiles);
     expect(requested).not.toContain('books/dictionary.json');
     expect(cardFiles.size).toBeLessThan(Object.values(index.sections).flat().length);
@@ -110,6 +110,6 @@ describe('published content provider', () => {
         chapterCount += 1;
       }
     }
-    expect(chapterCount).toBe(3);
+    expect(chapterCount).toBe(catalog.reduce((total, book) => total + book.chapters.length, 0));
   });
 });

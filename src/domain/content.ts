@@ -9,8 +9,8 @@ const componentSchema = z.string().trim().min(1).regex(/^[^\p{C}]+$/u, 'Expected
 const wordFuriganaSegmentSchema = z.object({
   text: textSchema,
   reading: z.string().min(1).regex(/^[\p{Script=Hiragana}ー]+$/u).optional(),
-}).strict().refine((segment) => segment.reading === undefined || /^\p{Unified_Ideograph}$/u.test(segment.text), {
-  message: 'Word furigana reading must annotate one kanji', path: ['reading'],
+}).strict().refine((segment) => segment.reading === undefined || /^[\p{Unified_Ideograph}々]+$/u.test(segment.text), {
+  message: 'Word furigana reading must annotate a kanji or a contiguous kanji compound', path: ['reading'],
 });
 const uniqueIds = (items: readonly { id: string }[]) => new Set(items.map((item) => item.id)).size === items.length;
 const chapterMetadataSchema = z
