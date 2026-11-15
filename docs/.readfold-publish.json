@@ -3,12 +3,12 @@
   "base": "/ReadFold/",
   "files": [
     {
-      "path": "assets/index-Ciiy5qwC.js",
-      "sha256": "275862d19255a8c793a35d0e350a76c5d24616bb8e242c3db4346c38032277f4"
+      "path": "assets/index-CnWfLuzx.css",
+      "sha256": "46f88d16cb57100ad7ce91a5da5f4f0aaf84edb4ef5cdac58b780d4f3c9dbf1c"
     },
     {
-      "path": "assets/index-DC3lcoss.css",
-      "sha256": "86b6f2f2514caed312afc9df89dbea9d011a6cb59510b112caafad6b7ddb6515"
+      "path": "assets/index-DoeDoDYz.js",
+      "sha256": "26c48f3eb12bd15cb5eaf2161659679d0363fdc9302d1a8056eae3ccff08e145"
     },
     {
       "path": "assets/language-BwSMSIVv.js",
@@ -40,7 +40,7 @@
     },
     {
       "path": "books/catalog.json",
-      "sha256": "c8d19aa20402b14da5b828b062dd52ae9537d7656bd16b5f4d9cba55f640159a"
+      "sha256": "835888dee8cfe2ddc028975836205c2742bb7d4ea8eb981ce0548186a9eb19b7"
     },
     {
       "path": "brand/favicon.svg",
@@ -56,7 +56,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "dce8ab3c21e8a7c38987e2593cf7618b368f0ecd83e484e0fc2639614070825a"
+      "sha256": "8a0a2c1c761dd72dff521996c95ef10e055307d6b114a844f7642520c2a5d595"
     },
     {
       "path": "ja/dictionary/grammar/ability-koto-ga-dekiru.json",
@@ -7636,7 +7636,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "5ff42274502e2999f134fe119300456a6fb117d22d8fcf6d1f582dbae795785e"
+      "sha256": "9639d04bad3ee7a8b057ab4384b9dcb492bf0f4d1837cc87cf76288f6231be18"
     },
     {
       "path": "terms.html",
