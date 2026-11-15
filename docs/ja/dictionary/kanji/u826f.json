@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:良",
+      "character": "良",
+      "meanings": [
+        "хорошее; отборное"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "丶",
+        "艮"
+      ],
+      "componentMeanings": {
+        "丶": "точка",
+        "艮": "оглядывающаяся фигура"
+      },
+      "wordIds": [],
+      "mnemonic": "Зерно-точка 丶 падает в сито 艮 — остаются только хорошие зёрна.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

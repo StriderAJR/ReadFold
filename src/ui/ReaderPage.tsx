@@ -569,9 +569,11 @@ export function ReaderPage() {
       <div className="reader-top">
         <Link className="back-link" to={`/book/${bookId}`}>
           <ChevronLeft size={16} />
-          {book.title}
+          {book.title}{book.translatedTitle ? ` · ${book.translatedTitle}` : ''}
         </Link>
-        <span className="reader-chapter-label">{chapterMeta.title}</span>
+        <span className="reader-chapter-label">
+          {chapterMeta.title}{chapterMeta.translatedTitle ? ` · ${chapterMeta.translatedTitle}` : ''}
+        </span>
         <details className="layer-options reader-settings-menu" ref={layerOptionsRef}>
           <summary className="reader-settings">
             <Settings size={17} />
@@ -611,9 +613,12 @@ export function ReaderPage() {
       </div>
       <div className="reader-header">
         <p className="eyebrow">
-          {book.title} · {chapterMeta.title}
+          {book.title} · {chapterMeta.title}{chapterMeta.translatedTitle ? ` · ${chapterMeta.translatedTitle}` : ''}
         </p>
-        <h1>{chapter.title}</h1>
+        <h1>
+          {chapter.title}
+          {chapterMeta.translatedTitle && <small className="reader-chapter-translation"> · {chapterMeta.translatedTitle}</small>}
+        </h1>
         <p>
           {sentences.length} {t('sentence').toLowerCase()}
         </p>

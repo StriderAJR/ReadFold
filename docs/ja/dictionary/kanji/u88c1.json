@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:裁",
+      "character": "裁",
+      "meanings": [
+        "судить; кроить; принимать решение"
+      ],
+      "on": [
+        "サイ"
+      ],
+      "kun": [
+        "たつ",
+        "さばく"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

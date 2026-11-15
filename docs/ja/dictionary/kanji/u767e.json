@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:百",
+      "character": "百",
+      "meanings": [
+        "сто"
+      ],
+      "on": [
+        "ヒャク",
+        "ビャク"
+      ],
+      "kun": [
+        "もも"
+      ],
+      "components": [
+        "一",
+        "白"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "一": "один",
+        "白": "белый"
+      },
+      "mnemonic": "Единица перед числом добавляет к десяткам ещё один разряд: сто."
+    }
+  ]
+}

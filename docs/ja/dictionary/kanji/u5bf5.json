@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:寵",
+      "character": "寵",
+      "meanings": [
+        "милость; благосклонность; покровительство"
+      ],
+      "on": [
+        "チョウ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

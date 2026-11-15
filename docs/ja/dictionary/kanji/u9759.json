@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:静",
+      "character": "静",
+      "meanings": [
+        "тихий; спокойный; успокаиваться"
+      ],
+      "on": [
+        "セイ",
+        "ジョウ"
+      ],
+      "kun": [
+        "しず",
+        "しずか",
+        "しずまる",
+        "しずめる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

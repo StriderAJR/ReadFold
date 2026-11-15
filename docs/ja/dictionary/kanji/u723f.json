@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:爿",
+      "character": "爿",
+      "meanings": [
+        "половина доски"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Длинная стойка с поперечными зарубками напоминает половину доски.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

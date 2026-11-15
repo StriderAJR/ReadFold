@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:違い",
+      "surface": "違い",
+      "dictionaryForm": "違い",
+      "reading": "ちがい",
+      "romaji": "chigai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "различие; разница"
+      ]
+    },
+    {
+      "id": "ja:word:すぐ",
+      "surface": "すぐ",
+      "dictionaryForm": "すぐ",
+      "reading": "すぐ",
+      "romaji": "sugu",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "сразу; немедленно"
+      ]
+    },
+    {
+      "id": "ja:word:傷む",
+      "surface": "傷む",
+      "dictionaryForm": "傷む",
+      "reading": "いたむ",
+      "romaji": "itamu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "портиться; изнашиваться; повреждаться"
+      ]
+    },
+    {
+      "id": "ja:word:しまう",
+      "surface": "しまう",
+      "dictionaryForm": "しまう",
+      "reading": "しまう",
+      "romaji": "shimau",
+      "partOfSpeech": "вспомогательный глагол",
+      "meanings": [
+        "завершить действие; указывает на нежелательный результат"
+      ]
+    },
+    {
+      "id": "ja:word:劣化",
+      "surface": "劣化",
+      "dictionaryForm": "劣化",
+      "reading": "れっか",
+      "romaji": "rekka",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ухудшение качества; порча; износ"
+      ]
+    },
+    {
+      "id": "ja:word:陰干し",
+      "surface": "陰干し",
+      "dictionaryForm": "陰干し",
+      "reading": "かげぼし",
+      "romaji": "kageboshi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сушка в тени"
+      ]
+    },
+    {
+      "id": "ja:word:必要",
+      "surface": "必要",
+      "dictionaryForm": "必要",
+      "reading": "ひつよう",
+      "romaji": "hitsuyō",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "необходимость; необходимый"
+      ]
+    },
+    {
+      "id": "ja:word:中央",
+      "surface": "中央",
+      "dictionaryForm": "中央",
+      "reading": "ちゅうおう",
+      "romaji": "chūō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "центр; центральная часть"
+      ]
+    },
+    {
+      "id": "ja:word:ものすごい",
+      "surface": "ものすごい",
+      "dictionaryForm": "ものすごい",
+      "reading": "ものすごい",
+      "romaji": "monosugoi",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "потрясающий; невероятный; чрезвычайный"
+      ]
+    },
+    {
+      "id": "ja:word:綺麗",
+      "surface": "綺麗",
+      "dictionaryForm": "綺麗",
+      "reading": "きれい",
+      "romaji": "kirei",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "красивый; чистый"
+      ]
+    },
+    {
+      "id": "ja:word:ついで",
+      "surface": "ついで",
+      "dictionaryForm": "ついで",
+      "reading": "ついで",
+      "romaji": "tsuide",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "попутный случай; заодно"
+      ]
+    },
+    {
+      "id": "ja:word:快い",
+      "surface": "快い",
+      "dictionaryForm": "快い",
+      "reading": "こころよい",
+      "romaji": "kokoroyoi",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "приятный; охотный; готовый помочь"
+      ]
+    },
+    {
+      "id": "ja:word:代わる",
+      "surface": "代わる",
+      "dictionaryForm": "代わる",
+      "reading": "かわる",
+      "romaji": "kawaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "заменять кого-либо; брать на себя чужую работу"
+      ]
+    },
+    {
+      "id": "ja:word:色恋",
+      "surface": "色恋",
+      "dictionaryForm": "色恋",
+      "reading": "いろこい",
+      "romaji": "irokoi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "любовные отношения; романтические увлечения"
+      ]
+    },
+    {
+      "id": "ja:word:刺激",
+      "surface": "刺激",
+      "dictionaryForm": "刺激",
+      "reading": "しげき",
+      "romaji": "shigeki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "стимул; возбуждение; острые впечатления"
+      ]
+    },
+    {
+      "id": "ja:word:少ない",
+      "surface": "少ない",
+      "dictionaryForm": "少ない",
+      "reading": "すくない",
+      "romaji": "sukunai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "малочисленный; немногочисленный"
+      ]
+    },
+    {
+      "id": "ja:word:ここ",
+      "surface": "ここ",
+      "dictionaryForm": "ここ",
+      "reading": "ここ",
+      "romaji": "koko",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "здесь; это место"
+      ]
+    },
+    {
+      "id": "ja:word:すら",
+      "surface": "すら",
+      "dictionaryForm": "すら",
+      "reading": "すら",
+      "romaji": "sura",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "даже"
+      ]
+    },
+    {
+      "id": "ja:word:対象",
+      "surface": "対象",
+      "dictionaryForm": "対象",
+      "reading": "たいしょう",
+      "romaji": "taishō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "объект; предмет интереса"
+      ]
+    },
+    {
+      "id": "ja:word:辞める",
+      "surface": "辞める",
+      "dictionaryForm": "辞める",
+      "reading": "やめる",
+      "romaji": "yameru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "увольняться; оставлять должность"
+      ]
+    },
+    {
+      "id": "ja:word:ちらほら",
+      "surface": "ちらほら",
+      "dictionaryForm": "ちらほら",
+      "reading": "ちらほら",
+      "romaji": "chirahora",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "изредка; то тут, то там"
+      ]
+    },
+    {
+      "id": "ja:word:女色",
+      "surface": "女色",
+      "dictionaryForm": "女色",
+      "reading": "にょしょく",
+      "romaji": "nyoshoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "плотская любовь к женщинам; здесь — женские любовные связи"
+      ]
+    },
+    {
+      "id": "ja:word:健全",
+      "surface": "健全",
+      "dictionaryForm": "健全",
+      "reading": "けんぜん",
+      "romaji": "kenzen",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "здоровый; здравый; нормальный"
+      ]
+    },
+    {
+      "id": "ja:word:やはり",
+      "surface": "やはり",
+      "dictionaryForm": "やはり",
+      "reading": "やはり",
+      "romaji": "yahari",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "всё же; как и ожидалось"
+      ]
+    }
+  ]
+}

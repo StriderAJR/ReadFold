@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:莫",
+      "character": "莫",
+      "meanings": [
+        "солнце среди травы"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "艹",
+        "日",
+        "大"
+      ],
+      "componentMeanings": {
+        "艹": "трава",
+        "日": "солнце",
+        "大": "большой"
+      },
+      "wordIds": [],
+      "mnemonic": "Трава 艹 сверху, солнце 日 посередине, большой человек 大 снизу: солнце затерялось среди зарослей.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

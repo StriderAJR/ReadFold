@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:word:ほとんど": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s024"
+      }
+    ],
+    "ja:word:進める": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s025"
+      }
+    ],
+    "ja:word:だの": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s025"
+      }
+    ],
+    "ja:word:だからといって": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s026"
+      }
+    ],
+    "ja:word:一言": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s027"
+      }
+    ],
+    "ja:word:一族郎党": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s028"
+      }
+    ],
+    "ja:word:皆殺し": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s028"
+      }
+    ],
+    "ja:word:法": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s028"
+      }
+    ],
+    "ja:word:むしろ": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s028"
+      }
+    ],
+    "ja:word:異端": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s028"
+      }
+    ],
+    "ja:word:しかし": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s029"
+      }
+    ],
+    "ja:word:頭": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s029"
+      }
+    ],
+    "ja:word:言い切る": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s029"
+      }
+    ],
+    "ja:word:根拠": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s029"
+      }
+    ],
+    "ja:word:なんらか": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s030"
+      }
+    ],
+    "ja:word:もしかして": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s031"
+      }
+    ],
+    "ja:word:的": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s031"
+      }
+    ],
+    "ja:word:どういう": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s032"
+      }
+    ],
+    "ja:word:ふう": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s032"
+      }
+    ],
+    "ja:word:負ける": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s034"
+      }
+    ],
+    "ja:word:しばらく": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s034"
+      }
+    ],
+    "ja:word:けど": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s035"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s044"
+      }
+    ],
+    "ja:word:だんだん": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s035"
+      }
+    ],
+    "ja:word:窓": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s038"
+      }
+    ]
+  }
+}

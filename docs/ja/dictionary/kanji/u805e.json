@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:聞",
+      "character": "聞",
+      "meanings": [
+        "слышать; слушать; спрашивать"
+      ],
+      "on": [
+        "ブン",
+        "モン"
+      ],
+      "kun": [
+        "きく",
+        "きこえる"
+      ],
+      "components": [
+        "門",
+        "耳"
+      ],
+      "wordIds": [
+        "ja:word:聞く"
+      ],
+      "componentMeanings": {
+        "門": "ворота",
+        "耳": "ухо"
+      },
+      "mnemonic": "У ворот прислушиваются ушами к новостям."
+    }
+  ]
+}

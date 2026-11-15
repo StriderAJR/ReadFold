@@ -25,6 +25,54 @@
         "chapterId": "apothecary-diaries.chapter-1",
         "chapterPath": "books/apothecary-diaries/chapter-1.json",
         "sentenceId": "apothecary-diaries.chapter-1.s050"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s008"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s020"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s037"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s039"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s041"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s074"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s075"
+      },
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s098"
       }
     ]
   }

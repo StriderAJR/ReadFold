@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:詳",
+      "character": "詳",
+      "meanings": [
+        "подробный; хорошо осведомлённый"
+      ],
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "くわしい"
+      ],
+      "components": [
+        "言",
+        "羊"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "言": "слова",
+        "羊": "овца"
+      },
+      "mnemonic": "Подробный рассказ перечисляет каждую овцу в стаде."
+    }
+  ]
+}

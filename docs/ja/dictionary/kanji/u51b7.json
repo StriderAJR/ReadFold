@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:冷",
+      "character": "冷",
+      "meanings": [
+        "холодный; охлаждать; холод"
+      ],
+      "on": [
+        "レイ"
+      ],
+      "kun": [
+        "つめたい",
+        "ひえる",
+        "ひやす",
+        "さめる",
+        "さます"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:異",
+      "character": "異",
+      "meanings": [
+        "иной; необычный; отличаться"
+      ],
+      "on": [
+        "イ"
+      ],
+      "kun": [
+        "こと",
+        "ことなる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

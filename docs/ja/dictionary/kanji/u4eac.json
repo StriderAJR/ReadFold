@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:京",
+      "character": "京",
+      "meanings": [
+        "городская башня"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "亠",
+        "口",
+        "小"
+      ],
+      "componentMeanings": {
+        "亠": "верхняя крышка",
+        "口": "рот; квадратное окошко",
+        "小": "маленький"
+      },
+      "wordIds": [],
+      "mnemonic": "Над квадратным окошком 口 лежит крыша 亠, под ним маленькое основание 小: городская башня.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

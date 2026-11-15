@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:濃",
+      "character": "濃",
+      "meanings": [
+        "густой; насыщенный; концентрированный"
+      ],
+      "on": [
+        "ノウ"
+      ],
+      "kun": [
+        "こい"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

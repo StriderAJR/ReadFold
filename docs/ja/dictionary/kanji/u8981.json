@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:要",
+      "character": "要",
+      "meanings": [
+        "важный; необходимый; суть; требоваться"
+      ],
+      "on": [
+        "ヨウ"
+      ],
+      "kun": [
+        "かなめ",
+        "いる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

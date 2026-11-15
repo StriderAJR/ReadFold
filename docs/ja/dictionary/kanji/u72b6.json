@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:状",
+      "character": "状",
+      "meanings": [
+        "состояние; форма; положение дел"
+      ],
+      "on": [
+        "ジョウ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": [
+        "ja:word:症状"
+      ]
+    }
+  ]
+}

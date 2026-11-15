@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:拭",
+      "character": "拭",
+      "meanings": [
+        "вытирать; стирать"
+      ],
+      "on": [
+        "ショク",
+        "シキ"
+      ],
+      "kun": [
+        "ふく",
+        "ぬぐう"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

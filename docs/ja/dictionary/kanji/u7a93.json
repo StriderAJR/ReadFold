@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:窓",
+      "character": "窓",
+      "meanings": [
+        "окно"
+      ],
+      "on": [
+        "ソウ"
+      ],
+      "kun": [
+        "まど"
+      ],
+      "components": [
+        "穴",
+        "心"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "穴": "отверстие",
+        "心": "сердце"
+      },
+      "mnemonic": "Окно — отверстие в стене, через которое видно, что на сердце."
+    }
+  ]
+}

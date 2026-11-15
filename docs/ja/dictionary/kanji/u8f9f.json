@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:辟",
+      "character": "辟",
+      "meanings": [
+        "разделять; отводить"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Знак срезает и отводит в сторону.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

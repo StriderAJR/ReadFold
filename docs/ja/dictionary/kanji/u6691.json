@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:暑",
+      "character": "暑",
+      "meanings": [
+        "жаркий; жара"
+      ],
+      "on": [
+        "ショ"
+      ],
+      "kun": [
+        "あつい"
+      ],
+      "components": [
+        "日",
+        "者"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "日": "солнце",
+        "者": "человек"
+      },
+      "mnemonic": "На человека палит солнце — стоит жара."
+    }
+  ]
+}

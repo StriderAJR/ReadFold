@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:臼",
+      "character": "臼",
+      "meanings": [
+        "ступа"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Открытая ступа ждёт зерно для растирания.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

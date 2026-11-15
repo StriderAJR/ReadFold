@@ -5,13 +5,16 @@
     "title": "薬屋のひとりごと",
     "translatedTitle": "Монолог фармацевта",
     "author": "日向夏",
-    "description": "Японский текст главы с русским разбором, подготовленный по файлу, предоставленному пользователем.",
+    "translatedAuthor": "Хюганацу",
+    "description": "Маомао, дочь аптекаря из квартала развлечений, оказывается служанкой во внутреннем дворце. Знания о лекарствах и ядах втягивают её в расследование загадочных происшествий при императорском дворе.",
     "originalLanguage": "ja",
     "translationLanguage": "ru",
     "difficulty": "Продвинутый · JLPT N2",
     "tags": [
-      "японский текст",
-      "русский разбор"
+      "детектив",
+      "историческое фэнтези",
+      "дворцовые интриги",
+      "медицина"
     ],
     "cover": "🧪",
     "license": "Не указана",
@@ -20,12 +23,14 @@
       {
         "id": "apothecary-diaries.chapter-1",
         "title": "１　猫猫",
+        "translatedTitle": "Маомао",
         "path": "books/apothecary-diaries/chapter-1.json",
         "sentenceCount": 65
       },
       {
         "id": "apothecary-diaries.chapter-2",
         "title": "２　二人の妃",
+        "translatedTitle": "Две наложницы",
         "path": "books/apothecary-diaries/chapter-2.json",
         "sentenceCount": 102
       }

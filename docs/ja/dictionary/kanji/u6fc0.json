@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:激",
+      "character": "激",
+      "meanings": [
+        "сильный; яростный; усиливаться"
+      ],
+      "on": [
+        "ゲキ"
+      ],
+      "kun": [
+        "はげしい",
+        "はげます",
+        "はげむ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:君",
+      "character": "君",
+      "meanings": [
+        "господин; правитель; ты (обращение)"
+      ],
+      "on": [
+        "クン"
+      ],
+      "kun": [
+        "きみ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

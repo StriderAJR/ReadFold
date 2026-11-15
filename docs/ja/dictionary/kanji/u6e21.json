@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:渡",
+      "character": "渡",
+      "meanings": [
+        "пересекать; передавать; вручать"
+      ],
+      "on": [
+        "ト"
+      ],
+      "kun": [
+        "わたる",
+        "わたす"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:渡す"
+      ]
+    }
+  ]
+}

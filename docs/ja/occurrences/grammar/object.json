@@ -31,18 +31,6 @@
         "chapterId": "apothecary-diaries.chapter-1",
         "chapterPath": "books/apothecary-diaries/chapter-1.json",
         "sentenceId": "apothecary-diaries.chapter-1.s063"
-      },
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s3"
-      },
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s6"
       }
     ]
   }

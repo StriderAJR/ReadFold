@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:刺",
+      "character": "刺",
+      "meanings": [
+        "колоть; прокалывать; укол; визит"
+      ],
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "さす",
+        "ささる",
+        "とげ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

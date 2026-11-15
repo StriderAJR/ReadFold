@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:悔",
+      "character": "悔",
+      "meanings": [
+        "сожалеть; раскаиваться"
+      ],
+      "on": [
+        "カイ"
+      ],
+      "kun": [
+        "くいる",
+        "くやむ",
+        "くやしい"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:後悔"
+      ]
+    }
+  ]
+}

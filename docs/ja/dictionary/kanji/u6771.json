@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:東",
+      "character": "東",
+      "meanings": [
+        "восток"
+      ],
+      "on": [
+        "トウ"
+      ],
+      "kun": [
+        "ひがし"
+      ],
+      "components": [
+        "木",
+        "日"
+      ],
+      "wordIds": [
+        "ja:word:東宮"
+      ],
+      "componentMeanings": {
+        "木": "дерево",
+        "日": "солнце"
+      },
+      "mnemonic": "Солнце поднимается за деревом на востоке."
+    }
+  ]
+}

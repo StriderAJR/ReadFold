@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:章",
+      "character": "章",
+      "meanings": [
+        "значок на груди"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "音",
+        "十"
+      ],
+      "componentMeanings": {
+        "音": "звук",
+        "十": "десять; перекрестье"
+      },
+      "wordIds": [],
+      "mnemonic": "Звук 音 сверху и крестик 十 снизу сложились в большой значок: его прикололи к груди певца.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

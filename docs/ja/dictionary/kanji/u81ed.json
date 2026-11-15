@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:臭",
+      "character": "臭",
+      "meanings": [
+        "запах; дурно пахнуть; подозрительный"
+      ],
+      "on": [
+        "シュウ"
+      ],
+      "kun": [
+        "くさい",
+        "におう",
+        "におい"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

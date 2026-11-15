@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:滅",
+      "character": "滅",
+      "meanings": [
+        "гибнуть; уничтожать; исчезать"
+      ],
+      "on": [
+        "メツ"
+      ],
+      "kun": [
+        "ほろびる",
+        "ほろぼす"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:滅多"
+      ]
+    }
+  ]
+}

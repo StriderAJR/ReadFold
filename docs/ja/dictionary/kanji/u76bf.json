@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:皿",
+      "character": "皿",
+      "meanings": [
+        "блюдце"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Низкая широкая рамка разделена вертикальными штрихами и стоит на ровном дне: блюдце с ребристыми стенками.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

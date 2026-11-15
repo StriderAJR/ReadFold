@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:九",
+      "character": "九",
+      "meanings": [
+        "девять; крюк"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Косой штрих заканчивается загнутым крюком.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

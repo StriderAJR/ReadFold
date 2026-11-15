@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:唸",
+      "character": "唸",
+      "meanings": [
+        "стонать; мычать; гудеть"
+      ],
+      "on": [
+        "テン"
+      ],
+      "kun": [
+        "うなる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

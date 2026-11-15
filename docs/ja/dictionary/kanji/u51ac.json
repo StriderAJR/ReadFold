@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:冬",
+      "character": "冬",
+      "meanings": [
+        "зима"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "夂",
+        "冫"
+      ],
+      "componentMeanings": {
+        "夂": "след; шаг",
+        "冫": "лёд; две капли"
+      },
+      "wordIds": [],
+      "mnemonic": "Шагающая нога 夂 добралась до двух ледяных капель 冫: наступила зима.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

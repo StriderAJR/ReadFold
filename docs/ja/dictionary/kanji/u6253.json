@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:打",
+      "character": "打",
+      "meanings": [
+        "бить; удар; стучать"
+      ],
+      "on": [
+        "ダ"
+      ],
+      "kun": [
+        "うつ",
+        "ぶつ"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:決定打"
+      ]
+    }
+  ]
+}

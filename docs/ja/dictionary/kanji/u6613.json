@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:易",
+      "character": "易",
+      "meanings": [
+        "лёгкий свёрток"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "日",
+        "勿"
+      ],
+      "componentMeanings": {
+        "日": "солнце",
+        "勿": "не; запрет"
+      },
+      "wordIds": [],
+      "mnemonic": "Солнце 日 высушило перечёркнутый свёрток 勿 внизу: теперь поднять его легко.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

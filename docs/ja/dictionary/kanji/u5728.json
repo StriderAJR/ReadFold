@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:在",
+      "character": "在",
+      "meanings": [
+        "находиться; существовать; быть в наличии"
+      ],
+      "on": [
+        "ザイ"
+      ],
+      "kun": [
+        "ある"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

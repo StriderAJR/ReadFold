@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:医",
+      "character": "医",
+      "meanings": [
+        "медицина; врач"
+      ],
+      "on": [
+        "イ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:郎",
+      "character": "郎",
+      "meanings": [
+        "юноша; сын; суффикс мужского имени"
+      ],
+      "on": [
+        "ロウ",
+        "リョウ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

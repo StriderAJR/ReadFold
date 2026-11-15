@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:缶",
+      "character": "缶",
+      "meanings": [
+        "сосуд"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Крышка лежит над открытым сосудом; сквозь середину проходит длинная ручка. В 揺 нижний контур сосуда упрощён.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

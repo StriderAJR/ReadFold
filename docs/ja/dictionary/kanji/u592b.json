@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:夫",
+      "character": "夫",
+      "meanings": [
+        "человек с двумя перекладинами"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "大",
+        "一"
+      ],
+      "componentMeanings": {
+        "大": "большой",
+        "一": "одна черта"
+      },
+      "wordIds": [],
+      "mnemonic": "Большой человек 大 поднял ещё одну перекладину 一: муж несёт две длинные доски.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

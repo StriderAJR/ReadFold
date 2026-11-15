@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:狼",
+      "character": "狼",
+      "meanings": [
+        "волк"
+      ],
+      "on": [
+        "ロウ"
+      ],
+      "kun": [
+        "おおかみ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:負",
+      "character": "負",
+      "meanings": [
+        "проигрывать; нести; отвечать за"
+      ],
+      "on": [
+        "フ"
+      ],
+      "kun": [
+        "まける",
+        "まかす",
+        "おう",
+        "おえる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

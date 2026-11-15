@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:加わる",
+      "surface": "加わる",
+      "dictionaryForm": "加わる",
+      "reading": "くわわる",
+      "romaji": "kuwawaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "присоединяться; прибавляться"
+      ]
+    },
+    {
+      "id": "ja:word:次ぐ",
+      "surface": "次ぐ",
+      "dictionaryForm": "次ぐ",
+      "reading": "つぐ",
+      "romaji": "tsugu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "следовать за; быть следующим по положению"
+      ]
+    },
+    {
+      "id": "ja:word:存在",
+      "surface": "存在",
+      "dictionaryForm": "存在",
+      "reading": "そんざい",
+      "romaji": "sonzai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "существование; существо; значимая фигура"
+      ]
+    },
+    {
+      "id": "ja:word:すでに",
+      "surface": "すでに",
+      "dictionaryForm": "すでに",
+      "reading": "すでに",
+      "romaji": "sudeni",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "уже"
+      ]
+    },
+    {
+      "id": "ja:word:医師",
+      "surface": "医師",
+      "dictionaryForm": "医師",
+      "reading": "いし",
+      "romaji": "ishi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "врач"
+      ]
+    },
+    {
+      "id": "ja:word:ささやき",
+      "surface": "ささやき",
+      "dictionaryForm": "ささやき",
+      "reading": "ささやき",
+      "romaji": "sasayaki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "шёпот; перешёптывание"
+      ]
+    },
+    {
+      "id": "ja:word:風貌",
+      "surface": "風貌",
+      "dictionaryForm": "風貌",
+      "reading": "ふうぼう",
+      "romaji": "fūbō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "внешность; облик"
+      ]
+    },
+    {
+      "id": "ja:word:吾子",
+      "surface": "吾子",
+      "dictionaryForm": "吾子",
+      "reading": "あこ",
+      "romaji": "ako",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "моё дитя; собственный ребёнок"
+      ]
+    },
+    {
+      "id": "ja:word:呪い殺す",
+      "surface": "呪い殺す",
+      "dictionaryForm": "呪い殺す",
+      "reading": "のろいころす",
+      "romaji": "noroikorosu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "убить проклятием; заклясть насмерть"
+      ]
+    },
+    {
+      "id": "ja:word:気",
+      "surface": "気",
+      "dictionaryForm": "気",
+      "reading": "き",
+      "romaji": "ki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "намерение; желание; настроение"
+      ]
+    },
+    {
+      "id": "ja:word:顔",
+      "surface": "顔",
+      "dictionaryForm": "顔",
+      "reading": "かお",
+      "romaji": "kao",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "лицо; выражение лица"
+      ]
+    },
+    {
+      "id": "ja:word:歪む",
+      "surface": "歪む",
+      "dictionaryForm": "歪む",
+      "reading": "ゆがむ",
+      "romaji": "yugamu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "искажаться; кривиться"
+      ]
+    },
+    {
+      "id": "ja:word:幽鬼",
+      "surface": "幽鬼",
+      "dictionaryForm": "幽鬼",
+      "reading": "ゆうき",
+      "romaji": "yūki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "призрак; привидение"
+      ]
+    },
+    {
+      "id": "ja:word:悪鬼",
+      "surface": "悪鬼",
+      "dictionaryForm": "悪鬼",
+      "reading": "あっき",
+      "romaji": "akki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "злой дух; демон"
+      ]
+    },
+    {
+      "id": "ja:word:ごとし",
+      "surface": "ごとし",
+      "dictionaryForm": "ごとし",
+      "reading": "ごとし",
+      "romaji": "gotoshi",
+      "partOfSpeech": "вспомогательное слово",
+      "meanings": [
+        "подобный; словно (литературное сравнение)"
+      ]
+    },
+    {
+      "id": "ja:word:まなざし",
+      "surface": "まなざし",
+      "dictionaryForm": "まなざし",
+      "reading": "まなざし",
+      "romaji": "manazashi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "взгляд; выражение глаз"
+      ]
+    },
+    {
+      "id": "ja:word:頬",
+      "surface": "頬",
+      "dictionaryForm": "頬",
+      "reading": "ほお",
+      "romaji": "hō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "щека"
+      ]
+    },
+    {
+      "id": "ja:word:添える",
+      "surface": "添える",
+      "dictionaryForm": "添える",
+      "reading": "そえる",
+      "romaji": "soeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "прикладывать; добавлять; сопровождать"
+      ]
+    },
+    {
+      "id": "ja:word:美女",
+      "surface": "美女",
+      "dictionaryForm": "美女",
+      "reading": "びじょ",
+      "romaji": "bijo",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "красавица"
+      ]
+    },
+    {
+      "id": "ja:word:向ける",
+      "surface": "向ける",
+      "dictionaryForm": "向ける",
+      "reading": "むける",
+      "romaji": "mukeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "направлять; обращать"
+      ]
+    },
+    {
+      "id": "ja:word:小鈴",
+      "surface": "小鈴",
+      "dictionaryForm": "小鈴",
+      "reading": "しゃおりん",
+      "romaji": "Shaorin",
+      "partOfSpeech": "имя собственное",
+      "meanings": [
+        "Сяолин, дочь Гёкуё"
+      ]
+    },
+    {
+      "id": "ja:word:同じ",
+      "surface": "同じ",
+      "dictionaryForm": "同じ",
+      "reading": "おなじ",
+      "romaji": "onaji",
+      "partOfSpeech": "определительное слово",
+      "meanings": [
+        "одинаковый; тот же самый"
+      ]
+    },
+    {
+      "id": "ja:word:苦しむ",
+      "surface": "苦しむ",
+      "dictionaryForm": "苦しむ",
+      "reading": "くるしむ",
+      "romaji": "kurushimu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "страдать; мучиться"
+      ]
+    },
+    {
+      "id": "ja:word:赤い",
+      "surface": "赤い",
+      "dictionaryForm": "赤い",
+      "reading": "あかい",
+      "romaji": "akai",
+      "partOfSpeech": "прилагательное",
+      "meanings": [
+        "красный; рыжий"
+      ]
+    }
+  ]
+}

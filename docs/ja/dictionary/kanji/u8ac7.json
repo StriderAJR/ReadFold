@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:談",
+      "character": "談",
+      "meanings": [
+        "разговор; беседовать; обсуждать"
+      ],
+      "on": [
+        "ダン"
+      ],
+      "kun": [],
+      "components": [
+        "言",
+        "火"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "言": "слова",
+        "火": "огонь"
+      },
+      "mnemonic": "В беседе слова разгораются, как огонь."
+    }
+  ]
+}

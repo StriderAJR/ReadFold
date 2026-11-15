@@ -241,16 +241,15 @@ export function BookPage() {
           </p>
           <h1>{book.title}</h1>
           {book.translatedTitle && <p className="muted">{book.translatedTitle}</p>}
-          <p className="detail-author">{book.author}</p>
+          <p className="detail-author">
+            {book.author}{book.translatedAuthor && <span className="muted"> · {book.translatedAuthor}</span>}
+          </p>
           <p>{book.description}</p>
           <div className="tag-list">
             {book.tags.map((tag) => (
               <span key={tag}>{tag}</span>
             ))}
           </div>
-          <small>
-            {book.license} · {book.source}
-          </small>
         </div>
       </div>
       <section className="chapter-section">
@@ -266,7 +265,10 @@ export function BookPage() {
           >
             <span className="chapter-number">{String(index + 1).padStart(2, '0')}</span>
             <span className="chapter-name">
-              <b>{chapter.title}</b>
+              <b>
+                {chapter.title}
+                {chapter.translatedTitle && <small className="chapter-translation"> · {chapter.translatedTitle}</small>}
+              </b>
               <small>
                 {chapter.sentenceCount} · {reading[index] ? t('resume') : t('read')}
               </small>

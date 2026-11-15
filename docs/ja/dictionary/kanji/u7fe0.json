@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:翠",
+      "character": "翠",
+      "meanings": [
+        "изумрудно-зелёный; зимородок"
+      ],
+      "on": [
+        "スイ"
+      ],
+      "kun": [
+        "かわせみ",
+        "みどり"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

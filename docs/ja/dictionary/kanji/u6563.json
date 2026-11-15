@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:散",
+      "character": "散",
+      "meanings": [
+        "рассыпаться; рассеивать; разбросанный"
+      ],
+      "on": [
+        "サン"
+      ],
+      "kun": [
+        "ちる",
+        "ちらす",
+        "ちらかす",
+        "ちらかる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

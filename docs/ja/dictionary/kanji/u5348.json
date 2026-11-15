@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:午",
+      "character": "午",
+      "meanings": [
+        "полдень"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "𠂉",
+        "十"
+      ],
+      "componentMeanings": {
+        "𠂉": "короткий навес",
+        "十": "десять; перекрестье"
+      },
+      "wordIds": [],
+      "mnemonic": "Короткий навес 𠂉 бросает тень прямо на крест 十 под ним: в полдень она стала совсем короткой.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

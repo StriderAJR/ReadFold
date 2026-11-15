@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:共",
+      "character": "共",
+      "meanings": [
+        "руки с общей ношей"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две верхние ручки соединены перекладинами общей ноши, снизу её поддерживают расходящиеся руки.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

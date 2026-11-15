@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:興",
+      "character": "興",
+      "meanings": [
+        "интерес; процветать; начинать"
+      ],
+      "on": [
+        "コウ",
+        "キョウ"
+      ],
+      "kun": [
+        "おこる",
+        "おこす"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:興味"
+      ]
+    }
+  ]
+}

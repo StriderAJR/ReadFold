@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:然",
+      "character": "然",
+      "meanings": [
+        "так; именно так; состояние; естественный"
+      ],
+      "on": [
+        "ゼン",
+        "ネン"
+      ],
+      "kun": [
+        "しか",
+        "しかり",
+        "しかる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

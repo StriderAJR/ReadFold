@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:腹",
+      "character": "腹",
+      "meanings": [
+        "живот; брюхо; внутреннее чувство"
+      ],
+      "on": [
+        "フク"
+      ],
+      "kun": [
+        "はら"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:腹痛"
+      ]
+    }
+  ]
+}

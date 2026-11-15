@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:丰",
+      "character": "丰",
+      "meanings": [
+        "три дороги на стволе"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "三",
+        "丨"
+      ],
+      "componentMeanings": {
+        "三": "три",
+        "丨": "вертикальная черта"
+      },
+      "wordIds": [],
+      "mnemonic": "Один вертикальный ствол 丨 соединяет три горизонтальные дороги 三.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

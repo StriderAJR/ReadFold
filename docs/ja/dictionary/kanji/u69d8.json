@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:様",
+      "character": "様",
+      "meanings": [
+        "вид; образ; господин; госпожа"
+      ],
+      "on": [
+        "ヨウ"
+      ],
+      "kun": [
+        "さま"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

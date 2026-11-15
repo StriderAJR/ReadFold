@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "byId": {
+    "ja:kanji:泊": [
+      {
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s056"
+      }
+    ]
+  }
+}

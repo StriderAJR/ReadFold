@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:色",
+      "character": "色",
+      "meanings": [
+        "цвет; вид; оттенок"
+      ],
+      "on": [
+        "ショク",
+        "シキ"
+      ],
+      "kun": [
+        "いろ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

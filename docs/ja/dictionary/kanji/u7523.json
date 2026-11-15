@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:産",
+      "character": "産",
+      "meanings": [
+        "рождать; производить; имущество; родина"
+      ],
+      "on": [
+        "サン"
+      ],
+      "kun": [
+        "うむ",
+        "うまれる",
+        "うぶ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

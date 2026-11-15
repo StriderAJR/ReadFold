@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:直",
+      "character": "直",
+      "meanings": [
+        "прямой стеллаж"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "十",
+        "目",
+        "一"
+      ],
+      "componentMeanings": {
+        "十": "десять; перекрестье",
+        "目": "глаз",
+        "一": "одна черта"
+      },
+      "wordIds": [],
+      "mnemonic": "На прямой полке 一 стоит длинный ящик 目, а сверху торчит крестик 十: всё выровняли по одной линии.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:春",
+      "character": "春",
+      "meanings": [
+        "весна"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "三",
+        "大",
+        "日"
+      ],
+      "componentMeanings": {
+        "三": "три",
+        "大": "большой",
+        "日": "солнце"
+      },
+      "wordIds": [],
+      "mnemonic": "Три полосы 三 снега тают над большим человеком 大, а снизу греет солнце 日: наступает весна.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

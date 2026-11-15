@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:作",
+      "character": "作",
+      "meanings": [
+        "делать; создавать; изготавливать"
+      ],
+      "on": [
+        "サク",
+        "サ"
+      ],
+      "kun": [
+        "つくる"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:作る"
+      ]
+    }
+  ]
+}

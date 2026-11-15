@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:箸",
+      "character": "箸",
+      "meanings": [
+        "палочки для еды"
+      ],
+      "on": [
+        "チョ"
+      ],
+      "kun": [
+        "はし"
+      ],
+      "components": [
+        "竹",
+        "者"
+      ],
+      "wordIds": [
+        "ja:word:箸"
+      ],
+      "componentMeanings": {
+        "竹": "бамбук",
+        "者": "человек"
+      },
+      "mnemonic": "Человек ест бамбуковыми палочками."
+    }
+  ]
+}

@@ -3,10 +3,10 @@
   "byId": {
     "ja:kanji:朝": [
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s1"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s004"
       }
     ]
   }

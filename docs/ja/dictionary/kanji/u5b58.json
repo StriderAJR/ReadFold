@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:存",
+      "character": "存",
+      "meanings": [
+        "существовать; знать; сохранять"
+      ],
+      "on": [
+        "ソン",
+        "ゾン"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

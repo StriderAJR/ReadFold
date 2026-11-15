@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:暇",
+      "character": "暇",
+      "meanings": [
+        "свободное время; досуг; отпуск"
+      ],
+      "on": [
+        "カ"
+      ],
+      "kun": [
+        "ひま"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

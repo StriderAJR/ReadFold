@@ -17,7 +17,24 @@
       "ja/dictionary/words/group-013.json",
       "ja/dictionary/words/group-014.json",
       "ja/dictionary/words/group-015.json",
-      "ja/dictionary/words/group-016.json"
+      "ja/dictionary/words/group-016.json",
+      "ja/dictionary/words/group-017.json",
+      "ja/dictionary/words/group-018.json",
+      "ja/dictionary/words/group-019.json",
+      "ja/dictionary/words/group-020.json",
+      "ja/dictionary/words/group-021.json",
+      "ja/dictionary/words/group-022.json",
+      "ja/dictionary/words/group-023.json",
+      "ja/dictionary/words/group-024.json",
+      "ja/dictionary/words/group-031.json",
+      "ja/dictionary/words/group-032.json",
+      "ja/dictionary/words/group-033.json",
+      "ja/dictionary/words/group-034.json",
+      "ja/dictionary/words/group-041.json",
+      "ja/dictionary/words/group-042.json",
+      "ja/dictionary/words/group-043.json",
+      "ja/dictionary/words/group-044.json",
+      "ja/dictionary/words/group-045.json"
     ],
     "kanji": [
       "ja/dictionary/kanji/u2e8c.json",
@@ -31,20 +48,25 @@
       "ja/dictionary/kanji/u31c9.json",
       "ja/dictionary/kanji/u31cb.json",
       "ja/dictionary/kanji/u31cf.json",
+      "ja/dictionary/kanji/u353e.json",
       "ja/dictionary/kanji/u382f.json",
       "ja/dictionary/kanji/u4e00.json",
       "ja/dictionary/kanji/u4e02.json",
       "ja/dictionary/kanji/u4e03.json",
+      "ja/dictionary/kanji/u4e06.json",
       "ja/dictionary/kanji/u4e09.json",
       "ja/dictionary/kanji/u4e0a.json",
       "ja/dictionary/kanji/u4e0b.json",
       "ja/dictionary/kanji/u4e0d.json",
       "ja/dictionary/kanji/u4e0e.json",
+      "ja/dictionary/kanji/u4e14.json",
       "ja/dictionary/kanji/u4e16.json",
+      "ja/dictionary/kanji/u4e21.json",
       "ja/dictionary/kanji/u4e26.json",
       "ja/dictionary/kanji/u4e28.json",
       "ja/dictionary/kanji/u4e2a.json",
       "ja/dictionary/kanji/u4e2d.json",
+      "ja/dictionary/kanji/u4e30.json",
       "ja/dictionary/kanji/u4e32.json",
       "ja/dictionary/kanji/u4e36.json",
       "ja/dictionary/kanji/u4e37.json",
@@ -53,9 +75,11 @@
       "ja/dictionary/kanji/u4e3f.json",
       "ja/dictionary/kanji/u4e42.json",
       "ja/dictionary/kanji/u4e43.json",
+      "ja/dictionary/kanji/u4e4d.json",
       "ja/dictionary/kanji/u4e59.json",
       "ja/dictionary/kanji/u4e5a.json",
       "ja/dictionary/kanji/u4e5b.json",
+      "ja/dictionary/kanji/u4e5d.json",
       "ja/dictionary/kanji/u4e5e.json",
       "ja/dictionary/kanji/u4e5f.json",
       "ja/dictionary/kanji/u4e60.json",
@@ -65,44 +89,69 @@
       "ja/dictionary/kanji/u4e8b.json",
       "ja/dictionary/kanji/u4e8c.json",
       "ja/dictionary/kanji/u4e8d.json",
+      "ja/dictionary/kanji/u4e94.json",
       "ja/dictionary/kanji/u4e95.json",
+      "ja/dictionary/kanji/u4e9c.json",
       "ja/dictionary/kanji/u4e9f.json",
       "ja/dictionary/kanji/u4ea0.json",
       "ja/dictionary/kanji/u4ea1.json",
+      "ja/dictionary/kanji/u4ea2.json",
+      "ja/dictionary/kanji/u4ea6.json",
+      "ja/dictionary/kanji/u4eac.json",
       "ja/dictionary/kanji/u4eba.json",
       "ja/dictionary/kanji/u4ebb.json",
       "ja/dictionary/kanji/u4eca.json",
+      "ja/dictionary/kanji/u4ecb.json",
       "ja/dictionary/kanji/u4ed5.json",
       "ja/dictionary/kanji/u4ed6.json",
       "ja/dictionary/kanji/u4ed8.json",
       "ja/dictionary/kanji/u4ee3.json",
+      "ja/dictionary/kanji/u4ee4.json",
+      "ja/dictionary/kanji/u4ee5.json",
+      "ja/dictionary/kanji/u4ef2.json",
       "ja/dictionary/kanji/u4f1a.json",
+      "ja/dictionary/kanji/u4f1d.json",
       "ja/dictionary/kanji/u4f3d.json",
       "ja/dictionary/kanji/u4f4d.json",
       "ja/dictionary/kanji/u4f4e.json",
       "ja/dictionary/kanji/u4f4f.json",
       "ja/dictionary/kanji/u4f53.json",
       "ja/dictionary/kanji/u4f55.json",
+      "ja/dictionary/kanji/u4f59.json",
+      "ja/dictionary/kanji/u4f5c.json",
       "ja/dictionary/kanji/u4f7f.json",
       "ja/dictionary/kanji/u4f8d.json",
       "ja/dictionary/kanji/u500b.json",
       "ja/dictionary/kanji/u5065.json",
       "ja/dictionary/kanji/u5074.json",
+      "ja/dictionary/kanji/u50b7.json",
+      "ja/dictionary/kanji/u50be.json",
       "ja/dictionary/kanji/u50cd.json",
+      "ja/dictionary/kanji/u50fb.json",
       "ja/dictionary/kanji/u5100.json",
+      "ja/dictionary/kanji/u512a.json",
       "ja/dictionary/kanji/u513f.json",
       "ja/dictionary/kanji/u5140.json",
       "ja/dictionary/kanji/u5143.json",
+      "ja/dictionary/kanji/u5144.json",
       "ja/dictionary/kanji/u5148.json",
+      "ja/dictionary/kanji/u5149.json",
       "ja/dictionary/kanji/u5150.json",
+      "ja/dictionary/kanji/u515a.json",
       "ja/dictionary/kanji/u5165.json",
+      "ja/dictionary/kanji/u5168.json",
       "ja/dictionary/kanji/u516b.json",
       "ja/dictionary/kanji/u516c.json",
+      "ja/dictionary/kanji/u5171.json",
+      "ja/dictionary/kanji/u5176.json",
       "ja/dictionary/kanji/u5182.json",
       "ja/dictionary/kanji/u5185.json",
+      "ja/dictionary/kanji/u518a.json",
       "ja/dictionary/kanji/u518e.json",
       "ja/dictionary/kanji/u5196.json",
       "ja/dictionary/kanji/u51ab.json",
+      "ja/dictionary/kanji/u51ac.json",
+      "ja/dictionary/kanji/u51b7.json",
       "ja/dictionary/kanji/u51e0.json",
       "ja/dictionary/kanji/u51f5.json",
       "ja/dictionary/kanji/u51fa.json",
@@ -113,27 +162,41 @@
       "ja/dictionary/kanji/u5208.json",
       "ja/dictionary/kanji/u5230.json",
       "ja/dictionary/kanji/u5236.json",
+      "ja/dictionary/kanji/u523a.json",
       "ja/dictionary/kanji/u524d.json",
       "ja/dictionary/kanji/u529b.json",
       "ja/dictionary/kanji/u52a0.json",
+      "ja/dictionary/kanji/u52a3.json",
       "ja/dictionary/kanji/u52d5.json",
       "ja/dictionary/kanji/u52f9.json",
+      "ja/dictionary/kanji/u52fa.json",
       "ja/dictionary/kanji/u52ff.json",
       "ja/dictionary/kanji/u5302.json",
+      "ja/dictionary/kanji/u5305.json",
       "ja/dictionary/kanji/u5315.json",
       "ja/dictionary/kanji/u5316.json",
+      "ja/dictionary/kanji/u531a.json",
+      "ja/dictionary/kanji/u533b.json",
       "ja/dictionary/kanji/u5341.json",
       "ja/dictionary/kanji/u5343.json",
+      "ja/dictionary/kanji/u5348.json",
       "ja/dictionary/kanji/u534a.json",
+      "ja/dictionary/kanji/u5352.json",
+      "ja/dictionary/kanji/u5358.json",
       "ja/dictionary/kanji/u535c.json",
       "ja/dictionary/kanji/u5369.json",
       "ja/dictionary/kanji/u536c.json",
+      "ja/dictionary/kanji/u5378.json",
       "ja/dictionary/kanji/u5382.json",
+      "ja/dictionary/kanji/u539f.json",
       "ja/dictionary/kanji/u53b6.json",
       "ja/dictionary/kanji/u53c2.json",
       "ja/dictionary/kanji/u53c8.json",
       "ja/dictionary/kanji/u53ca.json",
+      "ja/dictionary/kanji/u53cb.json",
+      "ja/dictionary/kanji/u53cd.json",
       "ja/dictionary/kanji/u53d7.json",
+      "ja/dictionary/kanji/u53da.json",
       "ja/dictionary/kanji/u53e3.json",
       "ja/dictionary/kanji/u53e4.json",
       "ja/dictionary/kanji/u53e9.json",
@@ -142,8 +205,14 @@
       "ja/dictionary/kanji/u5404.json",
       "ja/dictionary/kanji/u5408.json",
       "ja/dictionary/kanji/u5409.json",
+      "ja/dictionary/kanji/u540c.json",
       "ja/dictionary/kanji/u540d.json",
+      "ja/dictionary/kanji/u540e.json",
+      "ja/dictionary/kanji/u5410.json",
       "ja/dictionary/kanji/u5411.json",
+      "ja/dictionary/kanji/u541b.json",
+      "ja/dictionary/kanji/u542b.json",
+      "ja/dictionary/kanji/u543e.json",
       "ja/dictionary/kanji/u5468.json",
       "ja/dictionary/kanji/u546a.json",
       "ja/dictionary/kanji/u5473.json",
@@ -151,44 +220,69 @@
       "ja/dictionary/kanji/u54b8.json",
       "ja/dictionary/kanji/u54bc.json",
       "ja/dictionary/kanji/u5507.json",
+      "ja/dictionary/kanji/u552f.json",
+      "ja/dictionary/kanji/u5538.json",
       "ja/dictionary/kanji/u5546.json",
       "ja/dictionary/kanji/u5547.json",
+      "ja/dictionary/kanji/u554f.json",
+      "ja/dictionary/kanji/u559c.json",
+      "ja/dictionary/kanji/u5642.json",
       "ja/dictionary/kanji/u56d7.json",
+      "ja/dictionary/kanji/u56de.json",
+      "ja/dictionary/kanji/u56e0.json",
       "ja/dictionary/kanji/u56fd.json",
       "ja/dictionary/kanji/u5712.json",
       "ja/dictionary/kanji/u571f.json",
       "ja/dictionary/kanji/u5727.json",
+      "ja/dictionary/kanji/u5728.json",
       "ja/dictionary/kanji/u57ce.json",
       "ja/dictionary/kanji/u57fa.json",
+      "ja/dictionary/kanji/u5802.json",
       "ja/dictionary/kanji/u5834.json",
+      "ja/dictionary/kanji/u5857.json",
       "ja/dictionary/kanji/u5897.json",
       "ja/dictionary/kanji/u58eb.json",
+      "ja/dictionary/kanji/u58ec.json",
       "ja/dictionary/kanji/u58f1.json",
       "ja/dictionary/kanji/u58f2.json",
       "ja/dictionary/kanji/u5902.json",
       "ja/dictionary/kanji/u5909.json",
+      "ja/dictionary/kanji/u590d.json",
       "ja/dictionary/kanji/u5915.json",
       "ja/dictionary/kanji/u5916.json",
+      "ja/dictionary/kanji/u591a.json",
       "ja/dictionary/kanji/u591c.json",
       "ja/dictionary/kanji/u5927.json",
       "ja/dictionary/kanji/u5929.json",
+      "ja/dictionary/kanji/u592b.json",
+      "ja/dictionary/kanji/u592c.json",
+      "ja/dictionary/kanji/u592d.json",
+      "ja/dictionary/kanji/u592e.json",
       "ja/dictionary/kanji/u5931.json",
+      "ja/dictionary/kanji/u593e.json",
       "ja/dictionary/kanji/u5947.json",
       "ja/dictionary/kanji/u5965.json",
       "ja/dictionary/kanji/u5973.json",
       "ja/dictionary/kanji/u597d.json",
       "ja/dictionary/kanji/u5983.json",
+      "ja/dictionary/kanji/u5993.json",
       "ja/dictionary/kanji/u5999.json",
       "ja/dictionary/kanji/u59a5.json",
+      "ja/dictionary/kanji/u59bb.json",
+      "ja/dictionary/kanji/u59eb.json",
       "ja/dictionary/kanji/u59ff.json",
       "ja/dictionary/kanji/u5a18.json",
       "ja/dictionary/kanji/u5a5a.json",
       "ja/dictionary/kanji/u5b2a.json",
       "ja/dictionary/kanji/u5b50.json",
       "ja/dictionary/kanji/u5b57.json",
+      "ja/dictionary/kanji/u5b58.json",
+      "ja/dictionary/kanji/u5b5d.json",
       "ja/dictionary/kanji/u5b80.json",
       "ja/dictionary/kanji/u5b88.json",
       "ja/dictionary/kanji/u5b98.json",
+      "ja/dictionary/kanji/u5b9a.json",
+      "ja/dictionary/kanji/u5b9b.json",
       "ja/dictionary/kanji/u5b9f.json",
       "ja/dictionary/kanji/u5ba4.json",
       "ja/dictionary/kanji/u5ba6.json",
@@ -196,7 +290,10 @@
       "ja/dictionary/kanji/u5bb3.json",
       "ja/dictionary/kanji/u5bb6.json",
       "ja/dictionary/kanji/u5bb9.json",
+      "ja/dictionary/kanji/u5bf5.json",
       "ja/dictionary/kanji/u5bf8.json",
+      "ja/dictionary/kanji/u5bfa.json",
+      "ja/dictionary/kanji/u5bfe.json",
       "ja/dictionary/kanji/u5c02.json",
       "ja/dictionary/kanji/u5c0f.json",
       "ja/dictionary/kanji/u5c11.json",
@@ -205,36 +302,46 @@
       "ja/dictionary/kanji/u5c2d.json",
       "ja/dictionary/kanji/u5c31.json",
       "ja/dictionary/kanji/u5c38.json",
+      "ja/dictionary/kanji/u5c4a.json",
       "ja/dictionary/kanji/u5c4b.json",
       "ja/dictionary/kanji/u5c64.json",
       "ja/dictionary/kanji/u5c71.json",
       "ja/dictionary/kanji/u5de5.json",
+      "ja/dictionary/kanji/u5dee.json",
       "ja/dictionary/kanji/u5df1.json",
       "ja/dictionary/kanji/u5df2.json",
+      "ja/dictionary/kanji/u5df4.json",
       "ja/dictionary/kanji/u5dfe.json",
       "ja/dictionary/kanji/u5e02.json",
       "ja/dictionary/kanji/u5e1d.json",
       "ja/dictionary/kanji/u5e2b.json",
       "ja/dictionary/kanji/u5e2f.json",
+      "ja/dictionary/kanji/u5e38.json",
       "ja/dictionary/kanji/u5e72.json",
       "ja/dictionary/kanji/u5e74.json",
       "ja/dictionary/kanji/u5e76.json",
       "ja/dictionary/kanji/u5e78.json",
       "ja/dictionary/kanji/u5e7a.json",
       "ja/dictionary/kanji/u5e7c.json",
+      "ja/dictionary/kanji/u5e7d.json",
       "ja/dictionary/kanji/u5e7f.json",
+      "ja/dictionary/kanji/u5e83.json",
       "ja/dictionary/kanji/u5e95.json",
       "ja/dictionary/kanji/u5ea6.json",
+      "ja/dictionary/kanji/u5ea7.json",
       "ja/dictionary/kanji/u5ead.json",
       "ja/dictionary/kanji/u5eb7.json",
+      "ja/dictionary/kanji/u5edb.json",
       "ja/dictionary/kanji/u5ef4.json",
       "ja/dictionary/kanji/u5ef7.json",
       "ja/dictionary/kanji/u5efa.json",
       "ja/dictionary/kanji/u5efe.json",
+      "ja/dictionary/kanji/u5eff.json",
       "ja/dictionary/kanji/u5f0a.json",
       "ja/dictionary/kanji/u5f0b.json",
       "ja/dictionary/kanji/u5f10.json",
       "ja/dictionary/kanji/u5f13.json",
+      "ja/dictionary/kanji/u5f31.json",
       "ja/dictionary/kanji/u5f35.json",
       "ja/dictionary/kanji/u5f37.json",
       "ja/dictionary/kanji/u5f50.json",
@@ -242,37 +349,53 @@
       "ja/dictionary/kanji/u5f53.json",
       "ja/dictionary/kanji/u5f56.json",
       "ja/dictionary/kanji/u5f61.json",
+      "ja/dictionary/kanji/u5f66.json",
       "ja/dictionary/kanji/u5f73.json",
       "ja/dictionary/kanji/u5f8c.json",
       "ja/dictionary/kanji/u5fa1.json",
       "ja/dictionary/kanji/u5fc3.json",
       "ja/dictionary/kanji/u5fc4.json",
+      "ja/dictionary/kanji/u5fc5.json",
       "ja/dictionary/kanji/u5fd9.json",
+      "ja/dictionary/kanji/u5feb.json",
       "ja/dictionary/kanji/u5ff5.json",
       "ja/dictionary/kanji/u601d.json",
       "ja/dictionary/kanji/u6027.json",
       "ja/dictionary/kanji/u602a.json",
+      "ja/dictionary/kanji/u604b.json",
       "ja/dictionary/kanji/u6050.json",
       "ja/dictionary/kanji/u606f.json",
+      "ja/dictionary/kanji/u6094.json",
       "ja/dictionary/kanji/u60aa.json",
+      "ja/dictionary/kanji/u60c5.json",
       "ja/dictionary/kanji/u60d1.json",
       "ja/dictionary/kanji/u60f3.json",
       "ja/dictionary/kanji/u610f.json",
       "ja/dictionary/kanji/u611b.json",
       "ja/dictionary/kanji/u611f.json",
+      "ja/dictionary/kanji/u6182.json",
       "ja/dictionary/kanji/u6208.json",
+      "ja/dictionary/kanji/u6209.json",
       "ja/dictionary/kanji/u620a.json",
       "ja/dictionary/kanji/u6210.json",
+      "ja/dictionary/kanji/u6211.json",
       "ja/dictionary/kanji/u6238.json",
       "ja/dictionary/kanji/u623b.json",
       "ja/dictionary/kanji/u6240.json",
       "ja/dictionary/kanji/u6249.json",
       "ja/dictionary/kanji/u624b.json",
       "ja/dictionary/kanji/u624c.json",
+      "ja/dictionary/kanji/u624d.json",
       "ja/dictionary/kanji/u624e.json",
+      "ja/dictionary/kanji/u6253.json",
+      "ja/dictionary/kanji/u627f.json",
       "ja/dictionary/kanji/u6291.json",
+      "ja/dictionary/kanji/u6297.json",
       "ja/dictionary/kanji/u6298.json",
       "ja/dictionary/kanji/u62b1.json",
+      "ja/dictionary/kanji/u62e0.json",
+      "ja/dictionary/kanji/u62ec.json",
+      "ja/dictionary/kanji/u62ed.json",
       "ja/dictionary/kanji/u6301.json",
       "ja/dictionary/kanji/u6307.json",
       "ja/dictionary/kanji/u6355.json",
@@ -280,33 +403,58 @@
       "ja/dictionary/kanji/u63fa.json",
       "ja/dictionary/kanji/u652b.json",
       "ja/dictionary/kanji/u652f.json",
+      "ja/dictionary/kanji/u6535.json",
       "ja/dictionary/kanji/u6559.json",
+      "ja/dictionary/kanji/u655d.json",
+      "ja/dictionary/kanji/u6563.json",
       "ja/dictionary/kanji/u6570.json",
       "ja/dictionary/kanji/u6587.json",
+      "ja/dictionary/kanji/u6589.json",
+      "ja/dictionary/kanji/u659c.json",
       "ja/dictionary/kanji/u65a4.json",
       "ja/dictionary/kanji/u65b9.json",
+      "ja/dictionary/kanji/u65cf.json",
       "ja/dictionary/kanji/u65e5.json",
+      "ja/dictionary/kanji/u65e9.json",
+      "ja/dictionary/kanji/u660e.json",
+      "ja/dictionary/kanji/u6613.json",
+      "ja/dictionary/kanji/u6625.json",
+      "ja/dictionary/kanji/u6642.json",
       "ja/dictionary/kanji/u666f.json",
+      "ja/dictionary/kanji/u6687.json",
+      "ja/dictionary/kanji/u6691.json",
       "ja/dictionary/kanji/u66b4.json",
       "ja/dictionary/kanji/u66c7.json",
+      "ja/dictionary/kanji/u66f2.json",
       "ja/dictionary/kanji/u66f8.json",
+      "ja/dictionary/kanji/u66fe.json",
       "ja/dictionary/kanji/u6700.json",
       "ja/dictionary/kanji/u6708.json",
       "ja/dictionary/kanji/u671d.json",
       "ja/dictionary/kanji/u6728.json",
+      "ja/dictionary/kanji/u672a.json",
       "ja/dictionary/kanji/u672c.json",
       "ja/dictionary/kanji/u672d.json",
       "ja/dictionary/kanji/u6751.json",
       "ja/dictionary/kanji/u6765.json",
       "ja/dictionary/kanji/u676f.json",
       "ja/dictionary/kanji/u6770.json",
+      "ja/dictionary/kanji/u6771.json",
       "ja/dictionary/kanji/u679d.json",
       "ja/dictionary/kanji/u67af.json",
+      "ja/dictionary/kanji/u67ec.json",
       "ja/dictionary/kanji/u67f1.json",
+      "ja/dictionary/kanji/u6839.json",
+      "ja/dictionary/kanji/u685f.json",
       "ja/dictionary/kanji/u6885.json",
+      "ja/dictionary/kanji/u68a8.json",
+      "ja/dictionary/kanji/u68df.json",
       "ja/dictionary/kanji/u68ee.json",
       "ja/dictionary/kanji/u690d.json",
       "ja/dictionary/kanji/u6975.json",
+      "ja/dictionary/kanji/u697c.json",
+      "ja/dictionary/kanji/u697d.json",
+      "ja/dictionary/kanji/u69d8.json",
       "ja/dictionary/kanji/u6a21.json",
       "ja/dictionary/kanji/u6a29.json",
       "ja/dictionary/kanji/u6b20.json",
@@ -325,6 +473,7 @@
       "ja/dictionary/kanji/u6bbf.json",
       "ja/dictionary/kanji/u6bcb.json",
       "ja/dictionary/kanji/u6bcd.json",
+      "ja/dictionary/kanji/u6bce.json",
       "ja/dictionary/kanji/u6bd2.json",
       "ja/dictionary/kanji/u6bd4.json",
       "ja/dictionary/kanji/u6c0f.json",
@@ -332,59 +481,90 @@
       "ja/dictionary/kanji/u6c17.json",
       "ja/dictionary/kanji/u6c34.json",
       "ja/dictionary/kanji/u6c35.json",
+      "ja/dictionary/kanji/u6c38.json",
       "ja/dictionary/kanji/u6c3a.json",
       "ja/dictionary/kanji/u6c41.json",
       "ja/dictionary/kanji/u6c5a.json",
+      "ja/dictionary/kanji/u6c7a.json",
+      "ja/dictionary/kanji/u6cca.json",
+      "ja/dictionary/kanji/u6cd5.json",
       "ja/dictionary/kanji/u6ce3.json",
       "ja/dictionary/kanji/u6d17.json",
       "ja/dictionary/kanji/u6d3b.json",
       "ja/dictionary/kanji/u6d3e.json",
       "ja/dictionary/kanji/u6d6e.json",
+      "ja/dictionary/kanji/u6dfb.json",
       "ja/dictionary/kanji/u6e08.json",
+      "ja/dictionary/kanji/u6e21.json",
+      "ja/dictionary/kanji/u6e2c.json",
+      "ja/dictionary/kanji/u6e6f.json",
       "ja/dictionary/kanji/u6e80.json",
       "ja/dictionary/kanji/u6e9c.json",
+      "ja/dictionary/kanji/u6ec5.json",
       "ja/dictionary/kanji/u6ef4.json",
       "ja/dictionary/kanji/u6f02.json",
       "ja/dictionary/kanji/u6fb1.json",
+      "ja/dictionary/kanji/u6fc0.json",
       "ja/dictionary/kanji/u6fc1.json",
+      "ja/dictionary/kanji/u6fc3.json",
       "ja/dictionary/kanji/u6fef.json",
       "ja/dictionary/kanji/u706b.json",
       "ja/dictionary/kanji/u706c.json",
       "ja/dictionary/kanji/u7121.json",
+      "ja/dictionary/kanji/u7136.json",
       "ja/dictionary/kanji/u713c.json",
       "ja/dictionary/kanji/u721b.json",
       "ja/dictionary/kanji/u722a.json",
       "ja/dictionary/kanji/u722b.json",
+      "ja/dictionary/kanji/u723f.json",
       "ja/dictionary/kanji/u725b.json",
       "ja/dictionary/kanji/u725c.json",
       "ja/dictionary/kanji/u7261.json",
       "ja/dictionary/kanji/u7269.json",
       "ja/dictionary/kanji/u7279.json",
+      "ja/dictionary/kanji/u72ac.json",
       "ja/dictionary/kanji/u72ad.json",
       "ja/dictionary/kanji/u72af.json",
+      "ja/dictionary/kanji/u72b6.json",
       "ja/dictionary/kanji/u72e9.json",
+      "ja/dictionary/kanji/u72fc.json",
+      "ja/dictionary/kanji/u72fd.json",
       "ja/dictionary/kanji/u732b.json",
       "ja/dictionary/kanji/u7384.json",
       "ja/dictionary/kanji/u7387.json",
+      "ja/dictionary/kanji/u7389.json",
       "ja/dictionary/kanji/u738b.json",
+      "ja/dictionary/kanji/u73fe.json",
       "ja/dictionary/kanji/u7406.json",
       "ja/dictionary/kanji/u7518.json",
       "ja/dictionary/kanji/u751f.json",
+      "ja/dictionary/kanji/u7523.json",
       "ja/dictionary/kanji/u7528.json",
+      "ja/dictionary/kanji/u752b.json",
+      "ja/dictionary/kanji/u752c.json",
       "ja/dictionary/kanji/u7530.json",
       "ja/dictionary/kanji/u7531.json",
       "ja/dictionary/kanji/u7537.json",
+      "ja/dictionary/kanji/u753a.json",
       "ja/dictionary/kanji/u754c.json",
       "ja/dictionary/kanji/u7559.json",
       "ja/dictionary/kanji/u7565.json",
       "ja/dictionary/kanji/u756a.json",
+      "ja/dictionary/kanji/u7570.json",
       "ja/dictionary/kanji/u7573.json",
       "ja/dictionary/kanji/u7592.json",
+      "ja/dictionary/kanji/u75c5.json",
+      "ja/dictionary/kanji/u75c7.json",
+      "ja/dictionary/kanji/u75db.json",
       "ja/dictionary/kanji/u7634.json",
       "ja/dictionary/kanji/u767d.json",
+      "ja/dictionary/kanji/u767e.json",
       "ja/dictionary/kanji/u7684.json",
+      "ja/dictionary/kanji/u7686.json",
       "ja/dictionary/kanji/u7687.json",
+      "ja/dictionary/kanji/u76bf.json",
       "ja/dictionary/kanji/u76ee.json",
+      "ja/dictionary/kanji/u76f4.json",
       "ja/dictionary/kanji/u76f8.json",
       "ja/dictionary/kanji/u76fe.json",
       "ja/dictionary/kanji/u771f.json",
@@ -394,62 +574,96 @@
       "ja/dictionary/kanji/u793a.json",
       "ja/dictionary/kanji/u793b.json",
       "ja/dictionary/kanji/u793c.json",
+      "ja/dictionary/kanji/u795f.json",
       "ja/dictionary/kanji/u7981.json",
+      "ja/dictionary/kanji/u79b8.json",
       "ja/dictionary/kanji/u79be.json",
       "ja/dictionary/kanji/u79c1.json",
       "ja/dictionary/kanji/u79fb.json",
       "ja/dictionary/kanji/u7a3c.json",
+      "ja/dictionary/kanji/u7a40.json",
       "ja/dictionary/kanji/u7a74.json",
       "ja/dictionary/kanji/u7a7a.json",
+      "ja/dictionary/kanji/u7a93.json",
       "ja/dictionary/kanji/u7acb.json",
+      "ja/dictionary/kanji/u7ae0.json",
       "ja/dictionary/kanji/u7aef.json",
       "ja/dictionary/kanji/u7af9.json",
       "ja/dictionary/kanji/u7b11.json",
+      "ja/dictionary/kanji/u7b2c.json",
+      "ja/dictionary/kanji/u7b49.json",
+      "ja/dictionary/kanji/u7b54.json",
+      "ja/dictionary/kanji/u7bb8.json",
       "ja/dictionary/kanji/u7c60.json",
       "ja/dictionary/kanji/u7c73.json",
+      "ja/dictionary/kanji/u7ca5.json",
       "ja/dictionary/kanji/u7ca7.json",
       "ja/dictionary/kanji/u7cf8.json",
       "ja/dictionary/kanji/u7d1a.json",
       "ja/dictionary/kanji/u7d42.json",
+      "ja/dictionary/kanji/u7d44.json",
       "ja/dictionary/kanji/u7d50.json",
+      "ja/dictionary/kanji/u7d5e.json",
       "ja/dictionary/kanji/u7d62.json",
       "ja/dictionary/kanji/u7d66.json",
       "ja/dictionary/kanji/u7d75.json",
+      "ja/dictionary/kanji/u7d79.json",
+      "ja/dictionary/kanji/u7d99.json",
       "ja/dictionary/kanji/u7d9a.json",
+      "ja/dictionary/kanji/u7dba.json",
+      "ja/dictionary/kanji/u7df4.json",
       "ja/dictionary/kanji/u7e01.json",
       "ja/dictionary/kanji/u7e8f.json",
+      "ja/dictionary/kanji/u7f36.json",
       "ja/dictionary/kanji/u7f52.json",
       "ja/dictionary/kanji/u7f6e.json",
+      "ja/dictionary/kanji/u7f75.json",
       "ja/dictionary/kanji/u7f8a.json",
       "ja/dictionary/kanji/u7f8e.json",
       "ja/dictionary/kanji/u7fa9.json",
       "ja/dictionary/kanji/u7fbd.json",
       "ja/dictionary/kanji/u7fdf.json",
+      "ja/dictionary/kanji/u7fe0.json",
+      "ja/dictionary/kanji/u7fe1.json",
       "ja/dictionary/kanji/u8001.json",
+      "ja/dictionary/kanji/u8002.json",
       "ja/dictionary/kanji/u8003.json",
       "ja/dictionary/kanji/u8005.json",
       "ja/dictionary/kanji/u800c.json",
       "ja/dictionary/kanji/u8033.json",
+      "ja/dictionary/kanji/u805e.json",
       "ja/dictionary/kanji/u8077.json",
       "ja/dictionary/kanji/u807f.json",
       "ja/dictionary/kanji/u8089.json",
       "ja/dictionary/kanji/u808c.json",
       "ja/dictionary/kanji/u80fd.json",
+      "ja/dictionary/kanji/u8155.json",
+      "ja/dictionary/kanji/u8179.json",
       "ja/dictionary/kanji/u81e3.json",
       "ja/dictionary/kanji/u81ea.json",
+      "ja/dictionary/kanji/u81ed.json",
       "ja/dictionary/kanji/u81f3.json",
+      "ja/dictionary/kanji/u81fc.json",
+      "ja/dictionary/kanji/u8208.json",
       "ja/dictionary/kanji/u820c.json",
       "ja/dictionary/kanji/u820e.json",
       "ja/dictionary/kanji/u821b.json",
       "ja/dictionary/kanji/u826e.json",
+      "ja/dictionary/kanji/u826f.json",
+      "ja/dictionary/kanji/u8272.json",
       "ja/dictionary/kanji/u8279.json",
       "ja/dictionary/kanji/u827e.json",
       "ja/dictionary/kanji/u82b1.json",
       "ja/dictionary/kanji/u82d7.json",
+      "ja/dictionary/kanji/u82e6.json",
+      "ja/dictionary/kanji/u8336.json",
       "ja/dictionary/kanji/u8349.json",
+      "ja/dictionary/kanji/u83ab.json",
       "ja/dictionary/kanji/u83ef.json",
+      "ja/dictionary/kanji/u8449.json",
       "ja/dictionary/kanji/u8584.json",
       "ja/dictionary/kanji/u85ac.json",
+      "ja/dictionary/kanji/u862d.json",
       "ja/dictionary/kanji/u866b.json",
       "ja/dictionary/kanji/u86d9.json",
       "ja/dictionary/kanji/u8822.json",
@@ -459,27 +673,45 @@
       "ja/dictionary/kanji/u8863.json",
       "ja/dictionary/kanji/u8868.json",
       "ja/dictionary/kanji/u8881.json",
+      "ja/dictionary/kanji/u88c1.json",
       "ja/dictionary/kanji/u897f.json",
+      "ja/dictionary/kanji/u8980.json",
+      "ja/dictionary/kanji/u8981.json",
       "ja/dictionary/kanji/u898b.json",
+      "ja/dictionary/kanji/u898f.json",
+      "ja/dictionary/kanji/u89aa.json",
       "ja/dictionary/kanji/u89b3.json",
       "ja/dictionary/kanji/u8a00.json",
+      "ja/dictionary/kanji/u8a2a.json",
       "ja/dictionary/kanji/u8a31.json",
+      "ja/dictionary/kanji/u8a3a.json",
+      "ja/dictionary/kanji/u8a55.json",
       "ja/dictionary/kanji/u8a6e.json",
+      "ja/dictionary/kanji/u8a70.json",
       "ja/dictionary/kanji/u8a71.json",
+      "ja/dictionary/kanji/u8a73.json",
       "ja/dictionary/kanji/u8a89.json",
       "ja/dictionary/kanji/u8aad.json",
       "ja/dictionary/kanji/u8abf.json",
+      "ja/dictionary/kanji/u8ac7.json",
+      "ja/dictionary/kanji/u8ad6.json",
       "ja/dictionary/kanji/u8b58.json",
+      "ja/dictionary/kanji/u8b70.json",
       "ja/dictionary/kanji/u8c37.json",
       "ja/dictionary/kanji/u8c46.json",
       "ja/dictionary/kanji/u8c4a.json",
       "ja/dictionary/kanji/u8c55.json",
+      "ja/dictionary/kanji/u8c61.json",
       "ja/dictionary/kanji/u8c6a.json",
+      "ja/dictionary/kanji/u8c8c.json",
       "ja/dictionary/kanji/u8c9d.json",
+      "ja/dictionary/kanji/u8ca0.json",
       "ja/dictionary/kanji/u8cb4.json",
       "ja/dictionary/kanji/u8cb7.json",
+      "ja/dictionary/kanji/u8cd3.json",
       "ja/dictionary/kanji/u8cdc.json",
       "ja/dictionary/kanji/u8cea.json",
+      "ja/dictionary/kanji/u8d64.json",
       "ja/dictionary/kanji/u8d70.json",
       "ja/dictionary/kanji/u8d77.json",
       "ja/dictionary/kanji/u8d8a.json",
@@ -488,53 +720,83 @@
       "ja/dictionary/kanji/u8eab.json",
       "ja/dictionary/kanji/u8eca.json",
       "ja/dictionary/kanji/u8efd.json",
+      "ja/dictionary/kanji/u8f1d.json",
       "ja/dictionary/kanji/u8f9b.json",
+      "ja/dictionary/kanji/u8f9e.json",
+      "ja/dictionary/kanji/u8f9f.json",
       "ja/dictionary/kanji/u8fb0.json",
+      "ja/dictionary/kanji/u8fb2.json",
       "ja/dictionary/kanji/u8fb6.json",
       "ja/dictionary/kanji/u8fbc.json",
       "ja/dictionary/kanji/u8fce.json",
       "ja/dictionary/kanji/u8fd1.json",
       "ja/dictionary/kanji/u8fd4.json",
       "ja/dictionary/kanji/u8ff7.json",
+      "ja/dictionary/kanji/u901a.json",
       "ja/dictionary/kanji/u9023.json",
+      "ja/dictionary/kanji/u9032.json",
       "ja/dictionary/kanji/u904b.json",
       "ja/dictionary/kanji/u904e.json",
       "ja/dictionary/kanji/u9054.json",
       "ja/dictionary/kanji/u9055.json",
       "ja/dictionary/kanji/u9069.json",
+      "ja/dictionary/kanji/u907a.json",
       "ja/dictionary/kanji/u90a6.json",
+      "ja/dictionary/kanji/u90ce.json",
       "ja/dictionary/kanji/u90e8.json",
       "ja/dictionary/kanji/u9149.json",
       "ja/dictionary/kanji/u9152.json",
       "ja/dictionary/kanji/u91c6.json",
       "ja/dictionary/kanji/u91cc.json",
       "ja/dictionary/kanji/u91cd.json",
+      "ja/dictionary/kanji/u91ce.json",
       "ja/dictionary/kanji/u91cf.json",
       "ja/dictionary/kanji/u91d1.json",
+      "ja/dictionary/kanji/u9234.json",
       "ja/dictionary/kanji/u9577.json",
       "ja/dictionary/kanji/u9580.json",
       "ja/dictionary/kanji/u958b.json",
+      "ja/dictionary/kanji/u9593.json",
       "ja/dictionary/kanji/u95a2.json",
+      "ja/dictionary/kanji/u95ca.json",
       "ja/dictionary/kanji/u961d.json",
       "ja/dictionary/kanji/u9621.json",
       "ja/dictionary/kanji/u9650.json",
+      "ja/dictionary/kanji/u9670.json",
+      "ja/dictionary/kanji/u9685.json",
       "ja/dictionary/kanji/u96a3.json",
       "ja/dictionary/kanji/u96b6.json",
       "ja/dictionary/kanji/u96b9.json",
+      "ja/dictionary/kanji/u96d1.json",
+      "ja/dictionary/kanji/u96e2.json",
       "ja/dictionary/kanji/u96e3.json",
       "ja/dictionary/kanji/u96e8.json",
+      "ja/dictionary/kanji/u96f2.json",
       "ja/dictionary/kanji/u9732.json",
+      "ja/dictionary/kanji/u9759.json",
       "ja/dictionary/kanji/u975e.json",
       "ja/dictionary/kanji/u9762.json",
       "ja/dictionary/kanji/u97cb.json",
       "ja/dictionary/kanji/u97f3.json",
+      "ja/dictionary/kanji/u9801.json",
+      "ja/dictionary/kanji/u982c.json",
+      "ja/dictionary/kanji/u982d.json",
+      "ja/dictionary/kanji/u9854.json",
       "ja/dictionary/kanji/u98a8.json",
       "ja/dictionary/kanji/u98df.json",
       "ja/dictionary/kanji/u98e0.json",
       "ja/dictionary/kanji/u98ef.json",
       "ja/dictionary/kanji/u98f2.json",
+      "ja/dictionary/kanji/u9909.json",
+      "ja/dictionary/kanji/u9996.json",
       "ja/dictionary/kanji/u9999.json",
+      "ja/dictionary/kanji/u99ac.json",
+      "ja/dictionary/kanji/u9a12.json",
       "ja/dictionary/kanji/u9ad8.json",
+      "ja/dictionary/kanji/u9aea.json",
+      "ja/dictionary/kanji/u9b3c.json",
+      "ja/dictionary/kanji/u9e7f.json",
+      "ja/dictionary/kanji/u9e97.json",
       "ja/dictionary/kanji/u9f3b.json",
       "ja/dictionary/kanji/u9f62.json",
       "ja/dictionary/kanji/u9f8d.json",
@@ -561,6 +823,7 @@
       "ja/dictionary/grammar/attempt-you-to-suru.json",
       "ja/dictionary/grammar/attributive.json",
       "ja/dictionary/grammar/baai.json",
+      "ja/dictionary/grammar/bakari.json",
       "ja/dictionary/grammar/before.json",
       "ja/dictionary/grammar/benefactive-te-kureru.json",
       "ja/dictionary/grammar/causative.json",
@@ -2612,6 +2875,1886 @@
       "file": "ja/dictionary/words/group-016.json",
       "occurrencesFile": "ja/occurrences/words/group-016.json"
     },
+    "ja:word:汁物": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:すする": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:耳": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:傾ける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:食堂": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:数百": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:朝餉": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:内容": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:雑穀": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:粥": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:斜め": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:座る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:噂話": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:続ける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:気の毒": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:表情": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:輝く": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:玉葉": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:梨花": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:半年": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:お気に入り": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:生む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:宮": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:亡くなる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-017.json",
+      "occurrencesFile": "ja/occurrences/words/group-017.json"
+    },
+    "ja:word:名前": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:そう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:毒殺": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:子ども": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:箸": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:祟り": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:病気": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:遺伝": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:無口": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:話しかける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:後悔": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:皆": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:弱る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:訪問": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:回数": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:母子": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:症状": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:頭痛": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:腹痛": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:吐き気": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:甘草": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:渡す": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:甘味": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-018.json",
+      "occurrencesFile": "ja/occurrences/words/group-018.json"
+    },
+    "ja:word:知識": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:おしゃべり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:後": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:興味": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:ことあるごと": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:詳しい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:白湯": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:結論": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:決定打": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:予測": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:物事": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:茶": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:隅": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:生える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:薬臭い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:滅多": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:喜ぶ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:小蘭": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:東宮": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:身まかる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:くだらない": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-019.json",
+      "occurrencesFile": "ja/occurrences/words/group-019.json"
+    },
+    "ja:word:あーあ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:やっぱり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:妻": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:聞く": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:用事": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:離れる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:作る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:妓楼": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:馬鹿": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:知る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:洗練": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-020.json",
+      "occurrencesFile": "ja/occurrences/words/group-020.json"
+    },
+    "ja:word:ええ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:様": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:について": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:人": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:以上": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:ところ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:うわー": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:とも": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:っけ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:かしら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:ね": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:それぞれ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:闊歩": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:宮女": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:世継ぎ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:や": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:はたまた": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:いじめ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:僻み": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:悪評": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:うだる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:暑さ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:ふさわしい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:怪談": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-021.json",
+      "occurrencesFile": "ja/occurrences/words/group-021.json"
+    },
+    "ja:word:めく": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:よ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:わ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:指す": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:時代": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:一人": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:どれ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:ころ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:幼子": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:死亡率": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:高い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:当たり前": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:三人": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:おかしい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:生き残る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:含む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:至る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:うち": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:公主": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:のみ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:継承権": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:姫君": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:殺す": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:など": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-022.json",
+      "occurrencesFile": "ja/occurrences/words/group-022.json"
+    },
+    "ja:word:ほとんど": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:進める": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:だの": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:だからといって": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:一言": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:一族郎党": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:皆殺し": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:法": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:むしろ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:異端": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:しかし": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:頭": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:言い切る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:根拠": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:なんらか": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:もしかして": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:的": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:どういう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:ふう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:負ける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:しばらく": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:けど": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:だんだん": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:窓": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-023.json",
+      "occurrencesFile": "ja/occurrences/words/group-023.json"
+    },
+    "ja:word:桟": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:絞る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:雑巾": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:拭く": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:自身": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:出向く": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:病": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:重さ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:寵愛": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:性差": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:どちら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:重き": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:明白": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:さすがに": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:とか": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:すべて": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:話す": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:満足": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:お礼": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:代わり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:入り": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:強い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:とても": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:子": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-024.json",
+      "occurrencesFile": "ja/occurrences/words/group-024.json"
+    },
+    "ja:word:だけ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:その": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:まで": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:より": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:しか": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:ぐらい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:のだ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:思い当たる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:いけない": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:散々": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:どの": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:ちいと": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:ばかし": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:手早い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:一括り": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:規模": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:広大": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:常時": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:泊まり込み": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:五百": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:超える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:大部屋": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:十人": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:単位": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-031.json",
+      "occurrencesFile": "ja/occurrences/words/group-031.json"
+    },
+    "ja:word:詰め込む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:持ち": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:中妃": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:棟": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:上妃": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:庭園": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:含める": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:そこいら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:町": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:ずっと": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:広い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:持ち場": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:東側": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:言いつける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:とき": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:暇": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:いい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:上等": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:絹": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:おる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:西側": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:水質": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:差": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:人間": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-032.json",
+      "occurrencesFile": "ja/occurrences/words/group-032.json"
+    },
+    "ja:word:違い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:すぐ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:傷む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:しまう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:劣化": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:陰干し": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:必要": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:中央": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:ものすごい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:綺麗": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:ついで": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:快い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:代わる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:色恋": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:刺激": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:少ない": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:ここ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:すら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:対象": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:辞める": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:ちらほら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:女色": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:健全": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:やはり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-033.json",
+      "occurrencesFile": "ja/occurrences/words/group-033.json"
+    },
+    "ja:word:首": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:傾げる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:こう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:問いかけ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:腕": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:組む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:唸る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:足早": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:届ける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:位置": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:赤塗": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:東": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:はずれ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:手": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:込む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-034.json",
+      "occurrencesFile": "ja/occurrences/words/group-034.json"
+    },
+    "ja:word:と": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:も": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:だ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:です": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:ない": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:か": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:な": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:ん": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:て": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:ながら": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:って": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:たち": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:ばかり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:から": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:らしい": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:よう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:わけ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:こと": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:それ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:そんな": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:あの": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:おまえ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:いや": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:以前": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-041.json",
+      "occurrencesFile": "ja/occurrences/words/group-041.json"
+    },
+    "ja:word:現在": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:住む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:生母": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:ご": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:帝": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:后": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:唯一": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:最高": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:権力者": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:見える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:光景": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:さほど": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:もの": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:罵る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:うつむく": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:狼狽える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:仲裁": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:あんまり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:至極": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:冷静": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:感想": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:第三者": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:つまり": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:野次馬": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-042.json",
+      "occurrencesFile": "ja/occurrences/words/group-042.json"
+    },
+    "ja:word:加わる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:次ぐ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:存在": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:すでに": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:医師": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:ささやき": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:風貌": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:吾子": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:呪い殺す": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:気": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:顔": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:歪む": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:幽鬼": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:悪鬼": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:ごとし": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:まなざし": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:頬": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:添える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:美女": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:向ける": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:小鈴": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:同じ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:苦しむ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:赤い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-043.json",
+      "occurrencesFile": "ja/occurrences/words/group-043.json"
+    },
+    "ja:word:髪": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:翡翠": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:女性": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:答える": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:西方": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:血": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:色濃い": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:継ぐ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:上げる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:医者": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:ので": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:ほう": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:容体": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:診る": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:ものの": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:原因": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:抗議": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:母親": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:として": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:という": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:仕組み": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:優先": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:当然": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:にしてみれば": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-044.json",
+      "occurrencesFile": "ja/occurrences/words/group-044.json"
+    },
+    "ja:word:いわれ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:やぶ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:あんなに": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:近く": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:気づく": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:死亡": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:おぼつかない": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:身体": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:ぶつぶつ": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:ひとりごと": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:つぶやく": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:騒動": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:場": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:書き物": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:よって": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:通り過ぎる": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:人物": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
+    "ja:word:くれる:give": {
+      "kind": "words",
+      "file": "ja/dictionary/words/group-045.json",
+      "occurrencesFile": "ja/occurrences/words/group-045.json"
+    },
     "ja:kanji:⺌": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u2e8c.json",
@@ -2667,6 +4810,11 @@
       "file": "ja/dictionary/kanji/u31cf.json",
       "occurrencesFile": "ja/occurrences/kanji/u31cf.json"
     },
+    "ja:kanji:㔾": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u353e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u353e.json"
+    },
     "ja:kanji:㠯": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u382f.json",
@@ -2686,6 +4834,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e03.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e03.json"
+    },
+    "ja:kanji:丆": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e06.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e06.json"
     },
     "ja:kanji:三": {
       "kind": "kanji",
@@ -2712,10 +4865,20 @@
       "file": "ja/dictionary/kanji/u4e0e.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e0e.json"
     },
+    "ja:kanji:且": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e14.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e14.json"
+    },
     "ja:kanji:世": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e16.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e16.json"
+    },
+    "ja:kanji:両": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e21.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e21.json"
     },
     "ja:kanji:並": {
       "kind": "kanji",
@@ -2736,6 +4899,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e2d.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e2d.json"
+    },
+    "ja:kanji:丰": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e30.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e30.json"
     },
     "ja:kanji:串": {
       "kind": "kanji",
@@ -2777,6 +4945,11 @@
       "file": "ja/dictionary/kanji/u4e43.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e43.json"
     },
+    "ja:kanji:乍": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e4d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e4d.json"
+    },
     "ja:kanji:乙": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e59.json",
@@ -2791,6 +4964,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e5b.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e5b.json"
+    },
+    "ja:kanji:九": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e5d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e5d.json"
     },
     "ja:kanji:乞": {
       "kind": "kanji",
@@ -2837,10 +5015,20 @@
       "file": "ja/dictionary/kanji/u4e8d.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e8d.json"
     },
+    "ja:kanji:五": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e94.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e94.json"
+    },
     "ja:kanji:井": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4e95.json",
       "occurrencesFile": "ja/occurrences/kanji/u4e95.json"
+    },
+    "ja:kanji:亜": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4e9c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4e9c.json"
     },
     "ja:kanji:亟": {
       "kind": "kanji",
@@ -2857,6 +5045,21 @@
       "file": "ja/dictionary/kanji/u4ea1.json",
       "occurrencesFile": "ja/occurrences/kanji/u4ea1.json"
     },
+    "ja:kanji:亢": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ea2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ea2.json"
+    },
+    "ja:kanji:亦": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ea6.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ea6.json"
+    },
+    "ja:kanji:京": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4eac.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4eac.json"
+    },
     "ja:kanji:人": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4eba.json",
@@ -2871,6 +5074,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4eca.json",
       "occurrencesFile": "ja/occurrences/kanji/u4eca.json"
+    },
+    "ja:kanji:介": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ecb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ecb.json"
     },
     "ja:kanji:仕": {
       "kind": "kanji",
@@ -2892,10 +5100,30 @@
       "file": "ja/dictionary/kanji/u4ee3.json",
       "occurrencesFile": "ja/occurrences/kanji/u4ee3.json"
     },
+    "ja:kanji:令": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ee4.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ee4.json"
+    },
+    "ja:kanji:以": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ee5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ee5.json"
+    },
+    "ja:kanji:仲": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4ef2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4ef2.json"
+    },
     "ja:kanji:会": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4f1a.json",
       "occurrencesFile": "ja/occurrences/kanji/u4f1a.json"
+    },
+    "ja:kanji:伝": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4f1d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4f1d.json"
     },
     "ja:kanji:伽": {
       "kind": "kanji",
@@ -2927,6 +5155,16 @@
       "file": "ja/dictionary/kanji/u4f55.json",
       "occurrencesFile": "ja/occurrences/kanji/u4f55.json"
     },
+    "ja:kanji:余": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4f59.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4f59.json"
+    },
+    "ja:kanji:作": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u4f5c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u4f5c.json"
+    },
     "ja:kanji:使": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u4f7f.json",
@@ -2952,15 +5190,35 @@
       "file": "ja/dictionary/kanji/u5074.json",
       "occurrencesFile": "ja/occurrences/kanji/u5074.json"
     },
+    "ja:kanji:傷": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u50b7.json",
+      "occurrencesFile": "ja/occurrences/kanji/u50b7.json"
+    },
+    "ja:kanji:傾": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u50be.json",
+      "occurrencesFile": "ja/occurrences/kanji/u50be.json"
+    },
     "ja:kanji:働": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u50cd.json",
       "occurrencesFile": "ja/occurrences/kanji/u50cd.json"
     },
+    "ja:kanji:僻": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u50fb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u50fb.json"
+    },
     "ja:kanji:儀": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5100.json",
       "occurrencesFile": "ja/occurrences/kanji/u5100.json"
+    },
+    "ja:kanji:優": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u512a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u512a.json"
     },
     "ja:kanji:儿": {
       "kind": "kanji",
@@ -2977,20 +5235,40 @@
       "file": "ja/dictionary/kanji/u5143.json",
       "occurrencesFile": "ja/occurrences/kanji/u5143.json"
     },
+    "ja:kanji:兄": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5144.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5144.json"
+    },
     "ja:kanji:先": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5148.json",
       "occurrencesFile": "ja/occurrences/kanji/u5148.json"
+    },
+    "ja:kanji:光": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5149.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5149.json"
     },
     "ja:kanji:児": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5150.json",
       "occurrencesFile": "ja/occurrences/kanji/u5150.json"
     },
+    "ja:kanji:党": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u515a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u515a.json"
+    },
     "ja:kanji:入": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5165.json",
       "occurrencesFile": "ja/occurrences/kanji/u5165.json"
+    },
+    "ja:kanji:全": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5168.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5168.json"
     },
     "ja:kanji:八": {
       "kind": "kanji",
@@ -3002,6 +5280,16 @@
       "file": "ja/dictionary/kanji/u516c.json",
       "occurrencesFile": "ja/occurrences/kanji/u516c.json"
     },
+    "ja:kanji:共": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5171.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5171.json"
+    },
+    "ja:kanji:其": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5176.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5176.json"
+    },
     "ja:kanji:冂": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5182.json",
@@ -3011,6 +5299,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5185.json",
       "occurrencesFile": "ja/occurrences/kanji/u5185.json"
+    },
+    "ja:kanji:冊": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u518a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u518a.json"
     },
     "ja:kanji:冎": {
       "kind": "kanji",
@@ -3026,6 +5319,16 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u51ab.json",
       "occurrencesFile": "ja/occurrences/kanji/u51ab.json"
+    },
+    "ja:kanji:冬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u51ac.json",
+      "occurrencesFile": "ja/occurrences/kanji/u51ac.json"
+    },
+    "ja:kanji:冷": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u51b7.json",
+      "occurrencesFile": "ja/occurrences/kanji/u51b7.json"
     },
     "ja:kanji:几": {
       "kind": "kanji",
@@ -3077,6 +5380,11 @@
       "file": "ja/dictionary/kanji/u5236.json",
       "occurrencesFile": "ja/occurrences/kanji/u5236.json"
     },
+    "ja:kanji:刺": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u523a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u523a.json"
+    },
     "ja:kanji:前": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u524d.json",
@@ -3092,6 +5400,11 @@
       "file": "ja/dictionary/kanji/u52a0.json",
       "occurrencesFile": "ja/occurrences/kanji/u52a0.json"
     },
+    "ja:kanji:劣": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u52a3.json",
+      "occurrencesFile": "ja/occurrences/kanji/u52a3.json"
+    },
     "ja:kanji:動": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u52d5.json",
@@ -3101,6 +5414,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u52f9.json",
       "occurrencesFile": "ja/occurrences/kanji/u52f9.json"
+    },
+    "ja:kanji:勺": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u52fa.json",
+      "occurrencesFile": "ja/occurrences/kanji/u52fa.json"
     },
     "ja:kanji:勿": {
       "kind": "kanji",
@@ -3112,6 +5430,11 @@
       "file": "ja/dictionary/kanji/u5302.json",
       "occurrencesFile": "ja/occurrences/kanji/u5302.json"
     },
+    "ja:kanji:包": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5305.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5305.json"
+    },
     "ja:kanji:匕": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5315.json",
@@ -3121,6 +5444,16 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5316.json",
       "occurrencesFile": "ja/occurrences/kanji/u5316.json"
+    },
+    "ja:kanji:匚": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u531a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u531a.json"
+    },
+    "ja:kanji:医": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u533b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u533b.json"
     },
     "ja:kanji:十": {
       "kind": "kanji",
@@ -3132,10 +5465,25 @@
       "file": "ja/dictionary/kanji/u5343.json",
       "occurrencesFile": "ja/occurrences/kanji/u5343.json"
     },
+    "ja:kanji:午": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5348.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5348.json"
+    },
     "ja:kanji:半": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u534a.json",
       "occurrencesFile": "ja/occurrences/kanji/u534a.json"
+    },
+    "ja:kanji:卒": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5352.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5352.json"
+    },
+    "ja:kanji:単": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5358.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5358.json"
     },
     "ja:kanji:卜": {
       "kind": "kanji",
@@ -3152,10 +5500,20 @@
       "file": "ja/dictionary/kanji/u536c.json",
       "occurrencesFile": "ja/occurrences/kanji/u536c.json"
     },
+    "ja:kanji:卸": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5378.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5378.json"
+    },
     "ja:kanji:厂": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5382.json",
       "occurrencesFile": "ja/occurrences/kanji/u5382.json"
+    },
+    "ja:kanji:原": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u539f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u539f.json"
     },
     "ja:kanji:厶": {
       "kind": "kanji",
@@ -3177,10 +5535,25 @@
       "file": "ja/dictionary/kanji/u53ca.json",
       "occurrencesFile": "ja/occurrences/kanji/u53ca.json"
     },
+    "ja:kanji:友": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u53cb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u53cb.json"
+    },
+    "ja:kanji:反": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u53cd.json",
+      "occurrencesFile": "ja/occurrences/kanji/u53cd.json"
+    },
     "ja:kanji:受": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u53d7.json",
       "occurrencesFile": "ja/occurrences/kanji/u53d7.json"
+    },
+    "ja:kanji:叚": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u53da.json",
+      "occurrencesFile": "ja/occurrences/kanji/u53da.json"
     },
     "ja:kanji:口": {
       "kind": "kanji",
@@ -3222,15 +5595,45 @@
       "file": "ja/dictionary/kanji/u5409.json",
       "occurrencesFile": "ja/occurrences/kanji/u5409.json"
     },
+    "ja:kanji:同": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u540c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u540c.json"
+    },
     "ja:kanji:名": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u540d.json",
       "occurrencesFile": "ja/occurrences/kanji/u540d.json"
     },
+    "ja:kanji:后": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u540e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u540e.json"
+    },
+    "ja:kanji:吐": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5410.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5410.json"
+    },
     "ja:kanji:向": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5411.json",
       "occurrencesFile": "ja/occurrences/kanji/u5411.json"
+    },
+    "ja:kanji:君": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u541b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u541b.json"
+    },
+    "ja:kanji:含": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u542b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u542b.json"
+    },
+    "ja:kanji:吾": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u543e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u543e.json"
     },
     "ja:kanji:周": {
       "kind": "kanji",
@@ -3267,6 +5670,16 @@
       "file": "ja/dictionary/kanji/u5507.json",
       "occurrencesFile": "ja/occurrences/kanji/u5507.json"
     },
+    "ja:kanji:唯": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u552f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u552f.json"
+    },
+    "ja:kanji:唸": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5538.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5538.json"
+    },
     "ja:kanji:商": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5546.json",
@@ -3277,10 +5690,35 @@
       "file": "ja/dictionary/kanji/u5547.json",
       "occurrencesFile": "ja/occurrences/kanji/u5547.json"
     },
+    "ja:kanji:問": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u554f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u554f.json"
+    },
+    "ja:kanji:喜": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u559c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u559c.json"
+    },
+    "ja:kanji:噂": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5642.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5642.json"
+    },
     "ja:kanji:囗": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u56d7.json",
       "occurrencesFile": "ja/occurrences/kanji/u56d7.json"
+    },
+    "ja:kanji:回": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u56de.json",
+      "occurrencesFile": "ja/occurrences/kanji/u56de.json"
+    },
+    "ja:kanji:因": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u56e0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u56e0.json"
     },
     "ja:kanji:国": {
       "kind": "kanji",
@@ -3302,6 +5740,11 @@
       "file": "ja/dictionary/kanji/u5727.json",
       "occurrencesFile": "ja/occurrences/kanji/u5727.json"
     },
+    "ja:kanji:在": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5728.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5728.json"
+    },
     "ja:kanji:城": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u57ce.json",
@@ -3312,10 +5755,20 @@
       "file": "ja/dictionary/kanji/u57fa.json",
       "occurrencesFile": "ja/occurrences/kanji/u57fa.json"
     },
+    "ja:kanji:堂": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5802.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5802.json"
+    },
     "ja:kanji:場": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5834.json",
       "occurrencesFile": "ja/occurrences/kanji/u5834.json"
+    },
+    "ja:kanji:塗": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5857.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5857.json"
     },
     "ja:kanji:増": {
       "kind": "kanji",
@@ -3326,6 +5779,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u58eb.json",
       "occurrencesFile": "ja/occurrences/kanji/u58eb.json"
+    },
+    "ja:kanji:壬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u58ec.json",
+      "occurrencesFile": "ja/occurrences/kanji/u58ec.json"
     },
     "ja:kanji:壱": {
       "kind": "kanji",
@@ -3347,6 +5805,11 @@
       "file": "ja/dictionary/kanji/u5909.json",
       "occurrencesFile": "ja/occurrences/kanji/u5909.json"
     },
+    "ja:kanji:复": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u590d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u590d.json"
+    },
     "ja:kanji:夕": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5915.json",
@@ -3356,6 +5819,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5916.json",
       "occurrencesFile": "ja/occurrences/kanji/u5916.json"
+    },
+    "ja:kanji:多": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u591a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u591a.json"
     },
     "ja:kanji:夜": {
       "kind": "kanji",
@@ -3372,10 +5840,35 @@
       "file": "ja/dictionary/kanji/u5929.json",
       "occurrencesFile": "ja/occurrences/kanji/u5929.json"
     },
+    "ja:kanji:夫": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u592b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u592b.json"
+    },
+    "ja:kanji:夬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u592c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u592c.json"
+    },
+    "ja:kanji:夭": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u592d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u592d.json"
+    },
+    "ja:kanji:央": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u592e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u592e.json"
+    },
     "ja:kanji:失": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5931.json",
       "occurrencesFile": "ja/occurrences/kanji/u5931.json"
+    },
+    "ja:kanji:夾": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u593e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u593e.json"
     },
     "ja:kanji:奇": {
       "kind": "kanji",
@@ -3402,6 +5895,11 @@
       "file": "ja/dictionary/kanji/u5983.json",
       "occurrencesFile": "ja/occurrences/kanji/u5983.json"
     },
+    "ja:kanji:妓": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5993.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5993.json"
+    },
     "ja:kanji:妙": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5999.json",
@@ -3411,6 +5909,16 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u59a5.json",
       "occurrencesFile": "ja/occurrences/kanji/u59a5.json"
+    },
+    "ja:kanji:妻": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u59bb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u59bb.json"
+    },
+    "ja:kanji:姫": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u59eb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u59eb.json"
     },
     "ja:kanji:姿": {
       "kind": "kanji",
@@ -3442,6 +5950,16 @@
       "file": "ja/dictionary/kanji/u5b57.json",
       "occurrencesFile": "ja/occurrences/kanji/u5b57.json"
     },
+    "ja:kanji:存": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5b58.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5b58.json"
+    },
+    "ja:kanji:孝": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5b5d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5b5d.json"
+    },
     "ja:kanji:宀": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5b80.json",
@@ -3456,6 +5974,16 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5b98.json",
       "occurrencesFile": "ja/occurrences/kanji/u5b98.json"
+    },
+    "ja:kanji:定": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5b9a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5b9a.json"
+    },
+    "ja:kanji:宛": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5b9b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5b9b.json"
     },
     "ja:kanji:実": {
       "kind": "kanji",
@@ -3492,10 +6020,25 @@
       "file": "ja/dictionary/kanji/u5bb9.json",
       "occurrencesFile": "ja/occurrences/kanji/u5bb9.json"
     },
+    "ja:kanji:寵": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5bf5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5bf5.json"
+    },
     "ja:kanji:寸": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5bf8.json",
       "occurrencesFile": "ja/occurrences/kanji/u5bf8.json"
+    },
+    "ja:kanji:寺": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5bfa.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5bfa.json"
+    },
+    "ja:kanji:対": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5bfe.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5bfe.json"
     },
     "ja:kanji:専": {
       "kind": "kanji",
@@ -3537,6 +6080,11 @@
       "file": "ja/dictionary/kanji/u5c38.json",
       "occurrencesFile": "ja/occurrences/kanji/u5c38.json"
     },
+    "ja:kanji:届": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5c4a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5c4a.json"
+    },
     "ja:kanji:屋": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5c4b.json",
@@ -3557,6 +6105,11 @@
       "file": "ja/dictionary/kanji/u5de5.json",
       "occurrencesFile": "ja/occurrences/kanji/u5de5.json"
     },
+    "ja:kanji:差": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5dee.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5dee.json"
+    },
     "ja:kanji:己": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5df1.json",
@@ -3566,6 +6119,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5df2.json",
       "occurrencesFile": "ja/occurrences/kanji/u5df2.json"
+    },
+    "ja:kanji:巴": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5df4.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5df4.json"
     },
     "ja:kanji:巾": {
       "kind": "kanji",
@@ -3591,6 +6149,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5e2f.json",
       "occurrencesFile": "ja/occurrences/kanji/u5e2f.json"
+    },
+    "ja:kanji:常": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5e38.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5e38.json"
     },
     "ja:kanji:干": {
       "kind": "kanji",
@@ -3622,10 +6185,20 @@
       "file": "ja/dictionary/kanji/u5e7c.json",
       "occurrencesFile": "ja/occurrences/kanji/u5e7c.json"
     },
+    "ja:kanji:幽": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5e7d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5e7d.json"
+    },
     "ja:kanji:广": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5e7f.json",
       "occurrencesFile": "ja/occurrences/kanji/u5e7f.json"
+    },
+    "ja:kanji:広": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5e83.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5e83.json"
     },
     "ja:kanji:底": {
       "kind": "kanji",
@@ -3637,6 +6210,11 @@
       "file": "ja/dictionary/kanji/u5ea6.json",
       "occurrencesFile": "ja/occurrences/kanji/u5ea6.json"
     },
+    "ja:kanji:座": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5ea7.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5ea7.json"
+    },
     "ja:kanji:庭": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5ead.json",
@@ -3646,6 +6224,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5eb7.json",
       "occurrencesFile": "ja/occurrences/kanji/u5eb7.json"
+    },
+    "ja:kanji:廛": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5edb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5edb.json"
     },
     "ja:kanji:廴": {
       "kind": "kanji",
@@ -3667,6 +6250,11 @@
       "file": "ja/dictionary/kanji/u5efe.json",
       "occurrencesFile": "ja/occurrences/kanji/u5efe.json"
     },
+    "ja:kanji:廿": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5eff.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5eff.json"
+    },
     "ja:kanji:弊": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5f0a.json",
@@ -3686,6 +6274,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5f13.json",
       "occurrencesFile": "ja/occurrences/kanji/u5f13.json"
+    },
+    "ja:kanji:弱": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5f31.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5f31.json"
     },
     "ja:kanji:張": {
       "kind": "kanji",
@@ -3722,6 +6315,11 @@
       "file": "ja/dictionary/kanji/u5f61.json",
       "occurrencesFile": "ja/occurrences/kanji/u5f61.json"
     },
+    "ja:kanji:彦": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5f66.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5f66.json"
+    },
     "ja:kanji:彳": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5f73.json",
@@ -3747,10 +6345,20 @@
       "file": "ja/dictionary/kanji/u5fc4.json",
       "occurrencesFile": "ja/occurrences/kanji/u5fc4.json"
     },
+    "ja:kanji:必": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5fc5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5fc5.json"
+    },
     "ja:kanji:忙": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u5fd9.json",
       "occurrencesFile": "ja/occurrences/kanji/u5fd9.json"
+    },
+    "ja:kanji:快": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u5feb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u5feb.json"
     },
     "ja:kanji:念": {
       "kind": "kanji",
@@ -3772,6 +6380,11 @@
       "file": "ja/dictionary/kanji/u602a.json",
       "occurrencesFile": "ja/occurrences/kanji/u602a.json"
     },
+    "ja:kanji:恋": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u604b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u604b.json"
+    },
     "ja:kanji:恐": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6050.json",
@@ -3782,10 +6395,20 @@
       "file": "ja/dictionary/kanji/u606f.json",
       "occurrencesFile": "ja/occurrences/kanji/u606f.json"
     },
+    "ja:kanji:悔": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6094.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6094.json"
+    },
     "ja:kanji:悪": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u60aa.json",
       "occurrencesFile": "ja/occurrences/kanji/u60aa.json"
+    },
+    "ja:kanji:情": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u60c5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u60c5.json"
     },
     "ja:kanji:惑": {
       "kind": "kanji",
@@ -3812,10 +6435,20 @@
       "file": "ja/dictionary/kanji/u611f.json",
       "occurrencesFile": "ja/occurrences/kanji/u611f.json"
     },
+    "ja:kanji:憂": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6182.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6182.json"
+    },
     "ja:kanji:戈": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6208.json",
       "occurrencesFile": "ja/occurrences/kanji/u6208.json"
+    },
+    "ja:kanji:戉": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6209.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6209.json"
     },
     "ja:kanji:戊": {
       "kind": "kanji",
@@ -3826,6 +6459,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6210.json",
       "occurrencesFile": "ja/occurrences/kanji/u6210.json"
+    },
+    "ja:kanji:我": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6211.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6211.json"
     },
     "ja:kanji:戸": {
       "kind": "kanji",
@@ -3857,15 +6495,35 @@
       "file": "ja/dictionary/kanji/u624c.json",
       "occurrencesFile": "ja/occurrences/kanji/u624c.json"
     },
+    "ja:kanji:才": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u624d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u624d.json"
+    },
     "ja:kanji:扎": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u624e.json",
       "occurrencesFile": "ja/occurrences/kanji/u624e.json"
     },
+    "ja:kanji:打": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6253.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6253.json"
+    },
+    "ja:kanji:承": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u627f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u627f.json"
+    },
     "ja:kanji:抑": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6291.json",
       "occurrencesFile": "ja/occurrences/kanji/u6291.json"
+    },
+    "ja:kanji:抗": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6297.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6297.json"
     },
     "ja:kanji:折": {
       "kind": "kanji",
@@ -3876,6 +6534,21 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u62b1.json",
       "occurrencesFile": "ja/occurrences/kanji/u62b1.json"
+    },
+    "ja:kanji:拠": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u62e0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u62e0.json"
+    },
+    "ja:kanji:括": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u62ec.json",
+      "occurrencesFile": "ja/occurrences/kanji/u62ec.json"
+    },
+    "ja:kanji:拭": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u62ed.json",
+      "occurrencesFile": "ja/occurrences/kanji/u62ed.json"
     },
     "ja:kanji:持": {
       "kind": "kanji",
@@ -3912,10 +6585,25 @@
       "file": "ja/dictionary/kanji/u652f.json",
       "occurrencesFile": "ja/occurrences/kanji/u652f.json"
     },
+    "ja:kanji:攵": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6535.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6535.json"
+    },
     "ja:kanji:教": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6559.json",
       "occurrencesFile": "ja/occurrences/kanji/u6559.json"
+    },
+    "ja:kanji:敝": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u655d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u655d.json"
+    },
+    "ja:kanji:散": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6563.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6563.json"
     },
     "ja:kanji:数": {
       "kind": "kanji",
@@ -3927,6 +6615,16 @@
       "file": "ja/dictionary/kanji/u6587.json",
       "occurrencesFile": "ja/occurrences/kanji/u6587.json"
     },
+    "ja:kanji:斉": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6589.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6589.json"
+    },
+    "ja:kanji:斜": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u659c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u659c.json"
+    },
     "ja:kanji:斤": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u65a4.json",
@@ -3937,15 +6635,55 @@
       "file": "ja/dictionary/kanji/u65b9.json",
       "occurrencesFile": "ja/occurrences/kanji/u65b9.json"
     },
+    "ja:kanji:族": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u65cf.json",
+      "occurrencesFile": "ja/occurrences/kanji/u65cf.json"
+    },
     "ja:kanji:日": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u65e5.json",
       "occurrencesFile": "ja/occurrences/kanji/u65e5.json"
     },
+    "ja:kanji:早": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u65e9.json",
+      "occurrencesFile": "ja/occurrences/kanji/u65e9.json"
+    },
+    "ja:kanji:明": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u660e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u660e.json"
+    },
+    "ja:kanji:易": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6613.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6613.json"
+    },
+    "ja:kanji:春": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6625.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6625.json"
+    },
+    "ja:kanji:時": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6642.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6642.json"
+    },
     "ja:kanji:景": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u666f.json",
       "occurrencesFile": "ja/occurrences/kanji/u666f.json"
+    },
+    "ja:kanji:暇": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6687.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6687.json"
+    },
+    "ja:kanji:暑": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6691.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6691.json"
     },
     "ja:kanji:暴": {
       "kind": "kanji",
@@ -3957,10 +6695,20 @@
       "file": "ja/dictionary/kanji/u66c7.json",
       "occurrencesFile": "ja/occurrences/kanji/u66c7.json"
     },
+    "ja:kanji:曲": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u66f2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u66f2.json"
+    },
     "ja:kanji:書": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u66f8.json",
       "occurrencesFile": "ja/occurrences/kanji/u66f8.json"
+    },
+    "ja:kanji:曾": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u66fe.json",
+      "occurrencesFile": "ja/occurrences/kanji/u66fe.json"
     },
     "ja:kanji:最": {
       "kind": "kanji",
@@ -3981,6 +6729,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6728.json",
       "occurrencesFile": "ja/occurrences/kanji/u6728.json"
+    },
+    "ja:kanji:未": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u672a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u672a.json"
     },
     "ja:kanji:本": {
       "kind": "kanji",
@@ -4012,6 +6765,11 @@
       "file": "ja/dictionary/kanji/u6770.json",
       "occurrencesFile": "ja/occurrences/kanji/u6770.json"
     },
+    "ja:kanji:東": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6771.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6771.json"
+    },
     "ja:kanji:枝": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u679d.json",
@@ -4022,15 +6780,40 @@
       "file": "ja/dictionary/kanji/u67af.json",
       "occurrencesFile": "ja/occurrences/kanji/u67af.json"
     },
+    "ja:kanji:柬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u67ec.json",
+      "occurrencesFile": "ja/occurrences/kanji/u67ec.json"
+    },
     "ja:kanji:柱": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u67f1.json",
       "occurrencesFile": "ja/occurrences/kanji/u67f1.json"
     },
+    "ja:kanji:根": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6839.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6839.json"
+    },
+    "ja:kanji:桟": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u685f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u685f.json"
+    },
     "ja:kanji:梅": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6885.json",
       "occurrencesFile": "ja/occurrences/kanji/u6885.json"
+    },
+    "ja:kanji:梨": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u68a8.json",
+      "occurrencesFile": "ja/occurrences/kanji/u68a8.json"
+    },
+    "ja:kanji:棟": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u68df.json",
+      "occurrencesFile": "ja/occurrences/kanji/u68df.json"
     },
     "ja:kanji:森": {
       "kind": "kanji",
@@ -4046,6 +6829,21 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6975.json",
       "occurrencesFile": "ja/occurrences/kanji/u6975.json"
+    },
+    "ja:kanji:楼": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u697c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u697c.json"
+    },
+    "ja:kanji:楽": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u697d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u697d.json"
+    },
+    "ja:kanji:様": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u69d8.json",
+      "occurrencesFile": "ja/occurrences/kanji/u69d8.json"
     },
     "ja:kanji:模": {
       "kind": "kanji",
@@ -4137,6 +6935,11 @@
       "file": "ja/dictionary/kanji/u6bcd.json",
       "occurrencesFile": "ja/occurrences/kanji/u6bcd.json"
     },
+    "ja:kanji:毎": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6bce.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6bce.json"
+    },
     "ja:kanji:毒": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6bd2.json",
@@ -4172,6 +6975,11 @@
       "file": "ja/dictionary/kanji/u6c35.json",
       "occurrencesFile": "ja/occurrences/kanji/u6c35.json"
     },
+    "ja:kanji:永": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6c38.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6c38.json"
+    },
     "ja:kanji:氺": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6c3a.json",
@@ -4186,6 +6994,21 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6c5a.json",
       "occurrencesFile": "ja/occurrences/kanji/u6c5a.json"
+    },
+    "ja:kanji:決": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6c7a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6c7a.json"
+    },
+    "ja:kanji:泊": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6cca.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6cca.json"
+    },
+    "ja:kanji:法": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6cd5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6cd5.json"
     },
     "ja:kanji:泣": {
       "kind": "kanji",
@@ -4212,10 +7035,30 @@
       "file": "ja/dictionary/kanji/u6d6e.json",
       "occurrencesFile": "ja/occurrences/kanji/u6d6e.json"
     },
+    "ja:kanji:添": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6dfb.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6dfb.json"
+    },
     "ja:kanji:済": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6e08.json",
       "occurrencesFile": "ja/occurrences/kanji/u6e08.json"
+    },
+    "ja:kanji:渡": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6e21.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6e21.json"
+    },
+    "ja:kanji:測": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6e2c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6e2c.json"
+    },
+    "ja:kanji:湯": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6e6f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6e6f.json"
     },
     "ja:kanji:満": {
       "kind": "kanji",
@@ -4226,6 +7069,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6e9c.json",
       "occurrencesFile": "ja/occurrences/kanji/u6e9c.json"
+    },
+    "ja:kanji:滅": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6ec5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6ec5.json"
     },
     "ja:kanji:滴": {
       "kind": "kanji",
@@ -4242,10 +7090,20 @@
       "file": "ja/dictionary/kanji/u6fb1.json",
       "occurrencesFile": "ja/occurrences/kanji/u6fb1.json"
     },
+    "ja:kanji:激": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6fc0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6fc0.json"
+    },
     "ja:kanji:濁": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u6fc1.json",
       "occurrencesFile": "ja/occurrences/kanji/u6fc1.json"
+    },
+    "ja:kanji:濃": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u6fc3.json",
+      "occurrencesFile": "ja/occurrences/kanji/u6fc3.json"
     },
     "ja:kanji:濯": {
       "kind": "kanji",
@@ -4267,6 +7125,11 @@
       "file": "ja/dictionary/kanji/u7121.json",
       "occurrencesFile": "ja/occurrences/kanji/u7121.json"
     },
+    "ja:kanji:然": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7136.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7136.json"
+    },
     "ja:kanji:焼": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u713c.json",
@@ -4286,6 +7149,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u722b.json",
       "occurrencesFile": "ja/occurrences/kanji/u722b.json"
+    },
+    "ja:kanji:爿": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u723f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u723f.json"
     },
     "ja:kanji:牛": {
       "kind": "kanji",
@@ -4312,6 +7180,11 @@
       "file": "ja/dictionary/kanji/u7279.json",
       "occurrencesFile": "ja/occurrences/kanji/u7279.json"
     },
+    "ja:kanji:犬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u72ac.json",
+      "occurrencesFile": "ja/occurrences/kanji/u72ac.json"
+    },
     "ja:kanji:犭": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u72ad.json",
@@ -4322,10 +7195,25 @@
       "file": "ja/dictionary/kanji/u72af.json",
       "occurrencesFile": "ja/occurrences/kanji/u72af.json"
     },
+    "ja:kanji:状": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u72b6.json",
+      "occurrencesFile": "ja/occurrences/kanji/u72b6.json"
+    },
     "ja:kanji:狩": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u72e9.json",
       "occurrencesFile": "ja/occurrences/kanji/u72e9.json"
+    },
+    "ja:kanji:狼": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u72fc.json",
+      "occurrencesFile": "ja/occurrences/kanji/u72fc.json"
+    },
+    "ja:kanji:狽": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u72fd.json",
+      "occurrencesFile": "ja/occurrences/kanji/u72fd.json"
     },
     "ja:kanji:猫": {
       "kind": "kanji",
@@ -4342,10 +7230,20 @@
       "file": "ja/dictionary/kanji/u7387.json",
       "occurrencesFile": "ja/occurrences/kanji/u7387.json"
     },
+    "ja:kanji:玉": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7389.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7389.json"
+    },
     "ja:kanji:王": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u738b.json",
       "occurrencesFile": "ja/occurrences/kanji/u738b.json"
+    },
+    "ja:kanji:現": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u73fe.json",
+      "occurrencesFile": "ja/occurrences/kanji/u73fe.json"
     },
     "ja:kanji:理": {
       "kind": "kanji",
@@ -4362,10 +7260,25 @@
       "file": "ja/dictionary/kanji/u751f.json",
       "occurrencesFile": "ja/occurrences/kanji/u751f.json"
     },
+    "ja:kanji:産": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7523.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7523.json"
+    },
     "ja:kanji:用": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7528.json",
       "occurrencesFile": "ja/occurrences/kanji/u7528.json"
+    },
+    "ja:kanji:甫": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u752b.json",
+      "occurrencesFile": "ja/occurrences/kanji/u752b.json"
+    },
+    "ja:kanji:甬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u752c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u752c.json"
     },
     "ja:kanji:田": {
       "kind": "kanji",
@@ -4381,6 +7294,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7537.json",
       "occurrencesFile": "ja/occurrences/kanji/u7537.json"
+    },
+    "ja:kanji:町": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u753a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u753a.json"
     },
     "ja:kanji:界": {
       "kind": "kanji",
@@ -4402,6 +7320,11 @@
       "file": "ja/dictionary/kanji/u756a.json",
       "occurrencesFile": "ja/occurrences/kanji/u756a.json"
     },
+    "ja:kanji:異": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7570.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7570.json"
+    },
     "ja:kanji:畳": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7573.json",
@@ -4411,6 +7334,21 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7592.json",
       "occurrencesFile": "ja/occurrences/kanji/u7592.json"
+    },
+    "ja:kanji:病": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u75c5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u75c5.json"
+    },
+    "ja:kanji:症": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u75c7.json",
+      "occurrencesFile": "ja/occurrences/kanji/u75c7.json"
+    },
+    "ja:kanji:痛": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u75db.json",
+      "occurrencesFile": "ja/occurrences/kanji/u75db.json"
     },
     "ja:kanji:瘴": {
       "kind": "kanji",
@@ -4422,20 +7360,40 @@
       "file": "ja/dictionary/kanji/u767d.json",
       "occurrencesFile": "ja/occurrences/kanji/u767d.json"
     },
+    "ja:kanji:百": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u767e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u767e.json"
+    },
     "ja:kanji:的": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7684.json",
       "occurrencesFile": "ja/occurrences/kanji/u7684.json"
+    },
+    "ja:kanji:皆": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7686.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7686.json"
     },
     "ja:kanji:皇": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7687.json",
       "occurrencesFile": "ja/occurrences/kanji/u7687.json"
     },
+    "ja:kanji:皿": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u76bf.json",
+      "occurrencesFile": "ja/occurrences/kanji/u76bf.json"
+    },
     "ja:kanji:目": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u76ee.json",
       "occurrencesFile": "ja/occurrences/kanji/u76ee.json"
+    },
+    "ja:kanji:直": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u76f4.json",
+      "occurrencesFile": "ja/occurrences/kanji/u76f4.json"
     },
     "ja:kanji:相": {
       "kind": "kanji",
@@ -4482,10 +7440,20 @@
       "file": "ja/dictionary/kanji/u793c.json",
       "occurrencesFile": "ja/occurrences/kanji/u793c.json"
     },
+    "ja:kanji:祟": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u795f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u795f.json"
+    },
     "ja:kanji:禁": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7981.json",
       "occurrencesFile": "ja/occurrences/kanji/u7981.json"
+    },
+    "ja:kanji:禸": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u79b8.json",
+      "occurrencesFile": "ja/occurrences/kanji/u79b8.json"
     },
     "ja:kanji:禾": {
       "kind": "kanji",
@@ -4507,6 +7475,11 @@
       "file": "ja/dictionary/kanji/u7a3c.json",
       "occurrencesFile": "ja/occurrences/kanji/u7a3c.json"
     },
+    "ja:kanji:穀": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7a40.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7a40.json"
+    },
     "ja:kanji:穴": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7a74.json",
@@ -4517,10 +7490,20 @@
       "file": "ja/dictionary/kanji/u7a7a.json",
       "occurrencesFile": "ja/occurrences/kanji/u7a7a.json"
     },
+    "ja:kanji:窓": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7a93.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7a93.json"
+    },
     "ja:kanji:立": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7acb.json",
       "occurrencesFile": "ja/occurrences/kanji/u7acb.json"
+    },
+    "ja:kanji:章": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7ae0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7ae0.json"
     },
     "ja:kanji:端": {
       "kind": "kanji",
@@ -4537,6 +7520,26 @@
       "file": "ja/dictionary/kanji/u7b11.json",
       "occurrencesFile": "ja/occurrences/kanji/u7b11.json"
     },
+    "ja:kanji:第": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7b2c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7b2c.json"
+    },
+    "ja:kanji:等": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7b49.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7b49.json"
+    },
+    "ja:kanji:答": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7b54.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7b54.json"
+    },
+    "ja:kanji:箸": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7bb8.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7bb8.json"
+    },
     "ja:kanji:籠": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7c60.json",
@@ -4546,6 +7549,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7c73.json",
       "occurrencesFile": "ja/occurrences/kanji/u7c73.json"
+    },
+    "ja:kanji:粥": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7ca5.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7ca5.json"
     },
     "ja:kanji:粧": {
       "kind": "kanji",
@@ -4567,10 +7575,20 @@
       "file": "ja/dictionary/kanji/u7d42.json",
       "occurrencesFile": "ja/occurrences/kanji/u7d42.json"
     },
+    "ja:kanji:組": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7d44.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7d44.json"
+    },
     "ja:kanji:結": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7d50.json",
       "occurrencesFile": "ja/occurrences/kanji/u7d50.json"
+    },
+    "ja:kanji:絞": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7d5e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7d5e.json"
     },
     "ja:kanji:絢": {
       "kind": "kanji",
@@ -4587,10 +7605,30 @@
       "file": "ja/dictionary/kanji/u7d75.json",
       "occurrencesFile": "ja/occurrences/kanji/u7d75.json"
     },
+    "ja:kanji:絹": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7d79.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7d79.json"
+    },
+    "ja:kanji:継": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7d99.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7d99.json"
+    },
     "ja:kanji:続": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7d9a.json",
       "occurrencesFile": "ja/occurrences/kanji/u7d9a.json"
+    },
+    "ja:kanji:綺": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7dba.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7dba.json"
+    },
+    "ja:kanji:練": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7df4.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7df4.json"
     },
     "ja:kanji:縁": {
       "kind": "kanji",
@@ -4602,6 +7640,11 @@
       "file": "ja/dictionary/kanji/u7e8f.json",
       "occurrencesFile": "ja/occurrences/kanji/u7e8f.json"
     },
+    "ja:kanji:缶": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7f36.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7f36.json"
+    },
     "ja:kanji:罒": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7f52.json",
@@ -4611,6 +7654,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u7f6e.json",
       "occurrencesFile": "ja/occurrences/kanji/u7f6e.json"
+    },
+    "ja:kanji:罵": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7f75.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7f75.json"
     },
     "ja:kanji:羊": {
       "kind": "kanji",
@@ -4637,10 +7685,25 @@
       "file": "ja/dictionary/kanji/u7fdf.json",
       "occurrencesFile": "ja/occurrences/kanji/u7fdf.json"
     },
+    "ja:kanji:翠": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7fe0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7fe0.json"
+    },
+    "ja:kanji:翡": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u7fe1.json",
+      "occurrencesFile": "ja/occurrences/kanji/u7fe1.json"
+    },
     "ja:kanji:老": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8001.json",
       "occurrencesFile": "ja/occurrences/kanji/u8001.json"
+    },
+    "ja:kanji:耂": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8002.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8002.json"
     },
     "ja:kanji:考": {
       "kind": "kanji",
@@ -4661,6 +7724,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8033.json",
       "occurrencesFile": "ja/occurrences/kanji/u8033.json"
+    },
+    "ja:kanji:聞": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u805e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u805e.json"
     },
     "ja:kanji:職": {
       "kind": "kanji",
@@ -4687,6 +7755,16 @@
       "file": "ja/dictionary/kanji/u80fd.json",
       "occurrencesFile": "ja/occurrences/kanji/u80fd.json"
     },
+    "ja:kanji:腕": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8155.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8155.json"
+    },
+    "ja:kanji:腹": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8179.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8179.json"
+    },
     "ja:kanji:臣": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u81e3.json",
@@ -4697,10 +7775,25 @@
       "file": "ja/dictionary/kanji/u81ea.json",
       "occurrencesFile": "ja/occurrences/kanji/u81ea.json"
     },
+    "ja:kanji:臭": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u81ed.json",
+      "occurrencesFile": "ja/occurrences/kanji/u81ed.json"
+    },
     "ja:kanji:至": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u81f3.json",
       "occurrencesFile": "ja/occurrences/kanji/u81f3.json"
+    },
+    "ja:kanji:臼": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u81fc.json",
+      "occurrencesFile": "ja/occurrences/kanji/u81fc.json"
+    },
+    "ja:kanji:興": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8208.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8208.json"
     },
     "ja:kanji:舌": {
       "kind": "kanji",
@@ -4722,6 +7815,16 @@
       "file": "ja/dictionary/kanji/u826e.json",
       "occurrencesFile": "ja/occurrences/kanji/u826e.json"
     },
+    "ja:kanji:良": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u826f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u826f.json"
+    },
+    "ja:kanji:色": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8272.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8272.json"
+    },
     "ja:kanji:艹": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8279.json",
@@ -4742,15 +7845,35 @@
       "file": "ja/dictionary/kanji/u82d7.json",
       "occurrencesFile": "ja/occurrences/kanji/u82d7.json"
     },
+    "ja:kanji:苦": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u82e6.json",
+      "occurrencesFile": "ja/occurrences/kanji/u82e6.json"
+    },
+    "ja:kanji:茶": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8336.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8336.json"
+    },
     "ja:kanji:草": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8349.json",
       "occurrencesFile": "ja/occurrences/kanji/u8349.json"
     },
+    "ja:kanji:莫": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u83ab.json",
+      "occurrencesFile": "ja/occurrences/kanji/u83ab.json"
+    },
     "ja:kanji:華": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u83ef.json",
       "occurrencesFile": "ja/occurrences/kanji/u83ef.json"
+    },
+    "ja:kanji:葉": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8449.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8449.json"
     },
     "ja:kanji:薄": {
       "kind": "kanji",
@@ -4761,6 +7884,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u85ac.json",
       "occurrencesFile": "ja/occurrences/kanji/u85ac.json"
+    },
+    "ja:kanji:蘭": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u862d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u862d.json"
     },
     "ja:kanji:虫": {
       "kind": "kanji",
@@ -4807,15 +7935,40 @@
       "file": "ja/dictionary/kanji/u8881.json",
       "occurrencesFile": "ja/occurrences/kanji/u8881.json"
     },
+    "ja:kanji:裁": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u88c1.json",
+      "occurrencesFile": "ja/occurrences/kanji/u88c1.json"
+    },
     "ja:kanji:西": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u897f.json",
       "occurrencesFile": "ja/occurrences/kanji/u897f.json"
     },
+    "ja:kanji:覀": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8980.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8980.json"
+    },
+    "ja:kanji:要": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8981.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8981.json"
+    },
     "ja:kanji:見": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u898b.json",
       "occurrencesFile": "ja/occurrences/kanji/u898b.json"
+    },
+    "ja:kanji:規": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u898f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u898f.json"
+    },
+    "ja:kanji:親": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u89aa.json",
+      "occurrencesFile": "ja/occurrences/kanji/u89aa.json"
     },
     "ja:kanji:観": {
       "kind": "kanji",
@@ -4827,20 +7980,45 @@
       "file": "ja/dictionary/kanji/u8a00.json",
       "occurrencesFile": "ja/occurrences/kanji/u8a00.json"
     },
+    "ja:kanji:訪": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8a2a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8a2a.json"
+    },
     "ja:kanji:許": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8a31.json",
       "occurrencesFile": "ja/occurrences/kanji/u8a31.json"
+    },
+    "ja:kanji:診": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8a3a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8a3a.json"
+    },
+    "ja:kanji:評": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8a55.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8a55.json"
     },
     "ja:kanji:詮": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8a6e.json",
       "occurrencesFile": "ja/occurrences/kanji/u8a6e.json"
     },
+    "ja:kanji:詰": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8a70.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8a70.json"
+    },
     "ja:kanji:話": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8a71.json",
       "occurrencesFile": "ja/occurrences/kanji/u8a71.json"
+    },
+    "ja:kanji:詳": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8a73.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8a73.json"
     },
     "ja:kanji:誉": {
       "kind": "kanji",
@@ -4857,10 +8035,25 @@
       "file": "ja/dictionary/kanji/u8abf.json",
       "occurrencesFile": "ja/occurrences/kanji/u8abf.json"
     },
+    "ja:kanji:談": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8ac7.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8ac7.json"
+    },
+    "ja:kanji:論": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8ad6.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8ad6.json"
+    },
     "ja:kanji:識": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8b58.json",
       "occurrencesFile": "ja/occurrences/kanji/u8b58.json"
+    },
+    "ja:kanji:議": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8b70.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8b70.json"
     },
     "ja:kanji:谷": {
       "kind": "kanji",
@@ -4882,15 +8075,30 @@
       "file": "ja/dictionary/kanji/u8c55.json",
       "occurrencesFile": "ja/occurrences/kanji/u8c55.json"
     },
+    "ja:kanji:象": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8c61.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8c61.json"
+    },
     "ja:kanji:豪": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8c6a.json",
       "occurrencesFile": "ja/occurrences/kanji/u8c6a.json"
     },
+    "ja:kanji:貌": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8c8c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8c8c.json"
+    },
     "ja:kanji:貝": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8c9d.json",
       "occurrencesFile": "ja/occurrences/kanji/u8c9d.json"
+    },
+    "ja:kanji:負": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8ca0.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8ca0.json"
     },
     "ja:kanji:貴": {
       "kind": "kanji",
@@ -4902,6 +8110,11 @@
       "file": "ja/dictionary/kanji/u8cb7.json",
       "occurrencesFile": "ja/occurrences/kanji/u8cb7.json"
     },
+    "ja:kanji:賓": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8cd3.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8cd3.json"
+    },
     "ja:kanji:賜": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8cdc.json",
@@ -4911,6 +8124,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8cea.json",
       "occurrencesFile": "ja/occurrences/kanji/u8cea.json"
+    },
+    "ja:kanji:赤": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8d64.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8d64.json"
     },
     "ja:kanji:走": {
       "kind": "kanji",
@@ -4952,15 +8170,35 @@
       "file": "ja/dictionary/kanji/u8efd.json",
       "occurrencesFile": "ja/occurrences/kanji/u8efd.json"
     },
+    "ja:kanji:輝": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8f1d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8f1d.json"
+    },
     "ja:kanji:辛": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8f9b.json",
       "occurrencesFile": "ja/occurrences/kanji/u8f9b.json"
     },
+    "ja:kanji:辞": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8f9e.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8f9e.json"
+    },
+    "ja:kanji:辟": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8f9f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8f9f.json"
+    },
     "ja:kanji:辰": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u8fb0.json",
       "occurrencesFile": "ja/occurrences/kanji/u8fb0.json"
+    },
+    "ja:kanji:農": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u8fb2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u8fb2.json"
     },
     "ja:kanji:辶": {
       "kind": "kanji",
@@ -4992,10 +8230,20 @@
       "file": "ja/dictionary/kanji/u8ff7.json",
       "occurrencesFile": "ja/occurrences/kanji/u8ff7.json"
     },
+    "ja:kanji:通": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u901a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u901a.json"
+    },
     "ja:kanji:連": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u9023.json",
       "occurrencesFile": "ja/occurrences/kanji/u9023.json"
+    },
+    "ja:kanji:進": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9032.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9032.json"
     },
     "ja:kanji:運": {
       "kind": "kanji",
@@ -5022,10 +8270,20 @@
       "file": "ja/dictionary/kanji/u9069.json",
       "occurrencesFile": "ja/occurrences/kanji/u9069.json"
     },
+    "ja:kanji:遺": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u907a.json",
+      "occurrencesFile": "ja/occurrences/kanji/u907a.json"
+    },
     "ja:kanji:邦": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u90a6.json",
       "occurrencesFile": "ja/occurrences/kanji/u90a6.json"
+    },
+    "ja:kanji:郎": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u90ce.json",
+      "occurrencesFile": "ja/occurrences/kanji/u90ce.json"
     },
     "ja:kanji:部": {
       "kind": "kanji",
@@ -5057,6 +8315,11 @@
       "file": "ja/dictionary/kanji/u91cd.json",
       "occurrencesFile": "ja/occurrences/kanji/u91cd.json"
     },
+    "ja:kanji:野": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u91ce.json",
+      "occurrencesFile": "ja/occurrences/kanji/u91ce.json"
+    },
     "ja:kanji:量": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u91cf.json",
@@ -5066,6 +8329,11 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u91d1.json",
       "occurrencesFile": "ja/occurrences/kanji/u91d1.json"
+    },
+    "ja:kanji:鈴": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9234.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9234.json"
     },
     "ja:kanji:長": {
       "kind": "kanji",
@@ -5082,10 +8350,20 @@
       "file": "ja/dictionary/kanji/u958b.json",
       "occurrencesFile": "ja/occurrences/kanji/u958b.json"
     },
+    "ja:kanji:間": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9593.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9593.json"
+    },
     "ja:kanji:関": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u95a2.json",
       "occurrencesFile": "ja/occurrences/kanji/u95a2.json"
+    },
+    "ja:kanji:闊": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u95ca.json",
+      "occurrencesFile": "ja/occurrences/kanji/u95ca.json"
     },
     "ja:kanji:阝": {
       "kind": "kanji",
@@ -5102,6 +8380,16 @@
       "file": "ja/dictionary/kanji/u9650.json",
       "occurrencesFile": "ja/occurrences/kanji/u9650.json"
     },
+    "ja:kanji:陰": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9670.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9670.json"
+    },
+    "ja:kanji:隅": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9685.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9685.json"
+    },
     "ja:kanji:隣": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u96a3.json",
@@ -5117,6 +8405,16 @@
       "file": "ja/dictionary/kanji/u96b9.json",
       "occurrencesFile": "ja/occurrences/kanji/u96b9.json"
     },
+    "ja:kanji:雑": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u96d1.json",
+      "occurrencesFile": "ja/occurrences/kanji/u96d1.json"
+    },
+    "ja:kanji:離": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u96e2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u96e2.json"
+    },
     "ja:kanji:難": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u96e3.json",
@@ -5127,10 +8425,20 @@
       "file": "ja/dictionary/kanji/u96e8.json",
       "occurrencesFile": "ja/occurrences/kanji/u96e8.json"
     },
+    "ja:kanji:雲": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u96f2.json",
+      "occurrencesFile": "ja/occurrences/kanji/u96f2.json"
+    },
     "ja:kanji:露": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u9732.json",
       "occurrencesFile": "ja/occurrences/kanji/u9732.json"
+    },
+    "ja:kanji:静": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9759.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9759.json"
     },
     "ja:kanji:非": {
       "kind": "kanji",
@@ -5151,6 +8459,26 @@
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u97f3.json",
       "occurrencesFile": "ja/occurrences/kanji/u97f3.json"
+    },
+    "ja:kanji:頁": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9801.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9801.json"
+    },
+    "ja:kanji:頬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u982c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u982c.json"
+    },
+    "ja:kanji:頭": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u982d.json",
+      "occurrencesFile": "ja/occurrences/kanji/u982d.json"
+    },
+    "ja:kanji:顔": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9854.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9854.json"
     },
     "ja:kanji:風": {
       "kind": "kanji",
@@ -5177,15 +8505,55 @@
       "file": "ja/dictionary/kanji/u98f2.json",
       "occurrencesFile": "ja/occurrences/kanji/u98f2.json"
     },
+    "ja:kanji:餉": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9909.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9909.json"
+    },
+    "ja:kanji:首": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9996.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9996.json"
+    },
     "ja:kanji:香": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u9999.json",
       "occurrencesFile": "ja/occurrences/kanji/u9999.json"
     },
+    "ja:kanji:馬": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u99ac.json",
+      "occurrencesFile": "ja/occurrences/kanji/u99ac.json"
+    },
+    "ja:kanji:騒": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9a12.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9a12.json"
+    },
     "ja:kanji:高": {
       "kind": "kanji",
       "file": "ja/dictionary/kanji/u9ad8.json",
       "occurrencesFile": "ja/occurrences/kanji/u9ad8.json"
+    },
+    "ja:kanji:髪": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9aea.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9aea.json"
+    },
+    "ja:kanji:鬼": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9b3c.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9b3c.json"
+    },
+    "ja:kanji:鹿": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9e7f.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9e7f.json"
+    },
+    "ja:kanji:麗": {
+      "kind": "kanji",
+      "file": "ja/dictionary/kanji/u9e97.json",
+      "occurrencesFile": "ja/occurrences/kanji/u9e97.json"
     },
     "ja:kanji:鼻": {
       "kind": "kanji",
@@ -5306,6 +8674,11 @@
       "kind": "grammar",
       "file": "ja/dictionary/grammar/baai.json",
       "occurrencesFile": "ja/occurrences/grammar/baai.json"
+    },
+    "ja:grammar:bakari": {
+      "kind": "grammar",
+      "file": "ja/dictionary/grammar/bakari.json",
+      "occurrencesFile": "ja/occurrences/grammar/bakari.json"
     },
     "ja:grammar:before": {
       "kind": "grammar",

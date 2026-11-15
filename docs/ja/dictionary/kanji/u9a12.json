@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:騒",
+      "character": "騒",
+      "meanings": [
+        "шуметь; поднимать шум; беспокоиться"
+      ],
+      "on": [
+        "ソウ"
+      ],
+      "kun": [
+        "さわぐ",
+        "さわがしい"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

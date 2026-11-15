@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:卸",
+      "character": "卸",
+      "meanings": [
+        "остановка перед фигурой"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "止",
+        "卩"
+      ],
+      "componentMeanings": {
+        "止": "останавливаться",
+        "卩": "печать; коленопреклонённая фигура"
+      },
+      "wordIds": [],
+      "mnemonic": "Ступня 止 остановилась перед согнутой фигурой 卩 справа: здесь разгружают ношу.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

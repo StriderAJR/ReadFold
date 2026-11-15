@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:亢",
+      "character": "亢",
+      "meanings": [
+        "возвышение"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Небольшой верхний знак поднимается над опорой.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

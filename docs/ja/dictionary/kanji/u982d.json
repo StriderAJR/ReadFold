@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:頭",
+      "character": "頭",
+      "meanings": [
+        "голова; руководитель; начало"
+      ],
+      "on": [
+        "トウ",
+        "ズ",
+        "ト"
+      ],
+      "kun": [
+        "あたま",
+        "かしら"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:頭痛"
+      ]
+    }
+  ]
+}

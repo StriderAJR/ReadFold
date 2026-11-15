@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:必",
+      "character": "必",
+      "meanings": [
+        "обязательно; непременно; необходимый"
+      ],
+      "on": [
+        "ヒツ"
+      ],
+      "kun": [
+        "かならず"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

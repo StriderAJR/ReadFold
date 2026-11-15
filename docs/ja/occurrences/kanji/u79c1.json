@@ -1,25 +1,6 @@
 {
   "schemaVersion": 1,
   "byId": {
-    "ja:kanji:私": [
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s1"
-      },
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s4"
-      },
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s6"
-      }
-    ]
+    "ja:kanji:私": []
   }
 }

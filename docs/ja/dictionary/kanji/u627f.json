@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:承",
+      "character": "承",
+      "meanings": [
+        "принимать; соглашаться; наследовать"
+      ],
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "うけたまわる",
+        "うける"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

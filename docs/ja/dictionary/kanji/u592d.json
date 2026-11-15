@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:夭",
+      "character": "夭",
+      "meanings": [
+        "согнувшийся человек"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "大"
+      ],
+      "componentMeanings": {
+        "大": "большой"
+      },
+      "wordIds": [],
+      "mnemonic": "Большой человек 大 склонил верхнюю черту набок: голова и плечи согнулись от смеха.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

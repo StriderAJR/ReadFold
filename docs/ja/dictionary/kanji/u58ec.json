@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:壬",
+      "character": "壬",
+      "meanings": [
+        "человек на помосте"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Косая верхняя черта — голова, средняя перекладина — руки, нижняя широкая черта — помост под ногами.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

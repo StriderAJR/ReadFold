@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:首",
+      "character": "首",
+      "meanings": [
+        "шея; голова; руководитель"
+      ],
+      "on": [
+        "シュ"
+      ],
+      "kun": [
+        "くび"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

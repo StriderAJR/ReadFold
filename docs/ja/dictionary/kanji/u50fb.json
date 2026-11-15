@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:僻",
+      "character": "僻",
+      "meanings": [
+        "отдалённый; предвзятый; уклоняться"
+      ],
+      "on": [
+        "ヘキ"
+      ],
+      "kun": [
+        "かたよる",
+        "ひがむ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

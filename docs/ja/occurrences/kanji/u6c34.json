@@ -9,16 +9,16 @@
         "sentenceId": "apothecary-diaries.chapter-1.s016"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s3"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s062"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s6"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s063"
       }
     ]
   }

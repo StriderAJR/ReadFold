@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:痛",
+      "character": "痛",
+      "meanings": [
+        "боль; болеть; причинять боль"
+      ],
+      "on": [
+        "ツウ"
+      ],
+      "kun": [
+        "いたい",
+        "いたむ",
+        "いためる"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:頭痛",
+        "ja:word:腹痛"
+      ]
+    }
+  ]
+}

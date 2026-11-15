@@ -57,34 +57,28 @@
         "sentenceId": "apothecary-diaries.chapter-1.s055"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s1"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s005"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s3"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s014"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s4"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s055"
       },
       {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s5"
-      },
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-2",
-        "chapterPath": "books/demo/chapter-2.json",
-        "sentenceId": "demo.s6"
+        "bookId": "apothecary-diaries",
+        "chapterId": "apothecary-diaries.chapter-2",
+        "chapterPath": "books/apothecary-diaries/chapter-2.json",
+        "sentenceId": "apothecary-diaries.chapter-2.s058"
       }
     ]
   }

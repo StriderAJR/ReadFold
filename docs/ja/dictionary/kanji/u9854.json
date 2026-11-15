@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:顔",
+      "character": "顔",
+      "meanings": [
+        "лицо; выражение лица"
+      ],
+      "on": [
+        "ガン"
+      ],
+      "kun": [
+        "かお"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

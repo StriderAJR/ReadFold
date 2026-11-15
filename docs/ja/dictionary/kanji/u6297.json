@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:抗",
+      "character": "抗",
+      "meanings": [
+        "сопротивляться; противостоять"
+      ],
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "あらがう"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

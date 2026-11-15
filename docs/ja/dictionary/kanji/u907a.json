@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:遺",
+      "character": "遺",
+      "meanings": [
+        "оставлять; наследовать; утраченный"
+      ],
+      "on": [
+        "イ",
+        "ユイ"
+      ],
+      "kun": [
+        "のこす"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:遺伝"
+      ]
+    }
+  ]
+}

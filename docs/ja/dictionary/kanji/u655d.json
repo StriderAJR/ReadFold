@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:敝",
+      "character": "敝",
+      "meanings": [
+        "потрёпанная ткань"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "攵"
+      ],
+      "componentMeanings": {
+        "攵": "рука с указкой"
+      },
+      "wordIds": [],
+      "mnemonic": "Слева висят лоскуты с дырками, справа рука с указкой 攵 раздвигает их: ткань совсем потрепалась.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

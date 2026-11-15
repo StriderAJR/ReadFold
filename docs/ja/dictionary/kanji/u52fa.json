@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:勺",
+      "character": "勺",
+      "meanings": [
+        "ковшик"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "勹",
+        "丶"
+      ],
+      "componentMeanings": {
+        "勹": "обёртка",
+        "丶": "точка"
+      },
+      "wordIds": [],
+      "mnemonic": "Изогнутая обёртка 勹 стала ковшиком, а точка 丶 — каплей внутри.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

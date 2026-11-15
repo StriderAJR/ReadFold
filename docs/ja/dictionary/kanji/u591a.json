@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:多",
+      "character": "多",
+      "meanings": [
+        "много; многочисленный"
+      ],
+      "on": [
+        "タ"
+      ],
+      "kun": [
+        "おおい"
+      ],
+      "components": [
+        "夕"
+      ],
+      "wordIds": [
+        "ja:word:滅多"
+      ],
+      "componentMeanings": {
+        "夕": "вечер"
+      },
+      "mnemonic": "Много вечеров складываются один за другим."
+    }
+  ]
+}

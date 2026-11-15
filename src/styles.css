@@ -833,6 +833,11 @@ footer span {
 .chapter-name b {
   font-size: 0.83rem;
 }
+.chapter-name .chapter-translation {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink);
+}
 .chapter-name small {
   font-size: 0.67rem;
   color: #9895a0;
@@ -905,6 +910,12 @@ footer span {
 .reader-header h1 {
   font-size: 2rem;
   margin-bottom: 7px;
+}
+.reader-header h1 .reader-chapter-translation {
+  margin-left: 0.3em;
+  color: #85818d;
+  font-size: 0.55em;
+  font-weight: 500;
 }
 .reader-header > p:last-child {
   color: #9995a1;

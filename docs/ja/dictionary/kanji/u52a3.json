@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:劣",
+      "character": "劣",
+      "meanings": [
+        "уступать; быть хуже; неполноценный"
+      ],
+      "on": [
+        "レツ"
+      ],
+      "kun": [
+        "おとる"
+      ],
+      "components": [
+        "少",
+        "力"
+      ],
+      "wordIds": [],
+      "componentMeanings": {
+        "力": "сила",
+        "少": "мало"
+      },
+      "mnemonic": "Когда силы мало, результат уступает."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:決",
+      "character": "決",
+      "meanings": [
+        "решать; определять; решительный"
+      ],
+      "on": [
+        "ケツ"
+      ],
+      "kun": [
+        "きめる",
+        "きまる"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:決定打"
+      ]
+    }
+  ]
+}

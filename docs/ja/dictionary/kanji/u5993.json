@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:妓",
+      "character": "妓",
+      "meanings": [
+        "артистка; гейша; куртизанка"
+      ],
+      "on": [
+        "ギ"
+      ],
+      "kun": [],
+      "components": [
+        "女",
+        "支"
+      ],
+      "wordIds": [
+        "ja:word:妓楼"
+      ],
+      "componentMeanings": {
+        "女": "женщина",
+        "支": "поддерживать"
+      },
+      "mnemonic": "Женщина выступает и поддерживает представление."
+    }
+  ]
+}

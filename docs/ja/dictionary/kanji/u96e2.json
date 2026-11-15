@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:離",
+      "character": "離",
+      "meanings": [
+        "отделяться; уходить; разлука; расстояние"
+      ],
+      "on": [
+        "リ"
+      ],
+      "kun": [
+        "はなれる",
+        "はなす"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:離れる"
+      ]
+    }
+  ]
+}

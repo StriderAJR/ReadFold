@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:亜",
+      "character": "亜",
+      "meanings": [
+        "прямоугольная решётка"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Две широкие перекладины соединены стойками и боковыми уступами: решётка закрывает проход.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:廿",
+      "character": "廿",
+      "meanings": [
+        "две десятки"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "十"
+      ],
+      "componentMeanings": {
+        "十": "десять; перекрестье"
+      },
+      "wordIds": [],
+      "mnemonic": "Два креста 十 соединены общей нижней чертой: две десятки дают двадцать.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

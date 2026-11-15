@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:髪",
+      "surface": "髪",
+      "dictionaryForm": "髪",
+      "reading": "かみ",
+      "romaji": "kami",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "волосы"
+      ]
+    },
+    {
+      "id": "ja:word:翡翠",
+      "surface": "翡翠",
+      "dictionaryForm": "翡翠",
+      "reading": "ひすい",
+      "romaji": "hisui",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "нефрит; жадеит"
+      ]
+    },
+    {
+      "id": "ja:word:女性",
+      "surface": "女性",
+      "dictionaryForm": "女性",
+      "reading": "じょせい",
+      "romaji": "josei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "женщина"
+      ]
+    },
+    {
+      "id": "ja:word:答える",
+      "surface": "答える",
+      "dictionaryForm": "答える",
+      "reading": "こたえる",
+      "romaji": "kotaeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "отвечать"
+      ]
+    },
+    {
+      "id": "ja:word:西方",
+      "surface": "西方",
+      "dictionaryForm": "西方",
+      "reading": "せいほう",
+      "romaji": "seihō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "запад; западные земли"
+      ]
+    },
+    {
+      "id": "ja:word:血",
+      "surface": "血",
+      "dictionaryForm": "血",
+      "reading": "ち",
+      "romaji": "chi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "кровь; происхождение"
+      ]
+    },
+    {
+      "id": "ja:word:色濃い",
+      "surface": "色濃い",
+      "dictionaryForm": "色濃い",
+      "reading": "いろこい",
+      "romaji": "irokoi",
+      "partOfSpeech": "прилагательное",
+      "meanings": [
+        "насыщенный цветом; отчётливо проявляющийся"
+      ]
+    },
+    {
+      "id": "ja:word:継ぐ",
+      "surface": "継ぐ",
+      "dictionaryForm": "継ぐ",
+      "reading": "つぐ",
+      "romaji": "tsugu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "наследовать; продолжать"
+      ]
+    },
+    {
+      "id": "ja:word:上げる",
+      "surface": "上げる",
+      "dictionaryForm": "上げる",
+      "reading": "あげる",
+      "romaji": "ageru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "поднимать; повышать"
+      ]
+    },
+    {
+      "id": "ja:word:医者",
+      "surface": "医者",
+      "dictionaryForm": "医者",
+      "reading": "いしゃ",
+      "romaji": "isha",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "врач; лекарь"
+      ]
+    },
+    {
+      "id": "ja:word:ので",
+      "surface": "ので",
+      "dictionaryForm": "ので",
+      "reading": "ので",
+      "romaji": "node",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "поскольку; так как"
+      ]
+    },
+    {
+      "id": "ja:word:ほう",
+      "surface": "ほう",
+      "dictionaryForm": "ほう",
+      "reading": "ほう",
+      "romaji": "hō",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сторона; один из сравниваемых предметов"
+      ]
+    },
+    {
+      "id": "ja:word:容体",
+      "surface": "容体",
+      "dictionaryForm": "容体",
+      "reading": "ようたい",
+      "romaji": "yōtai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "состояние больного"
+      ]
+    },
+    {
+      "id": "ja:word:診る",
+      "surface": "診る",
+      "dictionaryForm": "診る",
+      "reading": "みる",
+      "romaji": "miru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "осматривать больного; лечить"
+      ]
+    },
+    {
+      "id": "ja:word:ものの",
+      "surface": "ものの",
+      "dictionaryForm": "ものの",
+      "reading": "ものの",
+      "romaji": "monono",
+      "partOfSpeech": "союзная частица",
+      "meanings": [
+        "хотя; несмотря на то что"
+      ]
+    },
+    {
+      "id": "ja:word:原因",
+      "surface": "原因",
+      "dictionaryForm": "原因",
+      "reading": "げんいん",
+      "romaji": "gen'in",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "причина; источник"
+      ]
+    },
+    {
+      "id": "ja:word:抗議",
+      "surface": "抗議",
+      "dictionaryForm": "抗議",
+      "reading": "こうぎ",
+      "romaji": "kōgi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "протест; возражение"
+      ]
+    },
+    {
+      "id": "ja:word:母親",
+      "surface": "母親",
+      "dictionaryForm": "母親",
+      "reading": "ははおや",
+      "romaji": "hahaoya",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "мать"
+      ]
+    },
+    {
+      "id": "ja:word:として",
+      "surface": "として",
+      "dictionaryForm": "として",
+      "reading": "として",
+      "romaji": "to shite",
+      "partOfSpeech": "составная частица",
+      "meanings": [
+        "в качестве; как"
+      ]
+    },
+    {
+      "id": "ja:word:という",
+      "surface": "という",
+      "dictionaryForm": "という",
+      "reading": "という",
+      "romaji": "to iu",
+      "partOfSpeech": "сочетание",
+      "meanings": [
+        "называемый; то, что"
+      ]
+    },
+    {
+      "id": "ja:word:仕組み",
+      "surface": "仕組み",
+      "dictionaryForm": "仕組み",
+      "reading": "しくみ",
+      "romaji": "shikumi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "устройство; система; механизм"
+      ]
+    },
+    {
+      "id": "ja:word:優先",
+      "surface": "優先",
+      "dictionaryForm": "優先",
+      "reading": "ゆうせん",
+      "romaji": "yūsen",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "приоритет; предпочтение"
+      ]
+    },
+    {
+      "id": "ja:word:当然",
+      "surface": "当然",
+      "dictionaryForm": "当然",
+      "reading": "とうぜん",
+      "romaji": "tōzen",
+      "partOfSpeech": "прилагательное на な; наречие",
+      "meanings": [
+        "естественный; закономерный; разумеется"
+      ]
+    },
+    {
+      "id": "ja:word:にしてみれば",
+      "surface": "にしてみれば",
+      "dictionaryForm": "にしてみれば",
+      "reading": "にしてみれば",
+      "romaji": "ni shite mireba",
+      "partOfSpeech": "сочетание",
+      "meanings": [
+        "с точки зрения; если поставить себя на место"
+      ]
+    }
+  ]
+}

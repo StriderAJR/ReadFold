@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:楼",
+      "character": "楼",
+      "meanings": [
+        "башня; многоэтажное здание; павильон"
+      ],
+      "on": [
+        "ロウ"
+      ],
+      "kun": [
+        "たかどの"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:妓楼"
+      ]
+    }
+  ]
+}

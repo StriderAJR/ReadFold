@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:恋",
+      "character": "恋",
+      "meanings": [
+        "любовь; влюбляться; тосковать"
+      ],
+      "on": [
+        "レン"
+      ],
+      "kun": [
+        "こい",
+        "こいしい",
+        "こう"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

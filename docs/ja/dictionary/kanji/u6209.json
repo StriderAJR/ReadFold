@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:戉",
+      "character": "戉",
+      "meanings": [
+        "алебарда с крюком"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "戈"
+      ],
+      "componentMeanings": {
+        "戈": "алебарда"
+      },
+      "wordIds": [],
+      "mnemonic": "Алебарда 戈 снабжена угловым крюком у основания: им можно зацепить преграду.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

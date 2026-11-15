@@ -17,6 +17,7 @@ const chapterMetadataSchema = z
   .object({
     id: idSchema,
     title: textSchema,
+    translatedTitle: textSchema.optional(),
     path: z.string().regex(/^books\/[a-z0-9/-]+\.json$/),
     sentenceCount: z.number().int().positive(),
   })
@@ -29,6 +30,7 @@ export const bookMetadataSchema = z
     title: textSchema,
     translatedTitle: textSchema.optional(),
     author: textSchema,
+    translatedAuthor: textSchema.optional(),
     description: textSchema,
     originalLanguage: textSchema,
     translationLanguage: textSchema,

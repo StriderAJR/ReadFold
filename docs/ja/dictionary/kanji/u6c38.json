@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:永",
+      "character": "永",
+      "meanings": [
+        "вечность"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Течение воды продолжается без конца.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:以",
+      "character": "以",
+      "meanings": [
+        "начиная с; с; посредством; по сравнению с"
+      ],
+      "on": [
+        "イ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

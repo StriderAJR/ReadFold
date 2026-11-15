@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:第",
+      "character": "第",
+      "meanings": [
+        "порядковый номер; очередной"
+      ],
+      "on": [
+        "ダイ",
+        "テイ"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

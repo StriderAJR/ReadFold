@@ -1,13 +1,6 @@
 {
   "schemaVersion": 1,
   "byId": {
-    "ja:kanji:飲": [
-      {
-        "bookId": "demo",
-        "chapterId": "demo.chapter-1",
-        "chapterPath": "books/demo/chapter-1.json",
-        "sentenceId": "demo.s3"
-      }
-    ]
+    "ja:kanji:飲": []
   }
 }

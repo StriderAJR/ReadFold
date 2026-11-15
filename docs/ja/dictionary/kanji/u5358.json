@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:単",
+      "character": "単",
+      "meanings": [
+        "один; простой; отдельный; единичный"
+      ],
+      "on": [
+        "タン"
+      ],
+      "kun": [],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:皆",
+      "character": "皆",
+      "meanings": [
+        "все; каждый"
+      ],
+      "on": [
+        "カイ"
+      ],
+      "kun": [
+        "みな",
+        "みんな"
+      ],
+      "components": [
+        "比",
+        "白"
+      ],
+      "wordIds": [
+        "ja:word:皆"
+      ],
+      "componentMeanings": {
+        "白": "ясный",
+        "比": "сравнивать"
+      },
+      "mnemonic": "Сравнив всех, ясно видишь каждого — всех до одного."
+    }
+  ]
+}

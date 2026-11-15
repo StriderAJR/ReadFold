@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:診",
+      "character": "診",
+      "meanings": [
+        "осматривать пациента; ставить диагноз"
+      ],
+      "on": [
+        "シン"
+      ],
+      "kun": [
+        "みる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

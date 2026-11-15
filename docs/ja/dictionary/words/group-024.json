@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:桟",
+      "surface": "桟",
+      "dictionaryForm": "桟",
+      "reading": "さん",
+      "romaji": "san",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "планка; перекладина оконной рамы"
+      ]
+    },
+    {
+      "id": "ja:word:絞る",
+      "surface": "絞る",
+      "dictionaryForm": "絞る",
+      "reading": "しぼる",
+      "romaji": "shiboru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "выжимать; отжимать"
+      ]
+    },
+    {
+      "id": "ja:word:雑巾",
+      "surface": "雑巾",
+      "dictionaryForm": "雑巾",
+      "reading": "ぞうきん",
+      "romaji": "zōkin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "тряпка для уборки"
+      ]
+    },
+    {
+      "id": "ja:word:拭く",
+      "surface": "拭く",
+      "dictionaryForm": "拭く",
+      "reading": "ふく",
+      "romaji": "fuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "вытирать; протирать"
+      ]
+    },
+    {
+      "id": "ja:word:自身",
+      "surface": "自身",
+      "dictionaryForm": "自身",
+      "reading": "じしん",
+      "romaji": "jishin",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "сам; собственная персона"
+      ]
+    },
+    {
+      "id": "ja:word:出向く",
+      "surface": "出向く",
+      "dictionaryForm": "出向く",
+      "reading": "でむく",
+      "romaji": "demuku",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "отправляться; лично посещать"
+      ]
+    },
+    {
+      "id": "ja:word:病",
+      "surface": "病",
+      "dictionaryForm": "病",
+      "reading": "やまい",
+      "romaji": "yamai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "болезнь; недуг"
+      ]
+    },
+    {
+      "id": "ja:word:重さ",
+      "surface": "重さ",
+      "dictionaryForm": "重さ",
+      "reading": "おもさ",
+      "romaji": "omosa",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "тяжесть; вес"
+      ]
+    },
+    {
+      "id": "ja:word:寵愛",
+      "surface": "寵愛",
+      "dictionaryForm": "寵愛",
+      "reading": "ちょうあい",
+      "romaji": "chōai",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "особое расположение; любовь покровителя"
+      ]
+    },
+    {
+      "id": "ja:word:性差",
+      "surface": "性差",
+      "dictionaryForm": "性差",
+      "reading": "せいさ",
+      "romaji": "seisa",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "различие полов"
+      ]
+    },
+    {
+      "id": "ja:word:どちら",
+      "surface": "どちら",
+      "dictionaryForm": "どちら",
+      "reading": "どちら",
+      "romaji": "dochira",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "который из двух; какая сторона"
+      ]
+    },
+    {
+      "id": "ja:word:重き",
+      "surface": "重き",
+      "dictionaryForm": "重き",
+      "reading": "おもき",
+      "romaji": "omoki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "важность; вес; значение"
+      ]
+    },
+    {
+      "id": "ja:word:明白",
+      "surface": "明白",
+      "dictionaryForm": "明白",
+      "reading": "めいはく",
+      "romaji": "meihaku",
+      "partOfSpeech": "прилагательное na",
+      "meanings": [
+        "очевидный; ясный"
+      ]
+    },
+    {
+      "id": "ja:word:さすがに",
+      "surface": "さすがに",
+      "dictionaryForm": "さすがに",
+      "reading": "さすがに",
+      "romaji": "sasugani",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "всё же; как и следовало ожидать; при всём том"
+      ]
+    },
+    {
+      "id": "ja:word:とか",
+      "surface": "とか",
+      "dictionaryForm": "とか",
+      "reading": "とか",
+      "romaji": "toka",
+      "partOfSpeech": "частица",
+      "meanings": [
+        "например; и тому подобное; перечисление"
+      ]
+    },
+    {
+      "id": "ja:word:すべて",
+      "surface": "すべて",
+      "dictionaryForm": "すべて",
+      "reading": "すべて",
+      "romaji": "subete",
+      "partOfSpeech": "местоимение",
+      "meanings": [
+        "всё; целиком"
+      ]
+    },
+    {
+      "id": "ja:word:話す",
+      "surface": "話す",
+      "dictionaryForm": "話す",
+      "reading": "はなす",
+      "romaji": "hanasu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "рассказывать; говорить"
+      ]
+    },
+    {
+      "id": "ja:word:満足",
+      "surface": "満足",
+      "dictionaryForm": "満足",
+      "reading": "まんぞく",
+      "romaji": "manzoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "удовлетворение; довольство"
+      ]
+    },
+    {
+      "id": "ja:word:お礼",
+      "surface": "お礼",
+      "dictionaryForm": "お礼",
+      "reading": "おれい",
+      "romaji": "orei",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "благодарность; благодарственный подарок"
+      ]
+    },
+    {
+      "id": "ja:word:代わり",
+      "surface": "代わり",
+      "dictionaryForm": "代わり",
+      "reading": "かわり",
+      "romaji": "kawari",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "замена; вместо; в качестве"
+      ]
+    },
+    {
+      "id": "ja:word:入り",
+      "surface": "入り",
+      "dictionaryForm": "入り",
+      "reading": "いり",
+      "romaji": "iri",
+      "partOfSpeech": "суффикс",
+      "meanings": [
+        "с содержанием чего-либо; с добавкой"
+      ]
+    },
+    {
+      "id": "ja:word:強い",
+      "surface": "強い",
+      "dictionaryForm": "強い",
+      "reading": "つよい",
+      "romaji": "tsuyoi",
+      "partOfSpeech": "прилагательное",
+      "meanings": [
+        "сильный; интенсивный"
+      ]
+    },
+    {
+      "id": "ja:word:とても",
+      "surface": "とても",
+      "dictionaryForm": "とても",
+      "reading": "とても",
+      "romaji": "totemo",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "очень"
+      ]
+    },
+    {
+      "id": "ja:word:子",
+      "surface": "子",
+      "dictionaryForm": "子",
+      "reading": "こ",
+      "romaji": "ko",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "ребёнок; дети; детёныш"
+      ]
+    }
+  ]
+}

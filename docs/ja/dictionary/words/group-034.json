@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:首",
+      "surface": "首",
+      "dictionaryForm": "首",
+      "reading": "くび",
+      "romaji": "kubi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "шея; голова в выражениях о её положении"
+      ]
+    },
+    {
+      "id": "ja:word:傾げる",
+      "surface": "傾げる",
+      "dictionaryForm": "傾げる",
+      "reading": "かしげる",
+      "romaji": "kashigeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "склонять; наклонять набок"
+      ]
+    },
+    {
+      "id": "ja:word:こう",
+      "surface": "こう",
+      "dictionaryForm": "こう",
+      "reading": "こう",
+      "romaji": "kō",
+      "partOfSpeech": "наречие",
+      "meanings": [
+        "так; таким образом"
+      ]
+    },
+    {
+      "id": "ja:word:問いかけ",
+      "surface": "問いかけ",
+      "dictionaryForm": "問いかけ",
+      "reading": "といかけ",
+      "romaji": "toikake",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вопрос; обращение с вопросом"
+      ]
+    },
+    {
+      "id": "ja:word:腕",
+      "surface": "腕",
+      "dictionaryForm": "腕",
+      "reading": "うで",
+      "romaji": "ude",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "рука (от плеча до кисти)"
+      ]
+    },
+    {
+      "id": "ja:word:組む",
+      "surface": "組む",
+      "dictionaryForm": "組む",
+      "reading": "くむ",
+      "romaji": "kumu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "складывать; скрещивать; объединять"
+      ]
+    },
+    {
+      "id": "ja:word:唸る",
+      "surface": "唸る",
+      "dictionaryForm": "唸る",
+      "reading": "うなる",
+      "romaji": "unaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "стонать; мычать; издавать низкий задумчивый звук"
+      ]
+    },
+    {
+      "id": "ja:word:足早",
+      "surface": "足早",
+      "dictionaryForm": "足早",
+      "reading": "あしばや",
+      "romaji": "ashibaya",
+      "partOfSpeech": "существительное, на-прилагательное",
+      "meanings": [
+        "быстрый шаг; поспешный"
+      ]
+    },
+    {
+      "id": "ja:word:届ける",
+      "surface": "届ける",
+      "dictionaryForm": "届ける",
+      "reading": "とどける",
+      "romaji": "todokeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "доставлять; относить по назначению"
+      ]
+    },
+    {
+      "id": "ja:word:位置",
+      "surface": "位置",
+      "dictionaryForm": "位置",
+      "reading": "いち",
+      "romaji": "ichi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "положение; местоположение"
+      ]
+    },
+    {
+      "id": "ja:word:赤塗",
+      "surface": "赤塗",
+      "dictionaryForm": "赤塗",
+      "reading": "あかぬり",
+      "romaji": "akanuri",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "красная окраска; покрытие красной краской"
+      ]
+    },
+    {
+      "id": "ja:word:東",
+      "surface": "東",
+      "dictionaryForm": "東",
+      "reading": "ひがし",
+      "romaji": "higashi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "восток; восточная часть"
+      ]
+    },
+    {
+      "id": "ja:word:はずれ",
+      "surface": "はずれ",
+      "dictionaryForm": "はずれ",
+      "reading": "はずれ",
+      "romaji": "hazure",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "окраина; край; отдалённая часть"
+      ]
+    },
+    {
+      "id": "ja:word:手",
+      "surface": "手",
+      "dictionaryForm": "手",
+      "reading": "て",
+      "romaji": "te",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "рука; работа; усилия"
+      ]
+    },
+    {
+      "id": "ja:word:込む",
+      "surface": "込む",
+      "dictionaryForm": "込む",
+      "reading": "こむ",
+      "romaji": "komu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "быть сложным; требовать труда (в выражении 手が込む)"
+      ]
+    }
+  ]
+}

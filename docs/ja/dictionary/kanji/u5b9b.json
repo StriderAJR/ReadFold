@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:宛",
+      "character": "宛",
+      "meanings": [
+        "изгиб под крышей"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [],
+      "componentMeanings": {},
+      "wordIds": [],
+      "mnemonic": "Под крышей путь изгибается вокруг складки.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

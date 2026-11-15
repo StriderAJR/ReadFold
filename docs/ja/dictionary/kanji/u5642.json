@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:噂",
+      "character": "噂",
+      "meanings": [
+        "слух; молва"
+      ],
+      "on": [],
+      "kun": [
+        "うわさ"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:噂話"
+      ]
+    }
+  ]
+}

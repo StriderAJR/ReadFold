@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:優",
+      "character": "優",
+      "meanings": [
+        "превосходный; добрый; превосходить"
+      ],
+      "on": [
+        "ユウ"
+      ],
+      "kun": [
+        "やさしい",
+        "すぐれる",
+        "まさる"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

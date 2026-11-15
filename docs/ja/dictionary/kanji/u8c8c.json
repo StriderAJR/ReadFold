@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:貌",
+      "character": "貌",
+      "meanings": [
+        "внешность; облик; вид"
+      ],
+      "on": [
+        "ボウ"
+      ],
+      "kun": [
+        "かたち"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

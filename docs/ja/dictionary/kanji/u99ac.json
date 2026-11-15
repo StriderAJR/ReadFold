@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:馬",
+      "character": "馬",
+      "meanings": [
+        "лошадь"
+      ],
+      "on": [
+        "バ"
+      ],
+      "kun": [
+        "うま",
+        "ま"
+      ],
+      "components": [],
+      "wordIds": [
+        "ja:word:馬鹿"
+      ]
+    }
+  ]
+}

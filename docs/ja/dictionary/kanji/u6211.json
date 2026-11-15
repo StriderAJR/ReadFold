@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:我",
+      "character": "我",
+      "meanings": [
+        "я с оружием"
+      ],
+      "on": [],
+      "kun": [],
+      "components": [
+        "扌",
+        "戈"
+      ],
+      "componentMeanings": {
+        "扌": "рука",
+        "戈": "алебарда"
+      },
+      "wordIds": [],
+      "mnemonic": "Рука 扌 держит алебарду 戈: представь, что это я охраняю свой дом.",
+      "isMnemonicPartOnly": true
+    }
+  ]
+}

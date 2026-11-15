@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:通",
+      "character": "通",
+      "meanings": [
+        "проходить; пропускать; сообщаться; обычный"
+      ],
+      "on": [
+        "ツウ",
+        "ツ"
+      ],
+      "kun": [
+        "とおる",
+        "とおす",
+        "かよう"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}

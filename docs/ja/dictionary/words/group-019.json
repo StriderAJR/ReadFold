@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "kind": "words",
+  "entries": [
+    {
+      "id": "ja:word:知識",
+      "surface": "知識",
+      "dictionaryForm": "知識",
+      "reading": "ちしき",
+      "romaji": "chishiki",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "знание; знания"
+      ]
+    },
+    {
+      "id": "ja:word:おしゃべり",
+      "surface": "おしゃべり",
+      "dictionaryForm": "おしゃべり",
+      "reading": "おしゃべり",
+      "romaji": "oshaberi",
+      "partOfSpeech": "существительное; на-прилагательное",
+      "meanings": [
+        "болтун; разговорчивый; болтовня"
+      ]
+    },
+    {
+      "id": "ja:word:後",
+      "surface": "後",
+      "dictionaryForm": "後",
+      "reading": "あと",
+      "romaji": "ato",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "после; потом"
+      ]
+    },
+    {
+      "id": "ja:word:興味",
+      "surface": "興味",
+      "dictionaryForm": "興味",
+      "reading": "きょうみ",
+      "romaji": "kyōmi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "интерес"
+      ]
+    },
+    {
+      "id": "ja:word:ことあるごと",
+      "surface": "ことあるごと",
+      "dictionaryForm": "ことあるごと",
+      "reading": "ことあるごと",
+      "romaji": "koto aru goto",
+      "partOfSpeech": "устойчивое выражение",
+      "meanings": [
+        "при каждом удобном случае; всякий раз"
+      ]
+    },
+    {
+      "id": "ja:word:詳しい",
+      "surface": "詳しい",
+      "dictionaryForm": "詳しい",
+      "reading": "くわしい",
+      "romaji": "kuwashii",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "подробный; хорошо осведомлённый"
+      ]
+    },
+    {
+      "id": "ja:word:白湯",
+      "surface": "白湯",
+      "dictionaryForm": "白湯",
+      "reading": "さゆ",
+      "romaji": "sayu",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "горячая вода без добавок"
+      ]
+    },
+    {
+      "id": "ja:word:結論",
+      "surface": "結論",
+      "dictionaryForm": "結論",
+      "reading": "けつろん",
+      "romaji": "ketsuron",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вывод; заключение"
+      ]
+    },
+    {
+      "id": "ja:word:決定打",
+      "surface": "決定打",
+      "dictionaryForm": "決定打",
+      "reading": "けっていだ",
+      "romaji": "ketteida",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "решающий довод; решающий факт"
+      ]
+    },
+    {
+      "id": "ja:word:予測",
+      "surface": "予測",
+      "dictionaryForm": "予測",
+      "reading": "よそく",
+      "romaji": "yosoku",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "предсказание; прогноз"
+      ]
+    },
+    {
+      "id": "ja:word:物事",
+      "surface": "物事",
+      "dictionaryForm": "物事",
+      "reading": "ものごと",
+      "romaji": "monogoto",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "вещи; дела; происходящее"
+      ]
+    },
+    {
+      "id": "ja:word:茶",
+      "surface": "茶",
+      "dictionaryForm": "茶",
+      "reading": "ちゃ",
+      "romaji": "cha",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "чай"
+      ]
+    },
+    {
+      "id": "ja:word:隅",
+      "surface": "隅",
+      "dictionaryForm": "隅",
+      "reading": "すみ",
+      "romaji": "sumi",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "угол; край"
+      ]
+    },
+    {
+      "id": "ja:word:生える",
+      "surface": "生える",
+      "dictionaryForm": "生える",
+      "reading": "はえる",
+      "romaji": "haeru",
+      "partOfSpeech": "глагол II группы",
+      "meanings": [
+        "расти; произрастать"
+      ]
+    },
+    {
+      "id": "ja:word:薬臭い",
+      "surface": "薬臭い",
+      "dictionaryForm": "薬臭い",
+      "reading": "くすりくさい",
+      "romaji": "kusurikusai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "пахнущий лекарством; с лекарственным запахом"
+      ]
+    },
+    {
+      "id": "ja:word:滅多",
+      "surface": "滅多",
+      "dictionaryForm": "滅多",
+      "reading": "めった",
+      "romaji": "metta",
+      "partOfSpeech": "на-прилагательное",
+      "meanings": [
+        "редкий; обычно в сочетании с отрицанием: редко"
+      ]
+    },
+    {
+      "id": "ja:word:喜ぶ",
+      "surface": "喜ぶ",
+      "dictionaryForm": "喜ぶ",
+      "reading": "よろこぶ",
+      "romaji": "yorokobu",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "радоваться"
+      ]
+    },
+    {
+      "id": "ja:word:小蘭",
+      "surface": "小蘭",
+      "dictionaryForm": "小蘭",
+      "reading": "しゃおらん",
+      "romaji": "Shaoran",
+      "partOfSpeech": "имя собственное",
+      "meanings": [
+        "Сяолань, имя служанки"
+      ]
+    },
+    {
+      "id": "ja:word:東宮",
+      "surface": "東宮",
+      "dictionaryForm": "東宮",
+      "reading": "とうぐう",
+      "romaji": "tōgū",
+      "partOfSpeech": "существительное",
+      "meanings": [
+        "наследный принц; наследник престола"
+      ]
+    },
+    {
+      "id": "ja:word:身まかる",
+      "surface": "身まかる",
+      "dictionaryForm": "身まかる",
+      "reading": "みまかる",
+      "romaji": "mimakaru",
+      "partOfSpeech": "глагол I группы",
+      "meanings": [
+        "скончаться; уйти из жизни (почтительное выражение)"
+      ]
+    },
+    {
+      "id": "ja:word:くだらない",
+      "surface": "くだらない",
+      "dictionaryForm": "くだらない",
+      "reading": "くだらない",
+      "romaji": "kudaranai",
+      "partOfSpeech": "и-прилагательное",
+      "meanings": [
+        "глупый; бессмысленный; ничтожный"
+      ]
+    }
+  ]
+}

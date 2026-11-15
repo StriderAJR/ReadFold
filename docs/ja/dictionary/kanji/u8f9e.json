@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "kind": "kanji",
+  "entries": [
+    {
+      "id": "ja:kanji:辞",
+      "character": "辞",
+      "meanings": [
+        "слово; отказываться; увольняться"
+      ],
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "やめる",
+        "いなむ"
+      ],
+      "components": [],
+      "wordIds": []
+    }
+  ]
+}
