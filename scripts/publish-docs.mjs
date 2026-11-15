@@ -5,6 +5,7 @@ import { publishDocs } from './pages-publisher.mjs';
 
 const workspace = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const skipTests = process.argv.includes('--skip-tests');
+const publishOnly = process.argv.includes('--publish-only');
 const checks = [
   ['generated content', '--experimental-strip-types', 'scripts/build-content.mjs', '--output', '.local-tools/content'],
   ['typecheck', 'node_modules/typescript/bin/tsc', '-b'],
@@ -19,6 +20,9 @@ const checks = [
 ];
 const testChecks = new Set(['unit tests', 'publication tests', 'SQL/RLS tests', 'browser tests']);
 for (const [name, ...args] of checks) {
+  if (publishOnly && !['generated content', 'production build', 'production content', 'offline service worker'].includes(name)) {
+    continue;
+  }
   if (skipTests && testChecks.has(name)) {
     console.log(`Skipping ${name}…`);
     continue;

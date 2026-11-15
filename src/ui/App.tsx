@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   ChartNoAxesColumn,
@@ -39,8 +39,10 @@ const nav = [
 
 function Layout({ children }: { children: ReactNode }) {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(() => window.innerWidth);
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 760px)').matches);
   useEffect(() => {
     const media = window.matchMedia('(max-width: 760px)');
@@ -68,6 +70,18 @@ function Layout({ children }: { children: ReactNode }) {
     return () => window.removeEventListener('keydown', close);
   }, [open]);
   const user = useUserData();
+  useEffect(() => {
+    const update = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', update);
+    return () => window.removeEventListener('resize', update);
+  }, []);
+  const isReader = location.pathname.startsWith('/read/');
+  const padding = windowWidth <= 760 ? 18 : Math.min(70, Math.max(24, windowWidth * 0.05));
+  const expandedSidebarWidth = windowWidth <= 1100 ? 218 : 246;
+  const autoCollapsed = isReader && windowWidth > 760 && windowWidth - expandedSidebarWidth - 2 * padding < user.preferences.width;
+  const sidebarWidth = windowWidth <= 760 ? 0 : (collapsed || autoCollapsed ? 78 : expandedSidebarWidth);
+  const availableReaderWidth = Math.min(1180, windowWidth - sidebarWidth) - 2 * padding + (windowWidth <= 760 ? 10 : 0);
+  const readerAreaNarrow = isReader && availableReaderWidth < user.preferences.width;
   const syncInfo = useSyncInfo();
   const localFailure = useLocalFailure((state) => state.failed);
   const syncStatusLabel = t(
@@ -100,8 +114,8 @@ function Layout({ children }: { children: ReactNode }) {
     return () => media.removeEventListener('change', applyTheme);
   }, [user.preferences.theme]);
   return (
-    <div className="app-shell">
-      <aside id="primary-sidebar" className={`sidebar ${collapsed ? 'sidebar-collapsed' : ''} ${open ? 'sidebar-open' : ''}`}>
+    <div className={`app-shell ${readerAreaNarrow ? 'reader-area-narrow' : ''}`}>
+      <aside id="primary-sidebar" className={`sidebar ${collapsed || autoCollapsed ? 'sidebar-collapsed' : ''} ${open ? 'sidebar-open' : ''}`}>
         <div className="sidebar-header">
           <Link className="brand" to="/" onClick={() => setOpen(false)}>
             <img src={`${import.meta.env.BASE_URL}brand/icon.jpg`} alt="" />
