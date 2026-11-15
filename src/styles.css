@@ -1358,6 +1358,24 @@ footer span {
   gap: 8px;
   min-width: 0;
 }
+.canvas-word-label {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  justify-items: center;
+  min-width: 0;
+  border-right: 1px solid var(--line);
+  padding-right: 8px;
+}
+.canvas-word-label .canvas-card-primary {
+  border-right: 0;
+  padding-right: 0;
+}
+.canvas-word-romaji {
+  color: var(--muted);
+  font: 400 0.78em/1.4 'DM Sans', sans-serif;
+  text-align: center;
+}
 .canvas-card-word .canvas-card-primary {
   display: flex;
   width: 100%;
@@ -1365,8 +1383,8 @@ footer span {
   justify-self: start;
   align-self: stretch;
   justify-content: center;
-  padding: 0 8px 0 0;
-  border-right: 1px solid var(--line);
+  padding: 0;
+  border-right: 0;
   font-size: 2.4em;
   line-height: 1.35;
   text-align: center;
@@ -1377,14 +1395,21 @@ footer span {
   font-size: 1em;
 }
 .canvas-card-word .canvas-word-details {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 4px 14px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  align-items: start;
+  gap: 6px 14px;
+}
+.canvas-card-word .canvas-word-details > small + small {
+  border-top: 0;
+  padding-top: 0;
 }
 .canvas-word-detail {
-  flex: 1 1 160px;
   min-width: 0;
+}
+.canvas-word-details .canvas-card-meaning {
+  grid-column: 1 / -1;
 }
 .canvas-card-body {
   display: grid;

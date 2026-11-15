@@ -220,7 +220,7 @@ function SentenceBlock({
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     const reading = word.hiragana;
                     const showWordFurigana = preferences.furigana && !!word.furigana?.some((segment) => segment.reading);
-                    const wordMeta = [entry && entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : '', preferences.romaji ? word.romaji : ''].filter(Boolean).join(' · ');
+                    const wordMeta = [entry && entry.dictionaryForm !== word.surface ? entry.dictionaryForm : '', preferences.furigana && !showWordFurigana ? reading : ''].filter(Boolean).join(' · ');
                     const wordLabel = showWordFurigana
                       ? <WordFurigana surface={word.surface} segments={word.furigana} />
                       : word.surface;
@@ -228,19 +228,24 @@ function SentenceBlock({
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <div className="canvas-word-main">
-                          <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
-                            <b>{wordLabel}</b>
-                          </button>
+                          <div className="canvas-word-label">
+                            <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(word.wordId)} aria-label={word.surface}>
+                              <b>{wordLabel}</b>
+                            </button>
+                            {preferences.romaji && <small className="canvas-word-romaji">{word.romaji}</small>}
+                          </div>
                           <div className="canvas-card-body canvas-word-details">
                             <span className="canvas-card-meaning canvas-word-detail">{word.meaning}</span>
                             {entry && (
                               <>
-                                {wordMeta && <small className="canvas-word-detail">{wordMeta}</small>}
-                                <small className="canvas-word-detail">{entry.partOfSpeech}</small>
+                                <small className="canvas-word-detail">{[wordMeta, entry.partOfSpeech].filter(Boolean).join(' · ')}</small>
                               </>
                             )}
-                            {word.inflection && <small className="canvas-word-detail">{word.inflection}</small>}
-                            {word.role && word.role !== genericWordRole && <small className="canvas-word-detail">{word.role}</small>}
+                            {(word.inflection || (word.role && word.role !== genericWordRole)) && (
+                              <small className="canvas-word-detail">
+                                {[word.inflection, word.role !== genericWordRole ? word.role : ''].filter(Boolean).join(' · ')}
+                              </small>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -253,7 +258,7 @@ function SentenceBlock({
                         <span className="token-word-body">
                           {entry && (
                             <span className="word-card-meta">
-                              {wordMeta && <small>{wordMeta}</small>}
+                              {[wordMeta, preferences.romaji ? word.romaji : ''].filter(Boolean).map((value) => <small key={value}>{value}</small>)}
                               <small>{entry.partOfSpeech}</small>
                             </span>
                           )}
