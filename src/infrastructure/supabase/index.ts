@@ -23,12 +23,12 @@ const remotePageSchema = z.object({
 
 interface RpcResult {
   data: unknown;
-  error: { message: string; code?: string } | null;
+  error: { message: string; code?: string; details?: string | null; hint?: string | null } | null;
   status?: number;
   retryAfter?: string | null;
 }
 type SyncRpc = (name: 'push_operations' | 'pull_operations', parameters: Record<string, unknown>) => Promise<RpcResult>;
-function syncError(error: { message: string; code?: string }, status?: number, retryAfter?: string | null): Error {
+function syncError(error: { message: string; code?: string; details?: string | null; hint?: string | null }, status?: number, retryAfter?: string | null): Error {
   // PostgREST exposes HTTP status on the response rather than on the error object.
   return Object.assign(new Error(error.message), {
     status: status || undefined,
@@ -185,7 +185,12 @@ export function servicesForClient(
       const flush = async () => {
         const { error, status, retryAfter } = await callSync('push_operations', { p_operations: batch });
         if (error) {
-          throw Object.assign(syncError(error, status, retryAfter), { phase: 'push', batchSize: batch.length });
+          throw Object.assign(syncError(error, status, retryAfter), {
+            phase: 'push',
+            batchSize: batch.length,
+            request: { rpc: 'push_operations', parameters: { p_operations: batch } },
+            response: { status, error },
+          });
         }
         batch = [];
         bytes = 2;
@@ -213,7 +218,12 @@ export function servicesForClient(
       }
       const { data, error, status, retryAfter } = await callSync('pull_operations', { p_cursor: cursor });
       if (error) {
-        throw Object.assign(syncError(error, status, retryAfter), { phase: 'pull', cursor });
+        throw Object.assign(syncError(error, status, retryAfter), {
+          phase: 'pull',
+          cursor,
+          request: { rpc: 'pull_operations', parameters: { p_cursor: cursor } },
+          response: { status, error },
+        });
       }
       let page: z.infer<typeof remotePageSchema>;
       try {
@@ -264,7 +274,7 @@ export function createSupabaseServices(): { auth: AuthService; transport: SyncTr
   return servicesForClient(client, new URL(import.meta.env.BASE_URL, window.location.origin).href, undefined, syncRpc);
 }
 
-async function readRpcError(response: Response): Promise<{ message: string; code?: string }> {
+async function readRpcError(response: Response): Promise<{ message: string; code?: string; details?: string | null; hint?: string | null }> {
   try {
     const body: unknown = await response.clone().json();
     if (typeof body === 'object' && body !== null) {
@@ -272,6 +282,8 @@ async function readRpcError(response: Response): Promise<{ message: string; code
       return {
         message: typeof record.message === 'string' ? record.message : 'Synchronization request failed',
         code: typeof record.code === 'string' ? record.code : undefined,
+        details: typeof record.details === 'string' || record.details === null ? record.details : undefined,
+        hint: typeof record.hint === 'string' || record.hint === null ? record.hint : undefined,
       };
     }
   } catch {

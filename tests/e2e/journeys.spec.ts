@@ -352,7 +352,7 @@ test('diagnostics report shares a local log file with support text', async ({ pa
   }));
   expect(shared.report.app).toBe('ReadFold');
   expect(shared.report.diagnostics).toEqual([]);
-  expect(shared.text).toContain('alexander.aj.ranger@gmail.com');
+  expect(shared.text).toContain('readfold.app@gmail.com');
   expect(shared.text).toContain('Что произошло');
 });
 

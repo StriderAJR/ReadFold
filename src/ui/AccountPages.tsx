@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FileDown, Mail, ShieldCheck, UserRound } from 'lucide-react';
+import { ClipboardCopy, FileDown, Mail, ShieldCheck, UserRound } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card } from '../components/ui/card';
 import { useAppData, PageTitle, download } from './Common';
 import { local, services, synchronize, syncEngine, useSession } from '../application/runtime';
 import type { ReaderPreferences } from '../domain/user-state';
-import type { Diagnostic, SyncDiagnosticEvent } from '../infrastructure/local/repository';
+import type { Diagnostic, SyncDiagnosticEvent, SyncExchange } from '../infrastructure/local/repository';
 const preferenceOptions: (keyof ReaderPreferences)[] = [
   'furigana',
   'romaji',
@@ -316,17 +316,19 @@ export function DiagnosticsPage() {
   const identity = useSession((state) => state.identity);
   const [items, setItems] = useState<Diagnostic[]>([]);
   const [syncEvents, setSyncEvents] = useState<SyncDiagnosticEvent[]>([]);
+  const [syncExchanges, setSyncExchanges] = useState<SyncExchange[]>([]);
   const [lastSuccessfulSync, setLastSuccessfulSync] = useState<number>();
   const [loaded, setLoaded] = useState(false);
   const [reportStatus, setReportStatus] = useState('');
   const [sharing, setSharing] = useState(false);
   const [syncing, setSyncing] = useState(false);
-  const developerEmail = 'alexander.aj.ranger@gmail.com';
+  const developerEmail = 'readfold.app@gmail.com';
   useEffect(() => {
-    void Promise.all([local.exportDiagnostics(), local.exportSyncEvents(), local.getLastSuccessfulSync()])
-      .then(([diagnostics, events, lastSync]) => {
+    void Promise.all([local.exportDiagnostics(), local.exportSyncEvents(), local.exportSyncExchanges(), local.getLastSuccessfulSync()])
+      .then(([diagnostics, events, exchanges, lastSync]) => {
         setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
         setSyncEvents(events.sort((a, b) => b.occurredAt - a.occurredAt));
+        setSyncExchanges(exchanges.sort((a, b) => b.occurredAt - a.occurredAt));
         setLastSuccessfulSync(lastSync);
         setLoaded(true);
       })
@@ -337,11 +339,12 @@ export function DiagnosticsPage() {
     setReportStatus('');
     try {
       const result = await synchronize(true);
-      const [diagnostics, events, lastSync] = await Promise.all([
-        local.exportDiagnostics(), local.exportSyncEvents(), local.getLastSuccessfulSync(),
+      const [diagnostics, events, exchanges, lastSync] = await Promise.all([
+        local.exportDiagnostics(), local.exportSyncEvents(), local.exportSyncExchanges(), local.getLastSuccessfulSync(),
       ]);
       setItems(diagnostics.sort((a, b) => b.lastSeen - a.lastSeen));
       setSyncEvents(events.sort((a, b) => b.occurredAt - a.occurredAt));
+      setSyncExchanges(exchanges.sort((a, b) => b.occurredAt - a.occurredAt));
       setLastSuccessfulSync(lastSync);
       setReportStatus(result === 'synced' ? t('synced') : result === 'disabled' ? t('syncDisabled') : t('syncError'));
     } catch {
@@ -350,25 +353,40 @@ export function DiagnosticsPage() {
       setSyncing(false);
     }
   }
-  async function shareReport() {
-    const fileName = 'readfold-diagnostics.json';
-    const subject = t('diagnosticEmailSubject');
-    const body = t('diagnosticEmailBody', { fileName });
-    const report = {
-      formatVersion: 2,
+  async function buildReport() {
+    const [diagnostics, events, exchanges] = await Promise.all([
+      local.exportDiagnostics(), local.exportSyncEvents(), local.exportSyncExchanges(),
+    ]);
+    return {
+      formatVersion: 3,
       createdAt: new Date().toISOString(),
       app: 'ReadFold',
       page: `${window.location.origin}${window.location.pathname}`,
       browser: navigator.userAgent,
       online: navigator.onLine,
       syncStatus: syncEngine?.status ?? 'unavailable',
-      diagnostics: items,
-      syncEvents,
+      diagnostics,
+      syncEvents: events,
+      syncExchanges: exchanges,
     };
-    const file = new File([JSON.stringify(report, null, 2)], fileName, { type: 'application/json' });
+  }
+  async function copyReport() {
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(await buildReport(), null, 2));
+      setReportStatus(t('diagnosticCopied'));
+    } catch {
+      setReportStatus(t('diagnosticCopyError'));
+    }
+  }
+  async function shareReport() {
+    const fileName = 'readfold-diagnostics.json';
+    const subject = t('diagnosticEmailSubject');
+    const body = t('diagnosticEmailBody', { fileName });
     setSharing(true);
     setReportStatus('');
     try {
+      const report = await buildReport();
+      const file = new File([JSON.stringify(report, null, 2)], fileName, { type: 'application/json' });
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         try {
           await navigator.share({ title: subject, text: t('diagnosticShareText', { email: developerEmail, body }), files: [file] });
@@ -433,17 +451,33 @@ export function DiagnosticsPage() {
             </small>
           </div>
         ))}
-        {items.length === 0 && syncEvents.length === 0 && <p className="muted">{t('noData')}</p>}
+        {syncExchanges.map((exchange) => (
+          <div className="diagnostic-entry" key={exchange.id ?? exchange.occurredAt}>
+            <div className="diagnostic-entry-heading">
+              <b>{t(exchange.phase === 'push' ? 'diagnosticPush' : 'diagnosticPull')} · {t('diagnosticRequestResponse')}</b>
+              {exchange.status && <span>{t('diagnosticStatus')}: {exchange.status}</span>}
+            </div>
+            <small>{new Intl.DateTimeFormat(user.preferences.language, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(exchange.occurredAt))}</small>
+          </div>
+        ))}
+        {items.length === 0 && syncEvents.length === 0 && syncExchanges.length === 0 && <p className="muted">{t('noData')}</p>}
         <Button
           variant="outline"
-          onClick={async () => download('readfold-diagnostics.json', {
-            formatVersion: 2,
-            diagnostics: await local.exportDiagnostics(),
-            syncEvents: await local.exportSyncEvents(),
-          })}
+          disabled={!loaded}
+          onClick={async () => {
+            try {
+              download('readfold-diagnostics.json', await buildReport());
+            } catch {
+              setReportStatus(t('diagnosticReportError'));
+            }
+          }}
         >
           <FileDown size={16} />
           {t('exportDiagnostics')}
+        </Button>
+        <Button variant="outline" disabled={!loaded} onClick={() => void copyReport()}>
+          <ClipboardCopy size={16} />
+          {t('copyDiagnostics')}
         </Button>
         <p className="muted">{t('diagnosticEmailHelp', { email: developerEmail })}</p>
         <Button variant="outline" disabled={sharing || !loaded} onClick={() => void shareReport()}>

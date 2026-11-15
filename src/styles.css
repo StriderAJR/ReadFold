@@ -117,32 +117,18 @@ h3 {
   flex-direction: column;
   z-index: 20;
 }
-.sidebar-collapsed {
-  width: 78px;
-  padding-inline: 12px;
-}
-.sidebar-collapsed .brand {
-  justify-content: center;
-  padding-inline: 0;
-}
-.sidebar-collapsed .brand > span,
-.sidebar-collapsed .nav-link > span,
-.sidebar-collapsed .sidebar-bottom > span:not(.sync-dot) {
-  display: none;
-}
-.sidebar-collapsed .nav-link {
-  justify-content: center;
-  padding-inline: 0;
-}
-.sidebar-actions {
+.sidebar-header {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
   gap: 4px;
-  padding-top: 8px;
 }
-.sidebar-collapsed .sidebar-actions {
-  flex-direction: column;
-  align-items: center;
+.sidebar-header .brand {
+  flex: 1;
+  min-width: 0;
+}
+.sidebar-menu {
+  flex: none;
+  margin-top: -5px;
 }
 .brand {
   display: flex;
@@ -200,10 +186,20 @@ h3 {
   padding: 17px 7px 2px;
   display: flex;
   gap: 9px;
-  align-items: flex-start;
+  align-items: center;
   color: var(--muted);
   font-size: 0.67rem;
   line-height: 1.45;
+}
+.sidebar-theme {
+  flex: none;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+}
+.sidebar-theme svg {
+  width: 17px;
+  height: 17px;
 }
 .sync-status-link {
   color: inherit;
@@ -225,11 +221,45 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.sidebar-collapsed ~ .main-column {
-  margin-left: 78px;
-}
 .mobile-menu {
   display: none;
+}
+@media (min-width: 761px) {
+  .sidebar-collapsed {
+    width: 78px;
+    padding-inline: 12px;
+  }
+  .sidebar-collapsed .sidebar-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar-collapsed .sidebar-header .brand {
+    justify-content: center;
+    padding: 0 0 16px;
+  }
+  .sidebar-collapsed .sidebar-header .brand > span,
+  .sidebar-collapsed .nav-link > span,
+  .sidebar-collapsed .sidebar-bottom > span:not(.sync-dot),
+  .sidebar-collapsed .sidebar-bottom > a {
+    display: none;
+  }
+  .sidebar-collapsed .sidebar-menu {
+    margin: 0 0 16px;
+  }
+  .sidebar-collapsed .nav-link {
+    justify-content: center;
+    padding-inline: 0;
+  }
+  .sidebar-collapsed .sidebar-bottom {
+    justify-content: center;
+    padding-inline: 0;
+  }
+  .sidebar-collapsed .sidebar-theme {
+    margin-left: 0;
+  }
+  .sidebar-collapsed ~ .main-column {
+    margin-left: 78px;
+  }
 }
 .global-alert {
   background: #fff1eb;
@@ -967,10 +997,18 @@ footer span {
   line-height: inherit;
 }
 .sentence-num {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
   font: 600 0.63rem 'DM Sans';
   color: #c4c0ca;
   flex: none;
   min-width: 18px;
+}
+.sentence-read-indicator {
+  color: var(--coral);
+  flex: none;
 }
 .word-hit {
   border-bottom: 1px dotted #d88c7d;
@@ -1106,6 +1144,16 @@ footer span {
   flex-wrap: wrap;
   gap: 6px;
 }
+.token-list.compact-word-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  width: 100%;
+  min-width: 0;
+}
+.token-list.compact-word-list .token-word-card {
+  width: 100%;
+  min-width: 0;
+}
 .token-list .token-word-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -1202,7 +1250,7 @@ footer span {
 }
 .inline-links.kanji-inline-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   width: 100%;
 }
 .inline-links button {
@@ -1609,7 +1657,8 @@ footer span {
   border-radius: 12px;
   padding: 9px;
   margin: 28px auto 3px;
-  max-width: 500px;
+  width: fit-content;
+  max-width: calc(100% - 24px);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
 }
@@ -2382,21 +2431,9 @@ html[data-theme='dark'] .form-row select {
   .sidebar {
     width: 218px;
   }
-  .sidebar-collapsed {
-    width: 270px;
-    padding: 26px 17px 18px;
-  }
-  .sidebar-collapsed .brand { justify-content: flex-start; padding: 0 10px 33px; }
-  .sidebar-collapsed .brand > span,
-  .sidebar-collapsed .nav-link > span,
-  .sidebar-collapsed .sidebar-bottom > span:not(.sync-dot),
-  .sidebar-collapsed .sidebar-bottom > a { display: initial; }
-  .sidebar-collapsed .nav-link { justify-content: flex-start; padding: 11px 13px; }
-  .sidebar-collapsed .sidebar-actions { flex-direction: row; }
   .main-column {
     margin-left: 218px;
   }
-  .sidebar-collapsed ~ .main-column { margin-left: 78px; }
   .book-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2427,6 +2464,9 @@ html[data-theme='dark'] .form-row select {
   .sidebar-open {
     visibility: visible;
     transform: translateX(0);
+  }
+  .sidebar-menu {
+    display: inline-flex;
   }
   .sidebar-scrim {
     position: fixed;
@@ -2935,19 +2975,12 @@ html[data-theme='dark'] .reveal-button {
 @media (max-width: 560px) {
   .reader-controls {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-    grid-template-areas:
-      'mark mark mark'
-      'previous count next';
+    grid-template-columns: max-content max-content max-content;
+    grid-template-areas: 'previous count next';
     align-items: center;
-    width: 100%;
-    max-width: none;
-    gap: 8px;
-  }
-  .reader-controls .reader-mark-button {
-    grid-area: mark;
-    width: 100%;
-    justify-content: center;
+    width: fit-content;
+    max-width: calc(100% - 24px);
+    gap: 18px;
   }
   .reader-controls .reader-previous-button {
     grid-area: previous;

@@ -107,6 +107,7 @@ function SentenceBlock({
   sentence,
   index,
   selected,
+  read,
   open,
   preferences,
   dictionary,
@@ -119,6 +120,7 @@ function SentenceBlock({
   sentence: Sentence;
   index: number;
   selected: boolean;
+  read: boolean;
   open: boolean;
   preferences: ReaderPreferences;
   dictionary: DictionaryEntries;
@@ -129,20 +131,14 @@ function SentenceBlock({
   onToggleKnown: (id: string) => void;
 }) {
   const { t } = useTranslation();
-  const [showKnown, setShowKnown] = useState(false);
   const adaptiveFilter = preferences.adaptiveHideKnown;
   const isKnown = (id: string) => learning[id] === 'known' || learning[id] === 'mastered';
-  const showItem = (id: string) => !adaptiveFilter || showKnown || !isKnown(id);
+  const showItem = (id: string) => !adaptiveFilter || !isKnown(id);
   const showAnalysis = open;
   const showRuby = preferences.furigana && !preferences.furiganaSeparateLine;
   const visibleKanji = sentence.kanjiIds.length > 0
     ? sentence.kanjiIds.map((id) => ({ id, item: dictionary.kanji.find((entry) => entry.id === id) })).filter((entry) => entry.item)
     : [...new Set(Array.from(sentence.text).filter((character) => /\p{Script=Han}/u.test(character)))].map((character) => ({ id: character, item: undefined }));
-  const hiddenKnown = adaptiveFilter && [
-    ...(preferences.words ? sentence.wordOccurrences.map((word) => word.wordId) : []),
-    ...(preferences.kanji ? sentence.kanjiIds : []),
-    ...(preferences.grammar ? sentence.grammarOccurrences.map((occurrence) => occurrence.grammarId) : []),
-  ].some(isKnown);
   const visibleWords = sentence.wordOccurrences.filter((word) => showItem(word.wordId));
   const shownKanji = visibleKanji.filter(({ id }) => showItem(id));
   const visibleGrammar = sentence.grammarOccurrences.filter((occurrence) => showItem(occurrence.grammarId));
@@ -168,6 +164,7 @@ function SentenceBlock({
       >
         <span className="sentence-num" aria-hidden="true">
           {String(index + 1).padStart(2, '0')}
+          {read && <Check className="sentence-read-indicator" size={12} strokeWidth={3} />}
         </span>
         <span lang="ja">
           {sentence.segments.map((segment, partIndex) => (
@@ -186,11 +183,6 @@ function SentenceBlock({
       </button>
       {showAnalysis && (
         <div id={`analysis-${sentence.id}`} className="sentence-analysis analysis-open">
-          {hiddenKnown && (
-            <button className="show-known-button" data-testid="show-known" type="button" aria-pressed={showKnown} onClick={() => setShowKnown((value) => !value)}>
-              {t(showKnown ? 'hideKnownCards' : 'showKnownCards')}
-            </button>
-          )}
           <div className={`translation-row ${preferences.compactMode || preferences.translationsSeparateLine ? 'translations-separate' : ''}`}>
             {preferences.furigana && preferences.furiganaSeparateLine && (
               <p className="translation-line" lang="ja">
@@ -223,7 +215,7 @@ function SentenceBlock({
             {preferences.words && visibleWords.length > 0 && (
               <section>
                 <h4>{t('wordsLabel')}</h4>
-                <div className={`token-list ${preferences.compactMode ? 'canvas-list' : ''}`}>
+                <div className={preferences.compactMode ? 'token-list compact-word-list' : 'canvas-list'}>
                   {visibleWords.map((word, occurrenceIndex) => {
                     const entry = dictionary.words.find((item) => item.id === word.wordId);
                     const reading = word.hiragana;
@@ -232,7 +224,7 @@ function SentenceBlock({
                     const wordLabel = showWordFurigana
                       ? <WordFurigana surface={word.surface} segments={word.furigana} />
                       : word.surface;
-                    return preferences.compactMode ? (
+                    return !preferences.compactMode ? (
                       <div className="canvas-card canvas-card-word learning-card" data-entity-id={word.wordId} key={`${word.wordId}-${occurrenceIndex}`}>
                         <LearningToggle label={word.surface} known={isKnown(word.wordId)} saving={saving} onClick={() => onToggleKnown(word.wordId)} />
                         <div className="canvas-word-main">
@@ -282,10 +274,10 @@ function SentenceBlock({
             {preferences.kanji && shownKanji.length > 0 && (
               <section>
                 <h4>{t('kanjiLabel')}</h4>
-                <div className={preferences.compactMode ? 'canvas-list' : 'inline-links kanji-inline-list'}>
+                <div className={preferences.compactMode ? 'inline-links kanji-inline-list' : 'canvas-list'}>
                   {shownKanji.map(({ id, item }) => {
                     return (
-                      item ? (preferences.compactMode ? (
+                      item ? (!preferences.compactMode ? (
                         <div className="canvas-card canvas-card-kanji learning-card" data-entity-id={id} key={id}>
                           <LearningToggle label={item.character} known={isKnown(id)} saving={saving} onClick={() => onToggleKnown(id)} />
                           <button className="canvas-card-primary canvas-card-link" lang="ja" onClick={() => onEntity(id)} aria-label={item.character}>
@@ -309,7 +301,7 @@ function SentenceBlock({
                             <KanjiMemory item={item} />
                           </span>
                         </div>
-                      )) : preferences.compactMode ? (
+                      )) : !preferences.compactMode ? (
                         <div className="canvas-card canvas-card-kanji" key={id}>
                           <div className="canvas-card-primary" lang="ja"><b>{id}</b></div>
                           <div className="canvas-card-body"><span className="canvas-card-meaning">{t('kanjiDetailsUnavailable')}</span></div>
@@ -478,7 +470,7 @@ export function ReaderPage() {
       setSaveFailed(true);
     }
   }
-  async function select(sentence: Sentence, position: number, reveal = true) {
+  async function select(sentence: Sentence, position: number, reveal = true, markRead = false): Promise<boolean> {
     setSelected(sentence.id);
     if (reveal) {
       setOpened((previous) => (previous === sentence.id ? '' : sentence.id));
@@ -487,7 +479,7 @@ export function ReaderPage() {
       await user.save({
         kind: 'reading',
         id: readingKey,
-        payload: { sentenceId: sentence.id, position, bookId, chapterId },
+        payload: { sentenceId: sentence.id, position, bookId, chapterId, markRead },
       });
       const references = new Set([
         ...sentence.wordOccurrences.map((word) => word.wordId),
@@ -500,8 +492,10 @@ export function ReaderPage() {
         }
       }
       setSaveFailed(false);
+      return true;
     } catch {
       setSaveFailed(true);
+      return false;
     }
   }
   async function move(offset: number) {
@@ -510,9 +504,18 @@ export function ReaderPage() {
     if (!sentence) {
       return;
     }
-    setOpened('');
+    setOpened(sentence.id);
     await select(sentence, position, false);
     document.getElementById(`sentence-${sentence.id}`)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+  async function markCurrentAndAdvance() {
+    const sentence = sentences[current];
+    if (!sentence || !(await select(sentence, current, false, true))) {
+      return;
+    }
+    if (current < sentences.length - 1) {
+      await move(1);
+    }
   }
   function openEntity(id: string, sentenceId: string) {
     const kind = dictionaryIndex.data?.byId[id]?.kind ??
@@ -598,6 +601,10 @@ export function ReaderPage() {
               <span>{t('compactMode')}</span>
               <input type="checkbox" checked={preferences.compactMode} onChange={(event) => void savePreference('compactMode', event.target.checked)} />
             </label>
+            <label className="reader-canvas-row">
+              <span>{t('showLearned')}</span>
+              <input type="checkbox" checked={!preferences.adaptiveHideKnown} onChange={(event) => void savePreference('adaptiveHideKnown', !event.target.checked)} />
+            </label>
             {layers.map((layer) => (
               <label key={layer}>
                 <input data-testid={`layer-${layer}`} type="checkbox" checked={preferences[layer]} onChange={(event) => void savePreference(layer, event.target.checked)} />
@@ -639,7 +646,8 @@ export function ReaderPage() {
                   sentence={sentence}
                   index={position}
                   selected={selected === sentence.id}
-                  open={preferences.compactMode || opened === sentence.id}
+                  read={saved?.sentenceIds.includes(sentence.id) ?? false}
+                  open={!preferences.compactMode || opened === sentence.id}
                   preferences={preferences}
                   dictionary={dictionary.data ?? emptyDictionary}
                   learning={user.data?.learning ?? {}}
@@ -654,21 +662,6 @@ export function ReaderPage() {
         ))}
       </div>
       <div className="reader-controls">
-        <Button
-          data-testid="mark-read"
-          className="reader-mark-button"
-          variant="outline"
-          disabled={user.saving}
-          onClick={() => {
-            const sentence = sentences[current];
-            if (sentence) {
-              void select(sentence, current, false);
-            }
-          }}
-        >
-          <Check size={16} />
-          {t('markRead')}
-        </Button>
         <Button className="reader-previous-button" variant="outline" onClick={() => void move(-1)} disabled={current <= 0 || user.saving}>
           <ChevronLeft size={16} />
           {t('previous')}
@@ -676,7 +669,7 @@ export function ReaderPage() {
         <span className="reader-progress-count">
           {String(current + 1).padStart(2, '0')} <i>/</i> {String(sentences.length).padStart(2, '0')}
         </span>
-        <Button className="reader-next-button" onClick={() => void move(1)} disabled={current >= sentences.length - 1 || user.saving}>
+        <Button className="reader-next-button" onClick={() => void markCurrentAndAdvance()} disabled={user.saving || (current >= sentences.length - 1 && (saved?.sentenceIds.includes(selected) ?? false))}>
           {t('next')}
           <ChevronRight size={16} />
         </Button>

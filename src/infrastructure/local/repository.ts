@@ -46,6 +46,7 @@ const payloadSchemas = {
     .object({
       sentenceId: z.string().min(1).max(512),
       position: z.number().int().nonnegative().max(Number.MAX_SAFE_INTEGER),
+      markRead: z.boolean().optional(),
       bookId: z.string().max(512).optional(),
       chapterId: z.string().max(512).optional(),
     })
@@ -160,6 +161,15 @@ export interface SyncDiagnosticEvent {
   batchSize?: number;
   cursor?: number;
 }
+export interface SyncExchange {
+  id?: number;
+  occurredAt: number;
+  phase: 'push' | 'pull';
+  request?: unknown;
+  response?: unknown;
+  status?: number;
+  serverCode?: string;
+}
 const diagnosticCodes = ['sync_failed', 'import_failed', 'cache_failed', 'storage_failed'];
 const diagnosticLifetime = 7 * 24 * 60 * 60 * 1000;
 function diagnosticReason(code: string, status?: number): DiagnosticReason {
@@ -236,6 +246,20 @@ function sanitizeSyncEvent(entry: Partial<SyncDiagnosticEvent>): SyncDiagnosticE
     cursor,
   };
 }
+function sanitizeSyncExchange(entry: Partial<SyncExchange>): SyncExchange {
+  const phase = entry.phase === 'push' ? 'push' : 'pull';
+  const status = Number.isInteger(entry.status) && entry.status! >= 100 && entry.status! <= 599 ? entry.status : undefined;
+  const serverCode = typeof entry.serverCode === 'string' && /^[A-Z0-9_]{3,16}$/.test(entry.serverCode) ? entry.serverCode : undefined;
+  return {
+    id: Number.isSafeInteger(entry.id) && entry.id! > 0 ? entry.id : undefined,
+    occurredAt: Number.isFinite(entry.occurredAt) ? entry.occurredAt! : Date.now(),
+    phase,
+    request: entry.request,
+    response: entry.response,
+    status,
+    serverCode,
+  };
+}
 
 export class LocalDatabase extends Dexie {
   operations!: Table<UserOperation, string>;
@@ -244,6 +268,7 @@ export class LocalDatabase extends Dexie {
   cache!: Table<CacheEntry, string>;
   diagnostics!: Table<Diagnostic, number>;
   syncEvents!: Table<SyncDiagnosticEvent, number>;
+  syncExchanges!: Table<SyncExchange, number>;
   constructor(name = 'readfold') {
     super(name);
     this.version(1).stores({
@@ -275,6 +300,7 @@ export class LocalDatabase extends Dexie {
           });
       });
     this.version(4).stores({ syncEvents: '++id, occurredAt' });
+    this.version(5).stores({ syncExchanges: '++id, occurredAt' });
   }
 }
 
@@ -294,7 +320,7 @@ export class LocalRepository {
     entityId: string,
     payload: Record<string, unknown>,
   ): Promise<UserOperation> {
-    return this.db.transaction('rw', this.db.operations, this.db.outbox, this.db.metadata, async () => {
+    const operation = await this.db.transaction('rw', this.db.operations, this.db.outbox, this.db.metadata, async () => {
       const existing = await this.db.metadata.get('deviceId');
       const deviceId = existing?.value ?? crypto.randomUUID();
       if (!existing) {
@@ -316,6 +342,8 @@ export class LocalRepository {
       await this.db.metadata.put({ key: `clock:${deviceId}`, value: String(timestamp) });
       return operation;
     });
+    await this.clearStorageDiagnostics();
+    return operation;
   }
 
   getOutbox(ownerId: string): Promise<OutboxEntry[]> {
@@ -382,6 +410,7 @@ export class LocalRepository {
         await this.db.metadata.put({ key, value: id });
       }
     });
+    await this.clearStorageDiagnostics();
   }
 
   async mergeGuest(ownerId: string): Promise<void> {
@@ -419,6 +448,7 @@ export class LocalRepository {
       }
       await this.setCursor(ownerId, cursor);
     });
+    await this.clearStorageDiagnostics();
   }
 
   async diagnostic(code: string, status?: number, level: Diagnostic['level'] = 'error'): Promise<void> {
@@ -455,6 +485,20 @@ export class LocalRepository {
     });
   }
 
+  async recordSyncExchange(exchange: Omit<SyncExchange, 'id' | 'occurredAt'>): Promise<void> {
+    const safe = sanitizeSyncExchange({ ...exchange, occurredAt: Date.now() });
+    await this.db.transaction('rw', this.db.syncExchanges, async () => {
+      await this.db.syncExchanges.add(safe);
+      const cutoff = Date.now() - diagnosticLifetime;
+      await this.db.syncExchanges.where('occurredAt').below(cutoff).delete();
+      const overflow = (await this.db.syncExchanges.count()) - 50;
+      if (overflow > 0) {
+        const keys = await this.db.syncExchanges.orderBy('occurredAt').limit(overflow).primaryKeys();
+        await this.db.syncExchanges.bulkDelete(keys);
+      }
+    });
+  }
+
   async markSyncSuccessful(): Promise<number> {
     const timestamp = Date.now();
     await this.db.transaction('rw', this.db.metadata, this.db.diagnostics, this.db.syncEvents, async () => {
@@ -476,17 +520,28 @@ export class LocalRepository {
     return (await this.db.syncEvents.orderBy('occurredAt').toArray()).map(sanitizeSyncEvent);
   }
 
+  async exportSyncExchanges(): Promise<SyncExchange[]> {
+    const cutoff = Date.now() - diagnosticLifetime;
+    await this.db.syncExchanges.where('occurredAt').below(cutoff).delete();
+    return (await this.db.syncExchanges.orderBy('occurredAt').toArray()).map(sanitizeSyncExchange);
+  }
+
   async getCache(key: string): Promise<unknown> {
     return (await this.db.cache.get(key))?.json;
   }
   async setCache(key: string, data: unknown): Promise<void> {
     await this.db.cache.put({ id: key, json: data, updatedAt: Date.now() });
+    await this.clearStorageDiagnostics();
   }
   private async cleanupDiagnostics(): Promise<void> {
     await this.db.diagnostics
       .where('lastSeen')
       .below(Date.now() - diagnosticLifetime)
       .delete();
+  }
+
+  private async clearStorageDiagnostics(): Promise<void> {
+    await this.db.diagnostics.where('category').equals('storage').delete();
   }
 
   async exportDiagnostics(): Promise<Diagnostic[]> {
@@ -561,7 +616,7 @@ export function reduceOperations(operations: UserOperation[]) {
           updatedAt: operation.createdAt,
         };
         if (typeof payload.sentenceId === 'string') {
-          if (!reading.sentenceIds.includes(payload.sentenceId)) {
+          if (payload.markRead !== false && !reading.sentenceIds.includes(payload.sentenceId)) {
             reading.sentenceIds.push(payload.sentenceId);
           }
           reading.sentenceId = payload.sentenceId;

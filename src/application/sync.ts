@@ -9,6 +9,8 @@ export interface SyncFailure {
   phase?: 'push' | 'pull';
   batchSize?: number;
   cursor?: number;
+  request?: unknown;
+  response?: unknown;
 }
 
 export function retryDelay(attempt: number, retryAfter?: string | number, now = Date.now()): number {
@@ -105,6 +107,15 @@ export class SyncEngine {
       const attempt = Math.max(0, ...pending.map((entry) => entry.attempts));
       await this.repository.retry(pending, retryDelay(attempt, failure.retryAfter));
       await this.repository.diagnostic('sync_failed', status);
+      if (failure.request !== undefined || failure.response !== undefined) {
+        await this.repository.recordSyncExchange({
+          phase: failure.phase ?? phase,
+          request: failure.request,
+          response: failure.response,
+          status,
+          serverCode: failure.serverCode,
+        });
+      }
       await this.repository.recordSyncEvent({
         phase: failure.phase ?? phase,
         status,

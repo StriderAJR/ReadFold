@@ -4,8 +4,6 @@ import { useTranslation } from 'react-i18next';
 import {
   ChartNoAxesColumn,
   CircleHelp,
-  ChevronLeft,
-  ChevronRight,
   Home,
   Languages,
   Library,
@@ -16,7 +14,6 @@ import {
   Sparkles,
   Sun,
   UserRound,
-  X,
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { useSyncInfo, useUserData } from '../application/hooks';
@@ -44,6 +41,20 @@ function Layout({ children }: { children: ReactNode }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 760px)').matches);
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 760px)');
+    const update = () => setIsMobile(media.matches);
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+  const toggleSidebar = () => {
+    if (isMobile) {
+      setOpen(false);
+    } else {
+      setCollapsed(!collapsed);
+    }
+  };
   useEffect(() => {
     if (!open) {
       return;
@@ -91,12 +102,17 @@ function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="app-shell">
       <aside id="primary-sidebar" className={`sidebar ${collapsed ? 'sidebar-collapsed' : ''} ${open ? 'sidebar-open' : ''}`}>
-        <Link className="brand" to="/" onClick={() => setOpen(false)}>
-          <img src={`${import.meta.env.BASE_URL}brand/icon.jpg`} alt="" />
-          <span>
-            ReadFold<small>{t('tagline')}</small>
-          </span>
-        </Link>
+        <div className="sidebar-header">
+          <Link className="brand" to="/" onClick={() => setOpen(false)}>
+            <img src={`${import.meta.env.BASE_URL}brand/icon.jpg`} alt="" />
+            <span>
+              ReadFold<small>{t('tagline')}</small>
+            </span>
+          </Link>
+          <Button variant="ghost" size="icon" className="sidebar-menu" aria-label={open ? t('closeNavigation') : collapsed ? t('expandSidebar') : t('collapseSidebar')} title={open ? t('closeNavigation') : collapsed ? t('expandSidebar') : t('collapseSidebar')} aria-controls="primary-sidebar" onClick={toggleSidebar}>
+            <Menu />
+          </Button>
+        </div>
         <nav aria-label={t('appTitle')}>
           {nav.map(([href, key, Icon]) => (
             <NavLink
@@ -117,26 +133,23 @@ function Layout({ children }: { children: ReactNode }) {
           />
           {syncInfo.status === 'syncError' ? (
             <Link to="/settings/diagnostics" className="sync-status-link">
-              {syncStatusLabel}{syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}
+              {syncStatusLabel}
             </Link>
           ) : (
             <span>{syncStatusLabel}{syncInfo.pending > 0 ? ` · ${syncInfo.pending}` : ''}</span>
           )}
-        </div>
-        <div className="sidebar-actions">
-          <Button variant="ghost" size="icon" aria-label={t('theme')} title={t('theme')} onClick={() => void user.save({ kind: 'preferences', id: 'reader', payload: { theme: user.preferences.theme === 'dark' ? 'light' : 'dark' } })}>
+          <Button variant="ghost" size="icon" className="sidebar-theme" aria-label={t('theme')} title={t('theme')} onClick={() => void user.save({ kind: 'preferences', id: 'reader', payload: { theme: user.preferences.theme === 'dark' ? 'light' : 'dark' } })}>
             {user.preferences.theme === 'dark' ? <Sun /> : <Moon />}
-          </Button>
-          <Button variant="ghost" size="icon" className="sidebar-collapse" aria-label={collapsed ? t('expandSidebar') : t('collapseSidebar')} title={collapsed ? t('expandSidebar') : t('collapseSidebar')} onClick={() => setCollapsed(!collapsed)}>
-            {collapsed ? <ChevronRight /> : <ChevronLeft />}
           </Button>
         </div>
       </aside>
       {open && <button aria-label={t('back')} className="sidebar-scrim" onClick={() => setOpen(false)} />}
       <div className="main-column">
-        <Button variant="ghost" size="icon" className="mobile-menu" aria-label={t('openNavigation')} aria-controls="primary-sidebar" aria-expanded={open} onClick={() => setOpen(!open)}>
-          {open ? <X /> : <Menu />}
-        </Button>
+        {isMobile && !open && (
+          <Button variant="ghost" size="icon" className="mobile-menu" aria-label={t('openNavigation')} aria-controls="primary-sidebar" aria-expanded={open} onClick={() => setOpen(true)}>
+            <Menu />
+          </Button>
+        )}
         {(localFailure || user.saveError || user.isError || syncInfo.status === 'syncError') && (
           <div className="global-alert" role="status">
             {localFailure || user.saveError || user.isError ? (
