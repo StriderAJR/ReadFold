@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:孝",
+  "character": "孝",
+  "meanings": [
+    "ребёнок под старшим"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "耂",
+    "子"
+  ],
+  "componentMeanings": {
+    "耂": "согнутая спина с палкой",
+    "子": "ребёнок"
+  },
+  "wordIds": [],
+  "mnemonic": "Ребёнок 子 поддерживает согнувшегося старшего 耂: заботится о нём.",
+  "isMnemonicPartOnly": true
+}

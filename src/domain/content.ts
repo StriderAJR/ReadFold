@@ -56,6 +56,7 @@ export const kanjiSchema = z
   .object({
     id: kanjiIdSchema,
     character: z.string().refine((value) => [...value].length === 1, 'Expected one character'),
+    isMnemonicPartOnly: z.literal(true).optional(),
     meanings: z.array(textSchema).min(1),
     on: z.array(textSchema),
     kun: z.array(textSchema),
@@ -71,7 +72,12 @@ export const kanjiSchema = z
   .refine((kanji) => !kanji.componentMeanings || (
     kanji.components.every((component) => Object.hasOwn(kanji.componentMeanings ?? {}, component)) &&
     Object.keys(kanji.componentMeanings).every((component) => kanji.components.includes(component))
-  ), { message: 'Component meanings must match visual components', path: ['componentMeanings'] });
+  ), { message: 'Component meanings must match visual components', path: ['componentMeanings'] })
+  .refine((kanji) => !kanji.isMnemonicPartOnly || (
+    kanji.on.length === 0 && kanji.kun.length === 0 && kanji.wordIds.length === 0
+  ), {
+    message: 'Mnemonic-only parts cannot have readings or word links', path: ['isMnemonicPartOnly'],
+  });
 export const grammarSchema = z
   .object({
     id: grammarIdSchema,
@@ -121,9 +127,42 @@ export const dictionarySchema = z
         context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index, 'wordIds'], message: 'Unknown word' });
       }
       if (kanji.on.length === 0 && kanji.kun.length === 0) {
-        context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index], message: 'Kanji reading is required' });
+        if (!kanji.isMnemonicPartOnly) {
+          context.addIssue({ code: z.ZodIssueCode.custom, path: ['kanji', index], message: 'Kanji reading is required' });
+        }
       }
     });
+    const active = new Set<string>();
+    const visited = new Set<string>();
+    const visitComponents = (kanji: Kanji, index: number): void => {
+      if (active.has(kanji.character)) {
+        context.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ['kanji', index, 'components'],
+          message: `Cyclic kanji component reference: ${kanji.character}`,
+        });
+        return;
+      }
+      if (visited.has(kanji.character)) {
+        return;
+      }
+      active.add(kanji.character);
+      for (const component of kanji.components) {
+        const child = kanjiByCharacter.get(component);
+        if (child) {
+          visitComponents(child, index);
+        } else if ([...component].length === 1 || !kanji.componentMeanings?.[component]?.trim()) {
+          context.addIssue({
+            code: z.ZodIssueCode.custom,
+            path: ['kanji', index, 'components'],
+            message: `Unknown kanji component or missing inline meaning: ${component}`,
+          });
+        }
+      }
+      active.delete(kanji.character);
+      visited.add(kanji.character);
+    };
+    dictionary.kanji.forEach(visitComponents);
     dictionary.grammar.forEach((grammar, index) => {
       if (grammar.relatedIds.some((id) => !grammarIds.has(id))) {
         context.addIssue({
@@ -290,11 +329,12 @@ export function validateChapterReferences(chapter: Chapter, book: BookMetadata, 
   }
   const words = new Set(dictionary.words.map((item) => item.id));
   const kanji = new Set(dictionary.kanji.map((item) => item.id));
+  const partOnlyIds = new Set(dictionary.kanji.filter((item) => item.isMnemonicPartOnly).map((item) => item.id));
   const grammar = new Set(dictionary.grammar.map((item) => item.id));
   for (const sentence of sentences) {
     if (
       sentence.wordOccurrences.some((item) => !words.has(item.wordId)) ||
-      sentence.kanjiIds.some((id) => !kanji.has(id)) ||
+      sentence.kanjiIds.some((id) => !kanji.has(id) || partOnlyIds.has(id)) ||
       sentence.grammarOccurrences.some((item) => !grammar.has(item.grammarId)) ||
       sentence.wordOccurrences.some((item) => !sentence.text.includes(item.surface))
     ) {

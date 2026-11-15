@@ -13,9 +13,8 @@ test('all editable cards and chapters produce complete location-only indexes rep
   const index = JSON.parse(first.get('ja/dictionary/index.json'));
   assert.equal(Object.keys(index.byId).length,
     collection.dictionary.words.length + collection.dictionary.kanji.length + collection.dictionary.grammar.length);
-  assert.ok(collection.components.length > 0);
-  assert.deepEqual(JSON.parse(first.get('ja/dictionary/components.json')), collection.components);
-  assert.ok(collection.components.every((part) => !Object.hasOwn(index.byId, part.id)));
+  assert.equal(first.has('ja/dictionary/components.json'), false);
+  assert.ok(collection.dictionary.kanji.some((entry) => entry.isMnemonicPartOnly));
   assert.equal(collection.chapters.length, collection.catalog.reduce((count, book) => count + book.chapters.length, 0));
   assert.equal(collection.chapters.reduce((count, { chapter }) => count + chapter.paragraphs.flatMap((part) => part.sentences).length, 0),
     collection.catalog.reduce((count, book) => count + book.chapters.reduce((sum, chapter) => sum + chapter.sentenceCount, 0), 0));
@@ -36,9 +35,22 @@ test('collection build rejects duplicate IDs, dangling links, malformed segments
   duplicate.dictionary.words.push(duplicate.dictionary.words[0]);
   assert.throws(() => createContentArtifacts(duplicate), /Dictionary IDs must be globally unique|Duplicate dictionary IDs/);
   const missingPart = structuredClone(collection);
-  missingPart.dictionary.kanji[0].components = ['неизвестная часть'];
-  missingPart.dictionary.kanji[0].componentMeanings = { 'неизвестная часть': 'неизвестная часть' };
-  assert.throws(() => createContentArtifacts(missingPart), /Unknown component/);
+  missingPart.dictionary.kanji[0].components = ['厂'];
+  missingPart.dictionary.kanji[0].componentMeanings = { 厂: 'утёс' };
+  missingPart.dictionary.kanji = missingPart.dictionary.kanji.filter((entry) => entry.character !== '厂');
+  assert.throws(() => createContentArtifacts(missingPart), /Unknown kanji component/);
+  const missingInlineMeaning = structuredClone(collection);
+  missingInlineMeaning.dictionary.kanji[0].components = ['пряжки'];
+  missingInlineMeaning.dictionary.kanji[0].componentMeanings = undefined;
+  assert.throws(() => createContentArtifacts(missingInlineMeaning), /missing inline meaning/);
+  const cycle = structuredClone(collection);
+  const firstKanji = cycle.dictionary.kanji[0];
+  const secondKanji = cycle.dictionary.kanji[1];
+  firstKanji.components = [secondKanji.character];
+  firstKanji.componentMeanings = { [secondKanji.character]: 'часть' };
+  secondKanji.components = [firstKanji.character];
+  secondKanji.componentMeanings = { [firstKanji.character]: 'часть' };
+  assert.throws(() => createContentArtifacts(cycle), /Cyclic kanji component reference/);
   const dangling = structuredClone(collection);
   dangling.chapters[0].chapter.paragraphs[0].sentences[0].wordOccurrences[0].wordId = 'ja:word:存在しない';
   assert.throws(() => createContentArtifacts(dangling), /Unknown dictionary reference/);

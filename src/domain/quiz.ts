@@ -66,12 +66,15 @@ export function buildQuiz(dictionary: Dictionary): QuizTask[] {
     });
   }
   for (const kanji of dictionary.kanji) {
+    if (kanji.isMnemonicPartOnly) {
+      continue;
+    }
     choice(
       kanji.id,
       'kanji',
       kanji.character,
       kanji.meanings,
-      dictionary.kanji.flatMap((item) => item.meanings),
+      dictionary.kanji.filter((item) => !item.isMnemonicPartOnly).flatMap((item) => item.meanings),
     );
   }
   for (const grammar of dictionary.grammar) {

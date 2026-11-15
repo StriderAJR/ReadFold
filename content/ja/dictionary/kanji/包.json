@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:包",
+  "character": "包",
+  "meanings": [
+    "свёрток"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "勹",
+    "己"
+  ],
+  "componentMeanings": {
+    "勹": "обёртка",
+    "己": "сам"
+  },
+  "wordIds": [],
+  "mnemonic": "Обёртка 勹 охватила закрученный внутрь предмет 己: получился свёрток.",
+  "isMnemonicPartOnly": true
+}

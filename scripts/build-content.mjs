@@ -3,7 +3,6 @@ import { basename, dirname, isAbsolute, relative, resolve, sep } from 'node:path
 import { fileURLToPath } from 'node:url';
 import { z } from 'zod';
 import { catalogSchema, chapterSchema, dictionarySchema, validateChapterReferences } from '../src/domain/content.ts';
-import { componentDictionarySchema, validateComponentReferences } from '../src/domain/components.ts';
 
 export const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const kinds = ['words', 'kanji', 'grammar'];
@@ -127,8 +126,7 @@ export async function loadContentSources(root = repositoryRoot) {
   if (bookSourceFiles.some((path) => !consumedSourceFiles.has(path))) {
     throw new Error('Unreferenced book source JSON');
   }
-  const components = componentDictionarySchema.parse(await readJson(resolve(languageRoot, 'dictionary/components.json')));
-  const collection = { catalog, dictionary, components, chapters, sourceGroups, sourceById, sentenceSources };
+  const collection = { catalog, dictionary, chapters, sourceGroups, sourceById, sentenceSources };
   validateCollection(collection);
   return collection;
 }
@@ -137,8 +135,6 @@ export async function loadContentSources(root = repositoryRoot) {
 export function validateCollection(collection) {
   const catalog = catalogSchema.parse(collection.catalog);
   const dictionary = dictionarySchema.parse(collection.dictionary);
-  const components = componentDictionarySchema.parse(collection.components);
-  validateComponentReferences(dictionary.kanji, components);
   if (catalog.some((book) => book.originalLanguage !== 'ja')) {
     throw new Error('content/ja must contain Japanese books');
   }
@@ -178,16 +174,6 @@ export function validateCollection(collection) {
 }
 
 export function findEntity(collection, id) {
-  if (id.startsWith('ja:component:')) {
-    const card = collection.components.find((entry) => entry.id === id);
-    if (!card) {
-      throw new Error(`Unknown entity ID: ${id}`);
-    }
-    return {
-      id, kind: 'components', sourceFile: 'content/ja/dictionary/components.json', card, occurrences: [],
-      kanjiIds: collection.dictionary.kanji.filter((entry) => entry.components.includes(card.form)).map((entry) => entry.id),
-    };
-  }
   const kind = kinds.find((name) => collection.dictionary[name].some((card) => card.id === id));
   if (!kind) {
     throw new Error(`Unknown entity ID: ${id}`);
@@ -230,7 +216,6 @@ export function createContentArtifacts(collection) {
   const liveIds = new Set(kinds.flatMap((kind) => collection.dictionary[kind].map((card) => card.id)));
   const index = { schemaVersion: 1, sections: { words: [], kanji: [], grammar: [] }, byId: {} };
   artifacts.set('books/catalog.json', json(collection.catalog));
-  artifacts.set('ja/dictionary/components.json', json(collection.components));
   for (const { path, chapter } of collection.chapters) {
     artifacts.set(path, json(chapter));
   }

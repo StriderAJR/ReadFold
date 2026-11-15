@@ -82,16 +82,20 @@ describe('published content provider', () => {
     expect(new Set(requested)).toEqual(new Set(['ja/dictionary/index.json', reference.file]));
   });
 
-  it('loads the component dictionary separately and caches it for offline use', async () => {
+  it('loads nested visual parts from kanji cards and caches them for offline use', async () => {
     const contentProvider = await createContentProvider();
-    vi.stubGlobal('fetch', async () => new Response(JSON.stringify(read('ja/dictionary/components.json')), { status: 200 }));
-    const components = await contentProvider.components();
-    expect(components.length).toBeGreaterThan(0);
-    expect(components.every((entry) => entry.id.startsWith('ja:component:'))).toBe(true);
-    expect(cache.get('ja/dictionary/components.json')).toEqual(components);
+    const requested: string[] = [];
+    vi.stubGlobal('fetch', async (input: string | URL | Request) => {
+      const path = new URL(String(input), 'http://readfold.test').pathname.replace(/^\/ReadFold\//, '').replace(/^\//, '');
+      requested.push(path);
+      return new Response(JSON.stringify(read(path)), { status: 200 });
+    });
+    const parts = await contentProvider.kanjiPartTree(['心']);
+    expect(parts.some((entry) => entry.id === 'ja:kanji:心')).toBe(true);
+    expect(requested).not.toContain('ja/dictionary/components.json');
     vi.stubGlobal('fetch', async () => { throw new Error('offline'); });
     const offlineProvider = await createContentProvider();
-    expect(await offlineProvider.components()).toEqual(components);
+    expect(await offlineProvider.kanjiPartTree(['心'])).toEqual(parts);
   });
 
   it('opens every generated chapter through the runtime provider', async () => {

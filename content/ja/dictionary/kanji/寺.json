@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:寺",
+  "character": "寺",
+  "meanings": [
+    "храм"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "土",
+    "寸"
+  ],
+  "componentMeanings": {
+    "土": "земля",
+    "寸": "мерка; рука с отметкой"
+  },
+  "wordIds": [],
+  "mnemonic": "На земле 土 стоит рука с меркой 寸: она бережно отмеряет место для храма.",
+  "isMnemonicPartOnly": true
+}

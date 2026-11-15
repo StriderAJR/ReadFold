@@ -1,0 +1,18 @@
+{
+  "id": "ja:kanji:介",
+  "character": "介",
+  "meanings": [
+    "человек между столбиками"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "人"
+  ],
+  "componentMeanings": {
+    "人": "человек"
+  },
+  "wordIds": [],
+  "mnemonic": "Человек 人 стоит сверху, а снизу расходятся два коротких столбика, будто края ворот.",
+  "isMnemonicPartOnly": true
+}

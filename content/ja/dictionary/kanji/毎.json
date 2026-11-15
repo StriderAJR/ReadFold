@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:毎",
+  "character": "毎",
+  "meanings": [
+    "каждый"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "𠂉",
+    "毋"
+  ],
+  "componentMeanings": {
+    "𠂉": "короткий навес",
+    "毋": "запрет"
+  },
+  "wordIds": [],
+  "mnemonic": "Под коротким навесом 𠂉 одинаковый перечёркнутый мешочек 毋: у каждого свой.",
+  "isMnemonicPartOnly": true
+}

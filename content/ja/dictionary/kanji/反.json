@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:反",
+  "character": "反",
+  "meanings": [
+    "разворот"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "厂",
+    "又"
+  ],
+  "componentMeanings": {
+    "厂": "скала; навес",
+    "又": "рука; снова"
+  },
+  "wordIds": [],
+  "mnemonic": "Под утёсом 厂 рука 又 разворачивает путника обратно.",
+  "isMnemonicPartOnly": true
+}

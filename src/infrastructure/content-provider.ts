@@ -16,7 +16,6 @@ import {
   type OccurrenceLocation,
 } from '../domain/content';
 import { canonicalEntityId } from '../domain/entity-id-migration';
-import { componentDictionarySchema } from '../domain/components';
 import { kanaToRomaji } from '../domain/kana';
 import { local } from '../application/runtime';
 
@@ -240,7 +239,6 @@ async function loadIndexOrLegacy(): Promise<{ index: DictionaryIndex | null; leg
 }
 
 export const contentProvider = {
-  components: () => load('ja/dictionary/components.json', componentDictionarySchema),
   catalog: () => load('books/catalog.json', catalogSchema),
   dictionaryIndex: () => load('ja/dictionary/index.json', dictionaryIndexSchema),
   dictionary: async () => {
@@ -290,6 +288,22 @@ export const contentProvider = {
       };
     }
     return collectEntries(ids, index!);
+  },
+  kanjiPartTree: async (forms: readonly string[]): Promise<DictionaryEntries['kanji']> => {
+    const found = new Map<string, DictionaryEntries['kanji'][number]>();
+    let pending = [...new Set(forms.filter((form) => [...form].length === 1))];
+    while (pending.length) {
+      const batch = pending.filter((form) => !found.has(form));
+      if (!batch.length) {
+        break;
+      }
+      const entries = await contentProvider.dictionaryEntities(batch.map((form) => `ja:kanji:${form}`));
+      for (const entry of entries.kanji) {
+        found.set(entry.character, entry);
+      }
+      pending = entries.kanji.flatMap((entry) => entry.components).filter((form) => [...form].length === 1);
+    }
+    return [...found.values()];
   },
   occurrences: async (id: string): Promise<OccurrenceLocation[]> => {
     const { index, legacy } = await loadIndexOrLegacy();

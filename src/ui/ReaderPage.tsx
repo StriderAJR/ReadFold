@@ -3,14 +3,13 @@ import { ChevronLeft, ChevronRight, Settings, Check, Sparkles } from 'lucide-rea
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button } from '../components/ui/button';
-import { useCatalog, useChapter, useComponents, useDictionaryEntities, useDictionaryIndex, useUserData } from '../application/hooks';
-import type { DictionaryEntries, Sentence } from '../domain/content';
+import { useCatalog, useChapter, useDictionaryEntities, useDictionaryIndex, useKanjiPartTree, useUserData } from '../application/hooks';
+import type { DictionaryEntries, Kanji, Sentence } from '../domain/content';
 import type { LearningStatus, ReaderPreferences } from '../domain/user-state';
 import { GrammarExample } from './GrammarExample';
 import { GrammarText } from './GrammarText';
 import { KanjiReadings } from './KanjiReadings';
 import { LayerHint } from './LayerHint';
-import type { VisualComponent } from '../domain/components';
 import { ComponentForm } from './ComponentPages';
 
 const layers = ['furigana', 'romaji', 'literal', 'natural', 'words', 'kanji', 'grammar'] as const;
@@ -29,13 +28,13 @@ function WordFurigana({ surface, segments }: { surface: string; segments?: { tex
 function KanjiComponentNode({ character, fallback, parts, ancestors }: {
   character: string;
   fallback?: string;
-  parts: readonly VisualComponent[];
+  parts: readonly Kanji[];
   ancestors: string[];
 }) {
   const { t } = useTranslation();
-  const entry = parts.find((candidate) => candidate.form === character);
+  const entry = parts.find((candidate) => candidate.character === character);
   const children = (entry?.components ?? []).filter((part) => part !== character && !ancestors.includes(part));
-  const contents = <><ComponentForm form={character} /><span>{entry?.name ?? fallback ?? t('componentUnavailable')}</span></>;
+  const contents = <><ComponentForm form={character} /><span>{entry?.meanings[0] ?? fallback ?? t('componentUnavailable')}</span></>;
   const description = entry && entry.components.length > 0 && entry.mnemonic && (
     <small className="kanji-branch-mnemonic">{entry.mnemonic}</small>
   );
@@ -59,8 +58,8 @@ function KanjiComponentNode({ character, fallback, parts, ancestors }: {
 
 function KanjiMemory({ item }: { item: DictionaryEntries['kanji'][number] }) {
   const { t } = useTranslation();
-  const dictionary = useComponents();
   const components = item.components.filter((component) => component !== item.character);
+  const dictionary = useKanjiPartTree(components);
   return (
     <>
       {components.length > 0 && (

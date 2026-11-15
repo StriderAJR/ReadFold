@@ -31,11 +31,18 @@ describe('book format', () => {
     const dictionary = readDictionary();
     const entries = new Map(dictionary.kanji.map((kanji) => [kanji.character, kanji]));
     for (const kanji of dictionary.kanji) {
-      expect(kanji.mnemonic).toBeTruthy();
-      expect(kanji.mnemonic).not.toMatch(/^(Вспомни образы|Начертание)/);
+      if (kanji.mnemonic) {
+        expect(kanji.mnemonic).not.toMatch(/^(Вспомни образы|Начертание)/);
+      }
       expect(new Set(kanji.components).size).toBe(kanji.components.length);
       expect(Object.keys(kanji.componentMeanings ?? {}).sort()).toEqual([...kanji.components].sort());
-      expect(kanji.on.length + kanji.kun.length).toBeGreaterThan(0);
+      if (kanji.isMnemonicPartOnly) {
+        expect(kanji.mnemonic).toBeTruthy();
+        expect(kanji.on.length + kanji.kun.length).toBe(0);
+        expect(kanji.wordIds).toEqual([]);
+      } else {
+        expect(kanji.on.length + kanji.kun.length).toBeGreaterThan(0);
+      }
       for (const component of kanji.components) {
         expect(entries.has(component) || Boolean(kanji.componentMeanings?.[component]?.trim())).toBe(true);
       }
@@ -47,6 +54,27 @@ describe('book format', () => {
       .toBe(false);
     expect(kanjiSchema.safeParse({ ...kanji, componentMeanings: { ...kanji.componentMeanings, 十: '' } }).success)
       .toBe(false);
+  });
+
+  it('allows reading-less mnemonic parts but rejects missing glyph and inline components', () => {
+    const part = {
+      id: 'ja:kanji:厂', character: '厂', isMnemonicPartOnly: true, meanings: ['скальный выступ'],
+      on: [], kun: [], components: [], wordIds: [], mnemonic: 'Скальный выступ нависает над основанием.',
+    };
+    expect(kanjiSchema.safeParse(part).success).toBe(true);
+    expect(kanjiSchema.safeParse({ ...part, on: ['ガン'] }).success).toBe(false);
+    expect(kanjiSchema.safeParse({ ...part, wordIds: ['ja:word:厂'] }).success).toBe(false);
+    const kanji = {
+      id: 'ja:kanji:岸', character: '岸', meanings: ['берег'], on: ['ガン'], kun: ['きし'],
+      components: ['厂'], componentMeanings: { 厂: 'скальный выступ' }, wordIds: [],
+    };
+    expect(dictionarySchema.safeParse({ schemaVersion: 2, words: [], kanji: [kanji, part], grammar: [] }).success).toBe(true);
+    expect(dictionarySchema.safeParse({ schemaVersion: 2, words: [], kanji: [kanji], grammar: [] }).success).toBe(false);
+    const inlineLabel = { ...kanji, components: ['зубчатый выступ'], componentMeanings: undefined };
+    expect(dictionarySchema.safeParse({ schemaVersion: 2, words: [], kanji: [inlineLabel], grammar: [] }).success).toBe(false);
+    const cycleA = { ...kanji, components: ['林'], componentMeanings: { 林: 'роща' } };
+    const cycleB = { ...kanji, id: 'ja:kanji:林', character: '林', components: ['岸'], componentMeanings: { 岸: 'берег' } };
+    expect(dictionarySchema.safeParse({ schemaVersion: 2, words: [], kanji: [cycleA, cycleB], grammar: [] }).success).toBe(false);
   });
 
   it('provides grammar example display layers and rejects malformed ruby', () => {
@@ -154,14 +182,14 @@ describe('book format', () => {
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
   });
 
-  it('allows visual references to be resolved by the separate component dictionary', () => {
+  it('allows named visual labels inline only when their meaning is recorded', () => {
     const dictionary = readDictionary();
     const target = dictionary.kanji[0];
     target.components = ['крыша с трубой'];
     target.componentMeanings = { 'крыша с трубой': 'крыша домика с дымящей трубой' };
     expect(dictionarySchema.safeParse(dictionary).success).toBe(true);
     target.componentMeanings = undefined;
-    expect(dictionarySchema.safeParse(dictionary).success).toBe(true);
+    expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
     target.components = ['крыша с трубой', 'крыша с трубой'];
     target.componentMeanings = { 'крыша с трубой': 'крыша домика' };
     expect(dictionarySchema.safeParse(dictionary).success).toBe(false);
@@ -187,6 +215,16 @@ describe('book format', () => {
     target.kun = entry.kun;
     invalid.kanji.push({ ...target, id: 'ja:kanji:風' });
     expect(dictionarySchema.safeParse(invalid).success).toBe(false);
+  });
+
+  it('keeps mnemonic-only kanji out of sentence references', () => {
+    const catalog = catalogSchema.parse(read('books/catalog.json'));
+    const dictionary = readDictionary();
+    const chapter = chapterSchema.parse(read(catalog[0].chapters[0].path));
+    const part = dictionary.kanji.find((entry) => entry.isMnemonicPartOnly);
+    expect(part).toBeDefined();
+    chapter.paragraphs[0].sentences[0].kanjiIds = [part!.id];
+    expect(() => validateChapterReferences(chapter, catalog[0], dictionary)).toThrow('Unknown dictionary reference');
   });
 
   it('requires supported metadata versions and checks contextual grammar role keys', () => {

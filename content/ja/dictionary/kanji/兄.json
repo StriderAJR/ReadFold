@@ -1,0 +1,20 @@
+{
+  "id": "ja:kanji:兄",
+  "character": "兄",
+  "meanings": [
+    "рот на ногах"
+  ],
+  "on": [],
+  "kun": [],
+  "components": [
+    "口",
+    "儿"
+  ],
+  "componentMeanings": {
+    "口": "рот; квадратное окошко",
+    "儿": "две ноги"
+  },
+  "wordIds": [],
+  "mnemonic": "Рот 口 встал на две ноги 儿: старший брат прибежал поговорить.",
+  "isMnemonicPartOnly": true
+}

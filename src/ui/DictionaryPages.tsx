@@ -73,6 +73,9 @@ export function DictionaryPage({ kind }: { kind: 'words' | 'kanji' | 'grammar' }
   const items = dictionary.data;
   const matched = (items ?? [])
     .filter((item) => {
+      if ('character' in item && item.isMnemonicPartOnly) {
+        return false;
+      }
       const status = user.data?.learning[item.id];
       const queryMatch = JSON.stringify(item).toLocaleLowerCase().includes(query.toLocaleLowerCase());
       const statusMatch = statusFilter === 'all' || (statusFilter === 'unseen' ? !status : status === statusFilter);

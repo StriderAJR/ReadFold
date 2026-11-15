@@ -7,22 +7,27 @@ test.beforeEach(async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Монолог фармацевта' })).toBeVisible();
 });
 
-test('kanji reuse separate component cards and parts remain available offline', async ({ page, context }) => {
+test('kanji share visual parts through kanji cards and parts remain available offline', async ({ page, context }) => {
   await page.goto('./#/kanji/ja%3Akanji%3A想');
-  const componentLink = page.locator('a[href*="/components/ja%3Acomponent%3Au5fc3"]');
+  const componentLink = page.locator('a[href*="/kanji/ja%3Akanji%3A心"]');
   await expect(componentLink).toBeVisible();
   await componentLink.click();
-  await expect(page).toHaveURL(/\/components\/ja%3Acomponent%3Au5fc3/);
+  await expect(page).toHaveURL(/\/kanji\/ja%3Akanji%3A心/);
+  await expect(page.locator('.kanji-mnemonic')).toBeVisible();
+  await page.goto('./#/components?q=丆');
+  const partOnlyLink = page.locator('a[href*="/components/ja%3Akanji%3A丆"]');
+  await expect(partOnlyLink).toBeVisible();
+  await partOnlyLink.click();
   await expect(page.locator('.visual-component-card')).toBeVisible();
   await expect(page.locator('.visual-component-card .kanji-mnemonic-phrase')).not.toBeEmpty();
   await expect(page.locator('.kanji-readings')).toHaveCount(0);
   await page.goto('./#/components?q=木');
-  await expect(page.locator('a[href*="/components/ja%3Acomponent%3Au6728"]')).toBeVisible();
+  await expect(page.locator('a[href*="/components/ja%3Akanji%3A木"]')).toBeVisible();
   await page.evaluate(async () => { await navigator.serviceWorker.ready; });
   await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
   await context.setOffline(true);
   await page.reload();
-  await expect(page.locator('a[href*="/components/ja%3Acomponent%3Au6728"]')).toBeVisible();
+  await expect(page.locator('a[href*="/components/ja%3Akanji%3A木"]')).toBeVisible();
 });
 
 test('catalog, chapter navigation, direct sentence hash, and reading progress survive reload', async ({ page }) => {
